@@ -1,60 +1,43 @@
-/**!
-
-    Template Name:
-    Template URI
-    Description:
-    Author: mahedi amin
-    Author URI: 
-    Version: 1.0.0
-    -------------------------------------------------
-
-   ---- Deafult--------
-       1.0 Root Css
-       1.1 Default Css
-       1.2 typography Css
-   ---- Layout--------
-       2.0 IconBox Css
-   ----  Nav Tools--------
-       3.0 Nav Tools
-   ---- Component Css--------
-       
-      4.2 Button Css
-      4.3 Bredcump Css
-4.4 Pagination Css
-4.5 form css
-4.6 icon css
-4.7 progress css
-
-
-    ---- Header Footer--------
-        6.0 Header Css
-        6.1 Footer Css
-      
 
 
 
 
-    -----------------------------------------------------
-   
-    
-**/
 
-// Setting sass
-@import "setting";
-//mixin sass
-@import "allmixin";
-// plugin root sass
-@import "0-plugin/plugin-root";
-//base sass
-@import "1-default/default-root";
-// layout root sass
-@import "2-layout/layout-root";
-// menu root sass
-@import "3-menu/menu-root";
-// elements root sass
-@import "Components/_components-root";
-@import "6-header-footer/_header-footer-root";
+// 1. Configuration and helpers
+@import 
+ 'abstracts/variables',
+ 'abstracts/functions',
+  'abstracts/mixins';
 
 
 
+// 2. Vendores
+@import 
+'vendors/bourbon/bourbon';
 
+// 3. Base stuff
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography',
+  'base/helpers';
+
+// 4. Layout
+@import
+  'layout/header',
+  'layout/footer';
+
+
+// 5. Components
+@import
+  'components/button';
+
+
+// 6. Page-specific styles
+@import
+  'pages/home';
+
+
+// 7. Themes
+@import
+  'themes/default';

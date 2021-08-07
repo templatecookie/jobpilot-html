@@ -1,0 +1,54 @@
+:root{
+    @each $color, $shades in $colors{
+      @each $shade, $value in $shades{
+         #{'--'+$color}-#{$shade}: #{$value};    
+       }
+    }
+    // @each $bodyfont, $screns in $bodyfontScale {
+    //   @each $scren, $value  in $screns {
+    //     #{'--bf-'+$bodyfont}-#{$scren}: #{$value};  
+    //   }
+    // }
+}
+
+@each $color, $shades in $colors{
+  @each $shade, $value in $shades{
+ 
+     #{'.text-' + $color + '-' + $shade}  {
+      color: #{$value};
+     } 
+     #{'.bg-' + $color + '-' + $shade}  {
+      color: #{$value};
+     } 
+      
+   }
+}
+
+
+html {
+  box-sizing: border-box;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: var(--primary-600);
+  text-decoration: none;
+
+  @include on-event {
+    color: var(--primary-400);
+    text-decoration: underline;
+  }
+}
+
+h1{
+  font-size: 120px;
+  @include mq(md){
+    font-size: 40px;
+  }
+}

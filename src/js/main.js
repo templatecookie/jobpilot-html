@@ -1,11 +1,11 @@
 /*
 * ----------------------------------------------------------------------------------------
-    Template Name: mr stater
-    Template URI: https://spellbit.com/
+    Template Name: 
+    Template URI: 
     Description: 
-    Author: mahedi amin
-    Author URI: https://mahediamin.com
-    Version: 1.0.0
+    Author: 
+    Author URI: 
+    Version: 
 
 
 

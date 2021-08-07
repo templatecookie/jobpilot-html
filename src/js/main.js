@@ -31,7 +31,7 @@
 (function($) {
 
 
-    console.log("happy coding");
+    alert("ajfhakfa")
  
  
  

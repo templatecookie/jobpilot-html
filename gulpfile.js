@@ -30,7 +30,8 @@ const files = {
     main_js_path: 'src/js/main.js',
     fonts_path: 'src/fonts/**/*',
     jquery_js_path: 'src/js/jquery-3.6.0.min.js',
-    image_path: 'src/images/**/*.{png,jpeg,jpg,svg,gif,ico}'
+    image_path: 'src/images/**/*.{png,jpeg,jpg,svg,gif,ico}',
+    buildOutput:'build'
 };
 
 var autoprefixerOption = [
@@ -187,6 +188,8 @@ function dlt_dist() {
     ]);
 }
 
+
+
 function reload(done) {
     browserSync.reload();
     done();
@@ -214,25 +217,29 @@ exports.default = parallel(
     nunjucks,
     sassCompile,
     csspluginTask,
+    copyjs2,
+    copyjs,
     imagetask,
     copyfonts,
     scriptsTask,
     reload,
     serve,
-    build,
+    appJstask,
     watchfiles
+ 
 
 );
 
 exports.build = parallel(
-    
-    csspluginTask,
-    
     nunjucks,
     sassCompile,
-    scriptsTask,
+    csspluginTask,
+    copyjs2,
+    copyjs,
     imagetask,
     copyfonts,
+    scriptsTask,
+    appJstask,
     build
 )
 

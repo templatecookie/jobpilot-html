@@ -31,8 +31,8 @@
 (function($) {
 
 
-    alert("ajfhakfa")
- 
+
+ console.log("lfhakfa")
  
  
  

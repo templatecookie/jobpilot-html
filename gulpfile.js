@@ -198,7 +198,7 @@ function reload(done) {
 function watchfiles() {
     watch([files.sass_path], series(sassCompile, reload));
     watch([files.css_path], series(csspluginTask, reload));
-    //watch([files.main_js_path], series(appJstask, reload));
+    watch([files.main_js_path], series(appJstask, reload));
     watch([files.plugins_path], series(scriptsTask, reload));
     watch([files.image_path], series(imagetask, reload));
     watch([files.fonts_path], series(copyfonts, reload));

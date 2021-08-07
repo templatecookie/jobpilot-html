@@ -1,0 +1,54 @@
+.rt-nav-tolls {
+    margin-left: 30px;
+    position: relative;
+    .rt-search-open,
+    .open-cart-opt {
+        cursor: pointer;
+    }
+    span {
+        @include afterparent();
+        a {
+            color: #333;
+            @include rt-trs(0.245s);
+            &:hover {
+                color: var(--primary_color);
+            }
+        }
+    }
+}
+
+.white-menu {
+    .rt-nav-tolls {
+        span {
+            a {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.catagory-drops {
+    @include breakpoint(lg){
+        display: none;
+    }
+    a {
+        color: rgb(17, 20, 32);
+        font-size: 18px;
+        &.dropdown-toggle::before {
+            font-family: 'icofont';
+            position: absolute;
+            top: 50%;
+            right: -20px;
+            content: '\ea99';
+            transform: translateY(-50%);
+        }
+        &.dropdown-toggle::after{
+            display: none;
+        }
+    }
+}
+
+// include nav search 
+@import "nav-search";
+@import "offcanvas";
+@import "nav-cart";

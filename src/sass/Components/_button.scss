@@ -1,0 +1,433 @@
+// bootstrap button style
+.rt-btn {
+    font-size: $button_font_size;
+    line-height: 24px;
+    border-radius: $buton_border_radius;
+    padding: $button_padding;
+    font-weight: $button_font_weight;
+    transition: all 0.24s $ease-in-cubic;
+    font-family: $button_font_family;
+    border-width: $button_border_width;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    width: fit-content;
+    position: relative;
+    z-index: 2;
+    @include breakpoint(xs) {
+        padding: 16px 37px;
+        font-size: 14px;
+    }
+    &.pill {
+        border-radius: 999px;
+    }
+    &.rt-rounded {
+        border-radius: 10px;
+    }
+    &.rt-sm {
+        font-size: 14px;
+        padding: 10px 30px;
+    }
+    &.rt-sm2 {
+        font-size: 14px;
+        padding: 10px 35px;
+    }
+    &.rt-sm3 {
+        font-size: 15px;
+        padding: 8px 26px;
+    }
+    &.rt-xl {
+        padding: 24px 67px;
+        font-size: 24px;
+        @extend .title-font;
+        font-weight: 700;
+        @include breakpoint(xs) {
+            padding: 13px 35px;
+            font-size: 16px;
+        }
+    }
+    &.d-block {
+        display: block !important;
+        width: 100%;
+    }
+    &.rt-video-primary {
+        @include hw(80px);
+        background: var(--primary_color);
+        color: #fff;
+        box-shadow: 0px 0px 0px 8px rgba(31, 211, 165, 0.3);
+        border-radius: 50%;
+        padding: 0px;
+        @include afterparent;
+        &:after {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            content: '\ec74';
+            font-family: 'icofont';
+            transform: translate(-50%, -50%);
+        }
+    }
+    &.rt-video-secondary {
+        height: 55px;
+        width: 55px;
+        line-height: 55px;
+        background: var(--secondary_color);
+        color: #fff;
+        box-shadow: 0px 0px 0px 8px rgba(var(--secondary_color), 0.3);
+        border-radius: 50%;
+        padding: 0px;
+        @include afterparent;
+        &:after {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            content: '\ec74';
+            font-family: 'icofont';
+            transform: translate(-50%, -50%);
+        }
+    }
+    &.rt-video-light {
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+        background: #fff;
+        color: var(--primary_color);
+        box-shadow: 0px 0px 0px 0px rgba(#fff, 0.7);
+        border-radius: 50%;
+        padding: 0px;
+        animation: rt-pulse 1.25s infinite;
+        @include afterparent;
+        &:after {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            content: '\ec74';
+            font-family: 'icofont';
+            transform: translate(-50%, -50%);
+        }
+    }
+    &:hover {
+        .btn-revel-effects {
+            width: 335%;
+            height: 562.5px;
+        }
+    }
+}
+
+// animation 
+@keyframes rt-pulse {
+    to {
+        box-shadow: 0px 0px 0px 15px rgba(#fff, 0);
+    }
+}
+
+.btn-revel-effects {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: var(--secondary_color);
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.multipule-color-strep {
+    &:before,
+    &:after {
+        position: absolute;
+        left: 0;
+        bottom: 100%;
+        width: 100%;
+        height: 100%;
+        content: '';
+        z-index: -1;
+        transition: transform 0.3s;
+        transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    }
+    &:before {
+        background-color: shade(#ea4a4a, 10%);
+    }
+    &:after {
+        background-color: tint(#ea4a4a, 20%);
+    }
+    &:hover {
+        &:before {
+            transform: translate3d(0, 100%, 0);
+        }
+        &:after {
+            transition-delay: 0.175s;
+            transform: translate3d(0, 100%, 0);
+        }
+    }
+}
+
+.rt-button-group {
+    a {
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+}
+
+.rt-primary {
+    background: var(--primary_color);
+    border-color: var(--primary_color);
+    color: #fff;
+    .btn-revel-effects {
+        background: tint($primary-color, 20%)
+    }
+    &:hover,
+    &:focus,
+    &:active {
+        color: #fff;
+    }
+}
+
+
+.rt-dark-btn {
+    transition: transform 0.3s, opacity 0.3s;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    background: #000;
+    border-color: #000;
+    color: #fff !important;
+    &:after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        border: 2px solid #000;
+        z-index: -1;
+        border-radius: inherit;
+        opacity: 0;
+        transform: scale3d(0.6, 0.6, 1);
+        transition: transform 0.3s, opacity 0.3s;
+        transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    }
+    &:hover {
+        background-color: #fff;
+        color: #000 !important;
+        &:after {
+            transform: scale3d(1, 1, 1);
+            opacity: 1;
+        }
+    }
+}
+
+.rt-secondary {
+    background: var(--secondary_color);
+    border-color: var(--secondary_color);
+    .btn-revel-effects {
+        background: var(--primary_color);
+    }
+    color: #fff;
+    &:hover,
+    &:focus,
+    &:active {
+        color: #fff;
+    }
+}
+
+.rt-light {
+    background: #fff;
+    border-color: #fff;
+    color: #000;
+    .btn-revel-effects {
+        background: var(--primary_color);
+    }
+    &:hover,
+    &:focus,
+    &:active {
+        background: var(--primary_color);
+        border-color: var(--primary_color);
+        color: #fff;
+    }
+}
+
+// outline button
+.rt-outline-primary {
+    border-color: var(--primary_color);
+    color: var(--primary_color);
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: var(--primary_color);
+        border-color: var(--primary_color);
+        color: #fff;
+    }
+}
+
+.rt-outline-secondary {
+    border-color: var(--secondary_color);
+    color: var(--primary_color);
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: var(--secondary_color);
+        border-color: var(--secondary_color);
+        color: var(--primary_color);
+    }
+}
+
+.rt-outline-light {
+    border: 1px solid #fff;
+    color: #ffffff;
+    &:hover,
+    &:focus,
+    &:active {
+        background: shade($primary-color, 15%);
+        border-color: shade($primary-color, 15%);
+        color: #fff;
+    }
+}
+
+.rt-gradient {
+    background: linear-gradient( 35deg, rgb(153, 50, 245) 0%, rgb(73, 51, 241) 53%, rgb(73, 80, 248) 70%, rgb(73, 108, 254) 100%);
+    color: #fff;
+    border: none;
+    @include afterparent();
+    &:after {
+        @include after(absolute, 0, 0, 100%, 100%);
+        z-index: -1;
+        background: linear-gradient( -35deg, rgb(153, 50, 245) 0%, rgb(73, 51, 241) 53%, rgb(73, 80, 248) 70%, rgb(73, 108, 254) 100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.36s $ease-in-sine;
+        color: #fff;
+        border-radius: 10px;
+    }
+    &:hover {
+        color: #fff;
+        &:after {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &.pill {
+        &:hover {
+            &:after {
+                border-radius: 999px;
+            }
+        }
+    }
+    &.rt-rounded {
+        &:hover {
+            &:after {
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+.rt-outline-gradientL {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    @include afterparent();
+    &:after {
+        @include after(absolute, 0, 0, 100%, 100%);
+        z-index: -1;
+        background: linear-gradient( -35deg, rgb(153, 50, 245) 0%, rgb(73, 51, 241) 53%, rgb(73, 80, 248) 70%, rgb(73, 108, 254) 100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.24s $ease-in-sine;
+        color: #fff;
+    }
+    &:hover {
+        color: #fff;
+        border: 1px solid transparent;
+        &:after {
+            opacity: 1;
+            visibility: visible;
+            box-shadow: 0px 15px 30px 0px rgba(13, 21, 75, 0.2);
+        }
+    }
+}
+
+// app button 
+.rt-app-button {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 40px;
+    min-height: 62px;
+    &.pill {
+        border-radius: 999px;
+    }
+    .app-thumb {
+        flex-width: 0 0 auto;
+        margin-right: 8px;
+        i {
+            font-size: 30px;
+        }
+    }
+    .app-text {
+        //+flex-width(40%)
+        span {
+            display: block;
+            font-weight: 600;
+            font-family: $body-font;
+            font-size: 20px;
+            &.mini-text {
+                font-size: 12px;
+                line-height: 0;
+                text-transform: capitalize;
+            }
+        }
+    }
+    //background: var(--primary_color);
+    color: #000;
+    border: none;
+    @include afterparent();
+    &.app-light {
+        background-color: #fff;
+        &:hover {
+            color: #000;
+        }
+    }
+}
+
+.rt-outline-primary:not(:disabled):not(.disabled).active,
+.rt-outline-primary:not(:disabled):not(.disabled):active,
+.show>.rt-outline-primary.dropdown-toggle {
+    background: var(--primary_color);
+    border-color: var(--primary_color);
+    box-shadow: none;
+}
+
+.rt-outline-primary:not(:disabled):not(.disabled).active:focus,
+.rt-outline-primary:not(:disabled):not(.disabled):active:focus,
+.show>.rt-outline-primary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+// badge  
+.rt-badge-gray {
+    background: #f0f3f6;
+    color: #000;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 4px;
+    display: inline-block;
+    &:hover {
+        color: var(--primary_color)
+    }
+}
+
+.rt-badge-primary {
+    background: var(--primary_color);
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 4px;
+    display: inline-block;
+    &:hover {
+        color: #fff;
+    }
+}

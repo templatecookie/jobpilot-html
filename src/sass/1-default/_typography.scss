@@ -1,0 +1,206 @@
+
+
+// heading
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: $heading-font;
+    color: var(--heading-font-color);
+}
+
+h1,
+.h1 {
+    font-size: 42px;
+    @include breakpoint(md) {
+        font-size: 40px;
+    }
+    @include breakpoint(xs) {
+        font-size: 38px;
+    }
+}
+
+h2,
+.h2 {
+    font-size: 38px;
+    @include breakpoint(md) {
+        font-size: 36px;
+    }
+    @include breakpoint(xs) {
+        font-size: 34px;
+    }
+}
+
+h3,
+.h3 {
+    font-size: 30px;
+    @include breakpoint(md) {
+        font-size: 28px;
+    }
+    @include breakpoint(xs) {
+        font-size: 25px;
+    }
+}
+
+h4,
+.h4 {
+    font-size: 25px;
+    @include breakpoint(md) {
+        font-size: 23px;
+    }
+    @include breakpoint(xs) {
+        font-size: 20px;
+    }
+}
+
+h5,
+.h5 {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+h6,
+.h6 {
+    font-size: 16px;
+}
+
+p {
+    font-size: var(--default-font-size);
+    font-family: $body-font;
+    line-height: 26px;
+}
+
+.title-font {
+    font-family: $heading-font !important;
+}
+.body-font{
+    font-family: $body-font !important;
+}
+.text-font {
+    font-family: $body-font !important;
+}
+
+
+
+.rt-section-title {
+    text-transform: capitalize;
+    font-size: 60px;
+    margin: 0 0 20px;
+    font-weight: 700;
+    line-height: 55px;
+    display: inline-block;
+    @include afterparent();
+    @include breakpoint(xs) {
+        font-size: 32px;
+    }
+    span {
+        
+        display: block;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 800;
+        
+        &.top{
+            margin: 0 0 10px;
+        }
+        &.bottom{
+            margin: 10px 0 0 ;
+        }
+        @include breakpoint(xs) {
+            font-size: 14px;
+        }
+    }
+}
+.rt-column-title{
+    @extend .rt-section-title;
+    font-size: 40px;
+    @include breakpoint(xs){
+        font-size: 32px;
+        line-height: 42px;
+    }
+}
+
+.text-white {
+    .rt-section-title {
+        color: #ffffff;
+        span {
+            color: #fff;
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #fff;
+        }
+    }
+}
+
+.text-white2 {
+    .rt-section-title {
+        color: #ffffff;
+        span {
+            color: #496cfe;
+        }
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #fff;
+    }
+    p {
+        color: #fff;
+    }
+}
+
+.rt-black {
+    font-weight: 800;
+}
+
+.rt-strong {
+    font-weight: 700;
+}
+
+.rt-medium {
+    font-weight: 500;
+}
+
+.rt-semiblod {
+    font-weight: 600;
+}
+
+.rt-light1 {
+    font-weight: 100;
+}
+
+.rt-light2 {
+    font-weight: 200;
+}
+
+.rt-light3 {
+    font-weight: 300;
+}
+
+.underline {
+    text-decoration: underline;
+}
+.positon-parent{
+    position: relative;
+    z-index: 1;
+}
+
+
+
+

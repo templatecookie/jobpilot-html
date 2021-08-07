@@ -1,0 +1,80 @@
+$theme-colors: () !default;
+$theme-colors: map-merge((
+  "primary_color": $primary-color, 
+  "secondary_color": $secondary-color,
+  "body-font-color": $body-font-colr,
+  "heading-font-color": $headnig-font-color,
+  "body-font-size": $body-font-size,
+  "default-font-size":$default-font-size,
+  "line-height":$line-height,
+  "gradient-primary": $gradient-primary,
+  "menu_font_family": $menu_font_family,
+  "menu_font_size": $menu_font_size,
+ "menu_item_color": $menu_item_color,
+  "menu_item_hover_color": $menu_item_hover_color,
+  "menu_item_active_color": $menu_item_active_color,
+  "submenu_bg": $submenu_bg,
+  "submenu_item_color": $submenu_item_color,
+  "submenu_border_radius": $submenu_border_radius,
+  "mobile_menu_icon_color": $mobile_menu_icon_color,
+  "mobile_menu_bg_color": $mobile_menu_bg_color,
+  "mobile_menu_sub_menu_bg_color" :$mobile_menu_sub_menu_bg_color
+
+  ), $theme-colors);
+:root {
+    @each $color,
+    $value in $theme-colors {
+        --#{$color}: #{$value};
+    }
+}
+
+// color
+.primary-color,
+a.primary-color {
+    color: var(--primary_color);
+}
+
+.secondary-color,
+a.secondary-color {
+    color: var(--secondary_color);
+}
+
+.primary-color-bg {
+    background-color: var(--primary_color);
+}
+
+.secondary-color-bg {
+    background-color: var(--secondary_color);
+}
+
+
+
+
+.body-font-color {
+    color: var(--body-font-color);
+}
+
+.heading-font-color {
+    color: var(--heading-font-color);
+}
+
+a.heading-font-color {
+    &:hover {
+        color: var(--primary_color);
+    }
+}
+
+// text gradinet color 
+.text-gradinet-1 {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient-primary {
+    background: var(--gradient-primary);
+}
+
+
+
+

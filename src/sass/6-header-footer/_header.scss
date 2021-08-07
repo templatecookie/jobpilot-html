@@ -1,0 +1,50 @@
+.rt-site-header {
+    position: relative;
+    .main-header {
+        background-color: #fff;
+    }
+    .brand-logo {
+        max-width: 150px;
+        transition: all 0.3s ease-in-out;
+        @include breakpoint(xs) {
+            max-width: 100px;
+        }
+    }
+    .navbar {
+        padding: 0;
+        transition: .3s ease-in-out;
+        @include breakpoint(md){
+            padding: 30px 0;
+        }
+    }
+    &.rt-fixed-top {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 9;
+    }
+    .main-menu,
+    .rt-nav-tolls{
+        transition: all 0.3s ease-in-out;
+    }
+    &.rt-sticky {
+        &.rt-sticky-active {
+            position: fixed;
+            width: 100%;
+            z-index: 99;
+            box-shadow: 0px 2px 3px 0px rgba(#000, 0.1);
+            .brand-logo {
+                max-width: 85px;
+            }
+            .main-menu>ul>li>a{
+                line-height: 80px;
+                @include breakpoint(md){
+                    line-height: 1.9;
+                }
+            }
+        }
+    }
+    
+}
+

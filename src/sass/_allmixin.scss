@@ -1,0 +1,105 @@
+//after parent
+@mixin afterparent() {
+    position: relative;
+    z-index: 1;
+}
+
+// mixin for content after
+@mixin after($absolute, $left, $top, $width, $height) {
+    position: $absolute;
+    left: $left;
+    top: $top;
+    width: $width;
+    height: $height;
+    content: "";
+}
+
+// mixin for after2
+@mixin after2($absolute, $left, $bottom, $width, $height) {
+    position: $absolute;
+    left: $left;
+    bottom: $bottom;
+    width: $width;
+    height: $height;
+    content: "";
+}
+
+// text over flow
+@mixin text-over() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+@mixin hw($hw_value) {
+    height: $hw_value;
+    width: $hw_value;
+    line-height: $hw_value;
+}
+
+@mixin flex-width($flx-width) {
+    flex: 0 0 $flx-width;
+    max-width: $flx-width;
+}
+
+@mixin ts($trs_time, $trs_name) {
+    transition: all $trs_time $trs_name;
+}
+
+@mixin hidden() {
+    @include opacity(0);
+    visibility: hidden;
+}
+
+@mixin vis() {
+    @include opacity(1);
+    visibility: visible;
+}
+
+@mixin vis-1($value-1) {
+    @include opacity($value-1);
+    visibility: visible,
+}
+
+@mixin rt-trs($time) {
+    transition: all $time ease-in-out;
+}
+
+@mixin breakpoint($size) {
+    @if $size==xss {
+        @media (max-width: 320px) {
+            @content;
+        }
+    }
+    @if $size==xs {
+        @media (max-width: 767.98px) {
+            @content;
+        }
+    }
+    @else if $size==md {
+        @media (max-width: 991.98px) {
+            @content;
+        }
+    }
+    @else if $size==lg {
+        @media (max-width: 1199.98px) {
+            @content;
+        }
+    }
+    @else if $size==xl {
+        @media (max-width: 1600px) {
+            @content;
+        }
+    }
+    @else if $size==xxl {
+        @media (max-width: 1900px) {
+            @content;
+        }
+    }
+}

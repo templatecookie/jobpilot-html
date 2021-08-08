@@ -1,0 +1,127 @@
+.rt-site-footer {
+    position: relative;
+    margin-top: 70px;
+    .footer-top {
+        padding-top: 100px;
+        padding-bottom: 30px;
+        @include breakpoint(xs) {
+            padding-top: 50px;
+            padding-bottom: 0px;
+        }
+    }
+    .footer-bottom {
+        padding: 0 0 30px;
+        background-color: #bfd8bb;
+    }
+    &.no-gap {
+        margin-top: 0px;
+    }
+   
+ 
+    
+    .footer-top{
+        padding-bottom: 100px;
+    }
+    
+}
+
+.rt-single-widget {
+    margin-bottom: 30px;
+    a {
+        color: var(--primary-600);
+    }
+    .rt-footer-title {
+        margin-bottom: 10px;
+        font-size: 20px;
+        text-transform: capitalize;
+        color: #333;
+        font-weight: 700;
+    }
+    .btn {
+        width: 71px;
+        background-color:var(--primary-600);
+        font-size: 20px;
+        color: #333;
+        border-radius: 999px;
+    }
+    
+    .form-control {
+        background: #191919;
+        border-color: transparent;
+        height: 52px;
+        padding-left: 28px;
+        border-radius: 999px;
+        font-size: 16px;
+        color: #333;
+        width: calc(100% - 80px);
+        &:focus {
+            border-color:var(--primary-600);
+            box-shadow: none;
+            outline: none;
+        }
+        &::placeholder {
+            color: #333;
+            font-weight: 300;
+            font-size: 14px;
+        }
+    }
+    ul.rt-usefulllinks {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            display: inline-block;
+            width: 48%;
+            margin-bottom: 20px;
+            position: relative;
+            &:after {
+                position: absolute;
+                left: -10px;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 4px;
+                width: 4px;
+                border-radius: 50%;
+                background-color: var(--primary-600);
+                content: '';
+                transition: all 0.24s ease-in-out;
+            }
+            &:last-child {
+                margin-bottom: 0px;
+            }
+            a {
+                display: block;
+                color: #333;
+                transition: all 0.24s ease-in-out;
+                &:hover {
+                    color: var(--primary-600);
+                    padding-left: 5px;
+                }
+            }
+            &:hover {
+                &:after {
+                    background: var(--primary-400);
+                    animation: zoomIn 0.24s ease-in-out;
+                }
+            }
+        }
+    }
+    ul.rt-usefulllinks2 {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            display: block;
+            a {
+                display: block;
+                color: #333;
+                @include rt-trs(0.34s);
+                &:hover {
+                    color: var(--primary-600);
+                    padding-left: 8px;
+                }
+            }
+        }
+    }
+}
+

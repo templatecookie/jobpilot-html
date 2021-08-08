@@ -15,42 +15,37 @@ h6,
   font-weight: 500;
 }
 
-h1 {
-  font-size: 72px;
-  line-height: 88px;
+@each $cheadingfont in $headingfontSize {
+  $i: index($headingfontSize, $cheadingfont);
+  h#{$i} ,   .text-h#{$i}{
+    font-size: $cheadingfont;
+    line-height: nth($headingLineheight, $i);
+    
+  }
+ 
 }
 
-h2 {
-  font-size: 56px;
-  line-height: 64px;
-}
 
-h3 {
-  font-size: 48px;
-  line-height: 56px;
+@for $i from 4 through 9 {
+  .ft-wt-#{$i} {
+    font-weight: $i * 100;
+  }
 }
-
-h4 {
-  font-size: 40px;
-  line-height: 48px;
-}
-
-h5 {
-  font-size: 32px;
-  line-height: 40px;
-}
-
-h6 {
-  font-size: 24px;
-  line-height: 32px;
-}
-
 
 @each $font, $sizes in $bodyfontScale {
   @each $size, $value in $sizes {
     #{".body-" + $font + "-" + $size} {
       color: #{$value};
     }
+  }
+}
+
+
+@each $currentfont in $bodyfontvariation {
+  $i: index($bodyfontvariation, $currentfont);
+  .body-font-#{$i} {
+    font: $currentfont;
+    line-height: nth($lineheightvariation, $i);
   }
 }
 

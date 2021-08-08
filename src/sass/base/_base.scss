@@ -6,15 +6,10 @@
     }
     @each $font, $sizes in $bodyfontScale{
       @each $size, $value in $sizes{
-         #{'--fs'+$font}-#{$size}: #{$value};    
+         #{'--fs-'+$font}-#{$size}: #{$value};    
        }
     }
 }
-
-
-
-
-
 
 *,
 *::before,

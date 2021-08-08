@@ -1,31 +1,66 @@
-// $breakpoints: (
-//     "phone":        400px,
-//     "phone-wide":   480px,
-//     "phablet":      560px,
-//     "tablet-small": 640px,
-//     "tablet":       768px,
-//     "tablet-wide":  1024px,
-//     "desktop":      1248px,
-//     "desktop-wide": 1440px
-// );
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: $heading-font;
+  color: var(--gray-900);
+  font-weight: 500;
+}
 
-// @mixin mq($width, $type: min) {
-//     @if map_has_key($breakpoints, $width) {
-//         $width: map_get($breakpoints, $width);
-//         @if $type == max {
-//             $width: $width - 1px;
-//         }
-        
-//         @media (max-width: $width)
-//         {
-//             @content;
-//         }
-//     }
-// }
+h1 {
+  font-size: 72px;
+  line-height: 88px;
+}
 
-// h1{
-//     font-size: 100px;
-//     @include mq("desktop" ){
-//         font-size: 15px;
-//     }
-// }
+h2 {
+  font-size: 56px;
+  line-height: 64px;
+}
+
+h3 {
+  font-size: 48px;
+  line-height: 56px;
+}
+
+h4 {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+h5 {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+h6 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+
+@each $font, $sizes in $bodyfontScale {
+  @each $size, $value in $sizes {
+    #{".body-" + $font + "-" + $size} {
+      color: #{$value};
+    }
+  }
+}
+
+@each $color, $shades in $colors {
+  @each $shade, $value in $shades {
+    #{".text-" + $color + "-" + $shade} {
+      color: #{$value};
+    }
+    #{".bg-" + $color + "-" + $shade} {
+      color: #{$value};
+    }
+  }
+}

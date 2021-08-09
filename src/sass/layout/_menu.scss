@@ -66,10 +66,10 @@
 /*men item carve icon*/
 
 .main-menu>ul>li.menu-item-has-children>a:after {
-    content: "\ea99";
-    margin-left: 10px;
-    font-family: "icofont";
-    font-size: 14px;
+    content: "\f101";
+    margin-left: 8px;
+    font-family: "flaticon";
+    font-size: 12px;
     @include breakpoint(md) {
         margin-left: 0;
         position: absolute;
@@ -98,25 +98,25 @@
     text-align: left;
     border-radius: 3px;
     min-width: 200px;
-    transition: all 0.42s ease-in-out;
+    transition: all 0.24s ease-in-out;
     padding: 15px 0px;
     box-shadow: 0 0 3px rgba(60, 72, 88, 0.15);
     @include hidden();
-    &:before {
-        content: "";
-        position: absolute;
-        top: 2px;
-        left: 45px;
-        box-sizing: border-box;
-        border: 7px solid #495057;
-        border-color: transparent transparent #ffffff #ffffff;
-        transform-origin: 0 0;
-        transform: rotate(135deg);
-        box-shadow: -2px 2px 2px -1px rgba(60, 72, 88, 0.15);
-        @include breakpoint(md) {
-            display: none
-        }
-    }
+    // &:before {
+    //     content: "";
+    //     position: absolute;
+    //     top: 2px;
+    //     left: 45px;
+    //     box-sizing: border-box;
+    //     border: 7px solid #495057;
+    //     border-color: transparent transparent #ffffff #ffffff;
+    //     transform-origin: 0 0;
+    //     transform: rotate(135deg);
+    //     box-shadow: -2px 2px 2px -1px rgba(60, 72, 88, 0.15);
+    //     @include breakpoint(md) {
+    //         display: none
+    //     }
+    // }
 }
 
 .main-menu>ul>li.menu-item-has-children:hover>ul.sub-menu {
@@ -162,10 +162,11 @@
 /*// drop menu cart*/
 
 .main-menu ul ul li.menu-item-has-children>a:after {
-    content: "\eab8";
+    content: "\f105";
     position: absolute;
-    font-family: "icofont";
-    right: 10px;
+    font-family: "flaticon";
+    right: 8px;
+    font-size: 12px;
     @include breakpoint(md) {
         content: '\eab2';
         right: 15px;
@@ -178,7 +179,7 @@
 
 .main-menu ul ul {
     position: absolute;
-    left: 230px;
+    left: 210px;
     top: 0px;
     background: #fff;
     border: none;
@@ -186,30 +187,30 @@
     z-index: 999;
     text-align: left;
     min-width: 200px;
-    transition: all 0.42s ease-in-out;
+    transition: all 0.24s ease-in-out;
     padding:15px 0px;
     box-shadow: 0 0 3px rgba(60, 72, 88, 0.15);
     @include hidden();
-    &:before {
-        content: "";
-        position: absolute;
-        top: 14px;
-        left: 2px;
-        box-sizing: border-box;
-        border: 7px solid #495057;
-        border-color: transparent transparent #ffffff #ffffff;
-        transform-origin: 0 0;
-        transform: rotate(44deg);
-        box-shadow: -2px 2px 2px -1px rgba(60, 72, 88, 0.15);
-        @include breakpoint(md) {
-            display: none;
-        }
-    }
+    // &:before {
+    //     content: "";
+    //     position: absolute;
+    //     top: 14px;
+    //     left: 2px;
+    //     box-sizing: border-box;
+    //     border: 7px solid #495057;
+    //     border-color: transparent transparent #ffffff #ffffff;
+    //     transform-origin: 0 0;
+    //     transform: rotate(44deg);
+    //     box-shadow: -2px 2px 2px -1px rgba(60, 72, 88, 0.15);
+    //     @include breakpoint(md) {
+    //         display: none;
+    //     }
+    // }
 }
 
 .main-menu>ul>li.menu-item-has-children>ul.sub-menu>li.menu-item-has-children:hover>ul.sub-menu,
 .main-menu>ul>li.menu-item-has-children>ul.sub-menu>li.menu-item-has-children>ul.sub-menu>li.menu-item-has-children:hover>ul.sub-menu {
-    left: 215px;
+    left: 205px;
     @include vis();
 }
 

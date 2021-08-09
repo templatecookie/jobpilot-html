@@ -1,9 +1,12 @@
+.main-menu{
+    position: relative;
+}
 .main-menu ul {
     list-style: outside none none;
     margin: 0;
     padding: 0;
     text-align: center;
-    margin-right: -23px;
+    margin-right: -18px;
     @include breakpoint(xl){
         margin-right: -18px;
     }
@@ -22,7 +25,8 @@
             font-size: var(--fs-lg-16);
             font-family: $body-font;
             @include rt-trs(.3s);
-            padding: 0 23px;
+            padding: 0 18px;
+            font-weight: 400;
             @include breakpoint(xl){
                 padding: 0 14px;
             }
@@ -77,9 +81,9 @@
     }
 }
 
-// .main-menu>ul>li.menu-item-has-children:hover>a:after {
-//     color: var(--menu_item_hover_color);
-// }
+.main-menu>ul>li.menu-item-has-children:hover>a:after {
+    color: var(--primary-600);
+}
 
 .main-menu>ul>li.menu-item-has-children.open>a:after {
     content: '\eab9';
@@ -100,7 +104,7 @@
     min-width: 200px;
     transition: all 0.24s ease-in-out;
     padding: 15px 0px;
-    box-shadow: 0 0 3px rgba(60, 72, 88, 0.15);
+    box-shadow: 0px 10px 14px 0px rgba(0, 0, 0,  0.08);
     @include hidden();
     // &:before {
     //     content: "";
@@ -137,13 +141,13 @@
 .main-menu>ul>li.menu-item-has-children>ul.sub-menu>li>a,
 .main-menu ul ul li a {
     display: block;
-    padding: 5px 15px;
+    padding: 5px 20px;
     border-bottom: 1px solid rgba(#ccc, 0.0);
     text-transform: capitalize;
     color:#333;
     font-weight: 400;
     @include afterparent();
-    font-size: 16px;
+    font-size: 15.7px;
 }
 
 .main-menu>ul>li.menu-item-has-children>ul.sub-menu>li:last-child>a,
@@ -154,7 +158,7 @@
 .main-menu>ul>li.menu-item-has-children>ul.sub-menu>li:hover>a,
 .main-menu ul ul>li:hover>a {
     padding-left: 25px;
-    color: #333;
+    color: var(--primary-600);
     background: #fff;
 }
 
@@ -165,7 +169,7 @@
     content: "\f105";
     position: absolute;
     font-family: "flaticon";
-    right: 8px;
+    right: 15px;
     font-size: 12px;
     @include breakpoint(md) {
         content: '\eab2';
@@ -189,7 +193,7 @@
     min-width: 200px;
     transition: all 0.24s ease-in-out;
     padding:15px 0px;
-    box-shadow: 0 0 3px rgba(60, 72, 88, 0.15);
+    box-shadow: 0px 10px 14px 0px rgba(0, 0, 0,  0.08);
     @include hidden();
     // &:before {
     //     content: "";
@@ -223,7 +227,7 @@
     cursor: pointer;
     i {
         font-size: 23px;
-        color: var(--mobile_menu_icon_color);
+        color: var(--gray-900);
     }
 }
 
@@ -234,7 +238,7 @@
     height: 21px;
     span {
         display: block;
-        background: #000;
+        background: var(--gray-900);
         height: 1px;
         width: 20px;
         margin-bottom: 5px;
@@ -261,7 +265,7 @@
     @include hw(35px);
     border-radius: 50%;
     text-align: center;
-    background: var(--secondary_color);
+    background: var(--primary-600);
     cursor: pointer;
     color: #fff;
 }
@@ -299,14 +303,3 @@
 
 //experintam mobile menu
 // white menu css 
-@media (min-width: 992px) {
-    .white-menu {
-        .main-menu>ul>li>a,
-        .main-menu>ul>li.current-menu-item>a {
-            color: #fff;
-        }
-        .main-menu>ul>li:hover>a {
-            color: #758170 !important;
-        }
-    }
-}

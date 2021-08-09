@@ -1,0 +1,12 @@
+// bootstrap button style
+.btn {
+    font-size: $button_font_size;
+    line-height: $buton_line_height;
+    border-radius: $buton_border_radius;
+    padding: $button_padding;
+    font-weight: $button_font_weight;
+    transition: all 0.24s $ease-in-cubic;
+    font-family: $button_font_family;
+}
+
+ 

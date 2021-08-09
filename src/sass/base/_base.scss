@@ -26,9 +26,9 @@ html {
 
 body {
   height: 100%;
-  line-height: var(--line-height);
-  font-size: var(--body-font-size);
-  color: var(--body-font-color);
+  // line-height: var(--line-height);
+  // font-size: var(--body-font-size);
+  color: vvar(--gray-900);
   font-family: $body-font;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -37,6 +37,9 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   counter-reset: my-sec-counter;
+  &.styleguide{
+    background-color: #DCDFE8;
+  }
   
 }
 

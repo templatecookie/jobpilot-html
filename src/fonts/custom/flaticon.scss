@@ -1,0 +1,45 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?4cfeba1b9ce4da62f6711002aeb63158") format("truetype"),
+url("./flaticon.woff?4cfeba1b9ce4da62f6711002aeb63158") format("woff"),
+url("./flaticon.woff2?4cfeba1b9ce4da62f6711002aeb63158") format("woff2"),
+url("./flaticon.eot?4cfeba1b9ce4da62f6711002aeb63158#iefix") format("embedded-opentype"),
+url("./flaticon.svg?4cfeba1b9ce4da62f6711002aeb63158#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "download": "\f101",
+    "down-arrow-1": "\f102",
+    "up-arrow": "\f103",
+    "upload": "\f104",
+    "right-arrow": "\f105",
+);
+
+.flaticon-download:before {
+    content: map-get($flaticon-map, "download");
+}
+.flaticon-down-arrow-1:before {
+    content: map-get($flaticon-map, "down-arrow-1");
+}
+.flaticon-up-arrow:before {
+    content: map-get($flaticon-map, "up-arrow");
+}
+.flaticon-upload:before {
+    content: map-get($flaticon-map, "upload");
+}
+.flaticon-right-arrow:before {
+    content: map-get($flaticon-map, "right-arrow");
+}

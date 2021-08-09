@@ -44,7 +44,7 @@ h6,
 @each $currentfont in $bodyfontvariation {
   $i: index($bodyfontvariation, $currentfont);
   .body-font-#{$i} {
-    font: $currentfont;
+    font-size: $currentfont;
     line-height: nth($lineheightvariation, $i);
   }
 }

@@ -6,7 +6,7 @@
     z-index: 999;
     text-align: left;
     border-radius: 6px;
-    width: 60%;
+    width: 100%;
     margin: auto;
     right: 0;
     transition: all 0.42s ease-in-out;
@@ -41,7 +41,7 @@
     a {
         display: block ;
         font-size: 15px !important;
-        margin: 0 0 5px;
+        padding: 5px  10px!important;
         img {
             display: block;
             margin: 0 auto;

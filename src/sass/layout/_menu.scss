@@ -49,7 +49,7 @@
 
 /*change hover color*/
 .main-menu>ul>li>a{
-    line-height: 111px;
+    line-height: 88px;
     @include breakpoint(md){
         line-height: 1.9;
     }

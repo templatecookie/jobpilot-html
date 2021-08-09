@@ -1,4 +1,4 @@
-.rt-site-header {
+.site-header {
     position: relative;
     .main-header {
         background-color: #fff;
@@ -6,8 +6,10 @@
     .brand-logo {
         max-width: 150px;
         transition: all 0.3s ease-in-out;
+        margin-right: 20px;
         @include breakpoint(xs) {
             max-width: 100px;
+            margin-right: 0px;
         }
     }
     .navbar {
@@ -38,12 +40,15 @@
                 max-width: 85px;
             }
             .main-menu>ul>li>a{
-                line-height: 80px;
+                line-height: 88px;
                 @include breakpoint(md){
                     line-height: 1.9;
                 }
             }
         }
     }
-    
+    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }

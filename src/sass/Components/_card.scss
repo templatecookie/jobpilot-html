@@ -1,0 +1,78 @@
+.card {
+  border-radius: 12px;
+  border: 1px solid #EDEFF5;
+  background-color: #FFFFFF;
+
+  .card-body {
+    padding: 32px;
+
+    .rt-single-icon-box {
+      margin-bottom: 24px;
+
+      .icon-thumb {
+        padding: 16px;
+        background-color: #EA4C89;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .ph-dribbble-logo {
+          font-size: 24px;
+          color: #FFFFFF;
+        }
+      }
+
+      .iconbox-content {
+        h4 {
+          margin-bottom: 6px;
+
+          a {
+            text-decoration: none;
+          }
+
+          span {
+            .ph-map-pin {
+              font-size: 18px;
+            }
+          }
+        }
+        i{
+          font-size: 18px;
+          color: var(--gray-400);
+        }
+      }
+    }
+
+    .footer-content {
+      a {
+        color: var(--gray-900);
+        text-decoration: none;
+       
+      }
+      .salary {
+        position: relative;
+        padding-left: 20px;
+      }
+      .salary::after{
+        position: absolute;
+        content: '';
+        left: 8px;
+        top: 50%;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        background-color: var(--gray-600);
+       
+      }
+    }
+  }
+  &:hover{
+    box-shadow: 0px 12px 48px rgba(0, 44, 109, 0.1);
+    border: 1px solid #0066FF;
+  }
+  &:hover .footer-content a{
+    color: var(--primary-500);
+    text-decoration: none;
+  }
+}

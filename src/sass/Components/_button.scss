@@ -74,6 +74,7 @@
   &:active {
     
     background: var(--primary-100);
+    color: var(--primary-500);
   border-color: var(--primary-100);
   }
   &.disabled,
@@ -82,4 +83,51 @@
     color: var(--primary-200);
     border-color: var(--primary-50);
   }
+}
+.btn-outline-primary{
+    background: transparent;
+    border-color: var(--primary-50);
+    color: var(--primary-500);
+    &:hover,
+    &:focus,
+    &:active {
+      
+        background: var(--primary-50);
+        color: var(--primary-500);
+        border-color: var(--primary-500);
+    }
+    &.disabled,
+    &:disabled {
+      color: var(--primary-100);
+      border-color: var(--primary-100);
+    } 
+}
+
+
+.btn-dark {
+    background: var(--gray-900);
+    border-color: var(--gray-900);
+    color: #fff;
+    &:hover,
+    &:focus,
+    &:active {
+      background: var(--gray-800);
+      border-color: var(--gray-800);
+    }
+    &.disabled,
+    &:disabled {
+      background: var(--gray-100);
+      border-color: var(--gray-100);
+    }
+  }
+
+// PrimyButtonList
+.buttonList{
+    button{
+        margin-right: 7px;
+        margin-bottom: 7px;
+        &:last-child{
+            margin-right: 0px;
+        }
+    }
 }

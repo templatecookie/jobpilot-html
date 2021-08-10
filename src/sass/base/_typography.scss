@@ -28,7 +28,7 @@ h6,
 
 @for $i from 4 through 9 {
   .ft-wt-#{$i} {
-    font-weight: $i * 100;
+    font-weight: $i * 100 !important;
   }
 }
 
@@ -52,10 +52,10 @@ h6,
 @each $color, $shades in $colors {
   @each $shade, $value in $shades {
     #{".text-" + $color + "-" + $shade} {
-      color: #{$value};
+      color: #{$value} !important;
     }
     #{".bg-" + $color + "-" + $shade} {
-      background-color: #{$value};
+      background-color: #{$value} !important;
     }
   }
 }

@@ -3,34 +3,79 @@
 {% block content %}
 
 
-<div class="container pt-50 mb-20">
+
+
+<div class="container pt-100">
     <div class="row">
         <div class="col-12">
-            <h3>Style Guide</h3>
+            <h4 class="ft-wt-6">Navigation </h4>
         </div>
     </div>
 </div>
 
-<div class="container">
+<section class="all-header-groups">
+    <div class="container pt-50">
+        <div class="row">
+            <div class="col-12">
+                <h6 class="ft-wt-6">Normal</h6>
+            </div>
+        </div>
+        <div class="spacer-30"></div>
+    </div>
+    {% include "../templates/layout/header-footer/header-normal.html" %}
+    <div class="container pt-50">
+        <div class="row">
+            <div class="col-12">
+                <h6 class="ft-wt-6">Candidates</h6>
+            </div>
+        </div>
+        <div class="spacer-30"></div>
+    </div>
+    {% include "../templates/layout/header-footer/header-candidates.html" %}
+    <div class="container pt-50">
+        <div class="row">
+            <div class="col-12">
+                <h6 class="ft-wt-6">Employers</h6>
+            </div>
+        </div>
+        <div class="spacer-30"></div>
+    </div>
+    {% include "../templates/layout/header-footer/header-employers.html" %}
+</section>
+
+
+<div class="container pt-70">
     <div class="row">
         <div class="col-12">
-            <h4 class="mb-40">Navigation </h4>
+            <h4 class= ft-wt-6">Buttons</h4>
         </div>
     </div>
+    <div class="spacer-30"></div>
 </div>
+{% include "../templates/components/buttons/buttons.html" %}
 
-{% include "../templates/layout/header-footer/header.html" %}
-
-<div class="container">
-    <div class="spacer-70"></div>
-    <div class="row">
-        <div class="col-12">
-            <h4 class="mb-40">Buttons</h4>
+<section class="allcards-group">
+    <div class="container pt-70">
+        <div class="row">
+            <div class="col-12 mx-auto">
+                <h4 class= "ft-wt-6">Cards</h4>
+            </div>
+        </div>
+        <div class="spacer-30"></div>
+        <div class="row">
+            <div class="col-md-4 mb-30">
+                {% include "../templates/components/cards/card.html" %} 
+            </div>
+            <div class="col-md-4 mb-30">
+                {% include "../templates/components/cards/card-feature.html" %} 
+            </div>
+            <div class="col-md-4 mb-30">
+                {% include "../templates/components/cards/card-dashboard.html" %} 
+            </div>
         </div>
     </div>
-</div>
+</section>
+<div class="spacer-100"></div>
+<div class="spacer-100"></div>
 
-{% include "../templates/components//buttons/buttons.html" %}
-
-{% include "../templates/components/cards/card.html" %}
 {% endblock %}

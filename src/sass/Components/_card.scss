@@ -106,3 +106,52 @@
     }
   }
 }
+
+.jobcardStyle2 {
+  .rt-single-icon-box {
+    .icon-thumb {
+      .icon {
+        width: 68px;
+        height: 68px;
+      }
+    }
+    .iconbox-content {
+      width: 70%;
+      .job-mini-title {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 14px;
+      }
+      .price {
+        margin: 0 16px;
+      }
+    }
+    .iconbox-extra {
+      display: flex;
+      .btn-primary {
+        margin-left: 12px;
+        color: var(--primary-500);
+        background-color: var(--primary-50);
+        border-color: var(--primary-50);
+        .button-content-wrapper {
+          svg {
+            path {
+              stroke: var(--primary-500);
+            }
+          }
+        }
+        &:hover {
+          background-color: var(--primary-500);
+          color: #fff;
+        }
+        &:hover .button-content-wrapper {
+          svg {
+            path {
+              stroke: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

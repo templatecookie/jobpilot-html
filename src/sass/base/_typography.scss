@@ -32,6 +32,12 @@ h6,
   }
 }
 
+@for $i from 11 through 30 {
+  .f-size-#{$i} {
+    font-size: $i * 1px !important;
+  }
+}
+
 @each $font, $sizes in $bodyfontScale {
   @each $size, $value in $sizes {
     #{".body-" + $font + "-" + $size} {

@@ -22,6 +22,10 @@
   &.d-block{
       width: 100%;
   }
+  &:focus{
+    box-shadow: none;
+  }
+ 
   .button-content-wrapper {
     display: flex;
     justify-content: center;
@@ -339,7 +343,19 @@
       color: var(--danger-100);
     }
   }
-
+  .btn-link{
+    text-decoration: none;
+    color: var(--gray-700);
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--primary-600);
+    }
+    &.disabled,
+    &:disabled {
+      color: var(--gray-100);
+    }
+  }
 // PrimyButtonList
 .buttonList {
   padding: {

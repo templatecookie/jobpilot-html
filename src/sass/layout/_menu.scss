@@ -95,7 +95,7 @@
 .main-menu>ul>li.menu-item-has-children>ul.sub-menu {
     position: absolute;
     left: 0;
-    top: 110%;
+    top: 80%;
     background: #fff;
     z-index: 999;
     color: #fff;
@@ -104,7 +104,7 @@
     min-width: 200px;
     transition: all 0.24s ease-in-out;
     padding: 15px 0px;
-    box-shadow: 0px 10px 14px 0px rgba(0, 0, 0,  0.08);
+    box-shadow: 0px 0px 15px 0px rgba(#1d566a, 0.16);
     @include hidden();
     // &:before {
     //     content: "";
@@ -125,12 +125,12 @@
 
 .main-menu>ul>li.menu-item-has-children:hover>ul.sub-menu {
     @include vis();
-    top: 100%;
+    top: 74%;
 }
 
 .main-menu>ul>li.menu-item-has-children:hover>.rt-mega-menu {
     @include vis();
-    top: 100%;
+    top: 74%;
 }
 
 .main-menu>ul>li.menu-item-has-children>ul.sub-menu>li,
@@ -144,7 +144,7 @@
     padding: 5px 20px;
     border-bottom: 1px solid rgba(#ccc, 0.0);
     text-transform: capitalize;
-    color:#333;
+    color:var(--gray-700);
     font-weight: 400;
     @include afterparent();
     font-size: 15.7px;
@@ -193,7 +193,7 @@
     min-width: 200px;
     transition: all 0.24s ease-in-out;
     padding:15px 0px;
-    box-shadow: 0px 10px 14px 0px rgba(0, 0, 0,  0.08);
+    box-shadow: 0px 0px 15px 0px rgba(#1d566a, 0.16);
     @include hidden();
     // &:before {
     //     content: "";

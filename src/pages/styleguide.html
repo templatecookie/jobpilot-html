@@ -3,29 +3,43 @@
 {% block content %}
 
 
-<div class="container pt-50 mb-20">
+
+
+<div class="container pt-100">
     <div class="row">
         <div class="col-12">
-            <h3>Style Guide</h3>
+            <h4 class="ft-wt-6">Navigation </h4>
         </div>
     </div>
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <h4 class="mb-40">Navigation </h4>
+<section class="all-header-groups">
+    <div class="container pt-50">
+        <div class="row">
+            <div class="col-12">
+                <h6 class="ft-wt-6">Normal</h6>
+            </div>
         </div>
+        <div class="spacer-30"></div>
     </div>
-</div>
+    {% include "../templates/layout/header-footer/header-normal.html" %}
+    <div class="container pt-50">
+        <div class="row">
+            <div class="col-12">
+                <h6 class="ft-wt-6">Candidates</h6>
+            </div>
+        </div>
+        <div class="spacer-30"></div>
+    </div>
+    {% include "../templates/layout/header-footer/header-candidates.html" %}
+</section>
 
-{% include "../templates/layout/header-footer/header.html" %}
 
 <div class="container">
     <div class="spacer-70"></div>
     <div class="row">
         <div class="col-12">
-            <h4 class="mb-40">Buttons</h4>
+            <h4 class="mb-40 ft-wt-6">Buttons</h4>
         </div>
     </div>
 </div>

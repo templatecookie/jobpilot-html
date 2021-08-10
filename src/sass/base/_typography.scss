@@ -28,7 +28,7 @@ h6,
 
 @for $i from 4 through 9 {
   .ft-wt-#{$i} {
-    font-weight: $i * 100;
+    font-weight: $i * 100 !important;
   }
 }
 

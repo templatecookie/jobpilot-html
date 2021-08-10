@@ -76,16 +76,30 @@
     }
    
     .iconbox-extra{
-      .bookmark{
+      .icon-button{
         @include iconbox(48px, 5px);
         background-color: transparent;
-        color: var(--primary-500);
         font-size: 24px;
         @include rt-trs(0.24s);
+      }
+      .bookmark{
+        color: var(--primary-500); 
         &:hover{
           background: var(--primary-50);
         }
         
+      }
+      .dwonload{
+        color: var(--gray-900);
+        &:hover{
+          background: var(--gray-50);
+        }
+      }
+      .trash{
+        color: var(--danger-500);
+        &:hover{
+          background: var(--danger-50);
+        }
       }
     }
   }

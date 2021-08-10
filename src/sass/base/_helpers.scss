@@ -5,7 +5,6 @@ a {
 
   @include on-event {
     color: var(--primary-400);
-    text-decoration: underline;
   }
 }
 
@@ -95,7 +94,7 @@ blockquote {
 
 
 
-@for $i from 0 through 20 {
+@for $i from 0 through 30 {
   .mr-#{$i* 1} {
     margin-right: $i * 1px;
   }

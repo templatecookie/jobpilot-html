@@ -96,3 +96,15 @@
 @mixin rt-trs($time) {
   transition: all $time ease-in-out;
 }
+
+@mixin iconbox($heightwidth, $radius) {
+  width: $heightwidth;
+  height: $heightwidth;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: $radius;
+
+}

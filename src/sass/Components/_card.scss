@@ -27,6 +27,9 @@
         background-color: #ea4c89;
         font-size: 25px;
         color: var(--gray-10);
+        &.size-lg{
+          @include iconbox(68px, 4px);
+        }
       }
 
     }
@@ -35,6 +38,7 @@
       .job-mini-title {
         font-size: 18px;
         font-weight: 400;
+        margin: 0 0 3px;
         color: var(--gray-900);
         a {
           color: var(--gray-900);
@@ -42,6 +46,10 @@
       }
       .loacton {
         font-size: 14px;
+        margin-right: 10px;
+        &:last-child{
+          margin-right: 0px;
+        }
         i,
         svg,
         img {
@@ -65,8 +73,11 @@
       }
     }
   }
-  .post-info {
+  .post-info{
     padding-top: 22px;
+  }
+  .post-info , .post-info2{
+    
     .post-main-title {
       font-size: 20px;
       line-height: 32px;
@@ -84,12 +95,11 @@
     }
     .info-tools{
       display: inline-block;
-      padding-right: 15px;
+      padding-right: 10px;
       position: relative;
-      &:last-child{
-        padding-right: 0px;
-      }
+      
       &.has-dot{
+        padding-left: 10px;
        &::after{
         position: absolute;
         content: '';
@@ -107,51 +117,5 @@
   }
 }
 
-.jobcardStyle2 {
-  .rt-single-icon-box {
-    .icon-thumb {
-      .icon {
-        width: 68px;
-        height: 68px;
-      }
-    }
-    .iconbox-content {
-      width: 70%;
-      .job-mini-title {
-        font-size: 20px;
-        font-weight: 500;
-        margin-bottom: 14px;
-      }
-      .price {
-        margin: 0 16px;
-      }
-    }
-    .iconbox-extra {
-      display: flex;
-      .btn-primary {
-        margin-left: 12px;
-        color: var(--primary-500);
-        background-color: var(--primary-50);
-        border-color: var(--primary-50);
-        .button-content-wrapper {
-          svg {
-            path {
-              stroke: var(--primary-500);
-            }
-          }
-        }
-        &:hover {
-          background-color: var(--primary-500);
-          color: #fff;
-        }
-        &:hover .button-content-wrapper {
-          svg {
-            path {
-              stroke: #fff;
-            }
-          }
-        }
-      }
-    }
-  }
-}
+
+

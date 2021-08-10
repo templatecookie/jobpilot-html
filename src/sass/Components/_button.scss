@@ -33,15 +33,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    align-items: center;
+    line-height: 100%;
     .button-icon {
       order: 5;
       flex-grow: 0;
       font-size: 20px;
-      margin-right: 5px;
+      margin-right: 8px;
       &.align-icon-right {
         order: 15;
-        margin-left: 5px;
+        margin-left: 8px;
         margin-right: 0px;
       }
     }
@@ -113,6 +113,24 @@
     background: var(--primary-100);
     color: var(--primary-500);
     border-color: var(--primary-100);
+  }
+  &.disabled,
+  &:disabled {
+    background: var(--primary-50);
+    color: var(--primary-200);
+    border-color: var(--primary-50);
+  }
+}
+.btn-primary2-50 {
+  background: var(--primary-50);
+  border-color: var(--primary-50);
+  color: var(--primary-500);
+  &:hover,
+  &:focus,
+  &:active {
+    background: var(--primary-500);
+    color: var(--gray-10);
+    border-color: var(--primary-500);
   }
   &.disabled,
   &:disabled {

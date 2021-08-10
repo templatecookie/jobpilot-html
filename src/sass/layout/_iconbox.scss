@@ -41,6 +41,14 @@
     .iconbox-extra{
       width: max-content;
       margin-left: auto;
+      display: flex;
+      min-width: max-content;
+      >div{
+        margin-right: 15px;
+        &:last-child{
+          margin-right: 0px;
+        }
+      }
     }
     &.plain-list-1 {
       background-color: transparent;

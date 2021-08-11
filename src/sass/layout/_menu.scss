@@ -24,7 +24,7 @@
             display: block;
             font-size: var(--fs-lg-16);
             font-family: $body-font;
-            @include rt-trs(.3s);
+            @include rt-trs(.24s);
             padding: 0 18px;
             font-weight: 400;
             @include breakpoint(xl){
@@ -74,6 +74,7 @@
     margin-left: 8px;
     font-family: "flaticon";
     font-size: 12px;
+    @include rt-trs(.24s);
     @include breakpoint(md) {
         margin-left: 0;
         position: absolute;
@@ -303,3 +304,20 @@
 
 //experintam mobile menu
 // white menu css 
+@media (min-width: 992px) {
+    .white-menu {
+        .main-menu>ul>li>a{
+            color: var(--gray-400);
+        }
+        .main-menu>ul>li.current-menu-item>a {
+            color: #fff;
+        }
+        .main-menu>ul>li:hover>a{
+            color: #fff;
+            &:after{
+                color: #fff;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,44 @@
+.rt-single-banner {
+  position: relative;
+  z-index: 1;
+}
+
+.rt-banner-height {
+  height: 920px;
+}
+
+// banner seaarch
+.jobsearchBox {
+  padding: 12px;
+  border-radius: 8px;
+  height: 80px;
+  button {
+    height: 100%;
+  }
+  #{$all-text-inputs},
+  .form-control {
+    height: 100%;
+    color: var(--gray-10);
+    &:focus,
+    &:focus-visible {
+      border-color: transparent !important;
+    }
+  }
+}
+
+.banner-mockup {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -120px;
+  z-index: -1;
+}
+
+.banner-quciks-links{
+    a{
+        color: var(--gray-400);
+        &:hover{
+            color: var(--gray-10);
+        }
+    }
+}

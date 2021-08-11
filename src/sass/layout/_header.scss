@@ -1,5 +1,4 @@
 .site-header {
-    position: relative;
     .main-header {
         background-color: #fff;
         box-shadow:  inset 0px -1px 0px #EDEFF5;
@@ -48,10 +47,21 @@
             }
         }
     }
-    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl{
+   .navbar > .container-fluid{
         padding-left: 48px;
         padding-right: 48px;
     }
 }
 
 
+.header-transparent{
+    background: transparent;
+    .main-header{
+        background: transparent;
+        box-shadow: none;
+    }
+    .btn-outline-primary{
+        border-color:  rgba(255, 255, 255, 0.2);
+        color: #fff;
+    }
+}

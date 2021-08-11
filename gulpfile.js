@@ -8,7 +8,6 @@ const sourcemaps = require('gulp-sourcemaps');
 //const sass = require('gulp-sass');
 const sass = require('gulp-dart-sass');
 const del = require('del');
-const autoprefixer = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
 const imageminPngQuant = require('imagemin-pngquant');
 const imageminjpegCrompress = require('imagemin-jpeg-recompress');
@@ -18,6 +17,7 @@ const csscomb = require('gulp-csscomb');
 const browserSync = require('browser-sync').create();
 const prettyHtml = require('gulp-pretty-html');
 const nunjucksRender = require('gulp-nunjucks-render');
+const cssbeautify = require('gulp-cssbeautify');
 
 //path 
 const files = {
@@ -35,19 +35,7 @@ const files = {
     buildOutput:'build'
 };
 
-var autoprefixerOption = [
-    "last 2 version",
-    "> 1%",
-    "ie >= 9",
-    "ie_mob >= 10",
-    "ff >= 30",
-    "chrome >= 34",
-    "safari >= 7",
-    "opera >= 23",
-    "ios >= 7",
-    "android >= 4",
-    "bb >= 10"
-];
+
 
 function serve(done) {
     browserSync.init({
@@ -86,8 +74,11 @@ function sassCompile() {
         .pipe(plumberNotifier())
         .pipe(sourcemaps.init())
         .pipe(sass())
-        .pipe(autoprefixer(autoprefixerOption))
-        .pipe(csscomb())
+        .pipe(cssbeautify({
+            indent: '',
+            openbrace: 'separate-line',
+            autosemicolon: true
+        }))
         .pipe(sourcemaps.write('.'))
         .pipe(dest(files.output + "/" + 'assets/css'))
         .pipe(browserSync.stream())

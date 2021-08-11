@@ -63,5 +63,12 @@ h6,
     #{".bg-" + $color + "-" + $shade} {
       background-color: #{$value} !important;
     }
+    #{".hoverbg-" + $color + "-" + $shade} {
+      
+      &:hover{
+        background-color: #{$value} !important;
+      }
+    }
   }
 }
+

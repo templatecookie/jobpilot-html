@@ -2,10 +2,9 @@
 .rt-single-icon-box {
     display: flex;
     @include afterparent();
-    align-items: start;
     @include rt-trs(0.24s);
     .icon-thumb {
-      flex: 0 0 auto;
+      flex-shrink: 0!important;
       //height: 58px
       //margin-right: 30px
       img {
@@ -27,7 +26,7 @@
       }
     }
     .iconbox-content {
-      width: 100%;
+      flex-grow: 1!important;
       h4 {
         color: var(--gray-900);
         a {
@@ -42,7 +41,12 @@
       width: max-content;
       margin-left: auto;
       display: flex;
+      flex-grow: 0 !important;
       min-width: max-content;
+      &.grow-1{
+        flex-grow: 1 !important;
+        margin-right: 6%;
+      }
       >div{
         margin-right: 10px;
         &:last-child{

@@ -42,6 +42,7 @@
   },
   "dependencies": {
     "gulp-clean-css": "^4.3.0",
+    "gulp-cssbeautify": "^3.0.0",
     "gulp-dart-sass": "^1.0.2"
   }
 }

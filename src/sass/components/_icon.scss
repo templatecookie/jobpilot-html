@@ -1,0 +1,6 @@
+.icon-button{
+    @include iconbox(48px, 5px);
+    background-color: transparent;
+    font-size: 24px;
+    @include rt-trs(0.24s);
+  }

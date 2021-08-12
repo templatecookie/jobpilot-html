@@ -41,10 +41,12 @@
   height: 80px;
   @include breakpoint(md){
     height: auto;
-    //flex-direction: column;
   }
   button {
     height: 100%;
+    @include breakpoint(md){
+      margin-top: 10px;
+    }
   }
   #{$all-text-inputs},
   .form-control {

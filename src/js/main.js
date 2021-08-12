@@ -97,6 +97,15 @@
             return false;
         });
 
+        // counter active 
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+
+        if ( !elem.getClientRects().length ) {
+            return { top: 0, left: 0 };
+        }
 
  })(jQuery)
  

@@ -1,0 +1,21 @@
+.card{
+    &.counterbox{
+        border-color: transparent;
+        .card-body{
+            padding: 20px;
+           
+                .icon-72{
+                    background-color: var(--primary-50);
+                    color: var(--primary-500);
+                }
+            
+        }
+        &:hover{
+            border-color: var(--primary-500);
+            .icon-72{
+                background-color: var(--primary-500);
+                color: var(--primary-50);
+            }
+        }
+    }
+}

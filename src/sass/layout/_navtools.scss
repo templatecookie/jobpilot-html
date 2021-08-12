@@ -6,7 +6,7 @@
       display: flex;
       align-items: center;
       @include breakpoint(lg){
-        //display: none;
+        display: none;
       }
       > li {
         margin-right: 18px;

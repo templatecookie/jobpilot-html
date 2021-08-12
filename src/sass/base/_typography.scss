@@ -25,6 +25,30 @@ h6,
  
 }
 
+@media (max-width: 1199.98px){
+  @each $cheadingfont1 in $headingfontSize_lg {
+    $i: index($headingfontSize_lg, $cheadingfont1);
+    h#{$i} ,   .text-h#{$i}{
+      font-size: $cheadingfont1;
+      line-height: nth($headingLineheight_lg, $i);
+      
+    }
+   
+  }
+}
+
+@media (max-width: 767.98px){
+  @each $cheadingfont2 in $headingfontSize_xs {
+    $i: index($headingfontSize_xs, $cheadingfont2);
+    h#{$i} ,   .text-h#{$i}{
+      font-size: $cheadingfont2;
+      line-height: nth($headingLineheight_xs, $i);
+      
+    }
+   
+  }
+}
+
 
 @for $i from 4 through 9 {
   .ft-wt-#{$i} {

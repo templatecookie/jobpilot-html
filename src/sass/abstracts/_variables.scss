@@ -93,6 +93,12 @@ $headingfontSize:  72px 56px 48px 40px 32px 24px;
 $headingLineheight:  88px 64px 56px 48px 40px 32px;
 
 
+$headingfontSize_lg:  56px 48px 40px 32px 24px 16px;
+$headingLineheight_lg:  64px 46px 48px 40px 32px 20px;
+
+$headingfontSize_xs:  32px 28px 24px 20px 18px 16px;
+$headingLineheight_xs:  40px 36px 32px 28px 22px 20px;
+
 
 // button font size
 $button_font_size: 16px;
@@ -104,23 +110,3 @@ $button_font_family: $heading-font;
 
 
 
-// mobile menu settings 
-$mobile_menu_icon_color: #333;
-
-
-$mobile_menu_bg_color: #fff;
-$mobile_menu_sub_menu_bg_color: #fff;
-
-$mobile_menu_item_color: #333;
-$mobile_menu_submenu_item_color: #333;
-
-$mobile_menu_active_coor: red;
-
-$mobile_menu_item_hover_color: red;
-$mobile_menu_item_hover_bg_color: #fff;
-$mobile_menu_submenu_hover_item_color: red;
-$mobile_menu_submenu_hover_item_bg_color: #fff;
-// mobile menu bordr
-$mobile_menu_item_border_color: rgba(#ccc, 0.5);
-$mobile_menu_close_icon_color: #333;
-$mobile_menu_close_icon_hover_color: #758170;

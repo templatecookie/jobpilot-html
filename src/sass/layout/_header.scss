@@ -100,5 +100,11 @@
             padding-left: 15px;
             padding-right: 15px;
         }
+        @include breakpoint(lg){
+            max-width: 720px;
+        }
+        @include breakpoint(md){
+            max-width: 540px;
+        }
     }
 }

@@ -52,7 +52,7 @@
 
 /*change hover color*/
 .main-menu>ul>li>a{
-    line-height: 88px;
+    line-height: 104px;
     @include breakpoint(lg){
         line-height: 1.9;
     }
@@ -277,7 +277,7 @@
     display: none;
     padding-left: 15px;
     margin-bottom: 30px;
-    @include breakpoint(xl){
+    @include breakpoint(lg){
         display: block;
     }
 }

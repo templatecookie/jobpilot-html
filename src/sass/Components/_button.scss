@@ -12,6 +12,8 @@
   font-weight: 600;
   position: relative;
   z-index: 2;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   &.disabled,
   &:disabled {
     opacity: 1;

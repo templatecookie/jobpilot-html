@@ -6,6 +6,9 @@
     font-size: 14px;
     vertical-align: middle;
     margin-left: 15px;
+    @include breakpoint(xl){
+      margin-left: 5px;
+    }
   }
 }
 .dropdown-menu{

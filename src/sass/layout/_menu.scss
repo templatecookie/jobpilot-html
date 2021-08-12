@@ -7,12 +7,10 @@
     padding: 0;
     text-align: center;
     margin-right: -18px;
-    @include breakpoint(xl){
-        margin-right: -18px;
+    @include breakpoint(xxl){
+        margin-right: -14px;
     }
-    @include breakpoint(lg){
-        margin-right: -13px;
-    }
+    
     li {
         display: inline-block;
         position: relative;
@@ -27,11 +25,12 @@
             @include rt-trs(.24s);
             padding: 0 18px;
             font-weight: 400;
-            @include breakpoint(xl){
+            @include breakpoint(xxl){
                 padding: 0 14px;
             }
-            @include breakpoint(lg){
-                padding: 0 13px;
+            @include breakpoint(xl){
+                padding: 0 5px;
+                font-size: 15px;
             }
             &:hover{
                 text-decoration: none;
@@ -54,7 +53,7 @@
 /*change hover color*/
 .main-menu>ul>li>a{
     line-height: 88px;
-    @include breakpoint(md){
+    @include breakpoint(lg){
         line-height: 1.9;
     }
 }
@@ -228,7 +227,7 @@
     cursor: pointer;
     i {
         font-size: 23px;
-        color: var(--gray-900);
+        color: var(--gray-100);
     }
 }
 
@@ -241,7 +240,7 @@
         display: block;
         background: var(--gray-900);
         height: 1px;
-        width: 20px;
+        width: 25px;
         margin-bottom: 5px;
         transition: all 0.24s ease-in-out;
         &:first-child {

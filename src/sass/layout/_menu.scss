@@ -46,7 +46,7 @@
 }
 
 .main-menu>ul>li.current-menu-item>a {
-    color: var(--primary-600);
+    color: var(--primary-500);
 }
 
 
@@ -59,7 +59,7 @@
 }
 
 .main-menu>ul>li:hover>a {
-    color: var(--primary-600);
+    color: var(--primary-500);
 }
 
 
@@ -82,7 +82,7 @@
 }
 
 .main-menu>ul>li.menu-item-has-children:hover>a:after {
-    color: var(--primary-600);
+    color: var(--primary-500);
 }
 
 .main-menu>ul>li.menu-item-has-children.open>a:after {
@@ -158,7 +158,7 @@
 .main-menu>ul>li.menu-item-has-children>ul.sub-menu>li:hover>a,
 .main-menu ul ul>li:hover>a {
     padding-left: 25px;
-    color: var(--primary-600);
+    color: var(--primary-500);
     background: #fff;
 }
 
@@ -265,13 +265,21 @@
     @include hw(35px);
     border-radius: 50%;
     text-align: center;
-    background: var(--primary-600);
+    background: var(--primary-500);
     cursor: pointer;
     color: #fff;
 }
 
 .mobile-menu {
     display: none;
+}
+.mblbrand-logo{
+    display: none;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    @include breakpoint(xl){
+        display: block;
+    }
 }
 
 .rt-mobile-menu-overlay {
@@ -296,7 +304,7 @@
     @include hw(30px);
     right: 10px;
     font-size: 12px;
-    @include breakpoint(md) {
+    @include breakpoint(lg) {
         display: block;
     }
 }

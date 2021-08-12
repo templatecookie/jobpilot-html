@@ -17,8 +17,8 @@
     font-size: 16px;
   }
   .main-menu ul > li:hover > a {
-    background: $mobile_menu_item_hover_bg_color;
-    color: $mobile_menu_item_hover_color !important;
+    background: transparent;
+    color: var(--primary-500);
   }
   .main-menu > ul > li.menu-item-has-children > ul.sub-menu,
   .main-menu>ul>li.menu-item-has-children> .rt-mega-menu
@@ -27,7 +27,7 @@
     display: none;
     transition: none;
     position: static;
-    background: var(--mobile_menu_sub_menu_bg_color);
+    background: #fff;
     box-shadow: none;
     @include vis();
     border-top: 3px solid transparent;
@@ -37,7 +37,7 @@
 
   .main-menu > ul > li.menu-item-has-children > ul.sub-menu > li:hover > a,
   .main-menu ul ul > li:hover > a {
-    color: $mobile_menu_submenu_hover_item_color !important;
+    color: var(--primary-500) !important;
   }
 
   .main-menu ul ul {
@@ -48,7 +48,7 @@
     box-shadow: none;
     @include vis();
     margin: 0px;
-    background: var(--mobile_menu_sub_menu_bg_color);
+    background: #fff;
     border: none;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -57,7 +57,7 @@
   .main-menu > ul > li.menu-item-has-children > ul.sub-menu > li > a,
   .main-menu ul ul li a {
     display: block;
-    color: $mobile_menu_submenu_item_color;
+    color: var(--gray-900);
     text-transform: capitalize;
 
     font-size: 14px !important;
@@ -70,7 +70,7 @@
   }
   .main-menu > ul > li.menu-item-has-children > ul.sub-menu > li:hover > a,
   .main-menu ul ul > li:hover > a {
-    background: $mobile_menu_submenu_hover_item_bg_color;
+    background: transparent;
   }
 
   .main-menu > ul > li.menu-item-has-children > ul.sub-menu > li:hover > a {
@@ -91,7 +91,7 @@
     width: 320px;
     background-color: #fff;
     height: 100vh;
-    padding-top: 70px;
+    padding-top: 30px;
     padding-bottom: 35px;
 
     overflow-x: hidden;
@@ -109,7 +109,7 @@
     text-align: center;
   }
   .main-menu ul.show > li > a {
-    color: $mobile_menu_item_color;
+    color: var(--gray-900);
   }
 
   // menu border
@@ -117,10 +117,10 @@
     ul {
       li {
         a {
-          border-bottom: 1px solid $mobile_menu_item_border_color;
+          border-bottom: 1px solid var(--gray-50);
         }
         &:last-child a {
-          border-bottom: 1px solid $mobile_menu_item_border_color;
+          border-bottom: 1px solid var(--gray-50);
         }
       }
     }
@@ -130,7 +130,7 @@
   .main-menu ul ul li a,
   .main-menu > ul > li.menu-item-has-children > ul.sub-menu > li:last-child > a,
   .main-menu ul ul li:last-child > a {
-    border-bottom: 1px solid $mobile_menu_item_border_color !important;
+    border-bottom: 1px solid var(--gray-50) !important;
   }
 
   .main-menu > ul > li.menu-item-has-children > ul.sub-menu > li > a,

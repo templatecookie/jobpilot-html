@@ -3,7 +3,7 @@
     display: flex;
     @include afterparent();
     @include rt-trs(0.24s);
-    flex-wrap: wrap;
+    //flex-wrap: wrap;
     .icon-thumb {
       flex-shrink: 0!important; 
       //height: 58px

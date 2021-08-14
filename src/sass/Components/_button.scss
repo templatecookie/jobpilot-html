@@ -52,6 +52,13 @@
       order: 10;
     }
   }
+  &.d-block{
+    .button-content-wrapper {
+      .button-icon, .button-text{
+        flex-grow: 0 !important;
+      }
+    }
+  }
 }
 
 .plain-button {

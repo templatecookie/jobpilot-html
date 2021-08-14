@@ -44,6 +44,7 @@
   'components/banner',
   'components/tippyjs',
   'components/card',
+  'components/_catagory.scss',
   'components/counter';
 
 
@@ -59,20 +60,20 @@
 
 
 
-//   body {
-//     @include breakpoint(xxl) {
-//         background-color: gold;
-//     }
-//     @include breakpoint(xl) {
-//         background-color: purple;
-//     }
-//     @include breakpoint(lg) {
-//         background-color: red;
-//     }
-//     @include breakpoint(md) {
-//         background-color: yellow;
-//     }
-//     @include breakpoint(xs) {
-//         background-color: pink;
-//     }
-// }
+  body {
+    @include breakpoint(xxl) {
+        background-color: gold;
+    }
+    @include breakpoint(xl) {
+        background-color: purple;
+    }
+    @include breakpoint(lg) {
+        background-color: red;
+    }
+    @include breakpoint(md) {
+        background-color: yellow;
+    }
+    @include breakpoint(xs) {
+        background-color: pink;
+    }
+}

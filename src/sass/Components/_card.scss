@@ -103,10 +103,17 @@
       }
     }
     .info-tools{
-      display: inline-block;
+      display: inline-flex;
       padding-right: 10px;
       position: relative;
-      
+      i{
+        font-size: 22px ;
+        margin-right: 4.75px;
+        color: var(--gray-200);
+      }
+      svg{
+        margin-right: 4.75px;
+      }
       &.has-dot{
         padding-left: 10px;
        &::after{

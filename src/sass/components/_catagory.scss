@@ -1,0 +1,28 @@
+.card{
+    &.catagory-box{
+        .card-body{
+           
+                .icon-72{
+                    background-color: var(--primary-50);
+                    color: var(--primary-500);
+                }
+                .iconbox-content{
+                    a{
+                        color: var(--gray-900);
+                    }
+                }
+            
+        }
+        &:hover{
+            .icon-72{
+                background-color: var(--primary-500);
+                color: var(--primary-50);
+            }
+            .iconbox-content{
+                a{
+                    color: var(--primary-500);
+                }
+            }
+        }
+    }
+}

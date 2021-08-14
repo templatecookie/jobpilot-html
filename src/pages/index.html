@@ -4,11 +4,11 @@
 
 {% include "../templates/layout/header-footer/homepage1-header.html" %}
 {% include "../templates/layout/banner/home1-banner.html" %}
-
-<section class="counter-area">
+<!-- Counter Start -->
+<section class="counter-area rt-pt-40">
     <div class="container">
         <div class="row">
-            <div class="col-xl-3 col-md-4 col-sm-6 mx-auto mb-30">
+            <div class="col-xl-3 col-md-4 col-sm-6 mx-auto rt-mb-30">
                 <div class="card jobcardStyle1 counterbox">
                     <div class="card-body">
                       <div class="rt-single-icon-box">
@@ -25,7 +25,7 @@
                     </div>
                   </div>
             </div>
-            <div class="col-xl-3 col-md-4 col-sm-6 mx-auto mb-30">
+            <div class="col-xl-3 col-md-4 col-sm-6 mx-auto rt-mb-30">
                 <div class="card jobcardStyle1 counterbox">
                     <div class="card-body">
                       <div class="rt-single-icon-box">
@@ -42,7 +42,7 @@
                     </div>
                   </div>
             </div>
-            <div class="col-xl-3 col-md-4 col-sm-6 mx-auto mb-30">
+            <div class="col-xl-3 col-md-4 col-sm-6 mx-auto rt-mb-30">
                 <div class="card jobcardStyle1 counterbox">
                     <div class="card-body">
                       <div class="rt-single-icon-box">
@@ -59,7 +59,7 @@
                     </div>
                   </div>
             </div>
-            <div class="col-xl-3 col-md-4 col-sm-6 mx-auto mb-30">
+            <div class="col-xl-3 col-md-4 col-sm-6 mx-auto rt-mb-30">
                 <div class="card jobcardStyle1 counterbox">
                     <div class="card-body">
                       <div class="rt-single-icon-box">
@@ -80,6 +80,96 @@
     </div>
 </section>
 
+<!-- feature Job Start -->
+<section class="featurejob-area rt-pt-40 rt-pt-md-0">
+  <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex flex-wrap">
+            <div class="flex-grow-1"> <h4>Featured job</h4></div>
+            <div class="flex-gorw">
+              <button class="btn btn-outline-primary">
+                <div class="button-content-wrapper ">
+                  <span class="button-icon align-icon-right">
+                    <i class="ph-arrow-right"></i>                     
+                  </span>
+                  <span class="button-text">
+                    View All
+                    </span>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rt-spacer-40 rt-spacer-md-20"></div>
+      <div class="row">
+          <div class="col-12">
+            {% include "../templates/components/job/feature-job.html" %}
+          </div>
+      </div>
+  </div>
+</section>
+<!-- catagory  Start -->
+<section class="catagory-area rt-pt-80 rt-pt-md-40">
+  <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex flex-wrap">
+            <div class="flex-grow-1"> <h4>Popular category</h4></div>
+            <div class="flex-gorw">
+              <button class="btn btn-outline-primary">
+                <div class="button-content-wrapper ">
+                  <span class="button-icon align-icon-right">
+                    <i class="ph-arrow-right"></i>                     
+                  </span>
+                  <span class="button-text">
+                    View All
+                    </span>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rt-spacer-40 rt-spacer-md-20"></div>
+      <div class="row">
+        {% include "../templates/components/category/populary-box-cata.html" %}
+      </div>
+  </div>
+</section>
+<!-- catagory  Start -->
+<section class="catagory-area rt-pt-80 rt-pt-md-40">
+  <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex flex-wrap">
+            <div class="flex-grow-1"> <h4>Featured companies</h4></div>
+            <div class="flex-gorw">
+              <button class="btn btn-outline-primary">
+                <div class="button-content-wrapper ">
+                  <span class="button-icon align-icon-right">
+                    <i class="ph-arrow-right"></i>                     
+                  </span>
+                  <span class="button-text">
+                    View All
+                    </span>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rt-spacer-40 rt-spacer-md-20"></div>
+      <div class="row">
+        <div class="col-12">
+          {% include "../templates/components/job/feature-company.html" %}
+        </div>
+      </div>
+  </div>
+</section>
+<div class="rt-spacer-100"></div>
+<div class="rt-spacer-100"></div>
 
 {% include "../templates/layout/header-footer/footer-three.html" %}
 

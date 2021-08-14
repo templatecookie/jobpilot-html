@@ -4,3 +4,10 @@
     font-size: 24px;
     @include rt-trs(0.24s);
   }
+
+.icon-72{
+  @include iconbox(72px, 8px);
+  background-color: transparent;
+  font-size: 40px;
+  @include rt-trs(0.24s);
+}

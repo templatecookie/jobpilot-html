@@ -1,0 +1,94 @@
+.rt-single-banner {
+  position: relative;
+  z-index: 1;
+  @include breakpoint(lg){
+    padding-bottom: 150px;
+  }
+  @include breakpoint(md){
+    padding-bottom: 100px;
+  }
+ 
+}
+
+.banner-content{
+  padding-top: 100px;
+  @include breakpoint(xl){
+    padding-top: 0px;
+  }
+  @include breakpoint(lg){
+    max-width: 727px;
+    padding-top: 150px;
+  }
+  @include breakpoint(md){
+    padding-top: 100px;
+  }
+}
+
+.rt-banner-height {
+  height: 920px;
+  @include breakpoint(xl){
+    height: 800px;
+  }
+  @include breakpoint(lg){
+    height: auto;
+  }
+}
+
+// banner seaarch
+.jobsearchBox {
+  padding: 12px;
+  border-radius: 8px;
+  height: 80px;
+  @include breakpoint(md){
+    height: auto;
+  }
+  button {
+    height: 100%;
+    @include breakpoint(md){
+      margin-top: 10px;
+    }
+  }
+  #{$all-text-inputs},
+  .form-control {
+    height: 100%;
+    color: var(--gray-10);
+    &:focus,
+    &:focus-visible {
+      border-color: transparent !important;
+    }
+  }
+}
+
+.banner-mockup {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -120px;
+  z-index: -1;
+  max-width: 50%;
+  margin-top: 78px;
+  @include breakpoint(xxl){
+    max-width: 48%;
+    right: 0px;
+  }
+  @include breakpoint(xl){
+    margin-top: 0px;
+  }
+  @include breakpoint(lg){
+    position: static;
+    margin-top: 30px;
+    transform: none;
+  }
+  @include breakpoint(md){
+    display: none;
+  }
+}
+
+.banner-quciks-links{
+    a{
+        color: var(--gray-400);
+        &:hover{
+            color: var(--gray-10);
+        }
+    }
+}

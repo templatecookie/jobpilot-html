@@ -17,6 +17,9 @@
   .footer-logo {
     margin-bottom: 20px;
     display: block;
+    @include breakpoint(lg){
+      max-width: 150px;
+    }
   }
   &.no-gap {
     margin-top: 0px;

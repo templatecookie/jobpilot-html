@@ -13,7 +13,8 @@
 
 // 2. Vendores
 @import 
-'vendors/bourbon/bourbon';
+'vendors/bourbon/bourbon',
+'vendors/select2';
 
 // 3. Base stuff
 @import
@@ -29,7 +30,8 @@
   'layout/menu',
   'layout/iconbox',
   'layout/mega-menu',
-  'layout/navtools';
+  'layout/navtools',
+  'layout/menu-responsive';
 
 
 // 5. Components
@@ -38,8 +40,12 @@
   'components/bs-dropdown',
   'components/badge',
   'components/icon',
+  'components/form',
+  'components/banner',
   'components/tippyjs',
-  'components/card';
+  'components/card',
+  'components/_catagory.scss',
+  'components/counter';
 
 
 // 6. Page-specific styles
@@ -51,3 +57,24 @@
 // 7. Themes
 @import
   'themes/default';
+
+
+
+
+  body {
+    @include breakpoint(xxl) {
+        background-color: gold;
+    }
+    @include breakpoint(xl) {
+        background-color: purple;
+    }
+    @include breakpoint(lg) {
+        background-color: red;
+    }
+    @include breakpoint(md) {
+        background-color: yellow;
+    }
+    @include breakpoint(xs) {
+        background-color: pink;
+    }
+}

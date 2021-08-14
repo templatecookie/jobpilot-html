@@ -1,0 +1,13 @@
+// job feature carsole btn 
+.carosle-button{
+    button, .btn {
+        height: 48px;
+        width: 48px;
+        text-align: center;
+        padding: 0px;
+        margin-right: 10px;
+        &:last-child{
+            margin-right: 0px;
+        }
+    }
+}

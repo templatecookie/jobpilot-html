@@ -3,12 +3,14 @@
     display: flex;
     @include afterparent();
     @include rt-trs(0.24s);
+    //flex-wrap: wrap;
     .icon-thumb {
-      flex-shrink: 0!important;
+      flex-shrink: 0!important; 
       //height: 58px
       //margin-right: 30px
       img {
         @include rt-trs(0.24s);
+      
       }
     }
     &.icon-center {
@@ -39,7 +41,10 @@
     }
     .iconbox-extra{
       width: max-content;
-      margin-left: auto;
+     // margin-left: auto;
+     @include breakpoint(lg){
+       margin-top: 15px;
+     }
       display: flex;
       flex-grow: 0 !important;
       min-width: max-content;

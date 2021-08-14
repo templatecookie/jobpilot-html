@@ -6,18 +6,18 @@ $body-font: "Inter", sans-serif !default;
 
 $colors: (
   gray: (
-    900: hsla(225, 34%, 15%, 1),
-    800: hsla(225, 22%, 23%, 1),
-    700: hsla(225, 16%, 33%, 1),
-    600: hsla(225, 12%, 44%, 1),
-    500: hsla(225, 12%, 52%, 1),
-    400: hsla(225, 14%, 63%, 1),
-    300: hsla(225, 14%, 72%, 1),
-    200: hsla(225, 17%, 81%, 1),
-    100: hsla(225, 18%, 88%, 1),
-    50: hsla(225, 26%, 95%, 1),
-    20: hsla(225, 60%, 98%, 1),
-    10: hsla(0, 0%, 100%, 1),
+    900: #191F33,
+    800: #2E3447,
+    700: #464D61,
+    600: #636A80,
+    500: #767E94,
+    400: #939AAD,
+    300: #AEB3C2,
+    200: #C5C9D6,
+    100: #DADDE5,
+    50: #EDEFF5,
+    20: #F5F7FC,
+    10: #fff,
   ),
   primary: (
     900: hsla(216, 100%, 20%, 1),
@@ -93,6 +93,12 @@ $headingfontSize:  72px 56px 48px 40px 32px 24px;
 $headingLineheight:  88px 64px 56px 48px 40px 32px;
 
 
+$headingfontSize_lg:  56px 48px 40px 32px 24px 16px;
+$headingLineheight_lg:  64px 46px 48px 40px 32px 20px;
+
+$headingfontSize_xs:  32px 28px 24px 20px 18px 16px;
+$headingLineheight_xs:  40px 36px 32px 28px 22px 20px;
+
 
 // button font size
 $button_font_size: 16px;
@@ -101,3 +107,6 @@ $buton_border_radius: 4px;
 $button_padding: 12px 24px 12px 24px;
 $button_font_weight: 600;
 $button_font_family: $heading-font;
+
+
+

@@ -4,10 +4,15 @@
   background-color: var(--gray-10);
   box-shadow: 0px 12px 48px rgba(0, 44, 109, 0);
   transition: all 0.24s ease-in-out;
+  
 
   .card-body {
     padding: 32px;
+    @include breakpoint(lg){
+      padding: 25px;
+    }
   }
+ 
   &:hover {
     box-shadow: 0px 12px 48px rgba(0, 44, 109, 0.1);
     border-color: var(--primary-500);
@@ -98,10 +103,17 @@
       }
     }
     .info-tools{
-      display: inline-block;
+      display: inline-flex;
       padding-right: 10px;
       position: relative;
-      
+      i{
+        font-size: 22px ;
+        margin-right: 4.75px;
+        color: var(--gray-200);
+      }
+      svg{
+        margin-right: 4.75px;
+      }
       &.has-dot{
         padding-left: 10px;
        &::after{

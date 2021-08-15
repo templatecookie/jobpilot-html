@@ -396,3 +396,15 @@ blockquote {
   line-height: 55px;
   text-align: center;
 }
+.slick-btn-gorup{
+  .btn{
+    position: absolute;
+    left: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .slicknext2{
+    left: auto;
+    right: -100px;
+  }
+}

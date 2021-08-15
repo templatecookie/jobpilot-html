@@ -1,0 +1,22 @@
+// filter list 
+.filter-list{
+    @extend .rt-list;
+    display: flex;
+    li{
+        display: inline-flex;
+        color: var(--gray-500);
+        font-size: 16px;
+        line-height: 24px;
+        padding: 12px;
+        @include afterparent();
+        box-shadow: inset 0px -2px 0px transparent;
+        cursor: pointer;
+        
+        &:last-child{
+            padding-right: 0px;
+        }
+        &.active{
+            box-shadow: inset 0px -2px 0px #0066FF;
+        }
+    }
+}

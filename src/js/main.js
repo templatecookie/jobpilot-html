@@ -211,7 +211,26 @@
 });
 
 
-
+// filltering 
+$('.grid').imagesLoaded(function () {
+  var $grid = $('.grid').isotope({
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    masonry: {
+      // use outer width of grid-sizer for columnWidth
+      columnWidth: 1
+    }
+  });
+});
+$('.filter-list').on('click', 'li', function () {
+  $('.filter-list li').removeClass('active');
+  $(this).addClass('active');
+  var filterValue = $(this).attr('data-filter');
+  $('.grid').isotope({
+    filter: filterValue
+  });
+  $(window).trigger('resize');
+});
 
 
 

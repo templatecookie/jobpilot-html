@@ -9,6 +9,7 @@
   }
   .floting-img{
     position: absolute;
+    z-index: -1;
     &.shape-img{
       left: 0;
       top: 0;
@@ -49,7 +50,7 @@
   }
 }
 .rt-banner-height2 {
-  height: 980px;
+  height: 1080px;
   @include breakpoint(xl){
     height: 800px;
   }
@@ -75,12 +76,23 @@
   #{$all-text-inputs},
   .form-control {
     height: 100%;
-    color: var(--gray-10);
+    color: var(--gray-700);
     &:focus,
     &:focus-visible {
       border-color: transparent !important;
     }
   }
+
+}
+
+.banner-quciks-links{
+  a{
+      color: var(--gray-600);
+      &:hover{
+          color: var(--primary-500);
+      }
+  }
+ 
 }
 
 .banner-mockup {
@@ -108,11 +120,16 @@
   }
 }
 
-.banner-quciks-links{
-    a{
-        color: var(--gray-400);
-        &:hover{
-            color: var(--gray-10);
-        }
-    }
+
+.home-two{
+  .banner-content{
+    padding-left: 80px;
+  }
+  .mx-727{
+    max-width: 727px;
+    
+  }
+  .jobsearchBox{
+    max-width: 745px;
+  }
 }

@@ -201,5 +201,22 @@
       ],
     });
   }
+  // scroll up js 
+  $.scrollUp({
+    scrollText: '<i class="ph-caret-up-light"></i>',
+    scrollSpeed: 1500,
+    animation: 'slide',
+    easingType: 'easeInQuint'
+
+});
+
+
+
+
+
+
+
+
+
 
 })(jQuery);

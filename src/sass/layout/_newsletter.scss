@@ -1,0 +1,21 @@
+.subscribe-box{
+    padding: {
+        left: 80px;
+    }
+    .left-content{
+        max-width: 515px;
+        @include breakpoint(lg){
+            br{
+                display: none;
+            }
+        }
+    }
+    
+}
+
+.subscribe-inputbox-1{
+    
+    button{
+        height: 48px;
+    }
+}

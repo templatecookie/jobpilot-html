@@ -125,6 +125,9 @@ blockquote {
   .rt-ml-#{$i* 1} {
     margin-left: $i * 1px;
   }
+  .rt-rounded-#{$i* 1}{
+    border-radius: $i * 1px;
+  }
 }
 
 @for $i from 0 through 10 {
@@ -369,3 +372,20 @@ blockquote {
       }
   }
 }
+
+// scroll up css 
+#scrollUp{
+  right: 30px;
+  bottom: 30px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background: var(--gray-900);
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  line-height: 55px;
+  text-align: center;
+}
+

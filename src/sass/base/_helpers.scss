@@ -67,6 +67,7 @@ blockquote {
 .position-parent {
   position: relative;
   z-index: 1;
+  
 }
 
 .img-fit {
@@ -181,6 +182,9 @@ blockquote {
       height: $i * 10px;
     }
   }
+}
+.ml-auto{
+  margin-left: auto;
 }
 
 // video-btn-center 

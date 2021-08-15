@@ -56,7 +56,7 @@ h6,
   }
 }
 
-@for $i from 11 through 30 {
+@for $i from 11 through 40 {
   .f-size-#{$i} {
     font-size: $i * 1px !important;
   }

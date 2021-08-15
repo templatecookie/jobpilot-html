@@ -1,0 +1,18 @@
+// banner
+.dark {
+  .jobsearchBox {
+    #{$all-text-inputs},
+    .form-control {
+      color: var(--gray-10);
+    }
+  }
+
+  .banner-quciks-links {
+    a {
+      color: var(--gray-400);
+      &:hover {
+        color: var(--gray-10);
+      }
+    }
+  }
+}

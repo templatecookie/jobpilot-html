@@ -1,0 +1,876 @@
+{% extends "layout/layout.html" %}
+
+{% block content %}
+
+{% include "../templates/layout/header-footer/header-normal.html" %}
+{% include "../templates/layout/banner/home2-banner.html" %}
+<!-- Counter Start -->
+<div class="counter-area rt-pt-40">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 col-md-4 col-sm-6 mx-auto rt-mb-30">
+                <div class="card jobcardStyle1 counterbox">
+                    <div class="card-body">
+                      <div class="rt-single-icon-box">
+                        <div class="icon-thumb">
+                            <div class="icon-72">
+                                <i class="ph-suitcase-simple"></i>
+                            </div>
+                        </div>
+                        <div class="iconbox-content">
+                          <div class="f-size-24 ft-wt-5"><span class="counter">1,75,324</span></div>
+                          <span class="text-gray-500 f-size-16">Live Job</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6 mx-auto rt-mb-30">
+                <div class="card jobcardStyle1 counterbox">
+                    <div class="card-body">
+                      <div class="rt-single-icon-box">
+                        <div class="icon-thumb">
+                            <div class="icon-72">
+                                <i class="ph-buildings"></i>
+                            </div>
+                        </div>
+                        <div class="iconbox-content">
+                          <div class="f-size-24 ft-wt-5"><span class="counter">97,354</span></div>
+                          <span class="text-gray-500 f-size-16">Companies</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6 mx-auto rt-mb-30">
+                <div class="card jobcardStyle1 counterbox">
+                    <div class="card-body">
+                      <div class="rt-single-icon-box">
+                        <div class="icon-thumb">
+                            <div class="icon-72">
+                                <i class="ph-users"></i>
+                            </div>
+                        </div>
+                        <div class="iconbox-content">
+                          <div class="f-size-24 ft-wt-5"><span class="counter">38,47,154</span></div>
+                          <span class="text-gray-500 f-size-16">Candidates</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-6 mx-auto rt-mb-30">
+                <div class="card jobcardStyle1 counterbox">
+                    <div class="card-body">
+                      <div class="rt-single-icon-box">
+                        <div class="icon-thumb">
+                            <div class="icon-72">
+                                <i class="ph-suitcase-simple"></i>
+                            </div>
+                        </div>
+                        <div class="iconbox-content">
+                          <div class="f-size-24 ft-wt-5"><span class="counter">7,532</span></div>
+                          <span class="text-gray-500 f-size-16">New Jobs</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- feature Job Start -->
+<section class="featurejob-area rt-pt-40 rt-pt-md-0">
+  <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex flex-wrap">
+            <div class="flex-grow-1"> <h4>Featured job</h4></div>
+            <div class="flex-gorw">
+              <button class="btn btn-outline-primary">
+                <span class="button-content-wrapper ">
+                  <span class="button-icon align-icon-right">
+                    <i class="ph-arrow-right"></i>                     
+                  </span>
+                  <span class="button-text">
+                    View All
+                    </span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rt-spacer-40 rt-spacer-md-20"></div>
+      <div class="row">
+          <div class="col-12">
+            {% include "../templates/components/job/feature-job.html" %}
+          </div>
+      </div>
+  </div>
+</section>
+<!-- catagory  Start -->
+<section class="catagory-area rt-pt-80 rt-pt-md-40">
+  <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex flex-wrap">
+            <div class="flex-grow-1"> <h4>Popular category</h4></div>
+            <div class="flex-gorw">
+              <button class="btn btn-outline-primary">
+                <span class="button-content-wrapper ">
+                  <span class="button-icon align-icon-right">
+                    <i class="ph-arrow-right"></i>                     
+                  </span>
+                  <span class="button-text">
+                    View All
+                    </span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rt-spacer-40 rt-spacer-md-20"></div>
+      <div class="row">
+        {% include "../templates/components/category/populary-box-cata.html" %}
+      </div>
+  </div>
+</section>
+<!-- Featured Company  Start -->
+<section class="catagory-area rt-pt-80 rt-pt-md-40">
+  <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex flex-wrap">
+            <div class="flex-grow-1"> <h4>Featured companies</h4></div>
+            <div class="flex-gorw">
+              <button class="btn btn-outline-primary">
+                <span class="button-content-wrapper ">
+                  <span class="button-icon align-icon-right">
+                    <i class="ph-arrow-right"></i>                     
+                  </span>
+                  <span class="button-text">
+                    View All
+                    </span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rt-spacer-40 rt-spacer-md-20"></div>
+      <div class="row">
+        <div class="col-12">
+          {% include "../templates/components/job/feature-company.html" %}
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- Newest Job  Start -->
+<section class="Newestjob-area rt-pt-80 rt-pt-md-40 rt-mb-90 rt-mb-md-40">
+  <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex flex-wrap">
+            <div class="flex-grow-1"> <h4>Newest Job</h4></div>
+            <div class="flex-gorw-0 carosle-button">
+              <button class="btn btn-primary-50 slickprev">                       
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 12H5" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 5L5 12L12 19" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                  
+              </button>
+              <button class="btn btn-primary-50 slicknext">                       
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 12H19" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 5L19 12L12 19" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                                   
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rt-spacer-40 rt-spacer-md-20"></div>
+      <div class="row">
+        <div class="col-12">
+          <div class="newestjob_active slick-bullet deafult_style_dot">
+            <div class="single-item">
+              <div class="card jobcardStyle1">
+                <div class="card-body">
+                  <div class="rt-single-icon-box">
+                    <div class="icon-thumb">
+                        <img src="assets/images/icon/logo-redit-xs.png" alt="" draggable="false">
+                    </div>
+                    <div class="iconbox-content">
+                      <div class="job-mini-title"><a href="#">Reddit</a></div>
+                      <span class="loacton text-gray-400 d-inline-flex ">
+                        <i class="ph-map-pin"></i>             
+                        United States
+                      </span>
+                    </div>
+                    <div class="iconbox-extra">
+                        <button class="hoverbg-primary-50 text-primary-500 plain-button icon-button ">
+                            <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 19L8 14L1 19V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H13C13.5304 1 14.0391 1.21071 14.4142 1.58579C14.7893 1.96086 15 2.46957 15 3V19Z" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </button>
+                    </div>
+                  </div>
+                  <div class="post-info">
+                   <div  class="post-main-title"> <a href="#">Marketing Officer</a></div>
+                    <div class="body-font-4 text-gray-600">
+                      <span class="info-tools">Full-Time</span>
+                      <span class="info-tools has-dot">$50k-80k/month</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-item">
+              <div class="card jobcardStyle1">
+                <div class="card-body">
+                  <div class="rt-single-icon-box">
+                    <div class="icon-thumb">
+                        <img src="assets/images/icon/logo-twitter-xs.png" alt="" draggable="false">
+                    </div>
+                    <div class="iconbox-content">
+                      <div class="job-mini-title"><a href="#">Twitter</a></div>
+                      <span class="loacton text-gray-400 d-inline-flex ">
+                        <i class="ph-map-pin"></i>             
+                        Canada
+                      </span>
+                    </div>
+                    <div class="iconbox-extra">
+                        <button class="hoverbg-primary-50 text-primary-500 plain-button icon-button ">
+                            <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 19L8 14L1 19V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H13C13.5304 1 14.0391 1.21071 14.4142 1.58579C14.7893 1.96086 15 2.46957 15 3V19Z" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </button>
+                    </div>
+                  </div>
+                  <div class="post-info">
+                   <div  class="post-main-title"> <a href="#">Senior UX Designer</a></div>
+                    <div class="body-font-4 text-gray-600">
+                      <span class="info-tools">Full-Time</span>
+                      <span class="info-tools has-dot">$50k-80k/month</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-item">
+              <div class="card jobcardStyle1">
+                <div class="card-body">
+                  <div class="rt-single-icon-box">
+                    <div class="icon-thumb">
+                        <img src="assets/images/icon/logo-up-xs.png" alt="" draggable="false">
+                    </div>
+                    <div class="iconbox-content">
+                      <div class="job-mini-title"><a href="#">Twitter</a></div>
+                      <span class="loacton text-gray-400 d-inline-flex ">
+                        <i class="ph-map-pin"></i>             
+                        United Kingdom 
+                      </span>
+                    </div>
+                    <div class="iconbox-extra">
+                        <button class="hoverbg-primary-50 text-primary-500 plain-button icon-button ">
+                            <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 19L8 14L1 19V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H13C13.5304 1 14.0391 1.21071 14.4142 1.58579C14.7893 1.96086 15 2.46957 15 3V19Z" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </button>
+                    </div>
+                  </div>
+                  <div class="post-info">
+                   <div  class="post-main-title"> <a href="#">Marketing Manager</a></div>
+                    <div class="body-font-4 text-gray-600">
+                      <span class="info-tools">Full-Time</span>
+                      <span class="info-tools has-dot">$50k-80k/month</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-item">
+              <div class="card jobcardStyle1">
+                <div class="card-body">
+                  <div class="rt-single-icon-box">
+                    <div class="icon-thumb">
+                        <img src="assets/images/icon/logo-redit-xs.png" alt="" draggable="false">
+                    </div>
+                    <div class="iconbox-content">
+                      <div class="job-mini-title"><a href="#">Reddit</a></div>
+                      <span class="loacton text-gray-400 d-inline-flex ">
+                        <i class="ph-map-pin"></i>             
+                        United States
+                      </span>
+                    </div>
+                    <div class="iconbox-extra">
+                        <button class="hoverbg-primary-50 text-primary-500 plain-button icon-button ">
+                            <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 19L8 14L1 19V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H13C13.5304 1 14.0391 1.21071 14.4142 1.58579C14.7893 1.96086 15 2.46957 15 3V19Z" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </button>
+                    </div>
+                  </div>
+                  <div class="post-info">
+                   <div  class="post-main-title"> <a href="#">Marketing Officer</a></div>
+                    <div class="body-font-4 text-gray-600">
+                      <span class="info-tools">Full-Time</span>
+                      <span class="info-tools has-dot">$50k-80k/month</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-item">
+              <div class="card jobcardStyle1">
+                <div class="card-body">
+                  <div class="rt-single-icon-box">
+                    <div class="icon-thumb">
+                        <img src="assets/images/icon/logo-twitter-xs.png" alt="" draggable="false">
+                    </div>
+                    <div class="iconbox-content">
+                      <div class="job-mini-title"><a href="#">Twitter</a></div>
+                      <span class="loacton text-gray-400 d-inline-flex ">
+                        <i class="ph-map-pin"></i>             
+                        Canada
+                      </span>
+                    </div>
+                    <div class="iconbox-extra">
+                        <button class="hoverbg-primary-50 text-primary-500 plain-button icon-button ">
+                            <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 19L8 14L1 19V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H13C13.5304 1 14.0391 1.21071 14.4142 1.58579C14.7893 1.96086 15 2.46957 15 3V19Z" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </button>
+                    </div>
+                  </div>
+                  <div class="post-info">
+                   <div  class="post-main-title"> <a href="#">Senior UX Designer</a></div>
+                    <div class="body-font-4 text-gray-600">
+                      <span class="info-tools">Full-Time</span>
+                      <span class="info-tools has-dot">$50k-80k/month</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-item">
+              <div class="card jobcardStyle1">
+                <div class="card-body">
+                  <div class="rt-single-icon-box">
+                    <div class="icon-thumb">
+                        <img src="assets/images/icon/logo-up-xs.png" alt="" draggable="false">
+                    </div>
+                    <div class="iconbox-content">
+                      <div class="job-mini-title"><a href="#">Twitter</a></div>
+                      <span class="loacton text-gray-400 d-inline-flex ">
+                        <i class="ph-map-pin"></i>             
+                        United Kingdom 
+                      </span>
+                    </div>
+                    <div class="iconbox-extra">
+                        <button class="hoverbg-primary-50 text-primary-500 plain-button icon-button ">
+                            <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 19L8 14L1 19V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H13C13.5304 1 14.0391 1.21071 14.4142 1.58579C14.7893 1.96086 15 2.46957 15 3V19Z" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </button>
+                    </div>
+                  </div>
+                  <div class="post-info">
+                   <div  class="post-main-title"> <a href="#">Marketing Manager</a></div>
+                    <div class="body-font-4 text-gray-600">
+                      <span class="info-tools">Full-Time</span>
+                      <span class="info-tools has-dot">$50k-80k/month</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- Testimonail Start -->
+<section class="testimoinals-area  bg-gray-20">
+  <div class="rt-spacer-100"></div>
+  <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex flex-wrap">
+            <div class="flex-grow-1"> <h4>What our customer says!</h4></div>
+            <div class="flex-gorw-0 carosle-button">
+              <button class="btn btn-light slickprev2">                       
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 12H5" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 5L5 12L12 19" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                  
+              </button>
+              <button class="btn btn-light slicknext2">                       
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 12H19" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 5L19 12L12 19" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                                   
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rt-spacer-40 rt-spacer-md-20"></div>
+      <div class="row">
+        <div class="col-12">
+          <div class="testimonail_active slick-bullet deafult_style_dot">
+            <div class="single-item">
+              <div class="testimonals-box">
+                <div class="text-primary-500 body-font-2 rt-mb-10">Wow, Great Services</div>
+                <div class="text-gray-600 body-font-3">
+                  “Ut ullamcorper hendrerit tempor. Aliquam in rutrum dui. Maecenas ac placerat metus, in faucibus est.”
+                </div>
+                <div class="rt-single-icon-box">
+                  <div class="icon-thumb rt-mr-12">
+                    <div class="userimage">
+                      <img src="assets/images/all-img/t1.png" alt="" draggable="false">
+                    </div>
+                  </div>
+                  <div class="iconbox-content">
+                    <div class="body-font-3">Robert Fox</div>
+                    <div class="body-font-4 text-gray-400">UI/UX Designer</div>
+                  </div>
+                  <div class="iconbox-extra">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M16 28C16 30.1217 15.1571 32.1566 13.6569 33.6569C12.1566 35.1571 10.1217 36 8 36C5.87827 36 3.84344 35.1571 2.34315 33.6569C0.842854 32.1566 0 30.1217 0 28C0 23.58 8 0 8 0H12L8 20C10.1217 20 12.1566 20.8429 13.6569 22.3431C15.1571 23.8434 16 25.8783 16 28ZM36 28C36 30.1217 35.1571 32.1566 33.6569 33.6569C32.1566 35.1571 30.1217 36 28 36C25.8783 36 23.8434 35.1571 22.3431 33.6569C20.8429 32.1566 20 30.1217 20 28C20 23.58 28 0 28 0H32L28 20C30.1217 20 32.1566 20.8429 33.6569 22.3431C35.1571 23.8434 36 25.8783 36 28Z" fill="#DADDE6"/>
+                      </svg>                      
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-item">
+              <div class="testimonals-box">
+                <div class="text-primary-500 body-font-2 rt-mb-10">Awesome Services</div>
+                <div class="text-gray-600 body-font-3">
+                  “Mauris eget lorem odio. Mauris convallis justo molestie metus aliquam lacinia. Suspendisse ut dui vulputate augue condimentum ornare. Morbi vitae tristique ante”
+                </div>
+                <div class="rt-single-icon-box">
+                  <div class="icon-thumb rt-mr-12">
+                    <div class="userimage">
+                      <img src="assets/images/all-img/t2.png" alt="" draggable="false">
+                    </div>
+                  </div>
+                  <div class="iconbox-content">
+                    <div class="body-font-3">Bessie Cooper</div>
+                    <div class="body-font-4 text-gray-400">Creative Director</div>
+                  </div>
+                  <div class="iconbox-extra">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M16 28C16 30.1217 15.1571 32.1566 13.6569 33.6569C12.1566 35.1571 10.1217 36 8 36C5.87827 36 3.84344 35.1571 2.34315 33.6569C0.842854 32.1566 0 30.1217 0 28C0 23.58 8 0 8 0H12L8 20C10.1217 20 12.1566 20.8429 13.6569 22.3431C15.1571 23.8434 16 25.8783 16 28ZM36 28C36 30.1217 35.1571 32.1566 33.6569 33.6569C32.1566 35.1571 30.1217 36 28 36C25.8783 36 23.8434 35.1571 22.3431 33.6569C20.8429 32.1566 20 30.1217 20 28C20 23.58 28 0 28 0H32L28 20C30.1217 20 32.1566 20.8429 33.6569 22.3431C35.1571 23.8434 36 25.8783 36 28Z" fill="#DADDE6"/>
+                      </svg>                      
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-item">
+              <div class="testimonals-box">
+                <div class="text-primary-500 body-font-2 rt-mb-10">Excellent</div>
+                <div class="text-gray-600 body-font-3">
+                  “Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse et magna quis nibh accumsan venenatis sit amet id orci. Duis vestibulum bibendum dapibus.”
+                </div>
+                <div class="rt-single-icon-box">
+                  <div class="icon-thumb rt-mr-12">
+                    <div class="userimage">
+                      <img src="assets/images/all-img/t3.png" alt="" draggable="false">
+                    </div>
+                  </div>
+                  <div class="iconbox-content">
+                    <div class="body-font-3">Jane Cooper</div>
+                    <div class="body-font-4 text-gray-400">Photographer</div>
+                  </div>
+                  <div class="iconbox-extra">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M16 28C16 30.1217 15.1571 32.1566 13.6569 33.6569C12.1566 35.1571 10.1217 36 8 36C5.87827 36 3.84344 35.1571 2.34315 33.6569C0.842854 32.1566 0 30.1217 0 28C0 23.58 8 0 8 0H12L8 20C10.1217 20 12.1566 20.8429 13.6569 22.3431C15.1571 23.8434 16 25.8783 16 28ZM36 28C36 30.1217 35.1571 32.1566 33.6569 33.6569C32.1566 35.1571 30.1217 36 28 36C25.8783 36 23.8434 35.1571 22.3431 33.6569C20.8429 32.1566 20 30.1217 20 28C20 23.58 28 0 28 0H32L28 20C30.1217 20 32.1566 20.8429 33.6569 22.3431C35.1571 23.8434 36 25.8783 36 28Z" fill="#DADDE6"/>
+                      </svg>                      
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-item">
+              <div class="testimonals-box">
+                <div class="text-primary-500 body-font-2 rt-mb-10">Wow, Great Services</div>
+                <div class="text-gray-600 body-font-3">
+                  “Ut ullamcorper hendrerit tempor. Aliquam in rutrum dui. Maecenas ac placerat metus, in faucibus est.”
+                </div>
+                <div class="rt-single-icon-box">
+                  <div class="icon-thumb rt-mr-12">
+                    <div class="userimage">
+                      <img src="assets/images/all-img/t1.png" alt="" draggable="false">
+                    </div>
+                  </div>
+                  <div class="iconbox-content">
+                    <div class="body-font-3">Robert Fox</div>
+                    <div class="body-font-4 text-gray-400">UI/UX Designer</div>
+                  </div>
+                  <div class="iconbox-extra">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M16 28C16 30.1217 15.1571 32.1566 13.6569 33.6569C12.1566 35.1571 10.1217 36 8 36C5.87827 36 3.84344 35.1571 2.34315 33.6569C0.842854 32.1566 0 30.1217 0 28C0 23.58 8 0 8 0H12L8 20C10.1217 20 12.1566 20.8429 13.6569 22.3431C15.1571 23.8434 16 25.8783 16 28ZM36 28C36 30.1217 35.1571 32.1566 33.6569 33.6569C32.1566 35.1571 30.1217 36 28 36C25.8783 36 23.8434 35.1571 22.3431 33.6569C20.8429 32.1566 20 30.1217 20 28C20 23.58 28 0 28 0H32L28 20C30.1217 20 32.1566 20.8429 33.6569 22.3431C35.1571 23.8434 36 25.8783 36 28Z" fill="#DADDE6"/>
+                      </svg>                      
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-item">
+              <div class="testimonals-box">
+                <div class="text-primary-500 body-font-2 rt-mb-10">Awesome Services</div>
+                <div class="text-gray-600 body-font-3">
+                  “Mauris eget lorem odio. Mauris convallis justo molestie metus aliquam lacinia. Suspendisse ut dui vulputate augue condimentum ornare. Morbi vitae tristique ante”
+                </div>
+                <div class="rt-single-icon-box">
+                  <div class="icon-thumb rt-mr-12">
+                    <div class="userimage">
+                      <img src="assets/images/all-img/t2.png" alt="" draggable="false">
+                    </div>
+                  </div>
+                  <div class="iconbox-content">
+                    <div class="body-font-3">Bessie Cooper</div>
+                    <div class="body-font-4 text-gray-400">Creative Director</div>
+                  </div>
+                  <div class="iconbox-extra">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M16 28C16 30.1217 15.1571 32.1566 13.6569 33.6569C12.1566 35.1571 10.1217 36 8 36C5.87827 36 3.84344 35.1571 2.34315 33.6569C0.842854 32.1566 0 30.1217 0 28C0 23.58 8 0 8 0H12L8 20C10.1217 20 12.1566 20.8429 13.6569 22.3431C15.1571 23.8434 16 25.8783 16 28ZM36 28C36 30.1217 35.1571 32.1566 33.6569 33.6569C32.1566 35.1571 30.1217 36 28 36C25.8783 36 23.8434 35.1571 22.3431 33.6569C20.8429 32.1566 20 30.1217 20 28C20 23.58 28 0 28 0H32L28 20C30.1217 20 32.1566 20.8429 33.6569 22.3431C35.1571 23.8434 36 25.8783 36 28Z" fill="#DADDE6"/>
+                      </svg>                      
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-item">
+              <div class="testimonals-box">
+                <div class="text-primary-500 body-font-2 rt-mb-10">Excellent</div>
+                <div class="text-gray-600 body-font-3">
+                  “Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse et magna quis nibh accumsan venenatis sit amet id orci. Duis vestibulum bibendum dapibus.”
+                </div>
+                <div class="rt-single-icon-box">
+                  <div class="icon-thumb rt-mr-12">
+                    <div class="userimage">
+                      <img src="assets/images/all-img/t3.png" alt="" draggable="false">
+                    </div>
+                  </div>
+                  <div class="iconbox-content">
+                    <div class="body-font-3">Jane Cooper</div>
+                    <div class="body-font-4 text-gray-400">Photographer</div>
+                  </div>
+                  <div class="iconbox-extra">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M16 28C16 30.1217 15.1571 32.1566 13.6569 33.6569C12.1566 35.1571 10.1217 36 8 36C5.87827 36 3.84344 35.1571 2.34315 33.6569C0.842854 32.1566 0 30.1217 0 28C0 23.58 8 0 8 0H12L8 20C10.1217 20 12.1566 20.8429 13.6569 22.3431C15.1571 23.8434 16 25.8783 16 28ZM36 28C36 30.1217 35.1571 32.1566 33.6569 33.6569C32.1566 35.1571 30.1217 36 28 36C25.8783 36 23.8434 35.1571 22.3431 33.6569C20.8429 32.1566 20 30.1217 20 28C20 23.58 28 0 28 0H32L28 20C30.1217 20 32.1566 20.8429 33.6569 22.3431C35.1571 23.8434 36 25.8783 36 28Z" fill="#DADDE6"/>
+                      </svg>                      
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="rt-spacer-100"></div>
+</section>
+
+<!-- Price area Start -->
+<section class="price-area rt-pt-90 rt-pt-md-40">
+  <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex flex-wrap">
+            <div class="flex-grow-1"> <h4>Choose your plan</h4></div>
+            <div class="flex-gorw-0 custom-switch">
+              <div class="form-check form-switch">
+                
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                <span class="form-check-label">Yearly</span>
+                <span class="label1">Monthly</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rt-spacer-40 rt-spacer-md-20"></div>
+      <div class="row">
+        <div class="col-xl-4 col-md-6 mx-auto rt-mb-24">
+            <div class="single-price-table">
+              <div class="price-header">
+                  <h6 class="rt-mb-10">Basic</h6>
+                  <span class="text-gray-500 body-font-3 rt-mb-15 d-block">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere.</span>
+                  <div class="price-amount">
+                    <span class="text-primary-500 text-h2">$96</span>
+                    <span class="text-gray-700 body-font-2"><sup>/Yearly</sup></span>
+                  </div>
+              </div>
+              <div class="price-body">
+                <ul class="rt-list">
+                  <li>
+                    <span><img src="assets/images/icon/check.png" alt=""></span>
+                    Max 2 Open Job
+                  </li>
+                  <li>
+                    <span><img src="assets/images/icon/check.png" alt=""></span>
+                    1 Resume
+                  </li>
+                  <li>
+                    <span><img src="assets/images/icon/check.png" alt=""></span>
+                    Instant creative profile 
+                  </li>
+                  <li>
+                    <span><img src="assets/images/icon/check.png" alt=""></span>
+                    Entro Video
+                  </li>
+                  <li>
+                    <span><img src="assets/images/icon/check.png" alt=""></span>
+                    'Contact Me' button on profile
+                  </li>
+                  <li>
+                    <span><img src="assets/images/icon/check.png" alt=""></span>
+                    Add Free
+                  </li>
+                </ul>
+              </div>
+              <div class="price-footer">
+                <button type="button" class="btn btn-primary-50 d-block">
+                  <span class="button-content-wrapper ">
+                      <span class="button-icon align-icon-right">
+                        <i class="ph-arrow-right"></i>                           
+                      </span>
+                      <span class="button-text">
+                        Get Started
+                      </span>
+                  </span>
+              </button>
+              </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-md-6 mx-auto rt-mb-24">
+            <div class="single-price-table active">
+              <div class="price-header">
+                  <h6 class="rt-mb-10">Standard <span class="badge rounded-pill bg-primary-50 text-primary-500">Recommended</span></h6>
+                  <span class="text-gray-500 body-font-3 rt-mb-15 d-block">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere.</span>
+                  <div class="price-amount">
+                    <span class="text-primary-500 text-h2">$384</span>
+                    <span class="text-gray-700 body-font-2"><sup>/Yearly</sup></span>
+                  </div>
+              </div>
+              <div class="price-body">
+                <ul class="rt-list">
+                  <li>
+                    <span><img src="assets/images/icon/check.png" alt=""></span>
+                    Max 2 Open Job
+                  </li>
+                  <li>
+                    <span><img src="assets/images/icon/check.png" alt=""></span>
+                    1 Resume
+                  </li>
+                  <li>
+                    <span><img src="assets/images/icon/check.png" alt=""></span>
+                    Instant creative profile 
+                  </li>
+                  <li>
+                    <span><img src="assets/images/icon/check.png" alt=""></span>
+                    Entro Video
+                  </li>
+                  <li>
+                    <span><img src="assets/images/icon/check.png" alt=""></span>
+                    'Contact Me' button on profile
+                  </li>
+                  <li>
+                    <span><img src="assets/images/icon/check.png" alt=""></span>
+                    Add Free
+                  </li>
+                </ul>
+              </div>
+              <div class="price-footer">
+                <button type="button" class="btn btn-primary d-block">
+                  <span class="button-content-wrapper ">
+                      <span class="button-icon align-icon-right">
+                        <i class="ph-arrow-right"></i>                           
+                      </span>
+                      <span class="button-text">
+                        Get Started
+                      </span>
+                  </span>
+              </button>
+              </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-md-6 mx-auto rt-mb-24">
+          <div class="single-price-table">
+            <div class="price-header">
+                <h6 class="rt-mb-10">Premium</h6>
+                <span class="text-gray-500 body-font-3 rt-mb-15 d-block">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere.</span>
+                <div class="price-amount">
+                  <span class="text-primary-500 text-h2">$768</span>
+                  <span class="text-gray-700 body-font-2"><sup>/Yearly</sup></span>
+                </div>
+            </div>
+            <div class="price-body">
+              <ul class="rt-list">
+                <li>
+                  <span><img src="assets/images/icon/check.png" alt=""></span>
+                  Max 2 Open Job
+                </li>
+                <li>
+                  <span><img src="assets/images/icon/check.png" alt=""></span>
+                  1 Resume
+                </li>
+                <li>
+                  <span><img src="assets/images/icon/check.png" alt=""></span>
+                  Instant creative profile 
+                </li>
+                <li>
+                  <span><img src="assets/images/icon/check.png" alt=""></span>
+                  Entro Video
+                </li>
+                <li>
+                  <span><img src="assets/images/icon/check.png" alt=""></span>
+                  'Contact Me' button on profile
+                </li>
+                <li>
+                  <span><img src="assets/images/icon/check.png" alt=""></span>
+                  Add Free
+                </li>
+              </ul>
+            </div>
+            <div class="price-footer">
+              <button type="button" class="btn btn-primary-50 d-block">
+                <span class="button-content-wrapper ">
+                    <span class="button-icon align-icon-right">
+                      <i class="ph-arrow-right"></i>                           
+                    </span>
+                    <span class="button-text">
+                      Get Started
+                    </span>
+                </span>
+            </button>
+            </div>
+          </div>
+      </div>
+      </div>
+  </div>
+</section>
+<!-- Blog area Start -->
+<section class="blog-area rt-pt-70 rt-pt-md-40 ">
+  <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h4>Latest news & Blog</h4>
+        </div>
+      </div>
+      <div class="rt-spacer-40 rt-spacer-md-20"></div>
+      <div class="row">
+        <div class="col-xl-4 col-lg-6 mx-auto rt-mb-24">
+          <article class="blog-grid-post">
+            <div class="rt-post-thumbnail">
+                <a href="#"><img src="assets/images/all-img/blog-1.png" alt=""></a>
+            </div>
+            <header class="entry-header">
+              <h4 class="entry-title">
+                  <a href="#">Donec accumsan volutpat interdum. Nunc tellus enim.</a>
+              </h4>
+          </header><!-- .end entry header -->
+          <div class="entry-content">
+              
+            Sed sed sollicitudin lacus. Nulla ut risus lacinia, lobortis ipsum vitae, cursus erat. Sed sit amet faucibus ipsum, ut consequat sem.
+          </div>
+          <div class="entry-footer">
+            <a href="#">Read more <i class="ph-arrow-right"></i></a>
+          </div><!-- /.entry-footer -->
+        </article>
+        </div>
+        <div class="col-xl-4 col-lg-6 mx-auto rt-mb-24">
+          <article class="blog-grid-post">
+            <div class="rt-post-thumbnail">
+                <a href="#"><img src="assets/images/all-img/blog-1.png" alt=""></a>
+            </div>
+            <header class="entry-header">
+              <h4 class="entry-title">
+                  <a href="#">Donec accumsan volutpat interdum. Nunc tellus enim.</a>
+              </h4>
+          </header><!-- .end entry header -->
+          <div class="entry-content">
+              
+            Sed sed sollicitudin lacus. Nulla ut risus lacinia, lobortis ipsum vitae, cursus erat. Sed sit amet faucibus ipsum, ut consequat sem.
+           
+          </div>
+          <div class="entry-footer">
+            <a href="#">Read more <i class="ph-arrow-right"></i></a>
+          </div><!-- /.entry-footer -->
+        </article>
+        </div>
+        <div class="col-xl-4 col-lg-6 mx-auto rt-mb-24">
+          <article class="blog-grid-post">
+            <div class="rt-post-thumbnail">
+                <a href="#"><img src="assets/images/all-img/blog-1.png" alt=""></a>
+            </div>
+            <header class="entry-header">
+              <h4 class="entry-title">
+                  <a href="#">Donec accumsan volutpat interdum. Nunc tellus enim.</a>
+              </h4>
+          </header><!-- .end entry header -->
+          <div class="entry-content">
+              
+            Sed sed sollicitudin lacus. Nulla ut risus lacinia, lobortis ipsum vitae, cursus erat. Sed sit amet faucibus ipsum, ut consequat sem.
+            
+          </div>
+          <div class="entry-footer">
+            <a href="#">Read more <i class="ph-arrow-right"></i></a>
+          </div><!-- /.entry-footer -->
+        </article>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!--  newsletter. Start -->
+<section class="subscribe-area rt-pt-80 rt-pt-md-40 rt-mb-100 rt-mb-md-50">
+  <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="bg-gray-20 rt-rounded-24 subscribe-box">
+            <div class="row align-items-center">
+              <div class="col-lg-6 rt-mb-24">
+                <div class="left-content">
+                  <h4 class="rt-mb-15">Subscribe our newsletter.</h4>
+                  <div class="text-gray-400 body-font-3 rt-mb-24">
+                    Subscribe to our newsletter to receive exclusive offers, <br> latest news and updates.
+                  </div>
+                  <form action="#" class="rt-from">
+                    <div class="subscribe-inputbox-1 row smallgap">
+                      <div class="col-lg-8">
+                        <input type="text" placeholder="Email address">
+                      </div>
+                     <div class="col-lg-4">
+                      <button class="btn btn-primary col-lg-4">
+                        <span class="button-content-wrapper ">
+                          <span class="button-icon align-icon-right">
+                            <i class="ph-arrow-right"></i>                           
+                          </span>
+                          <span class="button-text">
+                            Subscribe
+                          </span>
+                      </span>
+                      </button>
+                     </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-6 rt-mb-24 text-end">
+                <img src="assets/images/all-img/i1.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+{% include "../templates/layout/header-footer/footer-three.html" %}
+
+{% endblock %}

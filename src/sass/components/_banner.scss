@@ -7,6 +7,21 @@
   @include breakpoint(md){
     padding-bottom: 100px;
   }
+  .floting-img{
+    position: absolute;
+    &.shape-img{
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+    &.shape-bgimg{
+      right: 0px;
+      top: 0;
+      width: 100%;
+      text-align: end;
+    }
+
+  }
  
 }
 
@@ -26,6 +41,15 @@
 
 .rt-banner-height {
   height: 920px;
+  @include breakpoint(xl){
+    height: 800px;
+  }
+  @include breakpoint(lg){
+    height: auto;
+  }
+}
+.rt-banner-height2 {
+  height: 980px;
   @include breakpoint(xl){
     height: 800px;
   }

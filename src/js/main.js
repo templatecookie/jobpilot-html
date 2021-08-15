@@ -93,7 +93,7 @@
 
   if ($(".newestjob_active").length > 0) {
     $(".newestjob_active").slick({
-      infinite: true,
+    
       slidesToShow: 3,
       infinite: true,
       slidesToScroll: 2,
@@ -146,4 +146,60 @@
       ],
     });
   }
+  if ($(".testimonail_active").length > 0) {
+    $(".testimonail_active").slick({
+ 
+      slidesToShow: 3,
+      infinite: true,
+      slidesToScroll: 2,
+      dots: true,
+      prevArrow: $(".slickprev2"),
+      nextArrow: $(".slicknext2"),
+      responsive: [
+        {
+          breakpoint: 1199,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 980,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 479,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 320,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 210,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    });
+  }
+
 })(jQuery);

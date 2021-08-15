@@ -19,3 +19,23 @@
         }
     }
 }
+
+
+.card{
+    &.counterbox2{
+        border-color: transparent;
+        .card-body{
+            padding: 0px;
+           
+                .icon-72{
+                    background-color: var(--primary-50);
+                    color: var(--primary-500);
+                }
+            
+        }
+        &:hover{
+            box-shadow: none;
+            
+        }
+    }
+}

@@ -38,6 +38,7 @@
 
 // 5. Components
 @import
+  'components/accrodain',
   'components/button',
   'components/bs-dropdown',
   'components/badge',
@@ -54,8 +55,7 @@
 
 // 6. Page-specific styles
 @import
-  'pages/home',
-  'pages/faq';
+  'pages/home';
 
 
 // 7. Themes

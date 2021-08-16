@@ -434,11 +434,16 @@
   }
 }
 .video-btn-center{
-  .rt-btn {
+  .overlay-content {
       position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
+      left: 0px;
+      top: 0px;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
   }
   &.hp{
       .rt-btn{

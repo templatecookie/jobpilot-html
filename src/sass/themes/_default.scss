@@ -16,3 +16,25 @@
     }
   }
 }
+
+
+// footer 
+.dark-footer {
+  .rt-single-widget .footer-title {
+    color: var(--gray-10);
+  }
+  .footer-bottom {
+    box-shadow: inset 0px 1px 0px #2E3447;
+  }
+  .rt-single-widget{
+    ul.rt-usefulllinks2 {
+      li {
+        a{
+          &:hover{
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

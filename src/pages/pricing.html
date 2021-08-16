@@ -1,0 +1,27 @@
+{% extends "layout/layout.html" %}
+
+{% block content %}
+
+{% include "../templates/layout/header-footer/header-normal.html" %}
+
+
+{% set page_title = "Pricing" %}
+{% set current_page = "Pricing" %}
+{% include "../templates/components/breadcrumbs/breadcrumbs.html" %}
+
+
+<section class="terms-condation ">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                eta koren
+            </div>
+        </div>
+        <div class="row">
+            {% include "../templates/components/price/home-1-price.html" %}
+        </div>
+    </div>
+</section>
+
+{% include "../templates/layout/header-footer/footer-three.html" %}
+{% endblock %}

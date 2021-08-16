@@ -201,6 +201,62 @@
       ],
     });
   }
+  // brands active
+  if ($(".brand-active").length > 0) {
+    $(".brand-active").slick({
+ 
+      slidesToShow: 6,
+      infinite: true,
+      slidesToScroll: 4,
+      dots: false,
+      arrows: false,
+      
+      responsive: [
+        {
+          breakpoint: 1199,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 980,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 479,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 320,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 210,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    });
+  }
   // scroll up js 
   $.scrollUp({
     scrollText: '<i class="ph-caret-up-light"></i>',

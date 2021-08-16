@@ -1,10 +1,17 @@
 .card{
-    &.catagory-box{
+    &.catagory-box, .post-catagory{
         .card-body{
            
                 .icon-72{
                     background-color: var(--primary-50);
                     color: var(--primary-500);
+                }
+                .post-img{
+                    img{
+                        object-fit: cover;
+                        width: 100%;
+                        border-radius: 8px;
+                    }
                 }
                 .iconbox-content{
                     a{
@@ -22,6 +29,14 @@
                 a{
                     color: var(--primary-500);
                 }
+            }
+        }
+    }
+    &.post-catagory{
+        .card-body{
+            padding: 24px;
+            .icon-thumb{
+                margin-right: 0px;
             }
         }
     }

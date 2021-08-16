@@ -376,3 +376,13 @@ select {
     color: var(--gray-300);
   }
 }
+
+//form check focus
+#fcfocus{
+  border-radius: 3px;
+  box-shadow: none;
+  border: 1px solid #C5C9D6;
+  &:active{
+    filter: brightness(100%);;
+  }
+}

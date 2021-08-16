@@ -63,11 +63,15 @@
         &:last-child{
           margin-right: 0px;
         }
-        i,
+        
         svg,
         img {
           margin-right: 4px;
           font-size: 16px;
+        }
+        i{
+          font-size: 18px;
+          margin-right: 4px;
         }
       }
       .bottom-link{

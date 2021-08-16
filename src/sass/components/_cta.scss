@@ -2,3 +2,14 @@
     padding: 50px;
     border-radius: 12px;
 }
+.ctafullWidthBox{
+    background-color: var(--primary-900);
+    background-blend-mode: multiply;
+    padding: 80px 120px;
+    .btn{
+        margin-right: 12px;
+        &:last-child{
+            margin-right: 0px;
+        }
+    }
+}

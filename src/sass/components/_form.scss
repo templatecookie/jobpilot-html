@@ -76,17 +76,26 @@ select {
     z-index: 2;
     cursor: pointer;
   }
-  .icon-badge {
+  .icon-badge, .icon-badge-2 {
     position: absolute;
     left: 0px;
     top: 50%;
     transform: translateY(-50%);
     z-index: 2;
   }
+  .icon-badge-2{
+    left: 20px;
+  }
  &.has-icon{
   #{$all-text-inputs},
   .form-control {
     padding-left: 36px;
+  }
+ }
+ &.has-icon2{
+  #{$all-text-inputs},
+  .form-control {
+    padding-left: 52px;
   }
  }
  

@@ -1,35 +1,16 @@
-.rt-comingsoon {
-  &-left {
-    .max-w {
-      max-width: 585px;
-    }
-    .smallgap>row:first-child {
-      padding-left: 0;
-    }
-    .fromGroup {
-      padding-left: 54px;
-
-      .icon-badge {
-        left: 18px;
-      }
-    }
+.comming-soon-height {
+  height: 100vh;
+  @include breakpoint(lg) {
+    height: auto;
+    padding: 150px 0;
   }
-  .coming-footer {
-    .c-f-left {
-      padding-left: 0;
-      .s-button {
-        width: 40px;
-        height: 40px;
-        border-radius: 4px;
-        border-color: transparent;
-        background-color: var(--primary-50);
-        font-size: 16px;
-        margin-right: 12px;
-        &:hover {
-          background-color: transparent;
-          border: 1px solid var(--primary-500);
-        }
-      }
-    }
+  @include breakpoint(md) {
+    padding: 100px 0;
   }
+  @include breakpoint(xs) {
+    padding: 50px 0;
+  }
+}
+.fixed-footer-comming-soon {
+  margin-bottom: 30px;
 }

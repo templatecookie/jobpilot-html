@@ -66,6 +66,14 @@
             padding-right: 15px;
         }
     }
+    &.auth-header{
+        .main-header{
+            box-shadow: none;
+            .navbar{
+                padding: 34px 0px;
+            }
+        }
+    }
 }
 
 

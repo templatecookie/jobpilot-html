@@ -1,0 +1,42 @@
+{% extends "layout/layout.html" %}
+
+
+{% block content %}
+{% include "../templates/layout/header-footer/auth-header.html" %}
+
+<div class="full-height">
+    <div class="container">
+        <div class="row full-height align-items-center">
+          <div class="col-xl-6">
+              <div class="auth-box">
+                  <form action="#" class="rt-form">
+                      <span>Log In</span>
+                      <span class="d-block">Already have account? <span><a href="#"> Log In.</a></span></span>
+                      <div class="fromGroup rt-mb-15"> 
+                          <input type="email" placeholder="Username or email address">
+                      </div>
+                      <div class="fromGroup rt-mb-15 has-icon"> 
+                          <input type="password" placeholder="Username or email address">
+                          <div class="has-badge">
+                              <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M4 6.75C5.51878 6.75 6.75 5.51878 6.75 4C6.75 2.48122 5.51878 1.25 4 1.25C2.48122 1.25 1.25 2.48122 1.25 4C1.25 5.51878 2.48122 6.75 4 6.75Z" stroke="#191F33" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                          </div>
+                      </div>
+                      <button class="d-block btn btn-primary">
+                          Log In
+                      </button>
+                  </form>
+              </div>
+          </div>
+          <div class="col-xl-6">  
+              <img src="assets/images/banner/log-in-imag.png" alt="">
+          </div>
+        </div>
+  </div>
+</div>
+
+
+
+
+{% endblock %}

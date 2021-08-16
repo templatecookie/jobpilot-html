@@ -447,3 +447,23 @@
   }
  
 }
+
+
+
+
+.btn-light {
+  background: var(--gray-10);
+  border-color: var(--gray-10);
+  color: var(--primary-500);
+  &:hover,
+  &:focus,
+  &:active {
+    background: darken(#fff, 4%);
+    border-color: darken(#fff, 4%);
+  }
+  &.disabled,
+  &:disabled {
+    background: var(--primary-100);
+    border-color: var(--primary-100);
+  }
+}

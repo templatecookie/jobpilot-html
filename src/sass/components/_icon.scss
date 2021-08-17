@@ -17,6 +17,12 @@
   font-size: 32px;
   @include rt-trs(0.24s);
 }
+.icon-48{
+  @include iconbox(48px, 4px);
+  background-color: transparent;
+  font-size: 24px;
+  @include rt-trs(0.24s);
+}
 
 .social-icons{
   display: flex;
@@ -40,5 +46,17 @@
         background: transparent;
       }
     }
+  }
+}
+
+.img-group{
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  padding-left: 15px;
+  li{
+    margin-left: -15px;
+    border: 1px solid var(--gray-50)
   }
 }

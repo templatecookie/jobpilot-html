@@ -161,6 +161,10 @@
     min-width: 200px;
     left: -100px;
     border-radius: 8px;
+    .icon-48{
+      background: var(--primary-50);
+      margin-right: 12px ;
+    }
   }
   
 }
@@ -179,4 +183,10 @@
   border-radius: 12px;
   padding: 20px;
   
+}
+
+.banner-select{
+  .select2-container--default .select2-selection--single{
+   border-color: transparent;
+  }
 }

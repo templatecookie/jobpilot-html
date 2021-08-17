@@ -221,7 +221,9 @@ blockquote {
 }
 
 // slick slider gap
-
+.flex-grow-3{
+  flex-grow: 3 !important;
+}
 .slick-slide {
   margin-left: 24px;
 }

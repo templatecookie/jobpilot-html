@@ -267,6 +267,12 @@
 });
 
 
+// select 2 active 
+$('.rt-selectactive').select2({
+  minimumResultsForSearch: Infinity,
+});
+
+
 // filltering 
 $('.grid').imagesLoaded(function () {
   var $grid = $('.grid').isotope({

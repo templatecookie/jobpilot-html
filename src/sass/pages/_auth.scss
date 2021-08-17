@@ -9,3 +9,21 @@
   height: 100vh;
 }
 
+.auth-right-sidebar{
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  height: 100vh;
+  z-index: 89;
+  width: 50%;
+  .sidebar-bg{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}

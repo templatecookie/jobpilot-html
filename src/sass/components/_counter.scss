@@ -60,3 +60,30 @@
         }
     }
 }
+.card{
+    &.counterbox4{
+        background: transparent;
+        border-color: transparent;
+        .card-body{
+            padding: 0px;
+            .icon-thumb{
+                margin-right: 0px;
+                margin-bottom: 24px;
+            }
+            .icon-64{
+                background: rgba(255, 255, 255, 0.1);
+                color: #fff;
+            }
+            .iconbox-content{
+                span{
+                    &:nth-child(1){
+                        color: #fff;
+                    }
+                    &:nth-child(2){
+                        color: rgba(#fff, 0.7);
+                    }
+                }
+            }
+        }
+    }
+}

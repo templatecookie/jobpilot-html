@@ -11,6 +11,12 @@
   font-size: 40px;
   @include rt-trs(0.24s);
 }
+.icon-64{
+  @include iconbox(64px, 8px);
+  background-color: transparent;
+  font-size: 32px;
+  @include rt-trs(0.24s);
+}
 
 .social-icons{
   display: flex;

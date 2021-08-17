@@ -25,5 +25,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
   }
+}
+
+.sidebar-content{
+  max-width: 560px;
+  padding-left: 138px;
+  padding-bottom: 112px;
 }

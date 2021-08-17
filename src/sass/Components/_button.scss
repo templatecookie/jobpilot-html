@@ -375,6 +375,20 @@
     color: var(--danger-100);
   }
 }
+.btn-outline-plain {
+  background: transparent;
+  border-color: var(--gray-50);
+  color: var(--gray-700);
+  &:hover,
+  &:focus,
+  &:active {
+    background: transparent;
+  }
+  &.disabled,
+  &:disabled {
+    border-color: var(--gray-100);
+  }
+}
 .btn-link {
   text-decoration: none;
   color: var(--gray-700);

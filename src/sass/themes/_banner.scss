@@ -1,6 +1,8 @@
 // banner
 .dark {
     .jobsearchBox {
+      box-shadow: none;
+      border-color: transparent;
       #{$all-text-inputs},
       .form-control {
         color: var(--gray-10);

@@ -1,0 +1,321 @@
+{% extends "layout/layout.html" %}
+
+{% block content %}
+
+{% include "../templates/layout/header-footer/header-home5.html" %}
+{% include "../templates/layout/banner/home5-banner.html" %}
+
+
+
+<!-- Counter Start -->
+<div class="counter-area bg-gray-20">
+  <div class="rt-spacer-50"></div>
+  <div class="container">
+      <div class="row">
+          <div class="col-xl-3 col-md-4 col-sm-6 mx-auto rt-mb-30">
+              <div class="card jobcardStyle1 counterbox3">
+                  <div class="card-body">
+                    <div class="rt-single-icon-box">
+                      <div class="icon-thumb">
+                        <i class="ph-suitcase-simple"></i>
+                      </div>
+                      <div class="iconbox-content">
+                        <div class="f-size-24 ft-wt-5"><span class="counter">1,75,324</span></div>
+                        <span class="text-gray-500 f-size-16">Live Job</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div class="col-xl-3 col-md-4 col-sm-6 mx-auto rt-mb-30">
+              <div class="card jobcardStyle1 counterbox3">
+                  <div class="card-body">
+                    <div class="rt-single-icon-box">
+                      <div class="icon-thumb">
+                        <i class="ph-buildings"></i>
+                      </div>
+                      <div class="iconbox-content">
+                        <div class="f-size-24 ft-wt-5"><span class="counter">97,354</span></div>
+                        <span class="text-gray-500 f-size-16">Companies</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div class="col-xl-3 col-md-4 col-sm-6 mx-auto rt-mb-30">
+              <div class="card jobcardStyle1 counterbox3">
+                  <div class="card-body">
+                    <div class="rt-single-icon-box">
+                      <div class="icon-thumb">
+                        <i class="ph-users"></i>
+                      </div>
+                      <div class="iconbox-content">
+                        <div class="f-size-24 ft-wt-5"><span class="counter">38,47,154</span></div>
+                        <span class="text-gray-500 f-size-16">Candidates</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div class="col-xl-3 col-md-4 col-sm-6 mx-auto rt-mb-30">
+              <div class="card jobcardStyle1 counterbox3">
+                  <div class="card-body">
+                    <div class="rt-single-icon-box">
+                      <div class="icon-thumb">
+                        <i class="ph-suitcase-simple"></i>
+                      </div>
+                      <div class="iconbox-content">
+                        <div class="f-size-24 ft-wt-5"><span class="counter">7,532</span></div>
+                        <span class="text-gray-500 f-size-16">New Jobs</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+      </div>
+  </div>
+  <div class="rt-spacer-20"></div>
+</div>
+
+<!-- catagory  Start -->
+<section class="catagory-area rt-pt-100 rt-pt-md-50">
+  <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex flex-wrap">
+            <div class="flex-grow-1"> <h4>Popular category</h4></div>
+            <div class="flex-gorw">
+              <button class="btn btn-outline-primary">
+                <span class="button-content-wrapper ">
+                  <span class="button-icon align-icon-right">
+                    <i class="ph-arrow-right"></i>                     
+                  </span>
+                  <span class="button-text">
+                    View All
+                    </span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rt-spacer-40 rt-spacer-md-20"></div>
+      <div class="row">
+        {% include "../templates/components/category/popular-box-cata3.html" %}
+      </div>
+  </div>
+</section>
+
+<!-- Featured job Start -->
+<section class="featured-job rt-pt-80 rt-pt-md-40">
+    <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="d-flex flex-wrap align-items-center">
+              <div class="flex-grow-1"> <h4>Featured job</h4></div>
+              <div class="flex-gorw-1">
+                <ul class="filter-list">
+                    <li data-filter="*" class="active">
+                      All 
+                    </li>
+                    <li data-filter=".cat-1">
+                       Design
+                    </li>
+                    <li data-filter=".cat-2">
+                        Design 
+                    </li>
+                    <li data-filter=".cat-3">
+                        Programing
+                    </li>
+                    <li data-filter=".cat-4 ">
+                        Health & Care
+                    </li>
+                    <li data-filter=".cat-5 ">
+                        Music
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rt-spacer-40 rt-spacer-md-20"></div>
+        <div class="row grid">
+            {% include "../templates/components/job/filter-feature-job2.html" %}
+        </div>
+    </div>
+</section>
+
+<!-- feature Company Start -->
+<section class="featurecompany-area rt-pt-80 rt-pt-md-40 rt-mb-80 rt-mb-md-40">
+  <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex flex-wrap">
+            <div class="flex-grow-1"> <h4>Featured job</h4></div>
+            <div class="flex-gorw">
+              <button class="btn btn-outline-primary">
+                <span class="button-content-wrapper ">
+                  <span class="button-icon align-icon-right">
+                    <i class="ph-arrow-right"></i>                     
+                  </span>
+                  <span class="button-text">
+                    View All
+                    </span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rt-spacer-40 rt-spacer-md-20"></div>
+      <div class="row">
+          <div class="col-12">
+            {% include "../templates/components/job/feature-company.html" %}
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- About Section Start -->
+<section class="about-section bg-gray-20">
+  <div class="rt-spacer-70 rt-spacer-md-30"></div>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-xl-7 rt-mb-24">
+        <div class="left-img">
+          <img src="assets/images/all-img/abt-3.png" alt="">
+        </div>
+      </div>
+      <div class="col-xl-5">
+        <div class="mx-536">
+          <h4 class="rt-mb-24">Millions of job &
+            career upportunity.</h4>
+            <div class="text-gray-500 body-font-3">
+              Donec nec dignissim neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum nisi felis, euismod ac leo id, dignissim.
+            </div>
+            <div class="rt-spacer-36"></div>
+            <div class="row">
+              <div class="col-xl-6 rt-mb-24">
+                <div class="card jobcardStyle1 counterbox2 ">
+                  <div class="card-body">
+                    <div class="rt-single-icon-box">
+                      <div class="icon-thumb">
+                          <div class="icon-72">
+                              <i class="ph-suitcase-simple"></i>
+                          </div>
+                      </div>
+                      <div class="iconbox-content">
+                        <div class="f-size-24 ft-wt-5"><span class="counter">1,75,324</span></div>
+                        <span class="text-gray-500 f-size-16">Live Job</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 rt-mb-24">
+                <div class="card jobcardStyle1 counterbox2 ">
+                  <div class="card-body">
+                    <div class="rt-single-icon-box">
+                      <div class="icon-thumb">
+                          <div class="icon-72">
+                              <i class="ph-buildings"></i>
+                          </div>
+                      </div>
+                      <div class="iconbox-content">
+                        <div class="f-size-24 ft-wt-5"><span class="counter">97,354</span></div>
+                        <span class="text-gray-500 f-size-16">Companies</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 rt-mb-24">
+                <div class="card jobcardStyle1 counterbox2 ">
+                  <div class="card-body">
+                    <div class="rt-single-icon-box">
+                      <div class="icon-thumb">
+                          <div class="icon-72">
+                              <i class="ph-users"></i>
+                          </div>
+                      </div>
+                      <div class="iconbox-content">
+                        <div class="f-size-24 ft-wt-5"><span class="counter">38,47,154</span></div>
+                        <span class="text-gray-500 f-size-16">Candidates</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 rt-mb-24">
+                <div class="card jobcardStyle1 counterbox2 ">
+                  <div class="card-body">
+                    <div class="rt-single-icon-box">
+                      <div class="icon-thumb">
+                          <div class="icon-72">
+                              <i class="ph-suitcase-simple"></i>
+                          </div>
+                      </div>
+                      <div class="iconbox-content">
+                        <div class="f-size-24 ft-wt-5"><span class="counter">7,532</span></div>
+                        <span class="text-gray-500 f-size-16">New Jobs</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rt-spacer-12"></div>
+            <div class="row">
+              <div class="col-12">
+                <button type="button" class="btn btn-primary">
+                  <span class="button-content-wrapper ">
+                      <span class="button-icon align-icon-right">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5 12H19" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M12 5L19 12L12 19" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>                        
+                      </span>
+                      <span class="button-text">
+                        Register Now
+                      </span>
+                  </span>
+              </button>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="rt-spacer-70 rt-spacer-md-30"></div>
+</section>
+
+<!-- Price area Start -->
+<section class="price-area rt-pt-100 rt-pt-md-50">
+  <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex flex-wrap">
+            <div class="flex-grow-1"> <h4>Choose your plan</h4></div>
+            <div class="flex-gorw-0 custom-switch">
+              <div class="form-check form-switch">
+                
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                <span class="form-check-label">Yearly</span>
+                <span class="label1">Monthly</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rt-spacer-40 rt-spacer-md-20"></div>
+      <div class="row">
+        {% include "../templates/components/price/home-1-price.html" %}
+      </div>
+  </div>
+</section>
+
+
+{% include "../templates/layout/header-footer/footer.html" %}
+
+{% endblock %}

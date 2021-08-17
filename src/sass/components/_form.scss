@@ -380,6 +380,14 @@ select,.form-select  {
     border-color: #c5c9d6;
     border-radius: 3px;
     margin-right:8px ;
+    &:focus{
+      box-shadow: none;
+    }
+  }
+  .form-check-input:active{
+    filter: brightness(100%);
+    background: var(--primary-500);
+    border-color: var(--primary-500);
   }
   label{
     vertical-align: middle;

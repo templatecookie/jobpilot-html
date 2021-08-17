@@ -64,6 +64,8 @@
   padding: 12px;
   border-radius: 8px;
   height: 80px;
+  box-shadow: 0px 12px 40px rgba(0, 44, 109, 0.04);
+  border: 1px solid var(--gray-50);
   @include breakpoint(md){
     height: auto;
   }
@@ -123,8 +125,11 @@
   padding-left: 80px;
   padding-top: 242px;
 }
-
-.home-two{
+.banner-content5{
+  padding-top: 242px;
+  padding-bottom: 170px;
+}
+.home-two, .home-five{
   
   .mx-727{
     max-width: 727px;

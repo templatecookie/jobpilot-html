@@ -24,12 +24,33 @@
 .card{
     &.counterbox2{
         border-color: transparent;
+        background-color: transparent;
         .card-body{
             padding: 0px;
            
                 .icon-72{
                     background-color: var(--primary-50);
                     color: var(--primary-500);
+                }
+            
+        }
+        &:hover{
+            box-shadow: none;
+            
+        }
+    }
+}
+
+.card{
+    &.counterbox3{
+        border-color: transparent;
+        background: transparent;
+        .card-body{
+            padding: 0px;
+           
+                .icon-thumb{
+                    color: var(--primary-500);
+                    font-size: 40px;
                 }
             
         }

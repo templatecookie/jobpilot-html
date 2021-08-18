@@ -141,3 +141,24 @@
     }
   }
 }
+
+
+// job widget 
+.sidetbar-widget{
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: -32px;
+    margin-right: -32px;
+   
+  }
+}
+.jobwidget_tiitle{
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--gray-900);
+  padding: 24px 32px;
+  border-bottom: 1px solid var(--gray-50);
+ 
+}

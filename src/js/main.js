@@ -296,7 +296,9 @@ $('.filter-list').on('click', 'li', function () {
 
 
 // map active 
-var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+var x = document.getElementById("mapid")
+if(x){
+  var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -305,16 +307,25 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     id: 'mapbox/streets-v11',
     accessToken: 'your.mapbox.access.token'
 }).addTo(mymap);
+}
+
 
 
 // filter sidebar toggole 
 $(".toggle-filter-sidebar").on("click",function(){
   $(".sidebar-widget-overlay, .jobsidebar").toggleClass("active")
 });
-$(".sidebar-widget-overlay").on("click",function(){
+$(".sidebar-widget-overlay, .close-me").on("click",function(){
   $(".sidebar-widget-overlay, .jobsidebar").removeClass("active")
 });
 
+
+// hide tags
+
+$(".close-tag").on("click", function(){
+ 
+  $(this).parent(".single-tag").hide()
+});
 
 
 

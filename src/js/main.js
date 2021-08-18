@@ -297,10 +297,7 @@ $('.filter-list').on('click', 'li', function () {
 
 // map active 
 var mymap = L.map('mapid').setView([51.505, -0.09], 13);
-// L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-//     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-//     maxZoom: 18,
-// }).addTo(mymap);
+
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -308,6 +305,17 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     id: 'mapbox/streets-v11',
     accessToken: 'your.mapbox.access.token'
 }).addTo(mymap);
+
+
+// filter sidebar toggole 
+$(".toggle-filter-sidebar").on("click",function(){
+  $(".sidebar-widget-overlay, .jobsidebar").toggleClass("active")
+});
+$(".sidebar-widget-overlay").on("click",function(){
+  $(".sidebar-widget-overlay, .jobsidebar").removeClass("active")
+});
+
+
 
 
 })(jQuery);

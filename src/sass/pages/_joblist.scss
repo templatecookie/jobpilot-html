@@ -64,4 +64,51 @@
 #mapid {
   height: 836px;
   width: 100%;
+  z-index: 1;
+}
+
+// sidebar 
+.jobsidebar{
+  position: fixed;
+  width: 424px;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  border: 1px solid var(--gray-50);
+  padding: 24px 32px;
+  z-index: 999;
+  background-color: #fff;
+  @include rt-trs(0.24s);
+  margin-left: -100px;
+  @include hidden();
+  &.active{
+    @include vis();
+    margin-left: 0px;
+  }
+  
+}
+.sidebar-widget-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: rgba(0, 0, 0, 0.5);
+  @include hidden();
+  @include rt-trs(0.24s);
+  &.active {
+      z-index:679;
+      @include vis();
+  }
+}
+
+
+@keyframes filteopener{
+  0% {
+            margin-left: -300px;
+  }
+  100% {
+            margin-left: 0px;
+  }
 }

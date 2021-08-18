@@ -1,0 +1,67 @@
+.joblist-left-content {
+  padding-left: 110px;
+  padding-right: 50px;
+  hr {
+    padding: 0px;
+    margin: 0px;
+    margin-left: -130px;
+  }
+}
+.joblist-fliter-gorup {
+  min-width: 480px;
+  display: flex;
+  .left-content {
+    flex-grow: 1;
+    display: flex;
+    max-width: 384px;
+    .gap ~ .select2 {
+      margin-right: 12px;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+  .right-content {
+    flex-grow: 0;
+    margin-left: 16px;
+    width: 88px;
+    height: 48px;
+    border: 1px solid var(--gray-50);
+    border-radius: 6px;
+    nav {
+      height: 100%;
+    }
+    .nav {
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    button,
+    .nav-link {
+      padding: 0px;
+      background: transparent;
+      height: 32px;
+      width: 32px;
+      border: none;
+      line-height: auto;
+      svg {
+        path {
+          fill: var(--gray-400);
+        }
+      }
+      &.active {
+        background-color: var(--gray-50);
+        svg {
+          path {
+            fill: var(--gray-900);
+          }
+        }
+      }
+    }
+  }
+}
+
+#mapid {
+  height: 836px;
+  width: 100%;
+}

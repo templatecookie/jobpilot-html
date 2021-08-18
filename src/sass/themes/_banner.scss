@@ -7,6 +7,11 @@
       .form-control {
         color: var(--gray-10);
       }
+      .fromGroup{
+        &::after{
+          display: none;
+        }
+      }
     }
   
     .banner-quciks-links {

@@ -67,8 +67,8 @@
   z-index: 1;
 }
 
-// sidebar 
-.jobsidebar{
+// sidebar
+.jobsidebar {
   position: fixed;
   width: 424px;
   height: 100vh;
@@ -81,7 +81,9 @@
   @include rt-trs(0.24s);
   margin-left: -100px;
   @include hidden();
-  .close-me{
+  overflow-x: hidden;
+  overflow-y: auto;
+  .close-me {
     position: absolute;
     @include hw(48px);
     background: #fff;
@@ -94,16 +96,15 @@
     @include rt-trs(0.24s);
     @include hidden();
   }
-  &.active{
+  &.active {
     @include vis();
     margin-left: 0px;
-    .close-me{
+    .close-me {
       right: -95px;
       transition-delay: 0.24s;
       @include vis();
     }
   }
-  
 }
 .sidebar-widget-overlay {
   position: fixed;
@@ -116,14 +117,13 @@
   @include hidden();
   @include rt-trs(0.24s);
   &.active {
-      z-index:679;
-      @include vis();
+    z-index: 679;
+    @include vis();
   }
 }
 
-
-.filtertags{
-  .single-tag{
+.filtertags {
+  .single-tag {
     padding: 6px 6px 6px 16px;
     display: inline-block;
     font-size: 14px;
@@ -133,32 +133,65 @@
     border-radius: 30px;
     font-weight: 400;
     margin-right: 12px;
-    .close-tag{
+    .close-tag {
       margin-left: 7px;
     }
-    &:last-child{
+    &:last-child {
       margin-right: 0px;
     }
   }
 }
 
-
-// job widget 
-.sidetbar-widget{
-  ul{
+// job widget
+.sidetbar-widget {
+  .form-check-input:checked ~ .form-check-label{
+    color: var(--primary-500) !important ;
+  }
+  >ul {
     margin: 0;
     padding: 0;
     list-style: none;
     margin-left: -32px;
     margin-right: -32px;
-   
+    li {
+      position: relative;
+      cursor: pointer;
+      &.has-children {
+        .jobwidget_tiitle{
+          &::after{
+            content: "\f101";
+          font-family: "flaticon";
+          font-size: 18px;
+          position: absolute;
+          right: 32px;
+          top: 50%;
+          transform: translateY(-50%);
+          }
+        }
+      }
+    }
+  }
+  .sub-catagory{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    li{
+      padding: 9px 32px;
+      &:first-child{
+        padding-top: 0px;
+      }
+      &:last-child{
+        border-bottom: 1px solid var(--gray-50);
+        padding-bottom: 24px;
+      }
+    }
   }
 }
-.jobwidget_tiitle{
+.jobwidget_tiitle {
   font-size: 18px;
   font-weight: 500;
   color: var(--gray-900);
   padding: 24px 32px;
+  position: relative;
   border-bottom: 1px solid var(--gray-50);
- 
 }

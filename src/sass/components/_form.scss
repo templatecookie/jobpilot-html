@@ -392,4 +392,42 @@ select,.form-select  {
   label{
     vertical-align: middle;
   }
+  
+}
+.from-radio-custom{
+  .form-check-input{
+    height: 22px;
+    width: 22px;
+    border-color: #c5c9d6;
+    border-radius: 50%;
+    margin-right:8px ;
+    position: relative;
+    &::after{
+      position: absolute;
+      left: 0;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      margin: auto;
+      background-color: var(--primary-500);
+      content: "";
+      @include hidden();
+
+    }
+  }
+  .form-check-input:checked{
+    border-color: var(--primary-500);
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    &::after{
+      @include vis();
+      animation: zoomIn 0.24s ease-in-out;
+    }
+   
+    
+  }
 }

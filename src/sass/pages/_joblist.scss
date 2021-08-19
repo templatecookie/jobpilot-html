@@ -195,11 +195,40 @@
 
   
 }
-.jobwidget_tiitle {
+.jobwidget_tiitle, .jobwidget_tiitle2 {
   font-size: 18px;
   font-weight: 500;
   color: var(--gray-900);
   padding: 24px 32px;
   position: relative;
   border-bottom: 1px solid var(--gray-50);
+}
+
+.jobwidget_tiitle2{
+  border: none;
+  padding: 0px;
+  margin: 0 0 18px;
+}
+// advanced filter 
+
+.advance-hidden-filter-menu{
+  border-top: 1px solid var(--gray-50);
+  margin-top: 12px;
+  padding-top: 32px;
+  margin-left: -33px;
+  padding-bottom: 20px;
+  padding-left: 33px;
+  ul{
+    margin: 0px;
+    padding: 0px;
+  }
+  >ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    >li{
+      flex: 0 0 20%;
+      max-width: 20%;
+    }
+  }
 }

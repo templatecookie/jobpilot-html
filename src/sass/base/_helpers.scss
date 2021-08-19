@@ -31,6 +31,15 @@ img {
   }
 }
 
+.smallgap2.row > [class*="col-"] {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+  @include breakpoint(xs) {
+    padding-left: calc(var(--bs-gutter-x) * 0.5) !important;
+    padding-right: calc(var(--bs-gutter-x) * 0.5) !important;
+  }
+}
+
 blockquote {
   background: #f3f3f3;
   font-size: 20px;
@@ -117,6 +126,12 @@ blockquote {
 .max-474 {
   max-width: 474px;
 }
+.rt-p-0{
+  padding: 0px;
+}
+.rt-m-0{
+margin: 0px;
+}
 
 @keyframes zoomIn {
   from {
@@ -131,8 +146,24 @@ blockquote {
 }
 
 .zoomIn {
-  -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
+}
+.fade-in-bottom {
+	        animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @for $i from 0 through 30 {
@@ -199,14 +230,22 @@ blockquote {
     }
   }
 }
-.ml-auto {
-  margin-left: auto;
+
+
+.has-title-shape{
+ @extend .position-parent;
+ img{
+   position: absolute;
+   left: -8px;
+   bottom: 0px;
+   z-index: -1;
+ }
 }
 
-
-
 // slick slider gap
-
+.flex-grow-3{
+  flex-grow: 3 !important;
+}
 .slick-slide {
   margin-left: 24px;
 }

@@ -11,7 +11,7 @@
   width: fit-content;
   font-weight: 600;
   position: relative;
-  z-index: 2;
+  z-index: 1;
   white-space: nowrap;
   text-overflow: ellipsis;
   &.disabled,
@@ -373,6 +373,20 @@
   &:disabled {
     border-color: var(--danger-100);
     color: var(--danger-100);
+  }
+}
+.btn-outline-plain {
+  background: transparent;
+  border-color: var(--gray-50);
+  color: var(--gray-700);
+  &:hover,
+  &:focus,
+  &:active {
+    background: transparent;
+  }
+  &.disabled,
+  &:disabled {
+    border-color: var(--gray-100);
   }
 }
 .btn-link {

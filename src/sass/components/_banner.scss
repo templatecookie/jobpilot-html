@@ -1,60 +1,58 @@
 .rt-single-banner {
   position: relative;
   z-index: 1;
-  @include breakpoint(lg){
+  @include breakpoint(lg) {
     padding-bottom: 150px;
   }
-  @include breakpoint(md){
+  @include breakpoint(md) {
     padding-bottom: 100px;
   }
-  .floting-img{
+  .floting-img {
     position: absolute;
     z-index: -1;
-    &.shape-img{
+    &.shape-img {
       left: 0;
       top: 0;
       width: 100%;
     }
-    &.shape-bgimg{
+    &.shape-bgimg,
+    &.shape-bgimg2 {
       right: 0px;
       top: 0;
-      width: 100%;
       text-align: end;
     }
-
   }
- 
 }
 
-.banner-content{
+.banner-content {
   padding-top: 100px;
-  @include breakpoint(xl){
+  @include breakpoint(xl) {
     padding-top: 0px;
   }
-  @include breakpoint(lg){
+  @include breakpoint(lg) {
     max-width: 727px;
     padding-top: 150px;
   }
-  @include breakpoint(md){
+  @include breakpoint(md) {
     padding-top: 100px;
   }
 }
 
 .rt-banner-height {
   height: 920px;
-  @include breakpoint(xl){
+  @include breakpoint(xl) {
     height: 800px;
   }
-  @include breakpoint(lg){
+  @include breakpoint(lg) {
     height: auto;
   }
 }
 .rt-banner-height2 {
   height: 1080px;
-  @include breakpoint(xl){
+  @include breakpoint(xl) {
     height: 800px;
   }
-  @include breakpoint(lg){
+  @include breakpoint(lg) {
     height: auto;
   }
 }
@@ -64,12 +62,14 @@
   padding: 12px;
   border-radius: 8px;
   height: 80px;
-  @include breakpoint(md){
+  box-shadow: 0px 12px 40px rgba(0, 44, 109, 0.04);
+  border: 1px solid var(--gray-50);
+  @include breakpoint(md) {
     height: auto;
   }
   button {
     height: 100%;
-    @include breakpoint(md){
+    @include breakpoint(md) {
       margin-top: 10px;
     }
   }
@@ -77,22 +77,43 @@
   .form-control {
     height: 100%;
     color: var(--gray-700);
+    width: calc(100% - 20px);
     &:focus,
     &:focus-visible {
       border-color: transparent !important;
     }
   }
-
+  .fromGroup{
+    &::after{
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1px;
+      height:100%;
+      content: "";
+      background: var(--gray-50);
+    }
+    &.banner-select{
+      padding-right: 20px;
+      
+    }
+    &.no-border{
+      padding-right: 0px !important;
+      &::after{
+        display: none;
+      }
+    }
+  }
 }
 
-.banner-quciks-links{
-  a{
-      color: var(--gray-600);
-      &:hover{
-          color: var(--primary-500);
-      }
+.banner-quciks-links {
+  a {
+    color: var(--gray-600);
+    &:hover {
+      color: var(--primary-500);
+    }
   }
- 
 }
 
 .banner-mockup {
@@ -103,34 +124,134 @@
   z-index: -1;
   max-width: 50%;
   margin-top: 78px;
-  @include breakpoint(xxl){
+  @include breakpoint(xxl) {
     max-width: 48%;
     right: 0px;
   }
-  @include breakpoint(xl){
+  @include breakpoint(xl) {
     margin-top: 0px;
   }
-  @include breakpoint(lg){
+  @include breakpoint(lg) {
     position: static;
     margin-top: 30px;
     transform: none;
   }
-  @include breakpoint(md){
+  @include breakpoint(md) {
     display: none;
   }
 }
-.banner-content2{
+.banner-content2 {
   padding-left: 80px;
   padding-top: 242px;
 }
-
-.home-two{
-  
-  .mx-727{
+.banner-content5 {
+  padding-top: 242px;
+  padding-bottom: 170px;
+}
+.home-two,
+.home-five {
+  .mx-727 {
     max-width: 727px;
-    
   }
-  .jobsearchBox{
+  .jobsearchBox {
     max-width: 745px;
   }
+}
+
+// banner 3 mockup
+.banner-mockpu-img-grid {
+  padding-right: 98px;
+  .img-1-p {
+    margin-top: 124px;
+  }
+  .img-2-p {
+    margin-top: 60px;
+  }
+  .img-3-p {
+    margin-top: 24px;
+  }
+}
+
+.rt-single-icon-box {
+  &.banner-counter {
+    background: #fff;
+    position: absolute;
+    top: 88px;
+    padding: 12px;
+    border: 1px solid #edeff5;
+    box-shadow: 0px 12px 48px rgba(0, 44, 109, 0.1);
+    min-width: 200px;
+    left: -100px;
+    border-radius: 8px;
+    .icon-48 {
+      background: var(--primary-50);
+      margin-right: 12px;
+    }
+  }
+}
+.position-parent {
+  .company-images {
+    position: absolute;
+    right: -45px;
+    bottom: -52px;
+  }
+}
+.company-images {
+  background: #ffffff;
+  width: 232px;
+  border: 1px solid var(--gray-50);
+  box-shadow: 0px 12px 48px rgba(0, 44, 109, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.banner-select {
+  .select2-container--default .select2-selection--single {
+    border-color: transparent;
+  }
+  .select2-container--default .select2-selection--single .select2-selection__arrow{
+    right: 15px;
+  }
+}
+
+// banner content 4
+.banner-content4 {
+  padding-top: 351px;
+  padding-bottom: 351px;
+}
+.home-four {
+  .rt-single-banner {
+    .shape-bgimg2 {
+      top: 200px;
+    }
+  }
+  .rt-single-icon-box.banner-counter {
+    top: 0px;
+    transform: rotate(-6deg);
+    .iconbox-content {
+      flex-grow: 0 !important;
+    }
+  }
+  .d-elements-2 {
+    bottom: 35px;
+    transform: rotate(-5deg);
+    position: absolute;
+    left: -127px;
+  }
+  .d-elements-3, .d-elements-4{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -60px;
+  }
+  .d-elements-4{
+    bottom: -55px;
+    top: auto;
+  }
+}
+
+
+.bottom-search{
+  position: relative;
+  top: 60px;
 }

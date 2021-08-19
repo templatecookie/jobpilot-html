@@ -24,6 +24,7 @@
 .card{
     &.counterbox2{
         border-color: transparent;
+        background-color: transparent;
         .card-body{
             padding: 0px;
            
@@ -36,6 +37,53 @@
         &:hover{
             box-shadow: none;
             
+        }
+    }
+}
+
+.card{
+    &.counterbox3{
+        border-color: transparent;
+        background: transparent;
+        .card-body{
+            padding: 0px;
+           
+                .icon-thumb{
+                    color: var(--primary-500);
+                    font-size: 40px;
+                }
+            
+        }
+        &:hover{
+            box-shadow: none;
+            
+        }
+    }
+}
+.card{
+    &.counterbox4{
+        background: transparent;
+        border-color: transparent;
+        .card-body{
+            padding: 0px;
+            .icon-thumb{
+                margin-right: 0px;
+                margin-bottom: 24px;
+            }
+            .icon-64{
+                background: rgba(255, 255, 255, 0.1);
+                color: #fff;
+            }
+            .iconbox-content{
+                span{
+                    &:nth-child(1){
+                        color: #fff;
+                    }
+                    &:nth-child(2){
+                        color: rgba(#fff, 0.7);
+                    }
+                }
+            }
         }
     }
 }

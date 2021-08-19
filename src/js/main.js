@@ -267,6 +267,12 @@
 });
 
 
+// select 2 active 
+$('.rt-selectactive').select2({
+ // minimumResultsForSearch: Infinity,
+});
+
+
 // filltering 
 $('.grid').imagesLoaded(function () {
   var $grid = $('.grid').isotope({
@@ -289,8 +295,37 @@ $('.filter-list').on('click', 'li', function () {
 });
 
 
+// map active 
+var x = document.getElementById("mapid")
+if(x){
+  var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
 
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    accessToken: 'your.mapbox.access.token'
+}).addTo(mymap);
+}
+
+
+
+// filter sidebar toggole 
+$(".toggle-filter-sidebar").on("click",function(){
+  $(".sidebar-widget-overlay, .jobsidebar").toggleClass("active")
+});
+$(".sidebar-widget-overlay, .close-me").on("click",function(){
+  $(".sidebar-widget-overlay, .jobsidebar").removeClass("active")
+});
+
+
+// hide tags
+
+$(".close-tag").on("click", function(){
+ 
+  $(this).parent(".single-tag").hide()
+});
 
 
 

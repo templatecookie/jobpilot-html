@@ -4,9 +4,11 @@
 {% block content %}
 {% include "../templates/layout/header-footer/auth-header.html" %}
 
-<div class="full-height">
+<div class="auth-page2">
+    <div class="rt-spacer-100 rt-spacer-md-100 rt-spacer-xs-50"></div>
+    <div class="rt-spacer-100 rt-spacer-md-100 rt-spacer-xs-50"></div>
     <div class="container">
-        <div class="row full-height align-items-center">
+        <div class="row ">
             <div class="col-xl-6">
                 <div class="auth-box">
                     <form action="#" class="rt-form">
@@ -43,9 +45,9 @@
                         <div class="fromGroup rt-mb-15">
                             <input type="email" placeholder="Email address" required>
                         </div>
-                        <div class="fromGroup rt-mb-24">
-                            <input type="password" placeholder="Password" required id="myInput">
-                            <div class="has-badge" onclick="myFunction()">
+                        <div class="fromGroup rt-mb-15">
+                            <input type="password" placeholder="Password" required>
+                            <div class="has-badge">
                                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -59,7 +61,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="fromGroup rt-mb-24">
+                        <div class="fromGroup rt-mb-15">
                             <input type="password" placeholder="Confirm Password" required>
                             <div class="has-badge">
                                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
@@ -76,17 +78,17 @@
 
                             </div>
                         </div>
-                        <div class="form-check rt-mb-32">
-                            <div class="body-font-4 text-gray-700">
-                                <input class="form-check-input" id="fcfocus" type="checkbox" value="">
-                                <label class="form-check-label body-font-4 text-gray-600" for="fcfocus">
+                        <div class="rt-mb-30">
+                            <div class="form-check from-chekbox-custom align-items-center" >
+                                <input class="form-check-input" type="checkbox" value="" id="ck1">
+                                <label class="form-check-label pointer text-gray-700 f-size-14" for="ck1">
                                     I've read and agree with your
-                                    <a href="terms-condation.html" target="_blank" class="body-font-4">Terms of Services</a>
                                 </label>
+                                <a href="/terms-condation.html" target="_blank" class="body-font-4 text-primary-500">Terms of Services</a>
                             </div>
-
+                                
                         </div>
-                        <button type="submit" class="btn btn-primary d-block rt-mb-32">
+                        <button type="submit" class="btn btn-primary d-block rt-mb-15">
                             <span class="button-content-wrapper ">
                                 <span class="button-icon align-icon-right">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -102,43 +104,49 @@
                                 </span>
                             </span>
                         </button>
-                        <div>
-                            <div class="row">
-                                <div class="col-xl-6 col-lg-6">
-                                    <a href="#" class="input-form rt-mb-24 body-font-3 text-gray-700 ">
+                        <div class="d-flex justify-content-between btn-group">
+                            <button type="button" class="btn btn-outline-plain d-block me-3">
+                                <span class="button-content-wrapper ">
+                                    <span class="button-icon align-icon-left">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M4.43242 12.0855L3.73625 14.6845L1.19176 14.7383C0.431328 13.3279 0 11.7141 0 9.9993C0 8.34105 0.403281 6.7773 1.11812 5.40039H1.11867L3.38398 5.8157L4.37633 8.06742C4.16863 8.67293 4.05543 9.32293 4.05543 9.9993C4.05551 10.7334 4.18848 11.4367 4.43242 12.0855Z"
-                                                fill="#FBBB00" />
-                                            <path
-                                                d="M19.8261 8.13281C19.941 8.73773 20.0009 9.36246 20.0009 10.0009C20.0009 10.7169 19.9256 11.4152 19.7822 12.0889C19.2954 14.3812 18.0234 16.3828 16.2613 17.7993L16.2608 17.7987L13.4075 17.6532L13.0037 15.1323C14.1729 14.4466 15.0866 13.3735 15.568 12.0889H10.2207V8.13281H15.646H19.8261Z"
-                                                fill="#518EF8" />
-                                            <path
-                                                d="M16.2595 17.7975L16.2601 17.798C14.5464 19.1755 12.3694 19.9996 9.99965 19.9996C6.19141 19.9996 2.88043 17.8711 1.19141 14.7387L4.43207 12.0859C5.27656 14.3398 7.45074 15.9442 9.99965 15.9442C11.0952 15.9442 12.1216 15.648 13.0024 15.131L16.2595 17.7975Z"
-                                                fill="#28B446" />
-                                            <path
-                                                d="M16.382 2.30219L13.1425 4.95437C12.2309 4.38461 11.1534 4.05547 9.99906 4.05547C7.39246 4.05547 5.17762 5.73348 4.37543 8.06812L1.11773 5.40109H1.11719C2.78148 2.1923 6.13422 0 9.99906 0C12.4254 0 14.6502 0.864297 16.382 2.30219Z"
-                                                fill="#F14336" />
-                                        </svg>
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.43242 12.0855L3.73625 14.6845L1.19176 14.7383C0.431328 13.3279 0 11.7141 0 9.9993C0 8.34105 0.403281 6.7773 1.11812 5.40039H1.11867L3.38398 5.8157L4.37633 8.06742C4.16863 8.67293 4.05543 9.32293 4.05543 9.9993C4.05551 10.7334 4.18848 11.4367 4.43242 12.0855Z"
+                                        fill="#FBBB00" />
+                                    <path
+                                        d="M19.8261 8.13281C19.941 8.73773 20.0009 9.36246 20.0009 10.0009C20.0009 10.7169 19.9256 11.4152 19.7822 12.0889C19.2954 14.3812 18.0234 16.3828 16.2613 17.7993L16.2608 17.7987L13.4075 17.6532L13.0037 15.1323C14.1729 14.4466 15.0866 13.3735 15.568 12.0889H10.2207V8.13281H15.646H19.8261Z"
+                                        fill="#518EF8" />
+                                    <path
+                                        d="M16.2595 17.7975L16.2601 17.798C14.5464 19.1755 12.3694 19.9996 9.99965 19.9996C6.19141 19.9996 2.88043 17.8711 1.19141 14.7387L4.43207 12.0859C5.27656 14.3398 7.45074 15.9442 9.99965 15.9442C11.0952 15.9442 12.1216 15.648 13.0024 15.131L16.2595 17.7975Z"
+                                        fill="#28B446" />
+                                    <path
+                                        d="M16.382 2.30219L13.1425 4.95437C12.2309 4.38461 11.1534 4.05547 9.99906 4.05547C7.39246 4.05547 5.17762 5.73348 4.37543 8.06812L1.11773 5.40109H1.11719C2.78148 2.1923 6.13422 0 9.99906 0C12.4254 0 14.6502 0.864297 16.382 2.30219Z"
+                                        fill="#F14336" />
+                                </svg>
+                                    </span>
+                                    <span class="button-text">
                                         Log In with google
-                                    </a>
-                                </div>
-                                <div class="col-xl-6 col-lg-6">
-                                    <a href="#" class="input-form rt-mb-24  body-font-3 text-gray-700 ">
-                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
+                                    </span>
+                                </span>
+                                
+                            </button>
+                                <button  class="btn btn-outline-plain d-block">
+                                    
+                                    <span class="button-content-wrapper ">
+                                        <span class="button-icon align-icon-left">
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
                                                 d="M12.1666 20H8.20126V10.1414H5.5V6.9316H8.20116V4.64762C8.20116 1.9411 9.39588 0 13.3505 0C14.1869 0 15.5 0.168134 15.5 0.168134V3.14858H14.1208C12.7155 3.14858 12.1668 3.5749 12.1668 4.75352V6.9316H15.4474L15.1553 10.1414H12.1667L12.1666 20Z"
                                                 fill="#1877F2" />
-                                        </svg>
-                                        Log In with facebook
-                                    </a>
-                                </div>
-                            </div>
-
-
-                        </div>
+                                            </svg>
+                                        </span>
+                                        <span class="button-text">
+                                            Log In with facebook
+                                        </span>
+                                    </span>
+                                </button>
+                           </div>
                     </form>
                 </div>
             </div>
@@ -147,6 +155,8 @@
             </div>
         </div>
     </div>
+    <div class="rt-spacer-100 rt-spacer-md-100 rt-spacer-xs-50"></div>
+    <div class="rt-spacer-100 rt-spacer-md-100 rt-spacer-xs-50"></div>
 </div>
 
 <script>

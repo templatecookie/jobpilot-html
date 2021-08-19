@@ -312,8 +312,8 @@ $('.filter-list').on('click', 'li', function () {
 
 
 // map active 
-var x = document.getElementById("mapid")
-if(x){
+var Map1 = document.getElementById("mapid");
+if(Map1){
   var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
 
@@ -342,6 +342,50 @@ $(".close-tag").on("click", function(){
  
   $(this).parent(".single-tag").hide()
 });
+
+
+// advanced fillter 
+$(".open-adf").on("click", function(){
+  $(".jobsearchBox").toggleClass("active-adf");
+  $(".job-filter-overlay").toggleClass("active");
+  $(".advance-hidden-filter-menu").slideToggle(300);
+  $("body").toggleClass("body-no-scrolling");
+});
+$(".job-filter-overlay").on("click", function(){
+  $(".jobsearchBox").removeClass("active-adf");
+  $(".job-filter-overlay").removeClass("active");
+  $(".advance-hidden-filter-menu").slideUp(300);
+  $("body").removeClass("body-no-scrolling");
+});
+
+// custom scroll 
+$(".custom-scroll").overlayScrollbars({
+  //className: "os-theme-thick-dark",
+});
+
+
+//conditional filter
+var testElement = document.getElementById('togglclass1');
+$(".toggole-colum-classes").on("click", function () {
+  $("#toggoleSidebar").toggleClass("d-none");
+});
+
+$('.toggole-colum-classes').bind('click', function() {
+
+  if(testElement.classList.contains('col-xl-9')){
+    $(testElement).removeClass("col-xl-9");
+    $(testElement).addClass("col-xl-12");
+    console.log("ei" + testElement);
+  }
+  else {
+    $(testElement).addClass("col-xl-9");
+    $(testElement).removeClass("col-xl-12");
+  }
+    
+  });
+
+
+
 
 
 

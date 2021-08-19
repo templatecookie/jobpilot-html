@@ -59,7 +59,13 @@
 
 // banner seaarch
 .jobsearchBox {
-  padding: 12px;
+  padding: {
+    left: 33px;
+    top: 12px;
+    bottom: 12px; 
+    right: 12px;
+  };
+  
   border-radius: 8px;
   height: 80px;
   box-shadow: 0px 12px 40px rgba(0, 44, 109, 0.04);
@@ -104,6 +110,9 @@
         display: none;
       }
     }
+  }
+  &.with-advanced-filter{
+    height: auto;
   }
 }
 

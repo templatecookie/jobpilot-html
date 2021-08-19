@@ -1,6 +1,7 @@
-.breadcrumbs{
+.breadcrumbs, .breadcrumbs-two{
   padding: 40px 0;
   background-color: var(--gray-20) ;
+  @include rt-trs(0.24s);
   .breadcrumb-title{
     font-size: 24px;
     line-height: 32px;
@@ -15,9 +16,15 @@
       color: var(--gray-500);
     }
   }
+  &.style-two{
+    padding: 0px;
+    height: 230px;
+    .jobsearchBox{
+      margin-top: 100px;
+    }
+  }
 }
 .breadcrumb{
   margin-bottom: 0px;
 }
   
-        

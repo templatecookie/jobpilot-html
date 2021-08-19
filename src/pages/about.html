@@ -1,0 +1,160 @@
+{% extends "layout/layout.html" %}
+
+{% block content %}
+
+{% include "../templates/layout/header-footer/header-employers.html" %}
+
+
+
+<!-- About banner area  start -->
+<section class="rt-about">
+  <div class="container">
+    <div class="rt-spacer-100 rt-spacer-md-50"></div>
+    <div class="rt-spacer-100 rt-spacer-md-50"></div>
+    <div class="row">
+      <div class="col-xl-6 col-lg-6">     
+       <span class="body-font-3 ft-wt-5 text-primary-500 rt-mb-15 d-inline-block">Who we are</span>
+        <h2 class="rt-mb-40">We’re highly skilled and professionals team.</h2>
+        <p class="body-font-2 text-gray-500 rt-mb-0">Want to chat? We’d love to hear from you! Get in touch with our Customer Success Team to inquire about speaking events, advertising rates, or just say hello.</p>     
+      </div>
+      <div class="col-xl-3 col-lg-3"></div> 
+      <div class="col-xl-3 col-lg-3">
+        <div class="about-counter">
+          <div class="rt-mb-40 ">
+            <div class="card jobcardStyle1 counterbox2">
+              <div class="card-body">
+                <div class="rt-single-icon-box">
+                  <div class="icon-thumb">
+                    <div class="icon-72">
+                      <i class="ph-suitcase-simple"></i>
+                    </div>
+                  </div>
+                  <div class="iconbox-content">
+                    <div class="f-size-24 ft-wt-5 rt-mb-12"><span class="counter">175,324</span></div>
+                    <span class="text-gray-900 f-size-16">Live Job</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rt-mb-40 ">
+            <div class="card jobcardStyle1 counterbox2">
+              <div class="card-body">
+                <div class="rt-single-icon-box">
+                  <div class="icon-thumb">
+                    <div class="icon-72">
+                      <i class="ph-buildings"></i>
+                    </div>
+                  </div>
+                  <div class="iconbox-content">
+                    <div class="f-size-24 ft-wt-5 rt-mb-12"><span class="counter">97,354</span></div>
+                    <span class="text-gray-900 f-size-16">Companies</span>
+                  </div>
+                </div>
+              </div>
+            </div>                
+          </div>
+          <div>    
+              <div class="card jobcardStyle1 counterbox2">
+                <div class="card-body">
+                  <div class="rt-single-icon-box">
+                    <div class="icon-thumb">
+                      <div class="icon-72">
+                        <i class="ph-users"></i>
+                      </div>
+                    </div>
+                    <div class="iconbox-content">
+                      <div class="f-size-24 ft-wt-5 rt-mb-12"><span class="counter">3,847,154</span></div>
+                      <span class="text-gray-900 f-size-16">Candidates</span>
+                    </div>
+                  </div>
+                </div>
+              </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rt-spacer-100 rt-spacer-md-50"></div>
+    <div class="rt-spacer-100 rt-spacer-md-50"></div>
+
+  </div>
+</section>
+<!-- Brands area  start -->
+<section class="brands-area">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12">
+        <div class="text-center body-font-3 rt-mb-32">
+          Trusted by
+        </div>
+        {% include "../templates/components/brands/brands1.html" %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About feature image area  start -->
+
+<section class="about-feature-img">
+  <div class="container">
+
+    <div class="row ">
+      <div class="col-xl-4 col-lg-4 ">
+        <div class="img-left">
+          <img src="assets/images/banner/about-banner-1.jpg" alt="" class="w-100 height-636">
+        </div>       
+      </div>
+      <div class="col-xl-4 col-lg-4">
+        <div class="img-middle">
+          <img src="assets/images/banner/about-banner-2.jpg" alt="" class="w-100 rt-mb-24">
+          <img src="assets/images/banner/about-banner-3.jpg" alt="" class="w-100">
+        </div>       
+      </div>
+      <div class="col-xl-4 col-lg-4 img-right">
+        <div>
+          <img src="assets/images/banner/about-banner-4.jpg" alt="" class="w-100 height-636">
+        </div>       
+      </div>
+    </div>
+  </div>
+</section>
+<div class="rt-spacer-100 rt-spacer-md-50"></div>
+
+<!-- Misson  area  start -->
+<section class="mission">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-xl-6 col-lg-6">     
+        <span class="body-font-3 ft-wt-5 text-primary-500 rt-mb-15 d-inline-block">Our Mission</span>
+         <h3 class="rt-mb-32">We’re highly skilled and professionals team.</h3>
+         <p class="body-font-2 text-gray-500 rt-mb-0">Want to chat? We’d love to hear from you! Get in touch with our Customer Success Team to inquire about speaking events, advertising rates, or just say hello.</p>     
+       </div>
+       <div class="col-xl-6 col-lg-6">
+         <div>
+          <img src="assets/images/banner/about-banner-5.png" alt="" class="w-100">
+         </div>
+       </div>
+    </div>
+  </div>
+</section>
+<div class="rt-spacer-100 rt-spacer-md-50"></div>
+
+<!-- Call to action Start -->
+
+<section class="cta-area rt-pt-100 rt-mb-100">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-6 rt-mb-24">
+        {% include "../templates/components/calltoaction/cta-1.html" %}
+      </div>
+      <div class="col-xl-6 rt-mb-24">
+        {% include "../templates/components/calltoaction/cta-2.html" %}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% include "../templates/layout/header-footer/footer-three.html" %}
+
+{% endblock %}

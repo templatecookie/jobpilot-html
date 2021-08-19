@@ -171,6 +171,12 @@
       }
     }
   }
+  li.open{
+    
+    .jobwidget_tiitle{
+      border-bottom: none;
+    }
+  }
   .sub-catagory{
     margin: 0px;
     padding: 0px;
@@ -186,6 +192,8 @@
       }
     }
   }
+
+  
 }
 .jobwidget_tiitle {
   font-size: 18px;

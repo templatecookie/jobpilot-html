@@ -1,6 +1,7 @@
 .breadcrumbs{
   padding: 40px 0;
   background-color: var(--gray-20) ;
+  @include rt-trs(0.24s);
   .breadcrumb-title{
     font-size: 24px;
     line-height: 32px;

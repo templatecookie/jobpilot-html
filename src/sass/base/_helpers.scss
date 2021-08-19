@@ -75,7 +75,12 @@ blockquote {
   position: relative;
   z-index: 1;
 }
-
+.position-relative{
+  position: relative;
+}
+.body-no-scrolling{
+  overflow: hidden;
+}
 .img-fit {
   display: block;
   object-fit: cover;

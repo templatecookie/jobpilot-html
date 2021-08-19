@@ -216,8 +216,15 @@
   margin-top: 12px;
   padding-top: 32px;
   margin-left: -33px;
+  margin-right: -12px;
   padding-bottom: 20px;
   padding-left: 33px;
+ display: none;
+  background-color: #fff;
+  hr{
+    margin: 0px;
+    padding: 0px;
+  }
   ul{
     margin: 0px;
     padding: 0px;
@@ -230,5 +237,40 @@
       flex: 0 0 20%;
       max-width: 20%;
     }
+  }
+  ul ul > li{
+    padding-bottom: 8px;
+    &:last-child{
+      padding-bottom: 0px;
+    }
+  }
+}
+
+.jobsearchBox{
+  transition: all 0.24s ease-in-out;
+  &.active-adf{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    z-index: 1000;
+    top: 0px;
+  }
+}
+
+.job-filter-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  overflow: hidden;
+  height: 100vh;
+  z-index: 0;
+  background: rgba(0, 0, 0, 0.6);
+  @include hidden();
+  @include rt-trs(0.24s);
+  &.active {
+    z-index: 679;
+    @include vis();
   }
 }

@@ -344,6 +344,20 @@ $(".close-tag").on("click", function(){
 });
 
 
+// advanced fillter 
+$(".open-adf").on("click", function(){
+  $(".jobsearchBox").toggleClass("active-adf");
+  $(".job-filter-overlay").toggleClass("active");
+  $(".advance-hidden-filter-menu").slideToggle(300);
+  $("body").toggleClass("body-no-scrolling");
+});
+$(".job-filter-overlay").on("click", function(){
+  $(".jobsearchBox").removeClass("active-adf");
+  $(".job-filter-overlay").removeClass("active");
+  $(".advance-hidden-filter-menu").slideDown();
+  $("body").removeClass("body-no-scrolling");
+});
+
 
 
 

@@ -354,7 +354,7 @@ $(".open-adf").on("click", function(){
 $(".job-filter-overlay").on("click", function(){
   $(".jobsearchBox").removeClass("active-adf");
   $(".job-filter-overlay").removeClass("active");
-  $(".advance-hidden-filter-menu").slideDown();
+  $(".advance-hidden-filter-menu").slideUp(300);
   $("body").removeClass("body-no-scrolling");
 });
 

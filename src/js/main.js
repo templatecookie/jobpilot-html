@@ -364,4 +364,29 @@ $(".custom-scroll").overlayScrollbars({
 });
 
 
+//conditional filter
+var testElement = document.getElementById('togglclass1');
+$(".toggole-colum-classes").on("click", function () {
+  $("#toggoleSidebar").toggleClass("d-none");
+});
+
+$('.toggole-colum-classes').bind('click', function() {
+
+  if(testElement.classList.contains('col-xl-9')){
+    $(testElement).removeClass("col-xl-9");
+    $(testElement).addClass("col-xl-12");
+    console.log("ei" + testElement);
+  }
+  else {
+    $(testElement).addClass("col-xl-9");
+    $(testElement).removeClass("col-xl-12");
+  }
+    
+  });
+
+
+
+
+
+
 })(jQuery);

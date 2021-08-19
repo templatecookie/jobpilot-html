@@ -41,7 +41,7 @@
                     </div>
                     <div class="d-flex rt-mb-24">
                         <div class="flex-grow-1">
-                            <button type="button" class="btn btn-primary-50 toggle-filter-sidebar">
+                            <button type="button" class="btn btn-primary-50 toggole-colum-classes">
                                 <span class="button-content-wrapper ">
                                     <span class="button-icon align-icon-left">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -115,29 +115,36 @@
                     </div>
                     <hr>
                     <div class="rt-spacer-32"></div>
-                    <div class="tab-content" id="nav-tabContent">
-                        <div class="tab-pane  show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                            <div class="row">
-                                {% include "../templates/components/job/filterjob-three-column.html" %}
-                            </div>
-                            <div class="rt-pt-30">
-                                {% include "../templates/components/pagination/pagination.html" %}
-                            </div>
-                        </div>
-                        <div class="tab-pane " id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                            {% include "../templates/components/job/feature-job-forjoblistpage.html" %}
-                            <div class="rt-pt-30">
-                                {% include "../templates/components/pagination/pagination.html" %}
-                            </div>
-                        </div>
-                      </div>
+                    
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-3" id="toggoleSidebar">
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium corporis tempora optio libero modi dolore maxime officia quae blanditiis, nihil reprehenderit nostrum eaque deserunt beatae doloribus ad sequi. Minima, odio?
+            </div>
+            <div class="col-xl-9" id="togglclass1">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane  show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="row">
+                            {% include "../templates/components/job/filterjob-three-column.html" %}
+                        </div>
+                        <div class="rt-pt-30">
+                            {% include "../templates/components/pagination/pagination.html" %}
+                        </div>
+                    </div>
+                    <div class="tab-pane " id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        {% include "../templates/components/job/feature-job-forjoblistpage.html" %}
+                        <div class="rt-pt-30">
+                            {% include "../templates/components/pagination/pagination.html" %}
+                        </div>
+                    </div>
+                  </div>
             </div>
         </div>
     </div>
 </div>
 <div class="rt-spacer-80 rt-spacer-md-40"></div>
-{% include "../templates/components/job/jobfilter-sidebar.html" %}
 {% include "../templates/layout/header-footer/footer-three.html" %}
 
 

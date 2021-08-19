@@ -358,8 +358,10 @@ $(".job-filter-overlay").on("click", function(){
   $("body").removeClass("body-no-scrolling");
 });
 
-
-
+// custom scroll 
+$(".custom-scroll").overlayScrollbars({
+  //className: "os-theme-thick-dark",
+});
 
 
 })(jQuery);

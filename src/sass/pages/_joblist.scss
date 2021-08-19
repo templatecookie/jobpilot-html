@@ -86,32 +86,14 @@
   padding: 24px 32px;
   z-index: 999;
   background-color: #fff;
-  @include rt-trs(0.24s);
-  margin-left: -100px;
+  @include rt-trs(0.1s);
+  margin-left: -424px;
   @include hidden();
-  overflow-x: hidden;
-  overflow-y: auto;
-  .close-me {
-    position: absolute;
-    @include hw(48px);
-    background: #fff;
-    right: -100px;
-    cursor: pointer;
-    top: 50px;
-    font-size: 12px;
-    border-radius: 50%;
-    color: var(--gray-900);
-    @include rt-trs(0.24s);
-    @include hidden();
-  }
+ 
   &.active {
     @include vis();
     margin-left: 0px;
-    .close-me {
-      right: -95px;
-      transition-delay: 0.24s;
-      @include vis();
-    }
+    
   }
 }
 .sidebar-widget-overlay {
@@ -124,9 +106,27 @@
   background: rgba(0, 0, 0, 0.6);
   @include hidden();
   @include rt-trs(0.24s);
+  .close-me {
+    position: absolute;
+    @include hw(48px);
+    background: #fff;
+    left: 490px;
+    cursor: pointer;
+    top: 50px;
+    font-size: 12px;
+    border-radius: 50%;
+    color: var(--gray-900);
+    @include rt-trs(0.24s);
+    @include hidden();
+  }
   &.active {
     z-index: 679;
     @include vis();
+    .close-me {
+      left: 480px;
+      transition-delay: 0.1s;
+      @include vis();
+    }
   }
 }
 

@@ -360,14 +360,14 @@
     $(toggleSidebar).toggleClass("d-none");
 
     if (!toggleSidebar.classList.contains("d-none")) {
-      getToggleClass.classList.add("col-xl-9");
+      getToggleClass.classList.add("col-xl-8");
       getToggleClass.classList.remove("col-xl-12");
     } else {
       getToggleClass.classList.add("col-xl-12");
-      getToggleClass.classList.remove("col-xl-9");
+      getToggleClass.classList.remove("col-xl-8");
     }
 
-    if (getToggleClass.classList.contains("col-xl-9")) {
+    if (getToggleClass.classList.contains("col-xl-8")) {
       $(productCloumnClass).removeClass("col-xl-4");
     } else {
       $(productCloumnClass).addClass("col-xl-4");

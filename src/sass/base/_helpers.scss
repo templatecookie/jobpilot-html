@@ -1,3 +1,36 @@
+@each $color, $shades in $colors {
+  @each $shade, $value in $shades {
+    #{".text-" + $color + "-" + $shade} {
+      color: #{$value} !important;
+    }
+    #{".bg-" + $color + "-" + $shade} {
+      background-color: #{$value} !important;
+    }
+    
+    #{".hoverbg-" + $color + "-" + $shade} {
+      
+      &:hover{
+        background-color: #{$value} !important;
+      }
+    } 
+    
+    #{".hover\\:" +'bg-' + $color + "-" + $shade} {
+      
+      &:hover{
+        background-color: #{$value} !important;
+      }
+    }
+    #{".hover\\:" +'border-' + $color + "-" + $shade} {
+      
+      &:hover{
+        border-color: #{$value} !important;
+      }
+    }
+  }
+}
+
+
+
 a {
   color: var(--primary-600);
   text-decoration: none;
@@ -52,7 +85,9 @@ blockquote {
   position: relative;
   border-left: 4px solid #fc4a1a;
 }
-
+.border-transparent{
+  border-color: transparent !important;
+}
 .bgprefix-cover {
   background-size: cover;
   background-repeat: no-repeat;

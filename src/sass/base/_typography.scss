@@ -79,20 +79,5 @@ h6,
   }
 }
 
-@each $color, $shades in $colors {
-  @each $shade, $value in $shades {
-    #{".text-" + $color + "-" + $shade} {
-      color: #{$value} !important;
-    }
-    #{".bg-" + $color + "-" + $shade} {
-      background-color: #{$value} !important;
-    }
-    #{".hoverbg-" + $color + "-" + $shade} {
-      
-      &:hover{
-        background-color: #{$value} !important;
-      }
-    }
-  }
-}
+
 

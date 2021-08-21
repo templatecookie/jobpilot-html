@@ -282,3 +282,27 @@
     @include vis();
   }
 }
+
+// flter column style two 
+.togglesidebr_widget{
+  border: 1px solid var(--gray-50);
+  border-radius: 12px;
+  max-width: 420px;
+  padding: {
+    top: 0px;
+    left: 32px;
+    right: 32px;
+    bottom: 0px;
+  };
+  ul> li{
+    &:last-child{
+      
+        .jobwidget_tiitle{
+          border-bottom: none !important;
+        }
+      
+    }
+  }
+}
+
+

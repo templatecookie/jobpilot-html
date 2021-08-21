@@ -24,6 +24,13 @@
         background-color: #{$value} !important;
       }
     }
+    
+    #{".hover\\:" +'text-' + $color + "-" + $shade} {
+      
+      &:hover{
+        color: #{$value} !important;
+      }
+    }
     #{".hover\\:" +'border-' + $color + "-" + $shade} {
       
       &:hover{
@@ -94,6 +101,14 @@ blockquote {
 }
 .bg-transsparent{
   background-color: transparent !important;
+}
+.hover\:bg-transsparent{
+  &hover{
+    background-color: transparent !important;
+  }
+}
+.hover-shadow\:none{
+  box-shadow: none !important;
 }
 .bgprefix-cover {
   background-size: cover;

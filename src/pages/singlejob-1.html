@@ -1,0 +1,80 @@
+{% extends "layout/layout.html" %}
+
+
+{% block content %}
+{% include "../templates/layout/header-footer/header-candidates.html" %}
+
+<div class="breadcrumbs breadcrumbs-height">
+    <div class="container">
+        <div class="row align-items-center breadcrumbs-height">
+            <div class="col-12">
+                
+                <div class="card jobcardStyle1 bg-transparent border-transparent hover:bg-transparent hover-shadow:none">
+                    <div class="card-body">
+                      <div class="rt-single-icon-box ">
+                        <div class="icon-thumb">
+                          <img src="assets/images/icon/single-job-logo-1.png" alt="" draggable="false">
+                        </div>
+                        <div class="iconbox-content">
+                          <div class="post-info2">
+                            <div class="post-main-title2"> <a href="#">Sunior UX Designer</a> <span class="badge rounded-pill bg-danger-50 text-danger-500">Featured</span> <span class="badge rounded-pill bg-primary-50 text-primary-500">Full Time</span> </div>
+                            <div class="body-font-3 text-gray-600 pt-2">
+                              <a class="info-tools" href="#">
+                               <span> <i class="ph-link text-primary-500"></i>      </span>     
+                               <span class="text-gray-600">https://twitter.com</span>
+                              </a>
+                              <a class="info-tools" href="tel:555-0120">
+                                <span><i class="ph-phone text-primary-500"></i></span>           
+                                  <span class="text-gray-600">(406) 555-0120</span>
+                              </a>
+                              <a class="info-tools" href="mailto: twitter@gmail.com">
+                                <span><i class="ph-envelope-simple text-primary-500"></i></span>       
+                                <span class="text-gray-600">twitter@gmail.com</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="iconbox-extra align-self-center">
+                           <div>
+                              <button class="bg-gray-10 text-primary-500 plain-button icon-56 hover:bg-primary-500 hover:text-gray-10">
+                                <i class="ph-bookmark-simple"></i>
+                              </button>
+                           </div>
+                            <div class="max-311">
+                              <button type="button" class="btn btn-primary btn-lg d-block">
+                                  <div class="button-content-wrapper ">
+                                    <span class="button-icon align-icon-right">
+                                      <i class="ph-arrow-right"></i>       
+                                      </span>
+                                    <span class="button-text">
+                                          Apply Now 
+                                      </span>
+                                  </div>
+                                </button>
+                                <span class="d-block rt-pt-10 text-end f-size-14 text-gray-700 ">Job expire in: <span class="text-danger-500">June 30, 2021</span></span>
+                            </div>
+
+                        </div>
+                      </div>
+                  
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="single-job-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur tempora velit cumque.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="rt-spacer-80 rt-spacer-md-40"></div>
+{% include "../templates/layout/header-footer/footer-three.html" %}
+
+
+{% endblock %}

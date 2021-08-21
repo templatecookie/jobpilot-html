@@ -17,6 +17,12 @@
   font-size: 32px;
   @include rt-trs(0.24s);
 }
+.icon-56{
+  @include iconbox(56px, 5px);
+  background-color: transparent;
+  font-size: 24px;
+  @include rt-trs(0.24s);
+}
 .icon-48{
   @include iconbox(48px, 4px);
   background-color: transparent;

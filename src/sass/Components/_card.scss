@@ -53,7 +53,7 @@
     }
 
     .iconbox-content {
-      .job-mini-title {
+      .job-mini-title, .job-mini-title2 {
         font-size: 18px;
         font-weight: 400;
         margin: 0 0 3px;
@@ -61,6 +61,9 @@
         a {
           color: var(--gray-900);
         }
+      }
+      .job-mini-title2{
+        font-size: 24px;
       }
       .loacton {
         font-size: 14px;
@@ -96,7 +99,7 @@
   }
   .post-info , .post-info2{
     
-    .post-main-title {
+    .post-main-title, .post-main-title2 {
       font-size: 20px;
       line-height: 32px;
       color: var(--gray-900);
@@ -110,6 +113,9 @@
           color: var(--primary-500);
         }
       }
+    }
+    .post-main-title2{
+      font-size: 24px;
     }
     .info-tools{
       display: inline-flex;

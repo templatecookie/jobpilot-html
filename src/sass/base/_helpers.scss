@@ -1,44 +1,4 @@
-@each $color, $shades in $colors {
-  @each $shade, $value in $shades {
-    #{".text-" + $color + "-" + $shade} {
-      color: #{$value} !important;
-    }
-    #{".bg-" + $color + "-" + $shade} {
-      background-color: #{$value} !important;
-    }
 
-    #{".border-" + $color + "-" + $shade} {
-      border-color: #{$value} !important;
-    }
-    
-    #{".hoverbg-" + $color + "-" + $shade} {
-      
-      &:hover{
-        background-color: #{$value} !important;
-      }
-    } 
-    
-    #{".hover\\:" +'bg-' + $color + "-" + $shade} {
-      
-      &:hover{
-        background-color: #{$value} !important;
-      }
-    }
-    
-    #{".hover\\:" +'text-' + $color + "-" + $shade} {
-      
-      &:hover{
-        color: #{$value} !important;
-      }
-    }
-    #{".hover\\:" +'border-' + $color + "-" + $shade} {
-      
-      &:hover{
-        border-color: #{$value} !important;
-      }
-    }
-  }
-}
 
 
 
@@ -200,6 +160,10 @@ margin: 0px;
 .rt-mb-6{
   margin-bottom: 6px;
 }
+.hr-0{
+  margin: 0;
+  padding: 0;
+}
 @keyframes zoomIn {
   from {
     opacity: 0;
@@ -232,6 +196,57 @@ margin: 0px;
     opacity: 1;
   }
 }
+
+
+@each $color, $shades in $colors {
+  @each $shade, $value in $shades {
+    #{".text-" + $color + "-" + $shade} {
+      color: #{$value} !important;
+    }
+    #{".bg-" + $color + "-" + $shade} {
+      background-color: #{$value} !important;
+    }
+
+    #{".border-" + $color + "-" + $shade} {
+      border-color: #{$value} !important;
+    }
+    
+    #{".hoverbg-" + $color + "-" + $shade} {
+      
+      &:hover{
+        background-color: #{$value} !important;
+      }
+    } 
+    
+    #{".hover\\:" +'bg-' + $color + "-" + $shade} {
+      
+      &:hover{
+        background-color: #{$value} !important;
+      }
+    }
+    
+    #{".hover\\:" +'text-' + $color + "-" + $shade} {
+      
+      &:hover{
+        color: #{$value} !important;
+      }
+    }
+    #{".hover\\:" +'border-' + $color + "-" + $shade} {
+      
+      &:hover{
+        border-color: #{$value} !important;
+      }
+    }
+  }
+}
+
+.text-twitter{
+  color: #1DA1F2;
+}
+.text-pinterest{
+  color: #CA2127;
+}
+
 
 @for $i from 0 through 30 {
   .rt-mr-#{$i* 1} {

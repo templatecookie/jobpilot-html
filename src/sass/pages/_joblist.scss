@@ -324,3 +324,11 @@
     border-radius: 12px;
   }
 }
+.gap-8{
+  li{
+    margin-right: 8px;
+    &:last-child{
+      margin-right: 0px;
+    }
+  }
+}

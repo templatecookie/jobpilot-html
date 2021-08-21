@@ -1,0 +1,6 @@
+.p-24{
+  padding: 32px;
+  @include breakpoint(xs){
+    padding: 12px;
+  }
+}

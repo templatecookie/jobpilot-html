@@ -6,6 +6,10 @@
     #{".bg-" + $color + "-" + $shade} {
       background-color: #{$value} !important;
     }
+
+    #{".border-" + $color + "-" + $shade} {
+      border-color: #{$value} !important;
+    }
     
     #{".hoverbg-" + $color + "-" + $shade} {
       

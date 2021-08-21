@@ -61,7 +61,7 @@
       .job-mini-title, .job-mini-title2 {
         font-size: 18px;
         font-weight: 400;
-        margin: 0 0 3px;
+        margin: 0 0 13px;
         color: var(--gray-900);
         a {
           color: var(--gray-900);
@@ -73,18 +73,19 @@
       .loacton {
         font-size: 14px;
         margin-right: 10px;
+        display: inline-flex;
         &:last-child{
           margin-right: 0px;
         }
         
         svg,
         img {
-          margin-right: 4px;
+          margin-right: 8px;
           font-size: 16px;
         }
         i{
-          font-size: 18px;
-          margin-right: 4px;
+          font-size: 22px;
+          margin-right: 8px;
         }
       }
       .bottom-link{

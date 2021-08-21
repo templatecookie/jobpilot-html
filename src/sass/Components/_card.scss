@@ -21,6 +21,11 @@
     color: var(--primary-500);
     text-decoration: none;
   }
+  &.body-24{
+    .card-body{
+      padding: 24px;
+    }
+  }
 }
 
 .jobcardStyle1 {

@@ -109,7 +109,6 @@
 
   if ($(".newestjob_active").length > 0) {
     $(".newestjob_active").slick({
-    
       slidesToShow: 3,
       infinite: true,
       slidesToScroll: 2,
@@ -164,7 +163,6 @@
   }
   if ($(".testimonail_active").length > 0) {
     $(".testimonail_active").slick({
- 
       slidesToShow: 3,
       infinite: true,
       slidesToScroll: 2,
@@ -220,13 +218,12 @@
   // brands active
   if ($(".brand-active").length > 0) {
     $(".brand-active").slick({
- 
       slidesToShow: 6,
       infinite: true,
       slidesToScroll: 4,
       dots: false,
       arrows: false,
-      
+
       responsive: [
         {
           breakpoint: 1199,
@@ -273,133 +270,107 @@
       ],
     });
   }
-  // scroll up js 
+  // scroll up js
   $.scrollUp({
     scrollText: '<i class="ph-caret-up-light"></i>',
     scrollSpeed: 1500,
-    animation: 'slide',
-    easingType: 'easeInQuint'
+    animation: "slide",
+    easingType: "easeInQuint",
+  });
 
-});
+  // select 2 active
+  $(".rt-selectactive").select2({
+    // minimumResultsForSearch: Infinity,
+  });
 
+  // filltering
+  $(".grid").imagesLoaded(function () {
+    var $grid = $(".grid").isotope({
+      itemSelector: ".grid-item",
+      percentPosition: true,
+      masonry: {
+        // use outer width of grid-sizer for columnWidth
+        columnWidth: 1,
+      },
+    });
+  });
+  $(".filter-list").on("click", "li", function () {
+    $(".filter-list li").removeClass("active");
+    $(this).addClass("active");
+    var filterValue = $(this).attr("data-filter");
+    $(".grid").isotope({
+      filter: filterValue,
+    });
+    $(window).trigger("resize");
+  });
 
-// select 2 active 
-$('.rt-selectactive').select2({
- // minimumResultsForSearch: Infinity,
-});
+  // map active
+  var Map1 = document.getElementById("mapid");
+  if (Map1) {
+    var mymap = L.map("mapid").setView([51.505, -0.09], 13);
 
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution:
+        'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      maxZoom: 18,
+      id: "mapbox/streets-v11",
+      accessToken: "your.mapbox.access.token",
+    }).addTo(mymap);
+  }
 
-// filltering 
-$('.grid').imagesLoaded(function () {
-  var $grid = $('.grid').isotope({
-    itemSelector: '.grid-item',
-    percentPosition: true,
-    masonry: {
-      // use outer width of grid-sizer for columnWidth
-      columnWidth: 1
+  // filter sidebar toggole
+  $(".toggle-filter-sidebar").on("click", function () {
+    $(".sidebar-widget-overlay, .jobsidebar").toggleClass("active");
+  });
+  $(".sidebar-widget-overlay, .close-me").on("click", function () {
+    $(".sidebar-widget-overlay, .jobsidebar").removeClass("active");
+  });
+
+  // hide tags
+
+  $(".close-tag").on("click", function () {
+    $(this).parent(".single-tag").hide();
+  });
+
+  // advanced fillter
+  $(".open-adf").on("click", function () {
+    $(".jobsearchBox").toggleClass("active-adf");
+    $(".job-filter-overlay").toggleClass("active");
+    $(".advance-hidden-filter-menu").slideToggle(300);
+    $("body").toggleClass("body-no-scrolling");
+  });
+  $(".job-filter-overlay").on("click", function () {
+    $(".jobsearchBox").removeClass("active-adf");
+    $(".job-filter-overlay").removeClass("active");
+    $(".advance-hidden-filter-menu").slideUp(300);
+    $("body").removeClass("body-no-scrolling");
+  });
+
+  // custom scroll
+  $(".custom-scroll").overlayScrollbars({
+    //className: "os-theme-thick-dark",
+  });
+
+  //conditional filter
+  var getToggleClass = document.getElementById("togglclass1");
+  var toggleSidebar = document.getElementById("toggoleSidebar");
+  var productCloumnClass = document.getElementsByClassName("condition_class");
+
+  $(".toggole-colum-classes").on("click", function () {
+    $(toggleSidebar).toggleClass("d-none");
+
+    if (!toggleSidebar.classList.contains("d-none")) {
+      getToggleClass.classList.add("col-xl-9");
+      getToggleClass.classList.remove("col-xl-12");
+    } else {
+      getToggleClass.classList.add("col-xl-12");
+      getToggleClass.classList.remove("col-xl-9");
+    }
+
+    if (getToggleClass.classList.contains("col-xl-9")) {
+      $(productCloumnClass).removeClass("col-xl-4");
+    } else {
+      $(productCloumnClass).addClass("col-xl-4");
     }
   });
-});
-$('.filter-list').on('click', 'li', function () {
-  $('.filter-list li').removeClass('active');
-  $(this).addClass('active');
-  var filterValue = $(this).attr('data-filter');
-  $('.grid').isotope({
-    filter: filterValue
-  });
-  $(window).trigger('resize');
-});
-
-
-// map active 
-var Map1 = document.getElementById("mapid");
-if(Map1){
-  var mymap = L.map('mapid').setView([51.505, -0.09], 13);
-
-
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox/streets-v11',
-    accessToken: 'your.mapbox.access.token'
-}).addTo(mymap);
-}
-
-
-
-// filter sidebar toggole 
-$(".toggle-filter-sidebar").on("click",function(){
-  $(".sidebar-widget-overlay, .jobsidebar").toggleClass("active")
-});
-$(".sidebar-widget-overlay, .close-me").on("click",function(){
-  $(".sidebar-widget-overlay, .jobsidebar").removeClass("active")
-});
-
-
-// hide tags
-
-$(".close-tag").on("click", function(){
- 
-  $(this).parent(".single-tag").hide()
-});
-
-
-// advanced fillter 
-$(".open-adf").on("click", function(){
-  $(".jobsearchBox").toggleClass("active-adf");
-  $(".job-filter-overlay").toggleClass("active");
-  $(".advance-hidden-filter-menu").slideToggle(300);
-  $("body").toggleClass("body-no-scrolling");
-});
-$(".job-filter-overlay").on("click", function(){
-  $(".jobsearchBox").removeClass("active-adf");
-  $(".job-filter-overlay").removeClass("active");
-  $(".advance-hidden-filter-menu").slideUp(300);
-  $("body").removeClass("body-no-scrolling");
-});
-
-// custom scroll 
-$(".custom-scroll").overlayScrollbars({
-  //className: "os-theme-thick-dark",
-});
-
-
-//conditional filter
-var getToggleClass = document.getElementById('togglclass1');
-var productCloumnClass = document.querySelectorAll(".condition_class");
-console.log("pre.."+  productCloumnClass);
-$(".toggole-colum-classes").on("click", function () {
-  $("#toggoleSidebar").toggleClass("d-none");
-
-
-  if(getToggleClass.classList.contains('col-xl-9')){
-    $(getToggleClass).removeClass("col-xl-9");
-    $(getToggleClass).addClass("col-xl-12");
-    $(productCloumnClass).removeClass("col-xl-4")
-    $(productCloumnClass).addClass("col-xl-6")
-    
-
-  }
-  else {
-    $(getToggleClass).addClass("col-xl-9");
-    $(getToggleClass).removeClass("col-xl-12");
-    $(productCloumnClass).addClass("col-xl-6")
-    $(productCloumnClass).removeClass("col-xl-4")
-
-  }
-
-  
-
-
-
-
-});
-
-
-
-
-
-
-
-
 })(jQuery);

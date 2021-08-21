@@ -121,13 +121,13 @@
         </div>
         <div class="row">
             <div class="col-xl-3 d-none" id="toggoleSidebar">
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium corporis tempora optio libero modi dolore maxime officia quae blanditiis, nihil reprehenderit nostrum eaque deserunt beatae doloribus ad sequi. Minima, odio?
+                {% include "../templates/components/job/toggoleSidebar.html" %}
             </div>
             <div class="col-xl-12" id="togglclass1">
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane  show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                         <div class="row">
-                            {% include "../templates/components/job/filterjob-three-column.html" %}
+                            {% include "../templates/components/job/conditaion-grid.html" %}
                         </div>
                         <div class="rt-pt-30">
                             {% include "../templates/components/pagination/pagination.html" %}

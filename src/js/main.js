@@ -365,24 +365,37 @@ $(".custom-scroll").overlayScrollbars({
 
 
 //conditional filter
-var testElement = document.getElementById('togglclass1');
+var getToggleClass = document.getElementById('togglclass1');
+var productCloumnClass = document.querySelectorAll(".condition_class");
+console.log("pre.."+  productCloumnClass);
 $(".toggole-colum-classes").on("click", function () {
   $("#toggoleSidebar").toggleClass("d-none");
-});
 
-$('.toggole-colum-classes').bind('click', function() {
 
-  if(testElement.classList.contains('col-xl-9')){
-    $(testElement).removeClass("col-xl-9");
-    $(testElement).addClass("col-xl-12");
-    console.log("ei" + testElement);
+  if(getToggleClass.classList.contains('col-xl-9')){
+    $(getToggleClass).removeClass("col-xl-9");
+    $(getToggleClass).addClass("col-xl-12");
+    $(productCloumnClass).removeClass("col-xl-4")
+    $(productCloumnClass).addClass("col-xl-6")
+    
+
   }
   else {
-    $(testElement).addClass("col-xl-9");
-    $(testElement).removeClass("col-xl-12");
+    $(getToggleClass).addClass("col-xl-9");
+    $(getToggleClass).removeClass("col-xl-12");
+    $(productCloumnClass).addClass("col-xl-6")
+    $(productCloumnClass).removeClass("col-xl-4")
+
   }
-    
-  });
+
+  
+
+
+
+
+});
+
+
 
 
 

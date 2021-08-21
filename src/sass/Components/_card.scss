@@ -26,6 +26,11 @@
       padding: 24px;
     }
   }
+  &.body-0{
+    .card-body{
+      padding: 0px;
+    }
+  }
 }
 
 .jobcardStyle1 {

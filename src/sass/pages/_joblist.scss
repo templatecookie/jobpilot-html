@@ -309,3 +309,16 @@
 .max-311{
   min-width: 311px;
 }
+.p-32{
+  padding: 32px;
+  @include breakpoint(xs){
+    padding: 16px;
+  }
+}
+
+.sdeibarmap{
+  #mapid {
+    height: 320px;
+    border-radius: 12px;
+  }
+}

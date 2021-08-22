@@ -4,9 +4,66 @@
 .d-sidebar{
     flex-grow: 1;
     max-width: 312px;
+    padding: 26px;
+    border-right: 1px solid var(--gray-50);
     width: 100%;
+    position: sticky;
+    top: 100px;
 }
 .d-page-content{
     padding: 48px;
     flex-grow: 1;
+}
+
+// sidebar menu 
+.sidebar-menu{
+    @extend .rt-list;
+    li{
+        display: block;
+        margin-bottom: 8px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+        a{
+            padding: 12px 24px;
+            display: block;
+            color: var(--gray-500);
+            border-radius: 4px;
+            line-height: 24px;
+            font-weight: 500;
+            .button-content-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                line-height: 24px;
+                .button-icon {
+                  order: 5;
+                  flex-grow: 0;
+                  font-size: 24px;
+                  margin-right: 19px;
+                  &.align-icon-right {
+                    order: 15;
+                    margin-left: 19px;
+                    margin-right: 0px;
+                  }
+                }
+                .button-text {
+                  flex-grow: 1;
+                  order: 10;
+                }
+              }
+
+        }
+        &.active{
+            a{
+                background: var(--primary-500);
+            color: var(--gray-10);
+            }
+        }
+        &:hover{
+            a{
+            color: var(--primary-500);
+            }
+        }
+    }
 }

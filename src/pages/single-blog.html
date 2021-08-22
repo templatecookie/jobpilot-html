@@ -1,5 +1,5 @@
 {% extends "layout/layout.html" %}
-{% set body_class = "single-blog-page" %}
+
 {% block content %}
 
 {% include "../templates/layout/header-footer/header-normal.html" %}
@@ -12,7 +12,7 @@
 <div class="blog-content-area rt-pt-50 rt-mb-100 rt-mb-md-50">
     <div class="container">
         <div class="row">
-            <div class="col-xl-8">
+            <div class="col-xl-8 single-blog-page">
                 <article class="single-blog-post blog-post hover-shadow:none">
                     <h4 class="rt-mb-24">20 cool fonts for web and graphic design (free + paid)</h4>
                     <div class="entry-meta align-items-center">
@@ -135,120 +135,83 @@ The Graphik family has 18 different styles, from bold to regular, compact light,
                         </li>
                       </ul>
                 </article>
-                <div id="comments" class="comments-area">
-                    <h2 class="comments-title "> Commends</h2><!-- .comments-title -->
-                    <ol class="comment-list">
-                        <li class="comment even thread-even depth-1">
-                            <div id="div-comment-4" class="comment-body">
-                                <footer class="comment-meta">
-                                    <div class="comment-author vcard">
-                                        <img  src="assets/images/all-img/cmnt1.png" class="avatar" alt="comment user">
-                                        <b class="fn"><a href="http://tommcfarlin.com" rel="external nofollow" class="url">Cody Fisher</a></b> <span class="says">says:</span>					                        </div><!-- .comment-author -->
-
-                                    <div class="comment-metadata">
-                                        <a href="http://localhost/new-ex/2013/01/03/comments/#comment-4">
-                                            <time datetime="2012-09-03T10:18:04+00:00">
-                                                September 3, 2012 at 10:18 am							</time>
-                                        </a>
-                                    </div><!-- .comment-metadata -->
-
-                                </footer><!-- .comment-meta -->
-
-                                <div class="comment-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex harum labore maxime reiciendis temporibus! Aut dicta dolor eius error explicabo ipsa modi natus officia porro, quasi reiciendis </p>
-                                </div><!-- .comment-content -->
-
-                                <div class="reply"><a rel="nofollow" class="comment-reply-link" href="#" aria-label="Reply to Tom McFarlin">Reply</a></div>
-                            </div><!-- .comment-body -->
-                            <ol class="children">
-                                <li class="comment even thread-even depth-1">
-                                    <div  class="comment-body">
-                                        <footer class="comment-meta">
-                                            <div class="comment-author vcard">
-                                                <img  src="assets/images/all-img/cmnt3.png" class="avatar" alt="comment user">
-                                                <b class="fn"><a href="http://tommcfarlin.com" rel="external nofollow" class="url">Cody Fisher</a></b> <span class="says">says:</span>					                        </div><!-- .comment-author -->
-
-                                            <div class="comment-metadata">
-                                                <a href="http://localhost/new-ex/2013/01/03/comments/#comment-4">
-                                                    <time datetime="2012-09-03T10:18:04+00:00">
-                                                        September 3, 2012 at 10:18 am							</time>
-                                                </a>
-                                            </div><!-- .comment-metadata -->
-
-                                        </footer><!-- .comment-meta -->
-
-                                        <div class="comment-content">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, quibusdam</p>
-                                        </div><!-- .comment-content -->
-
-                                        <div class="reply"><a rel="nofollow" class="comment-reply-link" href="#" aria-label="Reply to Tom McFarlin">Reply</a></div>
-                                    </div><!-- .comment-body -->
-                                </li><!-- #comment-## -->
-                            </ol>
-                        </li><!-- #comment-## -->
-                        <li  class="comment odd alt thread-odd thread-alt depth-1">
-                            <div id="div-comment-3" class="comment-body">
-                                <footer class="comment-meta">
-                                    <div class="comment-author vcard">
-                                        <img alt="" src="assets/images/all-img/cmnt2.png" class="avatar  photo">
-                                        <b class="fn"><a href="http://chrisam.es" rel="external nofollow" class="url">Chris Ames</a></b> <span class="says">says:</span>					                        </div><!-- .comment-author -->
-
-                                    <div class="comment-metadata">
-                                        <a href="http://localhost/new-ex/2013/01/03/comments/#comment-3">
-                                            <time datetime="2013-01-04T10:15:32+00:00">
-                                                January 4, 2013 at 10:15 am							</time>
-                                        </a>
-                                    </div><!-- .comment-metadata -->
-
-                                </footer><!-- .comment-meta -->
-
-                                <div class="comment-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto, atque dicta dolore ipsa labore maiores neque officia quae quas quasi, quisquam quos voluptas! Ab aliquam amet labore necessitatibus.</p>
-                                    <blockquote>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dolorum facilis illum laboriosam laudantium. Accusantium architecto
-                                    </blockquote>
-
-                                </div><!-- .comment-content -->
-
-                                <div class="reply"><a rel="nofollow" class="comment-reply-link" href="#" aria-label="Reply to Chris Ames">Reply</a></div>			</div><!-- .comment-body -->
-                        </li><!-- #comment-## -->
-
-                    </ol><!-- .comment-list -->
-
-                    <div id="respond" class="comment-respond">
-                        <h3 id="reply-title" class="comment-reply-title">Leave a Reply</h3>
-                        <form>
-                            <p class="com">
-                                <label class="text-capitalize">
-                                   Email
-                                </label>
-                                <input type="email" placeholder="Email" class="form-control">
-                            </p>
-                            <p class="com">
-                                <label class="text-capitalize">
-                                    Subject
-                                </label>
-                                <input type="text" placeholder="Subject" class="form-control">
-                            </p>
-                            <p class="com">
-                                <label class="text-capitalize">
-                                    Name
-                                </label>
-                                <input type="text" placeholder="Name" class="form-control">
-                            </p>
-                            <p class="com">
-                                <label class="text-capitalize">
-                                    Message
-                                </label>
-                                <textarea placeholder="your message" class="form-control"></textarea>
-                            </p>
-                            <div class="float-right">
-                                <input type="submit" value="Send">
-                            </div>
-                        </form>
-                    </div>
-
-                </div>
+              <div class="comments-elemenst rt-pt-100 rt-pt-md-50">
+                  <h6 class="rt-mb-32">Write a Commends</h6>
+                    <form action="#" class="rt-mb-50"> 
+                        <textarea rows="4" placeholder="Share your thoughts on this post?" class="rt-mb-15"></textarea>
+                        <button type="submit" class="btn btn-primary">Post a Commends</button>
+                    </form>
+                  <ul class="comments-list rt-list">
+                      <li class="single-comments">
+                          <div class="rt-single-icon-box rt-mb-15">
+                              <div class="icon-thumb rt-mr-16">
+                                  <div class="user-img">
+                                    <img src="assets/images/all-img/cmnt1.png" alt="">
+                                  </div>
+                              </div>
+                              <div class="iconbox-content body-font-3 text-gray-700">
+                                <a class="user-name ft-wt-5 rt-mb-4 text-gray-900 hover:text-primary-500" href="#">Cody Fisher</a>
+                                 <span class="d-block body-font-4 text-gray-500">1 sec ago</span>
+                              </div>
+                          </div>
+                          <div class="body-font-3 text-gray-700">
+                            Amet minim mollit non deserunt 
+                          </div>
+                      </li>
+                      <li class="single-comments">
+                          <div class="rt-single-icon-box rt-mb-15">
+                              <div class="icon-thumb rt-mr-16">
+                                  <div class="user-img">
+                                    <img src="assets/images/all-img/cmnt4.png" alt="">
+                                  </div>
+                              </div>
+                              <div class="iconbox-content body-font-3 text-gray-700">
+                                <a class="user-name ft-wt-5 rt-mb-4 text-gray-900 hover:text-primary-500" href="#">Bessie Cooper</a>
+                                 <span class="d-block body-font-4 text-gray-500">1 sec ago</span>
+                              </div>
+                          </div>
+                          <div class="body-font-3 text-gray-700">
+                            Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                          </div>
+                      </li>
+                      <li class="single-comments">
+                          <div class="rt-single-icon-box rt-mb-15">
+                              <div class="icon-thumb rt-mr-16">
+                                  <div class="user-img">
+                                    <img src="assets/images/all-img/cmnt2.png" alt="">
+                                  </div>
+                              </div>
+                              <div class="iconbox-content body-font-3 text-gray-700">
+                                <a class="user-name ft-wt-5 rt-mb-4 text-gray-900 hover:text-primary-500" href="#">Courtney Henry</a>
+                                 <span class="d-block body-font-4 text-gray-500">1 sec ago</span>
+                              </div>
+                          </div>
+                          <div class="body-font-3 text-gray-700">
+                            Exercitation veniam consequat sunt nostrud amet.
+                          </div>
+                      </li>
+                      <li class="single-comments">
+                          <div class="rt-single-icon-box rt-mb-15">
+                              <div class="icon-thumb rt-mr-16">
+                                  <div class="user-img">
+                                    <img src="assets/images/all-img/cmnt3.png" alt="">
+                                  </div>
+                              </div>
+                              <div class="iconbox-content body-font-3 text-gray-700">
+                                <a class="user-name ft-wt-5 rt-mb-4 text-gray-900 hover:text-primary-500" href="#">Jerome Bell</a>
+                                 <span class="d-block body-font-4 text-gray-500">1 sec ago</span>
+                              </div>
+                          </div>
+                          <div class="body-font-3 text-gray-700">
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                          </div>
+                      </li>
+                  </ul>
+                  <div class="rt-spacer-24"></div>
+                  <div>
+                    <button class="btn btn-primary-50">View All</button>
+                  </div>
+              </div>
             </div>
             <div class="col-xl-4 rt-pt-md-30">
                 {% include "../templates/components/blog/blog-sidebar.html" %}
@@ -258,6 +221,42 @@ The Graphik family has 18 different styles, from bold to regular, compact light,
     </div>
 </div>
 
+<hr class="hr-0">
+<section class="related-jobs-area rt-pt-100 rt-pt-md-50">
+    <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="d-flex flex-wrap">
+              <div class="flex-grow-1"> <h4>Related Blog</h4></div>
+              <div class="flex-gorw-0 d-flex">
+                <button class="btn icon-48 plain-button slickprev bg-primary-50 rt-mr-12">                       
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 12H5" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 5L5 12L12 19" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                  
+                </button>
+                <button class="btn icon-48 plain-button slicknext bg-primary-50 rt-mr-12">                       
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12H19" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 5L19 12L12 19" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                                   
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rt-spacer-40 rt-spacer-md-20"></div>
+        <div class="row">
+          <div class="col-12">
+            <div class="newestjob_active slick-bullet deafult_style_dot related-jobs" data-slick='{"dots": false}'>
+                {% include "../templates/components/blog/realted-post-slider.html" %}
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+<div class="rt-spacer-80 rt-spacer-md-40"></div>
 
 {% include "../templates/layout/header-footer/footer-three.html" %}
 {% endblock %}

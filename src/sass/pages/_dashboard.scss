@@ -1,0 +1,12 @@
+.dashboard-wrapper{
+    display: flex;
+}
+.d-sidebar{
+    flex-grow: 1;
+    max-width: 312px;
+    width: 100%;
+}
+.d-page-content{
+    padding: 48px;
+    flex-grow: 1;
+}

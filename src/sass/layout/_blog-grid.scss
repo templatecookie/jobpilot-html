@@ -12,6 +12,25 @@
       border-radius: 8px;
     }
   }
+  .entry-meta{
+    display: flex;
+    margin-bottom: 13px;
+    a{
+      margin-right: 27px;
+      display: inline-flex;
+      font-size: 14px;
+      color: var(--gray-700);
+      i{
+        align-self: center;
+        font-size: 24px;
+        color: var(--primary-500);
+        margin-right: 6px;
+      }
+      &:last-child{
+        margin-right: 0px;
+      }
+    }
+  }
   .entry-header{
       margin-bottom: 12px;
       .entry-title{
@@ -38,8 +57,15 @@
     font-size: 16px;
     a{
         color: var(--primary-500);
+        display: inline-flex;
+        
+        i{
+          align-self: center;
+          font-size: 24px;
+          margin-left: 12px;
+        }
         &:hover{
-            color: var(--primary-900);
+            color: var(--primary-400);
         }
     }
   }
@@ -47,5 +73,14 @@
       border-color: transparent;
       box-shadow: 0px 12px 64px rgba(0, 44, 109, 0.12);
       
+  }
+}
+
+
+.blog-list-view{
+  &.rt-single-icon-box{
+    .icon-thumb{
+      margin-right: 32px;
+    }
   }
 }

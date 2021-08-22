@@ -5,6 +5,7 @@
 a {
   color: var(--primary-600);
   text-decoration: none;
+  @include rt-trs(0.24s);
 
   @include on-event {
     color: var(--primary-400);

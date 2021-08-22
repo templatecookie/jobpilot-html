@@ -256,13 +256,13 @@ margin: 0px;
 
 @for $i from 0 through 30 {
   .rt-mr-#{$i* 1} {
-    margin-right: $i * 1px;
+    margin-right: $i * 1px !important;
   }
   .rt-ml-#{$i* 1} {
-    margin-left: $i * 1px;
+    margin-left: $i * 1px !important;
   }
   .rt-rounded-#{$i* 1} {
-    border-radius: $i * 1px;
+    border-radius: $i * 1px !important;
   }
 }
 

@@ -1,0 +1,124 @@
+{% extends "layout/layout.html" %}
+
+{% block content %}
+
+{% include "../templates/layout/header-footer/header-normal.html" %}
+
+
+{% set page_title = "Blog" %}
+{% set current_page = "Blog" %}
+{% include "../templates/components/breadcrumbs/breadcrumbs.html" %}
+
+<div class="blog-content-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4">
+                <div class="sidebar-wrapper">
+                    <div class="widget widget_search">
+                        <form>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="search" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-primary btn-sm" type="button" id="button-addon1"><i class="icofont-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div><!-- end single search -->
+                    <div class="widget widget_categories">
+                        <h2 class="widget-title">Categories</h2>
+                        <ul>
+                            <li><a href="#">Audio</a></li>
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">Read Article</a></li>
+                            <li><a href="#">Video</a></li>
+                        </ul>
+                    </div><!-- end single search -->
+                    <div class="widget widget_tag_cloud">
+                        <h2 class="widget-title">tags</h2>
+                        <div class="tagcloud">
+                            <a href="#" class="tag-cloud-link">3D vCard</a>
+                            <a href="#" class="tag-cloud-link">animated theme</a>
+                            <a href="#" class="tag-cloud-link">creative portfolio</a>
+                            <a href="#" class="tag-cloud-link">cv theme</a>
+                            <a href="#" class="tag-cloud-link">online resume</a>
+                            <a href="#" class="tag-cloud-link">personal</a>
+                            <a href="#" class="tag-cloud-link">portfolio</a>
+                            <a href="#" class="tag-cloud-link">professional cv</a>
+                            <a href="#" class="tag-cloud-link">responsive portfolio</a>
+                            <a href="#" class="tag-cloud-link">resume</a>
+                        </div>
+                    </div><!-- end single search -->
+                    <div class="widget widget_instragram_slider">
+                        <h2 class="widget-title">Instagram</h2>
+                        <div id="instragramslider_active" class="owl-carousel" data-instra-id="5372969779" data-instra-token="5372969779.1677ed0.f34412c6537a42948e4d669fef2cf0f4"></div>
+                    </div><!-- end single search -->
+                    <div  class="widget widget_recent_comments">
+                        <h2 class="widget-title">recent comment</h2>
+                        <ul id="recentcomments">
+                            <li class="recentcomments">
+                                <span class="comment-author-link">
+                                <a href="#" rel="external nofollow" class="url">A WordPress Commenter</a>
+                            </span>
+                                on
+                                <a href="#">Hello world!</a>
+                            </li>
+                            <li class="recentcomments">
+                                <span class="comment-author-link"><a href="#" rel="external nofollow" class="url">John Doe</a></span>
+                                on <a href="#">Edge Case: No Content</a>
+                            </li>
+                            <li class="recentcomments">
+                                <span class="comment-author-link">
+                                    <a href="#" rel="external nofollow" class="url">Jane Doe</a></span>
+                                on <a href="#">Protected: Template: Password Protected (the password is “enter”)</a>
+                            </li>
+                            <li class="recentcomments"><span class="comment-author-link">
+                                <a href="#" rel="external nofollow" class="url">Jane Doe</a></span>
+                                on <a href="#">Template: Comments</a></li>
+                            <li class="recentcomments"><span class="comment-author-link">
+                                <a href="#" rel="external nofollow" class="url">John Doe</a></span> on
+                                <a href="#">Template: Comments</a></li>
+                        </ul>
+                    </div>
+                    <div class="widget widget_social_media">
+                        <h2 class="widget-title">Social</h2>
+                        <ul>
+                            <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                            <li><a href="#"><i class="icofont-twitter"></i></a></li>
+                            <li><a href="#"><i class="icofont-github"></i></a></li>
+                            <li><a href="#"><i class="icofont-linkedin"></i></a></li>
+                        </ul>
+    
+                    </div><!-- end single search -->
+                </div>
+            </div>
+            <div class="col-xl-8">
+                <article class="blog-list-view rt-single-icon-box blog-post">
+                    <div class="icon-thumb">
+                        <div class="post-thmubnail">
+                            <img src="assets/images/all-img/blog-post-1.png" alt="" class="rt-rounded-8 w-100">
+                        </div>
+                    </div>
+                    <div class="iconbox-content">
+                        <header class="entry-header">
+                            <h4 class="entry-title">
+                                <a href="#">Donec accumsan volutpat interdum. Nunc tellus enim.</a>
+                            </h4>
+                        </header><!-- .end entry header -->
+                        <div class="entry-content">
+        
+                            Sed sed sollicitudin lacus. Nulla ut risus lacinia, lobortis ipsum vitae, cursus erat. Sed sit amet faucibus ipsum, ut consequat sem.
+                          </div>
+                          <div class="entry-footer">
+                            <a href="#">Read more <i class="ph-arrow-right"></i></a>
+                          </div><!-- /.entry-footer -->
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% include "../templates/layout/header-footer/footer-three.html" %}
+{% endblock %}

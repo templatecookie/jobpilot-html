@@ -4,9 +4,22 @@
 .d-sidebar{
     flex-grow: 1;
     max-width: 312px;
+    padding: 26px;
+    border-right: 1px solid var(--gray-50);
     width: 100%;
 }
 .d-page-content{
     padding: 48px;
     flex-grow: 1;
+}
+
+// sidebar menu 
+.sidebar-menu{
+    @extend .rt-list;
+    li{
+        display: block;
+        &:hover{
+            background: var(--primary-500);
+        }
+    }
 }

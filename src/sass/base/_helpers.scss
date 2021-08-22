@@ -46,16 +46,13 @@ img {
 }
 
 blockquote {
-  background: #f3f3f3;
-  font-size: 20px;
-  line-height: 30px;
+  background: var(--gray-20);
   font-weight: 400;
-  padding-left: 37px;
-  padding-top: 40px;
-  padding-right: 30px;
-  padding-bottom: 30px;
   position: relative;
-  border-left: 4px solid #fc4a1a;
+  font-size: 20px;
+  line-height: 32px;
+  border-radius: 12px;
+  padding: 40px 45px;
 }
 .border-transparent{
   border-color: transparent !important;

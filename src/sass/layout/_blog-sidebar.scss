@@ -262,6 +262,8 @@
         ul{
             display: flex;
             flex-wrap: wrap;
+            margin-left: -10px;
+            margin-right: -10px;
             li{
                 @include flex-width(33%);
                 padding: 10px;

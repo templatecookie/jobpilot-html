@@ -249,6 +249,9 @@ margin: 0px;
 .text-pinterest{
   color: #CA2127;
 }
+.hover\:border-transparent{
+  border-color: transparent !important;
+}
 
 
 @for $i from 0 through 30 {

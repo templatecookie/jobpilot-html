@@ -373,4 +373,15 @@
       $(productCloumnClass).addClass("col-xl-4");
     }
   });
+
+// menu active classes 
+$(function() {
+  $('.menu-active-classes li a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+});
+
+
+
+
+
+
 })(jQuery);

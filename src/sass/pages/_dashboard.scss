@@ -63,16 +63,17 @@
           order: 10;
         }
       }
-    }
-    &.active {
-      a {
+      &.active {
+ 
         background: var(--primary-500);
         color: var(--gray-10);
         &:hover {
           color: var(--gray-10);
         }
-      }
+      
     }
+    }
+   
     &:hover {
       a {
         color: var(--primary-500);

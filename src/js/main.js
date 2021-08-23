@@ -375,16 +375,22 @@
   });
 
 // menu active classes 
+$(".menu-active-classes li").on("click", function(){
+
+  $(".menu-active-classes li").removeClass("active");
+  $(this).addClass("active");
+});
 $(function() {
   $('.menu-active-classes li a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
 });
 
 
 
-tinyMCE.init({
-  mode : "textareas",
-  theme : "simple"   //(n.b. no trailing comma, this will be critical as you experiment later)
+
+tinymce.init({
+  selector: '#default'
 });
+
 
 
 })(jQuery);

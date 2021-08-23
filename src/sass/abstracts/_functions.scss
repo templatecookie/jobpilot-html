@@ -4,6 +4,7 @@ $breakpoints: (
   "lg": 991.98px,
   "xl": 1199.98px,
   "xxl": 1399.98px,
+  "xxl2": 1600px,
 );
 
 @mixin breakpoint($width, $type: max) {

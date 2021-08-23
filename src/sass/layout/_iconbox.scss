@@ -28,6 +28,9 @@
         flex-direction: column;
       }
     }
+    &.icon-reverse{
+      flex-direction: row-reverse;
+    }
     .iconbox-content {
       flex-grow: 1!important;
       h4 {

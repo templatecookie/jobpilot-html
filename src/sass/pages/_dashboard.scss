@@ -100,3 +100,28 @@
     line-height: 56px;
   }
 }
+
+
+// dashboard feature element 
+.top-feature-content{
+  @include breakpoint(xxl2){
+    flex-direction: column;
+  }
+  .left-text{
+    max-width: 380px;
+    @include breakpoint(xxl2){
+      margin-bottom: 32px;
+    }
+  }
+  .single-feature-box{
+    width: 232px;
+    margin-right: 24px;
+    &:last-child{
+      margin-right: 0px;
+    }
+    flex-grow: 1;
+    .rt-single-icon-box{
+      padding: 20px;
+    }
+  }
+}

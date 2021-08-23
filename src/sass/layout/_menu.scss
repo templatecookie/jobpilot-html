@@ -45,7 +45,10 @@
     text-decoration: none;
 }
 
-.main-menu>ul>li.current-menu-item>a {
+.main-menu>ul>li.current-menu-item>a,
+.main-menu ul li a.active
+
+{
     color: var(--primary-500);
 }
 

@@ -1,0 +1,80 @@
+{% extends "layout/layout.html" %}
+
+
+{% block content %}
+{% include "../templates/layout/header-footer/dashboard-headr.html" %}
+
+<div class="dashboard-wrapper">
+  {% include "../templates/components/dashboard/job-sidebar.html" %}
+  <div class="d-page-content">
+    <h5 class="rt-mb-32">Bookmark</h5>
+    <form class="rt-mb-32 row dashboard-input" action="#">
+      <div class="col-xl-4 col-xxl-3">
+        <div class="fromGroup has-icon2">
+          <input type="text" placeholder="candidate name, Keyword...">
+          <div class="icon-badge rt-ml-14">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M20.9999 21L16.6499 16.65" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+          </div>
+      </div>
+      </div>
+      <div class="col-xl-3 ">
+        <div class="fromGroup has-icon2">
+          <input type="text" placeholder="Location">
+          <div class="icon-badge rt-ml-14">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>                                              
+          </div>
+      </div>
+      </div>
+      <div class="col-xl-3 ">
+        <div class="fromGroup has-icon2 ">
+          <select class="rt-selectactive " name="from" style="width: 100%">
+              <option>Select Job</option>
+              <option value="2">Alaska</option>
+              <option value="3">Bahamas</option>
+              <option value="4">Bermuda</option>
+              <option value="5">Canada</option>
+              <option value="6">Caribbean</option>
+              <option value="7">Europe</option>
+              <option value="8">Hawaii</option>
+          </select>
+          <div class="icon-badge rt-ml-14">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 17L12 22L22 17" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 12L12 17L22 12" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>                                                 
+          </div>
+      </div>
+      </div>
+      <div class="col-xl-2 ms-xl-auto">
+        <select class="rt-selectactive " name="from" style="width: 100%">
+          <option> Jobs</option>
+          <option value="2">Alaska</option>
+          <option value="3">Bahamas</option>
+          <option value="4">Bermuda</option>
+          <option value="5">Canada</option>
+          <option value="6">Caribbean</option>
+          <option value="7">Europe</option>
+          <option value="8">Hawaii</option>
+      </select>
+      </div>
+    </form>
+
+    {% include "../templates/components/employe/db-bookmark-employe.html" %}
+
+    <div class="rt-spacer-50 rt-spacer-md-20"></div>
+
+      {% include "../templates/components/pagination/pagination.html" %}
+
+
+    {% include "../templates/layout/header-footer/dashboard-footer.html" %}
+  </div>
+</div>
+
+{% endblock %}

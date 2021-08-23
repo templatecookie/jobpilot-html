@@ -125,3 +125,16 @@
     }
   }
 }
+
+// Dashboard Card 
+.db-job-card{
+  border-color: transparent;
+  border-bottom: 1px solid #EDEFF5;
+  border-radius: inherit;
+  &:last-child{
+    border-bottom: none!important;
+  }  
+  &:hover{
+    border-radius: 12px;
+  }
+}

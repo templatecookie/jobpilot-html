@@ -1,5 +1,4 @@
 .dashboard-wrapper {
- 
 }
 .d-sidebar {
   background-color: #fff;
@@ -10,7 +9,7 @@
   position: fixed;
   top: 100px;
   left: 0px;
-  .sidebar-footer{
+  .sidebar-footer {
     padding-top: 180px;
     padding-bottom: 50px;
   }
@@ -20,11 +19,11 @@
     left: 48px;
     top: 48px;
     right: 48px;
-  };
+  }
   margin-left: 312px;
   margin-top: 100px;
 }
-.min-200{
+.min-200 {
   min-width: 200px;
 }
 // sidebar menu
@@ -79,5 +78,24 @@
         color: var(--primary-500);
       }
     }
+  }
+}
+
+.dashboard-input {
+  #{$all-text-inputs},
+  .form-control {
+    height: 56px;
+  }
+  .select2-container--default .select2-selection--single {
+    height: 56px;
+  }
+  .has-icon,
+  .has-icon2 {
+    .select2-container .select2-selection--single .select2-selection__rendered {
+      line-height: 56px;
+    }
+  }
+  .select2-container .select2-selection--single .select2-selection__rendered {
+    line-height: 56px;
   }
 }

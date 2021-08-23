@@ -125,3 +125,51 @@
     }
   }
 }
+
+// 
+.candidate_card_lists{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  margin-right: -8px;
+  >*{
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  li{
+    flex: 0 0 auto;
+    width: 50%;
+    margin-bottom: 16px;
+    @include breakpoint(xxl2){
+      width: 100%;
+    }
+  }
+}
+
+ul.recent-activity{
+  li{
+    padding: 18px 24px;
+    margin-left: -24px;
+    margin-right: -24px;
+    @include rt-trs(0.24s);
+    .icon-thumb{
+      font-size: 24px;
+      background: var(--gray-20);
+      height: 52px;
+      width: 52px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 6px;
+      @include rt-trs(0.24s);
+      justify-content: center;
+    }
+    &:hover{
+      .icon-thumb{
+        background: var(--gray-10);
+      }
+      background: var(--gray-20);
+    }
+  }
+}

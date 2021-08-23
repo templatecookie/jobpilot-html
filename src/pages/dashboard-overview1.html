@@ -2,126 +2,14 @@
 
 
 {% block content %}
-{% include "../templates/layout/header-footer/header-candidates.html" %}
+{% include "../templates/layout/header-footer/dashboard-headr.html" %}
 
 <div class="dashboard-wrapper">
-    <div class="d-sidebar">
-        <ul class="sidebar-menu">
-            <li class="active">
-               <a href="#">
-                <span class="button-content-wrapper ">
-                    <span class="button-icon align-icon-left">
-                        <i class="ph-squares-four"></i>                        
-                    </span>
-                    <span class="button-text">
-                        Overview 
-                    </span>
-                </span>
-               </a>
-            </li>
-            <li>
-               <a href="#">
-                <span class="button-content-wrapper ">
-                    <span class="button-icon align-icon-left">
-                        <i class="ph-user"></i>                     
-                    </span>
-                    <span class="button-text">
-                        View Profile
-                    </span>
-                </span>
-               </a>
-            </li>
-            <li>
-               <a href="#">
-                <span class="button-content-wrapper ">
-                    <span class="button-icon align-icon-left">
-                        <i class="ph-suitcase-simple"></i>                    
-                    </span>
-                    <span class="button-text">
-                        My Jobs
-                    </span>
-                </span>
-               </a>
-            </li>
-            <li>
-               <a href="#">
-                <span class="button-content-wrapper ">
-                    <span class="button-icon align-icon-left">
-                        <i class="ph-pencil-line"></i>                   
-                    </span>
-                    <span class="button-text">
-                        Post a Jobs
-                    </span>
-                </span>
-               </a>
-            </li>
-            <li>
-               <a href="#">
-                <span class="button-content-wrapper ">
-                    <span class="button-icon align-icon-left">
-                        <i class="ph-users"></i>                
-                    </span>
-                    <span class="button-text">
-                        Application
-                    </span>
-                </span>
-               </a>
-            </li>
-            <li>
-               <a href="#">
-                <span class="button-content-wrapper ">
-                    <span class="button-icon align-icon-left">
-                        <i class="ph-bookmark-simple"></i>             
-                    </span>
-                    <span class="button-text">
-                        Bookmark
-                    </span>
-                </span>
-               </a>
-            </li>
-            <li>
-               <a href="#">
-                <span class="button-content-wrapper ">
-                    <span class="button-icon align-icon-left">
-                        <i class="ph-clipboard"></i>          
-                    </span>
-                    <span class="button-text">
-                        Price Plan
-                    </span>
-                </span>
-               </a>
-            </li>
-            <li>
-               <a href="#">
-                <span class="button-content-wrapper ">
-                    <span class="button-icon align-icon-left">
-                        <i class="ph-gear"></i>        
-                    </span>
-                    <span class="button-text">
-                        Account Settings
-                    </span>
-                </span>
-               </a>
-            </li>
-            <li>
-               <a href="#">
-                <span class="button-content-wrapper ">
-                    <span class="button-icon align-icon-left">
-                        <i class="ph-sign-out"></i>     
-                    </span>
-                    <span class="button-text">
-                        Log-out
-                    </span>
-                </span>
-               </a>
-            </li>
-            
-            
-        </ul>
-    </div>
+    {% include "../templates/components/dashboard/sidebar.html" %}
     <div class="d-page-content">
-        <h5 class="rt-mb-32">Page Title</h5>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem totam sed recusandae ipsa voluptatum repellendus rerum eum fugiat necessitatibus quae.
+        <h5 class="rt-mb-32">Hello, Twitter</h5>
+        
+        {% include "../templates/layout/header-footer/dashboard-footer.html" %}
     </div>
 </div>
 

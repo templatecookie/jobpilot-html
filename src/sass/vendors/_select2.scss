@@ -11,6 +11,13 @@
   }
 }
 
+.has-icon2 {
+	.select2-container .select2-selection--single .select2-selection__rendered {
+	  padding-left: 52px;
+	  line-height: 48px;
+	}
+  }
+
 .select2-container--default .select2-selection--single .select2-selection__rendered{
 	color: var(--gray-400);
 }

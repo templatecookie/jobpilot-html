@@ -2,23 +2,73 @@
 
 
 {% block content %}
-{% include "../templates/layout/header-footer/header-candidates.html" %}
+{% include "../templates/layout/header-footer/dashboard-headr.html" %}
 
 <div class="dashboard-wrapper">
-  <div class="d-sidebar">
-    sidebar
-  </div>
+  {% include "../templates/components/dashboard/sidebar.html" %}
   <div class="d-page-content">
     <h5 class="rt-mb-32">My Jobs</h5>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem totam sed recusandae ipsa voluptatum
-    repellendus rerum eum fugiat necessitatibus quae.
+    
+    <form class="job-search d-flex rt-form rt-mb-32" action="#">
+      <div class="flex-grow-1">
+        <div class="row">
+          <div class="col-xl-4">
+            <div class="fromGroup has-icon2">
+              <input type="text" placeholder="Job tittle, Keyword...">
+              <div class="icon-badge rt-ml-14">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M21.0004 21.0004L16.6504 16.6504" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4">
+            <div class="fromGroup has-icon2">
+              <select class="rt-selectactive " name="from" style="width: 100%">
+                <option>Select Category </option>
+                <option value="2">Alaska</option>
+                <option value="3">Bahamas</option>
+                <option value="4">Bermuda</option>
+                <option value="5">Canada</option>
+                <option value="6">Caribbean</option>
+                <option value="7">Europe</option>
+                <option value="8">Hawaii</option>
+            </select>
+            <div class="icon-badge rt-ml-14">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 17L12 22L22 17" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 12L12 17L22 12" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                  
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex-grow-0">
+        <div class="min-200">
+          <select class="rt-selectactive " name="from" style="width: 100%">
+            <option>All Jobs</option>
+            <option value="2">Alaska</option>
+            <option value="3">Bahamas</option>
+            <option value="4">Bermuda</option>
+            <option value="5">Canada</option>
+            <option value="6">Caribbean</option>
+            <option value="7">Europe</option>
+            <option value="8">Hawaii</option>
+        </select>
+        </div>
+      </div>
+    </form>
 
     {% include "../templates/components/employe/dashboard-employe.html" %}
 
     <div class="rt-pt-50">
       {% include "../templates/components/pagination/dashboard-pagination.html" %}
     </div>
-    <div class="rt-spacer-50 rt-spacer-md-20"></div>
     {% include "../templates/layout/header-footer/dashboard-footer.html" %}
   </div>
 </div>

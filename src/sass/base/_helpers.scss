@@ -1,7 +1,3 @@
-
-
-
-
 a {
   color: var(--primary-600);
   text-decoration: none;
@@ -54,18 +50,18 @@ blockquote {
   border-radius: 12px;
   padding: 40px 45px;
 }
-.border-transparent{
+.border-transparent {
   border-color: transparent !important;
 }
-.bg-transsparent{
+.bg-transsparent {
   background-color: transparent !important;
 }
-.hover\:bg-transsparent{
-  &hover{
+.hover\:bg-transsparent {
+  &hover {
     background-color: transparent !important;
   }
 }
-.hover-shadow\:none{
+.hover-shadow\:none {
   box-shadow: none !important;
 }
 .bgprefix-cover {
@@ -90,10 +86,10 @@ blockquote {
   position: relative;
   z-index: 1;
 }
-.position-relative{
+.position-relative {
   position: relative;
 }
-.body-no-scrolling{
+.body-no-scrolling {
   overflow: hidden;
 }
 .img-fit {
@@ -118,13 +114,13 @@ blockquote {
 .rt-spacer-15 {
   height: 15px;
 }
-.rt-spacer-24{
+.rt-spacer-24 {
   height: 24px;
 }
 .rt-spacer-36 {
   height: 36px;
 }
-.rt-spacer-32{
+.rt-spacer-32 {
   height: 32px;
 }
 .rt-spacer-12 {
@@ -142,7 +138,7 @@ blockquote {
 .rt-mb-20 {
   margin-bottom: 20px;
 }
-.rt-mb-32{
+.rt-mb-32 {
   margin-bottom: 32px;
 }
 
@@ -152,19 +148,22 @@ blockquote {
 .max-474 {
   max-width: 474px;
 }
-.rt-p-0{
+.rt-p-0 {
   padding: 0px;
 }
-.rt-m-0{
-margin: 0px;
+.rt-m-0 {
+  margin: 0px;
 }
-.rt-mb-14{
+.rt-mb-14 {
   margin-bottom: 14px;
 }
-.rt-mb-6{
+.rt-mb-6 {
   margin-bottom: 6px;
 }
-.hr-0{
+.rt-mb-4 {
+  margin-bottom: 4px;
+}
+.hr-0 {
   margin: 0;
   padding: 0;
 }
@@ -184,23 +183,21 @@ margin: 0px;
   animation-name: zoomIn;
 }
 .fade-in-bottom {
-	        animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
-
 
 @keyframes fade-in-bottom {
   0% {
     -webkit-transform: translateY(50px);
-            transform: translateY(50px);
+    transform: translateY(50px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
-
 
 @each $color, $shades in $colors {
   @each $shade, $value in $shades {
@@ -214,46 +211,41 @@ margin: 0px;
     #{".border-" + $color + "-" + $shade} {
       border-color: #{$value} !important;
     }
-    
+
     #{".hoverbg-" + $color + "-" + $shade} {
-      
-      &:hover{
-        background-color: #{$value} !important;
-      }
-    } 
-    
-    #{".hover\\:" +'bg-' + $color + "-" + $shade} {
-      
-      &:hover{
+      &:hover {
         background-color: #{$value} !important;
       }
     }
-    
-    #{".hover\\:" +'text-' + $color + "-" + $shade} {
-      
-      &:hover{
+
+    #{".hover\\:" + "bg-" + $color + "-" + $shade} {
+      &:hover {
+        background-color: #{$value} !important;
+      }
+    }
+
+    #{".hover\\:" + "text-" + $color + "-" + $shade} {
+      &:hover {
         color: #{$value} !important;
       }
     }
-    #{".hover\\:" +'border-' + $color + "-" + $shade} {
-      
-      &:hover{
+    #{".hover\\:" + "border-" + $color + "-" + $shade} {
+      &:hover {
         border-color: #{$value} !important;
       }
     }
   }
 }
 
-.text-twitter{
-  color: #1DA1F2;
+.text-twitter {
+  color: #1da1f2;
 }
-.text-pinterest{
-  color: #CA2127;
+.text-pinterest {
+  color: #ca2127;
 }
-.hover\:border-transparent{
+.hover\:border-transparent {
   border-color: transparent !important;
 }
-
 
 @for $i from 0 through 30 {
   .rt-mr-#{$i* 1} {
@@ -320,19 +312,18 @@ margin: 0px;
   }
 }
 
-
-.has-title-shape{
- @extend .position-parent;
- img{
-   position: absolute;
-   left: -8px;
-   bottom: 0px;
-   z-index: -1;
- }
+.has-title-shape {
+  @extend .position-parent;
+  img {
+    position: absolute;
+    left: -8px;
+    bottom: 0px;
+    z-index: -1;
+  }
 }
 
 // slick slider gap
-.flex-grow-3{
+.flex-grow-3 {
   flex-grow: 3 !important;
 }
 .slick-slide {
@@ -526,14 +517,14 @@ margin: 0px;
   line-height: 55px;
   text-align: center;
 }
-.slick-btn-gorup{
-  .btn{
+.slick-btn-gorup {
+  .btn {
     position: absolute;
     left: -100px;
     top: 50%;
     transform: translateY(-50%);
   }
-  .slicknext2{
+  .slicknext2 {
     left: auto;
     right: -100px;
   }

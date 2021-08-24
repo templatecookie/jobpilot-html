@@ -1,5 +1,5 @@
 $primary_color: var(--primary-500);
-#{$all-text-inputs},
+#{$all-text-inputs}, .card-element,
 .form-control {
   height: 48px;
   display: block;
@@ -436,3 +436,9 @@ select,.form-select  {
 }
 
 // input range css 
+
+.card-element {
+  padding: 14px !important;
+  padding-left: 20px;
+  padding-right: 20px;
+}

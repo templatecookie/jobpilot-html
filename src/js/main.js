@@ -281,6 +281,7 @@
   // select 2 active
   $(".rt-selectactive").select2({
     // minimumResultsForSearch: Infinity,
+
   });
 
   // filltering
@@ -384,17 +385,46 @@ $(function() {
   $('.menu-active-classes li a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
 });
 
+var hasckeditor = document.getElementById("default");
+if(hasckeditor){
+  ClassicEditor
+  .create( document.querySelector( '#default' ) )
+  .catch( error => {
+      console.error( error );
+  } );
+}
+
+
+var stripe = Stripe('pk_test_51JRsN5Cl4slzBgQyhl4Wgui3DkB1y2LDYLJE1TndQiPwtfdliCotVcREIzViCP6SCxhY36u6OpzcqlZwbVd291C800phGfRoMt');
+  var elements = stripe.elements();
+  var cardElement = elements.create('card', {
+    style: {
+      base: {
+        iconColor: '#c4f0ff',
+        color: '#333',
+        fontWeight: '400',
+        fontFamily: 'Inter,sans-serif',
+        fontSize: '16px',
+        // fontSmoothing: 'antialiased',
+        // ':-webkit-autofill': {
+        //   color: '#fce883',
+        // },
+        // '::placeholder': {
+        //   color: '#87BBFD',
+        // },
+      },
+      // invalid: {
+      //   iconColor: '#FFC7EE',
+      //   color: '#FFC7EE',
+      // },
+    },
+  });
+  cardElement.mount('#card-element');
 
 
 
-// tinymce.init({
-//   selector: '#default'
-// });
-ClassicEditor
-.create( document.querySelector( '#default' ) )
-.catch( error => {
-    console.error( error );
-} );
+
+
 
 
 })(jQuery);

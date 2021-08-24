@@ -11,7 +11,6 @@
                 <div class="row">
                     <div class="col-xl-7">
                         <h6 class="rt-mb-24">Billing type</h6>
-                        
                         <label class="label-radio rt-mb-24 from-radio-custom " for="1">
                             <div class="data d-flex justify-content-between align-items-center">
                                 <div class="left">
@@ -81,30 +80,30 @@
                   </div>
                   <div class="row">
                     <div class="col-xl-6 rt-mb-24">
-                      <label class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Country</label>
-                      <select class="rt-selectactive select2-hidden-accessible" style="width: 100%" data-select2-id="select2-data-1-afru" tabindex="-1" aria-hidden="true">
-                        <option>Select..</option>
-                        <option value="2">USA</option>
-                        <option value="3">Bahamas</option>
-                        <option value="4" selected="" data-select2-id="select2-data-3-trqm">Italy</option>
-                        <option value="5">Canada</option>
-                        <option value="6">Caribbean</option>
-                        <option value="7">Europe</option>
-                        <option value="8">Hawaii</option>
-                      </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-2-gcqd" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-qnwp-container" aria-controls="select2-qnwp-container"><span class="select2-selection__rendered" id="select2-qnwp-container" role="textbox" aria-readonly="true" title="Private Company">Private Company</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                      <label  class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Experience</label>
+                      <select class="rt-selectactive " name="from2" style="width: 100%" >
+                          <option>Select.. </option>
+                          <option value="2">Alaska</option>
+                          <option value="3">Bahamas</option>
+                          <option value="4">Bermuda</option>
+                          <option value="5">Canada</option>
+                          <option value="6">Caribbean</option>
+                          <option value="7">Europe</option>
+                          <option value="8">Hawaii</option>
+                      </select>
                     </div>
-                    <div class="col-xxl-6 rt-mb-24">
-                      <label class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Town/City</label>
-                      <select class="rt-selectactive select2-hidden-accessible" style="width: 100%" data-select2-id="select2-data-10-s14v" tabindex="-1" aria-hidden="true">
-                        <option>Select.. </option>
-                        <option value="2">Alaska</option>
-                        <option value="3">Bahamas</option>
-                        <option value="4" selected="" data-select2-id="select2-data-12-gcpw">United States</option>
-                        <option value="5">Canada</option>
-                        <option value="6">Caribbean</option>
-                        <option value="7">Europe</option>
-                        <option value="8">Hawaii</option>
-                      </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-11-wjsk" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-ytmo-container" aria-controls="select2-ytmo-container"><span class="select2-selection__rendered" id="select2-ytmo-container" role="textbox" aria-readonly="true" title="United States">United States</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                    <div class="col-xl-6 rt-mb-24">
+                      <label  class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Experience</label>
+                      <select class="rt-selectactive " name="from2" style="width: 100%" >
+                          <option>Select.. </option>
+                          <option value="2">Alaska</option>
+                          <option value="3">Bahamas</option>
+                          <option value="4">Bermuda</option>
+                          <option value="5">Canada</option>
+                          <option value="6">Caribbean</option>
+                          <option value="7">Europe</option>
+                          <option value="8">Hawaii</option>
+                      </select>
                     </div>
                   </div>
                     </div>
@@ -115,31 +114,4 @@
     </div>
   </div>
 
-  <script src="https://js.stripe.com/v3/"></script>
-  <script>
-    var stripe = Stripe('pk_test_51JRsN5Cl4slzBgQyhl4Wgui3DkB1y2LDYLJE1TndQiPwtfdliCotVcREIzViCP6SCxhY36u6OpzcqlZwbVd291C800phGfRoMt');
-    var elements = stripe.elements();
-    var cardElement = elements.create('card', {
-      style: {
-        base: {
-          iconColor: '#c4f0ff',
-          color: '#333',
-          fontWeight: '400',
-          fontFamily: 'Inter,sans-serif',
-          fontSize: '16px',
-          // fontSmoothing: 'antialiased',
-          // ':-webkit-autofill': {
-          //   color: '#fce883',
-          // },
-          // '::placeholder': {
-          //   color: '#87BBFD',
-          // },
-        },
-        // invalid: {
-        //   iconColor: '#FFC7EE',
-        //   color: '#FFC7EE',
-        // },
-      },
-    });
-    cardElement.mount('#card-element');
-  </script>
+

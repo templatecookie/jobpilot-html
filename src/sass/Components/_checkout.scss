@@ -1,18 +1,4 @@
 .j-modal-dialog{
   max-width: 1320px;
 }
-.input-placeholder{
-  position:absolute;
-  top: 50%;
-  transform: translate(-50%);
-  left: 30px;
-}
-.input-content{
-  input{
-    padding-left: 50px;
-  }
-  &::placeholder{
-    text-align: end;
-  }
-}
 

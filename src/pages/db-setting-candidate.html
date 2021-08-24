@@ -1,0 +1,252 @@
+{% extends "layout/layout.html" %}
+
+
+{% block content %}
+{% include "../templates/layout/header-footer/dashboard-headr.html" %}
+
+<div class="dashboard-wrapper">
+  {% include "../templates/components/dashboard/sidebar.html" %}
+  <div class="d-page-content">
+    <div class="flex-grow-1">
+      <div class="left-text">
+        <h5 class="rt-mb-32">Account Settings</h5>
+      </div>
+    </div>
+
+    <div class="row rt-mb-24">
+      <div class="body-font-1 text-gray-900 rt-mb-24">
+        Information
+      </div>
+      <div class="col-xl-4">
+        <div class="d-flex">
+          <div class="icon-thumb rt-mr-24 rt-mb-24">
+            <div class="profile-image">
+              <img src="assets/images/all-img/db-setting2.jpg" alt="">
+            </div>
+          </div>
+          <div>
+            <div class="rt-mb-24">
+              <button type="button" class="btn btn-primary-50">Browse Image</button>
+            </div>
+            <div>
+              <span class="loacton text-gray-400 ">
+                Image up to 500x500. Supported formet jpeg, png.
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-5">
+        <div class="d-flex justify-content-end">
+          <div class="icon-thumb rt-mr-20 f-size-32">
+            <svg width="80" height="80" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M30.3337 4.33398H13.0003C11.8511 4.33398 10.7489 4.79053 9.9362 5.60319C9.12354 6.41585 8.66699 7.51805 8.66699 8.66732V43.334C8.66699 44.4833 9.12354 45.5855 9.9362 46.3981C10.7489 47.2108 11.8511 47.6673 13.0003 47.6673H39.0003C40.1496 47.6673 41.2518 47.2108 42.0645 46.3981C42.8771 45.5855 43.3337 44.4833 43.3337 43.334V17.334L30.3337 4.33398Z"
+                stroke="#D9E8FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M34.6673 36.832H17.334" stroke="#D9E8FF" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+              <path d="M34.6673 28.166H17.334" stroke="#D9E8FF" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+              <path d="M21.6673 19.498H19.5007H17.334" stroke="#D9E8FF" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+              <path d="M30.332 4.33398V17.334H43.332" stroke="#D9E8FF" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            </svg>
+
+          </div>
+          <div>
+            <div class="rt-mb-24">
+              <button type="button" class="btn btn-primary-50">Upload CV</button>
+            </div>
+            <div>
+              <span class="loacton text-gray-400 ">
+                Supported format Pdf, jpeg. Max size 10 MB
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-feature-content d-flex rt-mb-32">
+      <form action="#" class="rt-from">
+        <div class="row smallgap">
+          <div class="col-lg-4 rt-mb-24">
+            <label for="m" class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Name</label>
+            <input type="text" placeholder="Name" id="m" value="Kevin Gilbert">
+          </div>
+          <div class="col-lg-4 rt-mb-24">
+            <label for="mm" class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Username</label>
+            <input type="text" placeholder="Username" id="mm" value="kevingilbert">
+          </div>
+          <div class="col-lg-4 rt-mb-24">
+            <label for="ot" class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Profession</label>
+            <input type="text" placeholder="Profession" id="ot" value="UI/UX Designer">
+          </div>
+          <div class="col-lg-4 rt-mb-24">
+            <label for="ye" class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Experience</label>
+            <input type="text" placeholder="Experience" id="ye" value="15 Years">
+          </div>
+          <div class="col-lg-4 rt-mb-24">
+            <label class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Education</label>
+            <select class="rt-selectactive " name="from3" style="width: 100%">
+              <option>Master Degree </option>
+              <option value="2">Alaska</option>
+              <option value="3">Bahamas</option>
+              <option value="4">Bermuda</option>
+              <option value="5">Canada</option>
+              <option value="6">Caribbean</option>
+              <option value="7">Europe</option>
+              <option value="8">Hawaii</option>
+            </select>
+          </div>
+          <div class="col-lg-4 rt-mb-24">
+            <label for="ye" class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Website Links</label>
+            <input type="text" placeholder="Website Links" id="ye" value="https://kevingilbert.com">
+          </div>
+          <div class="col-lg-4 rt-mb-24">
+            <label class="pointer body-font-4 d-block text-gray-900 rt-mb-8" for="msalary">Allow in Search &
+              Listing</label>
+            <input type="number" placeholder="Max Salery..." id="msalary">
+          </div>
+
+
+          <div class="col-lg-12 rt-mb-24">
+            <label class="pointer body-font-4 d-block text-gray-900 rt-mb-8" for="date-s">Biography</label>
+            <textarea id="default">
+                          Donec auctor porta mauris, eget tristique est sagittis condimentum. Duis accumsan ac odio eu bibendum. Proin est tellus, tempus commodo ornare ac, accumsan at eros. Curabitur sagittis nibh consectetur justo cursus, non consequat quam convallis. Donec in tincidunt sapien. Curabitur eget tortor cursus, ornare augue maximus, lobortis ante. Fusce id mattis tellus, vel molestie justo. Integer eleifend tristique enim, in ullamcorper est pellentesque eu. 
+                        </textarea>
+          </div>
+
+          <button type="button" class="btn btn-primary">
+            <span class="button-content-wrapper ">
+              <span class="button-text">
+                Save Changes
+              </span>
+            </span>
+          </button>
+
+        </div>
+      </form>
+    </div>
+
+    <div class="flex-grow-1">
+      <div class="left-text">
+        <h5 class="rt-mb-32">Contact Info</h5>
+      </div>
+    </div>
+    <div class="top-feature-content d-flex rt-mb-32">
+      <form action="#" class="rt-from">
+        <div class="row smallgap">
+          <div class="col-lg-2 rt-mb-24">
+            <label class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Country</label>
+            <select class="rt-selectactive " name="from3" style="width: 100%">
+              <option>United States </option>
+              <option value="2">Alaska</option>
+              <option value="3">Bahamas</option>
+              <option value="4">Bermuda</option>
+              <option value="5">Canada</option>
+              <option value="6">Caribbean</option>
+              <option value="7">Europe</option>
+              <option value="8">Hawaii</option>
+            </select>
+          </div>
+          <div class="col-lg-2 rt-mb-24">
+            <label class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Town/City</label>
+            <select class="rt-selectactive " name="from3" style="width: 100%">
+              <option>Town/City </option>
+              <option value="2">Alaska</option>
+              <option value="3">Bahamas</option>
+              <option value="4">Bermuda</option>
+              <option value="5">Canada</option>
+              <option value="6">Caribbean</option>
+              <option value="7">Europe</option>
+              <option value="8">Hawaii</option>
+            </select>
+          </div>
+          <div class="col-lg-4 rt-mb-24">
+            <label for="ad" class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Address</label>
+            <input type="text" placeholder="Address" id="ad"
+              value="San Francisco, CA, US (HQ) Market Square, 1355 Market St #900, San Francisco.">
+          </div>
+          <div class="col-lg-4 rt-mb-24">
+            <label for="mad" class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Map Address</label>
+            <input type="text" placeholder="Map Address" id="mad" value="https://goo.gl/maps/sRijCurQtQ2GEomVA">
+          </div>
+          <div class="col-lg-4 rt-mb-24">
+            <label for="pn" class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Phone Number</label>
+            <input type="text" placeholder="Phone Number" id="pn" value="(406) 555-0120">
+          </div>
+          <div class="col-lg-4 rt-mb-24">
+            <label for="e" class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Email</label>
+            <input type="text" placeholder="Email" id="e" value="twitter@gmail.com">
+          </div>
+          <div>
+            <button type="button" class="btn btn-primary">
+              <span class="button-content-wrapper ">
+                <span class="button-text">
+                  Save Changes
+                </span>
+              </span>
+            </button>
+          </div>
+
+
+        </div>
+      </form>
+    </div>
+
+    <div class="flex-grow-1">
+      <div class="left-text">
+        <h5 class="rt-mb-32">Social Media</h5>
+      </div>
+    </div>
+    <div class="top-feature-content d-flex rt-mb-32">
+      <form action="#" class="rt-from">
+        <div class="row smallgap">
+          <div class="col-lg-4 rt-mb-24">
+            <label for="fb" class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Facebook</label>
+            <input type="text" placeholder="Facebook" id="fb" value="http://facebook.com/twitter">
+          </div>
+          <div class="col-lg-4 rt-mb-24">
+            <label for="tw" class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Twitter</label>
+            <input type="text" placeholder="Twitter" id="tw" value="https://twitter.com/twitter">
+          </div>
+          <div class="col-lg-4 rt-mb-24">
+            <label for="ig" class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Instagram</label>
+            <input type="text" placeholder="Instagram" id="ig" value="http://instagram.com/twitter">
+          </div>
+          <div class="col-lg-4 rt-mb-24">
+            <label for="ln" class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Linkedin</label>
+            <input type="text" placeholder="Linkedin" id="ln" value="http://linkedin.com/twitter">
+          </div>
+          <div class="col-lg-4 rt-mb-24">
+            <label for="yt" class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Youtube</label>
+            <input type="text" placeholder="Youtube" id="yt" value="http://youtube.com/twitter">
+          </div>
+          <div class="col-lg-4 rt-mb-24">
+            <label for="g" class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Google</label>
+            <input type="text" placeholder="Google" id="g" value="https://www.google.com/search?q=twitter">
+          </div>
+          <div>
+            <button type="button" class="btn btn-primary">
+              <span class="button-content-wrapper ">
+                <span class="button-text">
+                  Save Changes
+                </span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    {% include "../templates/layout/header-footer/dashboard-footer.html" %}
+  </div>
+
+
+
+
+  {% endblock %}

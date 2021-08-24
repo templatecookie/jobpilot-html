@@ -157,7 +157,7 @@ blockquote {
 .rt-mb-14 {
   margin-bottom: 14px;
 }
-.rt-mb-8{
+.rt-mb-8 {
   margin-bottom: 8px;
 }
 .rt-mb-6 {
@@ -169,6 +169,9 @@ blockquote {
 .hr-0 {
   margin: 0;
   padding: 0;
+}
+.p-20 {
+  padding: 20px;
 }
 @keyframes zoomIn {
   from {
@@ -531,4 +534,34 @@ blockquote {
     left: auto;
     right: -100px;
   }
+}
+
+.modal-header {
+  padding: 24px 50px 24px 50px;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0px;
+  }
+  border-color: var(--gray-50);
+  .btn-close {
+    width: 48px;
+    padding: 0px;
+    height: 48px;
+    background-color: var(--gray-50);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+}
+.modal-content {
+  border-radius: 16px;
+}
+.modal-body {
+  padding: 50px;
 }

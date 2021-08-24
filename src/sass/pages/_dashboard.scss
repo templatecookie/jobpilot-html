@@ -243,3 +243,27 @@ ul.recent-activity {
 .modal-xxl{
   max-width: 1320px;
 }
+
+.label-radio{
+  display: block;
+  padding: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  .border{
+    border-color:var(--gray-50) ;
+    border-radius: 12px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: -1;
+    pointer-events: none;
+    height: 100%;
+    @include rt-trs(0.24s);
+  }
+   .form-check-input:checked ~ .border{
+    border-color: var(--primary-500) !important;
+  }
+}

@@ -9,13 +9,60 @@
         <div class="modal-body">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-xl-8">
+                    <div class="col-xl-7">
                         <h6 class="rt-mb-24">Billing type</h6>
-                        radio hobe
-                    </div>
-                    <div class="col-xl-4">
-                        <h6 class="rt-mb-24">Order Summery</h6>
                         
+                        <label class="label-radio rt-mb-24 from-radio-custom " for="1">
+                            <div class="data d-flex justify-content-between align-items-center">
+                                <div class="left">
+                                 <input type="radio" name="radio1" id="1" class="form-check-input">
+                                 <span class="form-check-label">Annual</span>
+                                 <div class="border"></div>
+                                </div>
+                                 <div class="right text-end">
+                                     <span class="d-block body-font-1">$32/month</span>
+                                     <span class="d-block body-font-4 text-gray-500">$384 billed once a year</span>
+                                 </div>
+                             </div>
+                        </label>
+                        
+                        <label class="label-radio rt-mb-24 from-radio-custom " for="2">
+                            <div class="data d-flex justify-content-between align-items-center">
+                               <div class="left">
+                                <input type="radio" name="radio1" id="2" class="form-check-input">
+                                <span class="form-check-label">Monthly</span>
+                                <div class="border"></div>
+                               </div>
+                                <div class="right text-end">
+                                    <span class="d-block body-font-1">$40/month</span>
+                                    <span class="d-block body-font-4 text-gray-500">$40 billed every month</span>
+                                </div>
+                            </div>
+                           
+                        </label>
+                    </div>
+                    <div class="col-xl-5">
+                        <h6 class="rt-mb-24">Order Summery</h6>
+                        <div class="border border-gray-50 rt-rounded-12 p-20">
+                            <ul class="rt-list">
+                                <li class="d-flex justify-content-between align-items-start body-font-3 rt-mb-14">
+                                  <span class="text-gray-500 d-block">Account plan: <span class="text-gray-900">Premium</span></span>
+                                  <div class="my-auto text-gray-900">
+                                    $40.00
+                                  </div>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-start body-font-1 rt-mb-14 ft-wt-5">
+                                  <span class=" d-block">$40.00</span>
+                                  <div class="my-auto">
+                                    $40 USD
+                                  </div>
+                                </li>
+                              </ul>
+                              <button class="btn btn-primary btn-lg d-block rt-mb-15">Place Order</button>
+                              <div class="body-font-4 text-gray-400 text-center">
+                                We will bill you every month on the 10th, unless you cancel.
+                              </div>
+                        </div>
                     </div>
                     <div class="col-xl-8">
                         <h6 class="rt-mb-24">Payment Info</h6>

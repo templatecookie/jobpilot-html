@@ -7,103 +7,98 @@
 <div class="dashboard-wrapper">
     {% include "../templates/components/dashboard/sidebar.html" %}
     <div class="d-page-content">
-        <div class="top-feature-content d-flex rt-mb-32">
-            <div class="flex-grow-1">
-                <div class="left-text">
-                    <h5 class="rt-mb-32">Post a Jobs</h5>
+        <h5 class="rt-mb-32">Post a Jobs</h5>
+        <form action="#" class="rt-from">
+            <div class="row smallgap">
+                <div class="col-lg-8 rt-mb-24">
+                    <label for="m" class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Job Tittle</label>
+                    <input type="text" placeholder="Job Tittle" id="m">
+                </div>
+                <div class="col-lg-4 rt-mb-24">
+                    <label  class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Category</label>
+                    <select class="rt-selectactive " name="from" style="width: 100%" >
+                        <option>Select Category </option>
+                        <option value="2">Alaska</option>
+                        <option value="3">Bahamas</option>
+                        <option value="4">Bermuda</option>
+                        <option value="5">Canada</option>
+                        <option value="6">Caribbean</option>
+                        <option value="7">Europe</option>
+                        <option value="8">Hawaii</option>
+                    </select>
+                </div>
+                <div class="col-lg-12 rt-mb-24">
+                    <label for="m1" class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Tags</label>
+                    <input type="text" placeholder="job tags.." id="m1">
+                </div>
+                <div class="col-lg-6 rt-mb-24">
+                    <label  class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Experience</label>
+                    <select class="rt-selectactive " name="from2" style="width: 100%" >
+                        <option>Select.. </option>
+                        <option value="2">Alaska</option>
+                        <option value="3">Bahamas</option>
+                        <option value="4">Bermuda</option>
+                        <option value="5">Canada</option>
+                        <option value="6">Caribbean</option>
+                        <option value="7">Europe</option>
+                        <option value="8">Hawaii</option>
+                    </select>
+                </div>
+                <div class="col-lg-6 rt-mb-24">
+                    <label  class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Education</label>
+                    <select class="rt-selectactive " name="from3" style="width: 100%" >
+                        <option>Select.. </option>
+                        <option value="2">Alaska</option>
+                        <option value="3">Bahamas</option>
+                        <option value="4">Bermuda</option>
+                        <option value="5">Canada</option>
+                        <option value="6">Caribbean</option>
+                        <option value="7">Europe</option>
+                        <option value="8">Hawaii</option>
+                    </select>
+                </div>
+                <div class="col-lg-6 rt-mb-24">
+                    <label  class="pointer body-font-4 d-block text-gray-900 rt-mb-8" for="salary">Education</label>
+                   <input type="number" placeholder="Minimum salery..." id="salary">
+                </div>
+                <div class="col-lg-6 rt-mb-24">
+                    <label  class="pointer body-font-4 d-block text-gray-900 rt-mb-8" for="msalary">Education</label>
+                   <input type="number" placeholder="Max Salery..." id="msalary">
+                </div>
+                <div class="col-lg-6 rt-mb-24">
+                    <label  class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Education</label>
+                    <select class="rt-selectactive " name="from3" style="width: 100%" >
+                        <option>Gender</option>
+                        <option value="2">Male</option>
+                        <option value="3">Female</option>
+                        <option value="4">Other's</option>
+                    </select>
+                </div>
+                <div class="col-lg-6 rt-mb-24">
+                    <label  class="pointer body-font-4 d-block text-gray-900 rt-mb-8" for="date-s">Education</label>
+                   <input type="text" placeholder="DD/MM/YY" id="date-s">
+                </div>
+                <div class="col-lg-12 rt-mb-24">
+                    <label  class="pointer body-font-4 d-block text-gray-900 rt-mb-8" for="date-s">Job Description</label>
+                    <textarea id="default">Hello, World!</textarea>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary rt-mr-10">
+                        <span class="button-content-wrapper ">
+                            <span class="button-icon align-icon-right">
+                                <i class="ph-arrow-right"></i>                           
+                            </span>
+                            <span class="button-text">
+                                Post Jobs
+                            </span>
+                        </span>
+                    </button>
+                    <button type="button" class="btn btn-primary-50">
+                        Save & Preview
+                    </button>
                 </div>
             </div>
-            <form action="#" class="rt-from">
-                <div class="row smallgap">
-                    <div class="col-lg-8 rt-mb-24">
-                        <label for="m" class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Job Tittle</label>
-                        <input type="text" placeholder="Job Tittle" id="m">
-                    </div>
-                    <div class="col-lg-4 rt-mb-24">
-                        <label  class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Category</label>
-                        <select class="rt-selectactive " name="from" style="width: 100%" >
-                            <option>Select Category </option>
-                            <option value="2">Alaska</option>
-                            <option value="3">Bahamas</option>
-                            <option value="4">Bermuda</option>
-                            <option value="5">Canada</option>
-                            <option value="6">Caribbean</option>
-                            <option value="7">Europe</option>
-                            <option value="8">Hawaii</option>
-                        </select>
-                    </div>
-                    <div class="col-lg-12 rt-mb-24">
-                        <label for="m1" class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Tags</label>
-                        <input type="text" placeholder="job tags.." id="m1">
-                    </div>
-                    <div class="col-lg-6 rt-mb-24">
-                        <label  class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Experience</label>
-                        <select class="rt-selectactive " name="from2" style="width: 100%" >
-                            <option>Select.. </option>
-                            <option value="2">Alaska</option>
-                            <option value="3">Bahamas</option>
-                            <option value="4">Bermuda</option>
-                            <option value="5">Canada</option>
-                            <option value="6">Caribbean</option>
-                            <option value="7">Europe</option>
-                            <option value="8">Hawaii</option>
-                        </select>
-                    </div>
-                    <div class="col-lg-6 rt-mb-24">
-                        <label  class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Education</label>
-                        <select class="rt-selectactive " name="from3" style="width: 100%" >
-                            <option>Select.. </option>
-                            <option value="2">Alaska</option>
-                            <option value="3">Bahamas</option>
-                            <option value="4">Bermuda</option>
-                            <option value="5">Canada</option>
-                            <option value="6">Caribbean</option>
-                            <option value="7">Europe</option>
-                            <option value="8">Hawaii</option>
-                        </select>
-                    </div>
-                    <div class="col-lg-6 rt-mb-24">
-                        <label  class="pointer body-font-4 d-block text-gray-900 rt-mb-8" for="salary">Education</label>
-                       <input type="number" placeholder="Minimum salery..." id="salary">
-                    </div>
-                    <div class="col-lg-6 rt-mb-24">
-                        <label  class="pointer body-font-4 d-block text-gray-900 rt-mb-8" for="msalary">Education</label>
-                       <input type="number" placeholder="Max Salery..." id="msalary">
-                    </div>
-                    <div class="col-lg-6 rt-mb-24">
-                        <label  class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Education</label>
-                        <select class="rt-selectactive " name="from3" style="width: 100%" >
-                            <option>Gender</option>
-                            <option value="2">Male</option>
-                            <option value="3">Female</option>
-                            <option value="4">Other's</option>
-                        </select>
-                    </div>
-                    <div class="col-lg-6 rt-mb-24">
-                        <label  class="pointer body-font-4 d-block text-gray-900 rt-mb-8" for="date-s">Education</label>
-                       <input type="text" placeholder="DD/MM/YY" id="date-s">
-                    </div>
-                    <div class="col-lg-12 rt-mb-24">
-                        <label  class="pointer body-font-4 d-block text-gray-900 rt-mb-8" for="date-s">Job Description</label>
-                        <textarea id="default">Hello, World!</textarea>
-                    </div>
-                    <div>
-                        <button type="button" class="btn btn-primary rt-mr-10">
-                            <span class="button-content-wrapper ">
-                                <span class="button-icon align-icon-right">
-                                    <i class="ph-arrow-right"></i>                           
-                                </span>
-                                <span class="button-text">
-                                    Post Jobs
-                                </span>
-                            </span>
-                        </button>
-                        <button type="button" class="btn btn-primary-50">
-                            Save & Preview
-                        </button>
-                    </div>
-                </div>
-            </form>
+        </form>
         {% include "../templates/layout/header-footer/dashboard-footer.html" %}
     </div>
 </div>

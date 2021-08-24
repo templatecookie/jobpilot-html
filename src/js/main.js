@@ -420,10 +420,67 @@ var stripe = Stripe('pk_test_51JRsN5Cl4slzBgQyhl4Wgui3DkB1y2LDYLJE1TndQiPwtfdliC
     },
   });
   cardElement.mount('#card-element');
+ 
+  var options = {
+    chart: {
+      height: 340,
+      type: "area",
+      toolbar: {
+        autoSelected: "pan",
+        show: false
+      }
+    },
+    dataLabels: {
+      enabled: false
+    },
+    stroke: { curve: "smooth", width: 2 },
+    series: [
+      {
+        name: "Series 1",
+        data: [50, 75, 60, 80, 55, 70, 60] 
+      }
+    ],
+    colors: ['#0066FF'],
+    
+    fill: {
+      type: "gradient",
+      colors: "#0066FF",
+      gradient: {
+        shadeIntensity: 1,
+        opacityFrom: 0.1,
+        opacityTo: 0.9,
+        stops: [0, 100 , 0]
+      }
+    },
+    markers: {
+      size: 5,
+      colors: ["#fff"],
+      strokeColor: "#0066FF",
+      strokeWidth: 2
+    },
+    tooltip: {
+      theme: "dark"
+    },
+    xaxis: {
+      borderColor: "red",
+      categories: [
+        "Su",
+        "Mo",
+        "Tu",
+        "We",
+        "Th",
+        "Fr",
+        "Sa"
+      ]
+    }
+  };
 
+  var chart = new ApexCharts(
+    document.querySelector("#area-spaline"),
+    options
+);
 
-
-
+chart.render();
 
 
 

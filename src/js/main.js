@@ -387,10 +387,14 @@ $(function() {
 
 
 
-tinymce.init({
-  selector: '#default'
-});
-
+// tinymce.init({
+//   selector: '#default'
+// });
+ClassicEditor
+.create( document.querySelector( '#default' ) )
+.catch( error => {
+    console.error( error );
+} );
 
 
 })(jQuery);

@@ -5,9 +5,26 @@
 {% include "../templates/layout/header-footer/header-normal.html" %}
 
 
-{% set page_title = "Blog Sinlge" %}
+{% set page_title = "Blog Single" %}
 {% set current_page = "Blog Single" %}
-{% include "../templates/components/breadcrumbs/breadcrumbs.html" %}
+
+<div class="breadcrumbs breadcrumbs-height">
+  <div class="container">
+      <div class="row align-items-center breadcrumbs-height">
+          <div class="col-12 justify-content-center text-center">
+              <div class="breadcrumb-title rt-mb-10"> Single Jobs</div>
+                  <nav aria-label="breadcrumb">
+                      <ol class="breadcrumb justify-content-center">
+                          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                          <li class="breadcrumb-item"><a href="blog.html">Blog List</a></li>
+                          <li class="breadcrumb-item active" aria-current="page"> Blog Single</li>
+                      </ol>
+                  </nav>
+          </div>
+      </div>
+  </div>
+</div>
+
 
 <div class="blog-content-area rt-pt-50 rt-mb-100 rt-mb-md-50">
     <div class="container">

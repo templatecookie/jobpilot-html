@@ -11,3 +11,18 @@
         }
     }
 }
+
+.brand-active{
+    display: flex;
+    justify-content: space-between;
+}
+.single-brand{
+    img{
+        transition: all 0.24s ease-in-out;
+    }
+    &:hover{
+        img{
+            filter: grayscale(100%);
+        }
+    }
+}

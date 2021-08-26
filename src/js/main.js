@@ -6,11 +6,19 @@
     Author: 
     Author URI: 
     Version: 
-  
+
+    1.0 Dropdown Menu  Settings*
+    1.01 Dropdown Menu  Settings*
+    1.0 Dropdown Menu  Settings*
+    1.0 Dropdown Menu  Settings*
+    1.0 Dropdown Menu  Settings*
 
 * ----------------------------------------------------------------------------------------
 */
 (function ($) {
+
+    /* 1.0 Dropdown Menu  Settings*/
+
   if ($(window).width() < 991.98) {
     $(".menu-item-has-children > a").on("click", function () {
       var element = $(this).parent("li");
@@ -226,61 +234,8 @@
       nextArrow: $(".slicknext3"),
     });
   }
-  // brands active
-  if ($(".brand-active").length > 0) {
-    $(".brand-active").slick({
-      slidesToShow: 6,
-      infinite: true,
-      slidesToScroll: 4,
-      dots: false,
-      arrows: false,
 
-      responsive: [
-        {
-          breakpoint: 1199,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-          },
-        },
-        {
-          breakpoint: 980,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-          },
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-          },
-        },
-        {
-          breakpoint: 479,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
-        },
-        {
-          breakpoint: 320,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
-        },
-        {
-          breakpoint: 210,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
-        },
-      ],
-    });
-  }
+ 
   // scroll up js
   $.scrollUp({
     scrollText: '<i class="ph-caret-up-light"></i>',
@@ -402,7 +357,7 @@ if(hasckeditor){
       console.error( error );
   } );
 }
-
+// card
 
 var stripe = Stripe('pk_test_51JRsN5Cl4slzBgQyhl4Wgui3DkB1y2LDYLJE1TndQiPwtfdliCotVcREIzViCP6SCxhY36u6OpzcqlZwbVd291C800phGfRoMt');
   var elements = stripe.elements();
@@ -430,6 +385,8 @@ var stripe = Stripe('pk_test_51JRsN5Cl4slzBgQyhl4Wgui3DkB1y2LDYLJE1TndQiPwtfdliC
   });
   cardElement.mount('#card-element');
  
+
+  // chart
   var options = {
     chart: {
       height: 340,
@@ -490,7 +447,8 @@ var stripe = Stripe('pk_test_51JRsN5Cl4slzBgQyhl4Wgui3DkB1y2LDYLJE1TndQiPwtfdliC
 );
 
 chart.render();
-// playvideo 
+
+// video popup 
 $(".playVideo").magnificPopup({
   type: "iframe",
   iframe: {

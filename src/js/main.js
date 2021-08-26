@@ -32,8 +32,7 @@
 * ----------------------------------------------------------------------------------------
 */
 (function ($) {
-
-    /* 1.0 Dropdown Menu  */
+  /* 1.0 Dropdown Menu  */
 
   if ($(window).width() < 991.98) {
     $(".menu-item-has-children > a").on("click", function () {
@@ -71,7 +70,7 @@
     }
   });
 
-   /* 1.01 Sticky Menu  */
+  /* 1.01 Sticky Menu  */
   function stickyHeader() {
     let mainheader = $(".rt-sticky"),
       height = mainheader.outerHeight(),
@@ -114,7 +113,7 @@
   });
 
   // mobile menu click
-   /* 1.03 Mobile Menu */
+  /* 1.03 Mobile Menu */
   $(".menu-click").on("click", function () {
     $(".main-menu").toggleClass("active-mobile-menu");
     $(".rt-mobile-menu-overlay").addClass("active");
@@ -128,13 +127,13 @@
   });
 
   // counter active
-   /* 1.04 Counter */
+  /* 1.04 Counter */
   $(".counter").counterUp({
     delay: 10,
     time: 1000,
   });
 
-   /* 1.05 Newestjob */
+  /* 1.05 Newestjob */
   if ($(".newestjob_active").length > 0) {
     $(".newestjob_active").slick({
       slidesToShow: 3,
@@ -189,7 +188,7 @@
       ],
     });
   }
-   /* 1.06 Testomonial */
+  /* 1.06 Testomonial */
   if ($(".testimonail_active").length > 0) {
     $(".testimonail_active").slick({
       slidesToShow: 3,
@@ -256,23 +255,20 @@
     });
   }
 
- 
   // scroll up js
-   /* 1.07 Scrollup */
+  /* 1.07 Scrollup */
   $.scrollUp({
     scrollText: '<i class="ph-caret-up-light"></i>',
-
   });
 
   // select 2 active
-   /* 1.08 Select-2 */
+  /* 1.08 Select-2 */
   $(".rt-selectactive").select2({
     // minimumResultsForSearch: Infinity,
-
   });
 
   // filltering
-   /* 1.09 Filtering */
+  /* 1.09 Filtering */
   $(".grid").imagesLoaded(function () {
     var $grid = $(".grid").isotope({
       itemSelector: ".grid-item",
@@ -294,7 +290,7 @@
   });
 
   // map active
-   /* 1.1 Map */
+  /* 1.1 Map */
   var Map1 = document.getElementById("mapid");
   if (Map1) {
     var mymap = L.map("mapid").setView([51.505, -0.09], 13);
@@ -309,7 +305,7 @@
   }
 
   // filter sidebar toggole
-   /* 1.1.0 Filter Sidebar */
+  /* 1.1.0 Filter Sidebar */
   $(".toggle-filter-sidebar").on("click", function () {
     $(".sidebar-widget-overlay, .jobsidebar").toggleClass("active");
   });
@@ -318,7 +314,7 @@
   });
 
   // hide tags
-   /* 1.1.1 Hide Tag */
+  /* 1.1.1 Hide Tag */
   $(".close-tag").on("click", function () {
     $(this).parent(".single-tag").hide();
   });
@@ -368,37 +364,40 @@
     }
   });
 
-// menu active classes 
-/* 1.1.5 Menu Active */
-$(".menu-active-classes li").on("click", function(){
+  // menu active classes
+  /* 1.1.5 Menu Active */
+  $(".menu-active-classes li").on("click", function () {
+    $(".menu-active-classes li").removeClass("active");
+    $(this).addClass("active");
+  });
+  $(function () {
+    $(
+      '.menu-active-classes li a[href^="/' +
+        location.pathname.split("/")[1] +
+        '"]'
+    ).addClass("active");
+  });
 
-  $(".menu-active-classes li").removeClass("active");
-  $(this).addClass("active");
-});
-$(function() {
-  $('.menu-active-classes li a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
-});
-
-var hasckeditor = document.getElementById("default");
-if(hasckeditor){
-  ClassicEditor
-  .create( document.querySelector( '#default' ) )
-  .catch( error => {
-      console.error( error );
-  } );
-}
-// card
-/* 1.1.6 Card */
-var stripe = Stripe('pk_test_51JRsN5Cl4slzBgQyhl4Wgui3DkB1y2LDYLJE1TndQiPwtfdliCotVcREIzViCP6SCxhY36u6OpzcqlZwbVd291C800phGfRoMt');
+  var hasckeditor = document.getElementById("default");
+  if (hasckeditor) {
+    ClassicEditor.create(document.querySelector("#default")).catch((error) => {
+      console.error(error);
+    });
+  }
+  // card
+  /* 1.1.6 Card */
+  var stripe = Stripe(
+    "pk_test_51JRsN5Cl4slzBgQyhl4Wgui3DkB1y2LDYLJE1TndQiPwtfdliCotVcREIzViCP6SCxhY36u6OpzcqlZwbVd291C800phGfRoMt"
+  );
   var elements = stripe.elements();
-  var cardElement = elements.create('card', {
+  var cardElement = elements.create("card", {
     style: {
       base: {
-        iconColor: '#c4f0ff',
-        color: '#333',
-        fontWeight: '400',
-        fontFamily: 'Inter,sans-serif',
-        fontSize: '16px',
+        iconColor: "#c4f0ff",
+        color: "#333",
+        fontWeight: "400",
+        fontFamily: "Inter,sans-serif",
+        fontSize: "16px",
         // fontSmoothing: 'antialiased',
         // ':-webkit-autofill': {
         //   color: '#fce883',
@@ -413,8 +412,7 @@ var stripe = Stripe('pk_test_51JRsN5Cl4slzBgQyhl4Wgui3DkB1y2LDYLJE1TndQiPwtfdliC
       // },
     },
   });
-  cardElement.mount('#card-element');
- 
+  cardElement.mount("#card-element");
 
   // chart
   /* 1.1.7 Chart */
@@ -424,21 +422,21 @@ var stripe = Stripe('pk_test_51JRsN5Cl4slzBgQyhl4Wgui3DkB1y2LDYLJE1TndQiPwtfdliC
       type: "area",
       toolbar: {
         autoSelected: "pan",
-        show: false
-      }
+        show: false,
+      },
     },
     dataLabels: {
-      enabled: false
+      enabled: false,
     },
     stroke: { curve: "smooth", width: 2 },
     series: [
       {
         name: "Series 1",
-        data: [50, 75, 60, 80, 55, 70, 60] 
-      }
+        data: [50, 75, 60, 80, 55, 70, 60],
+      },
     ],
-    colors: ['#0066FF'],
-    
+    colors: ["#0066FF"],
+
     fill: {
       type: "gradient",
       colors: "#0066FF",
@@ -446,71 +444,64 @@ var stripe = Stripe('pk_test_51JRsN5Cl4slzBgQyhl4Wgui3DkB1y2LDYLJE1TndQiPwtfdliC
         shadeIntensity: 1,
         opacityFrom: 0.1,
         opacityTo: 0.9,
-        stops: [0, 100 , 0]
-      }
+        stops: [0, 100, 0],
+      },
     },
     markers: {
       size: 5,
       colors: ["#fff"],
       strokeColor: "#0066FF",
-      strokeWidth: 2
+      strokeWidth: 2,
     },
     tooltip: {
-      theme: "dark"
+      theme: "dark",
     },
     xaxis: {
       borderColor: "red",
-      categories: [
-        "Su",
-        "Mo",
-        "Tu",
-        "We",
-        "Th",
-        "Fr",
-        "Sa"
-      ]
-    }
+      categories: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
+    },
   };
 
-  var chart = new ApexCharts(
-    document.querySelector("#area-spaline"),
-    options
-);
+  var chart = new ApexCharts(document.querySelector("#area-spaline"), options);
 
-chart.render();
+  chart.render();
 
-// video popup 
-/* 1.1.8 Video Popup */
-$(".playVideo").magnificPopup({
-  type: "iframe",
-  iframe: {
-    patterns: {
-      youtube: {
-        index: "youtube.com/",
-        id: function (url) {
-          var m = url.match(/[\\?\\&]v=([^\\?\\&]+)/);
-          if (!m || !m[1]) return null;
-          return m[1];
+  // video popup
+  /* 1.1.8 Video Popup */
+  $(".playVideo").magnificPopup({
+    type: "iframe",
+    iframe: {
+      patterns: {
+        youtube: {
+          index: "youtube.com/",
+          id: function (url) {
+            var m = url.match(/[\\?\\&]v=([^\\?\\&]+)/);
+            if (!m || !m[1]) return null;
+            return m[1];
+          },
+          src: "//www.youtube.com/embed/%id%?rel=0&autoplay=1",
         },
-        src: "//www.youtube.com/embed/%id%?rel=0&autoplay=1",
-      },
 
-      vimeo: {
-        index: "vimeo.com/",
-        id: function (url) {
-          var m = url.match(
-            /(https?:\/\/)?(www.)?(player.)?vimeo.com\/([a-z]*\/)*([0-9]{6,11})[?]?.*/
-          );
-          if (!m || !m[5]) return null;
-          return m[5];
+        vimeo: {
+          index: "vimeo.com/",
+          id: function (url) {
+            var m = url.match(
+              /(https?:\/\/)?(www.)?(player.)?vimeo.com\/([a-z]*\/)*([0-9]{6,11})[?]?.*/
+            );
+            if (!m || !m[5]) return null;
+            return m[5];
+          },
+          src: "//player.vimeo.com/video/%id%?autoplay=1",
         },
-        src: "//player.vimeo.com/video/%id%?autoplay=1",
       },
     },
-  },
-  removalDelay: 300,
-  mainClass: "mfp-fade",
-});
+    removalDelay: 300,
+    mainClass: "mfp-fade",
+  });
 
-
+  AOS.init({
+    disable: "mobile",
+    easing: 'ease-in-out-sine',
+    once: true, 
+  });
 })(jQuery);

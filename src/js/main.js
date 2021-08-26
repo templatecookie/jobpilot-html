@@ -215,6 +215,17 @@
       ],
     });
   }
+  if ($(".testimonal2-active").length > 0) {
+    $(".testimonal2-active").slick({
+      slidesToShow: 1,
+      infinite: true,
+      slidesToScroll: 1,
+      dots: true,
+      fade: true,
+      prevArrow: $(".slickprev3"),
+      nextArrow: $(".slicknext3"),
+    });
+  }
   // brands active
   if ($(".brand-active").length > 0) {
     $(".brand-active").slick({

@@ -1,6 +1,6 @@
 /*
 * ----------------------------------------------------------------------------------------
-    Template Name: 
+    Template Name: Jobpilot
     Template URI: 
     Description: 
     Author: 
@@ -8,10 +8,27 @@
     Version: 
 
     1.0 Dropdown Menu  Settings*
-    1.01 Dropdown Menu  Settings*
-    1.0 Dropdown Menu  Settings*
-    1.0 Dropdown Menu  Settings*
-    1.0 Dropdown Menu  Settings*
+    1.01 Sticky Menu  Settings*
+    1.02 Main Menu  Settings*
+    1.03 Mobile Menu  Settings*
+    1.04 Counter  Settings*
+    1.05 Newestjob  Settings*
+    1.06 Testomonial  Settings*
+    1.07 Scrollup  Settings*
+    1.08 Select-2  Settings*
+    1.09 Filtering  Settings*
+    1.09 Map Settings*
+    1.1 Map Settings*
+    1.1.0 Filter Settings*
+    1.1.1 Hide Tag Settings*
+    1.1.2 Advanced Filter Settings*
+    1.1.3 Custom Settings*
+    1.1.4 Conditional Filter Settings*
+    1.1.5 Menu Active Settings*
+    1.1.6 Card Settings*
+    1.1.7 Cart Settings*
+    1.1.8 Video Popup Settings*
+    
 
 * ----------------------------------------------------------------------------------------
 */
@@ -55,6 +72,7 @@
     }
   });
 
+   /* 1.01 Sticky Menu  Settings*/
   function stickyHeader() {
     let mainheader = $(".rt-sticky"),
       height = mainheader.outerHeight(),
@@ -90,13 +108,14 @@
   }
 
   // menu menu active link
-
+  /* 1.02 Main Menu  Settings*/
   $(".main-menu ul li").on("click", function () {
     $(".main-menu ul li").removeClass("active");
     $(this).addClass("active");
   });
 
   // mobile menu click
+   /* 1.03 Mobile Menu Settings*/
   $(".menu-click").on("click", function () {
     $(".main-menu").toggleClass("active-mobile-menu");
     $(".rt-mobile-menu-overlay").addClass("active");
@@ -110,11 +129,13 @@
   });
 
   // counter active
+   /* 1.04 Counter Settings*/
   $(".counter").counterUp({
     delay: 10,
     time: 1000,
   });
 
+   /* 1.05 Newestjob Settings*/
   if ($(".newestjob_active").length > 0) {
     $(".newestjob_active").slick({
       slidesToShow: 3,
@@ -169,6 +190,7 @@
       ],
     });
   }
+   /* 1.06 Testomonial Settings*/
   if ($(".testimonail_active").length > 0) {
     $(".testimonail_active").slick({
       slidesToShow: 3,
@@ -237,18 +259,21 @@
 
  
   // scroll up js
+   /* 1.07 Scrollup Settings*/
   $.scrollUp({
     scrollText: '<i class="ph-caret-up-light"></i>',
 
   });
 
   // select 2 active
+   /* 1.08 Select-2 Settings*/
   $(".rt-selectactive").select2({
     // minimumResultsForSearch: Infinity,
 
   });
 
   // filltering
+   /* 1.09 Filtering Settings*/
   $(".grid").imagesLoaded(function () {
     var $grid = $(".grid").isotope({
       itemSelector: ".grid-item",
@@ -270,6 +295,7 @@
   });
 
   // map active
+   /* 1.1 Map Settings*/
   var Map1 = document.getElementById("mapid");
   if (Map1) {
     var mymap = L.map("mapid").setView([51.505, -0.09], 13);
@@ -284,6 +310,7 @@
   }
 
   // filter sidebar toggole
+   /* 1.1.0 Filter Sidebar Settings*/
   $(".toggle-filter-sidebar").on("click", function () {
     $(".sidebar-widget-overlay, .jobsidebar").toggleClass("active");
   });
@@ -292,12 +319,13 @@
   });
 
   // hide tags
-
+   /* 1.1.1 Hide Tag Settings*/
   $(".close-tag").on("click", function () {
     $(this).parent(".single-tag").hide();
   });
 
   // advanced fillter
+  /* 1.1.2 Advanced Filter Settings*/
   $(".open-adf").on("click", function () {
     $(".jobsearchBox").toggleClass("active-adf");
     $(".job-filter-overlay").toggleClass("active");
@@ -312,11 +340,13 @@
   });
 
   // custom scroll
+  /* 1.1.3 Custom Scroll Settings*/
   $(".custom-scroll").overlayScrollbars({
     //className: "os-theme-thick-dark",
   });
 
   //conditional filter
+  /* 1.1.4 Conditional Filter Settings*/
   var getToggleClass = document.getElementById("togglclass1");
   var toggleSidebar = document.getElementById("toggoleSidebar");
   var productCloumnClass = document.getElementsByClassName("condition_class");
@@ -340,6 +370,7 @@
   });
 
 // menu active classes 
+/* 1.1.5 Menu Active Settings*/
 $(".menu-active-classes li").on("click", function(){
 
   $(".menu-active-classes li").removeClass("active");
@@ -358,7 +389,7 @@ if(hasckeditor){
   } );
 }
 // card
-
+/* 1.1.6 Card Settings*/
 var stripe = Stripe('pk_test_51JRsN5Cl4slzBgQyhl4Wgui3DkB1y2LDYLJE1TndQiPwtfdliCotVcREIzViCP6SCxhY36u6OpzcqlZwbVd291C800phGfRoMt');
   var elements = stripe.elements();
   var cardElement = elements.create('card', {
@@ -387,6 +418,7 @@ var stripe = Stripe('pk_test_51JRsN5Cl4slzBgQyhl4Wgui3DkB1y2LDYLJE1TndQiPwtfdliC
  
 
   // chart
+  /* 1.1.7 Chart Settings*/
   var options = {
     chart: {
       height: 340,
@@ -449,6 +481,7 @@ var stripe = Stripe('pk_test_51JRsN5Cl4slzBgQyhl4Wgui3DkB1y2LDYLJE1TndQiPwtfdliC
 chart.render();
 
 // video popup 
+/* 1.1.8 Video Popup Settings*/
 $(".playVideo").magnificPopup({
   type: "iframe",
   iframe: {

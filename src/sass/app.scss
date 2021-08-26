@@ -8,6 +8,9 @@
     Version: 1.0.0
     -------------------------------------------------
      1.0 base css
+     1.01 layout css
+     1.02 components css
+     1.03 pages css
    
     
 **/
@@ -32,6 +35,7 @@
   'base/helpers';
 
 // 4. Layout
+/*1.01 layout css*/
 @import
   'layout/header',
   'layout/footer',
@@ -46,6 +50,7 @@
   'layout/_blog-comments.scss';
 
 // 5. Components
+/*1.02 components css*/
 @import
   'components/accrodain',
   'components/button',
@@ -67,6 +72,7 @@
   'components/counter';
 
 // 6. Page-specific styles
+/*1.03 pages css*/
 @import
   'pages/home',
   'pages/404',

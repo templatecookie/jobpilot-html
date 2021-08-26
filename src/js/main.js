@@ -461,10 +461,12 @@
       categories: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
     },
   };
-
+if(document.getElementById("area-spaline")){
   var chart = new ApexCharts(document.querySelector("#area-spaline"), options);
 
   chart.render();
+}
+$(window).Scrollax();
 
   // video popup
   /* 1.1.8 Video Popup */

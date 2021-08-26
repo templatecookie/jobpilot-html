@@ -156,3 +156,21 @@
 
 
 
+
+
+// feature job icon xl  
+.jobcardStyle1{
+  &.iconxl-size{
+    .rt-single-icon-box{
+      .icon-thumb{
+        height: 68px;
+        width: 68px;
+        margin-right: 20px;
+        img{
+          object-fit: cover;
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+}

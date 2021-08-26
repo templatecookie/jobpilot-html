@@ -41,3 +41,46 @@
         }
     }
 }
+
+
+
+
+// icon animation 
+.card-icon-animation{
+    .icon-thumb{
+        overflow: hidden;
+    }
+    &:hover{
+        .icon-thumb{
+            i, img{
+                animation: iconamimation2 0.5s forwards;
+            }
+        }
+    }
+}
+
+@keyframes iconamimation {
+	49% {
+		transform: translate(100%);
+	}
+	50% {
+		opacity: 0;
+		transform: translate(-100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}
+
+@keyframes iconamimation2 {
+	49% {
+		transform: translateY(100%);
+	}
+	50% {
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}

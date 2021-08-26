@@ -130,7 +130,7 @@
   top: 50%;
   transform: translateY(-50%);
   right: -120px;
-  z-index: -1;
+  z-index: 0;
   max-width: 50%;
   margin-top: 78px;
   @include breakpoint(xxl) {

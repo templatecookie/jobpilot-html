@@ -273,9 +273,7 @@
   // scroll up js
   $.scrollUp({
     scrollText: '<i class="ph-caret-up-light"></i>',
-    scrollSpeed: 1500,
-    animation: "slide",
-    easingType: "easeInQuint",
+
   });
 
   // select 2 active
@@ -481,7 +479,37 @@ var stripe = Stripe('pk_test_51JRsN5Cl4slzBgQyhl4Wgui3DkB1y2LDYLJE1TndQiPwtfdliC
 );
 
 chart.render();
+// playvideo 
+$(".playVideo").magnificPopup({
+  type: "iframe",
+  iframe: {
+    patterns: {
+      youtube: {
+        index: "youtube.com/",
+        id: function (url) {
+          var m = url.match(/[\\?\\&]v=([^\\?\\&]+)/);
+          if (!m || !m[1]) return null;
+          return m[1];
+        },
+        src: "//www.youtube.com/embed/%id%?rel=0&autoplay=1",
+      },
 
+      vimeo: {
+        index: "vimeo.com/",
+        id: function (url) {
+          var m = url.match(
+            /(https?:\/\/)?(www.)?(player.)?vimeo.com\/([a-z]*\/)*([0-9]{6,11})[?]?.*/
+          );
+          if (!m || !m[5]) return null;
+          return m[5];
+        },
+        src: "//player.vimeo.com/video/%id%?autoplay=1",
+      },
+    },
+  },
+  removalDelay: 300,
+  mainClass: "mfp-fade",
+});
 
 
 })(jQuery);

@@ -7,33 +7,32 @@
     Author URI: 
     Version: 
 
-    1.0 Dropdown Menu  Settings*
-    1.1 Sticky Menu  Settings*
-    1.2 Main Menu  Settings*
-    1.3 Mobile Menu  Settings*
-    1.4 Counter  Settings*
-    1.5 Newestjob  Settings*
-    1.6 Testomonial  Settings*
-    1.7 Scrollup  Settings*
-    1.8 Select-2  Settings*
-    1.9 Filtering  Settings*
-    2.0 Map Settings*
-    2.1 Filter Settings*
-    2.2 Hide Tag Settings*
-    2.3 Advanced Filter Settings*
-    2.4 Custom Settings*
-    2.5 Conditional Filter Settings*
-    2.6 Menu Active Settings*
-    2.7 Card Settings*
-    2.8 Cart Settings*
-    2.9 Video Popup Settings*
+    1.0 Dropdown Menu
+    1.01 Sticky Menu  
+    1.02 Main Menu  
+    1.03 Mobile Menu  
+    1.04 Counter  
+    1.05 Newestjob  
+    1.06 Testomonial  
+    1.07 Scrollup  
+    1.08 Select-2  
+    1.09 Filtering  
+    1.09 Map 
+    1.1 Map 
+    1.1.0 Filter 
+    1.1.1 Hide Tag 
+    1.1.2 Advanced Filter 
+    1.1.3 Custom 
+    1.1.4 Conditional Filter 
+    1.1.5 Menu Active 
+    1.1.6 Card 
+    1.1.8 Video Popup 
     
 
 * ----------------------------------------------------------------------------------------
 */
 (function ($) {
-
-    /* 1.0 Dropdown Menu  Settings*/
+  /* 1.0 Dropdown Menu  */
 
   if ($(window).width() < 991.98) {
     $(".menu-item-has-children > a").on("click", function () {
@@ -71,7 +70,7 @@
     }
   });
 
-   /* 1.1 Sticky Menu  Settings*/
+  /* 1.01 Sticky Menu  */
   function stickyHeader() {
     let mainheader = $(".rt-sticky"),
       height = mainheader.outerHeight(),
@@ -107,14 +106,14 @@
   }
 
   // menu menu active link
-  /* 1.2 Main Menu  Settings*/
+  /* 1.02 Main Menu  */
   $(".main-menu ul li").on("click", function () {
     $(".main-menu ul li").removeClass("active");
     $(this).addClass("active");
   });
 
   // mobile menu click
-   /* 1.3 Mobile Menu Settings*/
+  /* 1.03 Mobile Menu */
   $(".menu-click").on("click", function () {
     $(".main-menu").toggleClass("active-mobile-menu");
     $(".rt-mobile-menu-overlay").addClass("active");
@@ -128,13 +127,13 @@
   });
 
   // counter active
-   /* 1.4 Counter Settings*/
+  /* 1.04 Counter */
   $(".counter").counterUp({
     delay: 10,
     time: 1000,
   });
 
-   /* 1.5 Newestjob Settings*/
+  /* 1.05 Newestjob */
   if ($(".newestjob_active").length > 0) {
     $(".newestjob_active").slick({
       slidesToShow: 3,
@@ -189,7 +188,7 @@
       ],
     });
   }
-   /* 1.6 Testomonial Settings*/
+  /* 1.06 Testomonial */
   if ($(".testimonail_active").length > 0) {
     $(".testimonail_active").slick({
       slidesToShow: 3,
@@ -256,23 +255,20 @@
     });
   }
 
- 
   // scroll up js
-   /* 1.7 Scrollup Settings*/
+  /* 1.07 Scrollup */
   $.scrollUp({
     scrollText: '<i class="ph-caret-up-light"></i>',
-
   });
 
   // select 2 active
-   /* 1.8 Select-2 Settings*/
+  /* 1.08 Select-2 */
   $(".rt-selectactive").select2({
     // minimumResultsForSearch: Infinity,
-
   });
 
   // filltering
-   /* 1.9 Filtering Settings*/
+  /* 1.09 Filtering */
   $(".grid").imagesLoaded(function () {
     var $grid = $(".grid").isotope({
       itemSelector: ".grid-item",
@@ -294,7 +290,7 @@
   });
 
   // map active
-   /* 2.0 Map Settings*/
+  /* 1.1 Map */
   var Map1 = document.getElementById("mapid");
   if (Map1) {
     var mymap = L.map("mapid").setView([51.505, -0.09], 13);
@@ -309,7 +305,7 @@
   }
 
   // filter sidebar toggole
-   /* 2.1 Filter Sidebar Settings*/
+  /* 1.1.0 Filter Sidebar */
   $(".toggle-filter-sidebar").on("click", function () {
     $(".sidebar-widget-overlay, .jobsidebar").toggleClass("active");
   });
@@ -318,13 +314,13 @@
   });
 
   // hide tags
-   /* 2.2 Hide Tag Settings*/
+  /* 1.1.1 Hide Tag */
   $(".close-tag").on("click", function () {
     $(this).parent(".single-tag").hide();
   });
 
   // advanced fillter
-  /* 2.3 Advanced Filter Settings*/
+  /* 1.1.2 Advanced Filter */
   $(".open-adf").on("click", function () {
     $(".jobsearchBox").toggleClass("active-adf");
     $(".job-filter-overlay").toggleClass("active");
@@ -339,13 +335,13 @@
   });
 
   // custom scroll
-  /* 2.4 Custom Scroll Settings*/
+  /* 1.1.3 Custom Scroll */
   $(".custom-scroll").overlayScrollbars({
     //className: "os-theme-thick-dark",
   });
 
   //conditional filter
-  /* 2.5 Conditional Filter Settings*/
+  /* 1.1.4 Conditional Filter */
   var getToggleClass = document.getElementById("togglclass1");
   var toggleSidebar = document.getElementById("toggoleSidebar");
   var productCloumnClass = document.getElementsByClassName("condition_class");
@@ -368,37 +364,40 @@
     }
   });
 
-// menu active classes 
-/* 2.6 Menu Active Settings*/
-$(".menu-active-classes li").on("click", function(){
+  // menu active classes
+  /* 1.1.5 Menu Active */
+  $(".menu-active-classes li").on("click", function () {
+    $(".menu-active-classes li").removeClass("active");
+    $(this).addClass("active");
+  });
+  $(function () {
+    $(
+      '.menu-active-classes li a[href^="/' +
+        location.pathname.split("/")[1] +
+        '"]'
+    ).addClass("active");
+  });
 
-  $(".menu-active-classes li").removeClass("active");
-  $(this).addClass("active");
-});
-$(function() {
-  $('.menu-active-classes li a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
-});
-
-var hasckeditor = document.getElementById("default");
-if(hasckeditor){
-  ClassicEditor
-  .create( document.querySelector( '#default' ) )
-  .catch( error => {
-      console.error( error );
-  } );
-}
-// card
-/* 2.7 Card Settings*/
-var stripe = Stripe('pk_test_51JRsN5Cl4slzBgQyhl4Wgui3DkB1y2LDYLJE1TndQiPwtfdliCotVcREIzViCP6SCxhY36u6OpzcqlZwbVd291C800phGfRoMt');
+  var hasckeditor = document.getElementById("default");
+  if (hasckeditor) {
+    ClassicEditor.create(document.querySelector("#default")).catch((error) => {
+      console.error(error);
+    });
+  }
+  // card
+  /* 1.1.6 Card */
+  var stripe = Stripe(
+    "pk_test_51JRsN5Cl4slzBgQyhl4Wgui3DkB1y2LDYLJE1TndQiPwtfdliCotVcREIzViCP6SCxhY36u6OpzcqlZwbVd291C800phGfRoMt"
+  );
   var elements = stripe.elements();
-  var cardElement = elements.create('card', {
+  var cardElement = elements.create("card", {
     style: {
       base: {
-        iconColor: '#c4f0ff',
-        color: '#333',
-        fontWeight: '400',
-        fontFamily: 'Inter,sans-serif',
-        fontSize: '16px',
+        iconColor: "#c4f0ff",
+        color: "#333",
+        fontWeight: "400",
+        fontFamily: "Inter,sans-serif",
+        fontSize: "16px",
         // fontSmoothing: 'antialiased',
         // ':-webkit-autofill': {
         //   color: '#fce883',
@@ -413,32 +412,31 @@ var stripe = Stripe('pk_test_51JRsN5Cl4slzBgQyhl4Wgui3DkB1y2LDYLJE1TndQiPwtfdliC
       // },
     },
   });
-  cardElement.mount('#card-element');
- 
+  cardElement.mount("#card-element");
 
   // chart
-  /* 2.8 Chart Settings*/
+  /* 1.1.7 Chart */
   var options = {
     chart: {
       height: 340,
       type: "area",
       toolbar: {
         autoSelected: "pan",
-        show: false
-      }
+        show: false,
+      },
     },
     dataLabels: {
-      enabled: false
+      enabled: false,
     },
     stroke: { curve: "smooth", width: 2 },
     series: [
       {
         name: "Series 1",
-        data: [50, 75, 60, 80, 55, 70, 60] 
-      }
+        data: [50, 75, 60, 80, 55, 70, 60],
+      },
     ],
-    colors: ['#0066FF'],
-    
+    colors: ["#0066FF"],
+
     fill: {
       type: "gradient",
       colors: "#0066FF",
@@ -446,71 +444,64 @@ var stripe = Stripe('pk_test_51JRsN5Cl4slzBgQyhl4Wgui3DkB1y2LDYLJE1TndQiPwtfdliC
         shadeIntensity: 1,
         opacityFrom: 0.1,
         opacityTo: 0.9,
-        stops: [0, 100 , 0]
-      }
+        stops: [0, 100, 0],
+      },
     },
     markers: {
       size: 5,
       colors: ["#fff"],
       strokeColor: "#0066FF",
-      strokeWidth: 2
+      strokeWidth: 2,
     },
     tooltip: {
-      theme: "dark"
+      theme: "dark",
     },
     xaxis: {
       borderColor: "red",
-      categories: [
-        "Su",
-        "Mo",
-        "Tu",
-        "We",
-        "Th",
-        "Fr",
-        "Sa"
-      ]
-    }
+      categories: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
+    },
   };
 
-  var chart = new ApexCharts(
-    document.querySelector("#area-spaline"),
-    options
-);
+  var chart = new ApexCharts(document.querySelector("#area-spaline"), options);
 
-chart.render();
+  chart.render();
 
-// video popup 
-/* 2.9 Video Popup Settings*/
-$(".playVideo").magnificPopup({
-  type: "iframe",
-  iframe: {
-    patterns: {
-      youtube: {
-        index: "youtube.com/",
-        id: function (url) {
-          var m = url.match(/[\\?\\&]v=([^\\?\\&]+)/);
-          if (!m || !m[1]) return null;
-          return m[1];
+  // video popup
+  /* 1.1.8 Video Popup */
+  $(".playVideo").magnificPopup({
+    type: "iframe",
+    iframe: {
+      patterns: {
+        youtube: {
+          index: "youtube.com/",
+          id: function (url) {
+            var m = url.match(/[\\?\\&]v=([^\\?\\&]+)/);
+            if (!m || !m[1]) return null;
+            return m[1];
+          },
+          src: "//www.youtube.com/embed/%id%?rel=0&autoplay=1",
         },
-        src: "//www.youtube.com/embed/%id%?rel=0&autoplay=1",
-      },
 
-      vimeo: {
-        index: "vimeo.com/",
-        id: function (url) {
-          var m = url.match(
-            /(https?:\/\/)?(www.)?(player.)?vimeo.com\/([a-z]*\/)*([0-9]{6,11})[?]?.*/
-          );
-          if (!m || !m[5]) return null;
-          return m[5];
+        vimeo: {
+          index: "vimeo.com/",
+          id: function (url) {
+            var m = url.match(
+              /(https?:\/\/)?(www.)?(player.)?vimeo.com\/([a-z]*\/)*([0-9]{6,11})[?]?.*/
+            );
+            if (!m || !m[5]) return null;
+            return m[5];
+          },
+          src: "//player.vimeo.com/video/%id%?autoplay=1",
         },
-        src: "//player.vimeo.com/video/%id%?autoplay=1",
       },
     },
-  },
-  removalDelay: 300,
-  mainClass: "mfp-fade",
-});
+    removalDelay: 300,
+    mainClass: "mfp-fade",
+  });
 
-
+  AOS.init({
+    disable: "mobile",
+    easing: 'ease-in-out-sine',
+    once: true, 
+  });
 })(jQuery);

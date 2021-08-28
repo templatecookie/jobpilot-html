@@ -2,6 +2,9 @@
 .filter-list{
     @extend .rt-list;
     display: flex;
+    @include breakpoint(md){
+        flex-wrap: wrap;
+    }
     li{
         display: inline-flex;
         color: var(--gray-500);
@@ -23,4 +26,13 @@
 
 .mx-536{
     max-width: 536px;
+}
+
+//about container gap 
+.about-g-0{
+    padding: 0px;
+    @include breakpoint(lg){
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }

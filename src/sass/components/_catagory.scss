@@ -58,6 +58,18 @@
         }
     }
 }
+.card-icon-animation2{
+    .icon-thumb{
+        overflow: hidden;
+    }
+    &:hover{
+        .icon-thumb{
+            i, img{
+                animation: iconamimation 0.5s forwards;
+            }
+        }
+    }
+}
 
 @keyframes iconamimation {
 	49% {

@@ -14,6 +14,10 @@
       left: 0;
       top: 0;
       width: 100%;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
     }
     &.shape-bgimg,
     &.shape-bgimg2 {
@@ -30,7 +34,7 @@
     max-width: 727px;
     padding-top: 150px;
   }
- 
+
   @include breakpoint(md) {
     padding-top: 100px;
     padding-bottom: 50px;
@@ -42,14 +46,10 @@
   @include breakpoint(xl) {
     height: auto;
   }
- 
 }
 .rt-banner-height2 {
-  height: 1080px;
+  height: 992px;
   @include breakpoint(xl) {
-    height: 800px;
-  }
-  @include breakpoint(lg) {
     height: auto;
   }
 }
@@ -59,16 +59,17 @@
   padding: {
     left: 33px;
     top: 12px;
-    bottom: 12px; 
+    bottom: 12px;
     right: 12px;
-  };
-  
+  }
+
   border-radius: 8px;
   height: 80px;
   box-shadow: 0px 12px 40px rgba(0, 44, 109, 0.04);
   border: 1px solid var(--gray-50);
   @include breakpoint(md) {
     height: auto;
+    padding: 12px;
   }
   button {
     height: 100%;
@@ -86,29 +87,28 @@
       border-color: transparent !important;
     }
   }
-  .fromGroup{
-    &::after{
+  .fromGroup {
+    &::after {
       position: absolute;
       right: 20px;
       top: 50%;
       transform: translateY(-50%);
       width: 1px;
-      height:100%;
+      height: 100%;
       content: "";
       background: var(--gray-50);
     }
-    &.banner-select{
+    &.banner-select {
       padding-right: 20px;
-      
     }
-    &.no-border{
+    &.no-border {
       padding-right: 0px !important;
-      &::after{
+      &::after {
         display: none;
       }
     }
   }
-  &.with-advanced-filter{
+  &.with-advanced-filter {
     height: auto;
   }
 }
@@ -130,7 +130,7 @@
   z-index: 0;
   max-width: 50%;
   margin-top: 78px;
-  @include breakpoint(xxl2){
+  @include breakpoint(xxl2) {
     max-width: 40%;
     right: 0px;
   }
@@ -143,7 +143,7 @@
     margin-top: 30px;
     transform: none;
   }
- 
+
   @include breakpoint(md) {
     display: none;
   }
@@ -151,6 +151,23 @@
 .banner-content2 {
   padding-left: 80px;
   padding-top: 242px;
+  @include breakpoint(xxl) {
+    padding-left: 35px;
+  }
+  @include breakpoint(xl) {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  @include breakpoint(lg){
+    padding-top: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 100px;
+  }
+  @include breakpoint(md){
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 .banner-content5 {
   padding-top: 242px;
@@ -217,7 +234,9 @@
   .select2-container--default .select2-selection--single {
     border-color: transparent;
   }
-  .select2-container--default .select2-selection--single .select2-selection__arrow{
+  .select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow {
     right: 15px;
   }
 }
@@ -246,20 +265,27 @@
     position: absolute;
     left: -127px;
   }
-  .d-elements-3, .d-elements-4{
+  .d-elements-3,
+  .d-elements-4 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     top: -60px;
   }
-  .d-elements-4{
+  .d-elements-4 {
     bottom: -55px;
     top: auto;
   }
 }
 
-
-.bottom-search{
+.bottom-search {
   position: relative;
   top: 60px;
+}
+
+.bg-hide-xl {
+  @include breakpoint(xl) {
+    background-image: none !important;
+    background-color: var(--gray-20);
+  }
 }

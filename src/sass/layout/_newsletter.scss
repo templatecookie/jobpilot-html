@@ -27,7 +27,7 @@
     
     button{
         height: 48px;
-        @include breakpoint(lg){
+        @include breakpoint(md){
             margin-top: 15px;
         }
     }

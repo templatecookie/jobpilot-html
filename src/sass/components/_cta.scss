@@ -1,6 +1,9 @@
 .ct-height{
     padding: 50px;
     border-radius: 12px;
+    @include breakpoint(md){
+        padding: 20px;
+    }
 }
 .ctafullWidthBox{
     background-color: var(--primary-900);

@@ -566,6 +566,35 @@ blockquote {
     left: auto;
     right: -100px;
   }
+  @include breakpoint(xxl){
+    .btn{
+      left: -50px;
+    }
+    .slicknext2{
+      left: auto;
+      right: -50px;
+    }
+  }
+  @include breakpoint(xl){
+    @include hidden();
+    .btn{
+      left: 0px;
+    }
+    .slicknext2{
+      left: auto;
+      right: 0px;
+    }
+  }
+}
+.testimoinals-area{
+ 
+  &:hover{
+    .slick-btn-gorup {
+      @include breakpoint(xl){
+        @include vis();
+      }
+    }
+  }
 }
 
 .modal-header {

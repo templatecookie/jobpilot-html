@@ -31,6 +31,13 @@
       padding: 0px;
     }
   }
+  &.body-28-xl{
+    @include breakpoint(xl){
+      .card-body{
+        padding: 28px;
+      }
+    }
+  }
 }
 
 .jobcardStyle1 {
@@ -196,7 +203,7 @@
   }
 }
 
-.newestjob_active{
+.newestjob_active, .icon-extra-postion{
   .iconbox-extra{
     @include breakpoint(xl){
       position: absolute;

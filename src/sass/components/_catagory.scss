@@ -1,5 +1,5 @@
 .card{
-    &.catagory-box, .post-catagory{
+    &.catagory-box, &.post-catagory{
         .card-body{
            
                 .icon-72{
@@ -7,10 +7,13 @@
                     color: var(--primary-500);
                 }
                 .post-img{
+                    height: 180px;
+                    width: 100%;
                     img{
                         object-fit: cover;
                         width: 100%;
                         border-radius: 8px;
+                        height: 100%;
                     }
                 }
                 .iconbox-content{
@@ -37,6 +40,9 @@
             padding: 24px;
             .icon-thumb{
                 margin-right: 0px;
+                flex: 0 0 100%;
+                max-width: 100%;
+                width: 100%;
             }
         }
     }

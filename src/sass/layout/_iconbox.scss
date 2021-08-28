@@ -46,9 +46,7 @@
     .iconbox-extra{
       width: max-content;
      // margin-left: auto;
-     @include breakpoint(lg){
-       margin-top: 15px;
-     }
+    
       display: flex;
       flex-grow: 0 !important;
       min-width: max-content;
@@ -87,3 +85,25 @@
     }
   }
   
+
+
+.rt-single-icon-box{
+  &.icb-clmn-lg{
+    @include breakpoint(lg){
+      //flex-direction: column;
+      flex-wrap: wrap;
+      .icon-thumb{
+        margin-right: 0px;
+        margin-bottom: 24px;
+      }
+      .iconbox-content{
+        margin-bottom: 24px;
+      }
+      .iconbox-extra{
+        &.align-self-center{
+          align-self: flex-start !important;
+        }
+      }
+    }
+  }
+}

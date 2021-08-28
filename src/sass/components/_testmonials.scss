@@ -5,6 +5,12 @@
   border-radius: 12px;
   min-height: 282px;
   position: relative;
+  @include breakpoint(xxl){
+    min-height: 350px;
+  }
+  @include breakpoint(lg){
+    min-height: 282px;
+  }
   .rt-single-icon-box {
     position: absolute;
     left: 0;
@@ -12,6 +18,16 @@
     width: 100%;
     padding-left: 24px;
     padding-right: 24px;
+    .userimage{
+      height: 48px;
+      width: 48px;
+      border-radius: 50%;
+      img{
+        object-fit: cover;
+        border-radius: 50%;
+        height: 100%;
+      }
+    }
   }
 }
 .p-12 {

@@ -152,6 +152,9 @@
 // footer socails
 .footer-social-links {
   @extend .rt-list;
+  @include breakpoint(lg){
+    margin-top: 15px;
+  }
   li {
     display: inline-block;
     margin-right: 8px;

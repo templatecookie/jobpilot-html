@@ -1,7 +1,7 @@
 .rt-single-banner {
   position: relative;
   z-index: 1;
-  @include breakpoint(lg) {
+  @include breakpoint(xl) {
     padding-bottom: 150px;
   }
   @include breakpoint(md) {
@@ -27,25 +27,22 @@
 .banner-content {
   padding-top: 100px;
   @include breakpoint(xl) {
-    padding-top: 0px;
-  }
-  @include breakpoint(lg) {
     max-width: 727px;
     padding-top: 150px;
   }
+ 
   @include breakpoint(md) {
     padding-top: 100px;
+    padding-bottom: 50px;
   }
 }
 
 .rt-banner-height {
   height: 920px;
   @include breakpoint(xl) {
-    height: 800px;
-  }
-  @include breakpoint(lg) {
     height: auto;
   }
+ 
 }
 .rt-banner-height2 {
   height: 1080px;
@@ -133,18 +130,20 @@
   z-index: 0;
   max-width: 50%;
   margin-top: 78px;
+  @include breakpoint(xxl2){
+    max-width: 40%;
+    right: 0px;
+  }
   @include breakpoint(xxl) {
     max-width: 48%;
     right: 0px;
   }
   @include breakpoint(xl) {
-    margin-top: 0px;
-  }
-  @include breakpoint(lg) {
     position: static;
     margin-top: 30px;
     transform: none;
   }
+ 
   @include breakpoint(md) {
     display: none;
   }

@@ -29,5 +29,11 @@
    &.middle{
        top: 33%;
        transform: translateY(-33%);
+       @include breakpoint(lg){
+           display: none;
+       }
+   }
+   @include breakpoint(xs){
+       display: none;
    }
 }

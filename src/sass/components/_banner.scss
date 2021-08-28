@@ -169,12 +169,35 @@
     padding-bottom: 50px;
   }
 }
+.banner-content3 {
+  padding-left: 80px;
+  padding-top: 242px;
+  @include breakpoint(xxl) {
+    padding-left: 35px;
+  }
+  @include breakpoint(xl) {
+    padding-top: 150px;
+  }
+  @include breakpoint(lg){
+    padding-top: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 100px;
+  }
+  @include breakpoint(md){
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 .banner-content5 {
   padding-top: 242px;
   padding-bottom: 170px;
 }
 .home-two,
-.home-five {
+.home-five,
+.home-three
+
+{
   .mx-727 {
     max-width: 727px;
   }
@@ -186,6 +209,9 @@
 // banner 3 mockup
 .banner-mockpu-img-grid {
   padding-right: 98px;
+  @include breakpoint(xxl2){
+    padding-right: 30px;
+  }
   .img-1-p {
     margin-top: 124px;
   }

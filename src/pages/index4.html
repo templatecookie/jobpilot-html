@@ -5,77 +5,78 @@
 {% include "../templates/layout/header-footer/homepage4-header.html" %}
 {% include "../templates/layout/banner/home4-banner.html" %}
 
-
-
-
 <!-- feature Job Start -->
 <section class="featurejob-area rt-pt-100 rt-pt-md-50">
-    <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="d-flex flex-wrap">
-              <div class="flex-grow-1"> <h4>Featured job</h4></div>
-              <div class="flex-gorw-0">
-                <ul class="filter-list">
-                    <li data-filter="*" class="active">
-                      All 
-                    </li>
-                    <li data-filter=".cat-1">
-                       Design
-                    </li>
-                    <li data-filter=".cat-2">
-                        Design 
-                    </li>
-                    <li data-filter=".cat-3">
-                        Programing
-                    </li>
-                    <li data-filter=".cat-4 ">
-                        Health & Care
-                    </li>
-                    <li data-filter=".cat-5 ">
-                        Music
-                    </li>
-                  </ul>
-              </div>
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex flex-wrap">
+          <div class="flex-grow-1">
+            <h4>Featured job</h4>
+          </div>
+          <div class="flex-gorw-0">
+            <ul class="filter-list">
+              <li data-filter="*" class="active">
+                All
+              </li>
+              <li data-filter=".cat-1">
+                Design
+              </li>
+              <li data-filter=".cat-2">
+                Design
+              </li>
+              <li data-filter=".cat-3">
+                Programing
+              </li>
+              <li data-filter=".cat-4 ">
+                Health & Care
+              </li>
+              <li data-filter=".cat-5 ">
+                Music
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="rt-spacer-40 rt-spacer-md-20"></div>
-        <div class="row">
-            <div class="col-12">
-              {% include "../templates/components/job/fearure-list-view-filter.html" %}
-            </div>
-        </div>
+      </div>
     </div>
-  </section>
+    <div class="rt-spacer-40 rt-spacer-md-20"></div>
+    <div class="row">
+      <div class="col-12">
+        {% include "../templates/components/job/fearure-list-view-filter.html" %}
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- catagory  Start -->
 <div class="rt-spacer-75 rt-spacer-md-40"></div>
 <section class="catagory-area">
   <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="d-flex flex-wrap">
-            <div class="flex-grow-1"> <h4>Popular category</h4></div>
-            <div class="flex-gorw">
-              <button class="btn btn-outline-primary">
-                <span class="button-content-wrapper ">
-                  <span class="button-icon align-icon-right">
-                    <i class="ph-arrow-right"></i>                     
-                  </span>
-                  <span class="button-text">
-                    View All
-                    </span>
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex flex-wrap">
+          <div class="flex-grow-1">
+            <h4>Popular category</h4>
+          </div>
+          <div class="flex-gorw">
+            <button class="btn btn-outline-primary">
+              <span class="button-content-wrapper ">
+                <span class="button-icon align-icon-right">
+                  <i class="ph-arrow-right"></i>
                 </span>
-              </button>
-            </div>
+                <span class="button-text">
+                  View All
+                </span>
+              </span>
+            </button>
           </div>
         </div>
       </div>
-      <div class="rt-spacer-40 rt-spacer-md-20"></div>
-      <div class="row">
-        {% include "../templates/components/category/populary-box-cata.html" %}
-      </div>
+    </div>
+    <div class="rt-spacer-40 rt-spacer-md-20"></div>
+    <div class="row">
+      {% include "../templates/components/category/populary-box-cata.html" %}
+    </div>
   </div>
 </section>
 
@@ -89,14 +90,17 @@
     <div class="row">
       <div class="col-12">
         <div class="position-parent video-btn-center">
-          <img src="assets/images/all-img/video-img.png"  alt="" class="w-100">
+          <img src="assets/images/all-img/video-img.png" alt="" class="w-100">
           <div class="overlay-content">
             <h4 class="text-gray-10  rt-mb-50">Watch our intro video</h4>
-            <a class="btn btn-video-light playVideo" href="https://www.youtube.com/watch?v=linlz7-Pnvw&ab_channel=8KWorld">
+            <a class="btn btn-video-light playVideo"
+              href="https://www.youtube.com/watch?v=linlz7-Pnvw&ab_channel=8KWorld">
               <svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 0.93426C0 0.534912 0.445073 0.296715 0.77735 0.518233L14.376 9.58397C14.6728 9.78189 14.6728 10.2181 14.376 10.416L0.77735 19.4818C0.445072 19.7033 0 19.4651 0 19.0657V0.93426Z" fill="#0066FF"/>
-              </svg>                            
-          </a>
+                <path
+                  d="M0 0.93426C0 0.534912 0.445073 0.296715 0.77735 0.518233L14.376 9.58397C14.6728 9.78189 14.6728 10.2181 14.376 10.416L0.77735 19.4818C0.445072 19.7033 0 19.4651 0 19.0657V0.93426Z"
+                  fill="#0066FF" />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -107,18 +111,19 @@
 <!-- Blog area Start -->
 <section class="blog-area rt-pt-100 rt-pt-md-50 rt-mb-90">
   <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h4>Latest news & Blog</h4>
-        </div>
+    <div class="row">
+      <div class="col-12 text-center">
+        <h4>Latest news & Blog</h4>
       </div>
-      <div class="rt-spacer-40 rt-spacer-md-20"></div>
-      <div class="row">
-        {% include "../templates/components/blog/blog-grid2.html" %}
-      </div>
+    </div>
+    <div class="rt-spacer-40 rt-spacer-md-20"></div>
+    <div class="row">
+      {% include "../templates/components/blog/blog-grid2.html" %}
+    </div>
   </div>
 </section>
 
+<!-- Brand area Start -->
 <div class="brands-area rt-mb-100 rt-mb-md-30">
   <div class="container">
     <div class="row align-items-center">

@@ -32,6 +32,12 @@
         margin-right: 0px;
       }
     }
+    &.style-two{
+      margin-bottom: 8px;
+      a{
+        color: var(--gray-500);
+      }
+    }
   }
   .entry-header{
       margin-bottom: 12px;

@@ -11,6 +11,9 @@
     @include breakpoint(lg){
       padding: 25px;
     }
+    @include breakpoint(xs){
+      padding: 20px;
+    }
   }
  
   &:hover {

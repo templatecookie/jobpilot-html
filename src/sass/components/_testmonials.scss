@@ -63,6 +63,9 @@
         width: 300px;
         margin-right: 0px;
       }
+      @include breakpoint(xs){
+        width: 100%;
+      }
       img {
         @extend .img-fit;
         border-radius: 12px;

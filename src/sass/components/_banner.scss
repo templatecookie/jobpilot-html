@@ -226,8 +226,16 @@
   }
 }
 .banner-content5 {
-  padding-top: 242px;
-  padding-bottom: 170px;
+  padding-top: 342px;
+  padding-bottom: 178px;
+  @include breakpoint(xl){
+    padding-top: 242px;
+    padding-bottom: 140px;
+  }
+  @include breakpoint(lg){
+    padding-top: 180px;
+    padding-bottom: 100px;
+  }
 }
 .home-two,
 .home-five,

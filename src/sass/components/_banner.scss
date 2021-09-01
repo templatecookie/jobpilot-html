@@ -122,7 +122,31 @@
       }
     }
   }
-  
+  .left-content{
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .search-col{
+    flex: 0 0 23.33%;
+    max-width: 23.33%;
+    @include breakpoint(xl){
+      @include flex-width(50%);
+    }
+    @include breakpoint(xs){
+      @include flex-width(100%);
+    }
+  }
+  .search-col-4{
+    flex: 0 0 30%;
+    max-width: 30%;
+    @include breakpoint(xl){
+      @include flex-width(50%);
+    }
+    @include breakpoint(xs){
+      @include flex-width(100%);
+    }
+  }
 }
 
 .banner-quciks-links {
@@ -281,9 +305,13 @@
 .banner-content4 {
   padding-top: 351px;
   padding-bottom: 351px;
+  @include breakpoint(xl){
+    padding-top: 250px;
+    padding-bottom: 250px;
+  }
   @include breakpoint(lg){
-    padding-top: 200px;
-    padding-bottom: 50px;
+    padding-top: 150px;
+    padding-bottom: 0px;
   }
 }
 .home-four {
@@ -321,6 +349,7 @@
 .bottom-search {
   position: relative;
   top: 60px;
+
 }
 
 .bg-hide-xl {
@@ -337,7 +366,7 @@
   height: 931px;
   position: absolute;
   right: 0px;
-  z-index: -1;
+  //z-index: -1;
   top: 0px;
   @include breakpoint(xxl2){
     width: 524px;

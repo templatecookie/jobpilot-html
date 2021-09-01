@@ -111,6 +111,18 @@
   &.with-advanced-filter {
     height: auto;
   }
+  &.height-auto-xl{
+    @include breakpoint(xl){
+      height: auto;
+      padding: 15px;
+      .fromGroup{
+        &::after{
+          display: none;
+        }
+      }
+    }
+  }
+  
 }
 
 .banner-quciks-links {
@@ -158,13 +170,13 @@
     padding-top: 150px;
     padding-bottom: 150px;
   }
-  @include breakpoint(lg){
+  @include breakpoint(lg) {
     padding-top: 100px;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 100px;
   }
-  @include breakpoint(md){
+  @include breakpoint(md) {
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -178,13 +190,13 @@
   @include breakpoint(xl) {
     padding-top: 150px;
   }
-  @include breakpoint(lg){
+  @include breakpoint(lg) {
     padding-top: 100px;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 100px;
   }
-  @include breakpoint(md){
+  @include breakpoint(md) {
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -195,9 +207,7 @@
 }
 .home-two,
 .home-five,
-.home-three
-
-{
+.home-three {
   .mx-727 {
     max-width: 727px;
   }
@@ -209,7 +219,7 @@
 // banner 3 mockup
 .banner-mockpu-img-grid {
   padding-right: 98px;
-  @include breakpoint(xxl2){
+  @include breakpoint(xxl2) {
     padding-right: 30px;
   }
   .img-1-p {
@@ -271,6 +281,10 @@
 .banner-content4 {
   padding-top: 351px;
   padding-bottom: 351px;
+  @include breakpoint(lg){
+    padding-top: 200px;
+    padding-bottom: 50px;
+  }
 }
 .home-four {
   .rt-single-banner {
@@ -313,5 +327,44 @@
   @include breakpoint(xl) {
     background-image: none !important;
     background-color: var(--gray-20);
+  }
+}
+
+// banner four
+.black-bg {
+  background-color: var(--gray-900);
+  width: 724px;
+  height: 931px;
+  position: absolute;
+  right: 0px;
+  z-index: -1;
+  top: 0px;
+  @include breakpoint(xxl2){
+    width: 524px;
+  }
+  @include breakpoint(xl){
+    width: 424px;
+  }
+  @include breakpoint(lg){
+    display: none;
+  }
+}
+.manbg-img {
+  width: 893px;
+  height: 630px;
+  position: absolute;
+  right: 0px;
+  top: 200px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  @include breakpoint(xxl2){
+    width: 624px;
+  }
+  @include breakpoint(xl){
+    width: 524px;
+  }
+  @include breakpoint(lg){
+    display: none;
   }
 }

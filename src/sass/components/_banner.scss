@@ -97,6 +97,9 @@
       height: 100%;
       content: "";
       background: var(--gray-50);
+      @include breakpoint(md){
+        display: none;
+      }
     }
     &.banner-select {
       padding-right: 20px;

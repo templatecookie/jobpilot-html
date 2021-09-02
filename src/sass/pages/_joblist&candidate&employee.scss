@@ -5,17 +5,42 @@
     padding: 0px;
     margin: 0px;
     margin-left: -130px;
+    @include breakpoint(md){
+      margin-left: 0px;
+    }
+  }
+  @include breakpoint(xxl){
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @include breakpoint(xs){
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 .joblist-fliter-gorup {
   min-width: 480px;
   display: flex;
+  @include breakpoint(xs){
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-width: 100%;
+  }
   .left-content {
     flex-grow: 1;
     display: flex;
+    
     max-width: 384px;
+    @include breakpoint(xs){
+      display: block;
+      max-width: 100%;
+    }
     .gap ~ .select2 {
       margin-right: 12px;
+      @include breakpoint(xs){
+        margin-right: 0px;
+        margin-bottom: 12px;
+      }
       &:last-child {
         margin-right: 0px;
       }
@@ -28,6 +53,10 @@
     height: 48px;
     border: 1px solid var(--gray-50);
     border-radius: 6px;
+    @include breakpoint(xs){
+      margin-top: 10px;
+      margin-left: 0px;
+    }
     nav {
       height: 100%;
     }
@@ -65,6 +94,9 @@
   height: 836px;
   width: 100%;
   z-index: 1;
+  @include breakpoint(lg){
+    height: 300px;
+  }
 }
 .sm-height{
   #mapid{

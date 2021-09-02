@@ -20,7 +20,10 @@
         font-size: 14px;
         color: var(--gray-600);
         text-align: center;
-       
+       @include breakpoint(xs){
+           height: 35px;
+           width: 35px;
+       }
         &:focus{
             box-shadow: none;
             outline: none;

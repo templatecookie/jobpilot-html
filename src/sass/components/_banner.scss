@@ -124,6 +124,18 @@
         }
       }
     }
+ 
+  }
+  &.height-auto-lg{
+    @include breakpoint(lg){
+      height: auto;
+      padding: 15px;
+      .fromGroup{
+        &::after{
+          display: none;
+        }
+      }
+    }
   }
   .left-content{
     flex-grow: 1;

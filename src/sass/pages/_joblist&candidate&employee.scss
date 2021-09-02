@@ -390,6 +390,9 @@
     &:last-child{
       margin-right: 0px;
     }
+    @include breakpoint(xl){
+      margin-bottom: 12px;
+    }
   }
 }
 
@@ -420,5 +423,8 @@
     margin-left: 100px;
     margin-right: 100px;
     margin-top: -80px;
+    @include breakpoint(md){
+      margin: 0px;
+    }
   }
 }

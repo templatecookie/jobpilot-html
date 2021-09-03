@@ -90,6 +90,13 @@
     .icon-thumb{
       margin-right: 32px;
     }
+    @include breakpoint(md){
+      flex-direction: column;
+      .icon-thumb{
+        margin-right: 0px;
+        margin-bottom: 32px;
+      }
+    }
   }
 }
 

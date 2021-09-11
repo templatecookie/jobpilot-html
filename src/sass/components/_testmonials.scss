@@ -37,9 +37,15 @@
 .testimonal-item {
   display: flex;
   align-items: center;
+  @include breakpoint(lg){
+   display: block;
+  }
   .left-img {
     flex-grow: 0 !important;
     flex-shrink: 0 !important;
+    @include breakpoint(lg){
+      margin-bottom: 24px;
+    }
     .img-box {
       width: 560px;
       height: 552px;
@@ -48,6 +54,18 @@
       margin-right: 112px;
       background-color: var(--primary-500);
       border-radius: 12px;
+      @include breakpoint(xl){
+        width: 380px;
+        margin-right: 50px;
+      }
+      @include breakpoint(lg){
+        height: 270px;
+        width: 300px;
+        margin-right: 0px;
+      }
+      @include breakpoint(xs){
+        width: 100%;
+      }
       img {
         @extend .img-fit;
         border-radius: 12px;
@@ -68,6 +86,9 @@
   z-index: -1;
   width: 100%;
   height: 356px;
+  @include breakpoint(lg){
+    height: calc(100% - 200px)
+  }
 }
 .testimonal-item {
   position: relative;
@@ -82,6 +103,16 @@
   .carosle-button {
     margin-left: 52%;
     margin-top: -116px;
+    @include breakpoint(xl){
+      margin-left: 45%;
+      
+    }
+    @include breakpoint(lg){
+      margin-top: 0px;
+      position: relative;
+      top: -30px;
+      margin-left: 0px;
+    }
   }
   .t-title{
     margin-left: 52%;
@@ -89,5 +120,13 @@
     top: 100px;
     width: 100%;
     position: absolute;
+    @include breakpoint(xl){
+      margin-left: 45%;
+    }
+    @include breakpoint(lg){
+      position: static;
+      margin-left: 0px;
+      margin-bottom: 35px;
+    }
   }
 }

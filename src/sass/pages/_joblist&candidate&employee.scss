@@ -5,17 +5,42 @@
     padding: 0px;
     margin: 0px;
     margin-left: -130px;
+    @include breakpoint(md){
+      margin-left: 0px;
+    }
+  }
+  @include breakpoint(xxl){
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @include breakpoint(xs){
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 .joblist-fliter-gorup {
   min-width: 480px;
   display: flex;
+  @include breakpoint(xs){
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-width: 100%;
+  }
   .left-content {
     flex-grow: 1;
     display: flex;
+    
     max-width: 384px;
+    @include breakpoint(xs){
+      display: block;
+      max-width: 100%;
+    }
     .gap ~ .select2 {
       margin-right: 12px;
+      @include breakpoint(xs){
+        margin-right: 0px;
+        margin-bottom: 12px;
+      }
       &:last-child {
         margin-right: 0px;
       }
@@ -28,6 +53,10 @@
     height: 48px;
     border: 1px solid var(--gray-50);
     border-radius: 6px;
+    @include breakpoint(xs){
+      margin-top: 10px;
+      margin-left: 0px;
+    }
     nav {
       height: 100%;
     }
@@ -65,6 +94,9 @@
   height: 836px;
   width: 100%;
   z-index: 1;
+  @include breakpoint(lg){
+    height: 300px;
+  }
 }
 .sm-height{
   #mapid{
@@ -89,7 +121,10 @@
   @include rt-trs(0.1s);
   margin-left: -424px;
   @include hidden();
- 
+ @include breakpoint(xs){
+   width: 250px;
+   padding: 12px 16px;
+}
   &.active {
     @include vis();
     margin-left: 0px;
@@ -118,6 +153,7 @@
     color: var(--gray-900);
     @include rt-trs(0.24s);
     @include hidden();
+    
   }
   &.active {
     z-index: 679;
@@ -126,6 +162,10 @@
       left: 480px;
       transition-delay: 0.1s;
       @include vis();
+      @include breakpoint(xs){
+        @include hw(35px);
+        left: 260px;
+      }
     }
   }
 }
@@ -227,6 +267,10 @@
   margin-right: -12px;
   padding-bottom: 20px;
   padding-left: 33px;
+  @include breakpoint(xl){
+    margin-left: 0px;
+  }
+ 
  display: none;
   background-color: #fff;
   hr{
@@ -244,6 +288,15 @@
     >li{
       flex: 0 0 20%;
       max-width: 20%;
+      @include breakpoint(lg){
+        @include flex-width(33.33%)
+      }
+      @include breakpoint(md){
+        @include flex-width(50%)
+      }
+      @include breakpoint(xs){
+        @include flex-width(100%)
+      }
     }
   }
   ul ul > li{
@@ -263,6 +316,10 @@
     width: 100%;
     z-index: 1000;
     top: 0px;
+    overflow: scroll;
+  
+      height: calc(486px);
+    
   }
 }
 
@@ -308,6 +365,9 @@
 
 .max-311{
   min-width: 311px;
+  @include breakpoint(xs){
+    min-width: 100%;
+  }
 }
 .p-32{
   padding: 32px;
@@ -329,6 +389,9 @@
     margin-right: 8px;
     &:last-child{
       margin-right: 0px;
+    }
+    @include breakpoint(xl){
+      margin-bottom: 12px;
     }
   }
 }
@@ -360,5 +423,8 @@
     margin-left: 100px;
     margin-right: 100px;
     margin-top: -80px;
+    @include breakpoint(md){
+      margin: 0px;
+    }
   }
 }

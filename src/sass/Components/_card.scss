@@ -11,6 +11,9 @@
     @include breakpoint(lg){
       padding: 25px;
     }
+    @include breakpoint(xs){
+      padding: 20px;
+    }
   }
  
   &:hover {
@@ -58,6 +61,13 @@
         overflow: hidden;
         width: 110px;
         height: 110px;
+        @include breakpoint(xl){
+          width: 90px;
+          height: 90px;
+        } @include breakpoint(xs){
+          width: 80px;
+          height: 80px;
+        }
         img{
           @extend .img-fit;
         }

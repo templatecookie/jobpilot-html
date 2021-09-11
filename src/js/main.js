@@ -304,7 +304,7 @@
     }).addTo(mymap);
   }
 
-  // filter sidebar toggole
+
   /* 1.1.0 Filter Sidebar */
   $(".toggle-filter-sidebar").on("click", function () {
     $(".sidebar-widget-overlay, .jobsidebar").toggleClass("active");
@@ -313,7 +313,7 @@
     $(".sidebar-widget-overlay, .jobsidebar").removeClass("active");
   });
 
-  // hide tags
+
   /* 1.1.1 Hide Tag */
   $(".close-tag").on("click", function () {
     $(this).parent(".single-tag").hide();
@@ -350,14 +350,14 @@
     $(toggleSidebar).toggleClass("d-none");
 
     if (!toggleSidebar.classList.contains("d-none")) {
-      getToggleClass.classList.add("col-xl-8");
+      getToggleClass.classList.add("col-lg-8");
       getToggleClass.classList.remove("col-xl-12");
     } else {
       getToggleClass.classList.add("col-xl-12");
-      getToggleClass.classList.remove("col-xl-8");
+      getToggleClass.classList.remove("col-lg-8");
     }
 
-    if (getToggleClass.classList.contains("col-xl-8")) {
+    if (getToggleClass.classList.contains("col-lg-8")) {
       $(productCloumnClass).removeClass("col-xl-4");
     } else {
       $(productCloumnClass).addClass("col-xl-4");

@@ -17,10 +17,10 @@
                             <input type="email" placeholder="Username or email address" required>
                         </div>
                         <div class="fromGroup rt-mb-24">
-                            <input type="password" placeholder="Password" required>
-                            <div class="has-badge">
+                            <input type="password" placeholder="Password" required id="myInput">
+                            <div class="has-badge" onclick="myFunction()">
                                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                    xmlns="http://www.w3.org/2000/svg" id="togglePassword" >
                                     <path
                                         d="M0.916016 10.9993C0.916016 10.9993 4.58268 3.66602 10.9993 3.66602C17.416 3.66602 21.0827 10.9993 21.0827 10.9993C21.0827 10.9993 17.416 18.3327 10.9993 18.3327C4.58268 18.3327 0.916016 10.9993 0.916016 10.9993Z"
                                         stroke="#191F33" stroke-width="1.3" stroke-linecap="round"
@@ -236,5 +236,16 @@
     </div>
 </div>
 
+
+<script>
+    function myFunction(){
+        var x = document.getElementById("myInput");
+        if(x.type === "password"){
+            x.type = "text" ;
+        }else{
+            x.type = "password" ;
+        }
+    }
+</script>
 
 {% endblock %}

@@ -7,7 +7,7 @@
 <div class="dashboard-wrapper">
   {% include "../templates/components/dashboard/company-sidebar.html" %}
   <div class="d-page-content">
-    <h5 class="rt-mb-32">Applications</h5>
+    <h5 class="rt-mb-32">Bookmark</h5>
     <form class="rt-mb-32 row dashboard-input" action="#">
       <div class="col-xl-4 col-xxl-3">
         <div class="fromGroup has-icon2">
@@ -34,41 +34,39 @@
       <div class="col-xl-3 ">
         <div class="fromGroup has-icon2 ">
           <select class="rt-selectactive " name="from" style="width: 100%">
-              <option>Select Job</option>
-              <option value="2">Front End Developer</option>
-              <option value="3">Back End Developer</option>
-              <option value="4">Full Stack Developer</option>
-              <option value="5">Wordpress Developer</option>
-              <option value="6">UI / UX Designer</option>
-              <option value="7">Facebook Marketing</option>
-              <option value="8">Digital Marketing</option>
-          </select>
+            <option>Select Category</option>
+            <option value="2">Front End Developer</option>
+            <option value="3">Back End Developer</option>
+            <option value="4">Full Stack Developer</option>
+            <option value="5">Wordpress Developer</option>
+            <option value="6">UI / UX Designer</option>
+            <option value="7">Facebook Marketing</option>
+            <option value="8">Digital Marketing</option>
+        </select>
           <div class="icon-badge rt-ml-14">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20.25 6.75H3.75C3.33579 6.75 3 7.08579 3 7.5V19.5C3 19.9142 3.33579 20.25 3.75 20.25H20.25C20.6642 20.25 21 19.9142 21 19.5V7.5C21 7.08579 20.6642 6.75 20.25 6.75Z" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M15.75 6.75V5.25C15.75 4.85218 15.592 4.47064 15.3107 4.18934C15.0294 3.90804 14.6478 3.75 14.25 3.75H9.75C9.35218 3.75 8.97064 3.90804 8.68934 4.18934C8.40804 4.47064 8.25 4.85218 8.25 5.25V6.75" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M21.0001 11.8418C18.2648 13.4243 15.1595 14.2553 11.9994 14.2503C8.83977 14.2553 5.73503 13.4246 3 11.8426" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M10.875 11.25H13.125" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-                                                 
+              <path d="M2 17L12 22L22 17" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 12L12 17L22 12" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>                                                 
           </div>
       </div>
       </div>
       <div class="col-xl-2 ms-xl-auto">
         <select class="rt-selectactive " name="from" style="width: 100%">
-          <option>Latest</option>
-          <option value="2">Alaska</option>
-          <option value="3">Bahamas</option>
-          <option value="4">Bermuda</option>
-          <option value="5">Canada</option>
-          <option value="6">Caribbean</option>
-          <option value="7">Europe</option>
-          <option value="8">Hawaii</option>
+          <option>All Jobs</option>
+          <option value="2">Front End Developer</option>
+          <option value="3">Back End Developer</option>
+          <option value="4">Full Stack Developer</option>
+          <option value="5">Wordpress Developer</option>
+          <option value="6">UI / UX Designer</option>
+          <option value="7">Facebook Marketing</option>
+          <option value="8">Digital Marketing</option>
       </select>
       </div>
     </form>
 
-    {% include "../templates/components/employe/application-list.html" %}
+    {% include "../templates/components/employe/company-application-list.html" %}
 
     <div class="rt-spacer-50 rt-spacer-md-20"></div>
     <div class="body-font-3 text-gray-900  text-center">
@@ -80,3 +78,4 @@
 </div>
 
 {% endblock %}
+

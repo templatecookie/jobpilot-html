@@ -13,6 +13,12 @@
     }
     @include breakpoint(xs){
       padding: 20px;
+      .iconbox-extra{
+        .icon-button{
+          width: 48px;
+          height: 48px;
+        }
+      }
     }
   }
  

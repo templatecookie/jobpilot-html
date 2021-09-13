@@ -28,6 +28,12 @@
         height: 100%;
       }
     }
+    @include breakpoint(xs){
+      position: unset;
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-top: 20px;
+    }
   }
 }
 .p-12 {

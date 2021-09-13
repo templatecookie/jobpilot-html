@@ -20,6 +20,7 @@
 
 .select2-container--default .select2-selection--single .select2-selection__rendered{
 	color: var(--gray-400);
+	padding-right: 48px;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b{
@@ -71,5 +72,11 @@
 	}
 }
 
-
+//breadcrumbs3 components design
+@media (min-width: 992px) {
+	.flex-lg-row {
+    flex-direction: row!important;
+		align-items: center;
+}	
+}
 

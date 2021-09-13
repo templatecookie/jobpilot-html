@@ -13,7 +13,8 @@
     }
     @include breakpoint(xs){
       padding: 20px;
-      .iconbox-extra{
+      .iconbox-extra,
+      .post-info{
         .icon-button{
           width: 48px;
           height: 48px;

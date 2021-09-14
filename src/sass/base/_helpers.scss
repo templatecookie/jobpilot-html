@@ -595,6 +595,14 @@ blockquote {
       }
     }
   }
+  //responsive design without button 
+  .position-parent{
+    .slick-btn-gorup{
+      .btn-light{
+        display: none !important;
+      }
+    }
+  }
 }
 
 .modal-header {

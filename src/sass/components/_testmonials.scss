@@ -28,7 +28,7 @@
         height: 100%;
       }
     }
-    @include breakpoint(xs){
+    @include breakpoint(md){
       position: unset;
       padding-left: 0px;
       padding-right: 0px;

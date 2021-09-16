@@ -13,6 +13,9 @@
     padding-top: 180px;
     padding-bottom: 50px;
   }
+  @include breakpoint('xl', max){
+    display: none;
+  }
 }
 .d-page-content {
   padding: {
@@ -22,6 +25,9 @@
   }
   margin-left: 312px;
   margin-top: 100px;
+  @include breakpoint('xl', max){
+      margin-left: 0;
+  }
 }
 .min-200 {
   min-width: 200px;

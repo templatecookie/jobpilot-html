@@ -29,6 +29,7 @@
         height: 48px;
         @include breakpoint(md){
             margin-top: 15px;
+            width: 100%;
         }
     }
 }

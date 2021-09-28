@@ -17,5 +17,15 @@
   }
   .height-636{
     height: 636px;
+    @include breakpoint(lg){
+      height: 305px;
+    }
   }
+  .height-312{
+    height: 305px;
+  }
+}
+
+.mx-646{
+  max-width: 646px;
 }

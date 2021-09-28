@@ -127,16 +127,16 @@ function csspluginTask() {
 
 function imagetask() {
     return src(files.image_path)
-        .pipe(imagemin(
-            [
-                imagemin.gifsicle(),
-                imagemin.jpegtran(),
-                imagemin.optipng(),
-                imagemin.svgo(),
-                imageminPngQuant(),
-                imageminjpegCrompress()
-            ]
-        ))
+        // .pipe(imagemin(
+        //     [
+        //         imagemin.gifsicle(),
+        //         imagemin.jpegtran(),
+        //         imagemin.optipng(),
+        //         imagemin.svgo(),
+        //         imageminPngQuant(),
+        //         imageminjpegCrompress()
+        //     ]
+        // ))
         .pipe(dest(files.output + "/" + "assets/images"))
         .pipe(browserSync.stream());
 }

@@ -90,7 +90,7 @@
     }
     @include breakpoint('xs', max){
         .iconbox-content {
-            margin-top: 10px;
+            //margin-top: 10px;
         }
         .iconbox-extra {
             width: 100%;

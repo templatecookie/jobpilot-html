@@ -92,9 +92,14 @@
     }
     @include breakpoint(md){
       flex-direction: column;
+      flex-wrap: wrap;
       .icon-thumb{
         margin-right: 0px;
         margin-bottom: 32px;
+        width: 100%;
+      }
+      .post-thmubnail{
+        height: auto;
       }
     }
   }
@@ -107,3 +112,4 @@
 
   }
 }
+

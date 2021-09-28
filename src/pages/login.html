@@ -7,7 +7,7 @@
 <div class="full-height">
     <div class="container">
         <div class="row full-height align-items-center">
-            <div class="col-xl-5">
+            <div class="col-xl-5 col-lg-6 col-md-7">
                 <div class="auth-box2">
                     <form action="#" class="rt-form">
                         <h4 class="rt-mb-20">Log In</h4>
@@ -18,7 +18,7 @@
                         </div>
                         <div class="fromGroup rt-mb-24">
                             <input type="password" placeholder="Password" required id="myInput">
-                            <div class="has-badge" onclick="myFunction()">
+                            <div class="has-badge togglepass">
                                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                     xmlns="http://www.w3.org/2000/svg" id="togglePassword" >
                                     <path
@@ -63,8 +63,8 @@
                                 </span>
                             </span>
                         </button>
-                        <div class="d-flex justify-content-between btn-group">
-                            <button type="button" class="btn btn-outline-plain d-block me-3">
+                        <div class="d-flex justify-content-between btn-group flex-column flex-md-row ">
+                            <button type="button" class="btn btn-outline-plain d-block me-3 rt-mb-xs-10">
                                 <span class="button-content-wrapper ">
                                     <span class="button-icon align-icon-left">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -116,7 +116,7 @@
     <div class="sidebar-bg" style="background-image: url(assets/images/all-img/auth-img.png);">
         <div class="sidebar-content">
             <h4 class="text-gray-10 rt-mb-50">Over 1,75,324 open jobs waiting for you.</h4>
-            <div class="d-flex">
+            <div class="d-flex ">
                 <div class="flex-grow-1 rt-mb-24">
                     <div class="card jobcardStyle1 counterbox4">
                         <div class="card-body">
@@ -236,16 +236,5 @@
     </div>
 </div>
 
-
-<script>
-    function myFunction(){
-        var x = document.getElementById("myInput");
-        if(x.type === "password"){
-            x.type = "text" ;
-        }else{
-            x.type = "password" ;
-        }
-    }
-</script>
 
 {% endblock %}

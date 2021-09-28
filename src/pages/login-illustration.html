@@ -3,10 +3,10 @@
 {% block content %}
 {% include "../templates/layout/header-footer/auth-header.html" %}
 
-<div class="full-height">
+<div class="login-illustration">
     <div class="container">
-        <div class="row full-height align-items-center">
-            <div class="col-xl-6">
+        <div class="row">
+            <div class="col-xl-6 col-lg-7">
                 <div class="auth-box">
                     <form action="#" class="rt-form">
                         <h4 class="rt-mb-20">Log In</h4>
@@ -17,7 +17,7 @@
                         </div>
                         <div class="fromGroup rt-mb-24">
                             <input type="password" placeholder="Password" required id="myInput">
-                            <div class="has-badge" onclick="myFunction()">
+                            <div class="has-badge togglepass">
                                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -106,23 +106,14 @@
                     </form>
                 </div>
             </div>
-            <div class="col-xl-6">
+            <div class="col-xl-6 col-lg-5 d-none d-lg-block">
                 <img src="assets/images/banner/log-in-imag.png" alt="">
             </div>
         </div>
     </div>
 </div>
 
-<script>
-    function myFunction(){
-        var x = document.getElementById("myInput");
-        if(x.type === "password"){
-            x.type = "text" ;
-        }else{
-            x.type = "password" ;
-        }
-    }
-</script>
+
 
 
 {% endblock %}

@@ -506,4 +506,25 @@ $(window).Scrollax();
     easing: 'ease-in-out-sine',
     once: true, 
   });
+
+  //toggle password 
+  $(".togglepass").on("click", function () {
+    var x = document.getElementById("myInput");
+    if(x.type === "password"){
+        x.type = "text" ;
+    }else{
+        x.type = "password" ;
+    }
+  })
+  $(".togglepass2").on("click", function () {
+    var y = document.getElementById("myInput2");
+    if(y.type === "password"){
+        y.type = "text" ;
+    }else{
+        y.type = "password" ;
+    }
+  })
+  
+
+
 })(jQuery);

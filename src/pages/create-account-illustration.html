@@ -4,12 +4,10 @@
 {% block content %}
 {% include "../templates/layout/header-footer/auth-header.html" %}
 
-<div class="auth-page2">
-    <div class="rt-spacer-100 rt-spacer-md-100 rt-spacer-xs-50"></div>
-    <div class="rt-spacer-100 rt-spacer-md-100 rt-spacer-xs-50"></div>
+<div class="login-illustration">
     <div class="container">
         <div class="row ">
-            <div class="col-xl-6">
+            <div class="col-xl-6 col-lg-7">
                 <div class="auth-box">
                     <form action="#" class="rt-form">
                         <div class="row">
@@ -19,7 +17,7 @@
                                             href="login.html"> Log In.</a></span>
                                 </span>
                             </div>
-                            <div class="col-xl-4 col-md-12 align-self-center">
+                            <div class="col-xl-4 col-md-12 align-self-center rt-mb-lg-20">
                                 <select class="form-select body-font-4 text-gray-700" id="fcfocus"
                                     aria-label="Default select example">
                                     <option selected>Employers</option>
@@ -47,7 +45,7 @@
                         </div>
                         <div class="fromGroup rt-mb-15">
                             <input type="password" placeholder="Password" required id="myInput">
-                            <div class="has-badge" onclick="myFunction()">
+                            <div class="has-badge togglepass">
                                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -63,7 +61,7 @@
                         </div>
                         <div class="fromGroup rt-mb-15">
                             <input type="password" placeholder="Confirm Password" required id="myInput2">
-                            <div class="has-badge" onclick="myFunction2()">
+                            <div class="has-badge togglepass2">
                                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -150,33 +148,14 @@
                     </form>
                 </div>
             </div>
-            <div class="col-xl-6">
+            <div class="col-xl-6 col-lg-5 d-none d-lg-block">
                 <img src="assets/images/banner/log-in-imag.png" alt="">
             </div>
         </div>
     </div>
-    <div class="rt-spacer-100 rt-spacer-md-100 rt-spacer-xs-50"></div>
-    <div class="rt-spacer-100 rt-spacer-md-100 rt-spacer-xs-50"></div>
 </div>
 
-<script>
-    function myFunction(){
-        var x = document.getElementById("myInput");
-        if(x.type === "password"){
-            x.type = "text" ;
-        }else{
-            x.type = "password" ;
-        }
-    }
-    function myFunction2(){
-        var x = document.getElementById("myInput2");
-        if(x.type === "password"){
-            x.type = "text" ;
-        }else{
-            x.type = "password" ;
-        }
-    }
-</script>
+
 
 
 

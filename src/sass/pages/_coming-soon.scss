@@ -1,16 +1,26 @@
 .comming-soon-height {
   height: 100vh;
-  @include breakpoint(lg) {
+  @include breakpoint(xl) {
     height: auto;
-    padding: 150px 0;
+    padding-top: 120px;
   }
-  @include breakpoint(md) {
-    padding: 100px 0;
+  @include breakpoint(lg) {
+    padding-top: 70px;
   }
   @include breakpoint(xs) {
-    padding: 50px 0;
+    padding-top: 50px;
   }
 }
 .fixed-footer-comming-soon {
   margin-bottom: 30px;
+  &.fixed-bottom{
+    @include breakpoint(xl){
+      position: static !important;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    @include breakpoint(xs){
+      padding-top: 0px;
+    }
+  }
 }

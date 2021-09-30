@@ -56,6 +56,19 @@
         margin-right: 10px;
         &:last-child{
           margin-right: 0px;
+          @include breakpoint(xs){
+            flex-basis: 100%;
+            width: 100%;
+            margin-top: 10px;
+
+          }
+         
+        }
+      }
+      &.mbl-version-clmn{
+        @include breakpoint(xs){
+        flex-wrap: wrap;
+        min-width: auto;
         }
       }
     }
@@ -88,7 +101,7 @@
             margin-top: 10px;
         }
     }
-    @include breakpoint('xs', max){
+    @include breakpoint('xs'){
         .iconbox-content {
             //margin-top: 10px;
         }

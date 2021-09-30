@@ -92,23 +92,23 @@
 @import
   'themes/default';
 
-//   body {
-//     @include breakpoint(xxl2) {
-//         background-color: magenta;
-//     }
-//     @include breakpoint(xxl) {
-//         background-color: gold;
-//     }
-//     @include breakpoint(xl) {
-//         background-color: purple;
-//     }
-//     @include breakpoint(lg) {
-//         background-color: red;
-//     }
-//     @include breakpoint(md) {
-//         background-color: yellow;
-//     }
-//     @include breakpoint(xs) {
-//         background-color: pink;
-//     }
-// }
+  body {
+    @include breakpoint(xxl2) {
+        background-color: magenta;
+    }
+    @include breakpoint(xxl) {
+        background-color: gold;
+    }
+    @include breakpoint(xl) {
+        background-color: purple;
+    }
+    @include breakpoint(lg) {
+        background-color: red;
+    }
+    @include breakpoint(md) {
+        background-color: yellow;
+    }
+    @include breakpoint(xs) {
+        background-color: pink;
+    }
+}

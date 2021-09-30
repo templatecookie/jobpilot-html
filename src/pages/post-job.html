@@ -7,14 +7,19 @@
 <div class="dashboard-wrapper">
     {% include "../templates/components/dashboard/company-sidebar.html" %}
     <div class="d-page-content">
-        <h5 class="rt-mb-32">Post a Job</h5>
+        <div class="position-relative">
+            <h5 class="rt-mb-32">Post a Job</h5>
+            <span class="sidebar-open-nav">
+                <i class="ph-list"></i>
+              </span>
+        </div>
         <form action="#" class="rt-from">
             <div class="row smallgap">
-                <div class="col-lg-8 rt-mb-24">
+                <div class="col-md-8 rt-mb-24 col-sm-6">
                     <label for="m" class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Job Tittle</label>
                     <input type="text" placeholder="Job Tittle" id="m">
                 </div>
-                <div class="col-lg-4 rt-mb-24">
+                <div class="col-md-4 rt-mb-24 col-sm-6">
                     <label  class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Category</label>
                     <select class="rt-selectactive " name="from" style="width: 100%" >
                         <option>Select Category </option>
@@ -27,11 +32,11 @@
                         <option value="8">Facebook Marketting</option>
                     </select>
                 </div>
-                <div class="col-lg-12 rt-mb-24">
+                <div class="col-md-12 rt-mb-24">
                     <label for="m1" class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Tags</label>
                     <input type="text" placeholder="job tags.." id="m1">
                 </div>
-                <div class="col-lg-4 rt-mb-24">
+                <div class="col-md-4 col-sm-6 rt-mb-24">
                     <label  class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Experience</label>
                     <select class="rt-selectactive " name="from2" style="width: 100%" >
                         <option>Select.. </option>
@@ -44,7 +49,7 @@
                         <option value="8">Seven Year</option>
                     </select>
                 </div>
-                <div class="col-lg-4 rt-mb-24">
+                <div class="col-md-4 col-sm-6 rt-mb-24">
                     <label  class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Education</label>
                     <select class="rt-selectactive " name="from3" style="width: 100%" >
                         <option>Select.. </option>
@@ -58,7 +63,7 @@
                     </select>
                 </div>
 
-                <div class="col-lg-4 rt-mb-24">
+                <div class="col-md-4 col-sm-6 rt-mb-24">
                     <label  class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Job Type</label>
                     <select class="rt-selectactive " name="from3" style="width: 100%" >
                         <option>Select.. </option>
@@ -72,15 +77,15 @@
                     </select>
                 </div>
 
-                <div class="col-lg-4 rt-mb-24">
+                <div class="col-md-4 col-sm-6 rt-mb-24">
                     <label  class="pointer body-font-4 d-block text-gray-900 rt-mb-8" for="salary">Min Salery</label>
                    <input type="number" placeholder="Minimum salery..." id="salary">
                 </div>
-                <div class="col-lg-4 rt-mb-24">
+                <div class="col-md-4 col-sm-6 rt-mb-24">
                     <label  class="pointer body-font-4 d-block text-gray-900 rt-mb-8" for="msalary">Max Salery</label>
                    <input type="number" placeholder="Max Salery..." id="msalary">
                 </div>
-                <div class="col-lg-4 rt-mb-24">
+                <div class="col-md-4 col-sm-6 rt-mb-24">
                     <label  class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Salery Type</label>
                     <select class="rt-selectactive " name="from3" style="width: 100%" >
                         <option>Select..</option>
@@ -89,7 +94,7 @@
                         <option value="4">UP TO 80000</option>
                     </select>
                 </div>
-                <div class="col-lg-4 rt-mb-24">
+                <div class="col-md-4 col-sm-6 rt-mb-24">
                     <label  class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Gender</label>
                     <select class="rt-selectactive " name="from3" style="width: 100%" >
                         <option>Gender</option>
@@ -98,11 +103,11 @@
                         <option value="4">Other's</option>
                     </select>
                 </div>
-                <div class="col-lg-6 rt-mb-24">
+                <div class="col-md-6 col-sm-6 rt-mb-24">
                     <label  class="pointer body-font-4 d-block text-gray-900 rt-mb-8" for="date-s">Deadline Date</label>
                    <input type="text" placeholder="DD/MM/YY" id="date-s">
                 </div>
-                <div class="col-lg-12 rt-mb-24">
+                <div class="col-md-12 rt-mb-24">
                     <label  class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Job Description</label>
                     <textarea id="default">Hello, World!</textarea>
                 </div>

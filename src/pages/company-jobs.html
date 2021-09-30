@@ -7,12 +7,16 @@
 <div class="dashboard-wrapper">
   {% include "../templates/components/dashboard/company-sidebar.html" %}
   <div class="d-page-content">
-    <h5 class="rt-mb-32">My Jobs</h5>
-    
-    <form class="dashboard-input d-flex rt-form rt-mb-32" action="#">
+    <div class="position-relative">
+        <h5 class="rt-mb-32">My Jobs</h5>
+        <span class="sidebar-open-nav">
+          <i class="ph-list"></i>
+        </span>
+    </div>
+    <form class="dashboard-input d-flex  flex-column flex-lg-row rt-mb-32" action="#">
       <div class="flex-grow-1">
         <div class="row">
-          <div class="col-xl-4">
+          <div class="col-lg-4 rt-mb-lg-20">
             <div class="fromGroup has-icon2">
               <input type="text" placeholder="Job tittle, Keyword...">
               <div class="icon-badge rt-ml-14">
@@ -24,7 +28,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-4">
+          <div class="col-lg-4 rt-mb-lg-20">
             <div class="fromGroup has-icon2">
               <select class="rt-selectactive " name="from" style="width: 100%">
                 <option>Select Category </option>

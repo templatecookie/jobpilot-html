@@ -516,6 +516,7 @@ $(window).Scrollax();
         x.type = "password" ;
     }
   })
+  // toggle password
   $(".togglepass2").on("click", function () {
     var y = document.getElementById("myInput2");
     if(y.type === "password"){
@@ -523,8 +524,12 @@ $(window).Scrollax();
     }else{
         y.type = "password" ;
     }
+  });
+
+  //sidbear toggle 
+  $(".sidebar-open-nav").on("click", function () {
+    $(".d-sidebar, .d-page-content ").toggleClass("acitve");
   })
-  
 
 
 })(jQuery);

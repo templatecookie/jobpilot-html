@@ -1,5 +1,4 @@
-.dashboard-wrapper {
-}
+
 .d-sidebar {
   background-color: #fff;
   width: 312px;
@@ -12,10 +11,32 @@
   .sidebar-footer {
     padding-top: 180px;
     padding-bottom: 50px;
+    @include breakpoint(lg){
+      padding-top: 50px;
+
+    }
+    @include breakpoint(md){
+      display: none;
+    }
   }
-  @include breakpoint('xl', max){
+  @include breakpoint(xl){
     display: none;
   }
+  @include breakpoint(lg){
+    width: 250px;
+    top: 65px;
+    padding: 15px;
+  }
+  @include breakpoint(md){
+    position: absolute;
+    width: 100%;
+    z-index: 787;
+    height: 350px;
+  }
+  &.acitve{
+   display: block;
+  }
+  
 }
 .d-page-content {
   padding: {
@@ -27,6 +48,33 @@
   margin-top: 100px;
   @include breakpoint('xl', max){
       margin-left: 0;
+  }
+  @include breakpoint(md){
+padding: {
+  left: 15px;
+  right: 15px;
+  top: 20px;
+};
+  }
+  &.acitve{
+    margin-left: 312px;
+    @include breakpoint(lg){
+      margin-left: 250px;
+      padding: {
+        left: 15px;
+        right: 15px;
+      };
+    }
+    @include breakpoint(md){
+      margin-left: 0px;
+      margin-top: 400px;
+    }
+    .custom-clmn{
+      @include breakpoint(lg){
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+      }
+    }
   }
 }
 .min-200 {
@@ -119,6 +167,13 @@
   .single-feature-box {
     width: 232px;
     margin-right: 24px;
+    @include breakpoint(lg){
+      margin-bottom: 24px;
+    }
+    @include breakpoint(xs){
+      width: 100%;
+      margin-right: 0px;
+    }
     &:last-child {
       margin-right: 0px;
     }
@@ -243,6 +298,9 @@ ul.recent-activity {
       align-items: center;
       border-radius: 6px;
       @include rt-trs(0.24s);
+      @include breakpoint(xs){
+        margin-bottom: 15px;
+      }
       justify-content: center;
     }
     &:hover {
@@ -341,5 +399,79 @@ ul.recent-activity {
   }
    .form-check-input:checked ~ .border{
     border-color: var(--primary-500) !important;
+  }
+}
+
+
+.custom-clmn{
+  flex: 0 0 25%;
+  max-width: 25%;
+  @include breakpoint(xxl2){
+    max-width: 33.33%;
+    flex: 0 0 33.33%;
+  }
+  @include breakpoint(lg){
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+  @include breakpoint(xs){
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .rt-single-icon-box{
+    .icon-thumb{
+      @include breakpoint(xs){
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+.sidebar-open-nav{
+  position: absolute;
+  right: 0px;
+  top: 50%; 
+  transform: translateY(-50%);
+  font-size: 27px;
+  height: 40px;
+  width: 40px;
+  line-height: 48px;
+  background-color: var(--primary-100);
+  color: var(--primary-500);
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  display: none;
+  @include breakpoint(xl){
+    display: inline-block;
+  }
+}
+
+
+
+.action-list{
+  display: flex;
+  //justify-content: space-between;
+  align-items: center;
+  @include breakpoint(xl){
+    flex-direction: column;
+  }
+  @include breakpoint(md){
+    margin-top: 15px;
+  }
+  > .body-font-3{
+    min-width: 161px;
+    margin-right: 40px;
+    @include breakpoint(xxl2){
+      min-width: auto;
+      margin-right: 20px;
+    }
+    @include breakpoint(xl){
+      margin-bottom: 10px;
+      margin-right: 0px;
+      &:last-child{
+        margin-bottom: 0px;
+      }
+    }
+    
   }
 }

@@ -75,6 +75,16 @@ padding: {
         max-width: 100% !important;
       }
     }
+    .custom-clmn2{
+      @include breakpoint(xl){
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+      }
+      @include breakpoint(lg){
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+      }
+    }
   }
 }
 .min-200 {
@@ -325,6 +335,15 @@ ul.recent-activity {
       border-radius: 8px;
     }
   }
+  &.rt-single-icon-box{
+    @include breakpoint(xxl2){
+      flex-direction: column;
+      .icon-thumb{
+        margin-right: 0px;
+        margin-bottom: 30px;
+      }
+    }
+  }
 }
 .cover_photo {
   .cover-img {
@@ -333,6 +352,15 @@ ul.recent-activity {
     border-radius: 8px;
     img {
       object-fit: cover;
+    }
+  }
+  &.rt-single-icon-box{
+    @include breakpoint(xxl2){
+      flex-direction: column;
+      .icon-thumb{
+        margin-right: 0px;
+        margin-bottom: 30px;
+      }
     }
   }
 }
@@ -368,6 +396,12 @@ ul.recent-activity {
   margin-bottom: 32px;
   margin-left: -48px;
   margin-right: -48px;
+  @include breakpoint(xs){
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }
 .spacer-style-dashboard2 {
   padding: 0px;
@@ -403,7 +437,7 @@ ul.recent-activity {
 }
 
 
-.custom-clmn{
+.custom-clmn,.custom-clmn2{
   flex: 0 0 25%;
   max-width: 25%;
   @include breakpoint(xxl2){
@@ -455,10 +489,10 @@ ul.recent-activity {
   @include breakpoint(xl){
     flex-direction: column;
   }
-  @include breakpoint(md){
+  @include breakpoint(lg){
     margin-top: 15px;
   }
-  > .body-font-3{
+  > .body-font-3, >div.text{
     min-width: 161px;
     margin-right: 40px;
     @include breakpoint(xxl2){

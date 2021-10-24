@@ -531,5 +531,10 @@ $(window).Scrollax();
     $(".d-sidebar, .d-page-content ").toggleClass("acitve");
   })
 
+  // pricing toggle 
+  $("#flexSwitchCheckDefault").on("change", function () {
+    $("body").toggleClass("price-toggole");
+  })
+
 
 })(jQuery);

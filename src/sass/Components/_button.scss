@@ -383,6 +383,7 @@
   &:focus,
   &:active {
     background: transparent;
+    border-color: var(--primary-500);
   }
   &.disabled,
   &:disabled {

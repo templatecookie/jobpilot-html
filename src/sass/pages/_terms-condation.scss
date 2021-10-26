@@ -8,3 +8,13 @@
     box-shadow: none;
   }
 }
+
+.pl30{
+  padding-right: 45px;
+  @include breakpoint(lg){
+    padding-right: 30px;
+  }
+  @include breakpoint(xs){
+    padding-right: 0px;
+  }
+}

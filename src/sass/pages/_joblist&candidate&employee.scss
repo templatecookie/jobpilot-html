@@ -428,3 +428,25 @@
     }
   }
 }
+
+
+//search list fixing 
+.inputbox_1{
+ width: 41%;
+ @include breakpoint(lg){
+   width: 100%;
+ }
+}
+.inputbox_2{
+width: 25.7%;
+@include breakpoint(lg){
+  width: 100%;
+}
+
+}
+.inputbox_3{
+  width: 25.7%;
+  @include breakpoint(lg){
+    width: 100%;
+  }
+}

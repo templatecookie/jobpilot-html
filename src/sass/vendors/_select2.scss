@@ -45,7 +45,8 @@
 	padding: 10px 15px;
 }
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable{
-	background-color: var(--primary-500);
+	background-color: #E8F1FF;
+	color: var(--primary-500);
 }
 .select2-container--default .select2-results__option--selected{
 	background-color: var(--gray-20);
@@ -73,12 +74,7 @@
 }
 
 //breadcrumbs3 components design
-@media (min-width: 992px) {
-	.flex-lg-row {
-    flex-direction: row!important;
-		align-items: center;
-}	
-}
+
 
 .with-advanced-filter {
 	.has-icon .select2-container .select2-selection--single .select2-selection__rendered{

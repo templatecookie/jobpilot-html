@@ -12,6 +12,13 @@
       sup{
           vertical-align:baseline;
       }
+      .badge{
+          position: relative;
+          top: -5px;
+      }
+      @include breakpoint(md){
+          text-align: center;
+      }
   }
   .price-body{
       padding: 32px 0 12px;

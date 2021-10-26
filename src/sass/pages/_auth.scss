@@ -22,7 +22,15 @@
     padding-top: 65px;
     padding-bottom: 25px;
   }
+  @include breakpoint(xs){
+    padding-top: 0px;
+  }
   
+}
+.site-header.rt-fixed-top.auth-header{
+  @include breakpoint(xs){
+    position: static;
+  }
 }
 
 .auth-right-sidebar{

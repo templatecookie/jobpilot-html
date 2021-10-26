@@ -4,4 +4,7 @@
   box-shadow: inset 1px 0px 0px #EDEFF5;
   position: sticky;
   top: 0;
+  @include breakpoint(lg){
+    box-shadow: none;
+  }
 }

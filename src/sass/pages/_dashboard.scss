@@ -139,7 +139,7 @@ padding: {
           order: 10;
         }
       }
-      &.active {
+      &.active, &:hover {
         background: var(--primary-500);
         color: var(--gray-10);
         &:hover {
@@ -148,11 +148,11 @@ padding: {
       }
     }
 
-    &:hover {
-      a {
-        color: var(--primary-500);
-      }
-    }
+    // &:hover {
+    //   // a {
+    //   //   color: var(--primary-500);
+    //   // }
+    // }
   }
 }
 
@@ -320,9 +320,7 @@ ul.recent-activity {
       align-items: center;
       border-radius: 6px;
       @include rt-trs(0.24s);
-      @include breakpoint(xs){
-        margin-bottom: 15px;
-      }
+    
       justify-content: center;
     }
     &:hover {
@@ -456,6 +454,10 @@ ul.recent-activity {
     max-width: 33.33%;
     flex: 0 0 33.33%;
   }
+  @include breakpoint(xxl){
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
   @include breakpoint(lg){
     max-width: 50%;
     flex: 0 0 50%;
@@ -519,5 +521,44 @@ ul.recent-activity {
       }
     }
     
+  }
+}
+
+
+// tootltip css 
+.arrow_box{
+  background: #191F34;
+  border: #191F34;
+  color: #fff;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  min-width: 135px;
+  text-align: center;
+  font-weight: 500;
+  border-radius: 10px;
+  position: relative;
+ 
+}
+
+.hover-pin{
+  &:hover{
+    border-color: #ca2127 !important;
+  }
+}
+.hover-tw{
+  &:hover{
+    border-color: #1da1f2 !important;
+  }
+}
+.hover-fb{
+  &:hover{
+    border-color: #06f !important;
+  }
+}
+.extra-css{
+  .iconbox-extra{
+    position: static !important;
+    margin: 0px;
   }
 }

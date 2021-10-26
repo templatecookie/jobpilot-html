@@ -455,6 +455,26 @@
     },
     tooltip: {
       theme: "dark",
+      x: {
+        show: false,
+    },
+    shared: false,
+    style: {
+      fontSize: '16px',
+      fontFamily: "Inter",
+    },
+    marker: {
+      show: false,
+  },
+  custom: function({series, seriesIndex, dataPointIndex, w}) {
+    return '<div class="arrow_box">' +
+      '<span>' + series[seriesIndex][dataPointIndex] + '</span>' +
+      '<span class="d-block">' +
+      w.globals.labels[dataPointIndex] +
+      ': ' +
+      '</div>'
+  },
+      
     },
     xaxis: {
       borderColor: "red",

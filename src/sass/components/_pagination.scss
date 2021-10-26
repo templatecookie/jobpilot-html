@@ -30,6 +30,8 @@
         }
         &:hover{
             background-color: var(--gray-50);
+            font-weight: 500;
+            color: var(--gray-900);
         }
     }
     &:first-child, &:last-child{
@@ -46,6 +48,8 @@
     &.active{
         .page-link{
             background-color: var(--primary-500);
+            color: #fff;
+            font-weight: 500;
         }
     }
 }

@@ -9,10 +9,22 @@
   top: 100px;
   left: 0px;
   .sidebar-footer {
-    padding-top: 180px;
+    margin-top: 180px;
     padding-bottom: 50px;
+    position: relative;
+    z-index: 1;
+    &::after{
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      height: calc(100% - 70px);
+      width: 100%;
+      background-color: #F5F7FC;
+      z-index: -1;
+      content: "";
+    }
     @include breakpoint(lg){
-      padding-top: 50px;
+      margin-top: 50px;
 
     }
     @include breakpoint(md){

@@ -1226,7 +1226,7 @@ h6,
 .h5,
 .h6
 {
-    font-family: 'Lora', serif;
+    font-family: 'Inter', sans-serif;
 
     color: #1b1919;
 }
@@ -10388,7 +10388,7 @@ box-shadow: inset 0 -1px 0 #edeff5;
 }
 
 .rt-banner-content h1{
-    font-family: Inter;
+    font-family: "Inter";
 font-style: normal;
 font-weight: 600;
 font-size: 56px;
@@ -10444,4 +10444,26 @@ color: #191F33;
 
 .rt-previewbox .preview-img{
     border: 1px solid #EDEFF5;
+}
+.f-c{
+    max-width: 584px;
+    background: #FFFFFF;
+border-radius: 16px;
+padding: 64px;
+margin-left: auto;
+margin-right: auto;
+}
+.f-c h2 {
+    font-size: 40px;
+line-height: 48px;
+color: #191F33;
+}
+@media (max-width: 768px){
+    .f-c{
+        padding: 20px;
+    }
+    .f-c h2{
+        font-size: 32px;
+        line-height: 40px;
+    }
 }

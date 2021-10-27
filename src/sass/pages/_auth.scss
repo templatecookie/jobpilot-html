@@ -18,8 +18,8 @@
     padding-top: 75px;
     padding-bottom: 35px;
   }
-  @include breakpoint(md){
-    padding-top: 65px;
+  @include breakpoint(lg){
+    padding-top: 25px;
     padding-bottom: 25px;
   }
   @include breakpoint(xs){
@@ -28,7 +28,7 @@
   
 }
 .site-header.rt-fixed-top.auth-header{
-  @include breakpoint(xs){
+  @include breakpoint(lg){
     position: static;
   }
 }
@@ -117,10 +117,11 @@
     padding-bottom: 100px;
   }
   @include breakpoint(lg){
-    padding-top: 100px;
-    padding-bottom: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   @include breakpoint(md){
     padding-bottom: 50px;
+    padding-top: 0px;
   }
 }

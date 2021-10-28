@@ -217,12 +217,14 @@ exports.default = parallel(
     reload,
     serve,
     appJstask,
-    watchfiles
+    copycss,
+    watchfiles,
  
 
 );
 
 exports.build = parallel(
+   
     nunjucks,
     sassCompile,
     csspluginTask,
@@ -231,7 +233,9 @@ exports.build = parallel(
     imagetask,
     copyfonts,
     scriptsTask,
+  
     appJstask,
+    copycss,
     build
 )
 

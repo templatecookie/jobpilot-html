@@ -1,11 +1,11 @@
 /*
 * ----------------------------------------------------------------------------------------
-    Template Name: Jobpilot
-    Template URI: 
-    Description: 
-    Author: 
-    Author URI: 
-    Version: 
+    Template Name:  Jobpilot - Job Portal Bootstrap 5 Template
+    Template URI: https://themeforest.net/user/templatecookie/portfolio
+    Description: It’s a High-Quality and well organized Job Board HTML Template.
+    Author: templatecookie
+    Author URI: https://themeforest.net/user/templatecookie/portfolio
+    Version: 1.0.0 
 
     1.0 Dropdown Menu
     1.01 Sticky Menu  

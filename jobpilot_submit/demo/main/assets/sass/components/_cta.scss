@@ -1,0 +1,34 @@
+.ct-height{
+    padding: 50px;
+    border-radius: 12px;
+    @include breakpoint(md){
+        padding: 20px;
+    }
+}
+.ctafullWidthBox{
+    background-color: var(--primary-900);
+    background-blend-mode: soft-light;
+    padding: 80px 120px;
+    @include breakpoint(lg){
+        padding: 50px;
+    }
+    @include breakpoint(md){
+        padding: 50px 20px;
+    }
+    .f-szie-40{
+        font-size: 40px;
+        font-weight: 500;
+        @include breakpoint(xs){
+            font-size: 32px;
+        }
+    }
+    .btn{
+        margin-right: 12px;
+        &:last-child{
+            margin-right: 0px;
+        }
+        @include breakpoint(xs){
+            margin-bottom: 12px;
+        }
+    }
+}

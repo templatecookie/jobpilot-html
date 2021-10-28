@@ -1,0 +1,32 @@
+// footer
+.dark-footer {
+  .rt-single-widget .footer-title {
+    color: var(--gray-10);
+  }
+  .footer-bottom {
+    box-shadow: inset 0px 1px 0px #2e3447;
+  }
+  .footer-cta{
+    box-shadow: inset 0px -1px 0px #2E3447;
+  }
+  .rt-single-widget {
+    ul.rt-usefulllinks2 {
+      li {
+        a {
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  #{$all-text-inputs},
+  .card-element,
+  .form-control {
+    background: transparent;
+    border-color: #2E3447;
+    &::placeholder{
+      color: var(--gray-600);
+    }
+  }
+}

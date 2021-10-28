@@ -1,0 +1,115 @@
+.blog-post {
+  border: 1px solid var(--gray-50);
+  padding: 24px;
+  border-radius: 12px;
+  @include rt-trs(0.24s);
+  .rt-post-thumbnail {
+    border-radius: 8px;
+    margin-bottom: 24px;
+    height: 276px;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+    }
+  }
+  .entry-meta{
+    display: flex;
+    margin-bottom: 13px;
+    a{
+      margin-right: 27px;
+      display: inline-flex;
+      font-size: 14px;
+      color: var(--gray-700);
+      i{
+        align-self: center;
+        font-size: 24px;
+        color: var(--primary-500);
+        margin-right: 6px;
+      }
+      &:last-child{
+        margin-right: 0px;
+      }
+    }
+    &.style-two{
+      margin-bottom: 8px;
+      a{
+        color: var(--gray-500);
+      }
+    }
+  }
+  .entry-header{
+      margin-bottom: 12px;
+      .entry-title{
+          font-size: 20px;
+          line-height: 32px;
+          color: var(--gray-900);
+          a{
+              color: var(--gray-900);
+              @include rt-trs(0.24s);
+              &:hover{
+                  color: var(--primary-500);
+              }
+          }
+      }
+  }
+  .entry-content{
+      font-size: 14px;
+      line-height: 22px;
+      color: var(--gray-500);
+      
+  }
+  .entry-footer{
+    margin-top: 24px;
+    font-size: 16px;
+    a{
+        color: var(--primary-500);
+        display: inline-flex;
+        
+        i{
+          align-self: center;
+          font-size: 24px;
+          margin-left: 12px;
+        }
+        &:hover{
+            color: var(--primary-400);
+        }
+    }
+  }
+  &:hover{
+      border-color: transparent;
+      box-shadow: 0px 12px 64px rgba(0, 44, 109, 0.12);
+      
+  }
+}
+
+
+.blog-list-view{
+  &.rt-single-icon-box{
+    .icon-thumb{
+      margin-right: 32px;
+    }
+    @include breakpoint(md){
+      flex-direction: column;
+      flex-wrap: wrap;
+      .icon-thumb{
+        margin-right: 0px;
+        margin-bottom: 32px;
+        width: 100%;
+      }
+      .post-thmubnail{
+        height: auto;
+      }
+    }
+  }
+}
+
+.single-blog-page{
+  .blog-post {
+    border-color: transparent;
+    padding: 0px;
+
+  }
+}
+

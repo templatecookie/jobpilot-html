@@ -1,0 +1,31 @@
+.about-counter{
+  .icon-thumb{
+    .icon-72{
+      width: 76px;
+      height: 76px;
+    }
+  }
+}
+.about-feature-img{
+  border-radius: 12px;
+  overflow: hidden;
+  .img-left{
+    margin-left: -58px;
+  }
+  .img-right{
+    margin-right: -58px;
+  }
+  .height-636{
+    height: 636px;
+    @include breakpoint(lg){
+      height: 305px;
+    }
+  }
+  .height-312{
+    height: 305px;
+  }
+}
+
+.mx-646{
+  max-width: 646px;
+}

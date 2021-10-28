@@ -1,0 +1,231 @@
+.card {
+  border-radius: 12px;
+  border-color: #edeff5;
+  background-color: var(--gray-10);
+  box-shadow: 0px 12px 48px rgba(0, 44, 109, 0);
+  transition: all 0.24s ease-in-out;
+  
+
+  .card-body {
+    padding: 32px;
+    @include breakpoint(lg){
+      padding: 25px;
+    }
+    @include breakpoint(xs){
+      padding: 20px;
+      .iconbox-extra,
+      .post-info{
+        .icon-button{
+          width: 48px;
+          height: 48px;
+        }
+      }
+    }
+  }
+ 
+  &:hover {
+    box-shadow: 0px 12px 48px rgba(0, 44, 109, 0.1);
+    border-color: var(--primary-500);
+  }
+  &:hover .footer-content a {
+    color: var(--primary-500);
+    text-decoration: none;
+  }
+  &.body-24{
+    .card-body{
+      padding: 24px;
+    }
+  }
+  &.body-0{
+    .card-body{
+      padding: 0px;
+    }
+  }
+  &.body-28-xl{
+    @include breakpoint(xl){
+      .card-body{
+        padding: 28px;
+      }
+    }
+  }
+}
+
+.jobcardStyle1 {
+  .rt-single-icon-box {
+    .icon-thumb {
+      margin-right: 16px;
+      .icon {
+        @include iconbox(56px, 4px);
+        background-color: #ea4c89;
+        font-size: 25px;
+        color: var(--gray-10);
+        &.size-lg{
+          @include iconbox(68px, 4px);
+        }
+      }
+      .profile-image{
+        position: relative;
+        overflow: hidden;
+        width: 110px;
+        height: 110px;
+        @include breakpoint(xl){
+          width: 90px;
+          height: 90px;
+        } @include breakpoint(xs){
+          width: 80px;
+          height: 80px;
+        }
+        img{
+          @extend .img-fit;
+        }
+      }
+    }
+
+    .iconbox-content {
+      .job-mini-title, .job-mini-title2 {
+        font-size: 18px;
+        font-weight: 400;
+        margin: 0 0 6px;
+        color: var(--gray-900);
+        a {
+          color: var(--gray-900);
+        }
+      }
+      .job-mini-title2{
+        font-size: 24px;
+      }
+      .loacton {
+        font-size: 14px;
+        margin-right: 10px;
+        display: inline-flex;
+        &:last-child{
+          margin-right: 0px;
+        }
+        
+        svg,
+        img {
+          margin-right: 8px;
+          font-size: 16px;
+        }
+        i{
+          font-size: 22px;
+          margin-right: 8px;
+        }
+      }
+      .bottom-link{
+        span{
+          svg{
+            height: 20px;
+            width: 20px;
+          }
+        }
+      }
+    }
+   
+   
+  }
+  .post-info{
+    padding-top: 22px;
+  }
+  .post-info , .post-info2{
+    
+    .post-main-title, .post-main-title2 {
+      font-size: 20px;
+      line-height: 32px;
+      color: var(--gray-900);
+      display: block;
+      margin: 0 0 5px;
+      font-weight: 500;
+      @include rt-trs(0.24s);
+      a {
+        color: var(--gray-900);
+        &:hover {
+          color: var(--primary-500);
+        }
+      }
+    }
+    .post-main-title2{
+      font-size: 24px;
+    }
+    .info-tools{
+      display: inline-flex;
+      padding-right: 10px;
+      position: relative;
+      i{
+        font-size: 22px ;
+        margin-right: 4.75px;
+        color: var(--gray-200);
+      }
+      svg{
+        margin-right: 4.75px;
+      }
+      &.has-dot{
+        padding-left: 10px;
+       &::after{
+        position: absolute;
+        content: '';
+        left: -5px;
+        top: 50%;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        background-color: var(--gray-600);
+        content: "";
+       }
+      }
+    }
+  }
+}
+
+
+
+
+
+// feature job icon xl  
+.jobcardStyle1{
+  &.iconxl-size{
+    .rt-single-icon-box{
+      .icon-thumb{
+        height: 68px;
+        width: 68px;
+        margin-right: 20px;
+        border-radius: 6px;
+        img{
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+}
+.jobcardStyle1{
+  &.iconxs-size{
+    .rt-single-icon-box{
+      .icon-thumb{
+        height: 56px;
+        width: 56px;
+        margin-right: 16px;
+        border-radius: 4px;
+        img{
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}
+
+.newestjob_active, .icon-extra-postion{
+  .iconbox-extra{
+    @include breakpoint(xl){
+      position: absolute;
+      right: -20px;
+      top: -10px;
+    }
+  }
+}

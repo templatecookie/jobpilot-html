@@ -1,0 +1,12 @@
+.comments-list{
+  li{
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--gray-50);
+    padding-bottom: 24px;
+    &:last-child{
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+      border-color: transparent;
+    }
+  }
+}

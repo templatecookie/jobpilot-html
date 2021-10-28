@@ -218,6 +218,7 @@ exports.default = parallel(
     serve,
     appJstask,
     copycss,
+    copysass,
     watchfiles,
  
 
@@ -233,7 +234,7 @@ exports.build = parallel(
     imagetask,
     copyfonts,
     scriptsTask,
-  
+    copysass,
     appJstask,
     copycss,
     build

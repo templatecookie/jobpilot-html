@@ -1,0 +1,25 @@
+// banner
+.dark {
+    .jobsearchBox {
+      box-shadow: none;
+      border-color: transparent;
+      #{$all-text-inputs},
+      .form-control {
+        color: var(--gray-10);
+      }
+      .fromGroup{
+        &::after{
+          display: none;
+        }
+      }
+    }
+  
+    .banner-quciks-links {
+      a {
+        color: var(--gray-400);
+        &:hover {
+          color: var(--gray-10);
+        }
+      }
+    }
+  }

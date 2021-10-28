@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /**!
 
-    Template Name: Jobpilot
+    Template Name:  Jobpilot - Job Portal Bootstrap 5 Template
     Template URI: https://themeforest.net/user/templatecookie/portfolio
     Description: It’s a High-Quality and well organized Job Board HTML Template.
     Author: templatecookie
@@ -7204,13 +7204,6 @@ select:focus-visible, .form-select:focus-visible {
   .pl30 {
     padding-right: 0px;
   }
-}
-
-.form-check-input:checked[type=checkbox] {
-  background-image: url(../images/icon/c.svg);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center center;
 }
 
 .auth-box {

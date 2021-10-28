@@ -1,0 +1,39 @@
+.rt-single-icon-box{
+    &.working-progress{
+        background: transparent;
+        border-radius: 12px;
+        padding: 24px;
+        z-index: 0;
+
+        .icon-72{
+            color: var(--primary-500);
+            background-color: #fff;
+            border-radius: 50%;
+            z-index: 0;
+        }
+        &:hover{
+            background: var(--gray-10);
+            .icon-72{
+                color: var(--gray-10);
+                background: var(--primary-500);
+            }
+        }
+    }
+}
+
+.has-arrow{
+   position: absolute;
+   right: -33%;
+   z-index: 5;
+   top: 0;
+   &.middle{
+       top: 33%;
+       transform: translateY(-33%);
+       @include breakpoint(lg){
+           display: none;
+       }
+   }
+   @include breakpoint(xs){
+       display: none;
+   }
+}

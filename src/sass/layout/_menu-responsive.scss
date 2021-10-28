@@ -117,10 +117,15 @@
     ul {
       li {
         a {
-          border-bottom: 1px solid var(--gray-50);
+          border-bottom: 0.1px solid var(--gray-50);
         }
         &:last-child a {
-          border-bottom: 1px solid var(--gray-50);
+          border-bottom: 0.1px solid var(--gray-50);
+        }
+        &:last-child{
+          a{
+            border-color: transparent;
+          }
         }
       }
     }

@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jobpilot Demo Html Templae</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <!-- ==================Start Css Link===================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/icofont.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <!-- ==================End Css Link===================== -->
+    <!--[if lt IE 9]>
+    <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+
+
+<header class="rt-site-header default-header  white-menu rt-one-page-menu">
+    <div class="main-header rt-sticky">
+        <nav class="navbar navbar-expand-lg main-menu ">
+            <div class="rt-container3">
+                <a href="#home" class="brand-logo">
+                    <svg width="195" height="50" viewBox="0 0 195 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2707:49338)">
+                        <path d="M41.7939 14.1649H7.74074C6.88588 14.1649 6.19287 14.8579 6.19287 15.7127V40.4787C6.19287 41.3336 6.88588 42.0266 7.74074 42.0266H41.7939C42.6488 42.0266 43.3418 41.3336 43.3418 40.4787V15.7127C43.3418 14.8579 42.6488 14.1649 41.7939 14.1649Z" stroke="#0066FF" stroke-width="2.75177" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M32.5053 14.1649V11.0691C32.5053 10.2481 32.1792 9.46068 31.5986 8.88011C31.018 8.29955 30.2306 7.97339 29.4096 7.97339H20.1224C19.3013 7.97339 18.5139 8.29955 17.9333 8.88011C17.3528 9.46068 17.0266 10.2481 17.0266 11.0691V14.1649" stroke="#0066FF" stroke-width="2.75177" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M43.3421 24.6728C37.6968 27.9389 31.2881 29.6538 24.7661 29.6436C18.2452 29.6538 11.8375 27.9395 6.19287 24.6744" stroke="#0066FF" stroke-width="2.75177" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M22.4441 23.4521H27.0877" stroke="#0066FF" stroke-width="2.75177" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <path d="M68.0057 11.4832V29.9287C67.993 32.9267 66.5956 34.5273 64.1057 34.5273C61.8064 34.5273 60.2057 33.1553 60.193 30.9957H56.293C56.293 35.3912 59.596 37.8556 64.0041 37.8556C68.7806 37.8556 71.9056 34.9338 71.9184 29.9287V11.4832H68.0057ZM85.546 37.8937C91.0466 37.8937 94.6417 33.8667 94.6417 27.8326C94.6417 21.7603 91.0466 17.7333 85.546 17.7333C80.0454 17.7333 76.4503 21.7603 76.4503 27.8326C76.4503 33.8667 80.0454 37.8937 85.546 37.8937ZM85.5587 34.7052C81.9636 34.7052 80.2868 31.5674 80.2868 27.8199C80.2868 24.085 81.9636 20.9092 85.5587 20.9092C89.1284 20.9092 90.8053 24.085 90.8053 27.8199C90.8053 31.5674 89.1284 34.7052 85.5587 34.7052ZM99.1864 37.4999H102.896V34.4638H103.213C103.899 35.7087 105.297 37.881 108.854 37.881C113.579 37.881 117.009 34.0954 117.009 27.7818C117.009 21.4554 113.529 17.7333 108.816 17.7333C105.195 17.7333 103.887 19.9437 103.213 21.1505H102.985V11.4832H99.1864V37.4999ZM102.909 27.7437C102.909 23.6658 104.687 20.96 108.003 20.96C111.445 20.96 113.173 23.8691 113.173 27.7437C113.173 31.6563 111.394 34.6417 108.003 34.6417C104.738 34.6417 102.909 31.8469 102.909 27.7437ZM121.275 44.8172H125.073V34.4638H125.302C125.988 35.7087 127.385 37.881 130.942 37.881C135.668 37.881 139.098 34.0954 139.098 27.7818C139.098 21.4554 135.617 17.7333 130.904 17.7333C127.283 17.7333 125.975 19.9437 125.302 21.1505H124.984V17.9874H121.275V44.8172ZM124.997 27.7437C124.997 23.6658 126.775 20.96 130.091 20.96C133.533 20.96 135.261 23.8691 135.261 27.7437C135.261 31.6563 133.483 34.6417 130.091 34.6417C126.826 34.6417 124.997 31.8469 124.997 27.7437ZM143.353 37.4999H147.152V17.9874H143.353V37.4999ZM145.272 14.9766C146.58 14.9766 147.672 13.9604 147.672 12.7154C147.672 11.4705 146.58 10.4415 145.272 10.4415C143.95 10.4415 142.871 11.4705 142.871 12.7154C142.871 13.9604 143.95 14.9766 145.272 14.9766ZM156.06 11.4832H152.262V37.4999H156.06V11.4832ZM169.389 37.8937C174.89 37.8937 178.485 33.8667 178.485 27.8326C178.485 21.7603 174.89 17.7333 169.389 17.7333C163.889 17.7333 160.293 21.7603 160.293 27.8326C160.293 33.8667 163.889 37.8937 169.389 37.8937ZM169.402 34.7052C165.807 34.7052 164.13 31.5674 164.13 27.8199C164.13 24.085 165.807 20.9092 169.402 20.9092C172.972 20.9092 174.648 24.085 174.648 27.8199C174.648 31.5674 172.972 34.7052 169.402 34.7052ZM191.833 17.9874H187.831V13.3125H184.033V17.9874H181.175V21.0362H184.033V32.5583C184.02 36.1026 186.726 37.8175 189.724 37.754C190.931 37.7413 191.744 37.5126 192.189 37.3475L191.503 34.2097C191.249 34.2605 190.779 34.3749 190.169 34.3749C188.937 34.3749 187.831 33.9684 187.831 31.7707V21.0362H191.833V17.9874Z" fill="#191F33"/>
+                        <defs>
+                        <clipPath id="clip0_2707:49338">
+                        <rect width="49.5319" height="49.5319" fill="white" transform="translate(0 0.234009)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                        
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="siteNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown"><a href="#" role="button" class="nav-link smooth-scroll dropdown-toggle" id="demodropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">home</a>
+                            <div class="dropdown-menu" aria-labelledby="demodropdown">
+                                <a class="dropdown-item" href="main/index.html" target="_blank">home one</a>
+                                <a class="dropdown-item" href="main/index2.html" target="_blank">home Two</a>
+                                <a class="dropdown-item" href="main/index3.html" target="_blank">Home Three</a>
+                                <a class="dropdown-item" href="main/index4.html" target="_blank">Home Four</a>
+                                <a class="dropdown-item" href="main/index5.html" target="_blank">Home Five</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="#demo-elements-1" class="nav-link smooth-scroll">Demo</a></li>
+                        <li class="nav-item"><a href="#product-demo" class="nav-link smooth-scroll">Inner Pages</a></li>
+                        <li class="nav-item"><a href="#blog-demo" class="nav-link smooth-scroll">blog demo</a></li>
+                        <li class="nav-item"><a href="#feature-lists" class="nav-link smooth-scroll">feature</a></li>
+                        
+                    </ul>
+                    <div class="sing-button rt-ml-30 rt-ml-xs-15">
+                        <a href="#" class="rt-btn  rt-primary rt-sm3 rt-rounded" target="_blank">BUY NOW <span></span></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- /.bootom-header -->
+</header>
+
+<!-- ====banner area start========= -->
+  
+<section class="rt-banner-area default-banner" id="home">
+    <div class="single-rt-banner ">
+        <!-- <div class="paralax-bg rtbgprefix-cover jarallax" style="background-color: #ffff;"></div> -->
+        <!-- /.paralax-bg -->
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-12">
+                    <div class="rt-banner-content text-center mx-auto">
+                       
+                        <h1>
+                            Powerful All-In-One Job Portal Bootstrap, LaravelTemplate
+                        </h1>
+                        <ul>
+                            <li>5 Homepage</li>
+                            <li>4+ Job List</li>
+                            <li>User Dashboard</li>
+                            <li>40+ Pages</li>
+                            <li>99+ UI Components</li>
+                        </ul>
+                        <p class="g-btn">
+                            <a href="#demo-elements-1" class="rt-btn text-uppercase rt-secondary  rt-rounded smooth-scroll">View Demo</a>
+                            <a href="#" class="rt-btn text-uppercase rt-primary  rt-rounded ">Purchase now</a>
+                        </p>
+                    </div>
+                    <!-- /.rt-banner-content -->
+                </div>
+                <!-- /.col-12 -->
+            </div>
+            <!-- end row -->
+        </div>
+        <div class="img-box">
+            <img src="assets/img/bn.png" alt="" class="w-100 mx-auto">
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end single rt banner -->
+</section>
+
+<!-- ====demo area start========= -->
+<section class="demo-content-area section-padding offwhite-bg-color" id="demo-elements-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center section-title-wrapper" data-scrollax-parent="true">
+                <span class="demo-number" data-scrollax="properties: { translateX: '-50px' }">4</span>
+                <h2 class="rt-section-title">
+                    Home Page Demos
+                </h2>
+
+            </div>
+            <!-- /.col-12 -->
+        </div>
+        <!-- /.row -->
+        <div class="row pt-5 mt-5">
+            <div class="col-lg-4 col-md-6">
+                <a class="rt-previewbox" href="main/index.html" target="_blank">
+                    <div class="preview-img">
+                        <img src="assets/img/mac_bar.png" alt="">
+                        <img src="assets/img/1.jpg" alt="" class="demo-thumb">
+                    </div>
+                    <!-- /.preview-img -->
+
+                    <div class="demo-content text-center">
+                        Home One
+                    </div>
+                    <!-- /.demo-content -->
+                </a>
+                <!-- /.rt-previewbox -->
+            </div>
+            <!-- /.col-lg-3 -->
+            <div class="col-lg-4 col-md-6">
+                <a class="rt-previewbox" href="main/index2.html" target="_blank">
+                    <div class="preview-img">
+                        <img src="assets/img/mac_bar.png" alt="">
+                        <img src="assets/img/2.jpg" alt="" class="demo-thumb">
+                    </div>
+                    <!-- /.preview-img -->
+
+                    <div class="demo-content text-center">
+                        Home Two
+                    </div>
+                    <!-- /.demo-content -->
+                </a>
+                <!-- /.rt-previewbox -->
+            </div>
+            <!-- /.col-lg-3 -->
+            <div class="col-lg-4 col-md-6">
+                <a class="rt-previewbox" href="main/index3.html" target="_blank">
+                    <div class="preview-img">
+                        <img src="assets/img/mac_bar.png" alt="">
+                        <img src="assets/img/3.jpg" alt="" class="demo-thumb">
+                    </div>
+                    <!-- /.preview-img -->
+
+                    <div class="demo-content text-center">
+                        Home Three
+                    </div>
+                    <!-- /.demo-content -->
+                </a>
+                <!-- /.rt-previewbox -->
+            </div>
+            <!-- /.col-lg-3 -->
+            <div class="col-lg-4 col-md-6">
+                <a class="rt-previewbox" href="main/index4.html" target="_blank">
+                    <div class="preview-img">
+                        <img src="assets/img/mac_bar.png" alt="">
+                        <img src="assets/img/4.jpg" alt="" class="demo-thumb">
+                    </div>
+                    <!-- /.preview-img -->
+
+                    <div class="demo-content text-center">
+                        Home Four
+                    </div>
+                    <!-- /.demo-content -->
+                </a>
+                <!-- /.rt-previewbox -->
+            </div>
+            <!-- /.col-lg-3 -->
+            <div class="col-lg-4 col-md-6">
+                <a class="rt-previewbox" href="main/index5.html" target="_blank">
+                    <div class="preview-img">
+                        <img src="assets/img/mac_bar.png" alt="">
+                        <img src="assets/img/5.jpg" alt="" class="demo-thumb">
+                    </div>
+                    <!-- /.preview-img -->
+
+                    <div class="demo-content text-center">
+                        Home Five
+                    </div>
+                    <!-- /.demo-content -->
+                </a>
+                <!-- /.rt-previewbox -->
+            </div>
+            <!-- /.col-lg-3 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+<section class="product-page-section section-padding" id="product-demo">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center section-title-wrapper" data-scrollax-parent="true">
+                <span class="demo-number" data-scrollax="properties: { translateX: '-50px' }">40+</span>
+                <h2 class="rt-section-title">
+                    Inner Pages
+                </h2>
+            </div>
+            <!-- /.col-12 -->
+        </div>
+        <!-- /.row -->
+        <div class="row pt-5 mt-5">
+            <div class="col-lg-4 col-md-6">
+                <a class="rt-previewbox" href="main/joblist.html" target="_blank">
+                    <div class="preview-img">
+                        <img src="assets/img/mac_bar.png" alt="">
+                        <img src="assets/img/6.png" alt="" class="demo-thumb">
+                    </div>
+                    <!-- /.preview-img -->
+
+                    <div class="demo-content text-center">
+                        Joblist One
+                    </div>
+                    <!-- /.demo-content -->
+                </a>
+                <!-- /.rt-previewbox -->
+            </div>
+            <!-- /.col-lg-3 -->
+            <div class="col-lg-4 col-md-6">
+                <a class="rt-previewbox" href="main//joblist2.html" target="_blank">
+                    <div class="preview-img">
+                        <img src="assets/img/mac_bar.png" alt="">
+                        <img src="assets/img/7.png" alt="" class="demo-thumb">
+                    </div>
+                    <!-- /.preview-img -->
+
+                    <div class="demo-content text-center">
+                        Joblist Two
+                    </div>
+                    <!-- /.demo-content -->
+                </a>
+                <!-- /.rt-previewbox -->
+            </div>
+            <!-- /.col-lg-3 -->
+            <div class="col-lg-4 col-md-6">
+                <a class="rt-previewbox" href="main/joblist3.html" target="_blank">
+                    <div class="preview-img">
+                        <img src="assets/img/mac_bar.png" alt="">
+                        <img src="assets/img/8.png" alt="" class="demo-thumb">
+                    </div>
+                    <!-- /.preview-img -->
+
+                    <div class="demo-content text-center">
+                        Joblist Three
+                    </div>
+                    <!-- /.demo-content -->
+                </a>
+                <!-- /.rt-previewbox -->
+            </div>
+            <!-- /.col-lg-3 -->
+            <div class="col-lg-4 col-md-6">
+                <a class="rt-previewbox" href="main/joblist4.html" target="_blank">
+                    <div class="preview-img">
+                        <img src="assets/img/mac_bar.png" alt="">
+                        <img src="assets/img/9.png" alt="" class="demo-thumb">
+                    </div>
+                    <!-- /.preview-img -->
+
+                    <div class="demo-content text-center">
+                      Joblist Four
+                    </div>
+                    <!-- /.demo-content -->
+                </a>
+                <!-- /.rt-previewbox -->
+            </div>
+            <!-- /.col-lg-3 -->
+            <div class="col-lg-4 col-md-6">
+                <a class="rt-previewbox" href="main/employe.html" target="_blank">
+                    <div class="preview-img">
+                        <img src="assets/img/mac_bar.png" alt="">
+                        <img src="assets/img/10.png" alt="" class="demo-thumb">
+                    </div>
+                    <!-- /.preview-img -->
+
+                    <div class="demo-content text-center">
+                        Employe
+                    </div>
+                    <!-- /.demo-content -->
+                </a>
+                <!-- /.rt-previewbox -->
+            </div>
+            <!-- /.col-lg-3 -->
+            <div class="col-lg-4 col-md-6">
+                <a class="rt-previewbox" href="main/company-overview.html" target="_blank">
+                    <div class="preview-img">
+                        <img src="assets/img/mac_bar.png" alt="">
+                        <img src="assets/img/11.png" alt="" class="demo-thumb">
+                    </div>
+                    <!-- /.preview-img -->
+
+                    <div class="demo-content text-center">
+                        Employe Dashboard
+                    </div>
+                    <!-- /.demo-content -->
+                </a>
+                <!-- /.rt-previewbox -->
+            </div>
+            <!-- /.col-lg-3 -->
+            <div class="col-lg-4 col-md-6">
+                <a class="rt-previewbox" href="main/candidate.html" target="_blank">
+                    <div class="preview-img">
+                        <img src="assets/img/mac_bar.png" alt="">
+                        <img src="assets/img/12.png" alt="" class="demo-thumb">
+                    </div>
+                    <!-- /.preview-img -->
+
+                    <div class="demo-content text-center">
+                        Candidate
+                    </div>
+                    <!-- /.demo-content -->
+                </a>
+                <!-- /.rt-previewbox -->
+            </div>
+            <!-- /.col-lg-3 -->
+            <div class="col-lg-4 col-md-6">
+                <a class="rt-previewbox" href="main/candidate-overview.html" target="_blank">
+                    <div class="preview-img">
+                        <img src="assets/img/mac_bar.png" alt="">
+                        <img src="assets/img/13.png" alt="" class="demo-thumb">
+                    </div>
+                    <!-- /.preview-img -->
+
+                    <div class="demo-content text-center">
+                        Candidate Dashboard
+                    </div>
+                    <!-- /.demo-content -->
+                </a>
+                <!-- /.rt-previewbox -->
+            </div>
+            <!-- /.col-lg-3 -->
+            <div class="col-lg-4 col-md-6">
+                <a class="rt-previewbox" href="main/login.html" target="_blank">
+                    <div class="preview-img">
+                        <img src="assets/img/mac_bar.png" alt="">
+                        <img src="assets/img/14.png" alt="" class="demo-thumb">
+                    </div>
+                    <!-- /.preview-img -->
+
+                    <div class="demo-content text-center">
+                       Login
+                    </div>
+                    <!-- /.demo-content -->
+                </a>
+                <!-- /.rt-previewbox -->
+            </div>
+            <!-- /.col-lg-3 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+<section class="blog-page-section section-padding offwhite-bg-color" id="blog-demo">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center section-title-wrapper" data-scrollax-parent="true">
+                <span class="demo-number" data-scrollax="properties: { translateX: '-50px' }">3+</span>
+                <h2 class="rt-section-title">
+                    Blog's
+                </h2>
+            </div>
+            <!-- /.col-12 -->
+        </div>
+        <!-- /.row -->
+        <div class="row pt-5 mt-5">
+            <div class="col-lg-4 col-md-6">
+                <a class="rt-previewbox" href="main/blog.html" target="_blank">
+                    <div class="preview-img">
+                        <img src="assets/img/mac_bar.png" alt="">
+                        <img src="assets/img/15.png" alt="" class="demo-thumb">
+                    </div>
+                    <!-- /.preview-img -->
+
+                    <div class="demo-content text-center">
+                        Blog 
+                    </div>
+                    <!-- /.demo-content -->
+                </a>
+                <!-- /.rt-previewbox -->
+            </div>
+            <!-- /.col-lg-3 -->
+            <div class="col-lg-4 col-md-6">
+                <a class="rt-previewbox" href="main/blog-details.html" target="_blank">
+                    <div class="preview-img">
+                        <img src="assets/img/mac_bar.png" alt="">
+                        <img src="assets/img/16.png" alt="" class="demo-thumb">
+                    </div>
+                    <!-- /.preview-img -->
+
+                    <div class="demo-content text-center">
+                        Blog Details
+                    </div>
+                    <!-- /.demo-content -->
+                </a>
+                <!-- /.rt-previewbox -->
+            </div>
+            <!-- /.col-lg-3 -->
+            
+
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+<section class="feature-list section-padding" id="feature-lists">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center section-title-wrapper" data-scrollax-parent="true">
+                <h2 class="rt-section-title">
+                    General features list
+                </h2>
+                <p>
+                    Our theme is the best choice not only for the Shopify store. There are a lot of modern features to build any corporate, agency or business website.
+                </p>
+            </div>
+            <!-- /.col-12 -->
+        </div>
+        <!-- /.row -->
+        <div class="row pt-5 mt-5">
+            <div class="col-lg-3 col-md-6">
+                <div class="shdoaw-style   icon-center rt-single-icon-box text-center">
+                    <img alt="HTML 5" class="icon-thumb d-block mx-auto " draggable="false" src="assets/img/feature-1.png">
+                    <div class="iconbox-content">
+                        <span class="d-block">HTML 5</span>
+                    </div>
+                    <!-- /.iconbox-content -->
+
+                </div>
+                <!-- .shdoaw-style   icon-center rt-single-icon-box text-centerEND -->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="shdoaw-style   icon-center rt-single-icon-box text-center">
+                    <img alt="CSS3" class="icon-thumb d-block mx-auto " draggable="false" src="assets/img/feature-2.png">
+
+                    <div class="iconbox-content">
+                        <span class="d-block">CSS3</span>
+                    </div>
+                    <!-- /.iconbox-content -->
+                </div>
+                <!-- .shdoaw-style   icon-center rt-single-icon-box text-centerEND -->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="shdoaw-style   icon-center rt-single-icon-box text-center">
+                    <img alt="Bootstrap 4" class="icon-thumb d-block mx-auto " draggable="false" src="assets/img/feature-3.png">
+                    <div class="iconbox-content">
+                        <span class="d-block">Bootstrap 4</span>
+                    </div>
+                    <!-- /.iconbox-content -->
+                </div>
+                <!-- .shdoaw-style   icon-center rt-single-icon-box text-centerEND -->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="shdoaw-style   icon-center rt-single-icon-box text-center">
+                    <img alt="SaSS" class="icon-thumb d-block mx-auto " draggable="false" src="assets/img/feature-4.png">
+                    <div class="iconbox-content">
+                        <span class="d-block">SaSS</span>
+                    </div>
+                    <!-- /.iconbox-content -->
+                </div>
+                <!-- .shdoaw-style   icon-center rt-single-icon-box text-centerEND -->
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="shdoaw-style   icon-center rt-single-icon-box text-center">
+                    <img alt="SEO <br>Optimized" class="icon-thumb d-block mx-auto " draggable="false" src="assets/img/feature-6.png">
+                    <div class="iconbox-content">
+                        <span class="d-block">Seo Optimize</span>
+                    </div>
+                    <!-- /.iconbox-content -->
+                </div>
+                <!-- .shdoaw-style   icon-center rt-single-icon-box text-centerEND -->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="shdoaw-style   icon-center rt-single-icon-box text-center">
+                    <img alt="UnlimetedGoogle Fonts" class="icon-thumb d-block mx-auto " draggable="false" src="assets/img/feature-7.png">
+
+                    <div class="iconbox-content">
+                        <span class="d-block">UnlimetedGoogle Fonts</span>
+                    </div>
+                    <!-- /.iconbox-content -->
+                </div>
+                <!-- .shdoaw-style   icon-center rt-single-icon-box text-centerEND -->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="shdoaw-style   icon-center rt-single-icon-box text-center">
+                    <img alt="Cross BrowserCompatible " class="icon-thumb d-block mx-auto " draggable="false" src="assets/img/feature-8.png">
+
+                    <div class="iconbox-content">
+                        <span class="d-block">Cross BrowserCompatible </span>
+                    </div>
+                    <!-- /.iconbox-content -->
+                </div>
+                <!-- .shdoaw-style   icon-center rt-single-icon-box text-centerEND -->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="shdoaw-style   icon-center rt-single-icon-box text-center">
+                    <img alt="Clean 
+<br>Code" class="icon-thumb d-block mx-auto " draggable="false" src="assets/img/feature-9.png">
+
+                    <div class="iconbox-content">
+                        <span class="d-block">Clean 
+    <br>Code</span>
+                    </div>
+                    <!-- /.iconbox-content -->
+                </div>
+                <!-- .shdoaw-style   icon-center rt-single-icon-box text-centerEND -->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="shdoaw-style   icon-center rt-single-icon-box text-center">
+                    <img alt="Unlimited 
+<br>Colors" class="icon-thumb d-block mx-auto " draggable="false" src="assets/img/feature-10.png">
+
+                    <div class="iconbox-content">
+                        <span class="d-block">Unlimited 
+    <br>Colors</span>
+                    </div>
+                    <!-- /.iconbox-content -->
+                </div>
+                <!-- .shdoaw-style   icon-center rt-single-icon-box text-centerEND -->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="shdoaw-style   icon-center rt-single-icon-box text-center">
+                    <img alt="Unlimited  <br>Colors" class="icon-thumb d-block mx-auto " draggable="false" src="assets/img/feature-12.png">
+
+                    <div class="iconbox-content">
+                        <span class="d-block">Unlimited  <br>Colors</span>
+                    </div>
+                    <!-- /.iconbox-content -->
+                </div>
+                <!-- .shdoaw-style   icon-center rt-single-icon-box text-centerEND -->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="shdoaw-style   icon-center rt-single-icon-box text-center">
+                    <img alt="FullyResponsive" class="icon-thumb d-block mx-auto " draggable="false" src="assets/img/feature-13.png">
+
+                    <div class="iconbox-content">
+                        <span class="d-block">FullyResponsive</span>
+                    </div>
+                    <!-- /.iconbox-content -->
+                </div>
+                <!-- .shdoaw-style   icon-center rt-single-icon-box text-centerEND -->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="shdoaw-style   icon-center rt-single-icon-box text-center">
+                    <img alt="Well 
+Documented" class="icon-thumb d-block mx-auto " draggable="false" src="assets/img/feature-14.png">
+
+                    <div class="iconbox-content">
+                        <span class="d-block">Well 
+    Documented</span>
+                    </div>
+                    <!-- /.iconbox-content -->
+                </div>
+                <!-- .shdoaw-style   icon-center rt-single-icon-box text-centerEND -->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="shdoaw-style   icon-center rt-single-icon-box text-center">
+                    <img alt="
+Awesome 
+Layouts" class="icon-thumb d-block mx-auto " draggable="false" src="assets/img/feature-15.png">
+
+                    <div class="iconbox-content">
+                        <span class="d-block">
+    Awesome 
+        Layouts</span>
+                    </div>
+                    <!-- /.iconbox-content -->
+                </div>
+                <!-- .shdoaw-style   icon-center rt-single-icon-box text-centerEND -->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="shdoaw-style   icon-center rt-single-icon-box text-center">
+                    <img alt="Fast &amp; Friendly 
+Support" class="icon-thumb d-block mx-auto " draggable="false" src="assets/img/feature-16.png">
+
+                    <div class="iconbox-content">
+                        <span class="d-block">Fast &amp; Friendly 
+    Support</span>
+                    </div>
+                    <!-- /.iconbox-content -->
+                </div>
+                <!-- .shdoaw-style   icon-center rt-single-icon-box text-centerEND -->
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</section>
+
+<section class="responsive-area offwhite-bg-color section-padding" id="response-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center section-title-wrapper">
+                <h2 class="rt-section-title">
+                    <span>jobpilot is Created</span> Fully Responsive with all Devices
+                </h2>
+
+            </div>
+            <!-- /.col-12 -->
+        </div>
+        <!-- /.row -->
+        <div class="row ">
+            <div class="col-12">
+                <img src="assets/img/mckup.png" alt="" draggable="false" class="d-block mx-auto">
+            </div>
+            <!-- /.col-12 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+
+<section class="awesome-section section-padding" id="awsm-area">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto text-center section-title-wrapper">
+                <h2 class="rt-section-title">
+                    <span>Have a Look on</span> Some Awesome Sections
+                </h2>
+            </div>
+            <!-- /.col-12 -->
+        </div>
+        <!-- /.row -->
+        <div class="row pt-5 mt-5 mb-5 pb-5">
+            <div class="col-12">
+                <div class="np-active owl-carousel three-d-slider">
+                    <div class="singlenp-items"><img src="assets/img/s-1.jpg" alt=""></div>
+                    <!-- /.singlenp-items -->
+                    <div class="singlenp-items"><img src="assets/img/s-2.jpg" alt=""></div>
+                    <!-- /.singlenp-items -->
+                    <div class="singlenp-items"><img src="assets/img/s-3.jpg" alt=""></div>
+                    <!-- /.singlenp-items -->
+                    <div class="singlenp-items"><img src="assets/img/s-4.jpg" alt=""></div>
+                    <!-- /.singlenp-items -->
+                    <div class="singlenp-items"><img src="assets/img/s-5.jpg" alt=""></div>
+                    <!-- /.singlenp-items -->
+                </div>
+                <!-- /.np-active -->
+            </div>
+            <!-- /.col-12 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+
+<section class="demo-footer rtbgprefix-cover mt-5 position-parent" style="background-image: url(assets/img/footer.jpg);">
+    <div class="rt-inner-overlay dark-overlay"></div>
+    <!-- /.rt-overlay -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="f-c">
+                    <h2 class="rt-strong">
+                        Start building your first jobportal website now!
+                    </h2>
+                    <p class="mt-4">
+                        <a href="#" class="rt-btn rt-primary rt-xl text-capitalize rt-rounded">Purchase Now </a>
+                    </p>
+                </div>
+            </div>
+            <!-- /.col-12 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+
+<!-- plugin js scripts -->
+<script src="assets/js/jquery-2.2.4.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/jquery.easing.1.3.js"></script>
+<script src="assets/js/jquery.scrollUp.min.js"></script>
+<script src="assets/js/TweenMax.min.js"></script>
+<script src="assets/js/scrollax.min.js"></script>
+<script src="assets/js/TweenMax.min.js"></script>
+<script src="assets/js/wow.js"></script>
+<script src="assets/js/jarallax.min.js"></script>
+<script src="assets/js/app.js"></script>
+
+<!-- ==================End Js Link===================== -->
+
+
+
+</body>
+
+</html>

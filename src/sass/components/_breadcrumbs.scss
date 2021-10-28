@@ -31,6 +31,9 @@
       @include breakpoint(lg){
         margin:  0;
       }
+      .top-content{
+        height: 100%;
+      }
     }
   }
 }

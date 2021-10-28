@@ -1,11 +1,11 @@
 /*
 * ----------------------------------------------------------------------------------------
-    Template Name: Jobpilot
-    Template URI: 
-    Description: 
-    Author: 
-    Author URI: 
-    Version: 
+    Template Name:  Jobpilot - Job Portal Bootstrap 5 Template
+    Template URI: https://themeforest.net/user/templatecookie/portfolio
+    Description: It’s a High-Quality and well organized Job Board HTML Template.
+    Author: templatecookie
+    Author URI: https://themeforest.net/user/templatecookie/portfolio
+    Version: 1.0.0 
 
     1.0 Dropdown Menu
     1.01 Sticky Menu  
@@ -455,6 +455,26 @@
     },
     tooltip: {
       theme: "dark",
+      x: {
+        show: false,
+    },
+    shared: false,
+    style: {
+      fontSize: '16px',
+      fontFamily: "Inter",
+    },
+    marker: {
+      show: false,
+  },
+  custom: function({series, seriesIndex, dataPointIndex, w}) {
+    return '<div class="arrow_box">' +
+      '<span>' + series[seriesIndex][dataPointIndex] + '</span>' +
+      '<span class="d-block">' +
+      w.globals.labels[dataPointIndex] +
+      ': ' +
+      '</div>'
+  },
+      
     },
     xaxis: {
       borderColor: "red",
@@ -529,6 +549,11 @@ $(window).Scrollax();
   //sidbear toggle 
   $(".sidebar-open-nav").on("click", function () {
     $(".d-sidebar, .d-page-content ").toggleClass("acitve");
+  })
+
+  // pricing toggle 
+  $("#flexSwitchCheckDefault").on("change", function () {
+    $("body").toggleClass("price-toggole");
   })
 
 

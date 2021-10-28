@@ -424,7 +424,81 @@
     margin-right: 100px;
     margin-top: -80px;
     @include breakpoint(md){
-      margin: 0px;
+      margin: {
+        left: 40px;
+        right: 40px;
+      }
+    }
+    @include breakpoint(xs){
+      margin-left: 25px;
+      margin-right: 25px;
     }
   }
+}
+
+
+//search list fixing 
+.inputbox_1{
+ width: 41%;
+ @include breakpoint(xl){
+   width:auto;
+   flex-grow: 1;
+ }
+ @include breakpoint(lg){
+   width: 100%;
+ }
+}
+.inputbox_2{
+width: 25.7%;
+@include breakpoint(xl){
+  width:auto;
+  flex-grow: 1;
+}
+@include breakpoint(lg){
+  width: 100%;
+}
+
+}
+.inputbox_3{
+  width: 25.7%;
+  @include breakpoint(xl){
+    width:auto;
+    flex-grow: 1;
+  }
+  @include breakpoint(lg){
+    width: 100%;
+  }
+}
+
+.sidetbar-widget {
+  ul li:last-child{
+    ul {
+      li{
+        &:last-child{
+          border-bottom: transparent;
+        }
+      }
+    }
+  }
+}
+
+.condition_class{
+  @include breakpoint(xs){
+    .bottom-link.rt-pt-30{
+      padding-top: 15px;
+    }
+  }
+  .icon-thumb{
+    margin-bottom: 0px  !important;
+  }
+  .iconbox-content{
+    @include breakpoint(xs){
+      margin-bottom: 0px !important;
+    }
+  }
+}
+
+.page-bg-radius{
+  border-radius: 0px 0px 8px 8px;
+
 }

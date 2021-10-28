@@ -12,6 +12,13 @@
       sup{
           vertical-align:baseline;
       }
+      .badge{
+          position: relative;
+          top: -5px;
+      }
+      @include breakpoint(md){
+          text-align: center;
+      }
   }
   .price-body{
       padding: 32px 0 12px;
@@ -25,6 +32,11 @@
   }
   &.active{
       border-color: var(--primary-500);
-      box-shadow: 0px 12px 48px rgba(0, 44, 109, 0.1);
+      box-shadow: 0px 12px 20px rgba(0, 44, 109, 0.1);
+      
   }
+}
+
+.form-switch{
+   padding-left: 0px;
 }

@@ -8,8 +8,8 @@
   <div class="container">
     <div class="row">
       <div class="col-xl-12">
-        <div class="pgae-bg bgprefix-cover rt-rounded-12" style="background-image: url(assets/images/banner/candidate-big-img.jpg);"></div>
-        <div class="card jobcardStyle1   hover:bg-transparent hover-shadow:none body-24 hover:border-transparent">
+        <div class="pgae-bg bgprefix-cover page-bg-radius" style="background-image: url(assets/images/banner/candidate-big-img.jpg);"></div>
+        <div class="card jobcardStyle1   hover:bg-transparent hover-shadow:none body-24 hover:border-transparent border border-gray-50">
             <div class="card-body">
               <div class="rt-single-icon-box flex-column flex-lg-row">
                 <div class="icon-thumb rt-mb-lg-20">
@@ -79,7 +79,7 @@
               Share this job:
             </li>
             <li class="d-inline-block ms-3">
-              <button class="btn btn-outline-plain">
+              <button class="btn btn-outline-plain hover-fb">
                 <span class="f-size-18 text-primary-500"> <svg xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--bx"
                     width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"
@@ -92,7 +92,7 @@
               </button>
             </li>
             <li class="d-inline-block">
-              <button class="btn btn-outline-plain">
+              <button class="btn btn-outline-plain hover-tw">
                 <span class="f-size-18 text-twitter"> <svg xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--bx"
                     width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"
@@ -105,7 +105,7 @@
               </button>
             </li>
             <li class="d-inline-block">
-              <button class="btn btn-outline-plain">
+              <button class="btn btn-outline-plain hover-pin">
                 <span class="f-size-18 text-pinterest me-1"> <svg xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--bi"
                     width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"
@@ -207,22 +207,22 @@
             <div class="col-xxl-6 col-12 rt-pt-lg-10 text-xxl-end text-start">
                 <ul class="rt-list gap-8">
                     <li class="d-inline-block">
-                        <a href="#" class="icon-44 bg-gray-10 text-primary-500 ">
+                        <a href="#" class="icon-44 bg-gray-10 text-primary-500 border-gray-10 border hover:border-primary-500">
                             <span class="iconify" data-icon="bx:bxl-facebook"></span>
                         </a>
                     </li>
                     <li class="d-inline-block">
-                        <a href="#" class="icon-44 bg-gray-10 text-primary-500 border-primary-500 border">
+                        <a href="#" class="icon-44 bg-gray-10 text-primary-500 border-gray-10 border hover:border-primary-500">
                             <span class="iconify" data-icon="bx:bxl-twitter"></span>
                         </a>
                     </li>
                     <li class="d-inline-block">
-                        <a href="#" class="icon-44 bg-gray-10  text-primary-500 ">
+                        <a href="#" class="icon-44 bg-gray-10  text-primary-500 border-gray-10 border hover:border-primary-500">
                             <span class="iconify" data-icon="bx:bxl-instagram"></span>
                         </a>
                     </li>
                     <li class="d-inline-block">
-                        <a href="#" class="icon-44 bg-gray-10  text-primary-500 ">
+                        <a href="#" class="icon-44 bg-gray-10  text-primary-500 border-gray-10 border hover:border-primary-500">
                             <span class="iconify" data-icon="bx:bxl-youtube"></span>
                         </a>
                     </li>
@@ -252,7 +252,7 @@
                 <path d="M12 5L5 12L12 19" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
               </svg>
             </button>
-            <button class="btn icon-48 plain-button slicknext bg-primary-50 rt-mr-12 slick-arrow" style="display: flex;">
+            <button class="btn icon-48 plain-button slicknext bg-primary-50 slick-arrow" style="display: flex;">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5 12H19" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                 <path d="M12 5L19 12L12 19" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -265,7 +265,7 @@
     <div class="rt-spacer-50 rt-spacer-md-20"></div>
     <div class="row">
       <div class="col-12">
-        <div class="newestjob_active slick-bullet deafult_style_dot related-jobs"
+        <div class="newestjob_active slick-bullet deafult_style_dot related-jobs extra-css"
           data-slick='{"dots": false, "rows": 2}'>
           {% include "../templates/components/job/related-candidate1.html" %}
         </div>

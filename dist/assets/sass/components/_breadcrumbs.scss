@@ -1,0 +1,55 @@
+.breadcrumbs, .breadcrumbs-two{
+  padding: 40px 0;
+  background-color: var(--gray-20) ;
+  @include rt-trs(0.24s);
+  .breadcrumb-title{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+    color: var(--gray-900);
+  }
+  .breadcrumb-item {
+    color: var(--gray-900);
+    a{
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--gray-500);
+    }
+  }
+  &.style-two{
+    padding: 0px;
+    height: 230px;
+    @include breakpoint(lg){
+      height: auto;
+      padding: 50px 0;
+    }
+    .jobsearchBox{
+      margin-top: 100px;
+      @include breakpoint(xl){
+        margin-top: 50px;
+      }
+      @include breakpoint(lg){
+        margin:  0;
+      }
+      .top-content{
+        height: 100%;
+      }
+    }
+  }
+}
+.breadcrumb{
+  margin-bottom: 0px;
+}
+  
+.breadcrumbs{
+  .card{
+    .rt-single-icon-box{
+      @include breakpoint(lg){
+        display: block;
+        .iconbox-content{
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}

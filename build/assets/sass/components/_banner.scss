@@ -1,0 +1,426 @@
+.rt-single-banner {
+  position: relative;
+  z-index: 1;
+  @include breakpoint(xl) {
+    padding-bottom: 150px;
+  }
+  @include breakpoint(md) {
+    padding-bottom: 100px;
+  }
+  .floting-img {
+    position: absolute;
+    z-index: -1;
+    &.shape-img {
+      left: 0;
+      top: 0;
+      width: 100%;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    &.shape-bgimg,
+    &.shape-bgimg2 {
+      right: 0px;
+      top: 0;
+      text-align: end;
+    }
+  }
+}
+
+.banner-content {
+  padding-top: 100px;
+  @include breakpoint(xl) {
+    max-width: 727px;
+    padding-top: 150px;
+  }
+
+  @include breakpoint(md) {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+}
+
+.rt-banner-height {
+  height: 920px;
+  @include breakpoint(xl) {
+    height: auto;
+  }
+}
+.rt-banner-height2 {
+  height: 992px;
+  @include breakpoint(xl) {
+    height: auto;
+  }
+}
+
+// banner seaarch
+.jobsearchBox {
+  padding: {
+    left: 33px;
+    top: 12px;
+    bottom: 12px;
+    right: 12px;
+  }
+
+  border-radius: 8px;
+  height: 80px;
+  box-shadow: 0px 12px 40px rgba(0, 44, 109, 0.04);
+  border: 1px solid var(--gray-50);
+  @include breakpoint(md) {
+    height: auto;
+    padding: 12px;
+  }
+  button {
+    height: 100%;
+    @include breakpoint(md) {
+      margin-top: 10px;
+    }
+  }
+  #{$all-text-inputs},
+  .form-control {
+    height: 100%;
+    color: var(--gray-700);
+    width: calc(100% - 20px);
+    &:focus,
+    &:focus-visible {
+      border-color: transparent !important;
+    }
+  }
+  .fromGroup {
+    &::after {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1px;
+      height: 100%;
+      content: "";
+      background: var(--gray-50);
+      @include breakpoint(md){
+        display: none;
+      }
+    }
+    &.banner-select {
+      padding-right: 20px;
+    }
+    &.no-border {
+      padding-right: 0px !important;
+      &::after {
+        display: none;
+      }
+    }
+  }
+  &.with-advanced-filter {
+    height: auto;
+  }
+  &.height-auto-xl{
+    @include breakpoint(xl){
+      height: auto;
+      padding: 15px;
+      .fromGroup{
+        &::after{
+          display: none;
+        }
+      }
+    }
+ 
+  }
+  &.height-auto-lg{
+    @include breakpoint(lg){
+      height: auto;
+      padding: 15px;
+      .fromGroup{
+        &::after{
+          display: none;
+        }
+      }
+    }
+  }
+  .left-content{
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .search-col{
+    flex: 0 0 23.33%;
+    max-width: 23.33%;
+    @include breakpoint(xl){
+      @include flex-width(50%);
+    }
+    @include breakpoint(xs){
+      @include flex-width(100%);
+    }
+  }
+  .search-col-4{
+    flex: 0 0 30%;
+    max-width: 30%;
+    @include breakpoint(xl){
+      @include flex-width(50%);
+    }
+    @include breakpoint(xs){
+      @include flex-width(100%);
+    }
+  }
+}
+
+.banner-quciks-links {
+  a {
+    color: var(--gray-600);
+    &:hover {
+      color: var(--primary-500);
+    }
+  }
+}
+
+.banner-mockup {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -120px;
+  z-index: 0;
+  max-width: 50%;
+  margin-top: 78px;
+  @include breakpoint(xxl2) {
+    max-width: 40%;
+    right: 0px;
+  }
+  @include breakpoint(xxl) {
+    max-width: 48%;
+    right: 0px;
+  }
+  @include breakpoint(xl) {
+    position: static;
+    margin-top: 30px;
+    transform: none;
+  }
+
+  @include breakpoint(md) {
+    display: none;
+  }
+}
+.banner-content2 {
+  padding-left: 80px;
+  padding-top: 242px;
+  @include breakpoint(xxl) {
+    padding-left: 35px;
+  }
+  @include breakpoint(xl) {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  @include breakpoint(lg) {
+    padding-top: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 100px;
+  }
+  @include breakpoint(md) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+.banner-content3 {
+  padding-left: 80px;
+  padding-top: 242px;
+  @include breakpoint(xxl) {
+    padding-left: 35px;
+  }
+  @include breakpoint(xl) {
+    padding-top: 150px;
+  }
+  @include breakpoint(lg) {
+    padding-top: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 100px;
+  }
+  @include breakpoint(md) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+.banner-content5 {
+  padding-top: 342px;
+  padding-bottom: 178px;
+  @include breakpoint(xl){
+    padding-top: 242px;
+    padding-bottom: 140px;
+  }
+  @include breakpoint(lg){
+    padding-top: 180px;
+    padding-bottom: 100px;
+  }
+  @include breakpoint(xs){
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+}
+.home-two,
+.home-five,
+.home-three {
+  .mx-727 {
+    max-width: 727px;
+  }
+  .jobsearchBox {
+    max-width: 745px;
+  }
+}
+
+// banner 3 mockup
+.banner-mockpu-img-grid {
+  padding-right: 98px;
+  @include breakpoint(xxl2) {
+    padding-right: 30px;
+  }
+  .img-1-p {
+    margin-top: 124px;
+  }
+  .img-2-p {
+    margin-top: 60px;
+  }
+  .img-3-p {
+    margin-top: 24px;
+  }
+}
+
+.rt-single-icon-box {
+  &.banner-counter {
+    background: #fff;
+    position: absolute;
+    top: 88px;
+    padding: 12px;
+    border: 1px solid #edeff5;
+    box-shadow: 0px 12px 48px rgba(0, 44, 109, 0.1);
+    min-width: 200px;
+    left: -100px;
+    border-radius: 8px;
+    .icon-48 {
+      background: var(--primary-50);
+      margin-right: 12px;
+    }
+  }
+}
+.position-parent {
+  .company-images {
+    position: absolute;
+    right: -45px;
+    bottom: -52px;
+  }
+}
+.company-images {
+  background: #ffffff;
+  width: 232px;
+  border: 1px solid var(--gray-50);
+  box-shadow: 0px 12px 48px rgba(0, 44, 109, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.banner-select {
+  .select2-container--default .select2-selection--single {
+    border-color: transparent;
+  }
+  .select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow {
+    right: 15px;
+  }
+}
+
+// banner content 4
+.banner-content4 {
+  padding-top: 351px;
+  padding-bottom: 351px;
+  @include breakpoint(xl){
+    padding-top: 250px;
+    padding-bottom: 250px;
+  }
+  @include breakpoint(lg){
+    padding-top: 150px;
+    padding-bottom: 0px;
+  }
+}
+.home-four {
+  .rt-single-banner {
+    .shape-bgimg2 {
+      top: 200px;
+    }
+  }
+  .rt-single-icon-box.banner-counter {
+    top: 0px;
+    transform: rotate(-6deg);
+    .iconbox-content {
+      flex-grow: 0 !important;
+    }
+  }
+  .d-elements-2 {
+    bottom: 35px;
+    transform: rotate(-5deg);
+    position: absolute;
+    left: -127px;
+  }
+  .d-elements-3,
+  .d-elements-4 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -60px;
+  }
+  .d-elements-4 {
+    bottom: -55px;
+    top: auto;
+  }
+}
+
+.bottom-search {
+  position: relative;
+  top: 60px;
+
+}
+
+.bg-hide-xl {
+  @include breakpoint(xl) {
+    background-image: none !important;
+    background-color: var(--gray-20);
+  }
+}
+
+// banner four
+.black-bg {
+  background-color: var(--gray-900);
+  width: 724px;
+  height: 931px;
+  position: absolute;
+  right: 0px;
+  //z-index: -1;
+  top: 0px;
+  @include breakpoint(xxl2){
+    width: 524px;
+  }
+  @include breakpoint(xl){
+    width: 424px;
+  }
+  @include breakpoint(lg){
+    display: none;
+  }
+}
+.manbg-img {
+  width: 893px;
+  height: 630px;
+  position: absolute;
+  right: 0px;
+  top: 200px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  @include breakpoint(xxl2){
+    width: 624px;
+  }
+  @include breakpoint(xl){
+    width: 524px;
+  }
+  @include breakpoint(lg){
+    display: none;
+  }
+}

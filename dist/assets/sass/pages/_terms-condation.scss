@@ -1,0 +1,28 @@
+.terms-table {
+  padding-left: 24px;
+  background: #FFFFFF;
+  box-shadow: inset 1px 0px 0px #EDEFF5;
+  position: sticky;
+  top: 0;
+  @include breakpoint(lg){
+    box-shadow: none;
+  }
+}
+
+.pl30{
+  padding-right: 45px;
+  @include breakpoint(lg){
+    padding-right: 30px;
+  }
+  @include breakpoint(xs){
+    padding-right: 0px;
+  }
+}
+
+
+// .form-check-input:checked[type=checkbox]{
+//   background-image: url(../images/icon/c.svg);
+//   background-repeat: no-repeat;
+//   background-size: auto;
+//   background-position: center center;
+// }

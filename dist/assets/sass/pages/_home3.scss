@@ -1,0 +1,17 @@
+.about-box{
+    padding: 80px 80px 56px 80px;
+    @include breakpoint(lg){
+        padding: 35px;
+    }
+}
+.abt-inner-conent{
+    padding-left: 70px;
+    @include breakpoint(xl){
+        padding-left: 0px;
+    }
+}
+.img-minus-1{
+    margin-top: -70px;
+}
+
+

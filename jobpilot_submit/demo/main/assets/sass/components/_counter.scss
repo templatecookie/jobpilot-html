@@ -3,7 +3,7 @@
         border-color: transparent;
         .card-body{
             padding: 20px;
-           
+           border-radius: 12px;
                 .icon-72{
                     background-color: var(--primary-50);
                     color: var(--primary-500);
@@ -12,6 +12,7 @@
         }
         &:hover{
             border-color: var(--primary-500);
+            background-color: #fff;
             .icon-72{
                 background-color: var(--primary-500);
                 color: var(--primary-50);
@@ -19,6 +20,11 @@
         }
     }
 }
+.card.counterbox:hover {
+    background-color: #fff;
+    border-color: var(--primary-500);
+}
+
 
 
 .card{

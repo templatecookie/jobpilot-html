@@ -2,83 +2,116 @@
 
 {% block content %}
 
-{% include "../templates/layout/header-footer/header-home5.html" %}
-{% include "../templates/layout/banner/home5-banner.html" %}
-
-
-
+{% include "../templates/layout/header-footer/homepage1-header.html" %}
+{% include "../templates/layout/banner/home1-banner.html" %}
 <!-- Counter Start -->
-<div class="counter-area bg-gray-20">
-  <div class="rt-spacer-50"></div>
+<div class="counter-area rt-pt-40 rt-pt-lg-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 col-sm-6 mx-auto rt-mb-30">
+                <div class="card jobcardStyle1 counterbox">
+                    <div class="card-body">
+                      <div class="rt-single-icon-box">
+                        <div class="icon-thumb">
+                            <div class="icon-72">
+                                <i class="ph-suitcase-simple"></i>
+                            </div>
+                        </div>
+                        <div class="iconbox-content">
+                          <div class="f-size-24 ft-wt-5"><span class="counter">1,75,324</span></div>
+                          <span class="text-gray-500 f-size-16">Live Job</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6 mx-auto rt-mb-30">
+                <div class="card jobcardStyle1 counterbox">
+                    <div class="card-body">
+                      <div class="rt-single-icon-box">
+                        <div class="icon-thumb">
+                            <div class="icon-72">
+                                <i class="ph-buildings"></i>
+                            </div>
+                        </div>
+                        <div class="iconbox-content">
+                          <div class="f-size-24 ft-wt-5"><span class="counter">97,354</span></div>
+                          <span class="text-gray-500 f-size-16">Companies</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6 mx-auto rt-mb-30">
+                <div class="card jobcardStyle1 counterbox">
+                    <div class="card-body">
+                      <div class="rt-single-icon-box">
+                        <div class="icon-thumb">
+                            <div class="icon-72">
+                                <i class="ph-users"></i>
+                            </div>
+                        </div>
+                        <div class="iconbox-content">
+                          <div class="f-size-24 ft-wt-5"><span class="counter">38,47,154</span></div>
+                          <span class="text-gray-500 f-size-16">Candidates</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6 mx-auto rt-mb-30">
+                <div class="card jobcardStyle1 counterbox">
+                    <div class="card-body">
+                      <div class="rt-single-icon-box">
+                        <div class="icon-thumb">
+                            <div class="icon-72">
+                                <i class="ph-suitcase-simple"></i>
+                            </div>
+                        </div>
+                        <div class="iconbox-content">
+                          <div class="f-size-24 ft-wt-5"><span class="counter">7,532</span></div>
+                          <span class="text-gray-500 f-size-16">New Jobs</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- feature Job Start -->
+<section class="featurejob-area rt-pt-40 rt-pt-md-20">
   <div class="container">
       <div class="row">
-          <div class="col-lg-3 col-md-4 col-sm-6 mx-auto rt-mb-30">
-              <div class="card jobcardStyle1 counterbox3">
-                  <div class="card-body">
-                    <div class="rt-single-icon-box">
-                      <div class="icon-thumb">
-                        <i class="ph-suitcase-simple"></i>
-                      </div>
-                      <div class="iconbox-content">
-                        <div class="f-size-24 ft-wt-5"><span class="counter">1,75,324</span></div>
-                        <span class="text-gray-500 f-size-16">Live Job</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+        <div class="col-12">
+          <div class="d-flex flex-wrap">
+            <div class="flex-grow-1"> <h4>Featured job</h4></div>
+            <div class="flex-grow-0 rt-pt-md-10">
+              <button class="btn btn-outline-primary">
+                <span class="button-content-wrapper ">
+                  <span class="button-icon align-icon-right">
+                    <i class="ph-arrow-right"></i>                     
+                  </span>
+                  <span class="button-text">
+                    View All
+                    </span>
+                </span>
+              </button>
+            </div>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 mx-auto rt-mb-30">
-              <div class="card jobcardStyle1 counterbox3">
-                  <div class="card-body">
-                    <div class="rt-single-icon-box">
-                      <div class="icon-thumb">
-                        <i class="ph-buildings"></i>
-                      </div>
-                      <div class="iconbox-content">
-                        <div class="f-size-24 ft-wt-5"><span class="counter">97,354</span></div>
-                        <span class="text-gray-500 f-size-16">Companies</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 mx-auto rt-mb-30">
-              <div class="card jobcardStyle1 counterbox3">
-                  <div class="card-body">
-                    <div class="rt-single-icon-box">
-                      <div class="icon-thumb">
-                        <i class="ph-users"></i>
-                      </div>
-                      <div class="iconbox-content">
-                        <div class="f-size-24 ft-wt-5"><span class="counter">38,47,154</span></div>
-                        <span class="text-gray-500 f-size-16">Candidates</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-6 mx-auto rt-mb-30">
-              <div class="card jobcardStyle1 counterbox3">
-                  <div class="card-body">
-                    <div class="rt-single-icon-box">
-                      <div class="icon-thumb">
-                        <i class="ph-suitcase-simple"></i>
-                      </div>
-                      <div class="iconbox-content">
-                        <div class="f-size-24 ft-wt-5"><span class="counter">7,532</span></div>
-                        <span class="text-gray-500 f-size-16">New Jobs</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+        </div>
+      </div>
+      <div class="rt-spacer-40 "></div>
+      <div class="row">
+          <div class="col-12">
+            {% include "../templates/components/job/feature-job.html" %}
           </div>
       </div>
   </div>
-  <div class="rt-spacer-20"></div>
-</div>
-
+</section>
 <!-- catagory  Start -->
-<section class="catagory-area rt-pt-100 rt-pt-md-50">
+<section class="catagory-area rt-pt-80 rt-pt-md-30">
   <div class="container">
       <div class="row">
         <div class="col-12">
@@ -99,57 +132,19 @@
           </div>
         </div>
       </div>
-      <div class="rt-spacer-40 rt-spacer-md-20"></div>
+      <div class="rt-spacer-40 "></div>
       <div class="row">
-        {% include "../templates/components/category/popular-box-cata3.html" %}
+        {% include "../templates/components/category/populary-box-cata.html" %}
       </div>
   </div>
 </section>
-
-<!-- Featured job Start -->
-<section class="featured-job rt-pt-80 rt-pt-md-40 rt-mb-80 rt-mb-md-40">
-    <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="d-flex flex-wrap align-items-center">
-              <div class="flex-grow-1"> <h4>Featured job</h4></div>
-              <div class="flex-grow-0 rt-pt-md-10-1">
-                <ul class="filter-list">
-                    <li data-filter="*" class="active">
-                      All 
-                    </li>
-                    <li data-filter=".cat-2">
-                        Design 
-                    </li>
-                    <li data-filter=".cat-3">
-                        Programing
-                    </li>
-                    <li data-filter=".cat-4 ">
-                        Health & Care
-                    </li>
-                    <li data-filter=".cat-5 ">
-                        Music
-                    </li>
-                  </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="rt-spacer-40 rt-spacer-md-20"></div>
-        <div class="row grid">
-            {% include "../templates/components/job/filter-feature-job2.html" %}
-        </div>
-    </div>
-</section>
-
-<hr class="spacer-style-dashboard2">
-<!-- feature Company Start -->
-<section class="featurecompany-area rt-pt-60 rt-pt-md-10 rt-mb-100 rt-mb-md-50">
+<!-- Featured Company  Start -->
+<section class="featured-company rt-pt-80 rt-pt-md-40">
   <div class="container">
       <div class="row">
         <div class="col-12">
           <div class="d-flex flex-wrap">
-            <div class="flex-grow-1"> <h4>Top companies</h4></div>
+            <div class="flex-grow-1"> <h4>Featured companies</h4></div>
             <div class="flex-grow-0 rt-pt-md-10">
               <button class="btn btn-outline-primary">
                 <span class="button-content-wrapper ">
@@ -165,288 +160,53 @@
           </div>
         </div>
       </div>
-      <div class="rt-spacer-40 rt-spacer-md-20"></div>
+      <div class="rt-spacer-40 "></div>
       <div class="row">
-          <div class="col-12">
-            {% include "../templates/components/job/feature-company.html" %}
-          </div>
-      </div>
-  </div>
-</section>
-
-
-<!-- About Section Start -->
-<section class="about-section bg-gray-20">
-  <div class="rt-spacer-70 rt-spacer-md-30"></div>
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-xl-7 rt-mb-24 col-lg-6">
-        <div class="left-img">
-          <img src="assets/images/all-img/abt-3.png" alt="">
+        <div class="col-12">
+          {% include "../templates/components/job/feature-company.html" %}
         </div>
       </div>
-      <div class="col-xl-5 col-lg-6">
-        <div class="mx-536">
-          <h4 class="rt-mb-24">Millions of job &
-            career upportunity.</h4>
-            <div class="text-gray-500 body-font-3">
-              Donec nec dignissim neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum nisi felis, euismod ac leo id, dignissim.
-            </div>
-            <div class="rt-spacer-36"></div>
-            <div class="row">
-              <div class="col-md-6 rt-mb-24">
-                <div class="card jobcardStyle1 counterbox2 ">
-                  <div class="card-body">
-                    <div class="rt-single-icon-box">
-                      <div class="icon-thumb">
-                          <div class="icon-72">
-                              <i class="ph-suitcase-simple"></i>
-                          </div>
-                      </div>
-                      <div class="iconbox-content">
-                        <div class="f-size-24 ft-wt-5"><span class="counter">1,75,324</span></div>
-                        <span class="text-gray-500 f-size-16">Live Job</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 rt-mb-24">
-                <div class="card jobcardStyle1 counterbox2 ">
-                  <div class="card-body">
-                    <div class="rt-single-icon-box">
-                      <div class="icon-thumb">
-                          <div class="icon-72">
-                              <i class="ph-buildings"></i>
-                          </div>
-                      </div>
-                      <div class="iconbox-content">
-                        <div class="f-size-24 ft-wt-5"><span class="counter">97,354</span></div>
-                        <span class="text-gray-500 f-size-16">Companies</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 rt-mb-24">
-                <div class="card jobcardStyle1 counterbox2 ">
-                  <div class="card-body">
-                    <div class="rt-single-icon-box">
-                      <div class="icon-thumb">
-                          <div class="icon-72">
-                              <i class="ph-users"></i>
-                          </div>
-                      </div>
-                      <div class="iconbox-content">
-                        <div class="f-size-24 ft-wt-5"><span class="counter">38,47,154</span></div>
-                        <span class="text-gray-500 f-size-16">Candidates</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 rt-mb-24">
-                <div class="card jobcardStyle1 counterbox2 ">
-                  <div class="card-body">
-                    <div class="rt-single-icon-box">
-                      <div class="icon-thumb">
-                          <div class="icon-72">
-                              <i class="ph-suitcase-simple"></i>
-                          </div>
-                      </div>
-                      <div class="iconbox-content">
-                        <div class="f-size-24 ft-wt-5"><span class="counter">7,532</span></div>
-                        <span class="text-gray-500 f-size-16">New Jobs</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="rt-spacer-12"></div>
-            <div class="row">
-              <div class="col-12">
-                <a href="create-account.html" class="btn btn-primary">
-                  <span class="button-content-wrapper ">
-                      <span class="button-icon align-icon-right">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M5 12H19" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                          <path d="M12 5L19 12L12 19" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                          </svg>                        
-                      </span>
-                      <span class="button-text">
-                        Register Now
-                      </span>
-                  </span>
-              </a>
-              </div>
-            </div>
-        </div>
-      </div>
-    </div>
   </div>
-  <div class="rt-spacer-70 rt-spacer-md-30"></div>
 </section>
 
-<!-- Testimonials area Start -->
-<section class="testimonials-area2 position-parent  rt-pt-100 rt-pt-md-50">
-  <div class="t-overlay"></div>
+<!-- Newest Job  Start -->
+<section class="Newestjob-area rt-pt-80 rt-pt-md-40 rt-mb-90 rt-mb-md-40">
   <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h4 class="t-title">What our poeple says</h4>
-          <div class="testimonal2-active">
-            <div class="single-item">
-              <div class="testimonal-item">
-                <div class="left-img">
-                  <div class="img-box">
-                    <img src="assets/images/all-img/t-img.png" alt="" draggable="false">
-                  </div>
-                </div>
-                <div class="right-content">
-                    <div class="rt-mb-24">
-                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.9241 4.51321C13.3643 3.62141 14.636 3.62141 15.0762 4.51321L17.3262 9.07149C17.5009 9.42531 17.8383 9.67066 18.2287 9.72773L23.2623 10.4635C24.2462 10.6073 24.6383 11.8167 23.926 12.5105L20.2856 16.0562C20.0026 16.3319 19.8734 16.7292 19.9402 17.1187L20.7991 22.1264C20.9672 23.1068 19.9382 23.8543 19.0578 23.3913L14.5587 21.0253C14.209 20.8414 13.7913 20.8414 13.4416 21.0253L8.94252 23.3913C8.06217 23.8543 7.03311 23.1068 7.20125 22.1264L8.06013 17.1187C8.12693 16.7292 7.99773 16.3319 7.71468 16.0562L4.07431 12.5105C3.362 11.8167 3.75414 10.6073 4.73804 10.4635L9.7716 9.72773C10.162 9.67066 10.4995 9.42531 10.6741 9.07149L12.9241 4.51321Z" fill="#FFAA00"/>
-                        </svg>
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M12.9241 4.51321C13.3643 3.62141 14.636 3.62141 15.0762 4.51321L17.3262 9.07149C17.5009 9.42531 17.8383 9.67066 18.2287 9.72773L23.2623 10.4635C24.2462 10.6073 24.6383 11.8167 23.926 12.5105L20.2856 16.0562C20.0026 16.3319 19.8734 16.7292 19.9402 17.1187L20.7991 22.1264C20.9672 23.1068 19.9382 23.8543 19.0578 23.3913L14.5587 21.0253C14.209 20.8414 13.7913 20.8414 13.4416 21.0253L8.94252 23.3913C8.06217 23.8543 7.03311 23.1068 7.20125 22.1264L8.06013 17.1187C8.12693 16.7292 7.99773 16.3319 7.71468 16.0562L4.07431 12.5105C3.362 11.8167 3.75414 10.6073 4.73804 10.4635L9.7716 9.72773C10.162 9.67066 10.4995 9.42531 10.6741 9.07149L12.9241 4.51321Z" fill="#FFAA00"/>
-                        </svg>   
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M12.9241 4.51321C13.3643 3.62141 14.636 3.62141 15.0762 4.51321L17.3262 9.07149C17.5009 9.42531 17.8383 9.67066 18.2287 9.72773L23.2623 10.4635C24.2462 10.6073 24.6383 11.8167 23.926 12.5105L20.2856 16.0562C20.0026 16.3319 19.8734 16.7292 19.9402 17.1187L20.7991 22.1264C20.9672 23.1068 19.9382 23.8543 19.0578 23.3913L14.5587 21.0253C14.209 20.8414 13.7913 20.8414 13.4416 21.0253L8.94252 23.3913C8.06217 23.8543 7.03311 23.1068 7.20125 22.1264L8.06013 17.1187C8.12693 16.7292 7.99773 16.3319 7.71468 16.0562L4.07431 12.5105C3.362 11.8167 3.75414 10.6073 4.73804 10.4635L9.7716 9.72773C10.162 9.67066 10.4995 9.42531 10.6741 9.07149L12.9241 4.51321Z" fill="#FFAA00"/>
-                        </svg>   
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M12.9241 4.51321C13.3643 3.62141 14.636 3.62141 15.0762 4.51321L17.3262 9.07149C17.5009 9.42531 17.8383 9.67066 18.2287 9.72773L23.2623 10.4635C24.2462 10.6073 24.6383 11.8167 23.926 12.5105L20.2856 16.0562C20.0026 16.3319 19.8734 16.7292 19.9402 17.1187L20.7991 22.1264C20.9672 23.1068 19.9382 23.8543 19.0578 23.3913L14.5587 21.0253C14.209 20.8414 13.7913 20.8414 13.4416 21.0253L8.94252 23.3913C8.06217 23.8543 7.03311 23.1068 7.20125 22.1264L8.06013 17.1187C8.12693 16.7292 7.99773 16.3319 7.71468 16.0562L4.07431 12.5105C3.362 11.8167 3.75414 10.6073 4.73804 10.4635L9.7716 9.72773C10.162 9.67066 10.4995 9.42531 10.6741 9.07149L12.9241 4.51321Z" fill="#FFAA00"/>
-                        </svg>  
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M12.9241 4.51321C13.3643 3.62141 14.636 3.62141 15.0762 4.51321L17.3262 9.07149C17.5009 9.42531 17.8383 9.67066 18.2287 9.72773L23.2623 10.4635C24.2462 10.6073 24.6383 11.8167 23.926 12.5105L20.2856 16.0562C20.0026 16.3319 19.8734 16.7292 19.9402 17.1187L20.7991 22.1264C20.9672 23.1068 19.9382 23.8543 19.0578 23.3913L14.5587 21.0253C14.209 20.8414 13.7913 20.8414 13.4416 21.0253L8.94252 23.3913C8.06217 23.8543 7.03311 23.1068 7.20125 22.1264L8.06013 17.1187C8.12693 16.7292 7.99773 16.3319 7.71468 16.0562L4.07431 12.5105C3.362 11.8167 3.75414 10.6073 4.73804 10.4635L9.7716 9.72773C10.162 9.67066 10.4995 9.42531 10.6741 9.07149L12.9241 4.51321Z" fill="#FFAA00"/>
-                        </svg>                       
-                    </div>
-                    <div class="text-gray-700 body-font-2 rt-mb-24">
-                      “Curabitur vitae aliquam risus. Mauris quis vehicula nisl, sed commodo ipsum. Praesent semper diam ut diam elementum, ut scelerisque nibh commodo. Integer faucibus porttitor vehicula. Maecenas venenatis dictum ligula. Orci varius natoque penatibus et magnis dis parturient montes
-                    </div>
-                    <div class="rt-single-icon-box ">
-                      <div class="iconbox-content">
-                        <div class="body-font-1 ft-wt-5">John Wick</div>
-                        <div class="body-font-3 text-gray-500">UI/UX Designer</div>
-                      </div>
-                      <div class="iconbox-extra">
-                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M25.6667 39.6667C25.6667 42.142 24.6833 44.516 22.933 46.2663C21.1827 48.0167 18.8087 49 16.3333 49C13.858 49 11.484 48.0167 9.73367 46.2663C7.98333 44.516 7 42.142 7 39.6667C7 34.51 16.3333 7 16.3333 7H21L16.3333 30.3333C18.8087 30.3333 21.1827 31.3167 22.933 33.067C24.6833 34.8173 25.6667 37.1913 25.6667 39.6667ZM49 39.6667C49 42.142 48.0167 44.516 46.2663 46.2663C44.516 48.0167 42.142 49 39.6667 49C37.1913 49 34.8173 48.0167 33.067 46.2663C31.3167 44.516 30.3333 42.142 30.3333 39.6667C30.3333 34.51 39.6667 7 39.6667 7H44.3333L39.6667 30.3333C42.142 30.3333 44.516 31.3167 46.2663 33.067C48.0167 34.8173 49 37.1913 49 39.6667Z" fill="#DADDE6"/>
-                          </svg>
-                                            
-                      </div>
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="single-item">
-              <div class="testimonal-item">
-                <div class="left-img">
-                  <div class="img-box">
-                    <img src="assets/images/all-img/t-img.png" alt="" draggable="false">
-                  </div>
-                </div>
-                <div class="right-content">
-                    <div class="rt-mb-24">
-                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.9241 4.51321C13.3643 3.62141 14.636 3.62141 15.0762 4.51321L17.3262 9.07149C17.5009 9.42531 17.8383 9.67066 18.2287 9.72773L23.2623 10.4635C24.2462 10.6073 24.6383 11.8167 23.926 12.5105L20.2856 16.0562C20.0026 16.3319 19.8734 16.7292 19.9402 17.1187L20.7991 22.1264C20.9672 23.1068 19.9382 23.8543 19.0578 23.3913L14.5587 21.0253C14.209 20.8414 13.7913 20.8414 13.4416 21.0253L8.94252 23.3913C8.06217 23.8543 7.03311 23.1068 7.20125 22.1264L8.06013 17.1187C8.12693 16.7292 7.99773 16.3319 7.71468 16.0562L4.07431 12.5105C3.362 11.8167 3.75414 10.6073 4.73804 10.4635L9.7716 9.72773C10.162 9.67066 10.4995 9.42531 10.6741 9.07149L12.9241 4.51321Z" fill="#FFAA00"/>
-                        </svg>
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M12.9241 4.51321C13.3643 3.62141 14.636 3.62141 15.0762 4.51321L17.3262 9.07149C17.5009 9.42531 17.8383 9.67066 18.2287 9.72773L23.2623 10.4635C24.2462 10.6073 24.6383 11.8167 23.926 12.5105L20.2856 16.0562C20.0026 16.3319 19.8734 16.7292 19.9402 17.1187L20.7991 22.1264C20.9672 23.1068 19.9382 23.8543 19.0578 23.3913L14.5587 21.0253C14.209 20.8414 13.7913 20.8414 13.4416 21.0253L8.94252 23.3913C8.06217 23.8543 7.03311 23.1068 7.20125 22.1264L8.06013 17.1187C8.12693 16.7292 7.99773 16.3319 7.71468 16.0562L4.07431 12.5105C3.362 11.8167 3.75414 10.6073 4.73804 10.4635L9.7716 9.72773C10.162 9.67066 10.4995 9.42531 10.6741 9.07149L12.9241 4.51321Z" fill="#FFAA00"/>
-                        </svg>   
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M12.9241 4.51321C13.3643 3.62141 14.636 3.62141 15.0762 4.51321L17.3262 9.07149C17.5009 9.42531 17.8383 9.67066 18.2287 9.72773L23.2623 10.4635C24.2462 10.6073 24.6383 11.8167 23.926 12.5105L20.2856 16.0562C20.0026 16.3319 19.8734 16.7292 19.9402 17.1187L20.7991 22.1264C20.9672 23.1068 19.9382 23.8543 19.0578 23.3913L14.5587 21.0253C14.209 20.8414 13.7913 20.8414 13.4416 21.0253L8.94252 23.3913C8.06217 23.8543 7.03311 23.1068 7.20125 22.1264L8.06013 17.1187C8.12693 16.7292 7.99773 16.3319 7.71468 16.0562L4.07431 12.5105C3.362 11.8167 3.75414 10.6073 4.73804 10.4635L9.7716 9.72773C10.162 9.67066 10.4995 9.42531 10.6741 9.07149L12.9241 4.51321Z" fill="#FFAA00"/>
-                        </svg>   
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M12.9241 4.51321C13.3643 3.62141 14.636 3.62141 15.0762 4.51321L17.3262 9.07149C17.5009 9.42531 17.8383 9.67066 18.2287 9.72773L23.2623 10.4635C24.2462 10.6073 24.6383 11.8167 23.926 12.5105L20.2856 16.0562C20.0026 16.3319 19.8734 16.7292 19.9402 17.1187L20.7991 22.1264C20.9672 23.1068 19.9382 23.8543 19.0578 23.3913L14.5587 21.0253C14.209 20.8414 13.7913 20.8414 13.4416 21.0253L8.94252 23.3913C8.06217 23.8543 7.03311 23.1068 7.20125 22.1264L8.06013 17.1187C8.12693 16.7292 7.99773 16.3319 7.71468 16.0562L4.07431 12.5105C3.362 11.8167 3.75414 10.6073 4.73804 10.4635L9.7716 9.72773C10.162 9.67066 10.4995 9.42531 10.6741 9.07149L12.9241 4.51321Z" fill="#FFAA00"/>
-                        </svg>  
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M12.9241 4.51321C13.3643 3.62141 14.636 3.62141 15.0762 4.51321L17.3262 9.07149C17.5009 9.42531 17.8383 9.67066 18.2287 9.72773L23.2623 10.4635C24.2462 10.6073 24.6383 11.8167 23.926 12.5105L20.2856 16.0562C20.0026 16.3319 19.8734 16.7292 19.9402 17.1187L20.7991 22.1264C20.9672 23.1068 19.9382 23.8543 19.0578 23.3913L14.5587 21.0253C14.209 20.8414 13.7913 20.8414 13.4416 21.0253L8.94252 23.3913C8.06217 23.8543 7.03311 23.1068 7.20125 22.1264L8.06013 17.1187C8.12693 16.7292 7.99773 16.3319 7.71468 16.0562L4.07431 12.5105C3.362 11.8167 3.75414 10.6073 4.73804 10.4635L9.7716 9.72773C10.162 9.67066 10.4995 9.42531 10.6741 9.07149L12.9241 4.51321Z" fill="#FFAA00"/>
-                        </svg>                       
-                    </div>
-                    <div class="text-gray-700 body-font-2 rt-mb-24">
-                      “Curabitur vitae aliquam risus. Mauris quis vehicula nisl, sed commodo ipsum. Praesent semper diam ut diam elementum, ut scelerisque nibh commodo. Integer faucibus porttitor vehicula. Maecenas venenatis dictum ligula. Orci varius natoque penatibus et magnis dis parturient montes
-                    </div>
-                    <div class="rt-single-icon-box ">
-                      <div class="iconbox-content">
-                        <div class="body-font-1 ft-wt-5">John Wick</div>
-                        <div class="body-font-3 text-gray-500">UI/UX Designer</div>
-                      </div>
-                      <div class="iconbox-extra">
-                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M25.6667 39.6667C25.6667 42.142 24.6833 44.516 22.933 46.2663C21.1827 48.0167 18.8087 49 16.3333 49C13.858 49 11.484 48.0167 9.73367 46.2663C7.98333 44.516 7 42.142 7 39.6667C7 34.51 16.3333 7 16.3333 7H21L16.3333 30.3333C18.8087 30.3333 21.1827 31.3167 22.933 33.067C24.6833 34.8173 25.6667 37.1913 25.6667 39.6667ZM49 39.6667C49 42.142 48.0167 44.516 46.2663 46.2663C44.516 48.0167 42.142 49 39.6667 49C37.1913 49 34.8173 48.0167 33.067 46.2663C31.3167 44.516 30.3333 42.142 30.3333 39.6667C30.3333 34.51 39.6667 7 39.6667 7H44.3333L39.6667 30.3333C42.142 30.3333 44.516 31.3167 46.2663 33.067C48.0167 34.8173 49 37.1913 49 39.6667Z" fill="#DADDE6"/>
-                          </svg>
-                                            
-                      </div>
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="single-item">
-              <div class="testimonal-item">
-                <div class="left-img">
-                  <div class="img-box">
-                    <img src="assets/images/all-img/t-img.png" alt="" draggable="false">
-                  </div>
-                </div>
-                <div class="right-content">
-                    <div class="rt-mb-24">
-                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.9241 4.51321C13.3643 3.62141 14.636 3.62141 15.0762 4.51321L17.3262 9.07149C17.5009 9.42531 17.8383 9.67066 18.2287 9.72773L23.2623 10.4635C24.2462 10.6073 24.6383 11.8167 23.926 12.5105L20.2856 16.0562C20.0026 16.3319 19.8734 16.7292 19.9402 17.1187L20.7991 22.1264C20.9672 23.1068 19.9382 23.8543 19.0578 23.3913L14.5587 21.0253C14.209 20.8414 13.7913 20.8414 13.4416 21.0253L8.94252 23.3913C8.06217 23.8543 7.03311 23.1068 7.20125 22.1264L8.06013 17.1187C8.12693 16.7292 7.99773 16.3319 7.71468 16.0562L4.07431 12.5105C3.362 11.8167 3.75414 10.6073 4.73804 10.4635L9.7716 9.72773C10.162 9.67066 10.4995 9.42531 10.6741 9.07149L12.9241 4.51321Z" fill="#FFAA00"/>
-                        </svg>
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M12.9241 4.51321C13.3643 3.62141 14.636 3.62141 15.0762 4.51321L17.3262 9.07149C17.5009 9.42531 17.8383 9.67066 18.2287 9.72773L23.2623 10.4635C24.2462 10.6073 24.6383 11.8167 23.926 12.5105L20.2856 16.0562C20.0026 16.3319 19.8734 16.7292 19.9402 17.1187L20.7991 22.1264C20.9672 23.1068 19.9382 23.8543 19.0578 23.3913L14.5587 21.0253C14.209 20.8414 13.7913 20.8414 13.4416 21.0253L8.94252 23.3913C8.06217 23.8543 7.03311 23.1068 7.20125 22.1264L8.06013 17.1187C8.12693 16.7292 7.99773 16.3319 7.71468 16.0562L4.07431 12.5105C3.362 11.8167 3.75414 10.6073 4.73804 10.4635L9.7716 9.72773C10.162 9.67066 10.4995 9.42531 10.6741 9.07149L12.9241 4.51321Z" fill="#FFAA00"/>
-                        </svg>   
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M12.9241 4.51321C13.3643 3.62141 14.636 3.62141 15.0762 4.51321L17.3262 9.07149C17.5009 9.42531 17.8383 9.67066 18.2287 9.72773L23.2623 10.4635C24.2462 10.6073 24.6383 11.8167 23.926 12.5105L20.2856 16.0562C20.0026 16.3319 19.8734 16.7292 19.9402 17.1187L20.7991 22.1264C20.9672 23.1068 19.9382 23.8543 19.0578 23.3913L14.5587 21.0253C14.209 20.8414 13.7913 20.8414 13.4416 21.0253L8.94252 23.3913C8.06217 23.8543 7.03311 23.1068 7.20125 22.1264L8.06013 17.1187C8.12693 16.7292 7.99773 16.3319 7.71468 16.0562L4.07431 12.5105C3.362 11.8167 3.75414 10.6073 4.73804 10.4635L9.7716 9.72773C10.162 9.67066 10.4995 9.42531 10.6741 9.07149L12.9241 4.51321Z" fill="#FFAA00"/>
-                        </svg>   
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M12.9241 4.51321C13.3643 3.62141 14.636 3.62141 15.0762 4.51321L17.3262 9.07149C17.5009 9.42531 17.8383 9.67066 18.2287 9.72773L23.2623 10.4635C24.2462 10.6073 24.6383 11.8167 23.926 12.5105L20.2856 16.0562C20.0026 16.3319 19.8734 16.7292 19.9402 17.1187L20.7991 22.1264C20.9672 23.1068 19.9382 23.8543 19.0578 23.3913L14.5587 21.0253C14.209 20.8414 13.7913 20.8414 13.4416 21.0253L8.94252 23.3913C8.06217 23.8543 7.03311 23.1068 7.20125 22.1264L8.06013 17.1187C8.12693 16.7292 7.99773 16.3319 7.71468 16.0562L4.07431 12.5105C3.362 11.8167 3.75414 10.6073 4.73804 10.4635L9.7716 9.72773C10.162 9.67066 10.4995 9.42531 10.6741 9.07149L12.9241 4.51321Z" fill="#FFAA00"/>
-                        </svg>  
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M12.9241 4.51321C13.3643 3.62141 14.636 3.62141 15.0762 4.51321L17.3262 9.07149C17.5009 9.42531 17.8383 9.67066 18.2287 9.72773L23.2623 10.4635C24.2462 10.6073 24.6383 11.8167 23.926 12.5105L20.2856 16.0562C20.0026 16.3319 19.8734 16.7292 19.9402 17.1187L20.7991 22.1264C20.9672 23.1068 19.9382 23.8543 19.0578 23.3913L14.5587 21.0253C14.209 20.8414 13.7913 20.8414 13.4416 21.0253L8.94252 23.3913C8.06217 23.8543 7.03311 23.1068 7.20125 22.1264L8.06013 17.1187C8.12693 16.7292 7.99773 16.3319 7.71468 16.0562L4.07431 12.5105C3.362 11.8167 3.75414 10.6073 4.73804 10.4635L9.7716 9.72773C10.162 9.67066 10.4995 9.42531 10.6741 9.07149L12.9241 4.51321Z" fill="#FFAA00"/>
-                        </svg>                       
-                    </div>
-                    <div class="text-gray-700 body-font-2 rt-mb-24">
-                      “Curabitur vitae aliquam risus. Mauris quis vehicula nisl, sed commodo ipsum. Praesent semper diam ut diam elementum, ut scelerisque nibh commodo. Integer faucibus porttitor vehicula. Maecenas venenatis dictum ligula. Orci varius natoque penatibus et magnis dis parturient montes
-                    </div>
-                    <div class="rt-single-icon-box ">
-                      <div class="iconbox-content">
-                        <div class="body-font-1 ft-wt-5">John Wick</div>
-                        <div class="body-font-3 text-gray-500">UI/UX Designer</div>
-                      </div>
-                      <div class="iconbox-extra">
-                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M25.6667 39.6667C25.6667 42.142 24.6833 44.516 22.933 46.2663C21.1827 48.0167 18.8087 49 16.3333 49C13.858 49 11.484 48.0167 9.73367 46.2663C7.98333 44.516 7 42.142 7 39.6667C7 34.51 16.3333 7 16.3333 7H21L16.3333 30.3333C18.8087 30.3333 21.1827 31.3167 22.933 33.067C24.6833 34.8173 25.6667 37.1913 25.6667 39.6667ZM49 39.6667C49 42.142 48.0167 44.516 46.2663 46.2663C44.516 48.0167 42.142 49 39.6667 49C37.1913 49 34.8173 48.0167 33.067 46.2663C31.3167 44.516 30.3333 42.142 30.3333 39.6667C30.3333 34.51 39.6667 7 39.6667 7H44.3333L39.6667 30.3333C42.142 30.3333 44.516 31.3167 46.2663 33.067C48.0167 34.8173 49 37.1913 49 39.6667Z" fill="#DADDE6"/>
-                          </svg>
-                                            
-                      </div>
-                    </div>
-                </div>
-              </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex flex-wrap">
+            <div class="flex-grow-1"> <h4>Newest Job</h4></div>
+            <div class="flex-grow-0 rt-pt-md-10-0 carosle-button">
+              <button class="btn btn-primary-50 slickprev">                       
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 12H5" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 5L5 12L12 19" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                  
+              </button>
+              <button class="btn btn-primary-50 slicknext">                       
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 12H19" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 5L19 12L12 19" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                                   
+              </button>
             </div>
           </div>
-          <div class="carosle-button">
-            <button class="btn btn-primary-50 slickprev3">                       
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19 12H5" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M12 5L5 12L12 19" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>                  
-            </button>
-            <button class="btn btn-primary-50 slicknext3">                       
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 12H19" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M12 5L19 12L12 19" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>                                   
-            </button>
-          </div>
+        </div>
       </div>
-    </div>
+      <div class="rt-spacer-40 "></div>
+      <div class="row">
+        <div class="col-12">
+          {% include "../templates/components/job/newstjob-slider.html" %}
+        </div>
+      </div>
   </div>
 </section>
+
+<!-- Testimonail Start -->
+{% include "../templates/components/testimonals/testimonails.html" %}
 
 <!-- Price area Start -->
-<section class="price-area rt-pt-100 rt-pt-md-50">
+<section class="price-area rt-pt-90 rt-pt-md-30">
   <div class="container">
       <div class="row">
         <div class="col-12">
@@ -454,6 +214,7 @@
             <div class="flex-grow-1"> <h4>Choose your plan</h4></div>
             <div class="flex-grow-0 rt-pt-md-10-0 custom-switch">
               <div class="form-check form-switch">
+                
                 <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
                 <span class="form-check-label">Yearly</span>
                 <span class="label1">Monthly</span>
@@ -462,14 +223,72 @@
           </div>
         </div>
       </div>
-      <div class="rt-spacer-40 rt-spacer-md-20"></div>
+      <div class="rt-spacer-40 "></div>
       <div class="row">
         {% include "../templates/components/price/home-1-price.html" %}
       </div>
   </div>
 </section>
 
+<!-- Blog area Start -->
+<section class="blog-area rt-pt-70 rt-pt-md-30 ">
+  <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h4>Latest news & Blog</h4>
+        </div>
+      </div>
+      <div class="rt-spacer-40 "></div>
+      <div class="row">
+        {% include "../templates/components/blog/blog-grid.html" %}
+      </div>
+  </div>
+</section>
 
-{% include "../templates/layout/header-footer/footer.html" %}
+<!--  newsletter. Start -->
+<section class="subscribe-area rt-pt-80 rt-pt-md-30 rt-mb-100 rt-mb-md-60">
+  <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="bg-gray-20 rt-rounded-24 subscribe-box">
+            <div class="row align-items-center">
+              <div class="col-lg-6 rt-mb-24">
+                <div class="left-content">
+                  <h4 class="rt-mb-15">Subscribe our newsletter.</h4>
+                  <div class="text-gray-400 body-font-3 rt-mb-24">
+                    Subscribe to our newsletter to receive exclusive offers, <br> latest news and updates.
+                  </div>
+                  <form action="#" class="rt-from">
+                    <div class="subscribe-inputbox-1 row smallgap">
+                      <div class="col-md-8">
+                        <input type="text" placeholder="Email address">
+                      </div>
+                     <div class="col-md-4">
+                      <button class="btn btn-primary col-lg-4">
+                        <span class="button-content-wrapper ">
+                          <span class="button-icon align-icon-right">
+                            <i class="ph-arrow-right"></i>                           
+                          </span>
+                          <span class="button-text">
+                            Subscribe
+                          </span>
+                      </span>
+                      </button>
+                     </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-6 rt-mb-24 text-xl-end text-start">
+                <img src="assets/images/all-img/i1.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+{% include "../templates/layout/header-footer/footer-three.html" %}
 
 {% endblock %}

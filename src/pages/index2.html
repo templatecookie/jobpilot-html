@@ -1,0 +1,207 @@
+{% extends "layout/layout.html" %}
+
+{% block content %}
+
+{% include "../templates/layout/header-footer/header-normal.html" %}
+{% include "../templates/layout/banner/home2-banner.html" %}
+
+<!-- catagory  Start -->
+<section class="catagory-area rt-pt-100 rt-pt-md-50">
+  <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex flex-wrap">
+            <div class="flex-grow-1"> <h4>Popular category</h4></div>
+            <div class="flex-grow-0 rt-pt-md-10">
+              <button class="btn btn-outline-primary">
+                <span class="button-content-wrapper ">
+                  <span class="button-icon align-icon-right">
+                    <i class="ph-arrow-right"></i>                     
+                  </span>
+                  <span class="button-text">
+                    View All
+                    </span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rt-spacer-40 "></div>
+      <div class="row">
+        {% include "../templates/components/category/popular-box-cata2.html" %}
+      </div>
+  </div>
+</section>
+
+<!-- Featured job Start -->
+<div class="rt-spacer-80 rt-spacer-md-50"></div>
+<section class="featured-job   bg-gray-20">
+    <div class="rt-spacer-100 rt-spacer-md-50"></div>
+    <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="d-flex flex-wrap align-items-center flex-column flex-lg-row">
+              <div class="flex-grow-1"> <h4>Featured job</h4></div>
+              <div class="flex-grow-0 rt-pt-md-10">
+                <ul class="filter-list">
+                    <li data-filter="*" class="active">
+                      All 
+                    </li>
+                    <li data-filter=".cat-2">
+                        Design 
+                    </li>
+                    <li data-filter=".cat-3">
+                        Programing
+                    </li>
+                    <li data-filter=".cat-4 ">
+                        Health & Care
+                    </li>
+                    <li data-filter=".cat-5 ">
+                        Music
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rt-spacer-40 "></div>
+        <div class="row grid">
+            {% include "../templates/components/job/filter-feature-job.html" %}
+        </div>
+    </div>
+    <div class="rt-spacer-80 rt-spacer-md-30"></div>
+</section>
+
+<!-- About Section Start -->
+<section class="about-section rt-pt-50">
+  <div class="container-fluid about-g-0">
+    <div class="row align-items-center">
+      <div class="col-xl-7 col-lg-6">
+        <div class="left-img">
+          <img src="assets/images/all-img/abt.png" alt="">
+        </div>
+      </div>
+      <div class="col-xl-5 col-lg-6">
+        <div class="mx-536 ">
+          <h4 class="rt-mb-24">Millions of job & 
+            career upportunity.</h4>
+            <div class="text-gray-500 body-font-3">
+              Donec nec dignissim neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum nisi felis, euismod ac leo id, dignissim.
+            </div>
+            <div class="rt-spacer-36"></div>
+            <div class="row">
+              <div class="col-sm-6 rt-mb-24">
+                <div class="card jobcardStyle1 counterbox2">
+                  <div class="card-body">
+                    <div class="rt-single-icon-box">
+                      <div class="icon-thumb">
+                          <div class="icon-72">
+                              <i class="ph-suitcase-simple"></i>
+                          </div>
+                      </div>
+                      <div class="iconbox-content">
+                        <div class="f-size-24 ft-wt-5"><span class="counter">1,75,324</span></div>
+                        <span class="text-gray-500 f-size-16">Live Job</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 rt-mb-24">
+                <div class="card jobcardStyle1 counterbox2">
+                  <div class="card-body">
+                    <div class="rt-single-icon-box">
+                      <div class="icon-thumb">
+                          <div class="icon-72">
+                              <i class="ph-buildings"></i>
+                          </div>
+                      </div>
+                      <div class="iconbox-content">
+                        <div class="f-size-24 ft-wt-5"><span class="counter">97,354</span></div>
+                        <span class="text-gray-500 f-size-16">Companies</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 rt-mb-24">
+                <div class="card jobcardStyle1 counterbox2">
+                  <div class="card-body">
+                    <div class="rt-single-icon-box">
+                      <div class="icon-thumb">
+                          <div class="icon-72">
+                              <i class="ph-users"></i>
+                          </div>
+                      </div>
+                      <div class="iconbox-content">
+                        <div class="f-size-24 ft-wt-5"><span class="counter">38,47,154</span></div>
+                        <span class="text-gray-500 f-size-16">Candidates</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 rt-mb-24">
+                <div class="card jobcardStyle1 counterbox2">
+                  <div class="card-body">
+                    <div class="rt-single-icon-box">
+                      <div class="icon-thumb">
+                          <div class="icon-72">
+                              <i class="ph-suitcase-simple"></i>
+                          </div>
+                      </div>
+                      <div class="iconbox-content">
+                        <div class="f-size-24 ft-wt-5"><span class="counter">7,532</span></div>
+                        <span class="text-gray-500 f-size-16">New Jobs</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rt-spacer-12"></div>
+            <div class="row">
+              <div class="col-12">
+                <a href="create-account.html" class="btn btn-primary">
+                  <span class="button-content-wrapper ">
+                      <span class="button-icon align-icon-right">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5 12H19" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M12 5L19 12L12 19" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>                        
+                      </span>
+                      <span class="button-text">
+                        Register Now
+                      </span>
+                  </span>
+              </a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonail Start -->
+<div class="rt-spacer-100 rt-spacer-md-50"></div>
+{% include "../templates/components/testimonals/testimonal-review.html" %}
+
+<!-- Call to action Start -->
+<section class="cta-area rt-pt-100 rt-mb-80 rt-pt-md-50 rt-mb-md-40">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-6 rt-mb-24">
+        {% include "../templates/components/calltoaction/cta-1.html" %}
+      </div>
+      <div class="col-xl-6 rt-mb-24">
+        {% include "../templates/components/calltoaction/cta-2.html" %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include "../templates/layout/header-footer/footer-five.html" %}
+
+{% endblock %}

@@ -556,5 +556,23 @@ $(window).Scrollax();
     $("body").toggleClass("price-toggole");
   })
 
+  // notifications
+  const $menu = $('.notification-icon');
+    $(document).mouseup((e) => {
+      if (
+        !$menu.is(e.target) && // if the target of the click isn't the container...
+        $menu.has(e.target).length === 0
+      ) {
+        // ... nor a descendant of the container
+        $menu.removeClass('notification-visiable');
+      }
+    });
+
+    $('.notification-icon').on('click', (event) => {
+      event.preventDefault();
+      $menu.toggleClass('notification-visiable');
+    });
+    //end notification
+
 
 })(jQuery);

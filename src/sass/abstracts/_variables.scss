@@ -6,17 +6,17 @@ $body-font: "Inter", sans-serif !default;
 
 $colors: (
   gray: (
-    900: #191F33,
-    800: #2E3447,
-    700: #464D61,
-    600: #636A80,
-    500: #767E94,
-    400: #939AAD,
-    300: #AEB3C2,
-    200: #C5C9D6,
-    100: #DADDE5,
-    50: #EDEFF5,
-    20: #F5F7FC,
+    900: #191f33,
+    800: #2e3447,
+    700: #464d61,
+    600: #636a80,
+    500: #767e94,
+    400: #939aad,
+    300: #aeb3c2,
+    200: #c5c9d6,
+    100: #dadde5,
+    50: #edeff5,
+    20: #f5f7fc,
     10: #fff,
   ),
   primary: (
@@ -82,31 +82,22 @@ $bodyfontScale: (
   ),
 );
 
+$bodyfontvariation: 20px 18px 16px 14px 12px;
+$lineheightvariation: 32px 28px 24px 22px 20px;
 
+$headingfontSize: 72px 56px 48px 40px 32px 24px;
+$headingLineheight: 88px 64px 56px 48px 40px 32px;
 
+$headingfontSize_lg: 56px 56px 48px 40px 32px 24px;
+$headingLineheight_lg: 64px 64px 56px 48px 40px 32px;
 
-$bodyfontvariation:  20px 18px 16px 14px 12px;
-$lineheightvariation:  32px 28px 24px 22px 20px;
-
-
-$headingfontSize:  72px 56px 48px 40px 32px 24px;
-$headingLineheight:  88px 64px 56px 48px 40px 32px;
-
-
-$headingfontSize_lg:  56px 56px 48px 40px 32px 24px;
-$headingLineheight_lg:  64px 64px 56px 48px 40px 32px;
-
-$headingfontSize_xs:  36px 34px 32px 30px 28px 24px;
-$headingLineheight_xs:  46px 44px 42px 40px 38px 34px;
-
+$headingfontSize_xs: 36px 34px 32px 30px 28px 24px;
+$headingLineheight_xs: 46px 44px 42px 40px 38px 34px;
 
 // button font size
 $button_font_size: 16px;
 $buton_line_height: 24px;
 $buton_border_radius: 4px;
-$button_padding: 12px 24px 12px 24px;
+$button_padding: 15px 24px 15px 24px;
 $button_font_weight: 600;
 $button_font_family: $heading-font;
-
-
-

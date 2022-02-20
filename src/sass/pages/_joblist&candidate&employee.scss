@@ -5,15 +5,15 @@
     padding: 0px;
     margin: 0px;
     margin-left: -130px;
-    @include breakpoint(md){
+    @include breakpoint(md) {
       margin-left: 0px;
     }
   }
-  @include breakpoint(xxl){
+  @include breakpoint(xxl) {
     padding-left: 15px;
     padding-right: 15px;
   }
-  @include breakpoint(xs){
+  @include breakpoint(xs) {
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -21,7 +21,7 @@
 .joblist-fliter-gorup {
   min-width: 480px;
   display: flex;
-  @include breakpoint(xs){
+  @include breakpoint(xs) {
     flex-wrap: wrap;
     flex-direction: column;
     min-width: 100%;
@@ -29,15 +29,15 @@
   .left-content {
     flex-grow: 1;
     display: flex;
-    
+
     max-width: 384px;
-    @include breakpoint(xs){
+    @include breakpoint(xs) {
       display: block;
       max-width: 100%;
     }
     .gap ~ .select2 {
       margin-right: 12px;
-      @include breakpoint(xs){
+      @include breakpoint(xs) {
         margin-right: 0px;
         margin-bottom: 12px;
       }
@@ -53,7 +53,7 @@
     height: 48px;
     border: 1px solid var(--gray-50);
     border-radius: 6px;
-    @include breakpoint(xs){
+    @include breakpoint(xs) {
       margin-top: 10px;
       margin-left: 0px;
     }
@@ -94,15 +94,15 @@
   height: 836px;
   width: 100%;
   z-index: 1;
-  @include breakpoint(lg){
+  @include breakpoint(lg) {
     height: 300px;
   }
 }
-.sm-height{
-  #mapid{
-   // height: 600px; // eta fixed
-   height: 500px;
-    @include  breakpoint(xxl){
+.sm-height {
+  #mapid {
+    // height: 600px; // eta fixed
+    height: 500px;
+    @include breakpoint(xxl) {
       height: 450px;
     }
   }
@@ -121,14 +121,13 @@
   @include rt-trs(0.1s);
   margin-left: -424px;
   @include hidden();
- @include breakpoint(xs){
-   width: 250px;
-   padding: 12px 16px;
-}
+  @include breakpoint(xs) {
+    width: 250px;
+    padding: 12px 16px;
+  }
   &.active {
     @include vis();
     margin-left: 0px;
-    
   }
 }
 .sidebar-widget-overlay {
@@ -153,7 +152,6 @@
     color: var(--gray-900);
     @include rt-trs(0.24s);
     @include hidden();
-    
   }
   &.active {
     z-index: 679;
@@ -162,7 +160,7 @@
       left: 480px;
       transition-delay: 0.1s;
       @include vis();
-      @include breakpoint(xs){
+      @include breakpoint(xs) {
         @include hw(35px);
         left: 260px;
       }
@@ -182,20 +180,20 @@
     font-weight: 400;
     margin-right: 12px;
     transition: all 0.4s;
-    &:hover{
-      background-color: #DADDE6;
+    &:hover {
+      background-color: #dadde6;
     }
     .close-tag {
       margin-left: 7px;
-      path{
+      path {
         transition: all 0.4s;
       }
     }
-    &:hover .close-tag path{
+    &:hover .close-tag path {
       fill: var(--primary-500);
       stroke: white;
     }
-   
+
     &:last-child {
       margin-right: 0px;
     }
@@ -204,10 +202,10 @@
 
 // job widget
 .sidetbar-widget {
-  .form-check-input:checked ~ .form-check-label{
+  .form-check-input:checked ~ .form-check-label {
     color: var(--primary-500) !important ;
   }
-  >ul {
+  > ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -217,45 +215,43 @@
       position: relative;
       cursor: pointer;
       &.has-children {
-        .jobwidget_tiitle{
-          &::after{
+        .jobwidget_tiitle {
+          &::after {
             content: "\f101";
-          font-family: "flaticon";
-          font-size: 18px;
-          position: absolute;
-          right: 32px;
-          top: 50%;
-          transform: translateY(-50%);
+            font-family: "flaticon";
+            font-size: 18px;
+            position: absolute;
+            right: 32px;
+            top: 50%;
+            transform: translateY(-50%);
           }
         }
       }
     }
   }
-  li.open{
-    
-    .jobwidget_tiitle{
+  li.open {
+    .jobwidget_tiitle {
       border-bottom: none;
     }
   }
-  .sub-catagory{
+  .sub-catagory {
     margin: 0px;
     padding: 0px;
     list-style: none;
-    li{
+    li {
       padding: 9px 32px;
-      &:first-child{
+      &:first-child {
         padding-top: 0px;
       }
-      &:last-child{
+      &:last-child {
         border-bottom: 1px solid var(--gray-50);
         padding-bottom: 24px;
       }
     }
   }
-
-  
 }
-.jobwidget_tiitle, .jobwidget_tiitle2 {
+.jobwidget_tiitle,
+.jobwidget_tiitle2 {
   font-size: 18px;
   font-weight: 500;
   color: var(--gray-900);
@@ -264,14 +260,14 @@
   border-bottom: 1px solid var(--gray-50);
 }
 
-.jobwidget_tiitle2{
+.jobwidget_tiitle2 {
   border: none;
   padding: 0px;
   margin: 0 0 18px;
 }
-// advanced filter 
+// advanced filter
 
-.advance-hidden-filter-menu{
+.advance-hidden-filter-menu {
   border-top: 1px solid var(--gray-50);
   margin-top: 12px;
   padding-top: 32px;
@@ -279,49 +275,49 @@
   margin-right: -12px;
   padding-bottom: 20px;
   padding-left: 33px;
-  @include breakpoint(xl){
+  @include breakpoint(xl) {
     margin-left: 0px;
   }
- 
- display: none;
+
+  display: none;
   background-color: #fff;
-  hr{
+  hr {
     margin: 0px;
     padding: 0px;
   }
-  ul{
+  ul {
     margin: 0px;
     padding: 0px;
   }
-  >ul{
+  > ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    >li{
+    > li {
       flex: 0 0 20%;
       max-width: 20%;
-      @include breakpoint(lg){
-        @include flex-width(33.33%)
+      @include breakpoint(lg) {
+        @include flex-width(33.33%);
       }
-      @include breakpoint(md){
-        @include flex-width(50%)
+      @include breakpoint(md) {
+        @include flex-width(50%);
       }
-      @include breakpoint(xs){
-        @include flex-width(100%)
+      @include breakpoint(xs) {
+        @include flex-width(100%);
       }
     }
   }
-  ul ul > li{
+  ul ul > li {
     padding-bottom: 8px;
-    &:last-child{
+    &:last-child {
       padding-bottom: 0px;
     }
   }
 }
 
-.jobsearchBox{
+.jobsearchBox {
   transition: all 0.24s ease-in-out;
-  &.active-adf{
+  &.active-adf {
     position: absolute;
     left: 0px;
     right: 0px;
@@ -329,9 +325,8 @@
     z-index: 1000;
     top: 0px;
     overflow: scroll;
-  
-      height: calc(486px);
-    
+
+    height: calc(486px);
   }
 }
 
@@ -352,8 +347,8 @@
   }
 }
 
-// flter column style two 
-.togglesidebr_widget{
+// flter column style two
+.togglesidebr_widget {
   border: 1px solid var(--gray-50);
   border-radius: 12px;
   max-width: 420px;
@@ -362,131 +357,124 @@
     left: 32px;
     right: 32px;
     bottom: 0px;
-  };
-  ul> li{
-    &:last-child{
-      
-        .jobwidget_tiitle{
-          border-bottom: none !important;
-        }
-      
+  }
+  ul > li {
+    &:last-child {
+      .jobwidget_tiitle {
+        border-bottom: none !important;
+      }
     }
   }
 }
 
-
-.max-311{
+.max-311 {
   min-width: 311px;
-  @include breakpoint(xs){
+  @include breakpoint(xs) {
     min-width: 100%;
   }
 }
-.p-32{
+.p-32 {
   padding: 32px;
-  @include breakpoint(xs){
+  @include breakpoint(xs) {
     padding: 16px;
   }
 }
-.max-536{
+.max-536 {
   max-width: 536px;
 }
-.sdeibarmap{
+.sdeibarmap {
   #mapid {
     height: 320px;
     border-radius: 12px;
   }
 }
-.gap-8{
-  li{
+.gap-8 {
+  li {
     margin-right: 8px;
-    &:last-child{
+    &:last-child {
       margin-right: 0px;
     }
-    @include breakpoint(xl){
+    @include breakpoint(xl) {
       margin-bottom: 12px;
     }
   }
 }
 
-// realted jobs 
-.related-jobs{
+// realted jobs
+.related-jobs {
   &.slick-slider {
-    .single-item{
+    .single-item {
       margin-bottom: 24px;
     }
-    
   }
 }
 
-.p-24{
+.p-24 {
   padding: 24px;
 }
-// single page banner 
-.single-page-banner{
+// single page banner
+.single-page-banner {
   position: relative;
-  .pgae-bg{
+  .pgae-bg {
     height: 400px;
-    @include breakpoint(xs){
+    @include breakpoint(xs) {
       height: 300px;
     }
-    
   }
-  .jobcardStyle1{
+  .jobcardStyle1 {
     margin-left: 100px;
     margin-right: 100px;
     margin-top: -80px;
-    @include breakpoint(md){
+    @include breakpoint(md) {
       margin: {
         left: 40px;
         right: 40px;
       }
     }
-    @include breakpoint(xs){
+    @include breakpoint(xs) {
       margin-left: 25px;
       margin-right: 25px;
     }
   }
 }
 
-
-//search list fixing 
-.inputbox_1{
- width: 41%;
- @include breakpoint(xl){
-   width:auto;
-   flex-grow: 1;
- }
- @include breakpoint(lg){
-   width: 100%;
- }
-}
-.inputbox_2{
-width: 25.7%;
-@include breakpoint(xl){
-  width:auto;
-  flex-grow: 1;
-}
-@include breakpoint(lg){
-  width: 100%;
-}
-
-}
-.inputbox_3{
-  width: 25.7%;
-  @include breakpoint(xl){
-    width:auto;
+//search list fixing
+.inputbox_1 {
+  width: 41%;
+  @include breakpoint(xl) {
+    width: auto;
     flex-grow: 1;
   }
-  @include breakpoint(lg){
+  @include breakpoint(lg) {
+    width: 100%;
+  }
+}
+.inputbox_2 {
+  width: 25.7%;
+  @include breakpoint(xl) {
+    width: auto;
+    flex-grow: 1;
+  }
+  @include breakpoint(lg) {
+    width: 100%;
+  }
+}
+.inputbox_3 {
+  width: 25.7%;
+  @include breakpoint(xl) {
+    width: auto;
+    flex-grow: 1;
+  }
+  @include breakpoint(lg) {
     width: 100%;
   }
 }
 
 .sidetbar-widget {
-  ul li:last-child{
+  ul li:last-child {
     ul {
-      li{
-        &:last-child{
+      li {
+        &:last-child {
           border-bottom: transparent;
         }
       }
@@ -494,28 +482,27 @@ width: 25.7%;
   }
 }
 
-.condition_class{
-  @include breakpoint(xs){
-    .bottom-link.rt-pt-30{
+.condition_class {
+  @include breakpoint(xs) {
+    .bottom-link.rt-pt-30 {
       padding-top: 15px;
     }
   }
-  .icon-thumb{
-    margin-bottom: 0px  !important;
+  .icon-thumb {
+    margin-bottom: 0px !important;
   }
-  .iconbox-content{
-    @include breakpoint(xs){
+  .iconbox-content {
+    @include breakpoint(xs) {
       margin-bottom: 0px !important;
     }
   }
 }
 
-.page-bg-radius{
+.page-bg-radius {
   border-radius: 0px 0px 8px 8px;
-
 }
 
-.extra-design{
+.extra-design {
   width: 120px;
   padding-left: 58px;
 }

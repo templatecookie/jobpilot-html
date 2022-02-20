@@ -1,4 +1,3 @@
-
 .d-sidebar {
   background-color: #fff;
   width: 312px;
@@ -13,42 +12,40 @@
     padding-bottom: 50px;
     position: relative;
     z-index: 1;
-    &::after{
+    &::after {
       position: absolute;
       left: 0px;
       bottom: 0px;
       height: calc(100% - 70px);
       width: 100%;
-      background-color: #F5F7FC;
+      background-color: #f5f7fc;
       z-index: -1;
       content: "";
     }
-    @include breakpoint(lg){
+    @include breakpoint(lg) {
       margin-top: 50px;
-
     }
-    @include breakpoint(md){
+    @include breakpoint(md) {
       display: none;
     }
   }
-  @include breakpoint(xl){
+  @include breakpoint(xl) {
     display: none;
   }
-  @include breakpoint(lg){
+  @include breakpoint(lg) {
     width: 250px;
     top: 65px;
     padding: 15px;
   }
-  @include breakpoint(md){
+  @include breakpoint(md) {
     position: absolute;
     width: 100%;
     z-index: 787;
     height: 350px;
   }
-  &.acitve{
-   display: block;
+  &.acitve {
+    display: block;
   }
-  
 }
 .d-page-content {
   padding: {
@@ -58,41 +55,41 @@
   }
   margin-left: 312px;
   margin-top: 100px;
-  @include breakpoint('xl', max){
-      margin-left: 0;
+  @include breakpoint("xl", max) {
+    margin-left: 0;
   }
-  @include breakpoint(md){
-padding: {
-  left: 15px;
-  right: 15px;
-  top: 20px;
-};
+  @include breakpoint(md) {
+    padding: {
+      left: 15px;
+      right: 15px;
+      top: 20px;
+    }
   }
-  &.acitve{
+  &.acitve {
     margin-left: 312px;
-    @include breakpoint(lg){
+    @include breakpoint(lg) {
       margin-left: 250px;
       padding: {
         left: 15px;
         right: 15px;
-      };
+      }
     }
-    @include breakpoint(md){
+    @include breakpoint(md) {
       margin-left: 0px;
       margin-top: 400px;
     }
-    .custom-clmn{
-      @include breakpoint(lg){
+    .custom-clmn {
+      @include breakpoint(lg) {
         flex: 0 0 100% !important;
         max-width: 100% !important;
       }
     }
-    .custom-clmn2{
-      @include breakpoint(xl){
+    .custom-clmn2 {
+      @include breakpoint(xl) {
         flex: 0 0 50% !important;
         max-width: 50% !important;
       }
-      @include breakpoint(lg){
+      @include breakpoint(lg) {
         flex: 0 0 100% !important;
         max-width: 100% !important;
       }
@@ -139,7 +136,8 @@ padding: {
           order: 10;
         }
       }
-      &.active, &:hover {
+      &.active,
+      &:hover {
         background: var(--primary-500);
         color: var(--gray-10);
         &:hover {
@@ -189,10 +187,10 @@ padding: {
   .single-feature-box {
     width: 232px;
     margin-right: 24px;
-    @include breakpoint(lg){
+    @include breakpoint(lg) {
       margin-bottom: 24px;
     }
-    @include breakpoint(xs){
+    @include breakpoint(xs) {
       width: 100%;
       margin-right: 0px;
     }
@@ -224,27 +222,36 @@ padding: {
     border-radius: 8px;
     justify-content: space-between;
     margin-bottom: 10px;
-    @include breakpoint('lg', max){
+    @include breakpoint("lg", max) {
       display: none !important;
     }
     .text {
-        text-transform: uppercase;
-        font-size: 13px;
-        line-height: 24px;
-        letter-spacing: 1px;
-        color: var(--gray-700);
+      text-transform: uppercase;
+      font-size: 13px;
+      line-height: 24px;
+      letter-spacing: 1px;
+      color: var(--gray-700);
     }
     .job {
-        flex:0 1 630px;
+      flex: 0 1 590px;
+      &.job2 {
+        flex: 0 1 375px;
+      }
     }
     .date {
-        flex:0 0 160px;
+      flex: 0 0 250px;
+      &.date2 {
+        flex: 0 0 80px;
+      }
     }
     .status {
-        flex:0 0 100px;
+      flex: 0 0 100px;
     }
     .action {
-        flex:0 0 100px;
+      flex: 0 0 100px;
+      &.action2 {
+        flex: 0 0 200px;
+      }
     }
   }
   .job-vertical {
@@ -253,29 +260,29 @@ padding: {
     justify-content: space-between;
 
     .job-details {
-        display: flex;
-        align-items: center;
+      display: flex;
+      align-items: center;
     }
     .job {
-        flex: 0 1 630px;
+      flex: 0 1 630px;
     }
     .date {
-        flex: 0 0 160px;
+      flex: 0 0 160px;
     }
     .status {
-        flex: 0 0 100px;
+      flex: 0 0 100px;
     }
     .action {
-        flex: 0 0 100px;
+      flex: 0 0 100px;
     }
 
-    @include breakpoint('lg', max){
+    @include breakpoint("lg", max) {
       flex-wrap: wrap;
       // .job-details {
       //   flex: 1 1 100%;
       // }
     }
-    @include breakpoint('xs', max){
+    @include breakpoint("xs", max) {
       .job-details {
         display: flex;
         flex-wrap: wrap;
@@ -320,7 +327,7 @@ ul.recent-activity {
       align-items: center;
       border-radius: 6px;
       @include rt-trs(0.24s);
-    
+
       justify-content: center;
     }
     &:hover {
@@ -345,10 +352,10 @@ ul.recent-activity {
       border-radius: 8px;
     }
   }
-  &.rt-single-icon-box{
-    @include breakpoint(xxl2){
+  &.rt-single-icon-box {
+    @include breakpoint(xxl2) {
       flex-direction: column;
-      .icon-thumb{
+      .icon-thumb {
         margin-right: 0px;
         margin-bottom: 30px;
       }
@@ -364,10 +371,10 @@ ul.recent-activity {
       object-fit: cover;
     }
   }
-  &.rt-single-icon-box{
-    @include breakpoint(xxl2){
+  &.rt-single-icon-box {
+    @include breakpoint(xxl2) {
       flex-direction: column;
-      .icon-thumb{
+      .icon-thumb {
         margin-right: 0px;
         margin-bottom: 30px;
       }
@@ -406,7 +413,7 @@ ul.recent-activity {
   margin-bottom: 32px;
   margin-left: -48px;
   margin-right: -48px;
-  @include breakpoint(xs){
+  @include breakpoint(xs) {
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 0px;
@@ -418,19 +425,19 @@ ul.recent-activity {
   margin-top: 32px;
   margin-bottom: 32px;
 }
-.modal-xxl{
+.modal-xxl {
   max-width: 1320px;
 }
 
-.label-radio{
+.label-radio {
   display: block;
   padding: 20px;
   border-radius: 12px;
   cursor: pointer;
   position: relative;
   z-index: 1;
-  .border{
-    border-color:var(--gray-50) ;
+  .border {
+    border-color: var(--gray-50);
     border-radius: 12px;
     position: absolute;
     left: 0px;
@@ -441,43 +448,43 @@ ul.recent-activity {
     height: 100%;
     @include rt-trs(0.24s);
   }
-   .form-check-input:checked ~ .border{
+  .form-check-input:checked ~ .border {
     border-color: var(--primary-500) !important;
   }
 }
 
-
-.custom-clmn,.custom-clmn2{
+.custom-clmn,
+.custom-clmn2 {
   flex: 0 0 25%;
   max-width: 25%;
-  @include breakpoint(xxl2){
+  @include breakpoint(xxl2) {
     max-width: 33.33%;
     flex: 0 0 33.33%;
   }
-  @include breakpoint(xxl){
+  @include breakpoint(xxl) {
     max-width: 50%;
     flex: 0 0 50%;
   }
-  @include breakpoint(lg){
+  @include breakpoint(lg) {
     max-width: 50%;
     flex: 0 0 50%;
   }
-  @include breakpoint(xs){
+  @include breakpoint(xs) {
     max-width: 100%;
     flex: 0 0 100%;
   }
-  .rt-single-icon-box{
-    .icon-thumb{
-      @include breakpoint(xs){
+  .rt-single-icon-box {
+    .icon-thumb {
+      @include breakpoint(xs) {
         margin-bottom: 20px;
       }
     }
   }
 }
-.sidebar-open-nav{
+.sidebar-open-nav {
   position: absolute;
   right: 0px;
-  top: 50%; 
+  top: 50%;
   transform: translateY(-50%);
   font-size: 27px;
   height: 40px;
@@ -489,46 +496,43 @@ ul.recent-activity {
   border-radius: 8px;
   cursor: pointer;
   display: none;
-  @include breakpoint(xl){
+  @include breakpoint(xl) {
     display: inline-block;
   }
 }
 
-
-
-.action-list{
+.action-list {
   display: flex;
   //justify-content: space-between;
   align-items: center;
-  @include breakpoint(xl){
+  @include breakpoint(xl) {
     flex-direction: column;
   }
-  @include breakpoint(lg){
+  @include breakpoint(lg) {
     margin-top: 15px;
   }
-  > .body-font-3, >div.text{
+  > .body-font-3,
+  > div.text {
     min-width: 161px;
     margin-right: 40px;
-    @include breakpoint(xxl2){
+    @include breakpoint(xxl2) {
       min-width: auto;
       margin-right: 20px;
     }
-    @include breakpoint(xl){
+    @include breakpoint(xl) {
       margin-bottom: 10px;
       margin-right: 0px;
-      &:last-child{
+      &:last-child {
         margin-bottom: 0px;
       }
     }
-    
   }
 }
 
-
-// tootltip css 
-.arrow_box{
-  background: #191F34;
-  border: #191F34;
+// tootltip css
+.arrow_box {
+  background: #191f34;
+  border: #191f34;
   color: #fff;
   padding: 20px;
   font-size: 16px;
@@ -538,26 +542,25 @@ ul.recent-activity {
   font-weight: 500;
   border-radius: 10px;
   position: relative;
- 
 }
 
-.hover-pin{
-  &:hover{
+.hover-pin {
+  &:hover {
     border-color: #ca2127 !important;
   }
 }
-.hover-tw{
-  &:hover{
+.hover-tw {
+  &:hover {
     border-color: #1da1f2 !important;
   }
 }
-.hover-fb{
-  &:hover{
+.hover-fb {
+  &:hover {
     border-color: #06f !important;
   }
 }
-.extra-css{
-  .iconbox-extra{
+.extra-css {
+  .iconbox-extra {
     position: static !important;
     margin: 0px;
   }

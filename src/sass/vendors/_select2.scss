@@ -80,6 +80,9 @@
     z-index: 99999;
   }
 }
+.select2-search--dropdown {
+  display: none;
+}
 
 //breadcrumbs3 components design
 
@@ -98,4 +101,8 @@
 }
 .slick-loading .slick-list {
   background: #fff url("../images/ajax-loader.gif") center center no-repeat;
+}
+
+.top-content {
+  height: auto !important;
 }

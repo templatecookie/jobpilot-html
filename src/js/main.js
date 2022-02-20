@@ -573,6 +573,33 @@ $(window).Scrollax();
       $menu.toggleClass('notification-visiable');
     });
     //end notification
+  
+  // 6. input type changer 
+  function showPassword(input, icon) { 
+  icon.addEventListener('click', (e) => { 
+    // todo 1:  toggle eye show / hide  
+    icon.classList.toggle('ph-eye-slash');
+    // todo 2: input type 
+    input.type === 'password' ? input.type = 'text' : input.type = 'password';
+  })
+  }
+
+  const input =  document.querySelector("#password-hide_show");
+  const inputIcon = document.querySelector(".has-badge i");
+
+  const finputOne = document.querySelector("#password-hide_show1");
+  const ficonOne = document.querySelector(".select-icon__one i");
+
+  
+  // login & registration page
+  if(input || inputIcon) { 
+    showPassword(input,inputIcon)
+  }
+    if (finputOne || ficonOne) { 
+    showPassword(finputOne,ficonOne)
+  }
+ 
+  
 
 
 })(jQuery);

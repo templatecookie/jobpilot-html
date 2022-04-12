@@ -18,7 +18,7 @@
     }
   }
   .navbar {
-    padding: 0;
+    padding: 20px 0;
     transition: 0.3s ease-in-out;
     @include breakpoint(lg) {
       padding: 15px 0;

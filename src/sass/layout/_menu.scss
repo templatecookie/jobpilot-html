@@ -1,3 +1,25 @@
+// header one
+
+// header top
+.header-top {
+    background-color: var(--gray-50);
+}
+.header-top-right{
+    width: 100%;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+a.contact-info{
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--gray-900);
+    margin-right: 24px;
+    img{
+        margin-right: 3px;
+    }
+}
 .main-menu{
     position: relative;
 }
@@ -5,11 +27,11 @@
     list-style: outside none none;
     margin: 0;
     padding: 0;
-    text-align: center;
-    margin-right: -18px;
-    @include breakpoint(xxl){
-        margin-right: -14px;
-    }
+    // text-align: center;
+    // margin-right: -18px;
+    // @include breakpoint(xxl){
+    //     margin-right: -14px;
+    // }
     
     li {
         display: inline-block;
@@ -23,8 +45,14 @@
             font-size: var(--fs-lg-16);
             font-family: $body-font;
             @include rt-trs(.24s);
-            padding: 0 18px;
+            padding: 12px 18px;
             font-weight: 400;
+            &:first-child{
+                padding-left: 0;
+            }
+            &:last-child{
+                padding-right: 0;
+            }
             @include breakpoint(xxl){
                 padding: 0 14px;
             }
@@ -55,7 +83,7 @@
 
 /*change hover color*/
 .main-menu>ul>li>a{
-    line-height: 104px;
+    // line-height: 104px;
     @include breakpoint(lg){
         line-height: 1.9;
     }
@@ -107,6 +135,7 @@
     min-width: 248px;
     transition: all 0.24s ease-in-out;
     padding: 12px;
+    margin-top: 12px;
     border: 1px solid var(--gray-100);
     box-shadow: 0px 12px 32px rgba(25, 31, 51, 0.08);
     @include hidden();
@@ -199,6 +228,7 @@
     min-width: 248px;
     transition: all 0.24s ease-in-out;
     padding: 12px;
+    margin-top: 12px;
     border: 1px solid var(--gray-100);
     box-shadow: 0px 12px 32px rgba(25, 31, 51, 0.08);
     @include hidden();
@@ -336,3 +366,176 @@
     }
     
 }
+
+// language
+.language-picker {
+    position: relative;
+    display: flex;
+    align-items: center;
+    &__form {
+      display: none;
+    }
+  
+    &__button {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      white-space: nowrap;
+      border-radius: 0;
+      text-overflow: ellipsis;
+      transition: all 0.4s;
+      border: none;
+      padding: 0;
+      padding-right: 20px;
+      .icon {
+        height: 10px;
+        width: 13px;
+        background-image: url("../images/svg/arrow-bottom.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 0;
+        transition: all 0.4s;
+        top: 5px;
+        polygon {
+          display: none;
+        }
+      }
+    }
+  
+    &__dropdown {
+      position: absolute;
+      width: 200px;
+      top: 100%;
+      z-index: 4;
+      left: 0;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s 0.2s, opacity 0.2s,
+        -webkit-transform 0.2s ease-out;
+      transition: visibility 0s 0.2s, opacity 0.2s, transform 0.2s ease-out;
+      transition: visibility 0s 0.2s, opacity 0.2s, transform 0.2s ease-out,
+        -webkit-transform 0.2s ease-out;
+      background: #ffffff;
+      border: 1px solid #e5e7e8;
+      box-shadow: 0px 4px 24px rgba(25, 27, 28, 0.16);
+      border-radius: 6px;
+      padding: 8px 0;
+      margin-top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    &__flag {
+      display: block;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center;
+      font-size: 14px;
+      color: var(--gray-600);
+      em {
+        font-style: normal;
+        line-height: 1;
+      }
+      &::before {
+        display: inline-block;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        content: "";
+        height: 16px;
+        width: 24px;
+        margin-right: 12px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+  
+      &--deutsch::before {
+        background-image: url("../images/flag/ger.png");
+      }
+  
+      &--english::before {
+        background-image: url("../images/flag/eng.png");
+      }
+  
+      &--spanish::before {
+        background-image: url("../images/flag/spanish.png");
+      }
+    }
+  
+    &__list {
+      li {
+        line-height: 1;
+        a {
+          padding: 9px 13px;
+          color: black;
+          text-transform: capitalize;
+          transition: all 0.4s;
+          &:hover{
+            color: white;
+            background-color: var(--primary-500);
+          }
+        }
+      }
+    }
+  }
+
+  ul.language-picker__list{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+  }
+  
+  .language-picker__button[aria-expanded="true"] + .language-picker__dropdown {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, 4px);
+    transition: opacity 0.2s, transform 0.2s ease-out;
+  }
+  
+  .language-picker__item[aria-selected="true"] {
+    position: relative;
+    color: white;
+    background-color: var(--primary-500);
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      height: 15px;
+      width: 15px;
+      right: 12px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-image: url("../images/svg/check-white.svg");
+    }
+  }
+  
+  .language-picker__dropdown::before,
+  .language-picker__dropdown::after {
+    content: " ";
+    display: block;
+    border-style: solid;
+    border-width: 0 7px 12px 7px;
+    border-color: transparent;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .language-picker__dropdown::before {
+    top: -0.8em;
+    border-bottom-color: #e6e8ec;
+  }
+  .language-picker__dropdown::after {
+    top: -0.7em;
+    border-bottom-color: #fff;
+  }
+
+  p#language-picker-select-description {
+    display: none;
+}
+
+// country flag

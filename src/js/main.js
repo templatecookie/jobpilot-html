@@ -197,6 +197,8 @@
       dots: true,
       prevArrow: $(".slickprev2"),
       nextArrow: $(".slicknext2"),
+      prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+      nextArrow: '<button class="slide-arrow next-arrow"></button>',
       responsive: [
         {
           breakpoint: 1199,
@@ -643,6 +645,54 @@ $(window).Scrollax();
  
   
 $('#basic').flagStrap();
+
+// top company slider init
+// if ($(".testimonal2-active").length > 0) {
+//   $(".testimonal2-active").slick({
+//     slidesToShow: 1,
+//     infinite: true,
+//     slidesToScroll: 1,
+//     dots: true,
+//     fade: true,
+//     prevArrow: $(".slickprev3"),
+//     nextArrow: $(".slicknext3"),
+//   });
+// }
+
+if ($(".top-company-slider").length > 0) {
+  $(".top-company-slider").slick({
+      dots: false,
+      rows: 2,
+      infinite: true,
+      speed: 800,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows: true,
+      prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+      nextArrow: '<button class="slide-arrow next-arrow"></button>',
+      responsive: [
+        {
+          breakpoint: 1199,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+          },
+        }
+     
+      ],
+    });
+}
 
 
 })(jQuery);

@@ -2,300 +2,93 @@
 
 
 {% block content %}
-{% include "../templates/layout/header-footer/dashboard-headr.html" %}
+{% include "../templates/layout/header-footer/header-home1.html" %}
 
 <div class="dashboard-wrapper">
-  {% include "../templates/components/dashboard/candidate-sidebar.html" %}
-  <div class="d-page-content">
-    <div class="top-feature-content rt-mb-32">
-      <div class="row">
-        <div class="col-xxl-4">
-          <div class="flex-grow-1 position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        {% include "../templates/components/dashboard/candidate-sidebar.html" %}
+      </div>
+      <div class="col-lg-9">
+        <div class="dashboard-right">
+          <div class="dashboard-right-header">
             <div class="left-text">
-              <h5 class="rt-mb-12">Hello, Twitter</h5>
-              <p class="body-font-3 text-gray-400">Here is your daily activities & career opportunities.</p>
+              <h5>Hello, Twitter</h5>
+              <p>Here is your daily activities & career opportunities.</p>
             </div>
             <span class="sidebar-open-nav">
               <i class="ph-list"></i>
             </span>
           </div>
-        </div>
-        <div class="col-xxl-8">
-          <div class="d-flex w-100 flex-wrap flex-lg-nowrap">
-            <div class="single-feature-box">
-              <div class="rt-single-icon-box rt-rounded-12 icon-reverse bgprefix-cover"
-                style="background-image: url(assets/images/all-img/fbg-1.png);">
-                <div class="icon-thumb">
-                  <div class="icon-56 bg-gray-10 f-size-32 text-primary-500">
+          <div class="row">
+            <div class="col-xl-4 col-lg-6 col-md-6">
+              <div class="single-feature-box">
+                  <div class="single-feature-data">
+                    <h6>589</h6>
+                    <p>Applied jobs</p>
+                  </div>
+                  <div class="single-feature-icon">
                     <i class="ph-suitcase-simple"></i>
                   </div>
-                </div>
-                <div class="iconbox-content">
-                  <h6 class="text-gray-10">36</h6>
-                  <div class="body-font-4 text-gray-10">Job Aplied</div>
-                </div>
               </div>
             </div>
-            <div class="single-feature-box">
-              <div class="rt-single-icon-box rt-rounded-12 icon-reverse bgprefix-cover"
-                style="background-image: url(assets/images/all-img/fbg-4.png);">
-                <div class="icon-thumb">
-                  <div class="icon-56 bg-gray-10 f-size-32 text-warning-500">
-                    <i class="ph-star"></i>
+            <div class="col-xl-4 col-lg-6 col-md-6">
+              <div class="single-feature-box">
+                  <div class="single-feature-data">
+                    <h6>238</h6>
+                    <p>Favorite jobs</p>
                   </div>
-                </div>
-                <div class="iconbox-content">
-                  <h6 class="text-gray-10">5.0</h6>
-                  <div class="body-font-4 text-gray-10">Star Rating</div>
-                </div>
+                  <div class="single-feature-icon">
+                    <i class="ph-bookmark-simple"></i>
+                  </div>
               </div>
             </div>
-            <div class="single-feature-box">
-              <div class="rt-single-icon-box rt-rounded-12 icon-reverse bgprefix-cover"
-                style="background-image: url(assets/images/all-img/fbg-3.png);">
-                <div class="icon-thumb">
-                  <div class="icon-56 bg-gray-10 f-size-32 text-danger-500">
-
-                    <i class="ph-chart-bar"></i>
+            <div class="col-xl-4 col-lg-6 col-md-6">
+              <div class="single-feature-box">
+                  <div class="single-feature-data">
+                    <h6>574</h6>
+                    <p>Job Alerts</p>
                   </div>
-                </div>
-                <div class="iconbox-content">
-                  <h6 class="text-gray-10">25K+</h6>
-                  <div class="body-font-4 text-gray-10">Profile View</div>
-                </div>
-              </div>
-            </div>
-            <div class="single-feature-box">
-              <div class="rt-single-icon-box rt-rounded-12 icon-reverse bgprefix-cover"
-                style="background-image: url(assets/images/all-img/fbg-1.png);">
-                <div class="icon-thumb">
-                  <div class="icon-56 bg-gray-10 f-size-32 text-success-500">
-                    <i class="ph-package"></i>
+                  <div class="single-feature-icon">
+                    <i class="ph-bell-ringing"></i>
                   </div>
-                </div>
-                <div class="iconbox-content">
-                  <h6 class="text-gray-10">15</h6>
-                  <div class="body-font-4 text-gray-10">Shortlisted</div>
-                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-
-    </div>
-    <div class="row">
-      <div class="col-lg-6 rt-mb-32">
-        <div class="border border-gray-50 p-24 rt-rounded-12">
-          <div class=" rt-mb-24">
-            <span class="body-font-1 ft-wt-5">Profile View <span class="text-gray-500">(This Week) </span></span>
+          <div class="dashboaed-profile-wrap">
+            <div class="dashboaed-profile-left">
+              <div class="dashboaed-profile-thumb">
+                <img src="assets/images/all-img/candidates-md-2.jpg" alt="">
+              </div>
+              <div class="dashboaed-profile-data">
+                <h6>Your profile editing is not completed.</h6>
+                <p>Complete your profile editing & build your custom Resume</p>
+              </div>
+            </div>
+            <div class="dashboaed-profile-right">
+              <button type="button" class="btn bg-white text-danger-500">
+                <div class="button-content-wrapper ">
+                  <span class="button-icon align-icon-right">
+                    <i class="ph-arrow-right"></i>
+                  </span>
+                  <span class="button-text">
+                    Edit Profile
+                  </span>
+                </div>
+              </button>
+            </div>
           </div>
-          <div id="area-spaline"></div>
+          {% include "../templates/components/employe/db-applied-job.html" %}
         </div>
-      </div>
-      <div class="col-lg-6 rt-mb-32">
-        <div class="border border-gray-50 p-24 rt-rounded-12">
-          <div class="d-flex flex-lg-row flex-column justify-content-lg-between rt-mb-24">
-            <span class="body-font-1 ft-wt-5">Recents Activities</span>
-          </div>
-          <ul class="rt-list recent-activity">
-            <li class="d-block">
-              <div class="rt-single-icon-box">
-                <div class="icon-thumb rt-mr-16 text-danger-500">
-                  <i class="ph-bookmark-simple"></i>
-                </div>
-                <div class="iconbox-content">
-                  <div class="body-font-3 text-gray-700 rt-mb-4">Jim saved your UI/UX Designer</div>
-                  <div class="body-font-4 text-gray-400">11:50 AM</div>
-                </div>
-              </div>
-            </li>
-            <li class="d-block">
-              <div class="rt-single-icon-box">
-                <div class="icon-thumb rt-mr-16 text-primary-500">
-                  <i class="ph-briefcase"></i>
-                </div>
-                <div class="iconbox-content">
-                  <div class="body-font-3 text-gray-700 rt-mb-4">Kevin apply on Front-end developer</div>
-                  <div class="body-font-4 text-gray-400">11:32 AM</div>
-                </div>
-              </div>
-            </li>
-            <li class="d-block">
-              <div class="rt-single-icon-box">
-                <div class="icon-thumb rt-mr-16 text-danger-500">
-                  <i class="ph-bookmark-simple"></i>
-                </div>
-                <div class="iconbox-content">
-                  <div class="body-font-3 text-gray-700 rt-mb-4">Kevin saved on Front-end Developer</div>
-                  <div class="body-font-4 text-gray-400">110:57 PM</div>
-                </div>
-              </div>
-            </li>
-            <li class="d-block">
-              <div class="rt-single-icon-box">
-                <div class="icon-thumb rt-mr-16 text-primary-500">
-                  <i class="ph-briefcase"></i>
-                </div>
-                <div class="iconbox-content">
-                  <div class="body-font-3 text-gray-700 rt-mb-4">Devid apply on Senrio Techical Support Specialist.
-                  </div>
-                  <div class="body-font-4 text-gray-400">11:50 AM</div>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
+        
       </div>
     </div>
-
-    <div class="applyed-job-section">
-      <div class="d-flex  justify-content-between rt-mb-24">
-        <span class="body-font-1 ft-wt-5">Aplied Jobs</span>
-        <a href="#" class="bg-transparent no-padding ">
-          <span class="body-font-3 ft-wt-5 text-gray-500 d-inline-flex">View all <i
-              class="ph-arrow-right f-size-24 rt-ml-8"></i></span>
-        </a>
-      </div>
-      <div class="row">
-        <div class="custom-clmn2 rt-mb-24">
-          <div class="card jobcardStyle1 body-24">
-            <div class="card-body">
-              <div class="rt-single-icon-box">
-                <div class="icon-thumb">
-                  <img src="assets/images/icon/logo-redit-xs.png" alt="" draggable="false">
-                </div>
-                <div class="iconbox-content">
-                  <div class="body-font-2 rt-mb-6"><a href="candidate-details.html"
-                      class="text-gray-900 hover:text-primary-500">Reddit</a>
-                  </div>
-                  <span class="text-gray-400 d-inline-flex body-font-4">
-                    <span class="f-size-18 d-inline-flex rt-mr-8"><i class="ph-map-pin"></i></span>
-                    United Kingdom of Great Britain
-                  </span>
-                </div>
-                <div class="iconbox-extra">
-                  <button class="hoverbg-primary-50 text-primary-500 plain-button icon-button bg-primary-50">
-                    <i class="ph-bookmark-simple f-size-24"></i>
-                  </button>
-                </div>
-              </div>
-              <div class="post-info">
-                <div class="post-main-title"> <a href="job-details.html" class="text-primary-500">Marketing Officer</a>
-                </div>
-                <div class="body-font-4 text-gray-600">
-                  <span class="info-tools">Full-Time</span>
-                  <span class="info-tools has-dot">$30K-$35K</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="custom-clmn2 rt-mb-24">
-          <div class="card jobcardStyle1 body-24">
-            <div class="card-body">
-              <div class="rt-single-icon-box">
-                <div class="icon-thumb">
-                  <img src="assets/images/icon/logo-udemy-xs.png" alt="" draggable="false">
-                </div>
-                <div class="iconbox-content">
-                  <div class="body-font-2 rt-mb-6"><a href="candidate-details.html"
-                      class="text-gray-900 hover:text-primary-500">Udemy</a>
-                  </div>
-                  <span class="text-gray-400 d-inline-flex body-font-4">
-                    <span class="f-size-18 d-inline-flex rt-mr-8"><i class="ph-map-pin"></i></span>
-                    United States
-                  </span>
-                </div>
-                <div class="iconbox-extra">
-                  <button class="hoverbg-primary-50 text-primary-500 plain-button icon-button bg-primary-50">
-                    <i class="ph-bookmark-simple f-size-24"></i>
-                  </button>
-                </div>
-              </div>
-              <div class="post-info">
-                <div class="post-main-title"> <a href="job-details.html" class="text-primary-500">Marketing Manager</a>
-                </div>
-                <div class="body-font-4 text-gray-600">
-                  <span class="info-tools">Full-Time</span>
-                  <span class="info-tools has-dot">$5K-$10K</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="custom-clmn2 rt-mb-24">
-          <div class="card jobcardStyle1 body-24">
-            <div class="card-body">
-              <div class="rt-single-icon-box">
-                <div class="icon-thumb">
-                  <img src="assets/images/icon/logo-twitter-xs.png" alt="" draggable="false">
-                </div>
-                <div class="iconbox-content">
-                  <div class="body-font-2 rt-mb-6"><a href="candidate-details.html"
-                      class="text-gray-900 hover:text-primary-500">Twitter</a>
-                  </div>
-                  <span class="text-gray-400 d-inline-flex body-font-4">
-                    <span class="f-size-18 d-inline-flex rt-mr-8"><i class="ph-map-pin"></i></span>
-                    Canada
-                  </span>
-                </div>
-                <div class="iconbox-extra">
-                  <button class="hoverbg-primary-50 text-primary-500 plain-button icon-button bg-primary-50">
-                    <i class="ph-bookmark-simple f-size-24"></i>
-                  </button>
-                </div>
-              </div>
-              <div class="post-info">
-                <div class="post-main-title"> <a href="job-details.html" class="text-primary-500">Sunior UX
-                    Designer.</a></div>
-                <div class="body-font-4 text-gray-600">
-                  <span class="info-tools">Full-Time</span>
-                  <span class="info-tools has-dot">$50k-80k/month</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="custom-clmn2 rt-mb-24">
-          <div class="card jobcardStyle1 body-24">
-            <div class="card-body">
-              <div class="rt-single-icon-box">
-                <div class="icon-thumb">
-                  <img src="assets/images/icon/logo-figma-xs.png" alt="" draggable="false">
-                </div>
-                <div class="iconbox-content">
-                  <div class="body-font-2 rt-mb-6"><a href="candidate-details.html"
-                      class="text-gray-900 hover:text-primary-500">Figma</a>
-                  </div>
-                  <span class="text-gray-400 d-inline-flex body-font-4">
-                    <span class="f-size-18 d-inline-flex rt-mr-8"><i class="ph-map-pin"></i></span>
-                    Canada
-                  </span>
-                </div>
-                <div class="iconbox-extra">
-                  <button class="hoverbg-primary-50 text-primary-500 plain-button icon-button bg-primary-50">
-                    <i class="ph-bookmark-simple f-size-24"></i>
-                  </button>
-                </div>
-              </div>
-              <div class="post-info">
-                <div class="post-main-title"> <a href="job-details.html" class="text-primary-500">UI/UX Designer</a>
-                </div>
-                <div class="body-font-4 text-gray-600">
-                  <span class="info-tools">Full-Time</span>
-                  <span class="info-tools has-dot">$50k-80k/month</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    {% include "../templates/layout/header-footer/dashboard-footer.html" %}
-  </div>
+    
+  
+</div>
+{% include "../templates/layout/header-footer/dashboard-footer.html" %}
+  
 </div>
 
 

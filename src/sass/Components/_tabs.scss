@@ -1,0 +1,24 @@
+.nav{
+  border-bottom: 1px solid var(--gray-100);
+  
+}
+.nav-pills .nav-link{
+  font-weight: 500;
+  padding: 12px 20px;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--gray-500);
+  svg{
+    margin-right: 5px;
+  }
+  path{
+    stroke: var(--gray-500);
+  }
+  &.active{
+    color: var(--primary-500);
+    background-color: transparent !important;
+    path{
+      stroke: var(--primary-500);
+    }
+  }
+}

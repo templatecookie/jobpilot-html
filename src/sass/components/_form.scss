@@ -107,7 +107,7 @@ select,
   &.has-icon2 {
     #{$all-text-inputs},
     .form-control {
-      padding-left: 52px;
+      padding-left: 55px;
     }
   }
 }
@@ -385,9 +385,9 @@ select,
 //custom checkbox
 .from-chekbox-custom {
   .form-check-input {
-    height: 22px;
-    width: 22px;
-    border-color: #c5c9d6;
+    height: 20px;
+    width: 20px;
+    border-color: var(--primary-200);
     border-radius: 3px;
     margin-right: 8px;
     &:focus {
@@ -401,6 +401,11 @@ select,
   }
   label {
     vertical-align: middle;
+    color: var(--gray-500);
+  }
+
+   input:checked + label{
+    color: var(--gray-900);
   }
 }
 .from-radio-custom {

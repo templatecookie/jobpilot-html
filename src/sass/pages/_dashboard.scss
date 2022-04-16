@@ -300,7 +300,11 @@
 //   }
 // }
 
-table.db-job-card-table{
+.db-job-card-table{
+  @include breakpoint("xl", max) {
+    overflow-x: scroll;
+  }
+  table{
     width: 100%;
     thead{
       tr{
@@ -308,16 +312,47 @@ table.db-job-card-table{
           font-weight: 400;
           font-size: 12px;
           padding: 10px 20px;
-          border-radius: 4px;
+          white-space: nowrap;
           color: var(--gray-700);
           background-color: var(--gray-50);
+          &:first-child{
+            border-radius: 4px 0 0 4px;
+          }
+          &:last-child{
+            padding-left: 52px;
+            border-radius: 0 4px 4px 0;
+          }
         }
       }
     }
     tbody{
       tr{
+        transition: all 0.4s;
+        border: 1px solid #fff;
+        // border-bottom: 1px solid var(--gray-100);
+        &:last-child{
+          border-bottom: 1px solid transparent;
+        }
+        &:hover .btn{
+          color: white!important;
+          background-color: var(--primary-500)!important;
+        }
+        &:hover .btn-icon{
+          background-color: var(--gray-50)!important;
+        }
+        &:hover{
+          border: 1px solid var(--primary-500);
+        }
         td{
           padding: 20px;
+          white-space: nowrap;
+          
+          &:first-child{
+            border-radius: 8px 0 0 8px;
+          }
+          &:last-child{
+            border-radius: 0 8px 8px 0;
+          }
           .rt-single-icon-box{
             .icon-thumb{
               width: 56px;
@@ -325,9 +360,15 @@ table.db-job-card-table{
               margin-right: 16px;
             }
           }
+          font-weight: 400;
+          font-size: 14px;
+          color: var(--gray-600);
         }
       }
     }
+  }
+    
+    
 }
 
 

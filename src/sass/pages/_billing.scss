@@ -1,0 +1,282 @@
+.dashboard-right{
+    .plan-card{
+        background: #ffffff;
+        border: 1px solid #E4E5E8;
+        box-sizing: border-box;
+        border-radius: 8px;
+        padding: 24px;
+        margin-bottom: 20px;
+        .subtitle{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #18191C;
+            margin-bottom: 20px;
+        }
+        .title{
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 1.25;
+            color: #18191C;
+            margin-bottom: 12px;
+        }
+        .short-desc{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #767F8C;
+            margin-bottom: 32px;
+        }
+        .btn-group{
+            display: flex;
+            gap: 12px;
+            .btn-primary{
+                background-color: transparent;
+                border: none;
+                color: #767F8C;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 1.5;
+                text-transform: capitalize;
+                &:hover{
+                    background: #F1F2F4;
+                    border-radius: 3px;
+                    color: #0A65CC;
+                }
+            }
+        }
+    }
+    .invoice-card{
+        background: #ffffff;
+        border: 1px solid #E4E5E8;
+        box-sizing: border-box;
+        border-radius: 8px;
+        padding: 24px;
+        margin-bottom: 20px;
+        @media (min-width: 992px){
+            margin-bottom: 0px;
+        }
+        .subtitle{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #18191C;
+            margin-bottom: 20px;
+        }
+        .title{
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 1.25;
+            color: #0A65CC;;
+            margin-bottom: 12px;
+        }
+        .invoice-info{
+            margin-bottom: 20px;
+            .current-date{
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 1.56;
+                color: #18191C;
+                margin-bottom: 4px;
+            }
+            .started-date{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 1.43;
+                color: #767F8C;
+                margin-bottom: 8px;
+                span{
+                    color: #18191C;
+                }
+            }
+            .text{
+                margin-bottom: 0px;
+            }
+        }
+        .paynow-btn{
+            .btn-primary{
+                display: block;
+                width: 100%;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 1.5;
+                text-transform: capitalize;
+                &:hover{
+                    background: #F1F2F4;
+                    border-radius: 3px;
+                    color: #0A65CC;
+                    path{
+                        stroke: #0A65CC;
+                    }
+                }
+            }
+        }
+    }
+    .benefits-card{
+        background: #ffffff;
+        border: 1px solid #E4E5E8;
+        box-sizing: border-box;
+        border-radius: 8px;
+        padding: 24px;
+        margin-bottom: 20px;
+        .title{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #18191C;
+            margin-bottom: 8px;
+        }
+        .text{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.43;
+            margin-bottom: 24px;
+        }
+        .benefit-list{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            column-count: 2;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #E4E5E8; 
+            margin-bottom: 24px;           
+            li{
+                span{
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 1.43;
+                    padding-left: 8px;
+                }
+            }
+        }
+        .remaining{
+            .title{
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 1.5;
+                color: #767F8C;
+            }            
+            .remaining-list{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            column-count: 2;
+            padding-bottom: 24px;
+            li{
+                span{
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 1.43;
+                    padding-left: 8px;
+                }
+            }
+        }
+        }
+    }
+    .payment-card{
+        background: #ffffff;
+        border: 1px solid #E4E5E8;
+        box-sizing: border-box;
+        border-radius: 8px;
+        padding: 24px;
+        .title-edit-wrapper{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            .title{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.5;
+                color: #18191C;
+            }
+            .edit{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 1.43;
+                color: #767F8C;
+            }
+        }
+        .payment-card-info{
+            display: flex;
+            border-bottom: 1px solid #E4E5E8;
+            padding-bottom: 24px;
+            margin-bottom: 24px;
+            .logo{
+                flex: 0 0 20%;
+            }
+            .name{
+                flex: 0 0 60%;
+                .title{
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 1.5;
+                    color: #767F8C;
+                }
+                .account-owner-name{
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    color: #18191C;
+                }
+            }
+            .date{
+                flex: 0 0 20%;
+                .title{
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #767F8C;
+                }
+                .expire-date{
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    color: #18191C;
+                }
+            }
+        }
+        
+        .pin-code{
+            h2{
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 1.33;
+                color: #18191C;
+            }
+        }
+    }
+    .invoices-table{
+        background: #ffffff;
+        border: 1px solid #E4E5E8;
+        box-sizing: border-box;
+        border-radius: 8px;
+        padding: 24px;
+        .title{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #18191C;
+        }
+        .table-wrapper{
+            overflow-x: auto;
+            .table{
+            
+            .table-head{
+                background: #F1F2F4;
+                tr,th{
+                    border-bottom: none;
+                }
+            }
+            tr{
+                padding: 16px 24px;
+            }
+            td{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 1.43;
+                color: #474C54;
+            }
+        }
+        }
+    }
+}

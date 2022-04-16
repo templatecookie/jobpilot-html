@@ -256,27 +256,44 @@
             font-size: 16px;
             line-height: 1.5;
             color: #18191C;
+            margin-bottom: 16px;
         }
         .table-wrapper{
-            overflow-x: auto;
-            .table{
-            
-            .table-head{
+            @media (max-width: 1200px){
+                overflow-x: scroll;
+            }
+            table{
+                width: 100%;
+                thead{
                 background: #F1F2F4;
-                tr,th{
-                    border-bottom: none;
+                    th{
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 1.5;
+                        color: #5E6670;
+                        white-space: nowrap;
+                        padding: 8px 24px;
+                    }
+                }
+            
+                tbody{
+                    tr{
+                        border-bottom: 1px solid #E4E5E8;
+                    }
+                    td{
+                        padding:8px 24px;
+                        white-space: nowrap;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 1.43;
+                        color: #474C54;
+                        &:first-child{
+                            font-weight: 500;
+                            color: #18191C;
+                        }
+                    }
                 }
             }
-            tr{
-                padding: 16px 24px;
-            }
-            td{
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 1.43;
-                color: #474C54;
-            }
-        }
         }
     }
 }

@@ -214,91 +214,124 @@
 }
 
 // Dashboard Card
-.db-job-card {
-  border-color: transparent;
-  border-bottom: 1px solid #edeff5;
-  border-radius: inherit;
-  &:last-child {
-    border-bottom: none !important;
-  }
-  &:hover {
-    border-radius: 12px;
-  }
-  &-header {
-    background-color: var(--gray-20);
-    display: flex;
-    padding: 12px 32px;
-    border-radius: 8px;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    @include breakpoint("lg", max) {
-      display: none !important;
-    }
-    .text {
-      text-transform: uppercase;
-      font-size: 13px;
-      line-height: 24px;
-      letter-spacing: 1px;
-      color: var(--gray-700);
-    }
-    .job {
-      flex: 0 1 590px;
-      &.job2 {
-        flex: 0 1 375px;
-      }
-    }
-    .date {
-      flex: 0 0 250px;
-      &.date2 {
-        flex: 0 0 80px;
-      }
-    }
-    .status {
-      flex: 0 0 100px;
-    }
-    .action {
-      flex: 0 0 100px;
-      &.action2 {
-        flex: 0 0 200px;
-      }
-    }
-  }
-  .job-vertical {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+// .db-job-card {
+//   border-color: transparent;
+//   border-bottom: 1px solid #edeff5;
+//   border-radius: inherit;
+//   &:last-child {
+//     border-bottom: none !important;
+//   }
+//   &:hover {
+//     border-radius: 12px;
+//   }
+//   &-header {
+//     background-color: var(--gray-20);
+//     display: flex;
+//     padding: 12px 32px;
+//     border-radius: 8px;
+//     justify-content: space-between;
+//     margin-bottom: 10px;
+//     @include breakpoint("lg", max) {
+//       display: none !important;
+//     }
+//     .text {
+//       text-transform: uppercase;
+//       font-size: 13px;
+//       line-height: 24px;
+//       letter-spacing: 1px;
+//       color: var(--gray-700);
+//     }
+//     .job {
+//       flex: 0 1 590px;
+//       &.job2 {
+//         flex: 0 1 375px;
+//       }
+//     }
+//     .date {
+//       flex: 0 0 250px;
+//       &.date2 {
+//         flex: 0 0 80px;
+//       }
+//     }
+//     .status {
+//       flex: 0 0 100px;
+//     }
+//     .action {
+//       flex: 0 0 100px;
+//       &.action2 {
+//         flex: 0 0 200px;
+//       }
+//     }
+//   }
+//   .job-vertical {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
 
-    .job-details {
-      display: flex;
-      align-items: center;
-    }
-    .job {
-      flex: 0 1 630px;
-    }
-    .date {
-      flex: 0 0 160px;
-    }
-    .status {
-      flex: 0 0 100px;
-    }
-    .action {
-      flex: 0 0 100px;
-    }
+//     .job-details {
+//       display: flex;
+//       align-items: center;
+//     }
+//     .job {
+//       flex: 0 1 630px;
+//     }
+//     .date {
+//       flex: 0 0 160px;
+//     }
+//     .status {
+//       flex: 0 0 100px;
+//     }
+//     .action {
+//       flex: 0 0 100px;
+//     }
 
-    @include breakpoint("lg", max) {
-      flex-wrap: wrap;
-      // .job-details {
-      //   flex: 1 1 100%;
-      // }
-    }
-    @include breakpoint("xs", max) {
-      .job-details {
-        display: flex;
-        flex-wrap: wrap;
+//     @include breakpoint("lg", max) {
+//       flex-wrap: wrap;
+//       // .job-details {
+//       //   flex: 1 1 100%;
+//       // }
+//     }
+//     @include breakpoint("xs", max) {
+//       .job-details {
+//         display: flex;
+//         flex-wrap: wrap;
+//       }
+//     }
+//   }
+// }
+
+table.db-job-card-table{
+    width: 100%;
+    thead{
+      tr{
+        th{
+          font-weight: 400;
+          font-size: 12px;
+          padding: 10px 20px;
+          border-radius: 4px;
+          color: var(--gray-700);
+          background-color: var(--gray-50);
+        }
       }
     }
-  }
+    tbody{
+      tr{
+        td{
+          padding: 20px;
+          .rt-single-icon-box{
+            .icon-thumb{
+              width: 56px;
+              height: 56px;
+              margin-right: 16px;
+            }
+          }
+        }
+      }
+    }
 }
+
+
+
 //
 .candidate_card_lists {
   display: flex;

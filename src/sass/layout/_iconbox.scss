@@ -96,7 +96,7 @@
       }
     }
     @include breakpoint('md', max){
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         .iconbox-extra {
             margin-top: 10px;
         }

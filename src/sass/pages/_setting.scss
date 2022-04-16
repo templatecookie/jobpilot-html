@@ -1,0 +1,24 @@
+.dashboard-account-setting-item{
+  padding: 30px 0;
+  border-bottom: 1px solid var(--gray-100);
+  &:last-child{
+    border: none;
+  }
+  h6{
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  h4{
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--gray-900);
+  }
+  p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--gray-600);
+    margin-bottom: 24px;
+  }
+}

@@ -328,10 +328,9 @@
     tbody{
       tr{
         transition: all 0.4s;
-        border: 1px solid #fff;
-        // border-bottom: 1px solid var(--gray-100);
-        &:last-child{
-          border-bottom: 1px solid transparent;
+        border-top: 1px solid var(--gray-100);
+        &:first-child{
+          border-top: 1px solid transparent;
         }
         &:hover .btn{
           color: white!important;
@@ -342,6 +341,7 @@
         }
         &:hover{
           border: 1px solid var(--primary-500);
+          box-shadow: 0px 12px 48px rgba(0, 44, 109, 0.1);
         }
         td{
           padding: 20px;

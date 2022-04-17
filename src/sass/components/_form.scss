@@ -112,6 +112,27 @@ select,
   }
 }
 
+.input-icon{
+  position: relative;
+  input{
+    padding-left: 54px;
+  }
+  svg{
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+}
+
+.flag-option-icon{
+  position: relative;
+  img{
+    position: absolute;
+  }
+}
+
 #{$all-text-inputs-focus},
 .form-control:focus {
   box-shadow: none !important;

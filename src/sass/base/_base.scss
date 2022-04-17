@@ -233,3 +233,6 @@ textarea {
     page-break-after: avoid;
   }
 }
+select{
+  -webkit-appearance: listbox !important;
+}

@@ -22,3 +22,38 @@
     margin-bottom: 24px;
   }
 }
+.dashboard-contact{
+  .contact-form{
+    h6{
+      margin-top: 32px;
+      margin-bottom: 18px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.56;
+      color: #18191C;
+    }
+    .group-form{
+      margin-bottom: 18px;
+      label{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.43;
+        color: #18191C;
+        margin-bottom: 8px;
+      }
+      .d-flex{
+        border-radius: 5px;
+        select{
+          width: 30%;
+          border-radius: 5px 0px 0px 5px;
+        }
+        input{
+          border-radius: 0px 5px 5px 0px;
+        }
+      }
+    }
+    button{
+        margin-top: 14px;
+    }
+  }
+}

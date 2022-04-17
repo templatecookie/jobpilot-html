@@ -61,10 +61,12 @@
               </li>
             </ul>
             <div class="tab-content" id="pills-tabContent">
-              <div class="tab-pane fade" id="pills-personal" role="tabpanel" aria-labelledby="pills-personal-tab"></div>
-              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">2</div>
-              <div class="tab-pane fade" id="pills-social" role="tabpanel" aria-labelledby="pills-social-tab">3</div>
-              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">4.</div>
+              <div class="tab-pane fade" id="pills-personal" role="tabpanel" aria-labelledby="pills-personal-tab">1.</div>
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">2.</div>
+              <div class="tab-pane fade" id="pills-social" role="tabpanel" aria-labelledby="pills-social-tab">3.</div>
+              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                {% include "../templates/components/dashboard/contact-tab.html" %}
+              </div>
               <div class="tab-pane fade show active" id="pills-setting" role="tabpanel" aria-labelledby="pills-setting-tab">
                 <div class="dashboard-account-setting-item">
                   <h6>Notification</h6>

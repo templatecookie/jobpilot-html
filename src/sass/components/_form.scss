@@ -126,13 +126,6 @@ select,
   }
 }
 
-.flag-option-icon{
-  position: relative;
-  img{
-    position: absolute;
-  }
-}
-
 #{$all-text-inputs-focus},
 .form-control:focus {
   box-shadow: none !important;

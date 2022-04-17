@@ -1,119 +1,87 @@
 <div class="dashboard-contact">
-                  <form action="" class="contact-form">
-                    <h6>Locations</h6>
-                    <div class="row group-form">
-                      <div class="col">
-                        <label for="country">Country</label>
-                        <select name="" id="country">
-                          <option>Bangladesh</option>
-                          <option>India</option>
-                          <option>Pakistan</option>
-                        </select>
-                      </div>
-                      <div class="col">
-                        <label for="state">State</label>
-                        <select name="" id="state">
-                          <option>Dhaka</option>
-                          <option>Rajshahi</option>
-                          <option>Barishal</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="row group-form">
-                      <div class="col">
-                        <label for="city">City</label>
-                        <select name="" id="city">
-                          <option>Dhaka</option>
-                          <option>Gajipur</option>
-                          <option>Narayanganj</option>
-                        </select>
-                      </div>
-                      <div class="col">
-                        <label for="zipcode">Zip Code</label>
-                        <input type="text" id="zipcode" pattern="[0-9]{5}">
-                      </div>
-                    </div>
-                    <div class="row group-form">
-                      <div class="col">
-                        <label for="address">Address</label>
-                        <input type="text" name="" id="address">
-                      </div>
-                    </div>
-                    <h6>Phone & Email</h6>
-                    <div class="row group-form">
-                      <div class="col">
-                        <label for="country">Phone</label>
-                        <div class="d-flex">
-                          <select name="" id="phone">
-                            <div class="flag-option-icon">
-                              <option>+880</option>
-                              <img src="assets/images/flag/bd.png" alt="">
-                            </div>
-                            <div class="flag-option-icon">
-                              <option>+880</option>
-                              <img src="assets/images/flag/bd.png" alt="">
-                            </div>
-                            <div class="flag-option-icon">
-                              <option>+880</option>
-                              <img src="assets/images/flag/bd.png" alt="">
-                            </div>
-                          </select>
-                            <input class="tel-input" type="tel" name="" id="" placeholder="Phone Number ..">
-                        </div>
-                      </div>
-                      <div class="col">
-                        <label for="sphone">Secondary Phone</label>
-                        <div class="d-flex">
-                          <select name="" id="sphone">
-                            <div class="flag-option-icon">
-                              <option>+880</option>
-                              <img src="assets/images/flag/bd.png" alt="">
-                            </div>
-                            <div class="flag-option-icon">
-                              <option>+880</option>
-                              <img src="assets/images/flag/bd.png" alt="">
-                            </div>
-                            <div class="flag-option-icon">
-                              <option>+880</option>
-                              <img src="assets/images/flag/bd.png" alt="">
-                            </div>
-                          </select>
-                            <input class="tel-input" type="tel" name="" id="" placeholder="Phone Number ..">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row group-form">
-                      <div class="col">
-                        <label for="email">Email</label>
-                        <div class="input-icon">
-                          <input type="email" name="" id="email" placeholder="Email Address" class="form-control">
-                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21 5.25L12 13.5L3 5.25" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M3 5.25H21V18C21 18.1989 20.921 18.3897 20.7803 18.5303C20.6397 18.671 20.4489 18.75 20.25 18.75H3.75C3.55109 18.75 3.36032 18.671 3.21967 18.5303C3.07902 18.3897 3 18.1989 3 18V5.25Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M10.3628 12L3.23047 18.538" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M20.7692 18.5381L13.6367 12" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+    <form action="" class="contact-form">
+        <h6>Locations</h6>
+        <div class="row group-form">
+          <div class="col">
+            <label for="country">Country</label>
+            <select name="" id="country">
+              <option>Bangladesh</option>
+              <option>India</option>
+              <option>Pakistan</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="state">State</label>
+            <select name="" id="state">
+              <option>Dhaka</option>
+              <option>Rajshahi</option>
+              <option>Barishal</option>
+            </select>
+          </div>
+        </div>
+        <div class="row group-form">
+          <div class="col">
+            <label for="city">City</label>
+            <select name="" id="city">
+              <option>Dhaka</option>
+              <option>Gajipur</option>
+              <option>Narayanganj</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="zipcode">Zip Code</label>
+            <input type="text" id="zipcode" pattern="[0-9]{5}">
+          </div>
+        </div>
+        <div class="row group-form">
+          <div class="col">
+            <label for="address">Address</label>
+            <input type="text" name="" id="address">
+          </div>
+        </div>
+        <h6>Phone & Email</h6>
+        <div class="row group-form">
+          <div class="col">
+            <label for="phone">Phone</label>
+            <input class="phonecode" name="phone" type="text" id="phone"/>
+          </div>
+          <div class="col">
+            <label for="sphone">Secondary Phone</label>
+            <input class="phonecode" name="sphone" type="text" id="phone2"/>
+          </div>
+        </div>
+        <div class="row group-form">
+          <div class="col">
+            <label for="email">Email</label>
+            <div class="input-icon">
+              <input type="email" name="" id="email" placeholder="Email Address" class="form-control">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 5.25L12 13.5L3 5.25" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 5.25H21V18C21 18.1989 20.921 18.3897 20.7803 18.5303C20.6397 18.671 20.4489 18.75 20.25 18.75H3.75C3.55109 18.75 3.36032 18.671 3.21967 18.5303C3.07902 18.3897 3 18.1989 3 18V5.25Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10.3628 12L3.23047 18.538" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20.7692 18.5381L13.6367 12" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
 
-                        </div>
-                      </div>
-                      <div class="col">
-                        <label for="semail">Secondary Email</label>
-                        <div class="input-icon">
-                          <input type="email" name="" id="email" placeholder="Email Address" class="form-control">
-                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21 5.25L12 13.5L3 5.25" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M3 5.25H21V18C21 18.1989 20.921 18.3897 20.7803 18.5303C20.6397 18.671 20.4489 18.75 20.25 18.75H3.75C3.55109 18.75 3.36032 18.671 3.21967 18.5303C3.07902 18.3897 3 18.1989 3 18V5.25Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M10.3628 12L3.23047 18.538" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M20.7692 18.5381L13.6367 12" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+        </div>
+        </div>
+        <div class="col">
+          <label for="semail">Secondary Email</label>
+          <div class="input-icon">
+            <input type="email" name="" id="email" placeholder="Email Address" class="form-control">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 5.25L12 13.5L3 5.25" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3 5.25H21V18C21 18.1989 20.921 18.3897 20.7803 18.5303C20.6397 18.671 20.4489 18.75 20.25 18.75H3.75C3.55109 18.75 3.36032 18.671 3.21967 18.5303C3.07902 18.3897 3 18.1989 3 18V5.25Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10.3628 12L3.23047 18.538" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20.7692 18.5381L13.6367 12" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
 
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <button type="button" class="btn btn-primary">
-                        Save Changes
-                      </button>
-                    </div>
-                  </form>
-                </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button type="button" class="btn btn-primary">
+          Save Changes
+        </button>
+      </div>
+    </form>
+</div>

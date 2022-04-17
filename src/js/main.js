@@ -696,3 +696,12 @@ if ($(".top-company-slider").length > 0) {
 
 
 })(jQuery);
+
+var input = document.querySelector("#phone");
+window.intlTelInput(input, {
+    separateDialCode: true,
+});
+var input2 = document.querySelector("#phone2");
+window.intlTelInput(input2, {
+    separateDialCode: true,
+});

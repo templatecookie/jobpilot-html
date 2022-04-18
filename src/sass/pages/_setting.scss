@@ -1,6 +1,9 @@
+// dashboard setting acc tab
 .dashboard-account-setting-item{
+  &.setting-border{
+    border-bottom: 1px solid var(--gray-100);
+  }
   padding: 30px 0;
-  border-bottom: 1px solid var(--gray-100);
   &:last-child{
     border: none;
   }
@@ -22,36 +25,220 @@
     margin-bottom: 24px;
   }
 }
-.dashboard-contact{
-  .contact-form{
-    h6{
-      margin-top: 32px;
-      margin-bottom: 18px;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 1.56;
-      color: #18191C;
+
+// dashboard contact tab
+
+.iti{
+  display: block;
+}
+.iti--separate-dial-code .iti__selected-flag{
+  background-color: transparent;
+  border: 1px solid var(--gray-50);
+  padding: 0px 24px;
+}
+
+// dashboard profile date picker
+div#ui-datepicker-div{
+  padding: 20px;
+  z-index: 999!important;
+  box-shadow: 0px 12px 48px rgba(0, 44, 109, 0.1);
+  .ui-datepicker-calendar tbody, .ui-datepicker-calendar thead {
+    background: none!important;
+  }
+}
+
+.ui-datepicker {
+  background: #ffffff;
+  border-radius: 15px;
+}
+.ui-datepicker-header {
+  height: 60px;
+  line-height: 50px;
+  background: #fff;
+}
+.ui-datepicker-prev,
+.ui-datepicker-next {
+  width: 20px;
+  height: 20px;
+  text-indent: 9999px;
+  border-radius: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  margin-top: 12px;
+}
+.ui-datepicker-prev {
+  float: left;
+  margin-left: 12px;
+}
+.ui-datepicker-prev:after {
+  transform: rotate(45deg);
+  margin: -43px 0px 0px 8px;
+}
+.ui-datepicker-next {
+  float: right;
+  margin-right: 12px;
+}
+.ui-datepicker-next:after {
+  transform: rotate(-135deg);
+  margin: -43px 0px 0px 6px;
+}
+.ui-datepicker-prev:after,
+.ui-datepicker-next:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-left: 2px solid var(--primary-500);
+  border-bottom: 2px solid var(--primary-500);
+}
+.ui-datepicker-prev:hover,
+.ui-datepicker-next:hover,
+.ui-datepicker-prev:hover:after,
+.ui-datepicker-next:hover:after {
+  border-color: #333333;
+}
+.ui-datepicker-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--gray-900);
+}
+.ui-datepicker-calendar {
+  width: 100%;
+  text-align: center;
+}
+.ui-datepicker-calendar thead tr th span {
+  display: block;
+  width: 40px;
+  color: var(--gray-900);
+  margin-bottom: 5px;
+  font-size: 16px;
+  @media (max-width: 575px) {
+    width: 30px;
+  }
+}
+.ui-state-default {
+  display: block;
+  text-decoration: none;
+  color: #333333;
+  line-height: 40px;
+  font-size: 16px;
+}
+.ui-state-default:hover {
+  color: #ffffff;
+  background:var(--primary-500);
+  border-radius:50px;
+  transition: all 0.25s cubic-bezier(0.7, -0.12, 0.2, 1.12);
+}
+.ui-state-highlight {
+  color: #ffffff;
+  background-color:var(--primary-500);
+  border-radius:5px;
+}
+
+.ui-state-active {
+  color: #ffffff;
+  background-color:var(--primary-500);
+  border-radius:50px;
+}
+.ui-datepicker-unselectable .ui-state-default {
+  color: #eee;
+  border: 2px solid transparent;
+}
+
+.icon {
+    margin-left: -30px;
+    margin-top: -26px;
+    position: relative;
+    color: #31639c;
+    font-size:20px;
+}
+
+// setting personal
+.personal-profile-picture {
+  &-wrap{
+    margin-top: 32px;
+  }
+  &-item{
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    justify-content: space-between;
+    @media (max-width: 767px) {
+      display: block;
+      text-align: center;
     }
-    .group-form{
-      margin-bottom: 18px;
-      label{
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.43;
-        color: #18191C;
-        margin-bottom: 8px;
-      }
-      .iti{
-        display: block;
-      }
-      .iti--separate-dial-code .iti__selected-flag{
-        background-color: transparent;
-        border: 1px solid var(--gray-50);
-        padding: 0px 24px;
-      }
-    }
-    button{
-        margin-top: 14px;
+    background: rgba(241, 242, 244, 0.6);
+    &:last-child{
+      margin-bottom: 0;
     }
   }
+  display: flex;
+  align-items: center;
+  @media (max-width: 767px) {
+    display: block;
+  }
+  &-thumb{
+    width: 112px;
+    height: 112px;
+    display: flex;
+    flex-shrink: 0;
+    margin-right: 24px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: all 0.4s;
+    background-color: #C8CCD1;
+    border: 1px solid transparent;
+    @media (max-width: 767px) {
+      margin: 0 auto 20px;
+    }
+    path{
+      transition: all 0.4s;
+      stroke: var(--gray-900);
+    }
+    &:hover{
+      background-color: white;
+      border: 1px solid var(--gray-100);
+    }
+    &:hover path{
+      stroke: var(--primary-500);
+    }
+  }
+  &-data{
+    margin-right: 225px;
+    @media (max-width: 1400px) {
+      margin-right: 60px;
+    }
+    @media (max-width: 767px) {
+      margin: 0;
+    }
+      h4{
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 500;
+        margin-bottom: 12px;
+        color: var(--gray-900);
+      }
+      p{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--gray-500);
+      }
+    }
+  
+  
+}
+
+input[type="file"]{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
 }

@@ -1,0 +1,209 @@
+.temp-body{
+    background: rgba(0,0,0,0.6);
+    overflow: hidden;
+}
+.modal-wrapper{
+    max-width: 1024px;
+    margin: 20px auto;
+    padding: 48px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    .row{
+        margin-bottom: 40px;
+    }
+    .col-lg-8{
+        padding-right: 64px;
+    }
+    .candidate-profile{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        &-img{
+            img{
+                width: 80px;
+                height: 80px;
+                border-radius: 1000px;
+            }
+        }
+        &-info{
+            .name{
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 32px;
+                color: #18191C;
+            }
+            .designation{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #767F8C;
+            }
+        }
+    }
+    .biography{
+        .title{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 18px;
+            color: #18191C;
+            margin-bottom: 24px;
+        }
+        .text{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #5E6670;
+        }
+    }
+    .devider{
+        height: 1px;
+        background: #E4E5E8;
+        margin: 32px 0;
+    }
+    .cover-letter{
+        .title{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1;
+            color: #18191C;
+            margin-bottom: 24px;
+        }
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #5E6670;
+        }
+    }
+    .social-links{
+        .title{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.43;
+            color: #18191C;
+        }
+        .social-media{
+            display: grid;
+	        grid-template-columns: 1fr 1fr 1fr;
+            justify-content: center;
+            grid-gap: 12px;
+            margin-bottom: 24px;
+            @media (min-width: 768px){
+                grid-template-columns: repeat(6, 1fr);
+            }
+            @media (min-width: 992px){
+                margin-bottom: 0px;
+            }
+            a{
+                &:hover{
+                    svg{
+                        path{
+                            fill: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sidebar-widget{
+        border: 1.5px solid #E7F0FA;
+        box-sizing: border-box;
+        border-radius: 8px;
+        padding: 24px;
+        margin-bottom: 24px;
+        .row{
+            margin-bottom: 0px;
+        }
+        .icon-box{
+            margin-bottom: 24px;
+            .icon{
+                margin-bottom: 12px;
+            }
+            .sub-title{
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 1.5;
+                text-transform: uppercase;
+                color: #767F8C;
+            }
+            .title{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 1.43;
+                color: #18191C;
+            }
+        }
+        .download-resume{
+            .title{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: #18191C;
+            }
+            .resume-file{
+                align-items: center;
+                .file-info{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    .file-title{
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 1.5;
+                        color: #767F8C;
+                        margin-bottom: 4px;
+                    }  
+                    .file-formet{
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 1.43;
+                        color: #18191C;
+                        margin-bottom: 0px;
+                    }              
+                }
+            }
+        }
+        .contact{
+            .title{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.5;
+                color: #18191C;
+            }
+            .contact-icon-box{
+                display: flex;
+                gap: 16px;
+                flex-direction: column;
+                @media (min-width: 525px){
+                    flex-direction: row;
+                }
+                .info{
+                    .subtitle{
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 1.5;
+                        text-transform: uppercase;
+                        color: #767F8C;
+                    }
+                    .title{
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 1.43;
+                        color: #18191C;
+                    }
+                }
+            }
+            .devider{
+                margin: 20px 0;
+            }
+            .address{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 1.43;
+                color: #5E6670;
+                margin-bottom: 0px;
+            }
+        }
+    }
+    
+}

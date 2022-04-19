@@ -1,10 +1,17 @@
 {% extends "layout/layout.html" %}
 
-
 {% block content %}
-{% include "../templates/layout/header-footer/header-candidates.html" %}
+{% include "../templates/layout/header-footer/header-home1.html" %}
+
+{% set page_title = "Job Details" %}
+{% set current_page = "Job Details" %}
+
+
+{% include "../templates/components/breadcrumbs/breadcrumbs.html" %}
+
+
 <!--Breadcrumb Area-->
-<div class="breadcrumbs breadcrumbs-height">
+<div class="breadcrumbs-height rt-pt-50">
     <div class="container">
         <div class="row align-items-center breadcrumbs-height">
             <div class="col-12">
@@ -12,7 +19,7 @@
                     <div class="card-body">
                         <div class="rt-single-icon-box ">
                             <div class="icon-thumb rt-mb-lg-20">
-                                <img src="assets/images/icon/single-job-logo-1.png" alt="" draggable="false">
+                                <img src="assets/images/icon/single-job-logo-2.png" alt="" draggable="false">
                             </div>
                             <div class="iconbox-content">
                                 <div class="post-info2">
@@ -39,7 +46,7 @@
                             <div class="iconbox-extra align-self-center flex-md-row flex-column">
                                 <div class="rt-mb-md-10">
                                     <button
-                                        class="bg-gray-10 text-primary-500 plain-button icon-56 hover:bg-primary-500 hover:text-gray-10">
+                                        class="bg-gray-10 bg-primary-50 text-primary-500 plain-button icon-56 hover:bg-primary-500 hover:text-gray-10">
                                         <i class="ph-bookmark-simple"></i>
                                     </button>
                                 </div>
@@ -119,43 +126,6 @@
                         </li>
                     </ul>
                 </div>
-
-                <div class="body-font-1 ft-wt-5 rt-mb-20">Skills & Experience</div>
-                <div class="body-font-3 text-gray-500">
-                    Donec quis placerat mi, id eleifend magna. Proin vulputate lectus non urna varius congue. Sed eget
-                    leo augue. Etiam lacinia ultrices sapien, condimentum commodo elit pretium ac. Aenean et aliquet
-                    velit. Sed sapien neque, porttitor sit amet laoreet sit amet, dapibus sit amet ante. Maecenas vitae
-                    efficitur ligula, vitae vehicula felis.
-                    <br>
-                    <br>
-                    <ul>
-                        <li class="rt-mb-12">
-                            Quisque semper gravida est et consectetur.
-                        </li>
-                        <li class="rt-mb-12">
-                            Curabitur blandit lorem velit, vitae pretium leo placerat eget.
-                        </li>
-                        <li class="rt-mb-12">
-                            Morbi mattis in ipsum ac tempus.
-                        </li>
-                        <li class="rt-mb-12">
-                            Curabitur eu vehicula libero. Vestibulum sed purus ullamcorper, lobortis lectus nec.
-                        </li>
-                        <li class="rt-mb-12">
-                            vulputate turpis. Quisque ante odio, iaculis a porttitor sit amet.
-                        </li>
-                        <li class="rt-mb-12">
-                            commodo feugiat. Nullam laoreet, diam placerat dapibus tincidunt.
-                        </li>
-                        <li class="rt-mb-12">
-                            odio metus posuere lorem, id condimentum erat velit nec neque.
-                        </li>
-                        <li>
-                            dui sodales ut. Curabitur tempus augue.
-                        </li>
-                    </ul>
-                </div>
-
                 <div class="share-job rt-pt-50">
                     <ul class="rt-list gap-8">
                         <li class="d-inline-block body-font-3 text-gray-900">
@@ -187,188 +157,171 @@
             </div>
 
             <div class="col-lg-5">
-                <div class="p-32 bg-gray-20 rt-rounded-12 rt-mb-24 max-536">
+                <div class="p-32 border border-2 border-primary-50 rt-rounded-12 rt-mb-24 lg:max-536">
                     <div class="body-font-1 ft-wt-5 rt-mb-32 ">Job Overview</div>
                     <div class="row">
-                        <div class="col-sm-6 rt-mb-32">
-                            <div class="single-jSidebarWidget rt-single-icon-box">
-                                <div class="icon-thumb rt-mr-17">
+                        <div class="col-xl-4 col-lg-6 col-md-4 col-sm-4 rt-mb-32">
+                            <div class="single-jSidebarWidget">
+                                <div class="icon-thumb">
                                     <i class="ph-calendar-blank f-size-30 text-primary-500"></i>
                                 </div>
                                 <div class="iconbox-content">
-                                    <div class="body-font-3 ft-wt-5 rt-mb-6">Job Posted:</div>
-                                    <span class="d-block text-gray-600 body-font-3">June 15, 2021</span>
+                                    <div class="f-size-12 text-gray-500 uppercase text-uppercase rt-mb-6">Job Posted:</div>
+                                    <span class="d-block f-size-14 ft-wt-5 text-gray-900">June 15, 2021</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 rt-mb-32">
-                            <div class="single-jSidebarWidget rt-single-icon-box">
-                                <div class="icon-thumb rt-mr-17">
+                        <div class="col-xl-4 col-lg-6 col-md-4 col-sm-4 rt-mb-32">
+                            <div class="single-jSidebarWidget">
+                                <div class="icon-thumb">
                                     <i class="ph-timer f-size-30 text-primary-500"></i>
                                 </div>
                                 <div class="iconbox-content">
-                                    <div class="body-font-3 ft-wt-5 rt-mb-6">Job Expire in:</div>
-                                    <span class="d-block text-gray-600 body-font-3">Aug 15, 2022</span>
+                                    <div class="f-size-12 text-gray-500 uppercase text-uppercase rt-mb-6">Job Expire in:</div>
+                                    <span class="d-block f-size-14 ft-wt-5 text-gray-900">Aug 15, 2022</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 rt-mb-32">
-                            <div class="single-jSidebarWidget rt-single-icon-box">
-                                <div class="icon-thumb rt-mr-17">
+                        <div class="col-xl-4 col-lg-6 col-md-4 col-sm-4 rt-mb-32">
+                            <div class="single-jSidebarWidget">
+                                <div class="icon-thumb">
                                     <i class="ph-wallet f-size-30 text-primary-500"></i>
                                 </div>
                                 <div class="iconbox-content">
-                                    <div class="body-font-3 ft-wt-5 rt-mb-6">Salery:</div>
-                                    <span class="d-block text-gray-600 body-font-3">$50k-80k/month</span>
+                                    <div class="f-size-12 text-gray-500 uppercase text-uppercase rt-mb-6">Salery:</div>
+                                    <span class="d-block f-size-14 ft-wt-5 text-gray-900">$50k-80k/month</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 rt-mb-32">
-                            <div class="single-jSidebarWidget rt-single-icon-box">
-                                <div class="icon-thumb rt-mr-17">
+                        <div class="col-xl-4 col-lg-6 col-md-4 col-sm-4 rt-mb-32">
+                            <div class="single-jSidebarWidget">
+                                <div class="icon-thumb">
                                     <i class="ph-map-pin-line f-size-30 text-primary-500"></i>
                                 </div>
                                 <div class="iconbox-content">
-                                    <div class="body-font-3 ft-wt-5 rt-mb-6">Location:</div>
-                                    <span class="d-block text-gray-600 body-font-3">New York, USA</span>
+                                    <div class="f-size-12 text-gray-500 uppercase text-uppercase rt-mb-6">Location:</div>
+                                    <span class="d-block f-size-14 ft-wt-5 text-gray-900">New York, USA</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 rt-mb-32">
-                            <div class="single-jSidebarWidget rt-single-icon-box">
-                                <div class="icon-thumb rt-mr-17">
+                        <div class="col-xl-4 col-lg-6 col-md-4 col-sm-4 rt-mb-32">
+                            <div class="single-jSidebarWidget">
+                                <div class="icon-thumb">
                                     <i class="ph-suitcase-simple f-size-30 text-primary-500"></i>
                                 </div>
                                 <div class="iconbox-content">
-                                    <div class="body-font-3 ft-wt-5 rt-mb-6">Job Type:</div>
-                                    <span class="d-block text-gray-600 body-font-3">Full Time</span>
+                                    <div class="f-size-12 text-gray-500 uppercase text-uppercase rt-mb-6">Job Type:</div>
+                                    <span class="d-block f-size-14 ft-wt-5 text-gray-900">Full Time</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 rt-mb-32">
-                            <div class="single-jSidebarWidget rt-single-icon-box">
-                                <div class="icon-thumb rt-mr-17">
+                        <div class="col-xl-4 col-lg-6 col-md-4 col-sm-4 rt-mb-32">
+                            <div class="single-jSidebarWidget">
+                                <div class="icon-thumb">
                                     <i class="ph-user f-size-30 text-primary-500"></i>
                                 </div>
                                 <div class="iconbox-content">
-                                    <div class="body-font-3 ft-wt-5 rt-mb-6">Gender:</div>
-                                    <span class="d-block text-gray-600 body-font-3">Female</span>
+                                    <div class="f-size-12 text-gray-500 uppercase text-uppercase rt-mb-6">Gender:</div>
+                                    <span class="d-block f-size-14 ft-wt-5 text-gray-900">Female</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 rt-mb-32">
-                            <div class="single-jSidebarWidget rt-single-icon-box">
-                                <div class="icon-thumb rt-mr-17">
+                        <div class="col-xl-4 col-lg-6 col-md-4 col-sm-4">
+                            <div class="single-jSidebarWidget">
+                                <div class="icon-thumb">
                                     <i class="ph-graduation-cap f-size-30 text-primary-500"></i>
                                 </div>
                                 <div class="iconbox-content">
-                                    <div class="body-font-3 ft-wt-5 rt-mb-6">Education:</div>
-                                    <span class="d-block text-gray-600 body-font-3">Graduation</span>
+                                    <div class="f-size-12 text-gray-500 uppercase text-uppercase rt-mb-6">Education:</div>
+                                    <span class="d-block f-size-14 ft-wt-5 text-gray-900">Graduation</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 rt-mb-32">
-                            <div class="single-jSidebarWidget rt-single-icon-box">
-                                <div class="icon-thumb rt-mr-17">
+                        <div class="col-xl-4 col-lg-6 col-md-4 col-sm-4">
+                            <div class="single-jSidebarWidget">
+                                <div class="icon-thumb">
                                     <i class="ph-clipboard-text f-size-30 text-primary-500"></i>
                                 </div>
                                 <div class="iconbox-content">
-                                    <div class="body-font-3 ft-wt-5 rt-mb-6">Experience:</div>
-                                    <span class="d-block text-gray-600 body-font-3">10-15 Years</span>
+                                    <div class="f-size-12 text-gray-500 uppercase text-uppercase rt-mb-6">Experience:</div>
+                                    <span class="d-block f-size-14 ft-wt-5 text-gray-900">10-15 Years</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="sdeibarmap">
-                        <div id="mapid"></div>
                     </div>
                 </div>
-                <div class="p-32 bg-gray-20 rt-rounded-12 rt-mb-24 max-536">
-                    <div class="row g-0">
-                        <div class="col-xl-6 rt-mb-32">
-                            <div class="rt-single-icon-box">
-                                <div class="icon-thumb rt-mr-16">
-                                    <img src="assets/images/icon/logo-twitter-xl.png" alt="">
-                                </div>
-                                <div class="iconbox-content">
-                                    <div class="body-font-3 ft-wt-5 rt-mb-6">Twitter</div>
-                                    <a class="d-block text-primary-500 body-font-4" href="#">June 15, 2021</a>
-                                </div>
-
-                            </div>
+                <div class="p-32 border border-2 border-primary-50 rt-rounded-12 rt-mb-24 lg:max-536">
+                    <div class="rt-single-icon-box rt-mb-32">
+                        <div class="icon-thumb rt-mr-16">
+                            <img src="assets/images/icon/logo-insta-xl.png" alt="">
                         </div>
-                        <div class="col-xxl-6 col-12 rt-mb-32 text-start text-xxl-end">
-                            <div class="rt-mb-32">
-                                <ul class="rt-list gap-8">
-                                    <li class="d-inline-block">
-                                        <a href="#" class="icon-44 bg-gray-10 text-primary-500 ">
-                                            <span class="iconify" data-icon="bx:bxl-facebook"></span>
-                                        </a>
-                                    </li>
-                                    <li class="d-inline-block">
-                                        <a href="#" class="icon-44 bg-primary-500 text-gray-10">
-                                            <span class="iconify" data-icon="bx:bxl-twitter"></span>
-                                        </a>
-                                    </li>
-                                    <li class="d-inline-block">
-                                        <a href="#" class="icon-44 bg-gray-10  text-primary-500 ">
-                                            <span class="iconify" data-icon="bx:bxl-instagram"></span>
-                                        </a>
-                                    </li>
-                                    <li class="d-inline-block">
-                                        <a href="#" class="icon-44 bg-gray-10  text-primary-500 ">
-                                            <span class="iconify" data-icon="bx:bxl-youtube"></span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
+                        <div class="iconbox-content">
+                            <div class="f-size-20 text-gray-900 ft-wt-5 rt-mb-6">Instagram</div>
+                            <a class="d-block text-gray-500 f-size-14" href="#">Social networking service</a>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div>
-                                <ul class="rt-list">
-                                    <li class="d-flex justify-content-between align-items-start body-font-3 rt-mb-14">
-                                        <span class="text-gray-500 d-block">Founded in:</span>
-                                        <div class="my-auto">
-                                            March 21, 2006
-                                        </div>
-                                    </li>
-                                    <li class="d-flex justify-content-between align-items-start body-font-3 rt-mb-14">
-                                        <span class="text-gray-500 d-block">Organization type:</span>
-                                        <div class="my-auto">
-                                            Private Company
-                                        </div>
-                                    </li>
-                                    <li class="d-flex justify-content-between align-items-start body-font-3 rt-mb-14">
-                                        <span class="text-gray-500 d-block">Company size:</span>
-                                        <div class="my-auto">
-                                            120-300 Employers
-                                        </div>
-                                    </li>
-                                    <li class="d-flex justify-content-between align-items-start body-font-3 rt-mb-14">
-                                        <span class="text-gray-500 d-block">Phone:</span>
-                                        <div class="my-auto">
-                                            (406) 555-0120
-                                        </div>
-                                    </li>
-                                    <li class="d-flex justify-content-between align-items-start body-font-3 rt-mb-14">
-                                        <span class="text-gray-500 d-block">Email:</span>
-                                        <div class="my-auto">
-                                            twitter@gmail.com
-                                        </div>
-                                    </li>
-                                    <li class="d-flex justify-content-between align-items-start body-font-3">
-                                        <span class="text-gray-500 d-block">Website:</span>
-                                        <div class="my-auto">
-                                            https://twitter.com
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="rt-mb-32">
+                        <ul class="rt-list">
+                            <li class="d-flex justify-content-between align-items-start body-font-3 rt-mb-14">
+                                <span class="text-gray-500 d-block">Founded in:</span>
+                                <div class="my-auto">
+                                    March 21, 2006
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-start body-font-3 rt-mb-14">
+                                <span class="text-gray-500 d-block">Organization type:</span>
+                                <div class="my-auto">
+                                    Private Company
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-start body-font-3 rt-mb-14">
+                                <span class="text-gray-500 d-block">Company size:</span>
+                                <div class="my-auto">
+                                    120-300 Employers
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-start body-font-3 rt-mb-14">
+                                <span class="text-gray-500 d-block">Phone:</span>
+                                <div class="my-auto">
+                                    (406) 555-0120
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-start body-font-3 rt-mb-14">
+                                <span class="text-gray-500 d-block">Email:</span>
+                                <div class="my-auto">
+                                    twitter@gmail.com
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-start body-font-3">
+                                <span class="text-gray-500 d-block">Website:</span>
+                                <div class="my-auto">
+                                    https://twitter.com
+                                </div>
+                            </li>
+                        </ul>
                     </div>
+                    <ul class="rt-list gap-8">
+                        <li class="d-inline-block">
+                            <a href="#" class="icon-44 bg-gray-10 text-primary-500 ">
+                                <span class="iconify" data-icon="bx:bxl-facebook"></span>
+                            </a>
+                        </li>
+                        <li class="d-inline-block">
+                            <a href="#" class="icon-44 bg-primary-500 text-gray-10">
+                                <span class="iconify" data-icon="bx:bxl-twitter"></span>
+                            </a>
+                        </li>
+                        <li class="d-inline-block">
+                            <a href="#" class="icon-44 bg-gray-10  text-primary-500 ">
+                                <span class="iconify" data-icon="bx:bxl-instagram"></span>
+                            </a>
+                        </li>
+                        <li class="d-inline-block">
+                            <a href="#" class="icon-44 bg-gray-10  text-primary-500 ">
+                                <span class="iconify" data-icon="bx:bxl-youtube"></span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

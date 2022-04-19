@@ -26,6 +26,7 @@
   &:hover {
     box-shadow: 0px 12px 48px rgba(0, 44, 109, 0.1);
     border-color: var(--primary-500);
+    background: white !important;
   }
   &:hover .footer-content a {
     color: var(--primary-500);
@@ -51,6 +52,9 @@
 }
 
 .jobcardStyle1 {
+  &.gradient-bg{
+    background: linear-gradient(90deg, #FFF6E6 0%, #FFFFFF 100%), #FFFFFF;
+  }
   .rt-single-icon-box {
     .icon-thumb {
       margin-right: 16px;

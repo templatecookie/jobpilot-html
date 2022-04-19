@@ -6,11 +6,13 @@
 
 .has-icon {
   .select2-container .select2-selection--single .select2-selection__rendered {
-    padding-left: 36px;
+    padding-left: 50px;
     line-height: 48px;
   }
 }
-
+.category-icon{
+  left: 13px!important;
+}
 .has-icon2 {
   .select2-container .select2-selection--single .select2-selection__rendered {
     padding-left: 52px;
@@ -86,19 +88,19 @@
 
 //breadcrumbs3 components design
 
-.with-advanced-filter {
-  .has-icon
-    .select2-container
-    .select2-selection--single
-    .select2-selection__rendered {
-    line-height: 59px;
-  }
-  .select2-container--default
-    .select2-selection--single
-    .select2-selection__arrow {
-    top: 6px;
-  }
-}
+// .with-advanced-filter {
+//   .has-icon
+//     .select2-container
+//     .select2-selection--single
+//     .select2-selection__rendered {
+//     line-height: 59px;
+//   }
+//   .select2-container--default
+//     .select2-selection--single
+//     .select2-selection__arrow {
+//     top: 6px;
+//   }
+// }
 .slick-loading .slick-list {
   background: #fff url("../images/ajax-loader.gif") center center no-repeat;
 }

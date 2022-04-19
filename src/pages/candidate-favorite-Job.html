@@ -1,0 +1,35 @@
+{% extends "layout/layout.html" %}
+
+
+{% block content %}
+{% include "../templates/layout/header-footer/header-home1.html" %}
+
+<div class="dashboard-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        {% include "../templates/components/dashboard/candidate-sidebar.html" %}
+      </div>
+      <div class="col-lg-9">
+        <div class="dashboard-right">
+          <div class="recently-applied-wrap mb-4">
+            <h3 class="f-size-18 lh-1">Favorite Jobs<span class="text-gray-400">(17)</span></h3>
+          </div>
+          
+          {% include "../templates/components/employe/db-favorite-job.html" %}
+          <div class="rt-pt-30">
+            {% include "../templates/components/pagination/pagination.html" %}
+          </div>
+
+        </div>
+        
+      </div>
+    </div>
+    
+</div>
+{% include "../templates/layout/header-footer/dashboard-footer.html" %}
+  
+</div>
+
+
+{% endblock %}

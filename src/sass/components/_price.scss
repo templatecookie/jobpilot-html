@@ -9,12 +9,15 @@
       margin-right: -32px;
       padding-left: 32px;
       padding-right: 32px;
+      position: relative;
       sup{
           vertical-align:baseline;
       }
       .badge{
-          position: relative;
-          top: -5px;
+          position: absolute;
+          top: -58px;
+          left: 50%;
+          transform: translateX(-50%);
       }
       @include breakpoint(md){
           text-align: center;

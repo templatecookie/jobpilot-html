@@ -23,7 +23,7 @@
           <div class="cadidate-dashboard-tabs">
             <ul class="nav nav-pills" id="pills-tab" role="tablist">
               <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-personal-tab" data-bs-toggle="pill" data-bs-target="#pills-personal" type="button" role="tab" aria-controls="pills-personal" aria-selected="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <button class="nav-link active" id="pills-personal-tab" data-bs-toggle="pill" data-bs-target="#pills-personal" type="button" role="tab" aria-controls="pills-personal" aria-selected="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 15C15.3137 15 18 12.3137 18 9C18 5.68629 15.3137 3 12 3C8.68629 3 6 5.68629 6 9C6 12.3137 8.68629 15 12 15Z" stroke="#767F8C" stroke-width="1.5" stroke-miterlimit="10"/>
                   <path d="M2.9043 20.2491C3.82638 18.6531 5.15225 17.3278 6.74869 16.4064C8.34513 15.485 10.1559 15 11.9992 15C13.8424 15 15.6532 15.4851 17.2497 16.4065C18.8461 17.3279 20.1719 18.6533 21.094 20.2493" stroke="#767F8C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
@@ -53,7 +53,7 @@
                   Contact</button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="pills-setting-tab" data-bs-toggle="pill" data-bs-target="#pills-setting" type="button" role="tab" aria-controls="pills-setting" aria-selected="false"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <button class="nav-link" id="pills-setting-tab" data-bs-toggle="pill" data-bs-target="#pills-setting" type="button" role="tab" aria-controls="pills-setting" aria-selected="false"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M4.90236 8.58739C5.07111 8.23114 5.26799 7.89364 5.49299 7.56551L5.45549 5.12801C5.45549 4.90301 5.54924 4.68739 5.72736 4.53739C6.59924 3.80614 7.59299 3.21551 8.68986 2.82176C8.90549 2.74676 9.13986 2.76551 9.32736 2.88739L11.418 4.14364C11.8117 4.11551 12.2055 4.11551 12.5992 4.14364L14.6899 2.88739C14.8867 2.77489 15.1211 2.74676 15.3367 2.82176C16.4055 3.20614 17.4086 3.77801 18.2992 4.52801C18.468 4.66864 18.5711 4.89364 18.5617 5.11864L18.5242 7.55614C18.7492 7.88426 18.9461 8.22176 19.1149 8.57801L21.243 9.75926C21.4399 9.87176 21.5805 10.0593 21.618 10.2843C21.8149 11.3999 21.8242 12.5624 21.618 13.6968C21.5805 13.9218 21.4399 14.1093 21.243 14.2218L19.1149 15.403C18.9461 15.7593 18.7492 16.0968 18.5242 16.4249L18.5617 18.8624C18.5617 19.0874 18.468 19.303 18.2899 19.453C17.418 20.1843 16.4242 20.7749 15.3274 21.1686C15.1117 21.2436 14.8774 21.2249 14.6899 21.103L12.5992 19.8468C12.2055 19.8749 11.8117 19.8749 11.418 19.8468L9.32736 21.103C9.13049 21.2155 8.89611 21.2436 8.68049 21.1686C7.61174 20.7843 6.60861 20.2124 5.71799 19.4624C5.54924 19.3218 5.44611 19.0968 5.45549 18.8718L5.49299 16.4343C5.26799 16.1061 5.07111 15.7686 4.90236 15.4124L2.77424 14.2311C2.57736 14.1186 2.43674 13.9311 2.39924 13.7061C2.20236 12.5905 2.19299 11.428 2.39924 10.2936C2.43674 10.0686 2.57736 9.88114 2.77424 9.76864L4.90236 8.58739Z" stroke="#0A65CC" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M12 16.5C14.4853 16.5 16.5 14.4853 16.5 12C16.5 9.51472 14.4853 7.5 12 7.5C9.51472 7.5 7.5 9.51472 7.5 12C7.5 14.4853 9.51472 16.5 12 16.5Z" stroke="#0A65CC" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
@@ -61,162 +61,20 @@
               </li>
             </ul>
             <div class="tab-content" id="pills-tabContent">
-              <div class="tab-pane fade" id="pills-personal" role="tabpanel" aria-labelledby="pills-personal-tab">1.</div>
-              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">2.</div>
-              <div class="tab-pane fade" id="pills-social" role="tabpanel" aria-labelledby="pills-social-tab">3.</div>
-              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                {% include "../templates/components/dashboard/contact-tab.html" %}
+              <div class="tab-pane fade show active" id="pills-personal" role="tabpanel" aria-labelledby="pills-personal-tab">
+                {% include "../templates/components/dashboard/tab/personal-tab.html" %}
               </div>
-              <div class="tab-pane fade show active" id="pills-setting" role="tabpanel" aria-labelledby="pills-setting-tab">
-                <div class="dashboard-account-setting-item">
-                  <h6>Notification</h6>
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <div class="form-check from-chekbox-custom rt-mb-15">
-                        <input class="form-check-input" type="checkbox" value="" id="check1">
-                        <label class="form-check-label pointer f-size-14" for="check1">
-                          Notify me when employers shortlisted me
-                        </label>
-                      </div>
-                      <div class="form-check from-chekbox-custom rt-mb-15">
-                        <input class="form-check-input" type="checkbox" value="" id="check2" checked>
-                        <label class="form-check-label pointer f-size-14" for="check2">
-                          Notify me when my applied jobs are expire
-                        </label>
-                      </div>
-                      <div class="form-check from-chekbox-custom">
-                        <input class="form-check-input" type="checkbox" value="" id="check3" checked>
-                        <label class="form-check-label pointer f-size-14" for="check3">
-                          Notify me when i have up to 5 job alerts
-                        </label>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="form-check from-chekbox-custom rt-mb-15">
-                        <input class="form-check-input" type="checkbox" value="" id="check4">
-                        <label class="form-check-label pointer f-size-14" for="check4">
-                          Notify me when employers shortlisted me
-                        </label>
-                      </div>
-                      <div class="form-check from-chekbox-custom">
-                        <input class="form-check-input" type="checkbox" value="" id="check5" checked>
-                        <label class="form-check-label pointer f-size-14" for="check5">
-                          Notify me when my applied jobs are expire
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="dashboard-account-setting-item">
-                  <h6>Job Alerts</h6>
-                  <div class="row">
-                    <div class="col-lg-6 rt-mb-32">
-                      <label class="f-size-14 text-gray-700 rt-mb-6">Role</label>
-                      <div class="fromGroup has-icon2">
-                        <div class="form-control-icon">
-                          <input class="form-control" type="search" placeholder="Your job roles">
-                          <div class="icon-badge-2">
-                            <img src="assets/images/svg/briefcase.svg" alt="">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 rt-mb-32">
-                      <label class="f-size-14 text-gray-700 rt-mb-6">Location</label>
-                      <div class="fromGroup has-icon2">
-                        <div class="form-control-icon">
-                          <input class="form-control" type="search" placeholder="Your job roles">
-                          <div class="icon-badge-2">
-                            <img src="assets/images/svg/MapPinLine.svg" alt="">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <button type="button" class="btn btn-primary">
-                        Save Changes
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="dashboard-account-setting-item">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <label class="text-gray-900 rt-mb-15 fw-medium">Profile Privacy</label>
-                      <div class="input-group mb-3">
-                        <div class="input-group-text bg-transparent border border-gray-50 extra-design" id="basic-addon1">
-                          <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked="">
-                            <span class="form-check-label f-size-14">yes</span>
-                          </div>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Your profile is public now" id="msalary">
-                      </div>
-                    
-                    </div>
-                    <div class="col-lg-6">
-                      <label class="text-gray-900 rt-mb-15 fw-medium">Resume Privacy</label>
-                      <div class="input-group mb-3">
-                        <div class="input-group-text bg-transparent border border-gray-50 extra-design" id="basic-addon1">
-                          <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                            <span class="form-check-label text-danger-500 text-uppercase f-size-14">no</span>
-                          </div>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Your profile is public now" id="msalary">
-                      </div>
-                   
-                    </div>
-                  </div>
-                </div>
-                <div class="dashboard-account-setting-item">
-                  <h6>Change Password</h6>
-                  <div class="row">
-                    <div class="col-lg-6 rt-mb-32">
-                      <label class="f-size-14 text-gray-700 rt-mb-6">New Password</label>
-                      <div class="fromGroup rt-mb-15">
-                        <input id="password-hide_show" type="password" placeholder="Password" required="">
-                        <div class="has-badge">
-                          <i class="ph-eye"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 rt-mb-32">
-                      <label class="f-size-14 text-gray-700 rt-mb-6">Confirm Password</label>
-                      <div class="fromGroup rt-mb-15">
-                        <input id="password-hide_show1" type="password" placeholder="Confirm Password" required="">
-                        <div class="has-badge select-icon__one">
-                          <i class="ph-eye"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <button type="button" class="btn btn-primary">
-                        Save Changes
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="dashboard-account-setting-item">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <h4>Close/Delete Account</h4>
-                      <p>If you delete your Jobpilot account, you will no longer be able to get information about the matched jobs, following employers, and job alert, shortlisted jobs and more. You will be abandoned from all the services of Jobpilot.com.</p>
-                      <button type="submit" class="btn bg-danger-50 text-danger-500">
-                        <span class="button-content-wrapper ">
-                        <span class="button-icon">
-                          <i class="ph-x-circle"></i>
-                        </span>
-                        <span class="button-text">
-                          Close Account
-                        </span>
-                        </span>
-                      </button>
-                    </div>
-                    
-                  </div>
-                  
-                </div>
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                {% include "../templates/components/dashboard/tab/profile-tab.html" %}
+              </div>
+              <div class="tab-pane fade" id="pills-social" role="tabpanel" aria-labelledby="pills-social-tab">
+                {% include "../templates/components/dashboard/tab/social-link-tab.html" %}
+              </div>
+              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                {% include "../templates/components/dashboard/tab/contact-tab.html" %}
+              </div>
+              <div class="tab-pane fade" id="pills-setting" role="tabpanel" aria-labelledby="pills-setting-tab">
+                {% include "../templates/components/dashboard/tab/account-setting-tab.html" %}
               </div>
             </div>
           </div>

@@ -54,6 +54,9 @@
   .rt-single-icon-box {
     .icon-thumb {
       margin-right: 16px;
+      @media (max-width: 767px) {
+        margin: 0 0 15px;
+      }
       .icon {
         @include iconbox(56px, 4px);
         background-color: #ea4c89;

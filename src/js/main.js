@@ -694,6 +694,12 @@ if ($(".top-company-slider").length > 0) {
     });
 }
 
+// dataicker
+$( "#datepicker" ).datepicker({
+  dateFormat: "dd-mm-yy"
+  ,	duration: "fast"
+});
+
 
 })(jQuery);
 

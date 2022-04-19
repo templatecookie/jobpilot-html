@@ -9,41 +9,41 @@
       <div class="modal-body">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-xl-7">
-              <h6 class="rt-mb-24">Billing type</h6>
-              <label class="label-radio rt-mb-24 from-radio-custom " for="1">
-                <span class="data d-flex justify-content-between align-items-center">
-                  <span class="left">
-                    <input type="radio" name="radio1" id="1" class="form-check-input">
-                    <span class="form-check-label">Annual</span>
-                    <span class="border"></span>
-                  </span>
-                  <span class="right text-end">
-                    <span class="d-block body-font-1">$32/month</span>
-                    <span class="d-block body-font-4 text-gray-500">$384 billed once a year</span>
-                  </span>
-                </span>
-              </label>
-              <label class="label-radio rt-mb-24 from-radio-custom " for="2">
-                <span class="data d-flex justify-content-between align-items-center">
-                  <span class="left">
-                    <input type="radio" name="radio1" id="2" class="form-check-input">
-                    <span class="form-check-label">Monthly</span>
-                    <span class="border"></span>
-                  </span>
-                  <span class="right text-end">
-                    <span class="d-block body-font-1">$40/month</span>
-                    <span class="d-block body-font-4 text-gray-500">$40 billed every month</span>
-                  </span>
-                </span>
-              </label>
+            <div class="col-xl-6">
+              <h6 class="rt-mb-24">Payment System</h6>
+              <div class="payment-system-tab">
+                <ul class="nav nav-pills border-none" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-creditcard-tab" data-bs-toggle="pill" data-bs-target="#pills-creditcard" type="button" role="tab" aria-controls="pills-creditcard" aria-selected="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#0A65CC" stroke-width="1.5" stroke-miterlimit="10"/>
+                    <path d="M12 15C14.0711 15 15.75 13.3211 15.75 11.25C15.75 9.17893 14.0711 7.5 12 7.5C9.92893 7.5 8.25 9.17893 8.25 11.25C8.25 13.3211 9.92893 15 12 15Z" stroke="#0A65CC" stroke-width="1.5" stroke-miterlimit="10"/>
+                    <path d="M5.98145 18.6913C6.54639 17.5806 7.40768 16.6478 8.46997 15.9963C9.53226 15.3448 10.7541 15 12.0003 15C13.2464 15 14.4683 15.3448 15.5306 15.9963C16.5929 16.6478 17.4542 17.5806 18.0191 18.6913" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                      Debit/Credit Card</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-paypal-tab" data-bs-toggle="pill" data-bs-target="#pills-paypal" type="button" role="tab" aria-controls="pills-paypal" aria-selected="false">
+                      <img src="assets/images/all-img/Paypal.png" alt="">
+
+                      Paypal</button>
+                  </li>
+              </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-creditcard" role="tabpanel" aria-labelledby="pills-creditcard-tab">
+                {% include "../components/dashboard/tab/creditcard.html" %}
+              </div>
+              <div class="tab-pane fade" id="pills-paypal" role="tabpanel" aria-labelledby="pills-paypal-tab">
+                {% include "../components/dashboard/tab/paypal.html" %}
+              </div>
             </div>
-            <div class="col-xl-5">
-              <h6 class="rt-mb-24">Order Summery</h6>
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <h6 class="rt-mb-24">Summery</h6>
               <div class="border border-gray-50 rt-rounded-12 p-20">
                 <ul class="rt-list">
                   <li class="d-flex justify-content-between align-items-start body-font-3 rt-mb-14">
-                    <span class="text-gray-500 d-block">Account plan: <span class="text-gray-900">Premium</span></span>
+                    <span class="text-gray-500 d-block">Pricing plan: <span class="text-gray-900">Premium</span></span>
                     <div class="my-auto text-gray-900">
                       $40.00
                     </div>
@@ -55,56 +55,18 @@
                     </div>
                   </li>
                 </ul>
-                <button class="btn btn-primary btn-lg d-block rt-mb-15">Place Order</button>
+      <button type="button" class="btn btn-primary d-block mb-3" data-bs-toggle="modal" data-bs-target="#pricemodal">
+        <span class="button-content-wrapper ">
+          <span class="button-icon align-icon-right">
+            <i class="ph-arrow-right"></i>
+          </span>
+          <span class="button-text">
+            Choose Plan
+          </span>
+        </span>
+      </button>
                 <div class="body-font-4 text-gray-400 text-center">
-                  We will bill you every month on the 10th, unless you cancel.
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-8">
-              <h6 class="rt-mb-24">Payment Info</h6>
-              <div class="rt-mb-15 position-relative">
-                <label class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Credit Card</label>
-                <div id="card-element" class="card-element"></div>
-              </div>
-              <div class="rt-mb-15">
-                <label for="mm" class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Name on Card</label>
-                <input type="text" placeholder="Name" id="mm" value="mahedi amin"
-                  class="body-font-3 text-gray-400 text-capitalize">
-              </div>
-              <div class="rt-mb-15">
-                <label for="address" class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Address</label>
-                <input type="text" placeholder="Address line 1" id="address" value="Dhaka"
-                  class="body-font-3 text-gray-400 text-capitalize rt-mb-8">
-                <input type="text" placeholder="Address line 2" id="address2" value="Tangail"
-                  class="body-font-3 text-gray-400 text-capitalize">
-              </div>
-              <div class="row">
-                <div class="col-xl-6 rt-mb-24">
-                  <label class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Country</label>
-                  <select class="rt-selectactive " name="from2" style="width: 100%">
-                    <option>Select.. </option>
-                    <option value="2">Saudi Arabia </option>
-                    <option value="3">London </option>
-                    <option value="4">America</option>
-                    <option value="5">France </option>
-                    <option value="6">Afganistan </option>
-                    <option value="7">Pakistan</option>
-                    <option value="8">India </option>
-                  </select>
-                </div>
-                <div class="col-xl-6 rt-mb-24">
-                  <label class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Town/City</label>
-                  <select class="rt-selectactive " name="from2" style="width: 100%">
-                    <option>Name </option>
-                    <option value="2">Tangail </option>
-                    <option value="3">Mohammadpur</option>
-                    <option value="4">Shekhertek</option>
-                    <option value="5">Dhaka Housing</option>
-                    <option value="6">Dhanmondi </option>
-                    <option value="7">kalabagan</option>
-                    <option value="8">New Market</option>
-                  </select>
+                  This package will expire after one month.
                 </div>
               </div>
             </div>

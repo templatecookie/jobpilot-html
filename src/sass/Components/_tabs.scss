@@ -27,3 +27,44 @@
 .test h1{
   color: red;
 }
+#pricemodal{
+  .nav{
+    border-bottom: none;
+    .nav-link{
+      padding: 12px 20px;
+      margin-right: 4px;
+      border-radius: 0px;
+      &:hover{
+        box-shadow: inset 0px -2px 0px #0A65CC; 
+      }
+    }
+    .active{
+      box-shadow: inset 0px -2px 0px #0A65CC;
+    }
+  }
+}
+.paypal-wrap{
+  .d-flex{
+    gap: 16px;
+  }
+  .card-info{
+  h4{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #767F8C;
+  }
+  h2{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #18191C;
+  }
+}
+label{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #18191C;
+}
+}

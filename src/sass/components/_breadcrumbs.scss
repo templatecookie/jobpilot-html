@@ -1,5 +1,25 @@
+
+.breadcrumb-menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li{
+      font-size: 14px;
+      padding: 0 2px;
+      display: inline-block;
+      a{
+        
+        color: var(--gray-500);
+      }
+    }
+  }
+}
 .breadcrumbs, .breadcrumbs-two{
-  padding: 40px 0;
+  padding: 165px 0 30px;
   background-color: var(--gray-20) ;
   @include rt-trs(0.24s);
   .breadcrumb-title{
@@ -17,14 +37,11 @@
     }
   }
   &.style-two{
-    padding: 0px;
-    height: 230px;
     @include breakpoint(lg){
       height: auto;
       padding: 50px 0;
     }
     .jobsearchBox{
-      margin-top: 100px;
       @include breakpoint(xl){
         margin-top: 50px;
       }

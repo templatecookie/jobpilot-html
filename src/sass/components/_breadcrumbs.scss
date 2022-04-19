@@ -19,8 +19,11 @@
   }
 }
 .breadcrumbs, .breadcrumbs-two{
-  padding: 165px 0 30px;
+  padding: 160px 0 23px;
   background-color: var(--gray-20) ;
+  @media (max-width: 991px) {
+    padding: 110px 0 23px;
+  }
   @include rt-trs(0.24s);
   .breadcrumb-title{
     font-size: 24px;

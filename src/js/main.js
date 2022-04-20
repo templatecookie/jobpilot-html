@@ -601,7 +601,7 @@ $(window).Scrollax();
     showPassword(finputOne,ficonOne)
   }
 
-   // Range Slider
+  //  Range Slider
 // const sliderRange = document.querySelector('.sliderrange');
 // const output = document.querySelector('#value-range');
 // if (output) {

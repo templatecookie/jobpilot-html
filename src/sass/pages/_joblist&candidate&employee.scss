@@ -506,3 +506,8 @@
   width: 120px;
   padding-left: 58px;
 }
+.cadidate-details-sidebar{
+  @media (min-width: 991px) {
+    margin-left: 50px;
+  }
+}

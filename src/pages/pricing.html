@@ -1,41 +1,53 @@
 {% extends "layout/layout.html" %}
 
+
 {% block content %}
+{% include "../templates/layout/header-footer/header-home1.html" %}
 
-{% include "../templates/layout/header-footer/header-normal.html" %}
-
-
-{% set page_title = "Pricing" %}
-{% set current_page = "Pricing" %}
-
-
-<div class="container">
-    <section class="banner-area">
-        <div class="row align-items-center">
-            <div class="col-lg-7">
-                <div class="banner-text">
-                    <h2 class="title">
-                        Buy Premium Subscription to Post a Job
-                    </h2>
-                    <p class="subtitle">
-                        Donec eu dui ut dolor commodo ornare. Sed arclibero, malesuada quis justo sit amet, varius tempuneque. Quisque ultrices mi sed lorem condimentum, vetempus lectus ultricies.
-                    </p>
+<div class="dashboard-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        {% include "../templates/components/dashboard/company-sidebar.html" %}
+      </div>
+      <div class="col-lg-9">
+        <div class="dashboard-right">
+            <section class="banner-area">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <div class="banner-text">
+                            <h2 class="title">
+                                Buy Premium Subscription to Post a Job
+                            </h2>
+                            <p class="subtitle">
+                                Donec eu dui ut dolor commodo ornare. Sed arclibero, malesuada quis justo sit amet, varius tempuneque. Quisque ultrices mi sed lorem condimentum, vetempus lectus ultricies.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-1">
+                        <div class="banner-img text-end">
+                            <img src="assets/images/all-img/post-job-banner.png" alt="">
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-4 offset-lg-1">
-                <div class="banner-img text-end">
-                    <img src="assets/images/all-img/post-job-banner.png" alt="">
+            </section>
+            <section class="pricing-area">
+                <div class="row">
+                    {%include "../templates/components/price/home-1-price.html" %}
                 </div>
-            </div>
+            </section>
         </div>
-    </section>
-    <section class="pricing-area">
-        <div class="row">
-            {%include "../templates/components/price/home-1-price.html" %}
-        </div>
-    </section>
+        
+      </div>
+    </div>
+    
+  
+</div>
+{% include "../templates/layout/header-footer/dashboard-footer.html" %}
+  
 </div>
 
 
-{% include "../templates/layout/header-footer/footer-five.html" %}
+
+
 {% endblock %}

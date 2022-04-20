@@ -10,17 +10,27 @@
       margin-right: -32px;
       padding-left: 32px;
       padding-right: 32px;
+<<<<<<< HEAD
       text-transform: uppercase;
+=======
+      position: relative;
+>>>>>>> 220beeaa3856b2f3d645477f752bc6f53029c733
       sup{
           vertical-align:baseline;
       }
       .badge{
           position: absolute;
+<<<<<<< HEAD
           top: -26px;
           left: 50%;
           transform: translateX(-50%);
           text-transform: capitalize;
           border-radius: 5px 5px 0px 0px;
+=======
+          top: -58px;
+          left: 50%;
+          transform: translateX(-50%);
+>>>>>>> 220beeaa3856b2f3d645477f752bc6f53029c733
       }
       @include breakpoint(md){
           text-align: center;

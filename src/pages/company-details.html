@@ -1,34 +1,30 @@
 {% extends "layout/layout.html" %}
 
-
 {% block content %}
-{% include "../templates/layout/header-footer/header-candidates.html" %}
+{% include "../templates/layout/header-footer/header-home1.html" %}
+
+{% set page_title = "Single Employers" %}
+{% set current_page = "Single Employers" %}
+
+{% include "../templates/components/breadcrumbs/breadcrumbs.html" %}
 
 <div class="single-page-banner">
   <div class="container">
     <div class="row">
       <div class="col-xl-12">
         <div class="pgae-bg bgprefix-cover page-bg-radius" style="background-image: url(assets/images/banner/candidate-big-img.jpg);"></div>
-        <div class="card jobcardStyle1   hover:bg-transparent hover-shadow:none body-24 hover:border-transparent border border-gray-50">
+        <div class="card jobcardStyle1 hover:bg-transparent hover-shadow:none body-24 hover:border-transparent border border-gray-50">
             <div class="card-body">
               <div class="rt-single-icon-box flex-column flex-lg-row">
                 <div class="icon-thumb rt-mb-lg-20">
-                  <img src="assets/images/all-img/single-candidate-2.png" alt="" draggable="false">
+                  <img src="assets/images/icon/logo-insta-xl.png" alt="" draggable="false">
                 </div>
                 <div class="iconbox-content">
                   <div class="post-info2">
                     <div class="post-main-title2"> <a href="#">Twitter</a> <span class="badge rounded-pill bg-danger-50 text-danger-500">Featured</span> </div>
-                    <div class="body-font-3 text-gray-700 pt-2 ">
-                      Information Technology (IT)
-                    </div>
                   </div>
                 </div>
                 <div class="iconbox-extra align-self-start align-self-lg-center rt-pt-lg-20 flex-md-row flex-column">
-                  <div class="rt-mb-md-10">
-                    <button class="bg-gray-10 text-primary-500 plain-button icon-56 hover:bg-primary-500 hover:text-gray-10">
-                      <i class="ph-bookmark-simple"></i>
-                    </button>
-                  </div>
                   <div class="max-311">
                     <button type="button" class="btn btn-primary btn-lg d-block">
                       <span class="button-content-wrapper ">
@@ -55,7 +51,7 @@
 <div class="single-job-content rt-pt-50">
   <div class="container">
     <div class="row">
-      <div class="col-lg-6 col-xl-7 rt-mb-lg-30">
+      <div class="col-lg-7 rt-mb-lg-30">
         <div class="body-font-1 ft-wt-5 rt-mb-20">Job Description</div>
         <div class="body-font-3 text-gray-500">
           Nunc sed dictum massa. Nulla facilisi. Fusce id auctor diam. Aenean eleifend justo ac nisl congue eleifend.
@@ -122,112 +118,183 @@
           </ul>
         </div>
       </div>
-
-      <div class="col-lg-6 col-xl-5">
-        <div class="p-32 bg-gray-20 rt-rounded-12 rt-mb-24 max-536">
-          <div class="row">
-            <div class="col-sm-6 rt-mb-32">
-              <div class="single-jSidebarWidget rt-single-icon-box">
-                <div class="icon-thumb rt-mr-14">
-                  <i class="ph-package f-size-32 text-primary-500"></i>
-                </div>
-                <div class="iconbox-content">
-                  <div class="body-font-4 text-gray-500 rt-mb-6">Founded in:</div>
-                  <span class="d-block text-gray-900 body-font-4 ft-wt-5">March 21, 2006</span>
+      <div class="col-lg-5">
+        <div class="cadidate-details-sidebar">
+          <div class="sidebar-widget">
+            <div class="row">
+              <div class="col-sm-4">
+                  <div class="icon-box">
+                      <div class="icon-img">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M12 8.25V6" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M12 6C16.3312 4.5 12 0.75 12 0.75C12 0.75 7.5 4.5 12 6Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M15.1875 11.8125C15.1875 12.6579 14.8517 13.4686 14.2539 14.0664C13.6561 14.6642 12.8454 15 12 15C11.1546 15 10.3439 14.6642 9.7461 14.0664C9.14832 13.4686 8.8125 12.6579 8.8125 11.8125" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M8.81252 11.8125C8.8127 12.6466 8.4859 13.4476 7.90224 14.0435C7.31859 14.6395 6.5246 14.9828 5.69064 15C3.90002 15.0375 2.43752 13.5375 2.43752 11.7469V10.5C2.43628 10.2042 2.49363 9.91106 2.60626 9.63752C2.7189 9.36397 2.88458 9.11544 3.09376 8.90626C3.30294 8.69708 3.55147 8.5314 3.82502 8.41876C4.09856 8.30613 4.3917 8.24878 4.68752 8.25002H19.3125C19.6083 8.24878 19.9015 8.30613 20.175 8.41876C20.4486 8.5314 20.6971 8.69708 20.9063 8.90626C21.1155 9.11544 21.2811 9.36397 21.3938 9.63752C21.5064 9.91106 21.5638 10.2042 21.5625 10.5V11.7469C21.5625 13.5375 20.1 15.0375 18.3094 15C17.4754 14.9828 16.6814 14.6395 16.0978 14.0435C15.5141 13.4476 15.1873 12.6466 15.1875 11.8125" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M20.25 14.3721V19.5002C20.25 19.6991 20.171 19.8899 20.0303 20.0305C19.8897 20.1712 19.6989 20.2502 19.5 20.2502H4.5C4.30109 20.2502 4.11032 20.1712 3.96967 20.0305C3.82902 19.8899 3.75 19.6991 3.75 19.5002V14.3721" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                      </div>
+                      <h3 class="sub-title">DATE OF BIRTH</h3>
+                      <h2 class="title">14 June, 2021</h2>
+                  </div>
+              </div>
+              <div class="col-sm-4">
+                  <div class="icon-box">
+                      <div class="icon-img">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9 17.25L3 18.75V5.25L9 3.75" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M15 20.25L9 17.25V3.75L15 6.75V20.25Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M15 6.75L21 5.25V18.75L15 20.25" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+  
+                      </div>
+                      <h3 class="sub-title">Nationality</h3>
+                      <h2 class="title">Bangladesh</h2>
+                  </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="icon-box">
+                    <div class="icon-img">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 14.25H15" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9 11.25H15" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15.0002 3.75H18.75C18.9489 3.75 19.1397 3.82902 19.2803 3.96967C19.421 4.11032 19.5 4.30109 19.5 4.5V20.25C19.5 20.4489 19.421 20.6397 19.2803 20.7803C19.1397 20.921 18.9489 21 18.75 21H5.25C5.05109 21 4.86032 20.921 4.71967 20.7803C4.57902 20.6397 4.5 20.4489 4.5 20.25V4.5C4.5 4.30109 4.57902 4.11032 4.71967 3.96967C4.86032 3.82902 5.05109 3.75 5.25 3.75H8.9998" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.25 6.75V6C8.25 5.00544 8.64509 4.05161 9.34835 3.34835C10.0516 2.64509 11.0054 2.25 12 2.25C12.9946 2.25 13.9484 2.64509 14.6517 3.34835C15.3549 4.05161 15.75 5.00544 15.75 6V6.75H8.25Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+  
+                    </div>
+                    <h3 class="sub-title">marital status</h3>
+                    <h2 class="title">Single</h2>
                 </div>
               </div>
-            </div>
-            <div class="col-sm-6 rt-mb-32">
-              <div class="single-jSidebarWidget rt-single-icon-box">
-                <div class="icon-thumb rt-mr-14">
-                  <i class="ph-stack f-size-32 text-primary-500"></i>
-                </div>
-                <div class="iconbox-content">
-                  <div class="body-font-4 text-gray-500 rt-mb-6">Organization type:</div>
-                  <span class="d-block text-gray-900 body-font-4 ft-wt-5">Private Company</span>
-                </div>
+              <div class="col-sm-4">
+                  <div class="icon-box">
+                      <div class="icon-img">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#0A65CC" stroke-width="1.5" stroke-miterlimit="10"/>
+                          <path d="M12 15C14.0711 15 15.75 13.3211 15.75 11.25C15.75 9.17893 14.0711 7.5 12 7.5C9.92893 7.5 8.25 9.17893 8.25 11.25C8.25 13.3211 9.92893 15 12 15Z" stroke="#0A65CC" stroke-width="1.5" stroke-miterlimit="10"/>
+                          <path d="M5.98145 18.6913C6.54639 17.5806 7.40768 16.6478 8.46997 15.9963C9.53226 15.3448 10.7541 15 12.0003 15C13.2464 15 14.4683 15.3448 15.5306 15.9963C16.5929 16.6478 17.4542 17.5806 18.0191 18.6913" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                      </div>
+                      <h3 class="sub-title">Gender</h3>
+                      <h2 class="title">Male</h2>
+                  </div>
               </div>
-            </div>
-            <div class="col-sm-6 rt-mb-32">
-              <div class="single-jSidebarWidget rt-single-icon-box">
-                <div class="icon-thumb rt-mr-14">
-                  <i class="ph-buildings f-size-32 text-primary-500"></i>
+              <div class="col-sm-4">
+                <div class="icon-box">
+                    <div class="icon-img">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 8.25V6" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 6C16.3312 4.5 12 0.75 12 0.75C12 0.75 7.5 4.5 12 6Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15.1875 11.8125C15.1875 12.6579 14.8517 13.4686 14.2539 14.0664C13.6561 14.6642 12.8454 15 12 15C11.1546 15 10.3439 14.6642 9.7461 14.0664C9.14832 13.4686 8.8125 12.6579 8.8125 11.8125" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8.81252 11.8125C8.8127 12.6466 8.4859 13.4476 7.90224 14.0435C7.31859 14.6395 6.5246 14.9828 5.69064 15C3.90002 15.0375 2.43752 13.5375 2.43752 11.7469V10.5C2.43628 10.2042 2.49363 9.91106 2.60626 9.63752C2.7189 9.36397 2.88458 9.11544 3.09376 8.90626C3.30294 8.69708 3.55147 8.5314 3.82502 8.41876C4.09856 8.30613 4.3917 8.24878 4.68752 8.25002H19.3125C19.6083 8.24878 19.9015 8.30613 20.175 8.41876C20.4486 8.5314 20.6971 8.69708 20.9063 8.90626C21.1155 9.11544 21.2811 9.36397 21.3938 9.63752C21.5064 9.91106 21.5638 10.2042 21.5625 10.5V11.7469C21.5625 13.5375 20.1 15.0375 18.3094 15C17.4754 14.9828 16.6814 14.6395 16.0978 14.0435C15.5141 13.4476 15.1873 12.6466 15.1875 11.8125" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20.25 14.3721V19.5002C20.25 19.6991 20.171 19.8899 20.0303 20.0305C19.8897 20.1712 19.6989 20.2502 19.5 20.2502H4.5C4.30109 20.2502 4.11032 20.1712 3.96967 20.0305C3.82902 19.8899 3.75 19.6991 3.75 19.5002V14.3721" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="sub-title">experience</h3>
+                    <h2 class="title">7 Years</h2>
                 </div>
-                <div class="iconbox-content">
-                  <div class="body-font-4 text-gray-500 rt-mb-6">Company size:</div>
-                  <span class="d-block text-gray-900 body-font-4 ft-wt-5">120-300 Employers</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 rt-mb-32">
-              <div class="single-jSidebarWidget rt-single-icon-box">
-                <div class="icon-thumb rt-mr-14">
-                  <i class="ph-map-pin-line f-size-30 text-primary-500"></i>
-                </div>
-                <div class="iconbox-content">
-                  <div class="body-font-4 text-gray-500  rt-mb-6">Location:</div>
-                  <span class="d-block text-gray-900 body-font-4 ft-wt-5">New York, USA</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 rt-mb-32">
-              <div class="single-jSidebarWidget rt-single-icon-box">
-                <div class="icon-thumb rt-mr-14">
-                  <i class="ph-phone-call f-size-30 text-primary-500"></i>
-                </div>
-                <div class="iconbox-content">
-                  <div class="body-font-4 text-gray-500 rt-mb-6">Phone:</div>
-                  <span class="d-block text-gray-900 body-font-4 ft-wt-5">(225) 555-0118</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 rt-mb-32">
-              <div class="single-jSidebarWidget rt-single-icon-box">
-                <div class="icon-thumb rt-mr-14">
-                  <i class="ph-envelope f-size-30 text-primary-500"></i>
-                </div>
-                <div class="iconbox-content">
-                  <div class="body-font-4 text-gray-500 rt-mb-6">Email:</div>
-                  <span class="d-block text-gray-900 body-font-4 ft-wt-5">jobpilot@gmail</span>
-                </div>
-              </div>
             </div>
           </div>
-          <div class="sdeibarmap">
-            <div id="mapid"></div>
           </div>
-        </div>
-        <div class="p-32 bg-gray-20 rt-rounded-12  max-536">
-          <div class="row g-0">
-            <div class="col-xl-6">
-              <div class="body-font-1 text-gray-900 ft-wt-5">
-                Social Profile:
+          <div class="sidebar-widget">
+              <div class="contact">
+                  <h2 class="title">Contact Information</h2>
+                  <div class="contact-icon-box">
+                      <div class="icon-img">
+                          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" fill="#E7F0FA" stroke="#0A65CC" stroke-width="2" stroke-miterlimit="10"/>
+                          <path d="M4 16H28" stroke="#0A65CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M16 27.678C18.7614 27.678 21 22.4496 21 16.0001C21 9.55062 18.7614 4.32227 16 4.32227C13.2386 4.32227 11 9.55062 11 16.0001C11 22.4496 13.2386 27.678 16 27.678Z" stroke="#0A65CC" stroke-width="2" stroke-miterlimit="10"/>
+                          </svg>
+                      </div>
+                      <div class="info">
+                          <h3 class="subtitle">website</h3>
+                          <h2 class="title">www.estherhoward.com</h2>
+                      </div>
+                  </div>
+                  <div class="devider"></div>
+                  <div class="contact-icon-box">
+                      <div class="icon-img">
+                          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path opacity="0.2" d="M16 3C13.3478 3.00001 10.8043 4.05358 8.92894 5.92894C7.05358 7.8043 6.00001 10.3478 6 13C6 22 16 29 16 29C16 29 26 22 26 13C26 10.3478 24.9464 7.8043 23.0711 5.92894C21.1957 4.05358 18.6522 3.00001 16 3ZM16 17C15.2089 17 14.4355 16.7654 13.7777 16.3259C13.1199 15.8864 12.6072 15.2616 12.3045 14.5307C12.0017 13.7998 11.9225 12.9956 12.0769 12.2196C12.2312 11.4437 12.6122 10.731 13.1716 10.1716C13.731 9.61216 14.4437 9.2312 15.2196 9.07686C15.9956 8.92252 16.7998 9.00173 17.5307 9.30448C18.2616 9.60723 18.8864 10.1199 19.3259 10.7777C19.7654 11.4355 20 12.2089 20 13C20 14.0609 19.5786 15.0783 18.8284 15.8284C18.0783 16.5786 17.0609 17 16 17V17Z" fill="#0A65CC"/>
+                              <path d="M7 29H25" stroke="#0A65CC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M16 17C18.2091 17 20 15.2091 20 13C20 10.7909 18.2091 9 16 9C13.7909 9 12 10.7909 12 13C12 15.2091 13.7909 17 16 17Z" stroke="#0A65CC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M26 13C26 22 16 29 16 29C16 29 6 22 6 13C6 10.3478 7.05357 7.8043 8.92893 5.92893C10.8043 4.05357 13.3478 3 16 3C18.6522 3 21.1957 4.05357 23.0711 5.92893C24.9464 7.8043 26 10.3478 26 13V13Z" stroke="#0A65CC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+  
+                      </div>
+                      <div class="info">
+                          <h3 class="subtitle">location</h3>
+                          <h2 class="title">Beverly Hills, California 90202</h2>
+                      </div>
+                  </div>
+                  <p class="address">Zone/Block Basement 1 Unit B2, 1372 Spring Avenue, Portland, </p>
+                  <div class="devider"></div>
+                  <div class="contact-icon-box">
+                      <div class="icon-img">
+                          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path opacity="0.2" d="M11.5595 15.6025C12.5968 17.7232 14.3158 19.4344 16.4412 20.462C16.5967 20.5357 16.7687 20.5676 16.9403 20.5546C17.1119 20.5417 17.2771 20.4842 17.4198 20.388L20.5492 18.3012C20.6877 18.2089 20.8469 18.1526 21.0126 18.1374C21.1782 18.1221 21.3451 18.1485 21.498 18.214L27.3526 20.7231C27.5515 20.8076 27.7175 20.9545 27.8257 21.1415C27.9339 21.3286 27.9783 21.5457 27.9524 21.7602C27.7673 23.2082 27.0608 24.5392 25.9652 25.5038C24.8695 26.4684 23.4598 27.0005 22 27.0006C17.4913 27.0006 13.1673 25.2095 9.97919 22.0214C6.79107 18.8333 5 14.5093 5 10.0006C5.00008 8.54083 5.53224 7.13113 6.49685 6.03546C7.46146 4.93979 8.79237 4.23328 10.2404 4.04824C10.4549 4.02228 10.672 4.06673 10.8591 4.17491C11.0461 4.28309 11.193 4.44913 11.2775 4.64801L13.7888 10.5077C13.8537 10.6593 13.8802 10.8246 13.8658 10.9889C13.8514 11.1531 13.7967 11.3113 13.7064 11.4493L11.6268 14.6267C11.5322 14.7697 11.4762 14.9347 11.4644 15.1058C11.4526 15.2768 11.4854 15.4479 11.5595 15.6025Z" fill="#0A65CC"/>
+                          <path d="M11.5595 15.6025C12.5968 17.7232 14.3158 19.4344 16.4412 20.462C16.5967 20.5357 16.7687 20.5676 16.9403 20.5546C17.1119 20.5417 17.2771 20.4842 17.4198 20.388L20.5492 18.3012C20.6877 18.2089 20.8469 18.1526 21.0126 18.1374C21.1782 18.1221 21.3451 18.1485 21.498 18.214L27.3526 20.7231C27.5515 20.8076 27.7175 20.9545 27.8257 21.1415C27.9339 21.3286 27.9783 21.5457 27.9524 21.7602C27.7673 23.2082 27.0608 24.5391 25.9652 25.5038C24.8695 26.4684 23.4598 27.0005 22 27.0006C17.4913 27.0006 13.1673 25.2095 9.97919 22.0214C6.79107 18.8333 5 14.5093 5 10.0006C5.00008 8.54083 5.53224 7.13113 6.49685 6.03546C7.46146 4.93979 8.79237 4.23328 10.2404 4.04824C10.4549 4.02228 10.672 4.06673 10.8591 4.17491C11.0461 4.28309 11.193 4.44913 11.2775 4.64801L13.7888 10.5077C13.8537 10.6593 13.8802 10.8246 13.8658 10.9889C13.8514 11.1531 13.7967 11.3113 13.7064 11.4493L11.6268 14.6267C11.5322 14.7697 11.4762 14.9347 11.4644 15.1058C11.4526 15.2768 11.4854 15.4479 11.5595 15.6025V15.6025Z" stroke="#0A65CC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M19.9268 5C21.622 5.45592 23.1677 6.34928 24.409 7.59059C25.6503 8.8319 26.5437 10.3776 26.9996 12.0728" stroke="#0A65CC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M18.8916 8.86523C19.9087 9.13879 20.8362 9.6748 21.5809 10.4196C22.3257 11.1644 22.8618 12.0918 23.1353 13.1089" stroke="#0A65CC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      </div>
+                      <div class="info">
+                          <h3 class="subtitle">phone</h3>
+                          <h2 class="title">+1-202-555-0141</h2>
+                          <h3 class="subtitle">secondary phone</h3>
+                          <h2 class="title">+1-202-555-0189</h2>
+                      </div>
+                  </div>
+                  <div class="devider"></div>
+                  <div class="contact-icon-box">
+                      <div class="icon-img">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M21 5.25L12 13.5L3 5.25" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M3 5.25H21V18C21 18.1989 20.921 18.3897 20.7803 18.5303C20.6397 18.671 20.4489 18.75 20.25 18.75H3.75C3.55109 18.75 3.36032 18.671 3.21967 18.5303C3.07902 18.3897 3 18.1989 3 18V5.25Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M10.3638 12L3.23145 18.538" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M20.7692 18.5381L13.6367 12" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                      </div>
+                      <div class="info">
+                          <h3 class="subtitle">email address</h3>
+                          <h2 class="title">esther.howard@gmail.com</h2>
+                      </div>
+                  </div>
               </div>
-            </div>
-            <div class="col-xxl-6 col-12 rt-pt-lg-10 text-xxl-end text-start">
-                <ul class="rt-list gap-8">
-                    <li class="d-inline-block">
-                        <a href="#" class="icon-44 bg-gray-10 text-primary-500 border-gray-10 border hover:border-primary-500">
-                            <span class="iconify" data-icon="bx:bxl-facebook"></span>
-                        </a>
-                    </li>
-                    <li class="d-inline-block">
-                        <a href="#" class="icon-44 bg-gray-10 text-primary-500 border-gray-10 border hover:border-primary-500">
-                            <span class="iconify" data-icon="bx:bxl-twitter"></span>
-                        </a>
-                    </li>
-                    <li class="d-inline-block">
-                        <a href="#" class="icon-44 bg-gray-10  text-primary-500 border-gray-10 border hover:border-primary-500">
-                            <span class="iconify" data-icon="bx:bxl-instagram"></span>
-                        </a>
-                    </li>
-                    <li class="d-inline-block">
-                        <a href="#" class="icon-44 bg-gray-10  text-primary-500 border-gray-10 border hover:border-primary-500">
-                            <span class="iconify" data-icon="bx:bxl-youtube"></span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+          </div>
+          <div class="p-32 border border-1.5 border-primary-50 rt-rounded-12  max-536">
+              <div class="row g-0">
+                <div class="col-xl-5 d-flex align-items-center">
+                  <div class="f-size-18 text-gray-600">
+                    Social Profile:
+                  </div>
+                </div>
+                <div class="col-xl-7 col-12 rt-pt-lg-10 text-xxl-end text-start">
+                    <ul class="rt-list gap-8">
+                        <li class="d-inline-block">
+                            <a href="#" class="icon-44 bg-gray-10 bg-primary-50 text-primary-500 hover:border-primary-500">
+                                <span class="iconify" data-icon="bx:bxl-facebook"></span>
+                            </a>
+                        </li>
+                        <li class="d-inline-block">
+                            <a href="#" class="icon-44 bg-gray-10 bg-primary-50 text-primary-500">
+                                <span class="iconify" data-icon="bx:bxl-twitter"></span>
+                            </a>
+                        </li>
+                        <li class="d-inline-block">
+                            <a href="#" class="icon-44 bg-gray-10 bg-primary-50 text-primary-500">
+                                <span class="iconify" data-icon="bx:bxl-instagram"></span>
+                            </a>
+                        </li>
+                        <li class="d-inline-block">
+                            <a href="#" class="icon-44 bg-gray-10 bg-primary-50 text-primary-500">
+                                <span class="iconify" data-icon="bx:bxl-youtube"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+              </div>
           </div>
         </div>
       </div>
@@ -240,37 +307,10 @@
 <section class="related-jobs-area rt-pt-100 rt-pt-md-50">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <div class="d-flex flex-wrap">
-          <div class="flex-grow-1">
-            <h4 class="mb-0">Related Company</h4>
-          </div>
-          <div class="flex-gorw-0 d-flex">
-            <button class="btn icon-48 plain-button slickprev bg-primary-50 rt-mr-12 slick-arrow" style="display: flex;">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19 12H5" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M12 5L5 12L12 19" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-            </button>
-            <button class="btn icon-48 plain-button slicknext bg-primary-50 slick-arrow" style="display: flex;">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 12H19" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M12 5L19 12L12 19" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-            </button>
-          </div>
+        <div class="flex-grow-1 mb-4">
+          <h4>Open Positions (05)</h4>
         </div>
-      </div>
-    </div>
-    <div class="rt-spacer-50 rt-spacer-md-20"></div>
-    <div class="row">
-      <div class="col-12">
-        <div class="newestjob_active slick-bullet deafult_style_dot related-jobs extra-css"
-          data-slick='{"dots": false, "rows": 2}'>
-          {% include "../templates/components/job/related-candidate1.html" %}
-        </div>
-      </div>
-    </div>
+      {% include "../templates/components/job/filterjob-three-column.html" %}
   </div>
 </section>
 <div class="rt-spacer-75 rt-spacer-md-30"></div>

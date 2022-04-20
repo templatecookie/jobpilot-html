@@ -1,21 +1,46 @@
-.temp-body{
-    background: rgba(0,0,0,0.6);
-    overflow: hidden;
+
+.cadidate-modal{
+    z-index: 999999;
 }
+
 .modal-wrapper{
     max-width: 1024px;
     margin: 20px auto;
-    padding: 48px;
     background: #FFFFFF;
     border-radius: 12px;
-    .row{
-        margin-bottom: 40px;
+    position: relative;
+    @media (max-width: 1060px) {
+        margin: 20px;
     }
-    .col-lg-8{
-        @media (min-width: 992px){
-            padding-right: 64px;
+    .modal-body{
+        padding: 48px;
+        @media (max-width: 991px) {
+            padding: 30px;
         }
     }
+    .modal-content{
+        border: none;
+        button.btn-close {
+            position: absolute;
+            top: 0;
+            right: -70px;
+            width: 42px;
+            height: 42px;
+            background-color: #fff;
+            opacity: 1;
+            border-radius: 100%;
+            font-size: 12px;
+            cursor: pointer;
+            z-index: 999999999;
+            @media (max-width: 1199px) {
+                right: -10px;
+                top: -10px;
+                width: 38px;
+                height: 38px;
+            }
+        }
+    }
+    
     .candidate-profile{
         display: flex;
         align-items: center;
@@ -47,6 +72,12 @@
         }
     }
     .biography{
+        &-wrap{
+            margin-right: 60px;
+            @media (max-width: 991px) {
+                margin: 0;
+            }
+        }
         .title{
             font-weight: 500;
             font-size: 18px;
@@ -61,11 +92,7 @@
             color: #5E6670;
         }
     }
-    .devider{
-        height: 1px;
-        background: #E4E5E8;
-        margin: 32px 0;
-    }
+    
     .cover-letter{
         .title{
             font-weight: 500;
@@ -112,116 +139,127 @@
             }
         }
     }
-    .sidebar-widget{
-        border: 1.5px solid #E7F0FA;
-        box-sizing: border-box;
-        border-radius: 8px;
-        padding: 24px;
+    
+    
+}
+
+.sidebar-widget{
+    border: 1.5px solid #E7F0FA;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 24px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    .row{
+        margin-bottom: 0px;
+    }
+    .icon-box{
         margin-bottom: 24px;
-        .row{
-            margin-bottom: 0px;
+        .icon-img{
+            margin-bottom: 12px;
         }
-        .icon-box{
-            margin-bottom: 24px;
-            .icon-img{
-                margin-bottom: 12px;
-            }
-            .sub-title{
-                font-weight: 400;
-                font-size: 12px;
-                line-height: 1.5;
-                text-transform: uppercase;
-                color: #767F8C;
-            }
-            .title{
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 1.43;
-                color: #18191C;
-            }
+        .sub-title{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.5;
+            text-transform: uppercase;
+            color: #767F8C;
         }
-        .download-resume{
-            .title{
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 24px;
-                color: #18191C;
+        .title{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.43;
+            color: #18191C;
+        }
+    }
+    .download-resume{
+        .title{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #18191C;
+        }
+        .resume-file{
+            align-items: center;
+            .file-info{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .file-title{
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 1.5;
+                    color: #767F8C;
+                    margin-bottom: 4px;
+                }  
+                .file-formet{
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 1.43;
+                    color: #18191C;
+                    margin-bottom: 0px;
+                }              
             }
-            .resume-file{
-                align-items: center;
-                .file-info{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    .file-title{
-                        font-weight: 400;
-                        font-size: 12px;
-                        line-height: 1.5;
-                        color: #767F8C;
-                        margin-bottom: 4px;
-                    }  
-                    .file-formet{
-                        font-weight: 500;
-                        font-size: 14px;
-                        line-height: 1.43;
-                        color: #18191C;
-                        margin-bottom: 0px;
-                    }              
-                }
-                .download-icon{
-                    a{
-                        &:hover{
-                            svg{
-                                path{
-                                    stroke: white;
-                                }
+            .download-icon{
+                a{
+                    &:hover{
+                        svg{
+                            path{
+                                stroke: white;
                             }
                         }
                     }
                 }
             }
         }
-        .contact{
-            .title{
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 1.5;
-                color: #18191C;
+    }
+    .contact{
+        .title{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #18191C;
+        }
+        .contact-icon-box{
+            display: flex;
+            gap: 16px;
+            flex-direction: column;
+            @media (min-width: 525px){
+                flex-direction: row;
             }
-            .contact-icon-box{
-                display: flex;
-                gap: 16px;
-                flex-direction: column;
-                @media (min-width: 525px){
-                    flex-direction: row;
+            .info{
+                .subtitle{
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 1.5;
+                    text-transform: uppercase;
+                    color: #767F8C;
                 }
-                .info{
-                    .subtitle{
-                        font-weight: 400;
-                        font-size: 12px;
-                        line-height: 1.5;
-                        text-transform: uppercase;
-                        color: #767F8C;
-                    }
-                    .title{
-                        font-weight: 500;
-                        font-size: 14px;
-                        line-height: 1.43;
-                        color: #18191C;
-                    }
+                .title{
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 1.43;
+                    color: #18191C;
                 }
-            }
-            .devider{
-                margin: 20px 0;
-            }
-            .address{
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 1.43;
-                color: #5E6670;
-                margin-bottom: 0px;
             }
         }
+        .devider{
+            margin: 20px 0;
+        }
+        .address{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.43;
+            color: #5E6670;
+            margin-bottom: 0px;
+        }
     }
-    
+}
+
+.devider{
+    height: 1px;
+    background: #E4E5E8;
+    margin: 32px 0;
 }

@@ -2,6 +2,7 @@
   padding: 32px;
   border: 1px solid #edeff5;
   border-radius: 12px;
+  position: relative;
   .price-header{
       padding-bottom: 32px;
       border-bottom: 1px solid #edeff5;
@@ -9,12 +10,17 @@
       margin-right: -32px;
       padding-left: 32px;
       padding-right: 32px;
+      text-transform: uppercase;
       sup{
           vertical-align:baseline;
       }
       .badge{
-          position: relative;
-          top: -5px;
+          position: absolute;
+          top: -26px;
+          left: 50%;
+          transform: translateX(-50%);
+          text-transform: capitalize;
+          border-radius: 5px 5px 0px 0px;
       }
       @include breakpoint(md){
           text-align: center;

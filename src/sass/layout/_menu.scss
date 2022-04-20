@@ -254,7 +254,9 @@ a.contact-info{
     left: 242px;
     @include vis();
 }
-
+.sub-menu ul li a {
+    padding: 8px 15px !important;
+  }
 .mobile-menu {
     display: none
 }

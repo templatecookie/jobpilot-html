@@ -601,49 +601,7 @@ $(window).Scrollax();
     showPassword(finputOne,ficonOne)
   }
 
-  //  Range Slider
-// const sliderRange = document.querySelector('.sliderrange');
-// const output = document.querySelector('#value-range');
-// if (output) {
-//   output.innerHTML = `${sliderRange.value} miles`;
-// }
 
-// if (sliderRange) {
-//   sliderRange.oninput = function () {
-//     output.innerHTML = `${this.value} miles`;
-//   };
-
-//   sliderRange.addEventListener('mousemove', function () {
-//     var x = sliderRange.value;
-
-//     var color = `linear-gradient(
-//       90deg,
-//       #0066FF ${x}%,
-//       rgb(218, 221, 229) ${x}%
-//     )`;
-
-//     sliderRange.style.background = color;
-//   });
-// }
-
-// if (range) {
-//   noUiSlider.create(range, {
-//     start: [20, 80],
-//     connect: true,
-//     range: {
-//       min: [0],
-//       max: [500],
-//     },
-//     format: wNumb({
-//       decimals: 3,
-//       thousand: '.',
-//       suffix: ' ($)',
-//     }),
-//     tooltips: true,
-//   });
-// }
- 
-  
 $('#basic').flagStrap();
 
 // top company slider init
@@ -703,11 +661,46 @@ $( "#datepicker" ).datepicker({
 
 })(jQuery);
 
-var input = document.querySelector("#phone");
-window.intlTelInput(input, {
+
+  var input = document.querySelector("#phone");
+  if(input){
+  window.intlTelInput(input, {
+      separateDialCode: true,
+  });
+}
+
+
+  var input2 = document.querySelector("#phone2");
+  if(input2){
+    window.intlTelInput(input2, {
     separateDialCode: true,
 });
-var input2 = document.querySelector("#phone2");
-window.intlTelInput(input2, {
-    separateDialCode: true,
-});
+}
+
+
+
+  //  Range Slider
+  const sliderRange = document.querySelector('.sliderrange');
+  const output = document.querySelector('#value-range');
+  if (output) {
+    output.innerHTML = `${sliderRange.value} miles`;
+  }
+  
+  if (sliderRange) {
+    sliderRange.oninput = function () {
+      output.innerHTML = `${this.value} miles`;
+    };
+  
+    sliderRange.addEventListener('mousemove', function () {
+      var x = sliderRange.value;
+  
+      var color = `linear-gradient(
+        90deg,
+        #0066FF ${x}%,
+        rgb(218, 221, 229) ${x}%
+      )`;
+  
+      sliderRange.style.background = color;
+    });
+  }
+  

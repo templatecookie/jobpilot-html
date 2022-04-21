@@ -662,45 +662,49 @@ $( "#datepicker" ).datepicker({
 })(jQuery);
 
 
-  var input = document.querySelector("#phone");
-  if(input){
-  window.intlTelInput(input, {
-      separateDialCode: true,
-  });
+var input = document.querySelector("#phone");
+if (input) {
+    window.intlTelInput(input, {
+        separateDialCode: true,
+    });
 }
 
-
-  var input2 = document.querySelector("#phone2");
-  if(input2){
+var input2 = document.querySelector("#phone2");
+if (input2) {
     window.intlTelInput(input2, {
-    separateDialCode: true,
-});
+        separateDialCode: true,
+    });
 }
 
-
-
-  //  Range Slider
-  const sliderRange = document.querySelector('.sliderrange');
-  const output = document.querySelector('#value-range');
-  if (output) {
+//  Range Slider
+const sliderRange = document.querySelector(".sliderrange");
+const output = document.querySelector("#value-range");
+if (output) {
     output.innerHTML = `${sliderRange.value} miles`;
-  }
-  
-  if (sliderRange) {
+}
+
+if (sliderRange) {
     sliderRange.oninput = function () {
-      output.innerHTML = `${this.value} miles`;
+        output.innerHTML = `${this.value} miles`;
     };
-  
-    sliderRange.addEventListener('mousemove', function () {
-      var x = sliderRange.value;
-  
-      var color = `linear-gradient(
+
+    sliderRange.addEventListener("mousemove", function () {
+        var x = sliderRange.value;
+
+        var color = `linear-gradient(
         90deg,
         #0066FF ${x}%,
         rgb(218, 221, 229) ${x}%
       )`;
-  
-      sliderRange.style.background = color;
+
+        sliderRange.style.background = color;
     });
-  }
-  
+}
+
+
+$("#country_selector").countrySelect({
+    defaultCountry: "us",
+    onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+    responsiveDropdown: true,
+    preferredCountries: ["ca", "gb", "us"],
+});

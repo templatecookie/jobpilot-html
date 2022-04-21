@@ -3,6 +3,7 @@
 }
 .dashboard-right-header{
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .d-sidebar {
@@ -647,7 +648,7 @@ ul.recent-activity {
 
 
 .dashboard-right {
-  padding-top: 50px;
+  padding-top: 40px;
   padding-left: 20px;
   padding-bottom: 30px;
   @include breakpoint(lg) {
@@ -838,5 +839,16 @@ ul.recent-activity {
         }
     }
     }
+  }
+}
+
+.header-dropdown{
+  display: flex;
+  align-items: center;
+  @media (max-width: 575px) {
+    display: block;
+  }
+  h4{
+    width: 140px;
   }
 }

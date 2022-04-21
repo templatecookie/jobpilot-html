@@ -12,14 +12,30 @@
       </div>
       <div class="col-lg-9">
         <div class="dashboard-right">
-          {% include "../templates/components/employe/dashboard-employe.html" %}
-          
+          <div class="dashboard-right-header rt-mb-32">
+            <div class="left-text m-0">
+              <h3 class="f-size-18 lh-1 m-0">My Jobs  <span class="text-gray-400">(589)</span></h3>
+            </div>
+            <div class="header-dropdown">
+              <h4 class="f-size-14 text-gray-900 m-0">Job status</h4>
+              
+              <select class="rt-selectactive " name="from3" style="width: 100%" >
+                <option>All Jobs</option>
+                <option value="2">Male</option>
+                <option value="3">Female</option>
+                <option value="4">Other's</option>
+            </select>
+            </div>
+            <span class="sidebar-open-nav">
+              <i class="ph-list"></i>
+            </span>
+          </div>
+          {% include "../templates/components/employe/dashboard-employe-job.html" %}
+          <div class="rt-pt-30">
+            {% include "../templates/components/pagination/pagination.html" %}
+          </div>
         </div>
-        
-      </div>
     </div>
-    
-  
 </div>
 {% include "../templates/layout/header-footer/dashboard-footer.html" %}
   

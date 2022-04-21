@@ -22,16 +22,23 @@
                             <div class="header-top-info">
                                 <a class="contact-info" href=""> <img src="assets/images/svg/phonecall.svg" alt=""> +1-202-555-0178</a>
                             </div>
-                            <!-- <div class="language-picker js-language-picker desktop-show">
-                                <form action="" class="language-picker__form">
-                                  <label for="language-picker-select"></label>
-                                  <select name="language-picker-select" id="language-picker-select">
-                                    <option lang="en" value="english" selected>English</option>
-                                    <option lang="de" value="deutsch">Germany</option>
-                                    <option lang="sp" value="spanish">Spanish</option>
-                                  </select>
-                                </form>
-                              </div> -->
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="flag-icon flag-icon-bd"></i>
+                                        Bangla</a></li>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li id="lang-dropdown-item"><a class="dropdown-item" href="#">
+                                        <i class="flag-icon flag-icon-bd"></i>
+                                        Bangla</a></li>
+                                    <li id="lang-dropdown-item"><a class="dropdown-item" href="#">
+                                        <i class="flag-icon flag-icon-us"></i>
+                                        English</a></li>
+                                    <li id="lang-dropdown-item"><a class="dropdown-item" href="#">
+                                        <i class="flag-icon flag-icon-ae"></i>
+                                        Arabic</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -43,7 +50,20 @@
                 <div class=" d-flex align-items-center">
                     <a href="index.html" class="brand-logo"><img src="assets/images/logo/logo.png" alt=""></a>
                 </div><!-- /.ms-auto -->
-                <!-- <div id="basic" data-input-name="country"></div> -->
+                <form style="max-width: 200px;" class="d-none d-lg-inline-block">
+                    <div class="form-item">
+                        <input id="country_selector" type="text" class="custom-input">
+                        <label for="country_selector" style="display:none;">Select a country here...</label>
+                    </div>
+                    <div class="form-item" style="display:none;">
+                        <input type="text" id="country_selector_code" name="country_selector_code" data-countrycodeinput="1" readonly="readonly" placeholder="Selected country code will appear here" />
+                        <label for="country_selector_code">...and the selected country code will be updated here</label>
+                    </div>
+                    <button type="submit" style="display:none;">Submit</button>
+		        </form>
+                <form action="" class="d-none d-lg-inline-block">
+                    <input class="custom-input2 w-100" type="text" placeholder="Job tittle, keyword, company">
+                </form>
                 <div class="ms-auto">
                     <div class="rt-nav-tolls d-flex align-items-center">
                         <ul>
@@ -69,3 +89,4 @@
         </div><!-- /.navbar -->
     </div><!-- /.main-header -->
 </header>
+

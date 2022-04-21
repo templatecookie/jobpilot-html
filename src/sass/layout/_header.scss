@@ -157,3 +157,16 @@
   z-index: 9;
   visibility: visible;
 }
+
+
+.custom-input {
+    border-right: transparent !important;
+    border-radius: 5px 0px 0px 5px !important;
+}
+.custom-input2{
+    border-radius: 0px 5px 5px 0px !important;
+    width: 400px !important;
+    @media (max-width: 992px){
+      width: 100% !important;
+    }
+}

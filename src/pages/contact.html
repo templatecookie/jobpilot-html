@@ -1,8 +1,13 @@
 {% extends "layout/layout.html" %}
 
 {% block content %}
+{% include "../templates/layout/header-footer/header-home1.html" %}
 
-{% include "../templates/layout/header-footer/header-normal.html" %}
+{% set page_title = "Contact" %}
+{% set current_page = "Contact" %}
+
+
+{% include "../templates/components/breadcrumbs/breadcrumbs.html" %}
 
 
 <div class="rt-contact">

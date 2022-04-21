@@ -12,13 +12,18 @@
       </div>
       <div class="col-lg-9">
         <div class="dashboard-right">
-          <div class="recently-applied-wrap mb-4">
-            <h3 class="f-size-18 lh-1">Applied Jobs  <span class="text-gray-400">(589)</span></h3>
+          <div class="dashboard-right-header rt-mb-32">
+            <div class="left-text m-0">
+              <h3 class="f-size-18 lh-1 m-0">Applied Jobs  <span class="text-gray-400">(589)</span></h3>
+            </div>
+            <span class="sidebar-open-nav">
+              <i class="ph-list"></i>
+            </span>
           </div>
           {% include "../templates/components/candidates/db-applied-job.html" %}
           <div class="rt-pt-30">
             {% include "../templates/components/pagination/pagination.html" %}
-        </div>
+          </div>
         </div>
         
       </div>

@@ -801,7 +801,7 @@ ul.recent-activity {
 }
 
 // table dropdown
-.company-dashboard-overview{
+.company-dashboard-dropdown{
   background: #FFFFFF;
   border: 1px solid #E9EAED;
   box-sizing: border-box;
@@ -851,4 +851,19 @@ ul.recent-activity {
   h4{
     width: 140px;
   }
+}
+
+.usd {
+  width: 66px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  background: rgba(241, 242, 244, 0.7);
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--gray-600);
+  border-radius: 6px 0 0 6px;
 }

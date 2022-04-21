@@ -226,6 +226,31 @@
     }
   }
 }
+.card{
+  &.jobcardStyle1{
+    &.saved-candidate{
+      border-radius: 0;
+      border: 1px solid transparent;
+      border-bottom: 1px solid var(--gray-100);
+      // box-shadow: 0 1px 0 0 var(--gray-100);
+      .card-body{
+        padding: 20px;
+        .profile-image{
+          width: 48px;
+          height: 48px;
+        }
+        .post-main-title{
+          font-size: 16px;
+          line-height: 1;
+        }
+      }
+      &:hover{
+        
+        border: 1px solid var(--primary-500);
+      }
+    }
+  }
+}
 
 .newestjob_active, .icon-extra-postion{
   .iconbox-extra{

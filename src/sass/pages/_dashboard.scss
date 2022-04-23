@@ -867,3 +867,167 @@ ul.recent-activity {
   color: var(--gray-600);
   border-radius: 6px 0 0 6px;
 }
+
+// account progress
+
+
+
+#msform fieldset:not(:first-of-type) {
+  display: none
+}
+
+.account-progress-wrap {
+  max-width: 984px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+
+
+// .steps {
+//     font-size: 25px;
+//     color: gray;
+//     margin-bottom: 10px;
+//     font-weight: normal;
+//     text-align: right
+// }
+
+// .fieldlabels {
+//     color: red;
+//     text-align: left
+// }
+
+// #progressbar {
+//     margin-bottom: 30px;
+//     overflow: hidden;
+//     color: lightgrey
+// }
+
+// #progressbar .active {
+//     color: #673AB7
+// }
+
+// #progressbar li {
+//     list-style-type: none;
+//     font-size: 15px;
+//     width: 25%;
+//     float: left;
+//     position: relative;
+//     font-weight: 400
+// }
+
+// #progressbar #account:before {
+//     font-family: FontAwesome;
+//     content: "\f13e"
+// }
+
+// #progressbar #personal:before {
+//     font-family: FontAwesome;
+//     content: "\f007"
+// }
+
+// #progressbar #payment:before {
+//     font-family: FontAwesome;
+//     content: "\f030"
+// }
+
+// #progressbar #confirm:before {
+//     font-family: FontAwesome;
+//     content: "\f00c"
+// }
+
+// #progressbar li:before {
+//     width: 50px;
+//     height: 50px;
+//     line-height: 45px;
+//     display: block;
+//     font-size: 20px;
+//     color: #ffffff;
+//     background: lightgray;
+//     border-radius: 50%;
+//     margin: 0 auto 10px auto;
+//     padding: 2px
+// }
+
+// #progressbar li:after {
+//     content: '';
+//     width: 100%;
+//     height: 2px;
+//     background: lightgray;
+//     position: absolute;
+//     left: 0;
+//     top: 25px;
+//     z-index: -1
+// }
+
+// #progressbar li.active:before,
+// #progressbar li.active:after {
+//     background: #673AB7
+// }
+.progress {
+  height: 8px;
+  width: 312px;
+  background-color: var(--primary-50);
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.progress-bar {
+    background-color: var(--primary-500);
+}
+.hide-menu{
+  display: none;
+}
+
+.account-setup-header{
+  .main-header{
+    box-shadow: none;
+  }
+  
+}
+.progress-wrap{
+  @media (max-width: 767px) {
+    margin-top: 30px;
+  }
+}
+
+.account-successfull{
+  &-wrap{
+    text-align: center;
+    max-width: 580px;
+    margin: 0 auto;
+    padding: 130px 0;
+    @media (max-width: 1199px) {
+      padding: 30px 0 0;
+    }
+  }
+  &-icon{
+    width: 126px;
+    height: 126px;
+    display: flex;
+    border-radius: 100%;
+    align-items: center;
+    margin: 0 auto 30px;
+    justify-content: center;
+    background-color: var(--primary-50);
+    @media (max-width: 767px) {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  &-data{
+    h4{
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 16px;
+      color: var(--gray-900);
+    }
+    p{
+      margin-bottom: 32px;
+      color: var(--gray-600);
+      padding: 0 30px;
+    }
+  }
+}

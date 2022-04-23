@@ -34,7 +34,7 @@
 (function ($) {
   /* 1.0 Dropdown Menu  */
 
-  if ($(window).width() < 991.98) {
+ 
     $(".menu-item-has-children > a").on("click", function () {
       var element = $(this).parent("li");
       if (element.hasClass("open")) {
@@ -52,7 +52,7 @@
         element.siblings("li").find("ul").slideUp();
       }
     });
-  }
+  
 
   $(".has-children > .jobwidget_tiitle").on("click", function () {
     var element = $(this).parent("li");
@@ -604,18 +604,6 @@ $(window).Scrollax();
 
 $('#basic').flagStrap();
 
-// top company slider init
-// if ($(".testimonal2-active").length > 0) {
-//   $(".testimonal2-active").slick({
-//     slidesToShow: 1,
-//     infinite: true,
-//     slidesToScroll: 1,
-//     dots: true,
-//     fade: true,
-//     prevArrow: $(".slickprev3"),
-//     nextArrow: $(".slicknext3"),
-//   });
-// }
 
 if ($(".top-company-slider").length > 0) {
   $(".top-company-slider").slick({
@@ -662,19 +650,7 @@ $( "#datepicker" ).datepicker({
 })(jQuery);
 
 
-var input = document.querySelector("#phone");
-if (input) {
-    window.intlTelInput(input, {
-        separateDialCode: true,
-    });
-}
 
-var input2 = document.querySelector("#phone2");
-if (input2) {
-    window.intlTelInput(input2, {
-        separateDialCode: true,
-    });
-}
 
 //  Range Slider
 const sliderRange = document.querySelector(".sliderrange");
@@ -708,3 +684,97 @@ $("#country_selector").countrySelect({
     responsiveDropdown: true,
     preferredCountries: ["ca", "gb", "us"],
 });
+
+
+// account progrees
+var current_fs, next_fs, previous_fs; //fieldsets
+var opacity;
+var current = 1;
+var steps = $("fieldset").length;
+
+setProgressBar(current);
+
+$(".next").click(function(){
+
+current_fs = $(this).parent();
+next_fs = $(this).parent().next();
+
+//Add Class Active
+$("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+//show the next fieldset
+next_fs.show();
+//hide the current fieldset with style
+current_fs.animate({opacity: 0}, {
+step: function(now) {
+// for making fielset appear animation
+opacity = 1 - now;
+
+current_fs.css({
+'display': 'none',
+'position': 'relative'
+});
+next_fs.css({'opacity': opacity});
+},
+duration: 500
+});
+setProgressBar(++current);
+});
+
+$(".previous").click(function(){
+
+current_fs = $(this).parent();
+previous_fs = $(this).parent().prev();
+
+//Remove class active
+$("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+//show the previous fieldset
+previous_fs.show();
+
+//hide the current fieldset with style
+current_fs.animate({opacity: 0}, {
+step: function(now) {
+// for making fielset appear animation
+opacity = 1 - now;
+
+current_fs.css({
+'display': 'none',
+'position': 'relative'
+});
+previous_fs.css({'opacity': opacity});
+},
+duration: 500
+});
+setProgressBar(--current);
+});
+
+function setProgressBar(curStep){
+var percent = parseFloat(100 / steps) * curStep;
+percent = percent.toFixed();
+$(".progress-bar").css("width",percent+"%")
+$(".test").css("width",percent+"%")
+
+}
+
+const hideMenuBtn = document.querySelector('.hide-menu-btn')
+const hideMenu = document.getElementById('progressbar')
+if(hideMenuBtn){
+  hideMenuBtn.addEventListener('click', function(){
+    hideMenu.classList.add('hide-menu')
+  })
+}
+
+var inputPhone = document.querySelector("#phone");
+if (inputPhone) {
+    window.intlTelInput(inputPhone, {
+        separateDialCode: true,
+    });
+}
+
+var inputPhone = document.querySelector("#phone2");
+if (inputPhone) {
+    window.intlTelInput(inputPhone, {
+        separateDialCode: true,
+    });
+}

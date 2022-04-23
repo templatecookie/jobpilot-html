@@ -1,0 +1,133 @@
+{% extends "layout/layout.html" %}
+
+
+{% block content %}
+{% include "../templates/layout/header-footer/account-setup-header.html" %}
+
+<div class="dashboard-wrapper account-setup">
+  <div class="container">
+    <div class="account-progress-wrap">
+      <div id="msform">
+        <ul class="nav nav-pills justify-content-center" id="progressbar">
+            <li class="nav-link active"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 15C15.3137 15 18 12.3137 18 9C18 5.68629 15.3137 3 12 3C8.68629 3 6 5.68629 6 9C6 12.3137 8.68629 15 12 15Z" stroke="#767F8C" stroke-width="1.5" stroke-miterlimit="10"/>
+              <path d="M2.9043 20.2491C3.82638 18.6531 5.15225 17.3278 6.74869 16.4064C8.34513 15.485 10.1559 15 11.9992 15C13.8424 15 15.6532 15.4851 17.2497 16.4065C18.8461 17.3279 20.1719 18.6533 21.094 20.2493" stroke="#767F8C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Personal
+            </li>
+            <li class="nav-link"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#767F8C" stroke-width="1.5" stroke-miterlimit="10"/>
+              <path d="M12 15C14.0711 15 15.75 13.3211 15.75 11.25C15.75 9.17893 14.0711 7.5 12 7.5C9.92893 7.5 8.25 9.17893 8.25 11.25C8.25 13.3211 9.92893 15 12 15Z" stroke="#767F8C" stroke-width="1.5" stroke-miterlimit="10"/>
+              <path d="M5.98047 18.6913C6.54542 17.5806 7.40671 16.6478 8.469 15.9963C9.53128 15.3448 10.7531 15 11.9993 15C13.2455 15 14.4673 15.3448 15.5296 15.9963C16.5919 16.6478 17.4532 17.5806 18.0181 18.6913" stroke="#767F8C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Profile</li>
+            <li class="nav-link"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#767F8C" stroke-width="1.5" stroke-miterlimit="10"/>
+              <path d="M3 12H21" stroke="#767F8C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 20.758C14.0711 20.758 15.75 16.8367 15.75 11.9996C15.75 7.16248 14.0711 3.24121 12 3.24121C9.92893 3.24121 8.25 7.16248 8.25 11.9996C8.25 16.8367 9.92893 20.758 12 20.758Z" stroke="#767F8C" stroke-width="1.5" stroke-miterlimit="10"/>
+              </svg>
+              Social Links</li>
+            <li class="nav-link"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 15.75C14.0711 15.75 15.75 14.0711 15.75 12C15.75 9.92893 14.0711 8.25 12 8.25C9.92893 8.25 8.25 9.92893 8.25 12C8.25 14.0711 9.92893 15.75 12 15.75Z" stroke="#767F8C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16.976 19.5002C15.3051 20.6091 13.3118 21.1283 11.3122 20.9753C9.31272 20.8223 7.42155 20.006 5.93881 18.6558C4.45607 17.3057 3.46668 15.499 3.12763 13.5225C2.78859 11.546 3.11931 9.51291 4.06732 7.74578C5.01532 5.97864 6.52632 4.57871 8.36055 3.76811C10.1948 2.9575 12.2472 2.78266 14.1921 3.27132C16.137 3.75998 17.863 4.88415 19.0963 6.46546C20.3295 8.04677 20.9994 9.99464 20.9996 12C20.9996 14.0711 20.2496 15.75 18.3746 15.75C16.4996 15.75 15.7496 14.0711 15.7496 12V8.25001" stroke="#767F8C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Contact</li>
+        </ul>
+        <fieldset>
+            <div class="form-card">
+              {% include "../templates/components/dashboard/tab-account/personal-tab.html" %}
+            </div> 
+            <button type="button" class="btn next btn-primary">
+                Save & Next
+            </button>
+        </fieldset>
+        <fieldset>
+            <div class="form-card mb-4">
+                {% include "../templates/components/dashboard/tab-account/profile-tab.html" %} 
+            </div>
+            <button type="button" class="btn previous bg-gray-50 rt-mr-8">
+                Previous
+            </button>
+            <button type="button" class="btn next btn-primary">
+              <span class="button-content-wrapper ">
+                <span class="button-icon align-icon-right">
+                  <i class="ph-arrow-right"></i>       
+                </span>
+                <span class="button-text">
+                  Save & Next
+                </span>
+              </span>
+            </button>
+        </fieldset>
+        <fieldset>
+            <div class="form-card mb-4">
+              {% include "../templates/components/dashboard/tab-account/social-link-tab.html" %}
+            </div>
+            <button type="button" class="btn previous bg-gray-50 rt-mr-8">
+                Previous
+            </button>
+            <button type="button" class="btn next btn-primary">
+              <span class="button-content-wrapper ">
+                <span class="button-icon align-icon-right">
+                  <i class="ph-arrow-right"></i>       
+                </span>
+                <span class="button-text">
+                  Save & Next
+                </span>
+              </span>
+            </button>
+        </fieldset>
+        <fieldset>
+            <div class="form-card mb-4">
+              {% include "../templates/components/dashboard/tab-account/contact-tab.html" %}
+            </div>
+            <button type="button" class="btn previous bg-gray-50 rt-mr-8">
+              Previous
+            </button>
+            <button type="button" class="btn next btn-primary hide-menu-btn">
+              <span class="button-content-wrapper ">
+                <span class="button-icon align-icon-right">
+                  <i class="ph-arrow-right"></i>       
+                </span>
+                <span class="button-text">
+                  Save & Next
+                </span>
+              </span>
+            </button>
+        </fieldset>
+        <fieldset>
+          <div class="account-successfull-wrap">
+            <div class="account-successfull-icon">
+              <img src="assets/images/svg/Check-double.svg" alt="">
+            </div>
+            <div class="account-successfull-data">
+              <h4>🎉 Congratulations, You profile is 100% complete!</h4>
+              <p>Donec hendrerit, ante mattis pellentesque eleifend, tortor urna malesuada ante, eget aliquam nulla augue hendrerit ligula. Nunc mauris arcu, mattis sed sem vitae.</p>
+            </div>
+            <a href="candidate-overview.html" class="btn bg-gray-50 rt-mr-8">
+              Previous
+            </a>
+            <a href="post-job.html" class="btn btn-primary">
+              <span class="button-content-wrapper ">
+                <span class="button-icon align-icon-right">
+                  <i class="ph-arrow-right"></i>       
+                </span>
+                <span class="button-text">
+                  Save & Next
+                </span>
+              </span>
+            </a>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+    
+  </div>
+{% include "../templates/layout/header-footer/dashboard-footer.html" %}
+  
+</div>
+
+
+
+
+{% endblock %}

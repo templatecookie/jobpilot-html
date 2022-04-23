@@ -3267,11 +3267,6 @@ first-chunk-stream@^1.0.0:
   resolved "https://registry.yarnpkg.com/first-chunk-stream/-/first-chunk-stream-1.0.0.tgz#59bfb50cd905f60d7c394cd3d9acaab4e6ad934e"
   integrity sha1-Wb+1DNkF9g18OUzT2ayqtOatk04=
 
-flag-icons@^6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/flag-icons/-/flag-icons-6.2.0.tgz#afc990e7b55c82dc1d02fd5b20c1bcf305c0a9f8"
-  integrity sha512-cFpV72wTVaRhcU6dzyD3rtCbx+8AtFXHxlidtXMCqssBbuUTmHzc6GlGDb8XfxtMZGx9I/HzsLe6En3RjUWsCw==
-
 flagged-respawn@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/flagged-respawn/-/flagged-respawn-1.0.1.tgz#e7de6f1279ddd9ca9aac8a5971d618606b3aab41"

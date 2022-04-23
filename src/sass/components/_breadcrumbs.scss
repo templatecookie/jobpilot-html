@@ -22,7 +22,7 @@
   padding: 160px 0 23px;
   background-color: var(--gray-20) ;
   @media (max-width: 991px) {
-    padding: 110px 0 23px;
+    padding: 140px 0 23px;
   }
   @include rt-trs(0.24s);
   .breadcrumb-title{
@@ -40,10 +40,10 @@
     }
   }
   &.style-two{
-    @include breakpoint(lg){
-      height: auto;
-      padding: 50px 0;
-    }
+    // @include breakpoint(lg){
+    //   height: auto;
+    //   padding: 50px 0;
+    // }
     .jobsearchBox{
       @include breakpoint(xl){
         margin-top: 50px;

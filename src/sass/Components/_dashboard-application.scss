@@ -1,0 +1,9 @@
+.btn-profile{
+    &:hover{
+        svg{
+            path{
+                stroke: white;
+            }
+        }
+    }
+}

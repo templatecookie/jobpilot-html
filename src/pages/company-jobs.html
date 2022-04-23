@@ -2,79 +2,46 @@
 
 
 {% block content %}
-{% include "../templates/layout/header-footer/dashboard-headr.html" %}
+{% include "../templates/layout/header-footer/header-home3.html" %}
 
 <div class="dashboard-wrapper">
-  {% include "../templates/components/dashboard/company-sidebar.html" %}
-  <div class="d-page-content">
-    <div class="position-relative">
-        <h5 class="rt-mb-32">My Jobs</h5>
-        <span class="sidebar-open-nav">
-          <i class="ph-list"></i>
-        </span>
-    </div>
-    <form class="dashboard-input d-flex  flex-column flex-lg-row rt-mb-32" action="#">
-      <div class="flex-grow-1">
-        <div class="row">
-          <div class="col-lg-4 rt-mb-lg-20">
-            <div class="fromGroup has-icon2">
-              <input type="text" placeholder="Job tittle, Keyword...">
-              <div class="icon-badge rt-ml-14">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M21.0004 21.0004L16.6504 16.6504" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                  
-              </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        {% include "../templates/components/dashboard/company-sidebar.html" %}
+      </div>
+      <div class="col-lg-9">
+        <div class="dashboard-right">
+          <div class="dashboard-right-header rt-mb-32">
+            <div class="left-text m-0">
+              <h3 class="f-size-18 lh-1 m-0">My Jobs  <span class="text-gray-400">(589)</span></h3>
             </div>
-          </div>
-          <div class="col-lg-4 rt-mb-lg-20">
-            <div class="fromGroup has-icon2">
-              <select class="rt-selectactive " name="from" style="width: 100%">
-                <option>Select Category </option>
-                <option value="2">Front End Developer</option>
-                <option value="3">Back End Developer</option>
-                <option value="4">Full Stack Developer</option>
-                <option value="5">Wordpress Developer</option>
-                <option value="6">UI / UX Designer</option>
-                <option value="7">Facebook Marketing</option>
-                <option value="8">Digital Marketing</option>
+            <div class="header-dropdown">
+              <h4 class="f-size-14 text-gray-900 m-0">Job status</h4>
+              
+              <select class="rt-selectactive " name="from3" style="width: 100%" >
+                <option>All Jobs</option>
+                <option value="2">Male</option>
+                <option value="3">Female</option>
+                <option value="4">Other's</option>
             </select>
-            <div class="icon-badge rt-ml-14">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 17L12 22L22 17" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M2 12L12 17L22 12" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                  
             </div>
-            </div>
+            <span class="sidebar-open-nav">
+              <i class="ph-list"></i>
+            </span>
+          </div>
+          {% include "../templates/components/employe/dashboard-employe-job.html" %}
+          <div class="rt-pt-30">
+            {% include "../templates/components/pagination/pagination.html" %}
           </div>
         </div>
-      </div>
-      <div class="flex-grow-0">
-        <div class="min-200">
-          <select class="rt-selectactive " name="from" style="width: 100%">
-            <option>All Jobs</option>
-            <option value="2">Front End Developer</option>
-            <option value="3">Back End Developer</option>
-            <option value="4">Full Stack Developer</option>
-            <option value="5">Wordpress Developer</option>
-            <option value="6">UI / UX Designer</option>
-            <option value="7">Facebook Marketing</option>
-            <option value="8">Digital Marketing</option>
-        </select>
-        </div>
-      </div>
-    </form>
-
-    {% include "../templates/components/employe/dashboard-employe.html" %}
-
-    <div class="rt-pt-50">
-      {% include "../templates/components/pagination/dashboard-pagination.html" %}
     </div>
-    {% include "../templates/layout/header-footer/dashboard-footer.html" %}
-  </div>
 </div>
+{% include "../templates/layout/header-footer/dashboard-footer.html" %}
+  
+</div>
+
+
+
 
 {% endblock %}

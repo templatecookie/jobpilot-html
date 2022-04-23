@@ -1,61 +1,45 @@
 {% extends "layout/layout.html" %}
 
-
 {% block content %}
-{% include "../templates/layout/header-footer/header-candidates.html" %}
+{% include "../templates/layout/header-footer/header-home2.html" %}
+
+{% set page_title = "Find Job" %}
+{% set current_page = "Find Job" %}
+
+
+{% include "../templates/components/breadcrumbs/breadcrumbs2.html" %}
 
 <div class="joblist-content">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
-            <div class="col-lg-7 rt-mb-24">
-                <div class="joblist-left-content rt-pt-50">
-                    <div class="jobsearchBox d-flex flex-column flex-md-row bg-gray-10 input-transparent rt-mb-24">
-                        <div class="flex-grow-1 fromGroup has-icon">
-                            <input type="text" placeholder="Design">
-                            <div class="icon-badge">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M20.9999 21L16.6499 16.65" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
+            <div class="col-lg-12">
+                <div class="joblist-left-content2 rt-pt-20">
+                    <div class="d-flex flex-wrap">
+                        <div class="flex-grow-1 rt-mb-20">
+                            <div class="filtertags">
+                                <div class="single-tag">
+                                    Design 
+                                    <span class="close-tag pointer">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="white"/>
+                                            <path d="M12.9995 7L6.99951 13" stroke="#636A80" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.99951 7L12.9995 13" stroke="#636A80" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg> 
+                                    </span>
+                                </div>
+                                <div class="single-tag">
+                                    New York
+                                    <span class="close-tag pointer">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="white"/>
+                                            <path d="M12.9995 7L6.99951 13" stroke="#636A80" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.99951 7L12.9995 13" stroke="#636A80" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg> 
+                                    </span>
+                                </div>
                             </div>
                         </div>
-                        <div class="flex-grow-1 fromGroup has-icon no-border">
-                            <input type="text" placeholder="New York, USA">
-                            <div class="icon-badge">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#0066FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>                                              
-                            </div>
-                        </div>
-                        <div class="flex-grow-0">
-                            <button class="btn btn-primary d-block d-md-inline-block ">Find Job</button>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-wrap justify-content-between">
-                        <div class="rt-mb-24">
-                            <button type="button" class="btn btn-primary toggle-filter-sidebar">
-                                <span class="button-content-wrapper ">
-                                    <span class="button-icon align-icon-left">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20 21V16" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M17 16H23" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M4 21V14" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M1 14H7" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M12 21V12" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M9 8H15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M20 12V3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M12 8V3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M4 10V3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>                         
-                                    </span>
-                                    <span class="button-text">
-                                        Filter
-                                    </span>
-                                </span>
-                            </button>
-                        </div>
-                        <div class="rt-mb-24">
+                        <div class="flex-grow-0 rt-mb-20">
                             <div class="joblist-fliter-gorup">
                                 <div class="left-content">
                                     <select class="rt-selectactive gap" name="from" style="width: 100%">
@@ -105,12 +89,21 @@
                             </div>
                         </div>
                     </div>
-                    <hr>
-                    <div class="rt-spacer-32"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <hr class="rt-p-0 rt-m-0">
+                <div class="rt-spacer-50"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane  show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                             <div class="row">
-                                {% include "../templates/components/job/filterjob-two-column.html" %}
+                                {% include "../templates/components/job/filterjob-three-column.html" %}
                             </div>
                             <div class="rt-pt-30">
                                 {% include "../templates/components/pagination/pagination.html" %}
@@ -123,17 +116,10 @@
                             </div>
                         </div>
                       </div>
-                </div>
-            </div>
-            <div class="col-lg-5 rt-mb-24">
-                <div id="mapid"></div>
             </div>
         </div>
     </div>
 </div>
-<div class="rt-spacer-80 rt-spacer-md-40"></div>
-{% include "../templates/components/job/jobfilter-sidebar.html" %}
+<div class="rt-spacer-100 rt-spacer-md-50"></div>
 {% include "../templates/layout/header-footer/footer-five.html" %}
-
-
 {% endblock %}

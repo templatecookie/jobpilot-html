@@ -1,0 +1,37 @@
+{% extends "layout/layout.html" %}
+
+
+{% block content %}
+{% include "../templates/layout/header-footer/auth-header-center.html" %}
+<div class="row justify-content-center align-items-center full-height">
+    <div class="col-lg-4">
+        <div class="auth-box2 mx-auto">
+                    <form action="#" class="rt-form">
+                        <h4 class="rt-mb-20 text-center">Email Verification</h4>
+                        <span class="d-block body-font-3 text-center text-gray-600 rt-mb-32">We've sent an verification to <span><a href="#">emailaddress@gmail.com</a> to verify your email address and activate your account.</span></span>
+                        <div class="fromGroup rt-mb-15">
+                            <input type="text" placeholder="Verification Code" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary d-block rt-mb-15">
+                            <span class="button-content-wrapper ">
+                                <span class="button-icon align-icon-right">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 12H19" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path d="M12 5L19 12L12 19" stroke="white" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                                <span class="button-text">
+                                    Verify My Account
+                                </span>
+                            </span>
+                        </button>
+                        <span class="d-block body-font-3 text-center text-gray-600 rt-mb-32">Don't receive any code ! <span><a href="#">Resends</a></span></span>
+                    </form>
+                </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -34,7 +34,7 @@
 (function ($) {
   /* 1.0 Dropdown Menu  */
 
-  if ($(window).width() < 991.98) {
+ 
     $(".menu-item-has-children > a").on("click", function () {
       var element = $(this).parent("li");
       if (element.hasClass("open")) {
@@ -52,7 +52,7 @@
         element.siblings("li").find("ul").slideUp();
       }
     });
-  }
+  
 
   $(".has-children > .jobwidget_tiitle").on("click", function () {
     var element = $(this).parent("li");
@@ -197,6 +197,8 @@
       dots: true,
       prevArrow: $(".slickprev2"),
       nextArrow: $(".slicknext2"),
+      prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+      nextArrow: '<button class="slide-arrow next-arrow"></button>',
       responsive: [
         {
           breakpoint: 1199,
@@ -556,5 +558,223 @@ $(window).Scrollax();
     $("body").toggleClass("price-toggole");
   })
 
+  // notifications
+  const $menu = $('.notification-icon');
+    $(document).mouseup((e) => {
+      if (
+        !$menu.is(e.target) && // if the target of the click isn't the container...
+        $menu.has(e.target).length === 0
+      ) {
+        // ... nor a descendant of the container
+        $menu.removeClass('notification-visiable');
+      }
+    });
+
+    $('.notification-icon').on('click', (event) => {
+      event.preventDefault();
+      $menu.toggleClass('notification-visiable');
+    });
+    //end notification
+  
+  // 6. input type changer 
+  function showPassword(input, icon) { 
+  icon.addEventListener('click', (e) => { 
+    // todo 1:  toggle eye show / hide  
+    icon.classList.toggle('ph-eye-slash');
+    // todo 2: input type 
+    input.type === 'password' ? input.type = 'text' : input.type = 'password';
+  })
+  }
+
+  const input =  document.querySelector("#password-hide_show");
+  const inputIcon = document.querySelector(".has-badge i");
+
+  const finputOne = document.querySelector("#password-hide_show1");
+  const ficonOne = document.querySelector(".select-icon__one i");
+
+  
+  // login & registration page
+  if(input || inputIcon) { 
+    showPassword(input,inputIcon)
+  }
+    if (finputOne || ficonOne) { 
+    showPassword(finputOne,ficonOne)
+  }
+
+
+$('#basic').flagStrap();
+
+
+if ($(".top-company-slider").length > 0) {
+  $(".top-company-slider").slick({
+      dots: false,
+      rows: 2,
+      infinite: true,
+      speed: 800,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows: true,
+      prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+      nextArrow: '<button class="slide-arrow next-arrow"></button>',
+      responsive: [
+        {
+          breakpoint: 1199,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+          },
+        }
+     
+      ],
+    });
+}
+
+// dataicker
+$( "#datepicker" ).datepicker({
+  dateFormat: "dd-mm-yy"
+  ,	duration: "fast"
+});
+
 
 })(jQuery);
+
+
+
+
+//  Range Slider
+const sliderRange = document.querySelector(".sliderrange");
+const output = document.querySelector("#value-range");
+if (output) {
+    output.innerHTML = `${sliderRange.value} miles`;
+}
+
+if (sliderRange) {
+    sliderRange.oninput = function () {
+        output.innerHTML = `${this.value} miles`;
+    };
+
+    sliderRange.addEventListener("mousemove", function () {
+        var x = sliderRange.value;
+
+        var color = `linear-gradient(
+        90deg,
+        #0066FF ${x}%,
+        rgb(218, 221, 229) ${x}%
+      )`;
+
+        sliderRange.style.background = color;
+    });
+}
+
+
+$("#country_selector").countrySelect({
+    defaultCountry: "us",
+    onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+    responsiveDropdown: true,
+    preferredCountries: ["ca", "gb", "us"],
+});
+
+
+// account progrees
+var current_fs, next_fs, previous_fs; //fieldsets
+var opacity;
+var current = 1;
+var steps = $("fieldset").length;
+
+setProgressBar(current);
+
+$(".next").click(function(){
+
+current_fs = $(this).parent();
+next_fs = $(this).parent().next();
+
+//Add Class Active
+$("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+//show the next fieldset
+next_fs.show();
+//hide the current fieldset with style
+current_fs.animate({opacity: 0}, {
+step: function(now) {
+// for making fielset appear animation
+opacity = 1 - now;
+
+current_fs.css({
+'display': 'none',
+'position': 'relative'
+});
+next_fs.css({'opacity': opacity});
+},
+duration: 500
+});
+setProgressBar(++current);
+});
+
+$(".previous").click(function(){
+
+current_fs = $(this).parent();
+previous_fs = $(this).parent().prev();
+
+//Remove class active
+$("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+//show the previous fieldset
+previous_fs.show();
+
+//hide the current fieldset with style
+current_fs.animate({opacity: 0}, {
+step: function(now) {
+// for making fielset appear animation
+opacity = 1 - now;
+
+current_fs.css({
+'display': 'none',
+'position': 'relative'
+});
+previous_fs.css({'opacity': opacity});
+},
+duration: 500
+});
+setProgressBar(--current);
+});
+
+function setProgressBar(curStep){
+var percent = parseFloat(100 / steps) * curStep;
+percent = percent.toFixed();
+$(".progress-bar").css("width",percent+"%")
+$(".test").css("width",percent+"%")
+
+}
+
+const hideMenuBtn = document.querySelector('.hide-menu-btn')
+const hideMenu = document.getElementById('progressbar')
+if(hideMenuBtn){
+  hideMenuBtn.addEventListener('click', function(){
+    hideMenu.classList.add('hide-menu')
+  })
+}
+
+var inputPhone = document.querySelector("#phone");
+if (inputPhone) {
+    window.intlTelInput(inputPhone, {
+        separateDialCode: true,
+    });
+}
+
+var inputPhone = document.querySelector("#phone2");
+if (inputPhone) {
+    window.intlTelInput(inputPhone, {
+        separateDialCode: true,
+    });
+}

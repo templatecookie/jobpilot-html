@@ -1,8 +1,10 @@
 {% extends "layout/layout.html" %}
 
 {% block content %}
+{% include "../templates/layout/header-footer/header-home2.html" %}
 
-{% include "../templates/layout/header-footer/header-candidates.html" %}
+{% set page_title = "Find Employers" %}
+{% set current_page = "Find Employers" %}
 
 {% include "../templates/components/breadcrumbs/breadcrumbs3.html" %}
 
@@ -130,7 +132,7 @@
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane  show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                         <div class="row">
-                            {% include "../templates/components/employe/employe-1.html" %}
+                            {% include "../templates/components/employe/employe-3.html" %}
 
                         </div>
                         <div class="rt-pt-30">

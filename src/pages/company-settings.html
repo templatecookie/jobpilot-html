@@ -2,255 +2,95 @@
 
 
 {% block content %}
-{% include "../templates/layout/header-footer/dashboard-headr.html" %}
+{% include "../templates/layout/header-footer/header-home3.html" %}
 
 <div class="dashboard-wrapper">
-    {% include "../templates/components/dashboard/company-sidebar.html" %}
-    <div class="d-page-content">
-        <div class="row">
-            <div class="col-12">
-                <div class="position-relative">
-                    <h5 class="rt-mb-32">Settings</h5>
-                    <span class="sidebar-open-nav">
-                        <i class="ph-list"></i>
-                      </span>
-                  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        {% include "../templates/components/dashboard/company-sidebar.html" %}
+      </div>
+      <div class="col-lg-9">
+        <div class="dashboard-right">
+          <div class="dashboard-right-header">
+            <div class="left-text">
+              <h5>Settings</h5>
             </div>
+            <span class="sidebar-open-nav">
+              <i class="ph-list"></i>
+            </span>
+          </div>
+          <div class="cadidate-dashboard-tabs">
+            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-personal-tab" data-bs-toggle="pill" data-bs-target="#pills-personal" type="button" role="tab" aria-controls="pills-personal" aria-selected="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 15C15.3137 15 18 12.3137 18 9C18 5.68629 15.3137 3 12 3C8.68629 3 6 5.68629 6 9C6 12.3137 8.68629 15 12 15Z" stroke="#767F8C" stroke-width="1.5" stroke-miterlimit="10"/>
+                  <path d="M2.9043 20.2491C3.82638 18.6531 5.15225 17.3278 6.74869 16.4064C8.34513 15.485 10.1559 15 11.9992 15C13.8424 15 15.6532 15.4851 17.2497 16.4065C18.8461 17.3279 20.1719 18.6533 21.094 20.2493" stroke="#767F8C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Personal</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#767F8C" stroke-width="1.5" stroke-miterlimit="10"/>
+                  <path d="M12 15C14.0711 15 15.75 13.3211 15.75 11.25C15.75 9.17893 14.0711 7.5 12 7.5C9.92893 7.5 8.25 9.17893 8.25 11.25C8.25 13.3211 9.92893 15 12 15Z" stroke="#767F8C" stroke-width="1.5" stroke-miterlimit="10"/>
+                  <path d="M5.98047 18.6913C6.54542 17.5806 7.40671 16.6478 8.469 15.9963C9.53128 15.3448 10.7531 15 11.9993 15C13.2455 15 14.4673 15.3448 15.5296 15.9963C16.5919 16.6478 17.4532 17.5806 18.0181 18.6913" stroke="#767F8C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Profile</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-social-tab" data-bs-toggle="pill" data-bs-target="#pills-social" type="button" role="tab" aria-controls="pills-social" aria-selected="false"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#767F8C" stroke-width="1.5" stroke-miterlimit="10"/>
+                  <path d="M3 12H21" stroke="#767F8C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 20.758C14.0711 20.758 15.75 16.8367 15.75 11.9996C15.75 7.16248 14.0711 3.24121 12 3.24121C9.92893 3.24121 8.25 7.16248 8.25 11.9996C8.25 16.8367 9.92893 20.758 12 20.758Z" stroke="#767F8C" stroke-width="1.5" stroke-miterlimit="10"/>
+                  </svg>
+                  Social Links</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 15.75C14.0711 15.75 15.75 14.0711 15.75 12C15.75 9.92893 14.0711 8.25 12 8.25C9.92893 8.25 8.25 9.92893 8.25 12C8.25 14.0711 9.92893 15.75 12 15.75Z" stroke="#767F8C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16.976 19.5002C15.3051 20.6091 13.3118 21.1283 11.3122 20.9753C9.31272 20.8223 7.42155 20.006 5.93881 18.6558C4.45607 17.3057 3.46668 15.499 3.12763 13.5225C2.78859 11.546 3.11931 9.51291 4.06732 7.74578C5.01532 5.97864 6.52632 4.57871 8.36055 3.76811C10.1948 2.9575 12.2472 2.78266 14.1921 3.27132C16.137 3.75998 17.863 4.88415 19.0963 6.46546C20.3295 8.04677 20.9994 9.99464 20.9996 12C20.9996 14.0711 20.2496 15.75 18.3746 15.75C16.4996 15.75 15.7496 14.0711 15.7496 12V8.25001" stroke="#767F8C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Contact</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-setting-tab" data-bs-toggle="pill" data-bs-target="#pills-setting" type="button" role="tab" aria-controls="pills-setting" aria-selected="false"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.90236 8.58739C5.07111 8.23114 5.26799 7.89364 5.49299 7.56551L5.45549 5.12801C5.45549 4.90301 5.54924 4.68739 5.72736 4.53739C6.59924 3.80614 7.59299 3.21551 8.68986 2.82176C8.90549 2.74676 9.13986 2.76551 9.32736 2.88739L11.418 4.14364C11.8117 4.11551 12.2055 4.11551 12.5992 4.14364L14.6899 2.88739C14.8867 2.77489 15.1211 2.74676 15.3367 2.82176C16.4055 3.20614 17.4086 3.77801 18.2992 4.52801C18.468 4.66864 18.5711 4.89364 18.5617 5.11864L18.5242 7.55614C18.7492 7.88426 18.9461 8.22176 19.1149 8.57801L21.243 9.75926C21.4399 9.87176 21.5805 10.0593 21.618 10.2843C21.8149 11.3999 21.8242 12.5624 21.618 13.6968C21.5805 13.9218 21.4399 14.1093 21.243 14.2218L19.1149 15.403C18.9461 15.7593 18.7492 16.0968 18.5242 16.4249L18.5617 18.8624C18.5617 19.0874 18.468 19.303 18.2899 19.453C17.418 20.1843 16.4242 20.7749 15.3274 21.1686C15.1117 21.2436 14.8774 21.2249 14.6899 21.103L12.5992 19.8468C12.2055 19.8749 11.8117 19.8749 11.418 19.8468L9.32736 21.103C9.13049 21.2155 8.89611 21.2436 8.68049 21.1686C7.61174 20.7843 6.60861 20.2124 5.71799 19.4624C5.54924 19.3218 5.44611 19.0968 5.45549 18.8718L5.49299 16.4343C5.26799 16.1061 5.07111 15.7686 4.90236 15.4124L2.77424 14.2311C2.57736 14.1186 2.43674 13.9311 2.39924 13.7061C2.20236 12.5905 2.19299 11.428 2.39924 10.2936C2.43674 10.0686 2.57736 9.88114 2.77424 9.76864L4.90236 8.58739Z" stroke="#0A65CC" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 16.5C14.4853 16.5 16.5 14.4853 16.5 12C16.5 9.51472 14.4853 7.5 12 7.5C9.51472 7.5 7.5 9.51472 7.5 12C7.5 14.4853 9.51472 16.5 12 16.5Z" stroke="#0A65CC" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Account Setting</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-personal" role="tabpanel" aria-labelledby="pills-personal-tab">
+                {% include "../templates/components/dashboard/tab/personal-tab.html" %}
+              </div>
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                {% include "../templates/components/dashboard/tab/profile-tab.html" %}
+              </div>
+              <div class="tab-pane fade" id="pills-social" role="tabpanel" aria-labelledby="pills-social-tab">
+                {% include "../templates/components/dashboard/tab/social-link-tab.html" %}
+              </div>
+              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                {% include "../templates/components/dashboard/tab/contact-tab.html" %}
+              </div>
+              <div class="tab-pane fade" id="pills-setting" role="tabpanel" aria-labelledby="pills-setting-tab">
+                {% include "../templates/components/dashboard/tab/account-setting-tab.html" %}
+              </div>
+            </div>
+          </div>
+  
         </div>
-        <div class="body-font-1 ft-wt-5 rt-mb-24">
-            Information
-        </div>
-        <div class="row">
-            <div class="col-md-4 col-sm-3 rt-mb-24">
-                <div class="rt-single-icon-box browse_logo">
-                    <div class="icon-thumb rt-mr-24">
-                        <div class="cocmpany-img">
-                            <img src="assets/images/all-img/setting-company-image.png" alt="">
-                        </div>
-                    </div>
-                    <div class="iconbox-content">
-                        <label for="browselogo" class="btn btn-primary-50 rt-mb-24">
-                            <input type="file" class="d-none" id="browselogo">
-                            Browse logo
-                        </label>
-                        <div class="body-font-4 text-gray-600">
-                            Logo image up to 500x500. Supported formet jpeg, png & svg.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xxl-7 offset-xxl-1 col-md-8 col-sm-9">
-                <div class="rt-single-icon-box cover_photo">
-                    <div class="icon-thumb rt-mr-24">
-                        <div class="cover-img">
-                            <img src="assets/images/all-img/cover-photo.png" alt="">
-                        </div>
-                    </div>
-                    <div class="iconbox-content">
-                        <label for="browselogo2" class="btn btn-primary-50 rt-mb-24">
-                            <input type="file" class="d-none" id="browselogo2">
-                            Browse logo
-                        </label>
-                        <div class="body-font-4 text-gray-600">
-                            Bannar images optical dimension 1520x400. <br> Supported formet jpeg.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <form action="#" class="rt-from dashboard-settings-form">
-            <div class="row smallgap">
-                <div class="col-md-4 rt-mb-24">
-                    <label for="m" class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Company Name</label>
-                    <input type="text" placeholder="Company Name" id="m" value="Twitter">
-                </div>
-                <div class="col-md-4 rt-mb-24">
-                    <label for="mm" class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Username</label>
-                    <input type="text" placeholder="Username" id="mm" value="mahedi amin">
-                </div>
-                <div class="col-md-4 rt-mb-24">
-                    <label class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Organization type</label>
-                    <select class="rt-selectactive " style="width: 100%">
-                        <option>Select.. </option>
-                        <option value="2">Alaska</option>
-                        <option value="3">Bahamas</option>
-                        <option value="4" selected>Private Company</option>
-                        <option value="5">Canada</option>
-                        <option value="6">Caribbean</option>
-                        <option value="7">Europe</option>
-                        <option value="8">Hawaii</option>
-                    </select>
-                </div>
-                <div class="col-md-4 rt-mb-24">
-                    <label for="date" class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Year of
-                        Establishment</label>
-                    <input type="date" placeholder="Select Date" value="21/03/2006" id="date">
-
-                </div>
-                <div class="col-md-4 rt-mb-24">
-                    <label for="url_links" class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Website
-                        Links</label>
-                    <input type="url" placeholder="Website Links" value="https://twitter.com" id="url_links">
-
-                </div>
-                <div class="col-md-4 rt-mb-24">
-                    <label class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Team Size</label>
-                    <select class="rt-selectactive " style="width: 100%">
-                        <option>Select.. </option>
-                        <option value="2">100-200 Employees</option>
-                        <option value="3">10-100 Employees</option>
-                        <option value="4" selected>120-300 Employees</option>
-                        <option value="5">120-300 Employees</option>
-                        <option value="6">120-300 Employees</option>
-                        <option value="7">120-300 Employees</option>
-                        <option value="8">120-300 Employees</option>
-                    </select>
-                </div>
-                <div class="col-md-4 rt-mb-24">
-                    <label class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Industry Type</label>
-                    <select class="rt-selectactive " style="width: 100%">
-                        <option>Select.. </option>
-                        <option value="2">100-200 Employees</option>
-                        <option value="3">10-100 Employees</option>
-                        <option value="4" selected>Information Technology (IT)</option>
-                        <option value="5">120-300 Employees</option>
-                        <option value="6">120-300 Employees</option>
-                        <option value="7">120-300 Employees</option>
-                        <option value="8">120-300 Employees</option>
-                    </select>
-                </div>
-                <div class="col-md-4 rt-mb-24">
-                    <label class="pointer body-font-4 d-block text-gray-900 rt-mb-8" for="msalary">Allow in Search &
-                        Listing</label>
-                    <div class="input-group mb-3">
-                        <div class="input-group-text bg-transparent border border-gray-50" id="basic-addon1">
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked>
-                                <span class="form-check-label">yes</span>
-                            </div>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Your profile is public now" id="msalary">
-                    </div>
-                </div>
-
-
-                <div class="col-md-12 rt-mb-24">
-                    <label class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Job
-                        Description</label>
-                    <textarea id="default">
-                        Twitter is an American microblogging and social networking service on which users post and interact with messages known as "tweets". Registered users can post, like, and retweet tweets, but unregistered users can only read them. Users access Twitter through its website interface or its mobile-device application software, though the service could also be accessed via SMS before April 2020. Twitter, Inc. is based in San Francisco, California, and has more than 25 offices around the world..
-                    </textarea>
-                </div>
-                <div>
-
-                    <button type="button" class="btn btn-primary">
-                        Save Changes
-                    </button>
-                </div>
-            </div>
-        </form>
-        <hr class="spacer-style-dashboard">
-        <div class="body-font-1 ft-wt-5 rt-mb-24">
-            Contact Info
-        </div>
-        <form action="#" class="rt-from dashboard-settings-form">
-            <div class="row smallgap">
-                <div class="col-xxl-2 rt-mb-24 col-md-4">
-                    <label class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Country</label>
-                    <select class="rt-selectactive " style="width: 100%">
-                        <option>Select.. </option>
-                        <option value="2">Saudi Arabia</option>
-                        <option value="3">Afganistan</option>
-                        <option value="4" selected>United States</option>
-                        <option value="5">Paistan</option>
-                        <option value="6">India</option>
-                        <option value="7">Europe</option>
-                        <option value="8">Hawaii</option>
-                    </select>
-                </div>
-                <div class="col-xxl-2 rt-mb-24 col-md-4">
-                    <label class="pointer body-font-4 d-block text-gray-900 rt-mb-8">Town/City</label>
-                    <select class="rt-selectactive " style="width: 100%">
-                        <option>Select.. </option>
-                        <option value="2">Tangail</option>
-                        <option value="3">Adabor</option>
-                        <option value="4" selected>San Francisco</option>
-                        <option value="5">Mohammadpur</option>
-                        <option value="6">Dhanmondi </option>
-                        <option value="7">Kalabagan</option>
-                        <option value="8">New Market</option>
-                    </select>
-                </div>
-                <div class="col-lg-4 rt-mb-24 col-md-4">
-                    <label class="pointer body-font-4 d-block text-gray-900 rt-mb-8" for="address">Address</label>
-                    <input type="text" placeholder="Address" id="address"
-                        value="San Francisco, CA, US (HQ) Market Square, 1355 Market St #900, San Francisco.">
-                </div>
-                <div class="col-lg-4 rt-mb-24 col-md-4">
-                    <label class="pointer body-font-4 d-block text-gray-900 rt-mb-8" for="mapaddress">Map
-                        Address</label>
-                    <input type="text" placeholder="Map Address" id="mapaddress"
-                        value="https://goo.gl/maps/sRijCurQtQ2GEomVA">
-                </div>
-                <div class="col-lg-4 rt-mb-24 col-md-4">
-                    <label class="pointer body-font-4 d-block text-gray-900 rt-mb-8" for="PhoneNumber">Phone
-                        Number</label>
-                    <input type="text" placeholder="Phone Number" id="PhoneNumber" value="(406) 555-0120">
-                </div>
-                <div class="col-lg-4 rt-mb-24 col-md-4">
-                    <label class="pointer body-font-4 d-block text-gray-900 rt-mb-8" for="email">Email</label>
-                    <input type="email" placeholder="Email" id="email" value="twitter@gmail.com">
-                </div>
-                <div>
-
-                    <button type="button" class="btn btn-primary">
-                        Save Changes
-                    </button>
-                </div>
-            </div>
-        </form>
-        <hr class="spacer-style-dashboard">
-        <div class="body-font-1 ft-wt-5 rt-mb-24">
-            Social Media
-        </div>
-        <form action="#" class="rt-from dashboard-settings-form">
-            <div class="row smallgap">
-
-                <div class="col-md-4 rt-mb-24 ">
-                    <label class="pointer body-font-4 d-block text-gray-900 rt-mb-8" for="fb">Facebook</label>
-                    <input type="text" placeholder="Facebook" id="fb" value="http://facebook.com/facebook">
-                </div>
-                <div class="col-md-4  rt-mb-24">
-                    <label class="pointer body-font-4 d-block text-gray-900 rt-mb-8" for="Twitter">Twitter</label>
-                    <input type="url" placeholder="Twitter" id="Twitter" value="https://twitter.com/twitter">
-                </div>
-                <div class="col-md-4 rt-mb-24">
-                    <label class="pointer body-font-4 d-block text-gray-900 rt-mb-8" for="Instagram">Instagram</label>
-                    <input type="url" placeholder="Instagram" id="Instagram" value="http://instagram.com/instagram">
-                </div>
-                <div class="col-md-4 rt-mb-24">
-                    <label class="pointer body-font-4 d-block text-gray-900 rt-mb-8" for="Linkedin">Linkedin</label>
-                    <input type="url" placeholder="Linkedin" id="Linkedin" value="http://instagram.com/linkedin">
-                </div>
-                <div class="col-md-4 rt-mb-24">
-                    <label class="pointer body-font-4 d-block text-gray-900 rt-mb-8" for="Youtube">Youtube</label>
-                    <input type="url" placeholder="Youtube" id="Youtube" value="http://instagram.com/youtube">
-                </div>
-                <div class="col-md-4 rt-mb-24">
-                    <label class="pointer body-font-4 d-block text-gray-900 rt-mb-8" for="Google">Google</label>
-                    <input type="url" placeholder="Google" id="Google" value="http://instagram.com/google">
-                </div>
-                <div>
-
-                    <button type="button" class="btn btn-primary">
-                        Save Changes
-                    </button>
-                </div>
-            </div>
-        </form>
-        {% include "../templates/layout/header-footer/dashboard-footer.html" %}
+        
+      </div>
     </div>
+    
+  
+</div>
+{% include "../templates/layout/header-footer/dashboard-footer.html" %}
+  
 </div>
 
 
-    {% endblock %}
+
+
+{% endblock %}

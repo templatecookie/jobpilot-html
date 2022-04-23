@@ -1,0 +1,19 @@
+.btn-profile{
+    &:hover{
+        svg{
+            path{
+                stroke: white;
+            }
+        }
+    }
+}
+.btn-star{
+    &:hover{
+        svg{
+            path{
+                fill: var(--primary-500);
+                stroke: var(--primary-500);
+            }
+        }
+    }
+}

@@ -12,15 +12,15 @@
   .footer-bottom {
     background-color: var(--gray-10);
     padding: 24px 0;
-    box-shadow: inset 0px 1px 0px #2E3447;
+    box-shadow: inset 0px 1px 0px #2e3447;
   }
-  .footer-bottom2{
+  .footer-bottom2 {
     box-shadow: inset 0 1px 0 #e9ebf2;
   }
   .footer-logo {
     margin-bottom: 20px;
     display: block;
-    @include breakpoint(lg){
+    @include breakpoint(lg) {
       max-width: 150px;
     }
   }
@@ -150,7 +150,7 @@
 // footer socails
 .footer-social-links {
   @extend .rt-list;
-  @include breakpoint(lg){
+  @include breakpoint(lg) {
     margin-top: 15px;
   }
   li {
@@ -159,26 +159,34 @@
     &:last-child {
       margin-right: 0px;
     }
-  }
-}
-  // Dashboard Footer 
-  .dashboard-footer{
-    background: #FFFFFF;
-    box-shadow: inset 0px 1px 0px #EDEFF5;
-    padding: 32px 0;
-    margin-left: -48px;
-    margin-right: -48px;
-    margin-top: 48px;
-    @include breakpoint(md){
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-top: 15px;
+    a {
+      path {
+        transition: all 0.4s;
+      }
+      &:hover path {
+        fill: var(--primary-500);
+      }
+      &:hover path.facebook {
+        fill: white;
+      }
     }
   }
-  .footer-cta{
-    padding: 50px 0 30px;
-    box-shadow: inset 0px -1px 0px #2E3447;
+}
+// Dashboard Footer
+.dashboard-footer {
+  background: #ffffff;
+  box-shadow: inset 0px 1px 0px #edeff5;
+  padding: 32px 0;
+  @include breakpoint(md) {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 15px;
   }
-  .footer-cta2{
-    box-shadow: inset 0px -1px 0px #EDEFF5;
-  } 
+}
+.footer-cta {
+  padding: 50px 0 30px;
+  box-shadow: inset 0px -1px 0px #2e3447;
+}
+.footer-cta2 {
+  box-shadow: inset 0px -1px 0px #edeff5;
+}

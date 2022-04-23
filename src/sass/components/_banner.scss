@@ -1,31 +1,5 @@
-.rt-single-banner {
-  position: relative;
-  z-index: 1;
-  @include breakpoint(xl) {
-    padding-bottom: 150px;
-  }
-  @include breakpoint(md) {
-    padding-bottom: 100px;
-  }
-  .floting-img {
-    position: absolute;
-    z-index: -1;
-    &.shape-img {
-      left: 0;
-      top: 0;
-      width: 100%;
-      img {
-        width: 100%;
-        object-fit: cover;
-      }
-    }
-    &.shape-bgimg,
-    &.shape-bgimg2 {
-      right: 0px;
-      top: 0;
-      text-align: end;
-    }
-  }
+section.banner-section {
+  background: rgba(241, 242, 244, 0.6);
 }
 
 .banner-content {
@@ -141,6 +115,7 @@
     flex-grow: 1;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
   }
   .search-col{
     flex: 0 0 23.33%;
@@ -251,14 +226,12 @@
     padding-top: 180px;
     padding-bottom: 100px;
   }
-  @include breakpoint(xs){
-    padding-top: 100px;
-    padding-bottom: 50px;
-  }
+  // @include breakpoint(xs){
+  //   padding-top: 100px;
+  //   padding-bottom: 50px;
+  // }
 }
-.home-two,
-.home-five,
-.home-three {
+.home-five {
   .mx-727 {
     max-width: 727px;
   }
@@ -267,160 +240,3 @@
   }
 }
 
-// banner 3 mockup
-.banner-mockpu-img-grid {
-  padding-right: 98px;
-  @include breakpoint(xxl2) {
-    padding-right: 30px;
-  }
-  .img-1-p {
-    margin-top: 124px;
-  }
-  .img-2-p {
-    margin-top: 60px;
-  }
-  .img-3-p {
-    margin-top: 24px;
-  }
-}
-
-.rt-single-icon-box {
-  &.banner-counter {
-    background: #fff;
-    position: absolute;
-    top: 88px;
-    padding: 12px;
-    border: 1px solid #edeff5;
-    box-shadow: 0px 12px 48px rgba(0, 44, 109, 0.1);
-    min-width: 200px;
-    left: -100px;
-    border-radius: 8px;
-    .icon-48 {
-      background: var(--primary-50);
-      margin-right: 12px;
-    }
-  }
-}
-.position-parent {
-  .company-images {
-    position: absolute;
-    right: -45px;
-    bottom: -52px;
-  }
-}
-.company-images {
-  background: #ffffff;
-  width: 232px;
-  border: 1px solid var(--gray-50);
-  box-shadow: 0px 12px 48px rgba(0, 44, 109, 0.1);
-  border-radius: 12px;
-  padding: 20px;
-}
-
-.banner-select {
-  .select2-container--default .select2-selection--single {
-    border-color: transparent;
-  }
-  .select2-container--default
-    .select2-selection--single
-    .select2-selection__arrow {
-    right: 15px;
-  }
-}
-
-// banner content 4
-.banner-content4 {
-  padding-top: 351px;
-  padding-bottom: 351px;
-  @include breakpoint(xl){
-    padding-top: 250px;
-    padding-bottom: 250px;
-  }
-  @include breakpoint(lg){
-    padding-top: 150px;
-    padding-bottom: 0px;
-  }
-}
-.home-four {
-  .rt-single-banner {
-    .shape-bgimg2 {
-      top: 200px;
-    }
-  }
-  .rt-single-icon-box.banner-counter {
-    top: 0px;
-    transform: rotate(-6deg);
-    .iconbox-content {
-      flex-grow: 0 !important;
-    }
-  }
-  .d-elements-2 {
-    bottom: 35px;
-    transform: rotate(-5deg);
-    position: absolute;
-    left: -127px;
-  }
-  .d-elements-3,
-  .d-elements-4 {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -60px;
-  }
-  .d-elements-4 {
-    bottom: -55px;
-    top: auto;
-  }
-}
-
-.bottom-search {
-  position: relative;
-  top: 60px;
-
-}
-
-.bg-hide-xl {
-  @include breakpoint(xl) {
-    background-image: none !important;
-    background-color: var(--gray-20);
-  }
-}
-
-// banner four
-.black-bg {
-  background-color: var(--gray-900);
-  width: 724px;
-  height: 931px;
-  position: absolute;
-  right: 0px;
-  //z-index: -1;
-  top: 0px;
-  @include breakpoint(xxl2){
-    width: 524px;
-  }
-  @include breakpoint(xl){
-    width: 424px;
-  }
-  @include breakpoint(lg){
-    display: none;
-  }
-}
-.manbg-img {
-  width: 893px;
-  height: 630px;
-  position: absolute;
-  right: 0px;
-  top: 200px;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  @include breakpoint(xxl2){
-    width: 624px;
-  }
-  @include breakpoint(xl){
-    width: 524px;
-  }
-  @include breakpoint(lg){
-    display: none;
-  }
-}

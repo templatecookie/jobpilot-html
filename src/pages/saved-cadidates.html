@@ -1,0 +1,935 @@
+{% extends "layout/layout.html" %}
+
+
+{% block content %}
+{% include "../templates/layout/header-footer/header-home3.html" %}
+
+<div class="dashboard-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        {% include "../templates/components/dashboard/company-sidebar.html" %}
+      </div>
+      <div class="col-lg-9">
+        <div class="dashboard-right">
+          <div class="dashboard-right-header rt-mb-32">
+            <div class="left-text m-0">
+              <h3 class="f-size-20 lh-1 m-0">Saved Cadidates</h3>
+            </div>
+            <a class="text-gray-600 f-size-14 d-flex align-items-center" href="">
+              <img class="rt-mr-4" src="assets/images/svg/Info.svg" alt="">
+              All of the candidates are visible until 24 march, 2021</a>
+            <span class="sidebar-open-nav">
+              <i class="ph-list"></i>
+            </span>
+          </div>
+          <div class="card jobcardStyle1 saved-candidate">
+            <div class="card-body">
+              <div class="rt-single-icon-box ">
+                <div class="icon-thumb">
+                    <div class="profile-image">
+                      <img src="assets/images/all-img/candidates-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="iconbox-content">
+                  <div class="post-info2">
+                    <div class="post-main-title"> <a href="candidate-details.html">Devon Lane</a> </div>
+                    <span class="loacton text-gray-400 ">
+                      UX Designer
+                  </span>
+                  </div>
+                </div>
+                <div class="iconbox-extra align-self-center">
+                   <div>
+                      <button class="text-primary-500 hoverbg-primary-50 plain-button icon-button">
+                        <img src="assets/images/svg/BookmarkSimple3.svg" alt="">
+                      </button>
+                   </div>
+                   <div>
+                      <button type="button" class="btn btn-primary2-50" data-bs-toggle="modal" data-bs-target="#cadidate-profile">
+                          <span class="button-content-wrapper ">
+                            <span class="button-icon align-icon-right">
+                              <i class="ph-arrow-right"></i>       
+                              </span>
+                            <span class="button-text">
+                                View profile
+                              </span>
+                          </span>
+                        </button>
+                   </div>
+                   <div>
+                    <button type="button" class="btn btn-icon hover:bg-gray-50" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 13.125C12.6213 13.125 13.125 12.6213 13.125 12C13.125 11.3787 12.6213 10.875 12 10.875C11.3787 10.875 10.875 11.3787 10.875 12C10.875 12.6213 11.3787 13.125 12 13.125Z" fill="#767F8C" stroke="#767F8C"></path>
+                        <path d="M12 6.65039C12.6213 6.65039 13.125 6.14671 13.125 5.52539C13.125 4.90407 12.6213 4.40039 12 4.40039C11.3787 4.40039 10.875 4.90407 10.875 5.52539C10.875 6.14671 11.3787 6.65039 12 6.65039Z" fill="#767F8C" stroke="#767F8C"></path>
+                        <path d="M12 19.6094C12.6213 19.6094 13.125 19.1057 13.125 18.4844C13.125 17.8631 12.6213 17.3594 12 17.3594C11.3787 17.3594 10.875 17.8631 10.875 18.4844C10.875 19.1057 11.3787 19.6094 12 19.6094Z" fill="#767F8C" stroke="#767F8C"></path>
+                      </svg>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end company-dashboard-dropdown" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 3.54102C3.75 3.54102 1.25 9.99996 1.25 9.99996C1.25 9.99996 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 9.99996 18.75 9.99996C18.75 9.99996 16.25 3.54102 10 3.54102Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M10 13.125C11.7259 13.125 13.125 11.7259 13.125 10C13.125 8.27411 11.7259 6.875 10 6.875C8.27411 6.875 6.875 8.27411 6.875 10C6.875 11.7259 8.27411 13.125 10 13.125Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                          View Detail</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#5E6670" stroke-width="1.5" stroke-miterlimit="10"></path>
+                            <path d="M12.5 7.5L7.5 12.5" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M12.5 12.5L7.5 7.5" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+
+                          Make it Expire</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.875 4.375L3.125 4.37501" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M8.125 8.125V13.125" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M11.875 8.125V13.125" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M15.625 4.375V16.25C15.625 16.4158 15.5592 16.5747 15.4419 16.6919C15.3247 16.8092 15.1658 16.875 15 16.875H5C4.83424 16.875 4.67527 16.8092 4.55806 16.6919C4.44085 16.5747 4.375 16.4158 4.375 16.25V4.375" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M13.125 4.375V3.125C13.125 2.79348 12.9933 2.47554 12.7589 2.24112C12.5245 2.0067 12.2065 1.875 11.875 1.875H8.125C7.79348 1.875 7.47554 2.0067 7.24112 2.24112C7.0067 2.47554 6.875 2.79348 6.875 3.125V4.375" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                          Delete Job</a></li>
+                    </ul>
+                   </div>
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card jobcardStyle1 saved-candidate">
+            <div class="card-body">
+              <div class="rt-single-icon-box ">
+                <div class="icon-thumb">
+                    <div class="profile-image">
+                      <img src="assets/images/all-img/candidates-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="iconbox-content">
+                  <div class="post-info2">
+                    <div class="post-main-title"> <a href="candidate-details.html">Bessie Cooper</a> </div>
+                    <span class="loacton text-gray-400 ">
+                      UX Designer
+                  </span>
+                  </div>
+                </div>
+                <div class="iconbox-extra align-self-center">
+                   <div>
+                      <button class="text-primary-500 hoverbg-primary-50 plain-button icon-button">
+                        <img src="assets/images/svg/BookmarkSimple3.svg" alt="">
+                      </button>
+                   </div>
+                   <div>
+                      <button type="button" class="btn btn-primary2-50" data-bs-toggle="modal" data-bs-target="#cadidate-profile">
+                          <span class="button-content-wrapper ">
+                            <span class="button-icon align-icon-right">
+                              <i class="ph-arrow-right"></i>       
+                              </span>
+                            <span class="button-text">
+                                View profile
+                              </span>
+                          </span>
+                        </button>
+                   </div>
+                   <div>
+                    <button type="button" class="btn btn-icon hover:bg-gray-50" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 13.125C12.6213 13.125 13.125 12.6213 13.125 12C13.125 11.3787 12.6213 10.875 12 10.875C11.3787 10.875 10.875 11.3787 10.875 12C10.875 12.6213 11.3787 13.125 12 13.125Z" fill="#767F8C" stroke="#767F8C"></path>
+                        <path d="M12 6.65039C12.6213 6.65039 13.125 6.14671 13.125 5.52539C13.125 4.90407 12.6213 4.40039 12 4.40039C11.3787 4.40039 10.875 4.90407 10.875 5.52539C10.875 6.14671 11.3787 6.65039 12 6.65039Z" fill="#767F8C" stroke="#767F8C"></path>
+                        <path d="M12 19.6094C12.6213 19.6094 13.125 19.1057 13.125 18.4844C13.125 17.8631 12.6213 17.3594 12 17.3594C11.3787 17.3594 10.875 17.8631 10.875 18.4844C10.875 19.1057 11.3787 19.6094 12 19.6094Z" fill="#767F8C" stroke="#767F8C"></path>
+                      </svg>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end company-dashboard-dropdown" aria-labelledby="dropdownMenuButton2">
+                      <li><a class="dropdown-item" href="#">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 3.54102C3.75 3.54102 1.25 9.99996 1.25 9.99996C1.25 9.99996 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 9.99996 18.75 9.99996C18.75 9.99996 16.25 3.54102 10 3.54102Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M10 13.125C11.7259 13.125 13.125 11.7259 13.125 10C13.125 8.27411 11.7259 6.875 10 6.875C8.27411 6.875 6.875 8.27411 6.875 10C6.875 11.7259 8.27411 13.125 10 13.125Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                          View Detail</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#5E6670" stroke-width="1.5" stroke-miterlimit="10"></path>
+                            <path d="M12.5 7.5L7.5 12.5" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M12.5 12.5L7.5 7.5" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+
+                          Make it Expire</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.875 4.375L3.125 4.37501" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M8.125 8.125V13.125" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M11.875 8.125V13.125" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M15.625 4.375V16.25C15.625 16.4158 15.5592 16.5747 15.4419 16.6919C15.3247 16.8092 15.1658 16.875 15 16.875H5C4.83424 16.875 4.67527 16.8092 4.55806 16.6919C4.44085 16.5747 4.375 16.4158 4.375 16.25V4.375" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M13.125 4.375V3.125C13.125 2.79348 12.9933 2.47554 12.7589 2.24112C12.5245 2.0067 12.2065 1.875 11.875 1.875H8.125C7.79348 1.875 7.47554 2.0067 7.24112 2.24112C7.0067 2.47554 6.875 2.79348 6.875 3.125V4.375" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                          Delete Job</a></li>
+                    </ul>
+                   </div>
+                   
+                </div>
+              </div>
+          
+            </div>
+          </div>
+          <div class="card jobcardStyle1 saved-candidate">
+            <div class="card-body">
+              <div class="rt-single-icon-box ">
+                <div class="icon-thumb">
+                    <div class="profile-image">
+                      <img src="assets/images/all-img/candidates-3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="iconbox-content">
+                  <div class="post-info2">
+                    <div class="post-main-title"> <a href="candidate-details.html">Floyd Miles</a> </div>
+                    <span class="loacton text-gray-400 ">
+                      UX Designer
+                  </span>
+                  </div>
+                </div>
+                <div class="iconbox-extra align-self-center">
+                  <div>
+                     <button class="text-primary-500 hoverbg-primary-50 plain-button icon-button">
+                       <img src="assets/images/svg/BookmarkSimple3.svg" alt="">
+                     </button>
+                  </div>
+                  <div>
+                     <button type="button" class="btn btn-primary2-50" data-bs-toggle="modal" data-bs-target="#cadidate-profile">
+                         <span class="button-content-wrapper ">
+                           <span class="button-icon align-icon-right">
+                             <i class="ph-arrow-right"></i>       
+                             </span>
+                           <span class="button-text">
+                               View profile
+                             </span>
+                         </span>
+                       </button>
+                  </div>
+                  <div>
+                   <button type="button" class="btn btn-icon hover:bg-gray-50" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M12 13.125C12.6213 13.125 13.125 12.6213 13.125 12C13.125 11.3787 12.6213 10.875 12 10.875C11.3787 10.875 10.875 11.3787 10.875 12C10.875 12.6213 11.3787 13.125 12 13.125Z" fill="#767F8C" stroke="#767F8C"></path>
+                       <path d="M12 6.65039C12.6213 6.65039 13.125 6.14671 13.125 5.52539C13.125 4.90407 12.6213 4.40039 12 4.40039C11.3787 4.40039 10.875 4.90407 10.875 5.52539C10.875 6.14671 11.3787 6.65039 12 6.65039Z" fill="#767F8C" stroke="#767F8C"></path>
+                       <path d="M12 19.6094C12.6213 19.6094 13.125 19.1057 13.125 18.4844C13.125 17.8631 12.6213 17.3594 12 17.3594C11.3787 17.3594 10.875 17.8631 10.875 18.4844C10.875 19.1057 11.3787 19.6094 12 19.6094Z" fill="#767F8C" stroke="#767F8C"></path>
+                     </svg>
+                   </button>
+                   <ul class="dropdown-menu dropdown-menu-end company-dashboard-dropdown" aria-labelledby="dropdownMenuButton3">
+                     <li><a class="dropdown-item" href="#">
+                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M10 3.54102C3.75 3.54102 1.25 9.99996 1.25 9.99996C1.25 9.99996 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 9.99996 18.75 9.99996C18.75 9.99996 16.25 3.54102 10 3.54102Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M10 13.125C11.7259 13.125 13.125 11.7259 13.125 10C13.125 8.27411 11.7259 6.875 10 6.875C8.27411 6.875 6.875 8.27411 6.875 10C6.875 11.7259 8.27411 13.125 10 13.125Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+                         View Detail</a>
+                     </li>
+                     <li><a class="dropdown-item" href="#">
+                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#5E6670" stroke-width="1.5" stroke-miterlimit="10"></path>
+                           <path d="M12.5 7.5L7.5 12.5" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M12.5 12.5L7.5 7.5" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+
+                         Make it Expire</a>
+                     </li>
+                     <li><a class="dropdown-item" href="#"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M16.875 4.375L3.125 4.37501" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M8.125 8.125V13.125" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M11.875 8.125V13.125" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M15.625 4.375V16.25C15.625 16.4158 15.5592 16.5747 15.4419 16.6919C15.3247 16.8092 15.1658 16.875 15 16.875H5C4.83424 16.875 4.67527 16.8092 4.55806 16.6919C4.44085 16.5747 4.375 16.4158 4.375 16.25V4.375" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M13.125 4.375V3.125C13.125 2.79348 12.9933 2.47554 12.7589 2.24112C12.5245 2.0067 12.2065 1.875 11.875 1.875H8.125C7.79348 1.875 7.47554 2.0067 7.24112 2.24112C7.0067 2.47554 6.875 2.79348 6.875 3.125V4.375" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+                         Delete Job</a></li>
+                   </ul>
+                  </div>
+                  
+               </div>
+              </div>
+          
+            </div>
+          </div>
+          <div class="card jobcardStyle1 saved-candidate">
+            <div class="card-body">
+              <div class="rt-single-icon-box ">
+                <div class="icon-thumb">
+                    <div class="profile-image">
+                      <img src="assets/images/all-img/candidates-4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="iconbox-content">
+                  <div class="post-info2">
+                    <div class="post-main-title"> <a href="candidate-details.html">Arlene McCoy</a> </div>
+                    <span class="loacton text-gray-400 ">
+                      UX Designer
+                  </span>
+                  </div>
+                </div>
+                <div class="iconbox-extra align-self-center">
+                  <div>
+                     <button class="text-primary-500 hoverbg-primary-50 plain-button icon-button">
+                       <img src="assets/images/svg/BookmarkSimple3.svg" alt="">
+                     </button>
+                  </div>
+                  <div>
+                     <button type="button" class="btn btn-primary2-50" data-bs-toggle="modal" data-bs-target="#cadidate-profile">
+                         <span class="button-content-wrapper ">
+                           <span class="button-icon align-icon-right">
+                             <i class="ph-arrow-right"></i>       
+                             </span>
+                           <span class="button-text">
+                               View profile
+                             </span>
+                         </span>
+                       </button>
+                  </div>
+                  <div>
+                   <button type="button" class="btn btn-icon hover:bg-gray-50" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
+                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M12 13.125C12.6213 13.125 13.125 12.6213 13.125 12C13.125 11.3787 12.6213 10.875 12 10.875C11.3787 10.875 10.875 11.3787 10.875 12C10.875 12.6213 11.3787 13.125 12 13.125Z" fill="#767F8C" stroke="#767F8C"></path>
+                       <path d="M12 6.65039C12.6213 6.65039 13.125 6.14671 13.125 5.52539C13.125 4.90407 12.6213 4.40039 12 4.40039C11.3787 4.40039 10.875 4.90407 10.875 5.52539C10.875 6.14671 11.3787 6.65039 12 6.65039Z" fill="#767F8C" stroke="#767F8C"></path>
+                       <path d="M12 19.6094C12.6213 19.6094 13.125 19.1057 13.125 18.4844C13.125 17.8631 12.6213 17.3594 12 17.3594C11.3787 17.3594 10.875 17.8631 10.875 18.4844C10.875 19.1057 11.3787 19.6094 12 19.6094Z" fill="#767F8C" stroke="#767F8C"></path>
+                     </svg>
+                   </button>
+                   <ul class="dropdown-menu dropdown-menu-end company-dashboard-dropdown" aria-labelledby="dropdownMenuButton4">
+                     <li><a class="dropdown-item" href="#">
+                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M10 3.54102C3.75 3.54102 1.25 9.99996 1.25 9.99996C1.25 9.99996 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 9.99996 18.75 9.99996C18.75 9.99996 16.25 3.54102 10 3.54102Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M10 13.125C11.7259 13.125 13.125 11.7259 13.125 10C13.125 8.27411 11.7259 6.875 10 6.875C8.27411 6.875 6.875 8.27411 6.875 10C6.875 11.7259 8.27411 13.125 10 13.125Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+                         View Detail</a>
+                     </li>
+                     <li><a class="dropdown-item" href="#">
+                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#5E6670" stroke-width="1.5" stroke-miterlimit="10"></path>
+                           <path d="M12.5 7.5L7.5 12.5" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M12.5 12.5L7.5 7.5" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+
+                         Make it Expire</a>
+                     </li>
+                     <li><a class="dropdown-item" href="#"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M16.875 4.375L3.125 4.37501" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M8.125 8.125V13.125" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M11.875 8.125V13.125" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M15.625 4.375V16.25C15.625 16.4158 15.5592 16.5747 15.4419 16.6919C15.3247 16.8092 15.1658 16.875 15 16.875H5C4.83424 16.875 4.67527 16.8092 4.55806 16.6919C4.44085 16.5747 4.375 16.4158 4.375 16.25V4.375" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M13.125 4.375V3.125C13.125 2.79348 12.9933 2.47554 12.7589 2.24112C12.5245 2.0067 12.2065 1.875 11.875 1.875H8.125C7.79348 1.875 7.47554 2.0067 7.24112 2.24112C7.0067 2.47554 6.875 2.79348 6.875 3.125V4.375" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+                         Delete Job</a></li>
+                   </ul>
+                  </div>
+                  
+               </div>
+              </div>
+          
+            </div>
+          </div>
+          <div class="card jobcardStyle1 saved-candidate">
+            <div class="card-body">
+              <div class="rt-single-icon-box ">
+                <div class="icon-thumb">
+                    <div class="profile-image">
+                      <img src="assets/images/all-img/candidates-5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="iconbox-content">
+                  <div class="post-info2">
+                    <div class="post-main-title"> <a href="candidate-details.html">Annette Black</a> </div>
+                    <span class="loacton text-gray-400 ">
+                      UX Designer
+                  </span>
+                  </div>
+                </div>
+                <div class="iconbox-extra align-self-center">
+                  <div>
+                     <button class="text-primary-500 hoverbg-primary-50 plain-button icon-button">
+                       <img src="assets/images/svg/BookmarkSimple3.svg" alt="">
+                     </button>
+                  </div>
+                  <div>
+                     <button type="button" class="btn btn-primary2-50" data-bs-toggle="modal" data-bs-target="#cadidate-profile">
+                         <span class="button-content-wrapper ">
+                           <span class="button-icon align-icon-right">
+                             <i class="ph-arrow-right"></i>       
+                             </span>
+                           <span class="button-text">
+                               View profile
+                             </span>
+                         </span>
+                       </button>
+                  </div>
+                  <div>
+                   <button type="button" class="btn btn-icon hover:bg-gray-50" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
+                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M12 13.125C12.6213 13.125 13.125 12.6213 13.125 12C13.125 11.3787 12.6213 10.875 12 10.875C11.3787 10.875 10.875 11.3787 10.875 12C10.875 12.6213 11.3787 13.125 12 13.125Z" fill="#767F8C" stroke="#767F8C"></path>
+                       <path d="M12 6.65039C12.6213 6.65039 13.125 6.14671 13.125 5.52539C13.125 4.90407 12.6213 4.40039 12 4.40039C11.3787 4.40039 10.875 4.90407 10.875 5.52539C10.875 6.14671 11.3787 6.65039 12 6.65039Z" fill="#767F8C" stroke="#767F8C"></path>
+                       <path d="M12 19.6094C12.6213 19.6094 13.125 19.1057 13.125 18.4844C13.125 17.8631 12.6213 17.3594 12 17.3594C11.3787 17.3594 10.875 17.8631 10.875 18.4844C10.875 19.1057 11.3787 19.6094 12 19.6094Z" fill="#767F8C" stroke="#767F8C"></path>
+                     </svg>
+                   </button>
+                   <ul class="dropdown-menu dropdown-menu-end company-dashboard-dropdown" aria-labelledby="dropdownMenuButton5">
+                     <li><a class="dropdown-item" href="#">
+                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M10 3.54102C3.75 3.54102 1.25 9.99996 1.25 9.99996C1.25 9.99996 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 9.99996 18.75 9.99996C18.75 9.99996 16.25 3.54102 10 3.54102Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M10 13.125C11.7259 13.125 13.125 11.7259 13.125 10C13.125 8.27411 11.7259 6.875 10 6.875C8.27411 6.875 6.875 8.27411 6.875 10C6.875 11.7259 8.27411 13.125 10 13.125Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+                         View Detail</a>
+                     </li>
+                     <li><a class="dropdown-item" href="#">
+                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#5E6670" stroke-width="1.5" stroke-miterlimit="10"></path>
+                           <path d="M12.5 7.5L7.5 12.5" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M12.5 12.5L7.5 7.5" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+
+                         Make it Expire</a>
+                     </li>
+                     <li><a class="dropdown-item" href="#"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M16.875 4.375L3.125 4.37501" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M8.125 8.125V13.125" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M11.875 8.125V13.125" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M15.625 4.375V16.25C15.625 16.4158 15.5592 16.5747 15.4419 16.6919C15.3247 16.8092 15.1658 16.875 15 16.875H5C4.83424 16.875 4.67527 16.8092 4.55806 16.6919C4.44085 16.5747 4.375 16.4158 4.375 16.25V4.375" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M13.125 4.375V3.125C13.125 2.79348 12.9933 2.47554 12.7589 2.24112C12.5245 2.0067 12.2065 1.875 11.875 1.875H8.125C7.79348 1.875 7.47554 2.0067 7.24112 2.24112C7.0067 2.47554 6.875 2.79348 6.875 3.125V4.375" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+                         Delete Job</a></li>
+                   </ul>
+                  </div>
+                  
+               </div>
+              </div>
+          
+            </div>
+          </div>
+          <div class="card jobcardStyle1 saved-candidate">
+            <div class="card-body">
+              <div class="rt-single-icon-box ">
+                <div class="icon-thumb">
+                    <div class="profile-image">
+                      <img src="assets/images/all-img/candidates-6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="iconbox-content">
+                  <div class="post-info2">
+                    <div class="post-main-title"> <a href="candidate-details.html">Albert Flores</a> </div>
+                    <span class="loacton text-gray-400 ">
+                      UX Designer
+                  </span>
+                  </div>
+                </div>
+                <div class="iconbox-extra align-self-center">
+                  <div>
+                     <button class="text-primary-500 hoverbg-primary-50 plain-button icon-button">
+                       <img src="assets/images/svg/BookmarkSimple3.svg" alt="">
+                     </button>
+                  </div>
+                  <div>
+                     <button type="button" class="btn btn-primary2-50" data-bs-toggle="modal" data-bs-target="#cadidate-profile">
+                         <span class="button-content-wrapper ">
+                           <span class="button-icon align-icon-right">
+                             <i class="ph-arrow-right"></i>       
+                             </span>
+                           <span class="button-text">
+                               View profile
+                             </span>
+                         </span>
+                       </button>
+                  </div>
+                  <div>
+                   <button type="button" class="btn btn-icon hover:bg-gray-50" id="dropdownMenuButton6" data-bs-toggle="dropdown" aria-expanded="false">
+                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M12 13.125C12.6213 13.125 13.125 12.6213 13.125 12C13.125 11.3787 12.6213 10.875 12 10.875C11.3787 10.875 10.875 11.3787 10.875 12C10.875 12.6213 11.3787 13.125 12 13.125Z" fill="#767F8C" stroke="#767F8C"></path>
+                       <path d="M12 6.65039C12.6213 6.65039 13.125 6.14671 13.125 5.52539C13.125 4.90407 12.6213 4.40039 12 4.40039C11.3787 4.40039 10.875 4.90407 10.875 5.52539C10.875 6.14671 11.3787 6.65039 12 6.65039Z" fill="#767F8C" stroke="#767F8C"></path>
+                       <path d="M12 19.6094C12.6213 19.6094 13.125 19.1057 13.125 18.4844C13.125 17.8631 12.6213 17.3594 12 17.3594C11.3787 17.3594 10.875 17.8631 10.875 18.4844C10.875 19.1057 11.3787 19.6094 12 19.6094Z" fill="#767F8C" stroke="#767F8C"></path>
+                     </svg>
+                   </button>
+                   <ul class="dropdown-menu dropdown-menu-end company-dashboard-dropdown" aria-labelledby="dropdownMenuButton6">
+                     <li><a class="dropdown-item" href="#">
+                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M10 3.54102C3.75 3.54102 1.25 9.99996 1.25 9.99996C1.25 9.99996 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 9.99996 18.75 9.99996C18.75 9.99996 16.25 3.54102 10 3.54102Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M10 13.125C11.7259 13.125 13.125 11.7259 13.125 10C13.125 8.27411 11.7259 6.875 10 6.875C8.27411 6.875 6.875 8.27411 6.875 10C6.875 11.7259 8.27411 13.125 10 13.125Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+                         View Detail</a>
+                     </li>
+                     <li><a class="dropdown-item" href="#">
+                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#5E6670" stroke-width="1.5" stroke-miterlimit="10"></path>
+                           <path d="M12.5 7.5L7.5 12.5" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M12.5 12.5L7.5 7.5" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+
+                         Make it Expire</a>
+                     </li>
+                     <li><a class="dropdown-item" href="#"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M16.875 4.375L3.125 4.37501" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M8.125 8.125V13.125" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M11.875 8.125V13.125" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M15.625 4.375V16.25C15.625 16.4158 15.5592 16.5747 15.4419 16.6919C15.3247 16.8092 15.1658 16.875 15 16.875H5C4.83424 16.875 4.67527 16.8092 4.55806 16.6919C4.44085 16.5747 4.375 16.4158 4.375 16.25V4.375" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M13.125 4.375V3.125C13.125 2.79348 12.9933 2.47554 12.7589 2.24112C12.5245 2.0067 12.2065 1.875 11.875 1.875H8.125C7.79348 1.875 7.47554 2.0067 7.24112 2.24112C7.0067 2.47554 6.875 2.79348 6.875 3.125V4.375" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+                         Delete Job</a></li>
+                   </ul>
+                  </div>
+                  
+               </div>
+              </div>
+          
+            </div>
+          </div>
+          <div class="card jobcardStyle1 saved-candidate">
+            <div class="card-body">
+              <div class="rt-single-icon-box ">
+                <div class="icon-thumb">
+                    <div class="profile-image">
+                      <img src="assets/images/all-img/candidates-7.jpg" alt="">
+                    </div>
+                </div>
+                <div class="iconbox-content">
+                  <div class="post-info2">
+                    <div class="post-main-title"> <a href="candidate-details.html">Eleanor Pena</a> </div>
+                    <span class="loacton text-gray-400 ">
+                      UX Designer
+                  </span>
+                  </div>
+                </div>
+                <div class="iconbox-extra align-self-center">
+                  <div>
+                     <button class="text-primary-500 hoverbg-primary-50 plain-button icon-button">
+                       <img src="assets/images/svg/BookmarkSimple3.svg" alt="">
+                     </button>
+                  </div>
+                  <div>
+                     <button type="button" class="btn btn-primary2-50" data-bs-toggle="modal" data-bs-target="#cadidate-profile">
+                         <span class="button-content-wrapper ">
+                           <span class="button-icon align-icon-right">
+                             <i class="ph-arrow-right"></i>       
+                             </span>
+                           <span class="button-text">
+                               View profile
+                             </span>
+                         </span>
+                       </button>
+                  </div>
+                  <div>
+                   <button type="button" class="btn btn-icon hover:bg-gray-50" id="dropdownMenuButton7" data-bs-toggle="dropdown" aria-expanded="false">
+                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M12 13.125C12.6213 13.125 13.125 12.6213 13.125 12C13.125 11.3787 12.6213 10.875 12 10.875C11.3787 10.875 10.875 11.3787 10.875 12C10.875 12.6213 11.3787 13.125 12 13.125Z" fill="#767F8C" stroke="#767F8C"></path>
+                       <path d="M12 6.65039C12.6213 6.65039 13.125 6.14671 13.125 5.52539C13.125 4.90407 12.6213 4.40039 12 4.40039C11.3787 4.40039 10.875 4.90407 10.875 5.52539C10.875 6.14671 11.3787 6.65039 12 6.65039Z" fill="#767F8C" stroke="#767F8C"></path>
+                       <path d="M12 19.6094C12.6213 19.6094 13.125 19.1057 13.125 18.4844C13.125 17.8631 12.6213 17.3594 12 17.3594C11.3787 17.3594 10.875 17.8631 10.875 18.4844C10.875 19.1057 11.3787 19.6094 12 19.6094Z" fill="#767F8C" stroke="#767F8C"></path>
+                     </svg>
+                   </button>
+                   <ul class="dropdown-menu dropdown-menu-end company-dashboard-dropdown" aria-labelledby="dropdownMenuButton7">
+                     <li><a class="dropdown-item" href="#">
+                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M10 3.54102C3.75 3.54102 1.25 9.99996 1.25 9.99996C1.25 9.99996 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 9.99996 18.75 9.99996C18.75 9.99996 16.25 3.54102 10 3.54102Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M10 13.125C11.7259 13.125 13.125 11.7259 13.125 10C13.125 8.27411 11.7259 6.875 10 6.875C8.27411 6.875 6.875 8.27411 6.875 10C6.875 11.7259 8.27411 13.125 10 13.125Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+                         View Detail</a>
+                     </li>
+                     <li><a class="dropdown-item" href="#">
+                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#5E6670" stroke-width="1.5" stroke-miterlimit="10"></path>
+                           <path d="M12.5 7.5L7.5 12.5" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M12.5 12.5L7.5 7.5" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+
+                         Make it Expire</a>
+                     </li>
+                     <li><a class="dropdown-item" href="#"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M16.875 4.375L3.125 4.37501" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M8.125 8.125V13.125" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M11.875 8.125V13.125" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M15.625 4.375V16.25C15.625 16.4158 15.5592 16.5747 15.4419 16.6919C15.3247 16.8092 15.1658 16.875 15 16.875H5C4.83424 16.875 4.67527 16.8092 4.55806 16.6919C4.44085 16.5747 4.375 16.4158 4.375 16.25V4.375" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M13.125 4.375V3.125C13.125 2.79348 12.9933 2.47554 12.7589 2.24112C12.5245 2.0067 12.2065 1.875 11.875 1.875H8.125C7.79348 1.875 7.47554 2.0067 7.24112 2.24112C7.0067 2.47554 6.875 2.79348 6.875 3.125V4.375" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+                         Delete Job</a></li>
+                   </ul>
+                  </div>
+                  
+               </div>
+              </div>
+          
+            </div>
+          </div>
+          <div class="card jobcardStyle1 saved-candidate">
+            <div class="card-body">
+              <div class="rt-single-icon-box ">
+                <div class="icon-thumb">
+                    <div class="profile-image">
+                      <img src="assets/images/all-img/candidates-8.jpg" alt="">
+                    </div>
+                </div>
+                <div class="iconbox-content">
+                  <div class="post-info2">
+                    <div class="post-main-title"> <a href="candidate-details.html">Esther Howard</a> </div>
+                    <span class="loacton text-gray-400 ">
+                      UX Designer
+                  </span>
+                  </div>
+                </div>
+                <div class="iconbox-extra align-self-center">
+                  <div>
+                     <button class="text-primary-500 hoverbg-primary-50 plain-button icon-button">
+                       <img src="assets/images/svg/BookmarkSimple3.svg" alt="">
+                     </button>
+                  </div>
+                  <div>
+                     <button type="button" class="btn btn-primary2-50" data-bs-toggle="modal" data-bs-target="#cadidate-profile">
+                         <span class="button-content-wrapper ">
+                           <span class="button-icon align-icon-right">
+                             <i class="ph-arrow-right"></i>       
+                             </span>
+                           <span class="button-text">
+                               View profile
+                             </span>
+                         </span>
+                       </button>
+                  </div>
+                  <div>
+                   <button type="button" class="btn btn-icon hover:bg-gray-50" id="dropdownMenuButton8" data-bs-toggle="dropdown" aria-expanded="false">
+                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M12 13.125C12.6213 13.125 13.125 12.6213 13.125 12C13.125 11.3787 12.6213 10.875 12 10.875C11.3787 10.875 10.875 11.3787 10.875 12C10.875 12.6213 11.3787 13.125 12 13.125Z" fill="#767F8C" stroke="#767F8C"></path>
+                       <path d="M12 6.65039C12.6213 6.65039 13.125 6.14671 13.125 5.52539C13.125 4.90407 12.6213 4.40039 12 4.40039C11.3787 4.40039 10.875 4.90407 10.875 5.52539C10.875 6.14671 11.3787 6.65039 12 6.65039Z" fill="#767F8C" stroke="#767F8C"></path>
+                       <path d="M12 19.6094C12.6213 19.6094 13.125 19.1057 13.125 18.4844C13.125 17.8631 12.6213 17.3594 12 17.3594C11.3787 17.3594 10.875 17.8631 10.875 18.4844C10.875 19.1057 11.3787 19.6094 12 19.6094Z" fill="#767F8C" stroke="#767F8C"></path>
+                     </svg>
+                   </button>
+                   <ul class="dropdown-menu dropdown-menu-end company-dashboard-dropdown" aria-labelledby="dropdownMenuButton8">
+                     <li><a class="dropdown-item" href="#">
+                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M10 3.54102C3.75 3.54102 1.25 9.99996 1.25 9.99996C1.25 9.99996 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 9.99996 18.75 9.99996C18.75 9.99996 16.25 3.54102 10 3.54102Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M10 13.125C11.7259 13.125 13.125 11.7259 13.125 10C13.125 8.27411 11.7259 6.875 10 6.875C8.27411 6.875 6.875 8.27411 6.875 10C6.875 11.7259 8.27411 13.125 10 13.125Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+                         View Detail</a>
+                     </li>
+                     <li><a class="dropdown-item" href="#">
+                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#5E6670" stroke-width="1.5" stroke-miterlimit="10"></path>
+                           <path d="M12.5 7.5L7.5 12.5" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M12.5 12.5L7.5 7.5" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+
+                         Make it Expire</a>
+                     </li>
+                     <li><a class="dropdown-item" href="#"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M16.875 4.375L3.125 4.37501" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M8.125 8.125V13.125" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M11.875 8.125V13.125" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M15.625 4.375V16.25C15.625 16.4158 15.5592 16.5747 15.4419 16.6919C15.3247 16.8092 15.1658 16.875 15 16.875H5C4.83424 16.875 4.67527 16.8092 4.55806 16.6919C4.44085 16.5747 4.375 16.4158 4.375 16.25V4.375" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M13.125 4.375V3.125C13.125 2.79348 12.9933 2.47554 12.7589 2.24112C12.5245 2.0067 12.2065 1.875 11.875 1.875H8.125C7.79348 1.875 7.47554 2.0067 7.24112 2.24112C7.0067 2.47554 6.875 2.79348 6.875 3.125V4.375" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+                         Delete Job</a></li>
+                   </ul>
+                  </div>
+                  
+               </div>
+              </div>
+          
+            </div>
+          </div>
+          <div class="card jobcardStyle1 saved-candidate">
+            <div class="card-body">
+              <div class="rt-single-icon-box ">
+                <div class="icon-thumb">
+                    <div class="profile-image">
+                      <img src="assets/images/all-img/candidates-9.jpg" alt="">
+                    </div>
+                </div>
+                <div class="iconbox-content">
+                  <div class="post-info2">
+                    <div class="post-main-title"> <a href="candidate-details.html">Brooklyn Simmons</a> </div>
+                    <span class="loacton text-gray-400 ">
+                      UX Designer
+                  </span>
+                  </div>
+                </div>
+                <div class="iconbox-extra align-self-center">
+                  <div>
+                     <button class="text-primary-500 hoverbg-primary-50 plain-button icon-button">
+                       <img src="assets/images/svg/BookmarkSimple3.svg" alt="">
+                     </button>
+                  </div>
+                  <div>
+                     <button type="button" class="btn btn-primary2-50" data-bs-toggle="modal" data-bs-target="#cadidate-profile">
+                         <span class="button-content-wrapper ">
+                           <span class="button-icon align-icon-right">
+                             <i class="ph-arrow-right"></i>       
+                             </span>
+                           <span class="button-text">
+                               View profile
+                             </span>
+                         </span>
+                       </button>
+                  </div>
+                  <div>
+                   <button type="button" class="btn btn-icon hover:bg-gray-50" id="dropdownMenuButton9" data-bs-toggle="dropdown" aria-expanded="false">
+                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M12 13.125C12.6213 13.125 13.125 12.6213 13.125 12C13.125 11.3787 12.6213 10.875 12 10.875C11.3787 10.875 10.875 11.3787 10.875 12C10.875 12.6213 11.3787 13.125 12 13.125Z" fill="#767F8C" stroke="#767F8C"></path>
+                       <path d="M12 6.65039C12.6213 6.65039 13.125 6.14671 13.125 5.52539C13.125 4.90407 12.6213 4.40039 12 4.40039C11.3787 4.40039 10.875 4.90407 10.875 5.52539C10.875 6.14671 11.3787 6.65039 12 6.65039Z" fill="#767F8C" stroke="#767F8C"></path>
+                       <path d="M12 19.6094C12.6213 19.6094 13.125 19.1057 13.125 18.4844C13.125 17.8631 12.6213 17.3594 12 17.3594C11.3787 17.3594 10.875 17.8631 10.875 18.4844C10.875 19.1057 11.3787 19.6094 12 19.6094Z" fill="#767F8C" stroke="#767F8C"></path>
+                     </svg>
+                   </button>
+                   <ul class="dropdown-menu dropdown-menu-end company-dashboard-dropdown" aria-labelledby="dropdownMenuButton9">
+                     <li><a class="dropdown-item" href="#">
+                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M10 3.54102C3.75 3.54102 1.25 9.99996 1.25 9.99996C1.25 9.99996 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 9.99996 18.75 9.99996C18.75 9.99996 16.25 3.54102 10 3.54102Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M10 13.125C11.7259 13.125 13.125 11.7259 13.125 10C13.125 8.27411 11.7259 6.875 10 6.875C8.27411 6.875 6.875 8.27411 6.875 10C6.875 11.7259 8.27411 13.125 10 13.125Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+                         View Detail</a>
+                     </li>
+                     <li><a class="dropdown-item" href="#">
+                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#5E6670" stroke-width="1.5" stroke-miterlimit="10"></path>
+                           <path d="M12.5 7.5L7.5 12.5" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M12.5 12.5L7.5 7.5" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+
+                         Make it Expire</a>
+                     </li>
+                     <li><a class="dropdown-item" href="#"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M16.875 4.375L3.125 4.37501" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M8.125 8.125V13.125" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M11.875 8.125V13.125" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M15.625 4.375V16.25C15.625 16.4158 15.5592 16.5747 15.4419 16.6919C15.3247 16.8092 15.1658 16.875 15 16.875H5C4.83424 16.875 4.67527 16.8092 4.55806 16.6919C4.44085 16.5747 4.375 16.4158 4.375 16.25V4.375" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M13.125 4.375V3.125C13.125 2.79348 12.9933 2.47554 12.7589 2.24112C12.5245 2.0067 12.2065 1.875 11.875 1.875H8.125C7.79348 1.875 7.47554 2.0067 7.24112 2.24112C7.0067 2.47554 6.875 2.79348 6.875 3.125V4.375" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+                         Delete Job</a></li>
+                   </ul>
+                  </div>
+                  
+               </div>
+              </div>
+            </div>
+          </div>
+          <div class="card jobcardStyle1 saved-candidate">
+            <div class="card-body">
+              <div class="rt-single-icon-box ">
+                <div class="icon-thumb">
+                    <div class="profile-image">
+                      <img src="assets/images/all-img/candidates-10.jpg" alt="">
+                    </div>
+                </div>
+                <div class="iconbox-content">
+                  <div class="post-info2">
+                    <div class="post-main-title"> <a href="candidate-details.html">Leslie Alexander</a> </div>
+                    <span class="loacton text-gray-400 ">
+                      UX Designer
+                  </span>
+                  </div>
+                </div>
+                <div class="iconbox-extra align-self-center">
+                  <div>
+                     <button class="text-primary-500 hoverbg-primary-50 plain-button icon-button">
+                       <img src="assets/images/svg/BookmarkSimple3.svg" alt="">
+                     </button>
+                  </div>
+                  <div>
+                     <button type="button" class="btn btn-primary2-50" data-bs-toggle="modal" data-bs-target="#cadidate-profile">
+                         <span class="button-content-wrapper ">
+                           <span class="button-icon align-icon-right">
+                             <i class="ph-arrow-right"></i>       
+                             </span>
+                           <span class="button-text">
+                               View profile
+                             </span>
+                         </span>
+                       </button>
+                  </div>
+                  <div>
+                   <button type="button" class="btn btn-icon hover:bg-gray-50" id="dropdownMenuButton10" data-bs-toggle="dropdown" aria-expanded="false">
+                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M12 13.125C12.6213 13.125 13.125 12.6213 13.125 12C13.125 11.3787 12.6213 10.875 12 10.875C11.3787 10.875 10.875 11.3787 10.875 12C10.875 12.6213 11.3787 13.125 12 13.125Z" fill="#767F8C" stroke="#767F8C"></path>
+                       <path d="M12 6.65039C12.6213 6.65039 13.125 6.14671 13.125 5.52539C13.125 4.90407 12.6213 4.40039 12 4.40039C11.3787 4.40039 10.875 4.90407 10.875 5.52539C10.875 6.14671 11.3787 6.65039 12 6.65039Z" fill="#767F8C" stroke="#767F8C"></path>
+                       <path d="M12 19.6094C12.6213 19.6094 13.125 19.1057 13.125 18.4844C13.125 17.8631 12.6213 17.3594 12 17.3594C11.3787 17.3594 10.875 17.8631 10.875 18.4844C10.875 19.1057 11.3787 19.6094 12 19.6094Z" fill="#767F8C" stroke="#767F8C"></path>
+                     </svg>
+                   </button>
+                   <ul class="dropdown-menu dropdown-menu-end company-dashboard-dropdown" aria-labelledby="dropdownMenuButton10">
+                     <li><a class="dropdown-item" href="#">
+                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M10 3.54102C3.75 3.54102 1.25 9.99996 1.25 9.99996C1.25 9.99996 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 9.99996 18.75 9.99996C18.75 9.99996 16.25 3.54102 10 3.54102Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M10 13.125C11.7259 13.125 13.125 11.7259 13.125 10C13.125 8.27411 11.7259 6.875 10 6.875C8.27411 6.875 6.875 8.27411 6.875 10C6.875 11.7259 8.27411 13.125 10 13.125Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+                         View Detail</a>
+                     </li>
+                     <li><a class="dropdown-item" href="#">
+                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#5E6670" stroke-width="1.5" stroke-miterlimit="10"></path>
+                           <path d="M12.5 7.5L7.5 12.5" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M12.5 12.5L7.5 7.5" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+
+                         Make it Expire</a>
+                     </li>
+                     <li><a class="dropdown-item" href="#"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M16.875 4.375L3.125 4.37501" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M8.125 8.125V13.125" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M11.875 8.125V13.125" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M15.625 4.375V16.25C15.625 16.4158 15.5592 16.5747 15.4419 16.6919C15.3247 16.8092 15.1658 16.875 15 16.875H5C4.83424 16.875 4.67527 16.8092 4.55806 16.6919C4.44085 16.5747 4.375 16.4158 4.375 16.25V4.375" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M13.125 4.375V3.125C13.125 2.79348 12.9933 2.47554 12.7589 2.24112C12.5245 2.0067 12.2065 1.875 11.875 1.875H8.125C7.79348 1.875 7.47554 2.0067 7.24112 2.24112C7.0067 2.47554 6.875 2.79348 6.875 3.125V4.375" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+                         Delete Job</a></li>
+                   </ul>
+                  </div>
+                  
+               </div>
+              </div>
+          
+            </div>
+          </div>
+          <div class="card jobcardStyle1 saved-candidate">
+            <div class="card-body">
+              <div class="rt-single-icon-box ">
+                <div class="icon-thumb">
+                    <div class="profile-image">
+                      <img src="assets/images/all-img/candidates-11.jpg" alt="">
+                    </div>
+                </div>
+                <div class="iconbox-content">
+                  <div class="post-info2">
+                    <div class="post-main-title"> <a href="candidate-details.html">Jenny Wilson</a> </div>
+                    <span class="loacton text-gray-400 ">
+                      UX Designer
+                  </span>
+                  </div>
+                </div>
+                <div class="iconbox-extra align-self-center">
+                  <div>
+                     <button class="text-primary-500 hoverbg-primary-50 plain-button icon-button">
+                       <img src="assets/images/svg/BookmarkSimple3.svg" alt="">
+                     </button>
+                  </div>
+                  <div>
+                     <button type="button" class="btn btn-primary2-50" data-bs-toggle="modal" data-bs-target="#cadidate-profile">
+                         <span class="button-content-wrapper ">
+                           <span class="button-icon align-icon-right">
+                             <i class="ph-arrow-right"></i>       
+                             </span>
+                           <span class="button-text">
+                               View profile
+                             </span>
+                         </span>
+                       </button>
+                  </div>
+                  <div>
+                   <button type="button" class="btn btn-icon hover:bg-gray-50" id="dropdownMenuButton11" data-bs-toggle="dropdown" aria-expanded="false">
+                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M12 13.125C12.6213 13.125 13.125 12.6213 13.125 12C13.125 11.3787 12.6213 10.875 12 10.875C11.3787 10.875 10.875 11.3787 10.875 12C10.875 12.6213 11.3787 13.125 12 13.125Z" fill="#767F8C" stroke="#767F8C"></path>
+                       <path d="M12 6.65039C12.6213 6.65039 13.125 6.14671 13.125 5.52539C13.125 4.90407 12.6213 4.40039 12 4.40039C11.3787 4.40039 10.875 4.90407 10.875 5.52539C10.875 6.14671 11.3787 6.65039 12 6.65039Z" fill="#767F8C" stroke="#767F8C"></path>
+                       <path d="M12 19.6094C12.6213 19.6094 13.125 19.1057 13.125 18.4844C13.125 17.8631 12.6213 17.3594 12 17.3594C11.3787 17.3594 10.875 17.8631 10.875 18.4844C10.875 19.1057 11.3787 19.6094 12 19.6094Z" fill="#767F8C" stroke="#767F8C"></path>
+                     </svg>
+                   </button>
+                   <ul class="dropdown-menu dropdown-menu-end company-dashboard-dropdown" aria-labelledby="dropdownMenuButton11">
+                     <li><a class="dropdown-item" href="#">
+                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M10 3.54102C3.75 3.54102 1.25 9.99996 1.25 9.99996C1.25 9.99996 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 9.99996 18.75 9.99996C18.75 9.99996 16.25 3.54102 10 3.54102Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M10 13.125C11.7259 13.125 13.125 11.7259 13.125 10C13.125 8.27411 11.7259 6.875 10 6.875C8.27411 6.875 6.875 8.27411 6.875 10C6.875 11.7259 8.27411 13.125 10 13.125Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+                         View Detail</a>
+                     </li>
+                     <li><a class="dropdown-item" href="#">
+                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#5E6670" stroke-width="1.5" stroke-miterlimit="10"></path>
+                           <path d="M12.5 7.5L7.5 12.5" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M12.5 12.5L7.5 7.5" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+
+                         Make it Expire</a>
+                     </li>
+                     <li><a class="dropdown-item" href="#"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M16.875 4.375L3.125 4.37501" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M8.125 8.125V13.125" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M11.875 8.125V13.125" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M15.625 4.375V16.25C15.625 16.4158 15.5592 16.5747 15.4419 16.6919C15.3247 16.8092 15.1658 16.875 15 16.875H5C4.83424 16.875 4.67527 16.8092 4.55806 16.6919C4.44085 16.5747 4.375 16.4158 4.375 16.25V4.375" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M13.125 4.375V3.125C13.125 2.79348 12.9933 2.47554 12.7589 2.24112C12.5245 2.0067 12.2065 1.875 11.875 1.875H8.125C7.79348 1.875 7.47554 2.0067 7.24112 2.24112C7.0067 2.47554 6.875 2.79348 6.875 3.125V4.375" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+                         Delete Job</a></li>
+                   </ul>
+                  </div>
+                  
+               </div>
+              </div>
+          
+            </div>
+          </div>
+          <div class="card jobcardStyle1 saved-candidate">
+            <div class="card-body">
+              <div class="rt-single-icon-box ">
+                <div class="icon-thumb">
+                    <div class="profile-image">
+                      <img src="assets/images/all-img/candidates12.jpg" alt="">
+                    </div>
+                </div>
+                <div class="iconbox-content">
+                  <div class="post-info2">
+                    <div class="post-main-title"> <a href="candidate-details.html">Jacob Jones</a> </div>
+                    <span class="loacton text-gray-400 ">
+                      UX Designer
+                  </span>
+                  </div>
+                </div>
+                <div class="iconbox-extra align-self-center">
+                  <div>
+                     <button class="text-primary-500 hoverbg-primary-50 plain-button icon-button">
+                       <img src="assets/images/svg/BookmarkSimple3.svg" alt="">
+                     </button>
+                  </div>
+                  <div>
+                     <button type="button" class="btn btn-primary2-50" data-bs-toggle="modal" data-bs-target="#cadidate-profile">
+                         <span class="button-content-wrapper ">
+                           <span class="button-icon align-icon-right">
+                             <i class="ph-arrow-right"></i>       
+                             </span>
+                           <span class="button-text">
+                               View profile
+                             </span>
+                         </span>
+                       </button>
+                  </div>
+                  <div>
+                   <button type="button" class="btn btn-icon hover:bg-gray-50" id="dropdownMenuButton12" data-bs-toggle="dropdown" aria-expanded="false">
+                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M12 13.125C12.6213 13.125 13.125 12.6213 13.125 12C13.125 11.3787 12.6213 10.875 12 10.875C11.3787 10.875 10.875 11.3787 10.875 12C10.875 12.6213 11.3787 13.125 12 13.125Z" fill="#767F8C" stroke="#767F8C"></path>
+                       <path d="M12 6.65039C12.6213 6.65039 13.125 6.14671 13.125 5.52539C13.125 4.90407 12.6213 4.40039 12 4.40039C11.3787 4.40039 10.875 4.90407 10.875 5.52539C10.875 6.14671 11.3787 6.65039 12 6.65039Z" fill="#767F8C" stroke="#767F8C"></path>
+                       <path d="M12 19.6094C12.6213 19.6094 13.125 19.1057 13.125 18.4844C13.125 17.8631 12.6213 17.3594 12 17.3594C11.3787 17.3594 10.875 17.8631 10.875 18.4844C10.875 19.1057 11.3787 19.6094 12 19.6094Z" fill="#767F8C" stroke="#767F8C"></path>
+                     </svg>
+                   </button>
+                   <ul class="dropdown-menu dropdown-menu-end company-dashboard-dropdown" aria-labelledby="dropdownMenuButton12">
+                     <li><a class="dropdown-item" href="#">
+                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M10 3.54102C3.75 3.54102 1.25 9.99996 1.25 9.99996C1.25 9.99996 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 9.99996 18.75 9.99996C18.75 9.99996 16.25 3.54102 10 3.54102Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M10 13.125C11.7259 13.125 13.125 11.7259 13.125 10C13.125 8.27411 11.7259 6.875 10 6.875C8.27411 6.875 6.875 8.27411 6.875 10C6.875 11.7259 8.27411 13.125 10 13.125Z" stroke="#0A65CC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+                         View Detail</a>
+                     </li>
+                     <li><a class="dropdown-item" href="#">
+                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#5E6670" stroke-width="1.5" stroke-miterlimit="10"></path>
+                           <path d="M12.5 7.5L7.5 12.5" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M12.5 12.5L7.5 7.5" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+
+                         Make it Expire</a>
+                     </li>
+                     <li><a class="dropdown-item" href="#"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M16.875 4.375L3.125 4.37501" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M8.125 8.125V13.125" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M11.875 8.125V13.125" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M15.625 4.375V16.25C15.625 16.4158 15.5592 16.5747 15.4419 16.6919C15.3247 16.8092 15.1658 16.875 15 16.875H5C4.83424 16.875 4.67527 16.8092 4.55806 16.6919C4.44085 16.5747 4.375 16.4158 4.375 16.25V4.375" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           <path d="M13.125 4.375V3.125C13.125 2.79348 12.9933 2.47554 12.7589 2.24112C12.5245 2.0067 12.2065 1.875 11.875 1.875H8.125C7.79348 1.875 7.47554 2.0067 7.24112 2.24112C7.0067 2.47554 6.875 2.79348 6.875 3.125V4.375" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                         </svg>
+                         Delete Job</a></li>
+                   </ul>
+                  </div>
+                  
+               </div>
+              </div>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+{% include "../templates/layout/header-footer/dashboard-footer.html" %}
+  
+</div>
+
+
+
+
+{% endblock %}

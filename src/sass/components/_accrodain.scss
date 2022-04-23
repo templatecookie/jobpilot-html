@@ -1,13 +1,6 @@
-
-
-
-
-
-
-
-  .accordion-button:not(.collapsed)::after {
-    transform: rotate(45deg);
-  }
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(45deg);
+}
 
 
     .accordion-button:not(.collapsed) {

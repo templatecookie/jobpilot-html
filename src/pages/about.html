@@ -1,8 +1,13 @@
 {% extends "layout/layout.html" %}
 
 {% block content %}
+{% include "../templates/layout/header-footer/header-home1.html" %}
 
-{% include "../templates/layout/header-footer/header-company.html" %}
+{% set page_title = "About" %}
+{% set current_page = "About" %}
+
+
+{% include "../templates/components/breadcrumbs/breadcrumbs.html" %}
 
 
 

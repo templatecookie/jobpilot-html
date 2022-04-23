@@ -37,3 +37,92 @@
         }
     }
 }
+
+// filter list 
+.filter-list{
+    @extend .rt-list;
+    display: flex;
+    @include breakpoint(md){
+        flex-wrap: wrap;
+    }
+    li{
+        display: inline-flex;
+        color: var(--gray-500);
+        font-size: 16px;
+        line-height: 24px;
+        padding: 12px;
+        @include afterparent();
+        box-shadow: inset 0px -2px 0px transparent;
+        cursor: pointer;
+        
+        &:last-child{
+            padding-right: 0px;
+        }
+        &.active{
+            border-bottom: 2px solid #0066FF;
+        }
+    }
+}
+
+.mx-536{
+    max-width: 536px;
+}
+
+//about container gap 
+.about-g-0{
+    padding: 0px;
+    @include breakpoint(lg){
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.about-box{
+    padding: 80px 80px 56px 80px;
+    @include breakpoint(lg){
+        padding: 35px;
+    }
+}
+.abt-inner-conent{
+    padding-left: 70px;
+    @include breakpoint(xl){
+        padding-left: 0px;
+    }
+}
+.img-minus-1{
+    margin-top: -70px;
+}
+
+
+
+.menu-icon.gray-10{
+    span {
+        background: var(--gray-900);
+    }
+}
+.height-362{
+    height: 362px;
+}
+
+
+// final match css 
+.snd{
+    display: none;
+}
+.mnth-m{
+    display: none;
+}
+.price-toggole{
+    .fst{
+        display: none;
+    }
+    .snd{
+        display: inline-block;
+    }
+    .mnth-y{
+        display: none;
+    }
+    .mnth-m{
+        display: inline-block;
+    }
+}

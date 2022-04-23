@@ -1,8 +1,13 @@
 {% extends "layout/layout.html" %}
 
 {% block content %}
+{% include "../templates/layout/header-footer/header-home1.html" %}
 
-{% include "../templates/layout/header-footer/header-normal.html" %}
+{% set page_title = "Contact" %}
+{% set current_page = "Contact" %}
+
+
+{% include "../templates/components/breadcrumbs/breadcrumbs.html" %}
 
 
 <div class="rt-contact">
@@ -36,7 +41,7 @@
             <div class="fromGroup rt-mb-15">
               <input type="text" placeholder="Subjects" required="">
             </div> 
-            <div class="rt-mb-15 tarea-dafault"> 
+            <div class="rt-mb-30 tarea-dafault"> 
                 <textarea placeholder="Message"></textarea>   
               </div>
             <button type="submit" class="btn btn-primary d-block rt-mb-15">

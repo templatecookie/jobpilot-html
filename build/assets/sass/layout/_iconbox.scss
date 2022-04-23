@@ -1,6 +1,10 @@
 // global
 .rt-single-icon-box {
     display: flex;
+    align-items: center;
+    @media (max-width: 767px) {
+      display: block;
+    }
     @include afterparent();
     @include rt-trs(0.24s);
     .icon-thumb {
@@ -96,7 +100,7 @@
       }
     }
     @include breakpoint('md', max){
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         .iconbox-extra {
             margin-top: 10px;
         }

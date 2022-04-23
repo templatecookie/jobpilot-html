@@ -18,14 +18,14 @@
     }
   }
   .navbar {
-    padding: 0;
+    padding: 20px 0;
     transition: 0.3s ease-in-out;
     @include breakpoint(lg) {
       padding: 15px 0;
     }
   }
   &.rt-fixed-top {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100%;
@@ -136,5 +136,47 @@
       background: var(--gray-100);
       border-color: var(--gray-100);
     }
+  }
+}
+
+// notifacation
+
+.notification-box {
+  right: 0;
+  position: absolute;
+  width: 550px;
+  background-color: #fff;
+  opacity: 0;
+  top: 35px;
+  z-index: 9;
+  visibility: hidden;
+  transition: all 0.4s;
+}
+.notification-visiable .notification-box {
+  opacity: 1;
+  z-index: 9;
+  visibility: visible;
+}
+
+
+.custom-input {
+    border-right: transparent !important;
+    border-radius: 5px 0px 0px 5px !important;
+}
+.custom-input2{
+    border-radius: 0px 5px 5px 0px !important;
+    width: 400px !important;
+    @media (max-width: 992px){
+      width: 100% !important;
+    }
+}
+.circle{
+  position: absolute;
+  left: 10px;
+}
+.candidate-profile{
+  img{
+    width: 48px;
+    height: 48px;
   }
 }

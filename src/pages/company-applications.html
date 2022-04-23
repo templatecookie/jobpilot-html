@@ -12,10 +12,29 @@
       </div>
       <div class="col-lg-9">
         <div class="dashboard-right">
-          application
-          
+          <div class="d-flex flex-column justify-content-md-between flex-md-row align-items-md-center rt-mb-32">
+            <div class="left-text m-0">
+              <h3 class="f-size-18 lh-1 mb-2">Applications  <span class="text-gray-400">(2,517)</span></h3>
+              <p>Vivamus cursus purus ac malesuada suscipit. <br>Curabitur efficitur id risus sit.</p>
+            </div>
+            <div class="header-r-dropdown">
+              <h3 class="f-size-18 lh-1 text-gray-900 mb-2">Job</h3>
+              <select class="rt-selectactive" name="from3" style="width: 100%" >
+                <option>UI/UX Designer</option>
+                <option value="2">Web Designer</option>
+                <option value="3">Web Developer</option>
+            </select>
+            </div>
+            <span class="sidebar-open-nav">
+              <i class="ph-list"></i>
+            </span>
+          </div>
+          {% include "../templates/components/employe/dashboard-application.html" %}
+          <div class="rt-pt-30">
+            {% include "../templates/components/pagination/pagination.html" %}
+          </div>
         </div>
-        
+
       </div>
     </div>
     

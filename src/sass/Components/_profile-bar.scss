@@ -1,0 +1,57 @@
+.profile-bar{
+    max-width: 425px;
+    background-color: white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    &-list{
+        padding: 24px 0px;
+        ul{
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            li{
+                padding: 10px 24px;
+                .content{
+                    padding-left: 12px;
+                    h4{
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 1.43;
+                        color: #18191C;
+                    }
+                    p{
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 1.5;
+                        color: #5E6670;
+                    }
+                }
+                &:hover{
+                    background: #F1F2F4;
+                }
+            }
+        }
+    }
+    .devider{
+        margin: 0px 0px 12px 0px;
+    }
+    .profile-feature-list{
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li{
+                padding: 10px 24px;
+                a{
+                    display: flex;
+                    p{
+                        padding-left: 12px;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 1.43;
+                        color: #5E6670;
+                    }
+                }
+            }
+        }
+    }
+}

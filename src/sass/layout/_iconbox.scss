@@ -20,8 +20,7 @@
       text-align: center;
     }
     &.icon-center2 {
-      flex-direction: column;
-      justify-content: center;
+      display: block;
     }
     &.rt-xs-center {
       @include breakpoint(xs) {

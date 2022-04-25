@@ -40,7 +40,7 @@ section.banner-section {
   border-radius: 8px;
   height: 80px;
   box-shadow: 0px 12px 40px rgba(0, 44, 109, 0.04);
-  border: 1px solid var(--gray-50);
+  border: 1px solid var(--gray-100);
   @include breakpoint(md) {
     height: auto;
     padding: 12px;
@@ -141,7 +141,8 @@ section.banner-section {
 
 .banner-quciks-links {
   a {
-    color: var(--gray-600);
+    color: var(--gray-700);
+    padding-right: 2px;
     &:hover {
       color: var(--primary-500);
     }
@@ -149,30 +150,7 @@ section.banner-section {
 }
 
 .banner-mockup {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: -120px;
-  z-index: 0;
-  max-width: 50%;
-  margin-top: 78px;
-  @include breakpoint(xxl2) {
-    max-width: 40%;
-    right: 0px;
-  }
-  @include breakpoint(xxl) {
-    max-width: 48%;
-    right: 0px;
-  }
-  @include breakpoint(xl) {
-    position: static;
-    margin-top: 30px;
-    transform: none;
-  }
-
-  @include breakpoint(md) {
-    display: none;
-  }
+  text-align: right;
 }
 .banner-content2 {
   padding-left: 80px;
@@ -215,13 +193,9 @@ section.banner-section {
     padding-bottom: 50px;
   }
 }
-.banner-content5 {
-  padding-top: 342px;
-  padding-bottom: 178px;
-  @include breakpoint(xl){
-    padding-top: 242px;
-    padding-bottom: 140px;
-  }
+.banner-section {
+  padding-top: 250px;
+  padding-bottom: 110px;
   @include breakpoint(lg){
     padding-top: 180px;
     padding-bottom: 100px;

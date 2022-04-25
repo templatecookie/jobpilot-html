@@ -611,7 +611,7 @@ if ($(".top-company-slider").length > 0) {
       rows: 2,
       infinite: true,
       speed: 800,
-      slidesToShow: 3,
+      slidesToShow: 4,
       slidesToScroll: 1,
       arrows: true,
       prevArrow: '<button class="slide-arrow prev-arrow"></button>',

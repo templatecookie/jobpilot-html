@@ -386,6 +386,12 @@
       console.error(error);
     });
   }
+  var hasckeditor2 = document.getElementById("default2");
+  if (hasckeditor2) {
+    ClassicEditor.create(document.querySelector("#default2")).catch((error) => {
+      console.error(error);
+    });
+  }
   // card
   /* 1.1.6 Card */
   var stripe = Stripe(

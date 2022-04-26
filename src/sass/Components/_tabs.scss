@@ -1,69 +1,85 @@
 .cadidate-dashboard-tabs{
   .nav{
     border-bottom: 1px solid var(--gray-100);
-    
   }
   .nav-pills .nav-link{
-    font-weight: 500;
+    font-weight: 600;
     padding: 12px 20px;
     font-size: 14px;
     line-height: 1;
+    display: flex;
+    align-items: center;
     color: var(--gray-500);
+    position: relative;
     svg{
-      margin-right: 5px;
+      margin-right: 7px;
     }
     path{
       stroke: var(--gray-500);
     }
+    &:hover,
     &.active{
       color: var(--primary-500);
       background-color: transparent !important;
       path{
         stroke: var(--primary-500);
       }
-    }
-  }
-  
-  #pricemodal{
-    .nav{
-      border-bottom: none;
-      .nav-link{
-        padding: 12px 20px;
-        margin-right: 4px;
-        border-radius: 0px;
-        &:hover{
-          box-shadow: inset 0px -2px 0px #0A65CC; 
-        }
-      }
-      .active{
-        box-shadow: inset 0px -2px 0px #0A65CC;
+      &:before{
+        content: "";
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        transition: all 0.4s;
+        position: absolute;
+        background-color: var(--primary-500);
       }
     }
   }
-  .paypal-wrap{
-    .d-flex{
-      gap: 16px;
-    }
-    .card-info{
-    h4{
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 1.5;
+}
+
+#pricemodal{
+  .nav{
+    border-bottom: none;
+    .nav-link{
+      padding: 12px 20px;
+      margin-right: 4px;
+      border-radius: 0px;
       color: #767F8C;
+      &:hover{
+        box-shadow: inset 0px -2px 0px #0A65CC; 
+      }
     }
-    h2{
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.43;
-      color: #18191C;
+    .active{
+      color: var(--primary-500);
+      background-color: transparent !important;
+      box-shadow: inset 0px -2px 0px #0A65CC;
     }
   }
-  label{
+}
+.paypal-wrap{
+  .d-flex{
+    gap: 16px;
+  }
+  .card-info{
+  h4{
     font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #767F8C;
+  }
+  h2{
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.43;
     color: #18191C;
   }
-  }
+}
+label{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #18191C;
+}
 }
 

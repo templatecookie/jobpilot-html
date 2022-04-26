@@ -72,6 +72,7 @@
         }
     }
     .biography{
+        margin-bottom: 32px;
         &-wrap{
             margin-right: 60px;
             @media (max-width: 991px) {
@@ -90,10 +91,15 @@
             font-size: 16px;
             line-height: 24px;
             color: #5E6670;
+            margin-bottom: 0px;
         }
     }
-    
+    .devider{
+        height: 1px;
+        background: #E4E5E8;
+    }
     .cover-letter{
+        margin: 32px 0px;
         .title{
             font-weight: 500;
             font-size: 18px;
@@ -106,9 +112,15 @@
             font-size: 16px;
             line-height: 1.5;
             color: #5E6670;
+            margin-bottom: 0px;
         }
     }
+    .devider{
+        height: 1px;
+        background: #E4E5E8;
+    }
     .social-links{
+        margin-top: 32px;
         .title{
             font-weight: 500;
             font-size: 14px;
@@ -147,10 +159,10 @@
     border: 1.5px solid #E7F0FA;
     box-sizing: border-box;
     border-radius: 8px;
-    padding: 24px;
     margin-bottom: 24px;
-    &:last-child {
-        margin-bottom: 0;
+    padding: 24px;
+    &--one{
+      padding: 24px 24px 0px 24px;  
     }
     .row{
         margin-bottom: 0px;
@@ -180,9 +192,13 @@
             font-size: 16px;
             line-height: 24px;
             color: #18191C;
+            margin-bottom: 16px;
         }
         .resume-file{
             align-items: center;
+            .icon-img{
+                margin-right: 12px;
+            }
             .file-info{
                 display: flex;
                 flex-direction: column;
@@ -202,7 +218,8 @@
                     margin-bottom: 0px;
                 }              
             }
-            .download-icon{
+        }
+        .download-icon{
                 a{
                     &:hover{
                         svg{
@@ -213,7 +230,6 @@
                     }
                 }
             }
-        }
     }
     .contact{
         .title{
@@ -221,6 +237,7 @@
             font-size: 16px;
             line-height: 1.5;
             color: #18191C;
+            margin-bottom: 16px;
         }
         .contact-icon-box{
             display: flex;
@@ -236,30 +253,63 @@
                     line-height: 1.5;
                     text-transform: uppercase;
                     color: #767F8C;
+                    margin-bottom: 4px;
                 }
                 .title{
                     font-weight: 500;
                     font-size: 14px;
                     line-height: 1.43;
                     color: #18191C;
+                    margin-bottom: 12px;
                 }
             }
         }
         .devider{
-            margin: 20px 0;
+            margin-top: 8px;
+            margin-bottom: 20px;
         }
         .address{
             font-weight: 400;
             font-size: 14px;
             line-height: 1.43;
             color: #5E6670;
-            margin-bottom: 0px;
+            margin-bottom: 20px;
         }
     }
 }
 
-.devider{
-    height: 1px;
-    background: #E4E5E8;
-    margin: 32px 0;
+
+.email-btn{    
+    a{
+        padding: 12px 24px;
+        svg{
+            margin-right: 12px;
+        }
+        .button-text{
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 1.5;
+            text-transform: capitalize;
+        }
+        &:hover{
+        svg{
+            path{
+                stroke: var(--primary-500);
+            }
+        }
+
+    }
+    }
+}
+.btn-star-white{
+    padding: 13px 12px;
+    border-radius: 5px;
+    &:hover{
+        svg{
+            fill: white;
+            path{
+                stroke: white;
+            }
+        }
+    }
 }

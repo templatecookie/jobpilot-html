@@ -1,18 +1,25 @@
 .select2-container--default .select2-selection--single {
   background: #fff;
-  border: 1px solid var(--gray-50);
+  border: 1px solid #E4E5E8;
   height: 48px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #474C54;
+}
+.breadcrumbs{
+  .select2-container--default .select2-selection--single, 
+  .jobsearchBox {
+    border: 0;
+  }
 }
 
 .has-icon {
   .select2-container .select2-selection--single .select2-selection__rendered {
-    padding-left: 50px;
+    padding-left: 35px;
     line-height: 48px;
   }
 }
-.category-icon{
-  left: 13px!important;
-}
+
 .has-icon2 {
   .select2-container .select2-selection--single .select2-selection__rendered {
     padding-left: 52px;

@@ -440,7 +440,7 @@
 
 //search list fixing
 .inputbox_1 {
-  width: 41%;
+  width: 40%;
   @include breakpoint(xl) {
     width: auto;
     flex-grow: 1;
@@ -450,7 +450,7 @@
   }
 }
 .inputbox_2 {
-  width: 25.7%;
+  width: 24%;
   @include breakpoint(xl) {
     width: auto;
     flex-grow: 1;
@@ -510,4 +510,39 @@
   @media (min-width: 991px) {
     margin-left: 50px;
   }
+}
+
+.job-details.btn{
+  font-size: 14px;
+  font-weight: 400;
+  padding: 9px 16px;
+  svg{
+    font-size: 20px;
+    margin-right: 5px;
+  }
+}
+
+ul.job-details-social{
+    li{
+      a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 4px;
+        transition: all 0.4s;
+        background-color: #E7F0FA;
+        &:hover{
+          background-color: var(--primary-500);
+        }
+        &:hover path{
+          fill: white;
+        }
+        svg{
+          font-size: 20px;
+        }
+      }
+    }
+  
 }

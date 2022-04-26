@@ -38,7 +38,6 @@ section.banner-section {
   }
 
   border-radius: 8px;
-  height: 80px;
   box-shadow: 0px 12px 40px rgba(0, 44, 109, 0.04);
   border: 1px solid var(--gray-100);
   @include breakpoint(md) {
@@ -53,30 +52,35 @@ section.banner-section {
   }
   #{$all-text-inputs},
   .form-control {
-    height: 100%;
-    color: var(--gray-700);
-    width: calc(100% - 20px);
+    color: var(--gray-400);
     &:focus,
     &:focus-visible {
       border-color: transparent !important;
     }
   }
   .fromGroup {
-    &::after {
-      position: absolute;
-      right: 20px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 1px;
-      height: 100%;
-      content: "";
-      background: var(--gray-50);
-      @include breakpoint(md){
-        display: none;
-      }
+    // &::after {
+    //   position: absolute;
+    //   right: 20px;
+    //   top: 50%;
+    //   transform: translateY(-50%);
+    //   width: 1px;
+    //   height: 100%;
+    //   content: "";
+    //   background: var(--gray-50);
+    //   @include breakpoint(md){
+    //     display: none;
+    //   }
+    // }
+    margin-right: 20px;
+    border-right: 1px solid #EDEFF5;
+    &:last-child{
+      border: 0;
     }
+
     &.banner-select {
-      padding-right: 20px;
+      padding-right: 10px;
+      border: 0;
     }
     &.no-border {
       padding-right: 0px !important;
@@ -116,26 +120,45 @@ section.banner-section {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    @media (max-width: 1199px) {
+      margin-bottom: 20px;
+     }
+     @media (max-width: 767px) {
+      display: block;
+     }
   }
   .search-col{
     flex: 0 0 23.33%;
     max-width: 23.33%;
-    @include breakpoint(xl){
-      @include flex-width(50%);
+    &:last-child{
+      flex: 0 0 16%;
+      max-width: 16%;
     }
-    @include breakpoint(xs){
-      @include flex-width(100%);
-    }
+    @media (max-width: 991px) {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+     }
+     @media (max-width: 767px) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin: 0;
+      border: 0;
+     }
+ 
   }
   .search-col-4{
     flex: 0 0 30%;
     max-width: 30%;
-    @include breakpoint(xl){
-      @include flex-width(50%);
-    }
-    @include breakpoint(xs){
-      @include flex-width(100%);
-    }
+   @media (max-width: 1400px) {
+    flex: 0 0 28%;
+    max-width: 28%;
+   }
+   @media (max-width: 991px) {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 0;
+    border: 0;
+   }
   }
 }
 

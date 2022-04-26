@@ -30,7 +30,7 @@
 .select2-container--default
   .select2-selection--single
   .select2-selection__rendered {
-  color: var(--gray-400);
+  color: #464D61;
   padding-right: 48px;
 }
 
@@ -46,12 +46,12 @@
   height: 100%;
   &::after {
     position: absolute;
-    right: 10px;
+    right: 14px;
     top: 50%;
     transform: translateY(-50%);
     content: "\f102";
     font-family: "flaticon";
-    font-size: 14px;
+    font-size: 12px;
     color: var(--gray-400);
   }
 }

@@ -420,7 +420,7 @@
       // },
     },
   });
-  cardElement.mount("#card-element");
+  // cardElement.mount("#card-element");
 
   // chart
   /* 1.1.7 Chart */

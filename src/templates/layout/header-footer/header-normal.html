@@ -1,30 +1,77 @@
-<header class="site-header">
+<header class="site-header rt-fixed-top">
     <div class="main-header">
-        <div class="navbar">
-            <div class="container-fluid">
-                <div class=" d-flex align-items-center">
-                    <a href="index.html" class="brand-logo "><img src="assets/images/logo/Logo.png" alt=""></a>
-                    <div class="main-menu">
-                        <a href="index.html" class="mblbrand-logo"><img src="assets/images/logo/Logo.png" alt=""></a>
-                        <span class="rt-mobile-menu-close">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-x">
-                                <line x1="18" y1="6" x2="6" y2="18"></line>
-                                <line x1="6" y1="6" x2="18" y2="18"></line>
-                            </svg>
-                        </span><!-- /.rt-mobile-menu-close -->
-                        {% include "./nav.html" %}
-                    </div><!-- /.main-menu -->
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-6 d-flex align-items-center">
+                        <div class="main-menu">
+                            <a href="index.html" class="mblbrand-logo"><img src="assets/images/logo/Logo.png" alt=""></a>
+                            <span class="rt-mobile-menu-close">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-x">
+                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                </svg>
+                            </span><!-- /.rt-mobile-menu-close -->
+                            {% include "./nav-home.html" %}
+                        </div><!-- /.main-menu -->
+                    </div>
+                    <div class="col-xl-4 col-lg-6 d-lg-flex align-items-center">
+                        <div class="header-top-right">
+                            <div class="header-top-info">
+                                <a class="contact-info" href=""> <img src="assets/images/svg/phonecall.svg" alt=""> +1-202-555-0178</a>
+                            </div>
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="flag-icon flag-icon-bd"></i>
+                                        Bangla</a></li>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li id="lang-dropdown-item"><a class="dropdown-item" href="#">
+                                        <i class="flag-icon flag-icon-bd"></i>
+                                        Bangla</a></li>
+                                    <li id="lang-dropdown-item"><a class="dropdown-item" href="#">
+                                        <i class="flag-icon flag-icon-us"></i>
+                                        English</a></li>
+                                    <li id="lang-dropdown-item"><a class="dropdown-item" href="#">
+                                        <i class="flag-icon flag-icon-ae"></i>
+                                        Arabic</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+        <!-- End Header top -->
+        <div class="navbar">
+            <div class="container container-full-xxl">
+                <div class=" d-flex align-items-center">
+                    <a href="index.html" class="brand-logo"><img src="assets/images/logo/logo.png" alt=""></a>
+                </div><!-- /.ms-auto -->
+                <form style="max-width: 200px;" class="d-none d-lg-inline-block">
+                    <div class="form-item">
+                        <input id="country_selector" type="text" class="custom-input">
+                        <label for="country_selector" style="display:none;">Select a country here...</label>
+                    </div>
+                    <div class="form-item" style="display:none;">
+                        <input type="text" id="country_selector_code" name="country_selector_code" data-countrycodeinput="1" readonly="readonly" placeholder="Selected country code will appear here" />
+                        <label for="country_selector_code">...and the selected country code will be updated here</label>
+                    </div>
+                    <button type="submit" style="display:none;">Submit</button>
+		        </form>
+                <form action="" class="d-none d-lg-inline-block">
+                    <input class="custom-input2 w-100" type="text" placeholder="Job tittle, keyword, company">
+                </form>
                 <div class="ms-auto">
                     <div class="rt-nav-tolls d-flex align-items-center">
                         <ul>
                             <li>
-                                <a href="create-account.html" class="btn btn-outline-primary">Create Account</a>
+                                <a href="login.html" class="btn btn-outline-primary">Sign in</a>
                             </li>
                             <li>
-                                <a href="login.html" class="btn btn-primary">Log In</a>
+                                <a href="post-job.html" class="btn btn-primary">Post a Jobs</a>
                             </li>
                         </ul>
                         <div class="mobile-menu">
@@ -38,7 +85,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+            </div><!-- /.container -->
+        </div><!-- /.navbar -->
+    </div><!-- /.main-header -->
 </header>
+

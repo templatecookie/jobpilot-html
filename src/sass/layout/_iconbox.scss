@@ -2,10 +2,6 @@
 .rt-single-icon-box {
     display: flex;
     align-items: center;
-    @media (max-width: 767px) {
-      display: block;
-    }
-    @include afterparent();
     @include rt-trs(0.24s);
     .icon-thumb {
       flex-shrink: 0!important; 
@@ -23,8 +19,7 @@
       text-align: center;
     }
     &.icon-center2 {
-      flex-direction: column;
-      justify-content: center;
+      display: block;
     }
     &.rt-xs-center {
       @include breakpoint(xs) {
@@ -36,6 +31,9 @@
     }
     .iconbox-content {
       flex-grow: 1!important;
+      @media (max-width: 575px) {
+        flex-shrink: 0;
+      }
       h4 {
         color: var(--gray-900);
         a {
@@ -111,6 +109,7 @@
         }
         .iconbox-extra {
             width: 100%;
+            justify-content: flex-end;
         }
     }
   }

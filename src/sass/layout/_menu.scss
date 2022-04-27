@@ -10,6 +10,9 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    @media (max-width: 991px) {
+        justify-content: center;
+    }
 }
 a.contact-info{
     font-weight: 500;
@@ -40,12 +43,12 @@ a.contact-info{
             position: static;
         }
         a {
-            color: var(--gray-700);
+            color: var(--gray-600);
             display: block;
-            font-size: var(--fs-lg-16);
             font-family: $body-font;
+            font-size: 14px;
             @include rt-trs(.24s);
-            padding: 12px 18px;
+            padding: 12px 20px;
             font-weight: 400;
             &:first-child{
                 padding-left: 0;
@@ -56,10 +59,7 @@ a.contact-info{
             @include breakpoint(xxl){
                 padding: 0 14px;
             }
-            @include breakpoint(xl){
-                padding: 0 5px;
-               // font-size: 15px;
-            }
+       
             &:hover{
                 text-decoration: none;
             }
@@ -99,18 +99,18 @@ a.contact-info{
 
 /*men item carve icon*/
 
-.main-menu>ul>li.menu-item-has-children>a:after {
-    content: "\f101";
-    margin-left: 8px;
-    font-family: "flaticon";
-    font-size: 12px;
-    @include rt-trs(.24s);
-    @include breakpoint(md) {
-        margin-left: 0;
-        position: absolute;
-        right: 15px;
-    }
-}
+// .main-menu>ul>li.menu-item-has-children>a:after {
+//     content: "\f101";
+//     margin-left: 8px;
+//     font-family: "flaticon";
+//     font-size: 12px;
+//     @include rt-trs(.24s);
+//     @include breakpoint(md) {
+//         margin-left: 0;
+//         position: absolute;
+//         right: 15px;
+//     }
+// }
 
 .main-menu>ul>li.menu-item-has-children:hover>a:after {
     color: var(--primary-500);

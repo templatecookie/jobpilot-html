@@ -386,6 +386,12 @@
       console.error(error);
     });
   }
+  var hasckeditor2 = document.getElementById("default2");
+  if (hasckeditor2) {
+    ClassicEditor.create(document.querySelector("#default2")).catch((error) => {
+      console.error(error);
+    });
+  }
   // card
   /* 1.1.6 Card */
   var stripe = Stripe(
@@ -414,7 +420,7 @@
       // },
     },
   });
-  cardElement.mount("#card-element");
+  // cardElement.mount("#card-element");
 
   // chart
   /* 1.1.7 Chart */
@@ -559,22 +565,38 @@ $(window).Scrollax();
   })
 
   // notifications
-  const $menu = $('.notification-icon');
+  const $notification = $('.notification-icon');
     $(document).mouseup((e) => {
       if (
-        !$menu.is(e.target) && // if the target of the click isn't the container...
-        $menu.has(e.target).length === 0
+        !$notification.is(e.target) && // if the target of the click isn't the container...
+        $notification.has(e.target).length === 0
       ) {
         // ... nor a descendant of the container
-        $menu.removeClass('notification-visiable');
+        $notification.removeClass('notification-visiable');
       }
     });
 
     $('.notification-icon').on('click', (event) => {
       event.preventDefault();
-      $menu.toggleClass('notification-visiable');
+      $notification.toggleClass('notification-visiable');
     });
     //end notification
+     // switch profile
+  const $profileSwitch = $('.switch-profile');
+  $(document).mouseup((e) => {
+    if (
+      !$profileSwitch.is(e.target) && // if the target of the click isn't the container...
+      $profileSwitch.has(e.target).length === 0
+    ) {
+      // ... nor a descendant of the container
+      $profileSwitch.removeClass('profile-visiable');
+    }
+  });
+
+  $('.switch-profile').on('click', (event) => {
+    event.preventDefault();
+    $profileSwitch.toggleClass('profile-visiable');
+  });
   
   // 6. input type changer 
   function showPassword(input, icon) { 
@@ -611,7 +633,7 @@ if ($(".top-company-slider").length > 0) {
       rows: 2,
       infinite: true,
       speed: 800,
-      slidesToShow: 3,
+      slidesToShow: 4,
       slidesToScroll: 1,
       arrows: true,
       prevArrow: '<button class="slide-arrow prev-arrow"></button>',

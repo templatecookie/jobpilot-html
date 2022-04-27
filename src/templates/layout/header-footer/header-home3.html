@@ -3,7 +3,7 @@
         <div class="header-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-xl-8 col-lg-6 d-flex align-items-center">
                         <div class="main-menu">
                             <a href="index.html" class="mblbrand-logo"><img src="assets/images/logo/Logo.png" alt=""></a>
                             <span class="rt-mobile-menu-close">
@@ -17,7 +17,7 @@
                             {% include "./nav.html" %}
                         </div><!-- /.main-menu -->
                     </div>
-                    <div class="col-lg-4 d-flex align-items-center">
+                    <div class="col-xl-4 col-lg-6 d-lg-flex align-items-center">
                         <div class="header-top-right">
                             <div class="header-top-info">
                                 <a class="contact-info" href=""> <img src="assets/images/svg/phonecall.svg" alt=""> +1-202-555-0178</a>
@@ -46,7 +46,7 @@
         </div>
         <!-- End Header top -->
         <div class="navbar">
-            <div class="container container-full-xxl">
+            <div class="container">
                 <div class=" d-flex align-items-center">
                     <a href="index.html" class="brand-logo"><img src="assets/images/logo/logo.png" alt=""></a>
                 </div><!-- /.ms-auto -->
@@ -54,7 +54,7 @@
                     <div class="rt-nav-tolls d-flex align-items-center">
                         <ul>
                             <li>
-                                <div class="notification relative">
+                                <div class="notification-icon relative pointer">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5.26904 10.5002C5.26657 9.61461 5.43885 8.73727 5.77603 7.91841C6.1132 7.09956 6.60864 6.35528 7.23394 5.72822C7.85925 5.10116 8.60214 4.60365 9.42006 4.26419C10.238 3.92474 11.1148 3.75 12.0004 3.75C12.8859 3.75 13.7628 3.92474 14.5807 4.26419C15.3986 4.60365 16.1415 5.10116 16.7668 5.72822C17.3921 6.35528 17.8876 7.09956 18.2247 7.91841C18.5619 8.73727 18.7342 9.61461 18.7317 10.5002V10.5002C18.7317 13.8579 19.4342 15.8063 20.0529 16.8712C20.1196 16.985 20.1551 17.1144 20.1558 17.2462C20.1565 17.3781 20.1224 17.5078 20.0569 17.6223C19.9915 17.7368 19.8971 17.832 19.7831 17.8984C19.6691 17.9647 19.5397 17.9998 19.4078 18.0002H4.59222C4.46034 17.9998 4.33087 17.9647 4.21689 17.8984C4.1029 17.832 4.00844 17.7368 3.94301 17.6223C3.87759 17.5077 3.84352 17.378 3.84425 17.2461C3.84498 17.1142 3.88048 16.9849 3.94716 16.8711C4.56622 15.8061 5.26904 13.8577 5.26904 10.5002H5.26904Z" stroke="#18191C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M9 18V18.75C9 19.5456 9.31607 20.3087 9.87868 20.8713C10.4413 21.4339 11.2044 21.75 12 21.75C12.7956 21.75 13.5587 21.4339 14.1213 20.8713C14.6839 20.3087 15 19.5456 15 18.75V18" stroke="#18191C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -64,7 +64,74 @@
                                     <svg class="circle" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="7" cy="7" r="6" fill="#E05151" stroke="white" stroke-width="2"/>
                                     </svg>
-
+                                    <div class="notification-bar">
+                                        <div class="notification-header">
+                                            <h2>Notifications</h2>
+                                            <p>Mark all as read</p>
+                                        </div>
+                                        <div class="devider">
+                                    
+                                        </div>
+                                        <div class="notification-list">
+                                            <ul>
+                                                <li>
+                                                    <a href="" class="d-flex">
+                                                        <div class="notification-thumb">
+                                                            <img src="assets/images/icon/twitter-logo.png" alt="">
+                                                        </div>
+                                                        <div class="">
+                                                            <h4>Twitter send you a Email to your email address</h4>
+                                                            <p>Just now</p>
+                                                        </div>
+                                                    </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="d-flex">
+                                                            <div class="notification-thumb">
+                                                                <img src="assets/images/icon/github-logo.png" alt="">
+                                                            </div>
+                                                            <div>
+                                                                <h4>Devid apply on your Techical Support.</h4>
+                                                                <p>12 mins ago</p>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="d-flex">
+                                                            <div class="notification-thumb">
+                                                                <img src="assets/images/icon/briefcase-logo.png" alt="">
+                                                            </div>
+                                                            <div>
+                                                                <h4>Twitter shortlisted you in their job UI/UX Designer</h4>
+                                                                <p>57 mins ago</p>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="d-flex">
+                                                            <div class="notification-thumb">
+                                                                <img src="assets/images/icon/twitter-logo.png" alt="">
+                                                            </div>
+                                                            <div>
+                                                                <h4>There is new 17 Job alert for you!</h4>
+                                                                <p>1 hour ago</p>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="d-flex">
+                                                            <div class="notification-thumb">
+                                                                <img src="assets/images/icon/twitter-logo.png" alt="">
+                                                            </div>
+                                                            <div>
+                                                                <h4>Kevin replied your comments on blog post</h4>
+                                                                <p>1 week ago</p>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>    
+                                        </div>    
+                                    </div>
                                 </div>
                             </li>
                             <li>
@@ -72,10 +139,79 @@
                                     Post A Jobs
                                 </a>
                             </li>
-                            <li>
+                            <li class="relative switch-profile">
                                 <a href="#" class="candidate-profile">
                                     <img src="assets/images/all-img/employers.png" alt="">
                                 </a>
+                                <div class="profile-bar">
+                                    <div class="profile-bar-list">
+                                        <ul>
+                                            <li>
+                                                <a href="" class="d-flex">
+                                                    <div>
+                                                        <img src="assets/images/icon/meta.png" alt="">
+                                                    </div>
+                                                    <div class="content">
+                                                        <h4>Meta</h4>
+                                                        <p>Technology Company</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="d-flex">
+                                                    <div>
+                                                        <img src="assets/images/icon/instagram.png" alt="">
+                                                    </div>
+                                                    <div class="content">
+                                                        <h4>Instagram</h4>
+                                                        <p>Information Technology (IT)</p>
+                                                    </div>
+                                                    <div class="check-switch">
+                                                        <img src="assets/images/svg/check-blue.svg" alt="">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="d-flex">
+                                                    <div>
+                                                        <img src="assets/images/icon/twitter.png" alt="">
+                                                    </div>
+                                                    <div class="content">
+                                                        <h4>Twitter</h4>
+                                                        <p>Social network company</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="devider">
+                                
+                                    </div>
+                                    <div class="profile-feature-list">
+                                        <ul>
+                                            <li>
+                                                <a href="">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#5E6670" stroke-width="1.5" stroke-miterlimit="10"/>
+                                                        <path d="M6.875 10H13.125" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M10 6.875V13.125" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    <p>Create new company</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.5947 6.71875L16.8751 10L13.5947 13.2812" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M8.125 10H16.8727" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M8.125 16.875H3.75C3.58424 16.875 3.42527 16.8092 3.30806 16.6919C3.19085 16.5747 3.125 16.4158 3.125 16.25V3.75C3.125 3.58424 3.19085 3.42527 3.30806 3.30806C3.42527 3.19085 3.58424 3.125 3.75 3.125H8.125" stroke="#5E6670" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    <p>Log-out</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>    
+                                </div>
                             </li>
                         </ul>
                         <div class="mobile-menu">

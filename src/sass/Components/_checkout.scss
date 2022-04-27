@@ -1,4 +1,41 @@
 .j-modal-dialog{
   max-width: 1320px;
 }
-
+.modal-dialog{
+  max-width: 936px;
+  .modal-header{
+    padding: 12px;
+    @media (min-width: 575px) {
+      padding: 26px 32px;
+    }
+  }
+  .modal-body{
+    padding: 0px;
+    @media (min-width: 575px){
+      padding: 32px;
+    }
+    .title{
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+  .card-element{
+    .card-number{
+      width: 70%;
+    }
+    .card-expire{
+      width: 20%;
+    }
+    .card-cvc{
+      width: 10%;
+    }
+    .card-number, .card-expire, .card-cvc{
+      input{
+        border: none;
+        padding: 0px;
+        height: fit-content;
+        display: inline-block;
+      }
+    }
+  }
+}

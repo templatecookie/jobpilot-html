@@ -31,9 +31,12 @@
   .nav{
     border-bottom: none;
     .nav-link{
-      padding: 12px 20px;
+      padding: 4px 8px;
       margin-right: 4px;
       border-radius: 0px;
+      @media (min-width: 575px){
+        padding: 12px 20px;
+      }
       &:hover{
         box-shadow: inset 0px -2px 0px #0A65CC; 
       }
@@ -44,25 +47,54 @@
   }
 }
 .paypal-wrap{
+  .from-radio-custom .form-check-input {
+    height: 12px;
+    width: 12px;
+    margin-right: 0px;
+    @media (min-width: 575px) {
+      width: 22px;
+      height: 22px;
+    }
+  }
+  .label-radio{
+    padding: 8px;
+    border-radius: 4px !important;
+    @media (min-width: 575px){
+      padding: 20px;
+    }
+  }
   .d-flex{
-    gap: 16px;
+    gap: 8px;
+    @media (min-width:575px){
+      gap: 16px;
+    }
   }
   img{
-    width: 36px;
-    height: 36px;
+    width: 12px;
+    height: 12px;
+    @media (min-width: 575px){
+      width: 36px;
+      height: 36px;
+    }
   }
   .card-info{
   h4{
     font-weight: 400;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.5;
     color: #767F8C;
+    @media (min-width: 575px){
+      font-size: 10px;
+    }
   }
   h2{
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.43;
     color: #18191C;
+    @media (min-width: 575px){
+      font-size: 14px;
+    }
   }
 }
 label{

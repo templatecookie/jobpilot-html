@@ -420,7 +420,7 @@
       // },
     },
   });
-  cardElement.mount("#card-element");
+  // cardElement.mount("#card-element");
 
   // chart
   /* 1.1.7 Chart */
@@ -581,7 +581,6 @@ $(window).Scrollax();
       $notification.toggleClass('notification-visiable');
     });
     //end notification
-
      // switch profile
   const $profileSwitch = $('.switch-profile');
   $(document).mouseup((e) => {

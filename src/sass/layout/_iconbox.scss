@@ -2,7 +2,6 @@
 .rt-single-icon-box {
     display: flex;
     align-items: center;
-    @include afterparent();
     @include rt-trs(0.24s);
     .icon-thumb {
       flex-shrink: 0!important; 

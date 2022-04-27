@@ -61,6 +61,10 @@
   .d-flex{
     gap: 16px;
   }
+  img{
+    width: 36px;
+    height: 36px;
+  }
   .card-info{
   h4{
     font-weight: 400;
@@ -81,5 +85,7 @@ label{
   line-height: 1.43;
   color: #18191C;
 }
+.card-element,input{
+  border: 1px solid var(--gray-100);
 }
-
+}

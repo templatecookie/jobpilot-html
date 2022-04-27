@@ -46,24 +46,27 @@
         </div>
         <!-- End Header top -->
         <div class="navbar">
-            <div class="container container-full-xxl">
+            <div class="container">
                 <div class=" d-flex align-items-center">
                     <a href="index.html" class="brand-logo"><img src="assets/images/logo/logo.png" alt=""></a>
                 </div><!-- /.ms-auto -->
-                <form style="max-width: 200px;" class="d-none d-lg-inline-block">
-                    <div class="form-item">
-                        <input id="country_selector" type="text" class="custom-input">
-                        <label for="country_selector" style="display:none;">Select a country here...</label>
+                <form action="">
+                    <div class="country-sector-wrap">
+                        <div class="form-item">
+                            <input id="country_selector" type="text" class="custom-input">
+                            <label for="country_selector" style="display:none;">Select a country here...</label>
+                        </div>
+                        <div class="fromGroup has-icon2">
+                            <div class="form-control-icon">
+                              <input class="form-control" type="search" placeholder="Job tittle, keyword, company">
+                              <div class="icon-badge-2">
+                                <img src="assets/images/svg/fi_search.svg" alt="">
+                              </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-item" style="display:none;">
-                        <input type="text" id="country_selector_code" name="country_selector_code" data-countrycodeinput="1" readonly="readonly" placeholder="Selected country code will appear here" />
-                        <label for="country_selector_code">...and the selected country code will be updated here</label>
-                    </div>
-                    <button type="submit" style="display:none;">Submit</button>
 		        </form>
-                <form action="" class="d-none d-lg-inline-block">
-                    <input class="custom-input2 w-100" type="text" placeholder="Job tittle, keyword, company">
-                </form>
+              
                 <div class="ms-auto">
                     <div class="rt-nav-tolls d-flex align-items-center">
                         <ul>

@@ -184,3 +184,31 @@
 a.active{
   color: var(--primary-500);
 }
+
+// country selector
+.country-sector-wrap{
+  display: flex;
+  border-radius: 5px;
+  border: 1px solid #E4E5E8;
+  @media (max-width: 991px) {
+    display: none;
+  }
+  .custom-input{
+    width: 190px;
+    border: 0;
+    padding-left: 65px !important;
+    border-right: 1px solid #E4E5E8!important;
+
+  }
+  .form-control{
+    width: 500px;
+    border: none !important;
+    @media (max-width: 1400px) {
+      width: 100%;
+    }
+  }
+  .country-select.inside .flag-dropdown {
+    left: 14px;
+}
+}
+

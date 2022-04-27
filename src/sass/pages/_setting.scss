@@ -241,3 +241,69 @@ input[type="file"]{
   opacity: 0;
   cursor: pointer;
 }
+
+// yse no switce
+
+.switch-input {
+  display: none;
+}
+.switch-label {
+  position: relative;
+  display: inline-block;
+  min-width: 112px;
+  cursor: pointer;
+  text-align: left;
+  padding: 13px 2px 13px 63px;
+  border: 1px solid var(--gray-50);
+  border-radius: 6px 0 0 6px !important;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary-500);
+  text-transform: uppercase;
+}
+.switch-label:before, .switch-label:after {
+  content: "";
+  position: absolute;
+  margin: 0;
+  outline: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  transition: all 0.3s ease;
+}
+.switch-label:before {
+  width: 36px;
+  height: 22px;
+  background-color: #0A65CC;
+  border-radius: 40px;
+  left: 17px;
+}
+.switch-label:after {
+  left: 22px;
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.098), 0 1px 5px 0 rgba(0, 0, 0, 0.084);
+}
+.switch-label .toggle--on {
+  display: none;
+}
+.switch-label .toggle--off {
+  display: inline-block;
+}
+.switch-input:checked + .switch-label:before {
+  background-color: #C8CCD1;
+}
+.switch-input:checked + .switch-label:after {
+  background-color: #fff;
+  transform: translate(80%, -50%);
+}
+.switch-input:checked + .switch-label .toggle--on {
+  display: inline-block;
+}
+.switch-input:checked + .switch-label .toggle--off {
+  display: none;
+}
+.switch-input:checked + .switch-label .toggle--option {
+  color: var(--danger-500);
+}

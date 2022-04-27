@@ -38,8 +38,7 @@
 }
 
 // dashboard profile date picker
-div#ui-datepicker-div{
-  padding: 20px;
+#ui-datepicker-div{
   z-index: 999!important;
   box-shadow: 0px 12px 48px rgba(0, 44, 109, 0.1);
   .ui-datepicker-calendar tbody, .ui-datepicker-calendar thead {

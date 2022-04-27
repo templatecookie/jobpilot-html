@@ -80,7 +80,9 @@ section.banner-section {
 
     &.banner-select {
       padding-right: 10px;
-      border: 0;
+      &.no-border{
+        border: 0;
+      }
     }
     &.no-border {
       padding-right: 0px !important;

@@ -51,7 +51,7 @@
     margin-left: 16px;
     width: 88px;
     height: 48px;
-    border: 1px solid var(--gray-50);
+    border: 1px solid var(--gray-100);
     border-radius: 6px;
     @include breakpoint(xs) {
       margin-top: 10px;
@@ -416,9 +416,20 @@
 .single-page-banner {
   position: relative;
   .pgae-bg {
-    height: 400px;
+    height: 312px;
     @include breakpoint(xs) {
-      height: 300px;
+      height: 250px;
+    }
+  }
+  .card{
+    border: 1px solid var(--gray-100)!important;
+  }
+  .card-body{
+    padding: 40px!important;
+  }
+  .icon-thumb{
+    @media (max-width: 460px) {
+      margin-bottom: 15px;
     }
   }
   .jobcardStyle1 {
@@ -506,9 +517,9 @@
   width: 120px;
   padding-left: 58px;
 }
-.cadidate-details-sidebar{
+.cadidate-details-left{
   @media (min-width: 991px) {
-    margin-left: 50px;
+    margin-right: 50px;
   }
 }
 

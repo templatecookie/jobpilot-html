@@ -1,32 +1,43 @@
-.nav{
-  border-bottom: 1px solid var(--gray-100);
-  
-}
-.nav-pills .nav-link{
-  font-weight: 500;
-  padding: 12px 20px;
-  font-size: 14px;
-  line-height: 1;
-  color: var(--gray-500);
-  svg{
-    margin-right: 5px;
+.cadidate-dashboard-tabs{
+  .nav{
+    border-bottom: 1px solid var(--gray-100);
   }
-  path{
-    stroke: var(--gray-500);
-  }
-  &.active{
-    color: var(--primary-500);
-    background-color: transparent !important;
+  .nav-pills .nav-link{
+    font-weight: 600;
+    padding: 12px 20px;
+    font-size: 14px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    color: var(--gray-500);
+    position: relative;
+    svg{
+      margin-right: 7px;
+    }
     path{
-      stroke: var(--primary-500);
+      stroke: var(--gray-500);
+    }
+    &:hover,
+    &.active{
+      color: var(--primary-500);
+      background-color: transparent !important;
+      path{
+        stroke: var(--primary-500);
+      }
+      &:before{
+        content: "";
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        transition: all 0.4s;
+        position: absolute;
+        background-color: var(--primary-500);
+      }
     }
   }
 }
 
-
-.test h1{
-  color: red;
-}
 #pricemodal{
   .nav{
     border-bottom: none;
@@ -37,11 +48,14 @@
       @media (min-width: 575px){
         padding: 12px 20px;
       }
+      color: #767F8C;
       &:hover{
         box-shadow: inset 0px -2px 0px #0A65CC; 
       }
     }
     .active{
+      color: var(--primary-500);
+      background-color: transparent !important;
       box-shadow: inset 0px -2px 0px #0A65CC;
     }
   }

@@ -31,17 +31,18 @@
             display: flex;
             gap: 12px;
             .btn-primary{
-                background-color: transparent;
+                background: #F1F2F4;
                 border: none;
-                color: #767F8C;
+                border-radius: 3px;
+                color: #0A65CC;
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 1.5;
                 text-transform: capitalize;
                 &:hover{
-                    background: #F1F2F4;
+                    background: transparent;
                     border-radius: 3px;
-                    color: #0A65CC;
+                    color: #767F8C;
                 }
             }
         }
@@ -161,7 +162,6 @@
             margin: 0;
             padding: 0;
             column-count: 2;
-            padding-bottom: 24px;
             li{
                 span{
                     font-weight: 400;
@@ -250,15 +250,16 @@
         border: 1px solid #E4E5E8;
         box-sizing: border-box;
         border-radius: 8px;
-        padding: 24px;
         .title{
             font-weight: 500;
             font-size: 16px;
             line-height: 1.5;
             color: #18191C;
+            padding: 24px 24px 0px 24px;
             margin-bottom: 16px;
         }
         .table-wrapper{
+            padding-bottom: 24px;
             @media (max-width: 1200px){
                 overflow-x: scroll;
             }
@@ -279,9 +280,12 @@
                 tbody{
                     tr{
                         border-bottom: 1px solid #E4E5E8;
+                        &:last-child{
+                            border-bottom: none;
+                        }
                     }
                     td{
-                        padding:8px 24px;
+                        padding:18px 24px;
                         white-space: nowrap;
                         font-weight: 400;
                         font-size: 14px;
@@ -296,4 +300,7 @@
             }
         }
     }
+}
+.row-margin{
+    margin-bottom: 20px;
 }

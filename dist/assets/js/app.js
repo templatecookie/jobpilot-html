@@ -370,6 +370,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     ClassicEditor.create(document.querySelector("#default"))["catch"](function (error) {
       console.error(error);
     });
+  }
+
+  var hasckeditor2 = document.getElementById("default2");
+
+  if (hasckeditor2) {
+    ClassicEditor.create(document.querySelector("#default2"))["catch"](function (error) {
+      console.error(error);
+    });
   } // card
 
   /* 1.1.6 Card */
@@ -398,8 +406,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       // },
 
     }
-  });
-  cardElement.mount("#card-element"); // chart
+  }); // cardElement.mount("#card-element");
+  // chart
 
   /* 1.1.7 Chart */
 
@@ -537,19 +545,32 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     $("body").toggleClass("price-toggole");
   }); // notifications
 
-  var $menu = $('.notification-icon');
+  var $notification = $('.notification-icon');
   $(document).mouseup(function (e) {
-    if (!$menu.is(e.target) && // if the target of the click isn't the container...
-    $menu.has(e.target).length === 0) {
+    if (!$notification.is(e.target) && // if the target of the click isn't the container...
+    $notification.has(e.target).length === 0) {
       // ... nor a descendant of the container
-      $menu.removeClass('notification-visiable');
+      $notification.removeClass('notification-visiable');
     }
   });
   $('.notification-icon').on('click', function (event) {
     event.preventDefault();
-    $menu.toggleClass('notification-visiable');
+    $notification.toggleClass('notification-visiable');
   }); //end notification
-  // 6. input type changer 
+  // switch profile
+
+  var $profileSwitch = $('.switch-profile');
+  $(document).mouseup(function (e) {
+    if (!$profileSwitch.is(e.target) && // if the target of the click isn't the container...
+    $profileSwitch.has(e.target).length === 0) {
+      // ... nor a descendant of the container
+      $profileSwitch.removeClass('profile-visiable');
+    }
+  });
+  $('.switch-profile').on('click', function (event) {
+    event.preventDefault();
+    $profileSwitch.toggleClass('profile-visiable');
+  }); // 6. input type changer 
 
   function showPassword(input, icon) {
     icon.addEventListener('click', function (e) {
@@ -581,7 +602,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       rows: 2,
       infinite: true,
       speed: 800,
-      slidesToShow: 3,
+      slidesToShow: 4,
       slidesToScroll: 1,
       arrows: true,
       prevArrow: '<button class="slide-arrow prev-arrow"></button>',

@@ -51,7 +51,7 @@
     margin-left: 16px;
     width: 88px;
     height: 48px;
-    border: 1px solid var(--gray-50);
+    border: 1px solid var(--gray-100);
     border-radius: 6px;
     @include breakpoint(xs) {
       margin-top: 10px;
@@ -416,9 +416,20 @@
 .single-page-banner {
   position: relative;
   .pgae-bg {
-    height: 400px;
+    height: 312px;
     @include breakpoint(xs) {
-      height: 300px;
+      height: 250px;
+    }
+  }
+  .card{
+    border: 1px solid var(--gray-100)!important;
+  }
+  .card-body{
+    padding: 40px!important;
+  }
+  .icon-thumb{
+    @media (max-width: 460px) {
+      margin-bottom: 15px;
     }
   }
   .jobcardStyle1 {
@@ -440,7 +451,7 @@
 
 //search list fixing
 .inputbox_1 {
-  width: 41%;
+  width: 40%;
   @include breakpoint(xl) {
     width: auto;
     flex-grow: 1;
@@ -450,7 +461,7 @@
   }
 }
 .inputbox_2 {
-  width: 25.7%;
+  width: 24%;
   @include breakpoint(xl) {
     width: auto;
     flex-grow: 1;
@@ -506,8 +517,43 @@
   width: 120px;
   padding-left: 58px;
 }
-.cadidate-details-sidebar{
+.cadidate-details-left{
   @media (min-width: 991px) {
-    margin-left: 50px;
+    margin-right: 50px;
   }
+}
+
+.job-details.btn{
+  font-size: 14px;
+  font-weight: 400;
+  padding: 9px 16px;
+  svg{
+    font-size: 20px;
+    margin-right: 5px;
+  }
+}
+
+ul.job-details-social{
+    li{
+      a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 4px;
+        transition: all 0.4s;
+        background-color: #E7F0FA;
+        &:hover{
+          background-color: var(--primary-500);
+        }
+        &:hover path{
+          fill: white;
+        }
+        svg{
+          font-size: 20px;
+        }
+      }
+    }
+  
 }

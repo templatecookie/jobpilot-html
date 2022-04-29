@@ -22,11 +22,10 @@
       }
     }
   }
- 
+
   &:hover {
     box-shadow: 0px 12px 48px rgba(0, 44, 109, 0.1);
     border-color: var(--primary-500);
-    background: white !important;
   }
   &:hover .footer-content a {
     color: var(--primary-500);
@@ -58,9 +57,6 @@
   .rt-single-icon-box {
     .icon-thumb {
       margin-right: 16px;
-      @media (max-width: 767px) {
-        margin: 0 0 15px;
-      }
       .icon {
         @include iconbox(56px, 4px);
         background-color: #ea4c89;
@@ -90,8 +86,8 @@
 
     .iconbox-content {
       .job-mini-title, .job-mini-title2 {
-        font-size: 18px;
-        font-weight: 400;
+        font-size: 16px;
+        font-weight: 500;
         margin: 0 0 6px;
         color: var(--gray-900);
         a {
@@ -139,25 +135,31 @@
     .post-main-title, .post-main-title2 {
       font-size: 20px;
       line-height: 32px;
-      color: var(--gray-900);
+      color: #191F33;
       display: block;
       margin: 0 0 5px;
       font-weight: 500;
       @include rt-trs(0.24s);
       a {
-        color: var(--gray-900);
-        &:hover {
+        color: #191F33;
+        &:hover{
           color: var(--primary-500);
         }
       }
     }
     .post-main-title2{
       font-size: 24px;
+      @media (max-width: 575px) {
+        font-size: 19px;
+      }
     }
     .info-tools{
       display: inline-flex;
       padding-right: 10px;
       position: relative;
+      @media (max-width: 575px) {
+        display: block;
+      }
       i{
         font-size: 22px ;
         margin-right: 4.75px;
@@ -254,10 +256,23 @@
 
 .newestjob_active, .icon-extra-postion{
   .iconbox-extra{
-    @include breakpoint(xl){
-      position: absolute;
-      right: -20px;
-      top: -10px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    @media (min-width: 768px){
+      right: 10px;
+      top: 20px;
     }
+  }
+}
+.fv-card{
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid var(--gray-100);
+  border-radius: 0px;
+  &:hover{
+    border: 1px solid var(--primary-500);
+    border-radius: 12px;
   }
 }

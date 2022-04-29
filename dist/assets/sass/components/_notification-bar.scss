@@ -1,0 +1,79 @@
+.notification-bar{
+    width: 425px;
+    right: 0;
+    top: 40px;
+    opacity: 0;
+    visibility: hidden;
+    background-color: white;
+    position: absolute;
+    border: 1px solid #E4E5E8;
+    border-radius: 5px;
+    transition: all 0.2s;
+    box-shadow: 0px 16px 40px rgba(24, 25, 28, 0.06);
+    .notification-header{
+        padding: 24px 24px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+        h2{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.56;
+            color: #18191C;
+            margin-bottom: 0px;
+        }
+        p{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.43;
+            color: #5E6670;
+            margin-bottom: 0px;
+        }
+    }
+    .devider{
+        background: #E4E5E8;
+        height: 1px;
+        margin: 0px;
+        margin-bottom: 12px;
+    }
+    .notification-list{
+        padding: 0px 24px 24px;
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li{
+                padding: 12px 0px;
+                &:last-child{
+                    padding-bottom: 0;
+                }
+                a{
+                    h4{
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 1.5;
+                        color: #18191C;
+                        margin-bottom: 4px;
+                    }
+                    p{
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: #767F8C;
+                        margin: 0;
+                    }
+                    .notification-thumb{
+                        margin-right: 12px;
+                        flex-shrink: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.notification-visiable .notification-bar {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.2s;
+}

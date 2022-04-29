@@ -66,7 +66,7 @@
 }
 
 .sidebar-content {
-  max-width: 560px;
+  max-width: 700px;
   padding-left: 138px;
   padding-bottom: 112px;
   @include breakpoint(xl) {
@@ -121,6 +121,29 @@
   }
 }
 
-.custom-padding {
-  padding: 17px 24px;
+.auth-padding {
+  font-size: 14px;
+  padding: 11px 24px;
+  font-weight: 400;
+  color: var(--gray-700);
+  svg{
+    margin-right: 8px;
+  }
+}
+
+.auth-header{
+  .brand-logo{
+    margin-left: 10px;
+  }
+}
+
+.auth-dropdown{
+  .select2-container--default .select2-selection--single {
+    border-radius: 6px;
+    border: 1px solid var(--gray-100);
+  }
+  .select2-container .select2-selection--single .select2-selection__rendered {
+    font-size: 14px;
+    color: #464D61;
+}
 }

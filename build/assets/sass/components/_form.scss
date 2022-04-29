@@ -455,7 +455,12 @@ select,
       animation: zoomIn 0.24s ease-in-out;
     }
   }
-}
+  .form-check-input:checked + label {
+      font-weight: 500;
+      color: var(--gray-900)!important;
+    }
+  }
+
 
 // input range css
 

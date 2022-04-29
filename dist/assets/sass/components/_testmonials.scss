@@ -12,6 +12,9 @@
   @include breakpoint(lg){
     min-height: 282px;
   }
+  @media (max-width: 767px) {
+    min-height: auto !important;
+  }
   .rt-single-icon-box {
     position: absolute;
     left: 0;

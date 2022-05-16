@@ -151,6 +151,9 @@
         &:hover {
           color: var(--primary-500);
         }
+        .custom-dropdown-toggle::after {
+          transform: rotate(180deg) !important;
+        }
       }
       &:hover {
         background: #F1F2F4;

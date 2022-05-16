@@ -800,3 +800,10 @@ if (inputPhone) {
         separateDialCode: true,
     });
 }
+
+// var collapseMenu = document.getElementById("collapse-menu");
+
+// collapseMenu.addEventListener('click', myFunction)
+// function myFunction() {
+//   document.getElementsByClassName("custom-custom-dropdown-toggle");
+// }

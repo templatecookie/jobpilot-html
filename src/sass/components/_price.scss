@@ -1,7 +1,7 @@
 .single-price-table {
   padding: 32px;
   border: 1px solid #edeff5;
-  border-radius: 12px;
+  border-radius: 8px;
   position: relative;
   .price-header{
       padding-bottom: 32px;
@@ -39,9 +39,16 @@
   &.active{
       border-color: var(--primary-500);
       box-shadow: 0px 12px 20px rgba(0, 44, 109, 0.1);
-      
+      .price-header{
+        border-bottom: 1px solid var(--primary-500) !important;
+    }
   }
 }
+// .active-table {
+//     .price-header{
+//         border-bottom: 1px solid var(--primary-500) !important;
+//     }
+// }
 
 .form-switch{
    padding-left: 0px;

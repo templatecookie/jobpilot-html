@@ -1,7 +1,7 @@
 # [templatecookie.com](https://templatecookie.com)
 FREE UI & HTML Templates for Designer and Developer. Echotemplate is a place where a team of design & developers create beautiful templates. Visit [templatecookie.com](https://templatecookie.com) for more updates.
 
-# [Appkite App Landing Page](https://appkite-html.netlify.app/)
+# [Jobpilot](https://appkite-html.netlify.app/)
 
 > App landing html template based on bootstrap framework
 

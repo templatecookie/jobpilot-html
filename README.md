@@ -5,7 +5,7 @@ FREE UI & HTML Templates for Designer and Developer. Echotemplate is a place whe
 
 > App landing html template based on bootstrap framework
 
-This project is a bootstrap version [Appkite App Landing Page](https://jobpilot-html.netlify.app/) designed with HTML & CSS.
+This project is a bootstrap version [Jobpilot HTML template](https://jobpilot-html.netlify.app/) designed with HTML & CSS.
 
 Check the [Live Demo here](https://jobpilot-html.netlify.app/).
 

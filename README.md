@@ -10,7 +10,15 @@ Check the [Live Demo here](https://agen-one-page.netlify.app/).
 ![](screenshot.png)
 
 ## Pages List
-- 3+ Home (Landing Page)
+- Home (Landing Page)
+- Job List
+- Job Details
+- Candidate List
+- Candidate Details
+- Company List
+- Company Details
+- Candidate Dashboard
+- Company Dashboard
 - Blog
 - Blog Details
 
